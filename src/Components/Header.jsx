@@ -15,9 +15,9 @@ const Header = () => {
         <div className="flex flex-col  md:flex-row justify-center md:space-x-4">
           <Link
             to="/industries"
-            className="w-full hidden lg:block md:w-[336px] h-[220px]   text-white pt-8 px-4 md:px-7 font-Barlow link mb-4 md:mb-0"
+            className="w-full hidden lg:block md:w-[336px] h-[220px] text-white pt-8 px-4 md:px-7 font-Barlow link mb-4 md:mb-0"
           >
-            <h2 className="font-bold text-[14px] tracking-wider md:text-base mb-2 md:mb-6">
+            <h2 className="font-bold text-[14px] tracking-wider md:text-[18px] mb-2 md:mb-6">
               INDUSTRIES
             </h2>
             <p className="font-normal font-Barlow text-[16px] md:text-[20px]">

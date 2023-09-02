@@ -8,6 +8,25 @@ import { CustomerLogos, AboutUsHome,  Services, TestimonialSlider } from '../Com
 
 const testimonials = [
   {
+    image: jay,
+    company: "Manager, Jindal Power Limited",
+    text: "Absolutely customer-centric! AARTECH's experienced team provides incredible support. Their innovative products run our electrical system flawlessly. Almost zero product failures, truly user-friendly.",
+    author: "Mr. Jay Prakash Yadav",
+  },
+ 
+  {
+    image: ksh,
+    company: "Senior Manager, NTPC",
+    text: "Working with the AARTECH team was exceptional! Their consistent support turned our collaboration into a delightful experience. I recommend their services to anyone seeking reliability and expertise.",
+    author: "Mr. Ksh.Premkishan Singh",
+  },
+  {
+    image: virendra,
+    company: "Executive Engineer, CSTPS",
+    text: "AARTECH Solonics stands out with its innovative and customized solutions. They've tailored their expertise to our needs, solving our challenges with ease and precision, driving our success forward.",
+    author: "Mr. Virendra Rapartiwar",
+  },
+  {
     image: pankaj,
     company: "Associate Manager, Adani Power Limited",
     text: "AARTECH Solonics transformed our operations. Their unwavering support during any service hiccups is just remarkable. The HSBT system increased our plant's reliability. They're our ultimate reliability partners!",
@@ -25,24 +44,9 @@ const testimonials = [
     text: "AARTECH team’s technical expertise is impressive, but it's their friendly approach and commitment to keeping promises that stood out. Our project was completed on time with ease and precision.",
     author: "Mr. Soumik Manma",
   },
-  {
-    image: jay,
-    company: "Manager, Jindal Power Limited",
-    text: "Absolutely customer-centric! AARTECH's experienced team provides incredible support. Their innovative products run our electrical system flawlessly. Almost zero product failures, truly user-friendly.",
-    author: "Mr. Jay Prakash Yadav",
-  },
-  {
-    image: ksh,
-    company: "Senior Manager, NTPC",
-    text: "Working with the AARTECH team was exceptional! Their consistent support turned our collaboration into a delightful experience. I recommend their services to anyone seeking reliability and expertise.",
-    author: "Mr. Ksh.Premkishan Singh",
-  },
-  {
-    image: virendra,
-    company: "Executive Engineer, CSTPS",
-    text: "AARTECH Solonics stands out with its innovative and customized solutions. They've tailored their expertise to our needs, solving our challenges with ease and precision, driving our success forward.",
-    author: "Mr. Virendra Rapartiwar",
-  },
+ 
+  
+ 
 ];
 
 
@@ -54,7 +58,7 @@ const Home = () => {
     <>
       <Navbar />
       <Header />
-      <div className="fullPage lg:px-20 lg:py-[80px]  lg:pt-20  w-[100%] py-10 px-5 mr-[83px]" >
+      <div className="fullPage lg:px-20 lg:pb-[74px]  lg:pt-20  w-[100%] py-10 px-5 mr-[83px]" >
         <div className="title lg:text-4xl text-[28px] text-box-red leading-9  font-normal lg:mt-0  font-antonio lg:mb-9 mb-4">
           Our Tailored Solutions
         </div>
