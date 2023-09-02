@@ -23,12 +23,12 @@ const Media = () => {
                 <div className="lg:grid grid-cols-2 gap-5 lg:mt-9 mt-6 lg:space-y-0 space-y-6">
                     <Link to='/announcement-page'
                     >
-                        <div className="flex lg:flex-row flex-col  border-[1px] border-black">
-                            <div className="bg-gray-400 lg:w-[30%] w-full lg:h-[119px] h-auto">
-                                <img src={anImg1} alt="" className='object-cover lg:h-[119px] ' /></div>
-                            <div className=" lg:w-[70%] w-full h-auto lg:px-4 px-2 lg:pt-[13px] pt-[6px] lg:pb-[15px] pb-[10px] ">
+                        <div className="flex lg:flex-row flex-col   border-[1px] border-black">
+                            <div className=" lg:w-[30%] w-full lg:h-auto h-auto">
+                                <img src={anImg1} alt="" className='object-cover lg:h-[122px] ' /></div>
+                            <div className=" lg:w-[70%] w-full h-auto lg:px-4 px-2 lg:pt-[13px] pt-[6px] lg:pb-[12px] pb-[10px] ">
                                 <div className="text lg:line-clamp-2 line-clamp-3  font-Barlow text-foot-blue lg:text-[20px] texy-[16px] font-semibold   ">Aartech bags supply order to deliver Uacapacitor-based systems to Indian....</div>
-                                <div className="uploadTime  text-foot-blue text-[16px] font-Barlow lg:mt-[10px] mt-2 lg:mb-0 mb-3">
+                                <div className="uploadTime  text-foot-blue text-[16px] font-Barlow lg:mt-[10px] mt-2 lg:-mb-3 mb-3">
                                 26 April 2021
                                 </div>
                             </div>

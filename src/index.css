@@ -260,9 +260,10 @@
 }
 
 .active {
-  color: #B80001;
+  color: #DA0001;
   font-family: 'Barlow', sans-serif;
   font-size: 17px;
+  font-weight: 800;
 }
 
 .link-item .active {
@@ -285,6 +286,8 @@
    
   }
 }
+
+
 
 .rotate-image {
   /* transform: rotate(45deg); You can adjust the rotation angle as needed */

@@ -31,6 +31,8 @@ const Navbar = () => {
   const workClass = isRed ? 'text-white' : 'text-box-red'; 
   const linkStyle = {
     color: isWorkButtonActive ? '#DA0001' : 'white',
+    fontWeight: isWorkButtonActive ? "800" : "",
+   
   };
 
   return (

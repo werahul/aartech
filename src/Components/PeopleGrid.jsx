@@ -1,10 +1,11 @@
 
 
-const PersonCard = ({ name, role, description, image, linkedInIcon, link }) => (
+const PersonCard = ({ name, role, description, image, linkedInIcon, link, Mimage }) => (
   <div className="border border-black  lg:flex">
     <div className=" flex gap-6">
       <div className="h-[50px] lg:h-auto lg:w-[200%] w-[100px]   lg:overflow-visible mt-0 lg:mt-0 lg:mb-0 mb-12">
-        <img src={image} alt="" className="w-full h-[100px] lg:h-full object-cover  " />
+        <img src={image} alt="" className="w-full h-[100px] lg:block hidden  lg:h-full object-cover  " />
+        <img src={Mimage} alt="" className="w-full lg:hidden block h-[100px] lg:h-full object-cover  " />
       </div>
       <div className=" flex flex-col mt-4">
         <div className="nameRoleLinkedin flex lg:flex-row flex-col justify-between ">
@@ -32,7 +33,7 @@ const PersonCard = ({ name, role, description, image, linkedInIcon, link }) => (
 
     </div>
 
-    <div className="text-black block lg:hidden leading-snug text-base font-Barlow px-4 py-6 font-medium">
+    <div className="text-black block lg:hidden leading-snug text-base font-Barlow px-4 py-4 font-medium">
       {description}
     </div>
   </div>

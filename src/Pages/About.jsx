@@ -1,7 +1,7 @@
 import React,{useEffect} from 'react'
 import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
-import { abImg1, linkedIcon,abBlank, abDebasis, abSsR,abSyed,abVivek, abAmit, abJitendra, abPradeep , abSanjeev, abWajid } from '../assets/images'
+import { abImg1, linkedIcon,abBlank, abDebasis, abSsR,abSyed,abVivek, abAmit, abJitendra, abPradeep , abSanjeev, abWajid,mAmit,mDebasis ,mJitendra ,mSanjeev ,mSsR ,mSyed ,mVivek, mWajid, Mpradeep } from '../assets/images'
 import PeopleGrid from '../Components/PeopleGrid'
 import { AboutImages } from '../Components'
 const peopleData = [
@@ -11,6 +11,7 @@ const peopleData = [
         description:
             "He is dedicated to shaping a brilliant future through innovation, & astute management. He holds a B.Tech. in Electrical Engineering from IIT Bombay ('95) and an MSEE in Power Systems & Power Electronics from the University of Minnesota, USA ('97). With over 25 years of international professional experience, he stands as a Senior Member of IEEE, USA.",
         image: abAmit,
+        Mimage: mAmit,
         linkedInIcon: linkedIcon,
         link: "https://www.linkedin.com/in/amitraje/"
     },
@@ -20,6 +21,7 @@ const peopleData = [
         description:
             "The visionary CEO of Aartech Solonics, drives success with dedicated leadership. With a B.Com from Pune University, PGDBA in Finance from Welingkar Institute of Management, she boasts 18 years of experience, including roles at SICOM, ICICI, and BANK OF AMERICA, cementing her as a transformative trailblazer.",
         image: abBlank,
+        Mimage: abBlank,
         linkedInIcon: linkedIcon,
         link : "https://www.linkedin.com/in/arati-raje-08342239"
     },
@@ -29,6 +31,7 @@ const peopleData = [
         description:
             "He applies his financial acumen to create a harmonious fiscal environment within the company. An economics graduate with an extensive tenure spanning over 18 years at Aartech, he has demonstrated his expertise in financial management and strategic planning, leaving a huge impact on the organization's financial growth and stability.",
         image: abPradeep,
+        Mimage: Mpradeep,
         linkedInIcon: linkedIcon,
     },
     {
@@ -37,6 +40,7 @@ const peopleData = [
         description:
             "He pioneers inventive brand strategies & captivating customer interactions. His data-driven skills shape potent global campaigns, broadening the company's market influence. With a Post Graduate and Engineering background, he takes pride in his 13-year journey at Aartech, fueling its ongoing success.",
         image: abVivek,
+        Mimage: mVivek,
         linkedInIcon: linkedIcon,
         link: "https://www.linkedin.com/in/vivekattri"
     },
@@ -46,6 +50,7 @@ const peopleData = [
         description:
             "He blends strategic foresight with innovation, driving the company's growth. His leadership is marked by advanced solutions and collaborations. His academic foundation in Engineering empowers him to leverage 13 years of invaluable Aartech experience, placing him at the forefront of steering the company's progress.",
         image: abSyed,
+        Mimage: mSyed,
         linkedInIcon: linkedIcon,
         link: "http://www.linkedin.com/in/sohailhussain "
     },
@@ -55,6 +60,7 @@ const peopleData = [
         description:
             "He exemplifies leadership through collaborative prowess, fostering unity across functions. His synergy with sales, marketing, and product teams ensures a cohesive strategy for revenue, customer acquisition, and retention. An Engineering Graduate, he brings 13 years of Aartech experience, shaping the company's success.",
         image: abDebasis,
+        Mimage: mDebasis,
         linkedInIcon: linkedIcon,
         link:"https://www.linkedin.com/in/debasis-barik-electrical"
     },
@@ -64,6 +70,7 @@ const peopleData = [
         description:
             "He refines operations with meticulous precision, converting strategies into flawless execution and yielding remarkable outcomes. With an Engineering degree and a Master's in Business Administration, he boasts a total of 26 years of experience, including a decade of dedicated service at Aartech, where he continues to drive the company's excellence.",
         image: abSsR,
+        Mimage: mSsR,
         linkedInIcon: linkedIcon,
         link: "https://www.linkedin.com/in/shailendra-singh-raghuvanshi-207971126/"
     },
@@ -73,6 +80,7 @@ const peopleData = [
         description:
             "She is a dedicated professional with extensive experience in technical sales, marketing, programming, engineering, and customer support. With a robust background in overseeing BTS divisions and ultra capacitors, I bring a unique fusion of skills for exceptional outcomes. Engineering Graduate, 11 years at Aartech, 16 years total experience.",
         image: abBlank,
+        Mimage: abBlank,
         linkedInIcon: linkedIcon,
         link: "https://www.linkedin.com/in/nitisha-tiwari-83006321"
     },
@@ -82,6 +90,7 @@ const peopleData = [
         description:
             "He is an accomplished sales specialist with a distinct expertise in military applications. With an understanding of defense requirements, he crafts solutions that are finely tuned to armed forces' needs. His dedication ensures optimal performance and mission success. With a background in Marketing, he brings a strategic edge to his role.",
         image: abSanjeev,
+        Mimage: mSanjeev,
         linkedInIcon: linkedIcon,
         link: "https://www.linkedin.com/in/sanjeevkumar"
     },
@@ -91,6 +100,7 @@ const peopleData = [
         description:
             "With a B.Com, CA (Inter), and Accounting Technician Diploma, he brings 13+ years' experience in the field of finance. Proficient in managing statutory compliances like Companies Act 2013, GST Filings, TDS Returns, ESIC, &  Professional Tax, his goal is to leverage his expertise to foster the growth of the company, society, and the nation as a whole.",
         image: abWajid,
+        Mimage: mWajid,
         linkedInIcon: linkedIcon,
         link: "https://www.linkedin.com/in/wajid-siddiqui-b0860a37"
     },
@@ -100,6 +110,7 @@ const peopleData = [
         description:
             "He plays a pivotal role by seamlessly orchestrating various aspects of the CRP segment, including production, quality control, sales, and purchasing. His approach extends across the entire value chain, ensuring efficient and cohesive operations. As an Engineering Graduate, he embodies the essence of integrated success within the organization.",
         image: abJitendra,
+        Mimage: mJitendra,
         linkedInIcon: linkedIcon,
         link: "https://www.linkedin.com/in/jitendra-chauhan-b62b7656"
     },
