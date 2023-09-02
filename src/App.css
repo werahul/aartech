@@ -1,0 +1,34 @@
+.slide-in-bar {
+    position: absolute;
+    top: 88px;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #B70001;
+    transform: translateY(-350%);
+    transition: transform 1s ease;
+    z-index: 10;
+    margin-bottom : 80px;
+}
+
+.visible {
+    transform: translateY(0);
+}
+
+.slide-in-bar:not(.visible) {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.link-item {
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-right: 8px;
+    transition: opacity 0.3s;
+}
+
+.link-item .active {
+    color: #0C013D;
+}
