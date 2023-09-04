@@ -1,7 +1,7 @@
 import React,{useEffect} from 'react'
 import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
-import { abImg1, linkedIcon,abBlank, abDebasis, abSsR,abSyed,abVivek, abAmit, abJitendra, abPradeep , abSanjeev, abWajid,mAmit,mDebasis ,mJitendra ,mSanjeev ,mSsR ,mSyed ,mVivek, mWajid, Mpradeep } from '../assets/images'
+import { abImg1, linkedIcon,abBlank, abDebasis, abSsR,abSyed,abVivek, abAmit, abJitendra, abPradeep , abSanjeev, abWajid,mAmit,mDebasis ,mJitendra ,mSanjeev ,mSsR ,mSyed ,mVivek, mWajid, Mpradeep,abNitisha2, mNitisha ,abAarti, mAarti} from '../assets/images'
 import PeopleGrid from '../Components/PeopleGrid'
 import { AboutImages } from '../Components'
 const peopleData = [
@@ -20,8 +20,8 @@ const peopleData = [
         role: "Chief executive officer",
         description:
             "The visionary CEO of Aartech Solonics, drives success with dedicated leadership. With a B.Com from Pune University, PGDBA in Finance from Welingkar Institute of Management, she boasts 18 years of experience, including roles at SICOM, ICICI, and BANK OF AMERICA, cementing her as a transformative trailblazer.",
-        image: abBlank,
-        Mimage: abBlank,
+        image: abAarti,
+        Mimage: mAarti,
         linkedInIcon: linkedIcon,
         link : "https://www.linkedin.com/in/arati-raje-08342239"
     },
@@ -33,6 +33,7 @@ const peopleData = [
         image: abPradeep,
         Mimage: Mpradeep,
         linkedInIcon: linkedIcon,
+        link: "http://linkedin.com/in/pradeep-narkhede-96a4a828b"
     },
     {
         name: "Vivek Attri",
@@ -79,8 +80,8 @@ const peopleData = [
         role: "BTS System Solution Decision Head",
         description:
             "She is a dedicated professional with extensive experience in technical sales, marketing, programming, engineering, and customer support. With a robust background in overseeing BTS divisions and ultra capacitors, I bring a unique fusion of skills for exceptional outcomes. Engineering Graduate, 11 years at Aartech, 16 years total experience.",
-        image: abBlank,
-        Mimage: abBlank,
+        image: abNitisha2,
+        Mimage: mNitisha,
         linkedInIcon: linkedIcon,
         link: "https://www.linkedin.com/in/nitisha-tiwari-83006321"
     },

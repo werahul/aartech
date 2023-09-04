@@ -39,6 +39,8 @@ import abJitendra from "./abJitendra.png"
 import abWajid from "./abWajid.png"
 import abSanjeev from "./abSanjeev.png"
 import abPradeep from "./abPradeep.png"
+import abAarti from "./abAarti.png"
+import abNitisha2 from "./abNitisha2.jpg"
 import linkedIcon from "./linkedin-gray.png"
 import abGallary1982 from "./abGallary1982.png"
 import abGallary1988 from "./abGallary1988.png"
@@ -52,7 +54,7 @@ import abGallary2022 from "./abGallary2022.png"
 import anImg1 from "./anImg1.png"
 import leftArw from "./leftArw.png"
 import rightArw from "./rightArw.png"
-import mAmit from "./mAmit.png"
+import mAmit from "./mAmit.svg"
 import mDebasis from "./mDebasis.png"
 import mJitendra from "./mJitendra.png"
 import Mpradeep from "./Mpradeep.png"
@@ -61,8 +63,10 @@ import mSsR from "./mSsR.png"
 import mSyed from "./mSyed.png"
 import mVivek from "./mVivek.png"
 import mWajid from "./mWajid.png"
+import mAarti from "./mAarti.png"
+import mNitisha from "./mNitisha.svg"
 
 export { brand1, brand2 , brand3, footImg , linkedin, logo, down,
      customer1, customer2, customer3,customer4,
      customer5, customer6,customer7,customer8, customer9, customer10,customer11,
-     aboutPic1, aboutPic2, aboutPic3, testi1, headerImage ,breadHome , ashim, jay, ksh, pankaj, sonu, virendra, abImg1, linkedIcon, abGallary1982,abGallary1988,abGallary2005,abGallary2010,abGallary2017, anImg1 ,abGallary2019, abGallary1992, abGallary2009 ,abGallary2022, abBlank, abDebasis, abSsR,abSyed,abVivek, leftArw, rightArw, abAmit ,abJitendra, abPradeep , abSanjeev, abWajid, mAmit,mDebasis ,mJitendra ,mSanjeev ,mSsR ,mSyed ,mVivek, mWajid, Mpradeep}
+     aboutPic1, aboutPic2, aboutPic3, testi1, headerImage ,breadHome , ashim, jay, ksh, pankaj, sonu, virendra, abImg1, linkedIcon, abGallary1982,abGallary1988,abGallary2005,abGallary2010,abGallary2017, anImg1 ,abGallary2019, abGallary1992, abGallary2009 ,abGallary2022, abBlank, abDebasis, abSsR,abSyed,abVivek, leftArw, rightArw, abAmit ,abJitendra, abPradeep , abSanjeev, abWajid, mAmit,mDebasis ,mJitendra ,mSanjeev ,mSsR ,mSyed ,mVivek, mWajid, Mpradeep, abNitisha2, mNitisha,abAarti, mAarti}

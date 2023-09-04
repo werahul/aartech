@@ -14,7 +14,7 @@ const Media = () => {
         <>
             <Navbar />
             <div className="lg:px-20 lg:py-20 px-5 py-10">
-                <div className="title text-4xl  font-normal font-antonio text-box-red lg:mt-20 mt-20">
+                <div className="title lg:text-4xl text-[28px]  font-normal font-antonio text-box-red lg:mt-20 mt-20">
                     Announcements
                 </div>
 
