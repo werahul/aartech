@@ -11,6 +11,8 @@ import Products from './Pages/Products'
 import Solutions from './Pages/Solutions'
 import AnnouncementPage from './Pages/AnnouncementPage'
 import Work from './Pages/Work'
+import Privacy from './Pages/Privacy'
+import Cookie from './Pages/Cookie'
 
 // import Navbar from "./Components/Navbar"
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -32,6 +34,8 @@ const App = () => {
         <Route exact path="/products" Component={Products} />
         <Route exact path="/solutions" Component={Solutions} />
         <Route exact path="/announcement-page" Component={AnnouncementPage} />
+        <Route exact path="/privacy-policy" Component={Privacy} />
+        <Route exact path="/cookies" Component={Cookie} />
       </Routes>
     </BrowserRouter>
     </>

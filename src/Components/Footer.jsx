@@ -31,7 +31,7 @@ const Footer = () => {
           </div>
           <div className="sec-col">
             <div className="address lg:w-[21rem] w-[19rem] font-Barlow lg:text-[18px] font-semibold uppercase text[16px]">
-              “Ashirwad” E-2/57, Arera Colony, Bhopal, Madhya Pradesh (M.P.)
+              “Ashirwad” E2/57, Arera Colony, Bhopal, Madhya Pradesh (M.P.)
               India 462016 Tel:+91-755-2463593/4276335 Mob No. +91-9752531167,
               9993091167
               <Link to="/contact">
@@ -49,8 +49,8 @@ const Footer = () => {
             <li className="font-Barlow my-1 text-[14px] lg:text-[16px]">
               ©Aartech Solonics. All rights reserved.
             </li>
-            <li className="font-Barlow  my-1 text-[14px] lg:text-[16px]"> Privacy policy</li>
-            <li className="font-Barlow  my-1 text-[14px] lg:text-[16px]"> Cookie policy</li>
+            <Link to="/privacy-policy" className="font-Barlow  my-1 text-[14px] lg:text-[16px]"> Privacy policy</Link>
+            <Link to="/cookies" className="font-Barlow  my-1 text-[14px] lg:text-[16px]"> Cookie policy</Link>
           </ul>
           <div className="contactImg  flex space-x-1 top-[-400px] right-0 lg:-top-1 lg:right-[13rem]  absolute  items-center justify-center lg:ml-[2rem]  ">
             <span className="font-Barlow  whitespace-nowrap block lg:text-[20px] text-[18px] font-bold ">

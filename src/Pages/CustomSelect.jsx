@@ -30,7 +30,7 @@ const CustomSelect = () => {
         className={`flex items-center px-6 py-2 focus:outline-none w-full transition mt-5  ${
           isButtonClicked && (selectedOption === 'SALUTATION' || isDropdownOpen)
             ? 'bg-red-700 text-white h-[50px] font-Barlow lg:text-[18px] text-[16px]'
-            : 'border-[1px] border-black outline-none py-0 px-6 h-[50px] w-full text-[18px] font-Barlow text-black'
+            : 'border-[1px] border-black outline-none py-0 px-6 h-[50px] w-full text-base font-Barlow text-black'
         }`}
         onClick={handleButtonClick}
       >

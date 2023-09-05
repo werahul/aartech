@@ -63,7 +63,7 @@ import mSsR from "./mSsR.png"
 import mSyed from "./mSyed.png"
 import mVivek from "./mVivek.png"
 import mWajid from "./mWajid.png"
-import mAarti from "./mAarti.png"
+import mAarti from "./mAarti.svg"
 import mNitisha from "./mNitisha.svg"
 
 export { brand1, brand2 , brand3, footImg , linkedin, logo, down,

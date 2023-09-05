@@ -63,7 +63,7 @@ const CustomSelect = () => {
             className={`flex items-center px-6 py-2 focus:outline-none w-full transition mt-2 ${
               isButtonClicked && (selectedOption === 'COUNTRY' || isDropdownOpen)
                 ? 'bg-box-red text-white h-[50px] font-Barlow lg:text-[18px] text-[16px]'
-                : 'border-[1px] border-black outline-none py-0 px-6 h-[50px] w-full text-[18px] font-Barlow text-black'
+                : 'border-[1px] border-black outline-none py-0 px-6 h-[50px] w-full text-[16px] font-Barlow text-black'
             }`}
             onClick={handleButtonClick}
           >

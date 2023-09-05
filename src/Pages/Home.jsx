@@ -68,7 +68,7 @@ const Home = () => {
 
       </div>
       <CustomerLogos />
-      <div className="fullPage lg:px-20  lg:my-[3.8rem] w-[100%] lg:pt-0 lg:pb-0 pt-10 pb-[6rem] px-5">
+      <div className="fullPage lg:px-20  lg:my-[3.8rem] w-[100%] lg:pt-0 lg:pb-0 pt-10 pb-[4rem] px-5">
         <AboutUsHome />
 
       </div>

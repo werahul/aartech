@@ -281,9 +281,12 @@
 
 @media (min-width:1440px) {
   .proClass {
-    
     background-position: 24rem;
-   
+  }
+}
+@media (min-width:370px) {
+  .rotate-image {
+    background-position: 54rem;
   }
 }
 
@@ -309,11 +312,30 @@
   font-size: large;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 380px) {
+  .proClass {
+   
+    background-position: 17rem;
+  
+  }
+  
+}
+@media (min-width: 381px) and (max-width: 500px) {
   .proClass {
    
     background-position: 19rem;
   
+  }
+  
+}
+@media (min-width: 381px) and (max-width: 500px) {
+  .customImg {
+   width: 320px;
+   height: 190px;
+  
+  }
+  .customImg-margin{
+    margin-top: 36px;
   }
   
 }

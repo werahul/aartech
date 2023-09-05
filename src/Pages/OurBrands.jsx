@@ -23,7 +23,7 @@ const OurBrands = () => {
             <div className="brandImg flex items-center justify-center px-6 py-8 h-60 bg-box-bg lg:h-[229px]" >
               <img src={brand1} alt="brands" />
             </div>
-            <div className="brandText lg:text-xl lg:leading-relaxed leading-snug lg:mt-[23px] my-6 font-normal text-black lg:font-[400] lg:text-[18px] lg:w-full font-Barlow">
+            <div className="brandText lg:text-xl lg:leading-relaxed leading-snug lg:my-[23px] my-6 font-[500] lg:font-[400] lg:text-[18px] lg:w-full w-auto font-Barlow  ">
               <h4>Aartech Solonics pioneers in advanced power electronics and energy solutions. With a focus on innovation and sustainability, we deliver cutting-edge products, including ultracapacitors and power quality solutions to shape a cleaner energy future.</h4>
             </div>
           </div>
@@ -32,7 +32,7 @@ const OurBrands = () => {
           <div className="brandImg flex items-center justify-center px-6 lg:py-8  h-60 bg-box-bg lg:h-[229px]" >
               <img src={brand2} alt="brands" />
             </div>
-            <div className="brandText lg:text-xl lg:leading-relaxed leading-snug lg:my-[23px] my-6 font-[500] lg:font-[400] lg:text-[18px] lg:w-full w-[350px] font-Barlow  ">
+            <div className="brandText lg:text-xl lg:leading-relaxed leading-snug lg:my-[23px] my-6 font-[500] lg:font-[400] lg:text-[18px] lg:w-full w-auto font-Barlow  ">
               <h4>Faradigm, presents cutting-edge ultracapacitors designed to revolutionize energy storage solutions. These advanced devices harness innovative technology to deliver rapid energy discharge, extended lifecycles, and exceptional performance for a greener future.</h4>
             </div>
           </div>
@@ -40,7 +40,7 @@ const OurBrands = () => {
             <div className="brandImg flex items-center justify-center px-6 py-8 h-60 bg-box-bg lg:h-[229px]">
               <img src={brand3} alt="brands" />
             </div>
-            <div className="brandText lg:text-xl lg:leading-relaxed leading-snug lg:my-[23px] my-6 font-[500] lg:font-[400] lg:text-[18px] lg:w-full w-[350px]  ">
+            <div className="brandText lg:text-xl lg:leading-relaxed leading-snug lg:my-[23px] my-6 font-[500] lg:font-[400] lg:text-[18px] lg:w-full w-auto  ">
               <h4 className='-mb-5'>BestCase: More Than Just Cases. Entrepreneurs, creators, designers, and teams sometimes struggle to find the right cases because they can be expensive or hard to find. BestCase steps in as a solution provider. BestCase ensures online access 24/7, delivering quality, affordability, and availability.</h4>
             </div>
           </div>
