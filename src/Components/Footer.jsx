@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <>
-      <div className="mainFOOT lg:px-20 lg:pt-20 pt-12 px-6 bg-foot-blue h-auto text-white z-10">
+      <div className="mainFOOT lg:px-20 lg:pt-20 pt-12 px-6 py-10 bg-foot-blue h-auto text-white z-10">
         <div className="footsec lg:flex justify-between items-start ">
           <div className="first-col lg:flex space-x-20">
             <div className="footImg mb-8">
@@ -49,7 +49,7 @@ const Footer = () => {
             <li className="font-Barlow my-1 text-[14px] lg:text-[16px]">
               ©Aartech Solonics. All rights reserved.
             </li>
-            <Link to="/privacy-policy" className="font-Barlow  my-1 text-[14px] lg:text-[16px]"> Privacy policy</Link>
+            <Link to="/privacy-policy" className="font-Barlow  my-1 text-[14px] lg:text-[16px]"> Privacy policy</Link><br />
             <Link to="/cookies" className="font-Barlow  my-1 text-[14px] lg:text-[16px]"> Cookie policy</Link>
           </ul>
           <div className="contactImg  flex space-x-1 top-[-400px] right-0 lg:-top-1 lg:right-[13rem]  absolute  items-center justify-center lg:ml-[2rem]  ">
