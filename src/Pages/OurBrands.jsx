@@ -40,7 +40,7 @@ const OurBrands = () => {
             <div className="brandImg flex items-center justify-center px-6 py-8 h-60 bg-box-bg lg:h-[229px]">
               <img src={brand3} alt="brands" />
             </div>
-            <div className="brandText lg:text-xl lg:leading-relaxed leading-snug lg:my-[23px] my-6 font-[500] lg:font-[400] lg:text-[18px] lg:w-full w-auto  ">
+            <div className="brandText lg:text-xl lg:leading-relaxed leading-snug lg:my-[23px] my-6 font-[500] lg:font-[400] lg:text-[18px] lg:w-full w-auto font-Barlow  ">
               <h4 className='-mb-5'>BestCase: More Than Just Cases. Entrepreneurs, creators, designers, and teams sometimes struggle to find the right cases because they can be expensive or hard to find. BestCase steps in as a solution provider. BestCase ensures online access 24/7, delivering quality, affordability, and availability.</h4>
             </div>
           </div>
