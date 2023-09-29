@@ -32,7 +32,7 @@ const TestimonialSlider = ({ testimonials }) => {
 
   return (
     <div className="relative w-full bg-[#0C013D] lg:py-20 py-10 overflow-hidden">
-      <h2 className="text-[36px] font-antonio mb-[36px] text-white px-5 lg:px-20">
+      <h2 className="text-[36px] font-antonio mb-[36px] text-white px-5 lg:px-20 2xl:px-[120px]">
         Testimonials
       </h2>
       <div

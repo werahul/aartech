@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 
@@ -86,7 +85,7 @@
 
 
 @media (max-width:480px) {
- 
+
 
   .imageGroup {
     width: clamp(10rem, 1rem + 30vmin, 2rem);
@@ -211,7 +210,7 @@
 }
 
 @media (max-width: 768px) {
- 
+
 
   .testimonial-item {
     width: 95.5%;
@@ -228,6 +227,7 @@
   transition: all 0.3s ease;
   background: rgba(28, 28, 28);
 }
+
 .link:hover h2 {
   font-size: 20px;
 }
@@ -281,12 +281,7 @@
 
 @media (min-width:1440px) {
   .proClass {
-    background-position: 24rem;
-  }
-}
-@media (min-width:370px) {
-  .rotate-image {
-    background-position: 54rem;
+    background-position: 22rem;
   }
 }
 
@@ -295,12 +290,15 @@
 .rotate-image {
   /* transform: rotate(45deg); You can adjust the rotation angle as needed */
   background-image: url('./assets/images/up.png');
-  
+  z-index: 100;
+
 }
-.optClass{
+
+.optClass {
   appearance: none;
   -webkit-appearance: none;
 }
+
 /* customDropdown.css */
 
 /* Style the dropdown options */
@@ -314,31 +312,42 @@
 
 @media (max-width: 380px) {
   .proClass {
-   
+
     background-position: 17rem;
-  
+
   }
-  
+
 }
+
 @media (min-width: 381px) and (max-width: 500px) {
   .proClass {
-   
+
     background-position: 19rem;
-  
+
   }
-  
+
 }
+
+/* @media (min-width:1400px) and (max-width: 2000px) {
+  .rotate-image {
+    background-position: 20rem;
+  }
+} */
+
+
 @media (min-width: 381px) and (max-width: 500px) {
   .customImg {
-   width: 320px;
-   height: 190px;
-  
+    width: 320px;
+    height: 190px;
+
   }
-  .customImg-margin{
+
+  .customImg-margin {
     margin-top: 36px;
   }
-  
+
 }
+
 .active-link {
   color: #0C013D;
 
@@ -346,41 +355,42 @@
 
 
 
-.select-solution select option{
+.select-solution select option {
   background-color: white;
   border-bottom: 1px solid black;
   appearance: none;
   color: black;
- 
+
 }
 
-.select-product select option{
-  background-color: white;
-  border-bottom: 1px solid black;
-  appearance: none;
-  color: black; 
-}
- 
-.select-industry select option{
+.select-product select option {
   background-color: white;
   border-bottom: 1px solid black;
   appearance: none;
   color: black;
- 
 }
- 
+
+.select-industry select option {
+  background-color: white;
+  border-bottom: 1px solid black;
+  appearance: none;
+  color: black;
+
+}
+
 @media (max-width:768px) {
-  .select-solution select option{
+  .select-solution select option {
     width: 50%;
     font-size: 18px;
-   
+
   }
 }
-.customTransition{
+
+.customTransition {
   transition: all 0.5s linear;
 }
-.customRotate{
+
+.customRotate {
   transform: rotate(180deg);
   transition: all .3s ease-in-out;
 }
-

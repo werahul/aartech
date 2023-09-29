@@ -45,19 +45,20 @@ const OptionsGrid = () => {
 
   const handleIndustryChange = (event) => {
     setSelectedIndustry(event.target.value);
-    setSelectedProduct(null); // Reset selected product when industry changes
-    setSelectedSolution(null)
+    setSelectedProduct(""); // Reset selected product when industry changes
+    setSelectedSolution("");
   };
 
   const handleProductChange = (event) => {
     setSelectedProduct(event.target.value);
-    setSelectedIndustry(null); // Reset selected industry when product changes
-    setSelectedSolution(null)
+    setSelectedIndustry(""); // Reset selected industry when product changes
+    setSelectedSolution("");
+
   };
   const handleSolutionChange = (event) => {
     setSelectedSolution(event.target.value);
-    setSelectedIndustry(null); // Reset selected industry when product changes
-    setSelectedProduct(null); // Reset selected industry when product changes
+    setSelectedIndustry(""); // Reset selected industry when product changes
+    setSelectedProduct(""); // Reset selected industry when product changes
   };
 
   const [isRotated, setIsRotated] = useState(false);
@@ -154,14 +155,13 @@ const OptionsGrid = () => {
   return (
     <>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-x-[29px] lg:space-y-0 space-y-4">
-
-
         <div className="select-industry">
           <select
             id="industry-select"
             className={`proClass border-black border  h-[50px] w-full lg:px-[39px] px-4 lg:text-lg text-base  font-bold text-box-red font-Barlow focus:outline-none ${isRotatedInd ? 'rotate-image' : ''} ${selectedIndustry ? 'selected bg-box-red text-white border-none' : 'text-black bg-white'}`}
             onChange={handleIndustryChange}
             onClick={handleDropdownIndClick}
+            value={selectedIndustry}
           >
             <option value="" hidden>CHOOSE INDUSTRY</option>
             {industries.map((industry, index) => (
@@ -179,6 +179,7 @@ const OptionsGrid = () => {
             className={`proClass border-black border  h-[50px] w-full lg:px-[39px] px-4 lg:text-lg text-base  font-bold text-box-red font-Barlow focus:outline-none ${isRotated ? 'rotate-image' : ''} ${selectedProduct ? 'selected bg-box-red text-white border-none' : 'text-black bg-white'}`}
             onChange={handleProductChange}
             onClick={handleDropdownClick}
+            value={selectedProduct}
           >
             <option value="" hidden>CHOOSE PRODUCT</option>
             {products.map((product, index) => (
@@ -203,7 +204,6 @@ const OptionsGrid = () => {
             </option>
             {solutions.map((solution, index) => (
               <option key={index} value={solution} className="custom-dropdown-option">
-
                 {solution}
               </option>
             ))}
@@ -216,7 +216,7 @@ const OptionsGrid = () => {
         <div className={`section1 grid grid-cols-1 lg:grid-cols-3 lg:gap-x-[29px]  ${getSectionClass(0)}`}>
           <div className="">
             <ul>
-            <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Industry</p>
+              <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Industry</p>
               <li
                 className='border border-black py-3 lg:py-[6px] my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow'
                 onClick={() => handleItemClick('Defense & Exploration')}
@@ -226,7 +226,7 @@ const OptionsGrid = () => {
             </ul>
           </div>
           <div className="">
-          <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold'>Related Products</p>
+            <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold'>Related Products</p>
             <ul>
               <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base  font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Kranking Ultracapacitors</li>
               <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base  font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Bestcase</li>
@@ -236,7 +236,7 @@ const OptionsGrid = () => {
             </ul>
           </div>
           <div className="">
-          <p className='lg:hidden block text-box-red  uppercase font-Barlow font-bold'>Related Solutions</p>
+            <p className='lg:hidden block text-box-red  uppercase font-Barlow font-bold'>Related Solutions</p>
             <ul>
               <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Load Limiting</li>
               <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Reliable Engine Starting</li>
@@ -266,14 +266,14 @@ const OptionsGrid = () => {
 
       <div className={`section2 grid grid-cols-1 lg:grid-cols-3 lg:gap-x-[29px]   ${getSectionClass(1)}`}>
         <div className="">
-        <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Industry</p>
+          <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Industry</p>
           <ul>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Renewable Energy</li>
           </ul>
         </div>
 
         <div className="">
-        <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold'>Related Products</p>
+          <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold'>Related Products</p>
           <ul>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Kranking Ultracapacitors</li>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Bestcase</li>
@@ -283,7 +283,7 @@ const OptionsGrid = () => {
           </ul>
         </div>
         <div className="">
-        <p className='lg:hidden block text-box-red  uppercase font-Barlow font-bold'>Related Solutions</p>
+          <p className='lg:hidden block text-box-red  uppercase font-Barlow font-bold'>Related Solutions</p>
           <ul>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Control & Automation</li>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Process Continuity</li>
@@ -301,14 +301,14 @@ const OptionsGrid = () => {
 
       <div className={`section3 grid grid-cols-1 lg:grid-cols-3 lg:gap-x-[29px]  ${getSectionClass(2)}`}>
         <div className="">
-        <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Industry</p>
+          <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Industry</p>
           <ul>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Non-Renewable Energy</li>
           </ul>
         </div>
 
         <div className="">
-        <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold'>Related Products</p>
+          <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold'>Related Products</p>
           <ul>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Control Relay Panels</li>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>BTS 2000</li>
@@ -320,7 +320,7 @@ const OptionsGrid = () => {
           </ul>
         </div>
         <div className="">
-        <p className='lg:hidden block text-box-red  uppercase font-Barlow font-bold'>Related Solutions</p>
+          <p className='lg:hidden block text-box-red  uppercase font-Barlow font-bold'>Related Solutions</p>
           <ul>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Control & Automation</li>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Process Continuity</li>
@@ -337,20 +337,20 @@ const OptionsGrid = () => {
 
       <div className={`section4 grid grid-cols-1 lg:grid-cols-3 lg:gap-x-[29px]   ${getSectionClass(3)}`}>
         <div className="">
-        <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Industry</p>
+          <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Industry</p>
           <ul>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Power Transmission & Distribution</li>
           </ul>
         </div>
 
         <div className="">
-        <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold'>Related Products</p>
+          <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold'>Related Products</p>
           <ul>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Control Relay Panels</li>
           </ul>
         </div>
         <div className="">
-        <p className='lg:hidden block text-box-red  uppercase font-Barlow font-bold'>Related Solutions</p>
+          <p className='lg:hidden block text-box-red  uppercase font-Barlow font-bold'>Related Solutions</p>
           <ul>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Control & Automation</li>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Customised Cases</li>
@@ -361,14 +361,14 @@ const OptionsGrid = () => {
 
       <div className={`section5 grid grid-cols-1 lg:grid-cols-3 lg:gap-x-[29px]   ${getSectionClass(4)}`}>
         <div className="">
-        <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Industry</p>
+          <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Industry</p>
           <ul>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Heavy Engineering Industries</li>
           </ul>
         </div>
-      
+
         <div className="">
-        <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold'>Related Products</p>
+          <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold'>Related Products</p>
           <ul>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Control Relay Panels</li>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>BTS 2000</li>
@@ -380,31 +380,31 @@ const OptionsGrid = () => {
           </ul>
         </div>
         <div className="">
-        <p className='lg:hidden block text-box-red  uppercase font-Barlow font-bold'>Related Solutions</p>
-        <ul>
-          <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Control & Automation</li>
-          <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Process Continuity</li>
-          <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Load Limiting</li>
-          <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Reliable Engine Starting</li>
-          <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Fault Current Limiting</li>
-          <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Pulse Power</li>
-          <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Energy Harvesting</li>
-          <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Customised Cases</li>
-          <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Solid Waste Treatment</li>
-        </ul>
-      </div>
+          <p className='lg:hidden block text-box-red  uppercase font-Barlow font-bold'>Related Solutions</p>
+          <ul>
+            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Control & Automation</li>
+            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Process Continuity</li>
+            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Load Limiting</li>
+            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Reliable Engine Starting</li>
+            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Fault Current Limiting</li>
+            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Pulse Power</li>
+            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Energy Harvesting</li>
+            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Customised Cases</li>
+            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Solid Waste Treatment</li>
+          </ul>
+        </div>
       </div>
 
       <div className={`section6 grid grid-cols-1 lg:grid-cols-3 lg:gap-x-[29px]   ${getSectionClass(5)}`}>
         <div className="">
-        <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Industry</p>
+          <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Industry</p>
           <ul>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Healthcare</li>
           </ul>
         </div>
-        
+
         <div className="">
-        <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold'>Related Products</p>
+          <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold'>Related Products</p>
           <ul>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Control Relay Panels</li>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>BTS 2000</li>
@@ -414,7 +414,7 @@ const OptionsGrid = () => {
           </ul>
         </div>
         <div className="">
-        <p className='lg:hidden block text-box-red  uppercase font-Barlow font-bold'>Related Solutions</p>
+          <p className='lg:hidden block text-box-red  uppercase font-Barlow font-bold'>Related Solutions</p>
           <ul>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Control & Automation</li>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Process Continuity</li>
@@ -427,62 +427,62 @@ const OptionsGrid = () => {
 
       <div className={`section7 grid grid-cols-1 lg:grid-cols-3 lg:gap-x-[29px]   ${getSectionClass(6)}`}>
         <div className="">
-        <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Industry</p>
+          <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Industry</p>
           <ul>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>IT & Telecom</li>
           </ul>
         </div>
-      
+
         <div className="">
-        <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold'>Related Products</p>
+          <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold'>Related Products</p>
           <ul>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Control Relay Panels</li>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>BTS 2000</li>
           </ul>
         </div>
         <div className="">
-        <p className='lg:hidden block text-box-red  uppercase font-Barlow font-bold'>Related Solutions</p>
-        <ul>
-          <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Control & Automation</li>
-          <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Process Continuity</li>
-        </ul>
-      </div>
+          <p className='lg:hidden block text-box-red  uppercase font-Barlow font-bold'>Related Solutions</p>
+          <ul>
+            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Control & Automation</li>
+            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Process Continuity</li>
+          </ul>
+        </div>
       </div>
 
       <div className={`section8 grid grid-cols-1 lg:grid-cols-3 lg:gap-x-[29px]   ${getSectionClass(7)}`}>
         <div className="">
-        <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Industry</p>
+          <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Industry</p>
           <ul>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Waste Management</li>
           </ul>
         </div>
-       
+
         <div className="">
-        <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold'>Related Products</p>
+          <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold'>Related Products</p>
           <ul>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Incinerator</li>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>WTC</li>
           </ul>
         </div>
         <div className="">
-        <p className='lg:hidden block text-box-red  uppercase font-Barlow font-bold'>Related Solutions</p>
-        <ul>
-          <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Solid Waste Treatment</li>
-        </ul>
-      </div>
+          <p className='lg:hidden block text-box-red  uppercase font-Barlow font-bold'>Related Solutions</p>
+          <ul>
+            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Solid Waste Treatment</li>
+          </ul>
+        </div>
       </div>
 
 
       <div className={`section9 grid grid-cols-1 lg:grid-cols-3 lg:gap-x-[29px]   ${getSectionClass(8)}`}>
         <div className="">
-        <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Industry</p>
+          <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Industry</p>
           <ul>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Transportation</li>
           </ul>
         </div>
-      
+
         <div className="">
-        <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold'>Related Products</p>
+          <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold'>Related Products</p>
           <ul>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Control Relay Panels</li>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Bestcase</li>
@@ -490,14 +490,14 @@ const OptionsGrid = () => {
           </ul>
         </div>
         <div className="">
-        <p className='lg:hidden block text-box-red  uppercase font-Barlow font-bold'>Related Solutions</p>
-        <ul>
-          <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Control & Automation</li>
-          <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Load Limiting</li>
-          <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Reliable Engine Starting</li>
-          <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Customised Cases</li>
-        </ul>
-      </div>
+          <p className='lg:hidden block text-box-red  uppercase font-Barlow font-bold'>Related Solutions</p>
+          <ul>
+            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Control & Automation</li>
+            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Load Limiting</li>
+            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Reliable Engine Starting</li>
+            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Customised Cases</li>
+          </ul>
+        </div>
       </div>
 
 
@@ -513,7 +513,7 @@ const OptionsGrid = () => {
 
       <div className={`section10 grid grid-cols-1 lg:grid-cols-3 lg:gap-x-[29px]   ${getSectionClass(9)}`}>
         <div className="">
-        <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Related Industries</p>
+          <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Related Industries</p>
           <ul>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Defense & Exploration</li>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Renewable Energy</li>
@@ -524,44 +524,44 @@ const OptionsGrid = () => {
           </ul>
         </div>
         <div className="">
-        <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Product</p>
+          <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Product</p>
           <ul>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Kranking Ultracapacitors</li>
           </ul>
         </div>
         <div className="">
-        <p className='lg:hidden block text-box-red  uppercase font-Barlow font-bold'>Related Solutions</p>
+          <p className='lg:hidden block text-box-red  uppercase font-Barlow font-bold'>Related Solutions</p>
           <ul>
-            
+
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Reliable Engine Starting</li>
-           
+
           </ul>
         </div>
       </div>
 
       <div className={`section11 grid grid-cols-1 lg:grid-cols-3 lg:gap-x-[29px]   ${getSectionClass(10)}`}>
         <div className="">
-        <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Related Industries</p>
+          <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Related Industries</p>
           <ul>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Defense & Exploration</li>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Renewable Energy</li>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Transportation</li>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>
-            Non-renewable Energy
-           </li>
+              Non-renewable Energy
+            </li>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>
-            Heavy Engineering Industries
-           </li>
+              Heavy Engineering Industries
+            </li>
           </ul>
         </div>
         <div className="">
-        <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Product</p>
+          <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Product</p>
           <ul>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Bestcase</li>
           </ul>
         </div>
         <div className="">
-        <p className='lg:hidden block text-box-red  uppercase font-Barlow font-bold'>Related Solutions</p>
+          <p className='lg:hidden block text-box-red  uppercase font-Barlow font-bold'>Related Solutions</p>
           <ul>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Customised Cases</li>
           </ul>
@@ -570,7 +570,7 @@ const OptionsGrid = () => {
 
       <div className={`section12 grid grid-cols-1 lg:grid-cols-3 lg:gap-x-[29px]   ${getSectionClass(11)}`}>
         <div className="">
-        <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Related Industries</p>
+          <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Related Industries</p>
           <ul>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Defense & Exploration</li>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Renewable Energy</li>
@@ -578,27 +578,27 @@ const OptionsGrid = () => {
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Heavy Engineering Industries</li>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Healthcare</li>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Waste Management</li>
-         
+
           </ul>
         </div>
         <div className="">
-        <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Product</p>
+          <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Product</p>
           <ul>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Incinerator</li>
           </ul>
         </div>
         <div className="">
-        <p className='lg:hidden block text-box-red  uppercase font-Barlow font-bold'>Related Solutions</p>
+          <p className='lg:hidden block text-box-red  uppercase font-Barlow font-bold'>Related Solutions</p>
           <ul>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Pulse Power</li>
-           
+
           </ul>
         </div>
       </div>
 
       <div className={`section13 grid grid-cols-1 lg:grid-cols-3 lg:gap-x-[29px]   ${getSectionClass(12)}`}>
         <div className="">
-        <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Related Industries</p>
+          <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Related Industries</p>
           <ul>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Defense & Exploration</li>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Renewable Energy</li>
@@ -606,19 +606,19 @@ const OptionsGrid = () => {
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Heavy Engineering Industries</li>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Healthcare</li>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Waste Management</li>
-          
+
           </ul>
         </div>
         <div className="">
-        <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Product</p>
+          <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Product</p>
           <ul>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>WTC</li>
           </ul>
         </div>
         <div className="">
-        <p className='lg:hidden block text-box-red  uppercase font-Barlow font-bold'>Related Solutions</p>
+          <p className='lg:hidden block text-box-red  uppercase font-Barlow font-bold'>Related Solutions</p>
           <ul>
-            
+
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Solid Waste Treatment</li>
           </ul>
         </div>
@@ -626,20 +626,20 @@ const OptionsGrid = () => {
 
       <div className={`section14 grid grid-cols-1 lg:grid-cols-3 lg:gap-x-[29px]   ${getSectionClass(13)}`}>
         <div className="">
-        <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Related Industries</p>
+          <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Related Industries</p>
           <ul>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Renewable Energy</li>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Non-Renewable Energy</li>
           </ul>
         </div>
         <div className="">
-        <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Product</p>
+          <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Product</p>
           <ul>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>CLIP Fault Current Limitors</li>
           </ul>
         </div>
         <div className="">
-        <p className='lg:hidden block text-box-red  uppercase font-Barlow font-bold'>Related Solutions</p>
+          <p className='lg:hidden block text-box-red  uppercase font-Barlow font-bold'>Related Solutions</p>
           <ul>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Fault Current Limiting</li>
           </ul>
@@ -648,7 +648,7 @@ const OptionsGrid = () => {
 
       <div className={`section15 grid grid-cols-1 lg:grid-cols-3 lg:gap-x-[29px]   ${getSectionClass(14)}`}>
         <div className="">
-        <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Related Industries</p>
+          <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Related Industries</p>
           <ul>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Non-Renewable Energy</li>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Power Transmission & Distribution</li>
@@ -660,13 +660,13 @@ const OptionsGrid = () => {
           </ul>
         </div>
         <div className="">
-        <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Product</p>
+          <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Product</p>
           <ul>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Control Relay Panels</li>
           </ul>
         </div>
         <div className="">
-        <p className='lg:hidden block text-box-red  uppercase font-Barlow font-bold'>Related Solutions</p>
+          <p className='lg:hidden block text-box-red  uppercase font-Barlow font-bold'>Related Solutions</p>
           <ul>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Control & Automation</li>
           </ul>
@@ -674,7 +674,7 @@ const OptionsGrid = () => {
       </div>
 
       <div className={`section16 grid grid-cols-1 lg:grid-cols-3 lg:gap-x-[29px]   ${getSectionClass(15)}`}>
-      <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Related Industries</p>
+        <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Related Industries</p>
         <div className="">
           <ul>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Non-Renewable Energy</li>
@@ -684,13 +684,13 @@ const OptionsGrid = () => {
           </ul>
         </div>
         <div className="">
-        <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Product</p>
+          <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Product</p>
           <ul>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>BTS 2000</li>
           </ul>
         </div>
         <div className="">
-        <p className='lg:hidden block text-box-red  uppercase font-Barlow font-bold'>Related Solutions</p>
+          <p className='lg:hidden block text-box-red  uppercase font-Barlow font-bold'>Related Solutions</p>
           <ul>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Process Continuity</li>
           </ul>
@@ -705,25 +705,25 @@ const OptionsGrid = () => {
 
       <div className={`section17 grid grid-cols-1 lg:grid-cols-3 lg:gap-x-[29px]   ${getSectionClass(16)}`}>
         <div className="">
-        <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Related Industries</p>
+          <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Related Industries</p>
           <ul>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Defense & Exploration</li>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Renewable Energy</li>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Non-Renewable Energy</li>
-           
+
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Heavy Engineering Industries</li>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Healthcare</li>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Transportation</li>
           </ul>
         </div>
         <div className="">
-        
+
           <ul>
-           
+
           </ul>
         </div>
         <div className="">
-        <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Soultion</p>
+          <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Soultion</p>
           <ul>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Load Limiting</li>
           </ul>
@@ -732,7 +732,7 @@ const OptionsGrid = () => {
 
       <div className={`section18 grid grid-cols-1 lg:grid-cols-3 lg:gap-x-[29px]   ${getSectionClass(17)}`}>
         <div className="">
-        <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Related Industries</p>
+          <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Related Industries</p>
           <ul>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Defense & Exploration</li>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Renewable Energy</li>
@@ -743,14 +743,14 @@ const OptionsGrid = () => {
           </ul>
         </div>
         <div className="">
-        <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Related Products</p>
+          <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Related Products</p>
           <ul>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Kranking Ultracapacitors</li>
-            
+
           </ul>
         </div>
         <div className="">
-        <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Soultion</p>
+          <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Soultion</p>
           <ul>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Reliable Engine Starting</li>
           </ul>
@@ -759,22 +759,22 @@ const OptionsGrid = () => {
 
       <div className={`section19 grid grid-cols-1 lg:grid-cols-3 lg:gap-x-[29px]   ${getSectionClass(18)}`}>
         <div className="">
-        <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Related Industries</p>
+          <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Related Industries</p>
           <ul>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Defense & Exploration</li>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Renewable Energy</li>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Non-Renewable Energy</li>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Heavy Engineering Industries</li>
-            
+
           </ul>
         </div>
         <div className="">
           <ul>
-           
+
           </ul>
         </div>
         <div className="">
-        <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Soultion</p>
+          <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Soultion</p>
           <ul>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Pulse Power</li>
           </ul>
@@ -783,21 +783,21 @@ const OptionsGrid = () => {
 
       <div className={`section20 grid grid-cols-1 lg:grid-cols-3 lg:gap-x-[29px]   ${getSectionClass(19)}`}>
         <div className="">
-        <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Related Industries</p>
+          <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Related Industries</p>
           <ul>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Defense & Exploration</li>
-          
+
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Heavy Engineering Industries</li>
-            
+
           </ul>
         </div>
         <div className="">
           <ul>
-            
+
           </ul>
         </div>
         <div className="">
-        <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Soultion</p>
+          <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Soultion</p>
           <ul>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Energy Harvesting</li>
           </ul>
@@ -806,24 +806,24 @@ const OptionsGrid = () => {
 
       <div className={`section21 grid grid-cols-1 lg:grid-cols-3 lg:gap-x-[29px]   ${getSectionClass(20)}`}>
         <div className="">
-        <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Related Industries</p>
+          <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Related Industries</p>
           <ul>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Defense & Exploration</li>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Renewable Energy</li>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Non-Renewable Energy</li>
-            
+
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Heavy Engineering Industries</li>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>WTC</li>
           </ul>
         </div>
         <div className="">
-        <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Related Products</p>
+          <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Related Products</p>
           <ul>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Bestcase</li>
           </ul>
         </div>
         <div className="">
-        <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Soultion</p>
+          <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Soultion</p>
           <ul>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Customised Cases</li>
           </ul>
@@ -832,26 +832,26 @@ const OptionsGrid = () => {
 
       <div className={`section22 grid grid-cols-1 lg:grid-cols-3 lg:gap-x-[29px]   ${getSectionClass(21)}`}>
         <div className="">
-        <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Related Industries</p>
+          <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Related Industries</p>
           <ul>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Defense & Exploration</li>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Renewable Energy</li>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Non-Renewable Energy</li>
-        
+
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Heavy Engineering Industries</li>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Healthcare</li>
-        
+
           </ul>
         </div>
         <div className="">
-        <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Related Products</p>
+          <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Related Products</p>
           <ul>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Incinerator</li>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>WTC</li>
           </ul>
         </div>
         <div className="">
-        <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Soultion</p>
+          <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Soultion</p>
           <ul>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Solid Waste Treatment</li>
           </ul>
@@ -860,7 +860,7 @@ const OptionsGrid = () => {
 
       <div className={`section23 grid grid-cols-1 lg:grid-cols-3 lg:gap-x-[29px]   ${getSectionClass(22)}`}>
         <div className="">
-        <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Related Industries</p>
+          <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Related Industries</p>
           <ul>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Renewable Energy</li>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Non-Renewable Energy</li>
@@ -868,19 +868,19 @@ const OptionsGrid = () => {
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Heavy Engineering Industries</li>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Healthcare</li>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>IT & Telecom</li>
-           
+
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Transportation</li>
           </ul>
         </div>
         <div className="">
-        <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Related Products</p>
+          <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Related Products</p>
           <ul>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Control Relay Panels</li>
-            
+
           </ul>
         </div>
         <div className="">
-        <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Soultion</p>
+          <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Soultion</p>
           <ul>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Control & Automation</li>
           </ul>
@@ -889,7 +889,7 @@ const OptionsGrid = () => {
 
       <div className={`section24 grid grid-cols-1 lg:grid-cols-3 lg:gap-x-[29px]   ${getSectionClass(23)}`}>
         <div className="">
-        <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Related Industries</p>
+          <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Related Industries</p>
           <ul>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Renewable Energy</li>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Non-Renewable Energy</li>
@@ -899,13 +899,13 @@ const OptionsGrid = () => {
           </ul>
         </div>
         <div className="">
-        <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Related Products</p>
+          <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Related Products</p>
           <ul>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>BTS 2000</li>
           </ul>
         </div>
         <div className="">
-        <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Soultion</p>
+          <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Soultion</p>
           <ul>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Process Continuity</li>
           </ul>
@@ -914,7 +914,7 @@ const OptionsGrid = () => {
 
       <div className={`section25 grid grid-cols-1 lg:grid-cols-3 lg:gap-x-[29px]   ${getSectionClass(24)}`}>
         <div className="">
-        <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Related Industries</p>
+          <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Related Industries</p>
           <ul>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Renewable Energy</li>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Non-Renewable Energy</li>
@@ -922,13 +922,13 @@ const OptionsGrid = () => {
           </ul>
         </div>
         <div className="">
-        <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Related Products</p>
+          <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Related Products</p>
           <ul>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>CLIP Fault Current Limitors</li>
           </ul>
         </div>
         <div className="">
-        <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Soultion</p>
+          <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Soultion</p>
           <ul>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Fault Current Limiting</li>
           </ul>

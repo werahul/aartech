@@ -10,7 +10,7 @@ const OurBrands = () => {
   return ( 
     <>
     <Navbar/>
-      <div className="fullPage lg:px-20 lg:py-[80px] lg:mt-[4rem] pt-[8rem] w-[100%] p-4">
+      <div className="fullPage 2xl:px-[120px] lg:px-20 lg:py-[80px] lg:mt-[4rem] pt-[8rem] w-[100%] p-4">
 
 
         <div className="title text-4xl text-box-red font-normal font-antonio lg:mb-8 mb-6 mt-[14px]">

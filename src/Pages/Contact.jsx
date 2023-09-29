@@ -18,8 +18,8 @@ const Contact = () => {
     return (
         <>
             <Navbar />
-            <div className="mainPage lg:px-20 lg:mt-[4rem] lg:py-20 px-5 py-10 ">
-                <div className="title lg:text-4xl text-[28px]   font-antonio lg:mt-0 mt-20">
+            <div className="mainPage 2xl:px-[120px] lg:px-20 lg:mt-[4rem] lg:py-20 px-5 py-10 ">
+                <div className="title lg:text-4xl text-[28px] text-box-red   font-antonio lg:mt-0 mt-20">
                     Contact Us
                 </div>
                 <div className="form lg:mt-4 mt-1 ">
@@ -72,12 +72,12 @@ const Contact = () => {
                             UNIT #1, MANDIDEEP
                         </div>
                         <div className="boxContent flex flex-col leading-[26px] lg:space-x-10 font-[400] ">
-                            <ul className='list-disc  lg:ml-9 ml-6 '>
+                            <ul className='list-disc  lg:ml-8 ml-6 '>
                                 <a href="https://goo.gl/maps/Z45HNNGJcqrP7KA39" target='_blank' ><li className='font-Barlow lg:text-[20px] my-4 w-full text-foot-blue'>35-A/36 Sector-B, Industrial Area, Mandideep, District Raisen, (M.P.) India 462046
                                 </li></a>
                                 <a href="tel:+917480233020"><li className='font-Barlow lg:text-[20px] my-4 text-foot-blue'>
                                     Tel: +91-7480-233020</li></a>
-                                <a href="tel:+919993091168"><li className='font-Barlow lg:text-[20px] w-[105%] lg:mt-4 mb-0 text-foot-blue'>Mob No. +91-9993091168,<a href='tel:+917389905790'><span>7389905790 </span></a></li></a>
+                                <a href="tel:+919993091168"><li className='font-Barlow lg:text-[20px] w-[106%] lg:mt-4 mb-0 text-foot-blue'>Mob No. +91-9993091168,<a href='tel:+917389905790'><span>7389905790, </span></a><br /> <span>+91-9752531167</span> </li></a>
                             </ul>
                         </div>
                     </div>

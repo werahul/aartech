@@ -22,7 +22,16 @@ export default {
 
       '2xl': '1440px',
       // => @media (min-width: 1536px) { ... }
-      '2xl': '1500px',
+      '3xl': '1500px',
+      xxs: "300px",
+      xss: "390px",
+      xs: "400px",
+      xxxl: "1561px",
+      xll2: "1601px",
+      xl5: "1650px",
+      xll4: "1690px",
+      xl6: "1700px",
+      xl7: "1740px",
     },
     extend: {
       colors: {
@@ -33,8 +42,8 @@ export default {
         'lightBlack': '#262626 '
 
       },
-      
-     
+
+
     },
     plugins: [],
   }

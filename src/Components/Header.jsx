@@ -17,7 +17,7 @@ const Header = () => {
             to="/industries"
             className="w-full hidden lg:block md:w-[336px] h-[220px] text-white pt-8 px-4 md:px-7 font-Barlow link mb-4 md:mb-0"
           >
-            <h2 className="font-bold text-[14px] tracking-wider md:text-[18px] mb-2 md:mb-6">
+            <h2 className="font-[800]  border-b-2 text-[14px] tracking-[.2em] md:text-[18px] mb-2 md:mb-6 ">
               INDUSTRIES
             </h2>
             <p className="font-normal font-Barlow text-[16px] md:text-[20px]">
@@ -28,7 +28,7 @@ const Header = () => {
             to="/products"
             className="w-full hidden lg:block md:w-[336px] h-[220px]   text-white pt-8 px-4 md:px-7 font-Barlow link mb-4 md:mb-0"
           >
-            <h2 className="font-bold text-[14px] tracking-wider md:text-[18px] mb-2 md:mb-6">
+            <h2 className="font-[800]  border-b-2 text-[14px] tracking-[.2em] md:text-[18px] mb-2 md:mb-6">
               PRODUCTS
             </h2>
             <p className="font-normal text-[16px] md:text-[20px]">
@@ -39,7 +39,7 @@ const Header = () => {
             to="/solutions"
             className="w-full hidden lg:block md:w-[336px] h-[220px]   text-white pt-8 px-4 md:px-7 font-Barlow link mb-4 md:mb-0"
           >
-            <h2 className="font-bold text-[14px] tracking-wider md:text-[18px] mb-2 md:mb-6">
+            <h2 className="font-[800]  border-b-2 text-[14px] tracking-[.2em] md:text-[18px] mb-2 md:mb-6">
               SOLUTIONS
             </h2>
             <p className="font-normal text-[16px] md:text-[20px]">

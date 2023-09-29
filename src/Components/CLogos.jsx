@@ -6,8 +6,8 @@ const CLogos = () => {
     return (
         <>
             <div className="bg-foot-blue lg:h-[347px] h-[200px] my-2 lg:px-20 lg:py-20 p-4">
-                <div className="title lg:text-4xl text-[28px] text-white font-bold font-antonio lg:mb-0  mb-[50px] ">
-                    Customers
+                <div className="title 2xl:text-5xl lg:text-4xl text-[28px] text-white font-bold font-antonio lg:mb-0  mb-[50px] ">
+                  Customers
                 </div>
                 <div className="pr">
                     <div className="flex items-center justify-center space-x-32 animate-slide">

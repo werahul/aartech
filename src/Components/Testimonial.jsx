@@ -2,8 +2,8 @@ import React from "react";
 
 const Testimonial = ({ testimonial }) => {
   return (
-    <div className="w-full md:w-[50%] lg:w-[120%]   3xl:w-[120%] px-5 lg:px-20">
-      <div className="bg-transparent border-white max-h-[120%] border  flex flex-col lg:flex-row shadow">
+    <div className="w-full md:w-[50%] lg:w-[120%] 2xl:w-[120%]   3xl:w-[120%] px-5 lg:px-20 2xl:px-[120px]">
+      <div className="bg-transparent border-white max-h-[120%] 2xl:w-[115%] border  flex flex-col lg:flex-row shadow">
         <img
           src={testimonial.image}
           alt=""
@@ -31,7 +31,7 @@ const Testimonial = ({ testimonial }) => {
           <p className="font-bold text-[16px] text-white hidden lg:block lg:pb-[16px] 2xl:pb-[32px] font-Barlow">
             {testimonial.company}
           </p>
-          <p className="font-Barlow text-[16px] px-2 lg:px-0 py-4 lg:py-0 3xl:text-[20px] text-[#ffffff] italic ">
+          <p className="font-Barlow text-[16px] 2xl:text-[14px] px-2 lg:px-0 py-4 lg:py-0 3xl:text-[20px] text-[#ffffff] italic ">
             {testimonial.text}
           </p>
         </div>

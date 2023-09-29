@@ -24,12 +24,12 @@ const ImageCarousel = ({ images }) => {
       >
         {images.map((image, index) => (
           <div key={index}>
-            <img src={image} alt={`Image ${index}`} />
+            <img src={image} alt={`Image ${index}`} className=''/>
           </div>
         ))}
       </Carousel>
       <div className="mt-2">
-        <ul className="flex justify-center w-[324px] h-[324px]">
+        <ul className="flex justify-center w-full ">
           {images.map((_, index) => (
             <li className="mr-2" key={index}>
               <button

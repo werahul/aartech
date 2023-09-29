@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { logo ,down } from "../assets/images";
+import { logo, down } from "../assets/images";
 import SlideInBar from "../Pages/SlideInBar";
 
 const Navbar = () => {
@@ -28,15 +28,15 @@ const Navbar = () => {
 
   const location = useLocation();
   const rotateClass = rotate ? 'customRotate' : '';
-  const workClass = isRed ? 'text-white' : 'text-box-red'; 
+  const workClass = isRed ? 'text-white' : 'text-box-red';
   const linkStyle = {
     color: isWorkButtonActive ? '#DA0001' : 'white',
     fontWeight: isWorkButtonActive ? "800" : "",
-   
+
   };
 
   return (
-    <div className="navbar-bg fixed inset-0 lg:h-[88px] h-[70px] flex items-center justify-between z-20">
+    <div className="navbar-bg fixed inset-0 lg:h-[88px] h-[70px] flex items-center justify-between z-20 2xl:px-[40px]">
       <div className="flex items-center justify-between w-full px-5 md:px-20">
         <Link to="/" className="z-50 ">
           <img
@@ -77,17 +77,17 @@ const Navbar = () => {
           : "hidden lg:flex"
           } flex md:items-center font-Barlow md:space-x-7 mt-0 px-5 md:px-20 z-1`}
       >
-      <Link
-     // to="/work" // Specify the route you want to link to
-      className="text-white lg:block hidden font-bold hover:opacity-75 lg:border-none lg:pb-0 border-b pb-4 border-neutral-500"
-      style={linkStyle}
-      onClick={() => {
-        setIsMenuOpen(false);
-        toggleColor(); // Toggle the color
-      }}
-    >
-      WORK
-    </Link>
+        <Link
+          // to="/work" // Specify the route you want to link to
+          className="text-white lg:block hidden font-bold hover:opacity-75 lg:border-none lg:pb-0 border-b pb-4 border-neutral-500"
+          style={linkStyle}
+          onClick={() => {
+            setIsMenuOpen(false);
+            toggleColor(); // Toggle the color
+          }}
+        >
+          WORK
+        </Link>
 
         <Link
           // to="/work"
@@ -100,11 +100,11 @@ const Navbar = () => {
           }}
         >
           <div // to="/work"
-           className="">
-           <div className={`lg:border-none lg:pb-0 border-b pb-4 border-neutral-500 w-[100%] ${workClass}`}>
-           WORK
-            <img src={down} alt="" className={` float-right top-0 right-0 invert  text-white p-2 rounded-full cursor-pointer ${rotateClass} `} onClick={toggleDivVisibility}  />
-            {/*<button className=" float-right top-0 right-0 bg-blue-500 text-white p-2 rounded-full cursor-pointer "
+            className="">
+            <div className={`lg:border-none lg:pb-0 border-b pb-4 border-neutral-500 w-[100%] ${workClass}`}>
+              WORK
+              <img src={down} alt="" className={` float-right top-0 right-0 invert  text-white p-2 rounded-full cursor-pointer ${rotateClass} `} onClick={toggleDivVisibility} />
+              {/*<button className=" float-right top-0 right-0 bg-blue-500 text-white p-2 rounded-full cursor-pointer "
         onClick={toggleDivVisibility}
           >
             o        
@@ -112,14 +112,14 @@ const Navbar = () => {
             </div>
 
 
-           
+
             <div
-            className={`overflow-hidden flex flex-col customTransition  ${isDivVisible ? 'h-auto opacity-100 translate-y-[0%] ' : 'h-0 opacity-0 translate-y-[-20%]'} bg-transparent rounded-lg`}
+              className={`overflow-hidden flex flex-col customTransition  ${isDivVisible ? 'h-auto opacity-100 translate-y-[0%] ' : 'h-0 opacity-0 translate-y-[-20%]'} bg-transparent rounded-lg`}
             >
-              <Link  to="/industries" className="lg:border-none lg:pb-0 border-b pb-4 uppercase text-white  py-4 ml-14 border-neutral-500">industries</Link>
-              <Link  to="/products" className="lg:border-none lg:pb-0 border-b pb-4 uppercase text-white  py-4 ml-14 border-neutral-500">products</Link>
-              <Link  to="/solutions" className="lg:border-none  lg:pb-0 border-b pb-4 uppercase text-white pl-14 py-4 border-neutral-500">solutions</Link>
-            </div>  
+              <Link to="/industries" className="lg:border-none lg:pb-0 border-b pb-4 uppercase text-white  py-4 ml-14 border-neutral-500">industries</Link>
+              <Link to="/products" className="lg:border-none lg:pb-0 border-b pb-4 uppercase text-white  py-4 ml-14 border-neutral-500">products</Link>
+              <Link to="/solutions" className="lg:border-none  lg:pb-0 border-b pb-4 uppercase text-white pl-14 py-4 border-neutral-500">solutions</Link>
+            </div>
           </div>
         </Link>
 
@@ -147,13 +147,13 @@ const Navbar = () => {
         >
           MEDIA
         </Link>
-        {/* <Link
+        <Link
           // to="/investors"
           className="text-white font-bold hover:opacity-75"
           onClick={() => setIsMenuOpen(false)}
         >
           INVESTORS
-      </Link>*/}
+        </Link>
         <Link
           to="/contact"
           className={`text-white font-bold hover:opacity-75 lg:border-none lg:pb-0 border-b pb-4  border-neutral-500 ${location.pathname === "/contact" ? "active" : ""

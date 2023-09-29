@@ -15,6 +15,11 @@ import Privacy from './Pages/Privacy'
 import Cookie from './Pages/Cookie'
 
 // import Navbar from "./Components/Navbar"
+
+import { WindPower } from './Components/Industries'
+import { BTS2000 } from './Components/Products'
+import { Solution } from './Components/Solutions'
+
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const App = () => {
@@ -36,6 +41,9 @@ const App = () => {
         <Route exact path="/announcement-page" Component={AnnouncementPage} />
         <Route exact path="/privacy-policy" Component={Privacy} />
         <Route exact path="/cookies" Component={Cookie} />
+        <Route exact path="/industries/wind-power" Component={WindPower} />
+        <Route exact path="/products/BTS-2000" Component={BTS2000} />
+        <Route exact path="/solutions/reactive-power-compensation" Component={Solution} />
       </Routes>
     </BrowserRouter>
     </>

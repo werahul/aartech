@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import { abGallary1982, abGallary1988, abGallary1992, abGallary2005, abGallary2009, abGallary2010, abGallary2017, abGallary2019, abGallary2022,leftArw, rightArw } from '../assets/images';
+import {  abGallary1992, abGallary2005, abGallary2009, abGallary2010, abGallary2017, abGallary2019, abGallary2022, abGallary1982, abGallary1988,leftArw, rightArw } from '../assets/images';
 
 const AboutImages = () => {
   const images = [
     // Provide URLs to your images here
-    abGallary1982, abGallary1988, abGallary1992, abGallary2005, abGallary2009, abGallary2010, abGallary2017 ,abGallary2019,abGallary2022
+   abGallary1992, abGallary2005, abGallary2009, abGallary2010, abGallary2017 ,abGallary2019,abGallary2022, abGallary1982, abGallary1988, 
   ];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -46,64 +46,65 @@ const AboutImages = () => {
         <div className="w-[52px] h-[52px] bg-white rounded-full border border-red-700 cursor-pointer" />
         <div className="w-8 h-8 bg-white rounded-full border border-red-700 cursor-pointer" ></div>
       </div>
-      <div className={`yearSection1 flex items-center justify-evenly lg:mt-8 font-Barlow -mt-36 ${currentImageIndex === 0 ? '' : 'hidden'}`}>
-        <div className={`text-center text-slate-900 text-xl font-semibold font-Barlow uppercase leading-tight tracking-tight lg:inline-block hidden`}>2022</div>
+      <div className={`yearSection1 flex items-center justify-evenly lg:mt-8 font-Barlow -mt-36 ${currentImageIndex === 7 ? '' : 'hidden'}`}>
+        <div className={`text-center text-slate-900 text-xl font-semibold font-Barlow uppercase leading-tight tracking-tight  hidden`}>2022</div>
         <div className={`text-center text-red-700 lg:text-4xl text-[28px] font-Barlow font-semibold  mt-[15px] customImg-margin  lg:mb-0 -mb-2 uppercase leading-9 tracking-wide`}>1982</div>
-        <div className={`text-center text-slate-900 text-xl font-semibold font-Barlow uppercase leading-tight tracking-tight lg:inline-block hidden`}>1988</div>
+        <div className={`text-center text-slate-900 text-xl font-semibold font-Barlow uppercase leading-tight tracking-tight  hidden`}>1988</div>
       </div>
-      <div className={`yearSection2 flex items-center justify-evenly lg:mt-8 font-Barlow -mt-36 ${currentImageIndex === 1 ? '' : 'hidden'}`}>
-        <div className={`text-center text-slate-900 text-xl font-semibold uppercase leading-tight tracking-tight lg:inline-block hidden`}>1982</div>
+      <div className={`yearSection2 flex items-center justify-evenly lg:mt-8 font-Barlow -mt-36 ${currentImageIndex === 8 ? '' : 'hidden'}`}>
+        <div className={`text-center text-slate-900 text-xl font-semibold uppercase leading-tight tracking-tight  hidden`}>1982</div>
         <div className={`text-center text-red-700 lg:text-4xl text-[28px] font-Barlow font-semibold mt-[15px] customImg-margin lg:mb-0 -mb-2 uppercase leading-9 tracking-wide`}>1988</div>
-        <div className={`text-center text-slate-900 text-xl font-semibold uppercase leading-tight tracking-tight lg:inline-block hidden`}>1992</div>
+        <div className={`text-center text-slate-900 text-xl font-semibold uppercase leading-tight tracking-tight  hidden`}>1992</div>
       </div>
-      <div className={`yearSection3 flex items-center justify-evenly lg:mt-8 font-Barlow -mt-36 ${currentImageIndex === 2 ? '' : 'hidden'}`}>
-        <div className={`text-center text-slate-900 text-xl font-semibold font-Barlow uppercase leading-tight tracking-tight lg:inline-block hidden`}>1988</div>
+      
+      <div className={`yearSection3 flex items-center justify-evenly lg:mt-8 font-Barlow -mt-36 ${currentImageIndex === 0 ? '' : 'hidden'}`}>
+        <div className={`text-center text-slate-900 text-xl font-semibold font-Barlow uppercase leading-tight tracking-tight  hidden`}>1988</div>
         <div className={`text-center text-red-700 lg:text-4xl text-[28px] font-semibold lg:mt mt-[15px] customImg-margin lg:mb-0 -mb-2 uppercase leading-9 tracking-wide`}>1992</div>
-        <div className={`text-center text-slate-900 text-xl font-semibold font-Barlow uppercase leading-tight tracking-tight lg:inline-block hidden`}>2005</div>
+        <div className={`text-center text-slate-900 text-xl font-semibold font-Barlow uppercase leading-tight tracking-tight  hidden`}>2005</div>
+      </div>
+      <div className={`yearSection4 flex items-center justify-evenly lg:mt-8 font-Barlow -mt-36 ${currentImageIndex === 1 ? '' : 'hidden'}`}>
+        <div className={`text-center text-slate-900 text-xl font-semibold font-Barlow uppercase leading-tight tracking-tight  hidden`}>1992</div>
+        <div className={`text-center text-red-700 lg:text-4xl text-[28px] font-Barlow font-semibold lg:mt mt-[15px] customImg-margin lg:mb-0 -mb-2 uppercase leading-9 tracking-wide`}>2005</div>
+        <div className={`text-center text-slate-900 text-xl font-semibold font-Barlow uppercase leading-tight tracking-tight hidden`}>2009</div>
+      </div>
+      <div className={`yearSection4 flex items-center justify-evenly lg:mt-8 font-Barlow -mt-36 ${currentImageIndex === 2 ? '' : 'hidden'}`}>
+        <div className={`text-center text-slate-900 text-xl font-semibold font-Barlow uppercase leading-tight tracking-tight  hidden`}>2005</div>
+        <div className={`text-center text-red-700 lg:text-4xl text-[28px] font-Barlow font-semibold lg:mt mt-[15px] customImg-margin lg:mb-0 -mb-2 uppercase leading-9 tracking-wide`}>2009</div>
+        <div className={`text-center text-slate-900 text-xl font-semibold font-Barlow uppercase leading-tight tracking-tight  hidden`}>2010</div>
       </div>
       <div className={`yearSection4 flex items-center justify-evenly lg:mt-8 font-Barlow -mt-36 ${currentImageIndex === 3 ? '' : 'hidden'}`}>
-        <div className={`text-center text-slate-900 text-xl font-semibold font-Barlow uppercase leading-tight tracking-tight lg:inline-block hidden`}>1992</div>
-        <div className={`text-center text-red-700 lg:text-4xl text-[28px] font-Barlow font-semibold lg:mt mt-[15px] customImg-margin lg:mb-0 -mb-2 uppercase leading-9 tracking-wide`}>2005</div>
-        <div className={`text-center text-slate-900 text-xl font-semibold font-Barlow uppercase leading-tight tracking-tight lg:inline-block hidden`}>2009</div>
+        <div className={`text-center text-slate-900 text-xl font-semibold font-Barlow uppercase leading-tight tracking-tight  hidden`}>2009</div>
+        <div className={`text-center text-red-700 lg:text-4xl text-[28px] font-Barlow font-semibold lg:mt mt-[15px] customImg-margin lg:mb-0 -mb-2 uppercase leading-9 tracking-wide`}>2010</div>
+        <div className={`text-center text-slate-900 text-xl font-semibold font-Barlow uppercase leading-tight tracking-tight  hidden`}>2017</div>
       </div>
       <div className={`yearSection4 flex items-center justify-evenly lg:mt-8 font-Barlow -mt-36 ${currentImageIndex === 4 ? '' : 'hidden'}`}>
-        <div className={`text-center text-slate-900 text-xl font-semibold font-Barlow uppercase leading-tight tracking-tight lg:inline-block hidden`}>2005</div>
-        <div className={`text-center text-red-700 lg:text-4xl text-[28px] font-Barlow font-semibold lg:mt mt-[15px] customImg-margin lg:mb-0 -mb-2 uppercase leading-9 tracking-wide`}>2009</div>
-        <div className={`text-center text-slate-900 text-xl font-semibold font-Barlow uppercase leading-tight tracking-tight lg:inline-block hidden`}>2010</div>
+        <div className={`text-center text-slate-900 text-xl font-semibold font-Barlow uppercase leading-tight tracking-tight  hidden`}>2010</div>
+        <div className={`text-center text-red-700 lg:text-4xl text-[28px] font-Barlow font-semibold lg:mt mt-[15px] customImg-margin lg:mb-0 -mb-2 uppercase leading-9 tracking-wide`}>2017</div>
+        <div className={`text-center text-slate-900 text-xl font-semibold font-Barlow uppercase leading-tight tracking-tight  hidden`}>2019</div>
       </div>
       <div className={`yearSection4 flex items-center justify-evenly lg:mt-8 font-Barlow -mt-36 ${currentImageIndex === 5 ? '' : 'hidden'}`}>
-        <div className={`text-center text-slate-900 text-xl font-semibold font-Barlow uppercase leading-tight tracking-tight lg:inline-block hidden`}>2009</div>
-        <div className={`text-center text-red-700 lg:text-4xl text-[28px] font-Barlow font-semibold lg:mt mt-[15px] customImg-margin lg:mb-0 -mb-2 uppercase leading-9 tracking-wide`}>2010</div>
-        <div className={`text-center text-slate-900 text-xl font-semibold font-Barlow uppercase leading-tight tracking-tight lg:inline-block hidden`}>2017</div>
+        <div className={`text-center text-slate-900 text-xl font-semibold font-Barlow uppercase leading-tight tracking-tight  hidden`}>2017</div>
+        <div className={`text-center text-red-700 lg:text-4xl text-[28px] font-Barlow font-semibold lg:mt mt-[15px] customImg-margin lg:mb-0 -mb-2 uppercase leading-9 tracking-wide`}>2019</div>
+        <div className={`text-center text-slate-900 text-xl font-semibold font-Barlow uppercase leading-tight tracking-tight  hidden`}>2022  </div>
       </div>
       <div className={`yearSection4 flex items-center justify-evenly lg:mt-8 font-Barlow -mt-36 ${currentImageIndex === 6 ? '' : 'hidden'}`}>
-        <div className={`text-center text-slate-900 text-xl font-semibold font-Barlow uppercase leading-tight tracking-tight lg:inline-block hidden`}>2010</div>
-        <div className={`text-center text-red-700 lg:text-4xl text-[28px] font-Barlow font-semibold lg:mt mt-[15px] customImg-margin lg:mb-0 -mb-2 uppercase leading-9 tracking-wide`}>2017</div>
-        <div className={`text-center text-slate-900 text-xl font-semibold font-Barlow uppercase leading-tight tracking-tight lg:inline-block hidden`}>2019</div>
-      </div>
-      <div className={`yearSection4 flex items-center justify-evenly lg:mt-8 font-Barlow -mt-36 ${currentImageIndex === 7 ? '' : 'hidden'}`}>
-        <div className={`text-center text-slate-900 text-xl font-semibold font-Barlow uppercase leading-tight tracking-tight lg:inline-block hidden`}>2017</div>
-        <div className={`text-center text-red-700 lg:text-4xl text-[28px] font-Barlow font-semibold lg:mt mt-[15px] customImg-margin lg:mb-0 -mb-2 uppercase leading-9 tracking-wide`}>2019</div>
-        <div className={`text-center text-slate-900 text-xl font-semibold font-Barlow uppercase leading-tight tracking-tight lg:inline-block hidden`}>2022  </div>
-      </div>
-      <div className={`yearSection4 flex items-center justify-evenly lg:mt-8 font-Barlow -mt-36 ${currentImageIndex === 8 ? '' : 'hidden'}`}>
-        <div className={`text-center text-slate-900 text-xl font-semibold font-Barlow uppercase leading-tight tracking-tight lg:inline-block hidden`}>2019</div>
+        <div className={`text-center text-slate-900 text-xl font-semibold font-Barlow uppercase leading-tight tracking-tight hidden`}>2019</div>
         <div className={`text-center text-red-700 lg:text-4xl text-[28px] font-Barlow font-semibold lg:mt mt-[15px] customImg-margin lg:mb-0 -mb-2 uppercase leading-9 tracking-wide`}>2022</div>
-        <div className={`text-center text-slate-900 text-xl font-semibold font-Barlow uppercase leading-tight tracking-tight lg:inline-block hidden`}>1982</div>
+        <div className={`text-center text-slate-900 text-xl font-semibold font-Barlow uppercase leading-tight tracking-tight hidden`}>1982</div>
       </div>
 
 
       <div className="">
-        <div className={`section1 h-[30px] text-center text-foot-blue lg:text-xl font-Barlow text-base px-5 lg:font-normal font-medium leading-7 mt-2 lg:mb-0 -mb-14 ${currentImageIndex === 0 ? '' : 'hidden'}`}>Established as a corporation</div>
-        <div className={`section2 h-[30px] text-center text-foot-blue lg:text-xl font-Barlow text-base px-10 lg:font-normal font-medium leading-7 mt-2 lg:mb-0 -mb-14 ${currentImageIndex === 1 ? '' : 'hidden'}`}>Attained Public Limited Company status</div>
-        <div className={`section3 h-[30px] text-center text-foot-blue lg:text-xl font-Barlow text-base px-10 lg:font-normal font-medium leading-7 mt-2 lg:mb-0 -mb-14 ${currentImageIndex === 2 ? '' : 'hidden'}`}>Attained Public Limited Company status</div>
-        <div className={`section3 h-[30px] text-center text-foot-blue lg:text-xl font-Barlow text-base px-10 lg:font-normal font-medium leading-7 mt-2 lg:mb-0 -mb-14 ${currentImageIndex === 3 ? '' : 'hidden'}`}>Attained Public Limited Company status</div>
-        <div className={`section3 h-[30px] text-center text-foot-blue lg:text-xl font-Barlow text-base px-10 lg:font-normal font-medium leading-7 mt-2 lg:mb-0 -mb-14 ${currentImageIndex === 4 ? '' : 'hidden'}`}>Executed a 1:6 Bonus Issue</div>
-        <div className={`section4 h-[30px] text-center text-foot-blue lg:text-xl font-Barlow text-base px-10 lg:font-normal font-medium leading-7 mt-2 lg:mb-0 -mb-8 ${currentImageIndex === 5 ? '' : 'hidden'}`}>Established AAR Centre for Techno-entrepreneurship, an DSIR approved R&D lab</div>
-        <div className={`section5 h-[30px] text-center text-foot-blue lg:text-xl font-Barlow text-base px-10 lg:font-normal font-medium leading-7 mt-2 lg:mb-0 -mb-14 ${currentImageIndex === 6 ? '' : 'hidden'}`}>Founded AIC - Aartech Solonics Pvt Ltd and Faradigm Ultracapacitors Pvt Ltd</div>
-        <div className={`section5 h-[30px] text-center text-foot-blue lg:text-xl font-Barlow text-base px-10 lg:font-normal font-medium leading-7 mt-2 lg:mb-0 -mb-14 ${currentImageIndex === 7 ? '' : 'hidden'}`}>Successfully went public through an IPO
+        <div className={`section1 h-[30px] text-center text-foot-blue lg:text-xl font-Barlow text-base px-5 lg:font-normal font-medium leading-7 mt-2 lg:mb-0 -mb-14 ${currentImageIndex === 7 ? '' : 'hidden'}`}>Established as a corporation</div>
+        <div className={`section2 h-[30px] text-center text-foot-blue lg:text-xl font-Barlow text-base px-10 lg:font-normal font-medium leading-7 mt-2 lg:mb-0 -mb-14 ${currentImageIndex === 8 ? '' : 'hidden'}`}>Attained Public Limited Company status</div>
+        <div className={`section3 h-[30px] text-center text-foot-blue lg:text-xl font-Barlow text-base px-10 lg:font-normal font-medium leading-7 mt-2 lg:mb-0 -mb-14 ${currentImageIndex === 0 ? '' : 'hidden'}`}>Attained Public Limited Company status</div>
+        <div className={`section3 h-[30px] text-center text-foot-blue lg:text-xl font-Barlow text-base px-10 lg:font-normal font-medium leading-7 mt-2 lg:mb-0 -mb-14 ${currentImageIndex === 1 ? '' : 'hidden'}`}>Attained Public Limited Company status</div>
+        <div className={`section3 h-[30px] text-center text-foot-blue lg:text-xl font-Barlow text-base px-10 lg:font-normal font-medium leading-7 mt-2 lg:mb-0 -mb-14 ${currentImageIndex === 2 ? '' : 'hidden'}`}>Executed a 1:6 Bonus Issue</div>
+        <div className={`section4 h-[30px] text-center text-foot-blue lg:text-xl font-Barlow text-base px-10 lg:font-normal font-medium leading-7 mt-2 lg:mb-0 -mb-8 ${currentImageIndex === 3 ? '' : 'hidden'}`}>Established AAR Centre for Techno-entrepreneurship, an DSIR approved R&D lab</div>
+        <div className={`section5 h-[30px] text-center text-foot-blue lg:text-xl font-Barlow text-base px-10 lg:font-normal font-medium leading-7 mt-2 lg:mb-0 -mb-14 ${currentImageIndex === 4 ? '' : 'hidden'}`}>Founded AIC - Aartech Solonics Pvt Ltd and Faradigm Ultracapacitors Pvt Ltd</div>
+        <div className={`section5 h-[30px] text-center text-foot-blue lg:text-xl font-Barlow text-base px-10 lg:font-normal font-medium leading-7 mt-2 lg:mb-0 -mb-14 ${currentImageIndex === 5 ? '' : 'hidden'}`}>Successfully went public through an IPO
         </div>
-        <div className={`section5 h-[30px] text-center text-foot-blue lg:text-xl font-Barlow text-base px-10 lg:font-normal font-medium leading-7 mt-2 lg:mb-0 -mb-14 ${currentImageIndex === 8 ? '' : 'hidden'}`}>Winner of IDEX
+        <div className={`section5 h-[30px] text-center text-foot-blue lg:text-xl font-Barlow text-base px-10 lg:font-normal font-medium leading-7 mt-2 lg:mb-0 -mb-14 ${currentImageIndex === 6 ? '' : 'hidden'}`}>Winner of IDEX
         </div>
       </div>
     </div>
