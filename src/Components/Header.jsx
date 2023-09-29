@@ -14,7 +14,7 @@ const Header = () => {
         
         <div className="flex flex-col  md:flex-row justify-center md:space-x-4">
           <Link
-            to="/industries"
+            to="/industries/wind-power"
             className="w-full hidden lg:block md:w-[336px] h-[220px] text-white pt-8 px-4 md:px-7 font-Barlow link mb-4 md:mb-0"
           >
             <h2 className="font-[800]  border-b-2 text-[14px] tracking-[.2em] md:text-[18px] mb-2 md:mb-6 ">
@@ -25,7 +25,7 @@ const Header = () => {
             </p>
           </Link>
           <Link
-            to="/products"
+            to="/products/BTS-2000"
             className="w-full hidden lg:block md:w-[336px] h-[220px]   text-white pt-8 px-4 md:px-7 font-Barlow link mb-4 md:mb-0"
           >
             <h2 className="font-[800]  border-b-2 text-[14px] tracking-[.2em] md:text-[18px] mb-2 md:mb-6">
@@ -36,7 +36,7 @@ const Header = () => {
             </p>
           </Link>
           <Link
-            to="/solutions"
+            to="/solutions/reactive-power-compensation"
             className="w-full hidden lg:block md:w-[336px] h-[220px]   text-white pt-8 px-4 md:px-7 font-Barlow link mb-4 md:mb-0"
           >
             <h2 className="font-[800]  border-b-2 text-[14px] tracking-[.2em] md:text-[18px] mb-2 md:mb-6">
