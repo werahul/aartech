@@ -116,9 +116,9 @@ const Navbar = () => {
             <div
               className={`overflow-hidden flex flex-col customTransition  ${isDivVisible ? 'h-auto opacity-100 translate-y-[0%] ' : 'h-0 opacity-0 translate-y-[-20%]'} bg-transparent rounded-lg`}
             >
-              <Link to="/industries" className="lg:border-none lg:pb-0 border-b pb-4 uppercase text-white  py-4 ml-14 border-neutral-500">industries</Link>
-              <Link to="/products" className="lg:border-none lg:pb-0 border-b pb-4 uppercase text-white  py-4 ml-14 border-neutral-500">products</Link>
-              <Link to="/solutions" className="lg:border-none  lg:pb-0 border-b pb-4 uppercase text-white pl-14 py-4 border-neutral-500">solutions</Link>
+              <Link to="/industries/wind-power" className="lg:border-none lg:pb-0 border-b pb-4 uppercase text-white  py-4 ml-14 border-neutral-500">industries</Link>
+              <Link to="/products/BTS-2000" className="lg:border-none lg:pb-0 border-b pb-4 uppercase text-white  py-4 ml-14 border-neutral-500">products</Link>
+              <Link to="/solutions/reactive-power-compensation" className="lg:border-none  lg:pb-0 border-b pb-4 uppercase text-white pl-14 py-4 border-neutral-500">solutions</Link>
             </div>
           </div>
         </Link>

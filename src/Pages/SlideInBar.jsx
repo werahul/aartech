@@ -24,17 +24,17 @@ const SlideInBar = () => {
 
   return (
     <div className={`slide-in-bar ${isVisible ? "visible lg:flex items-center justify-center hidden space-x-8 " : ""}`}>
-      <Link to="/industries/wind-power" className={`link-item ${location.pathname === "/industries" ? "active" : ""}`}>
+      <Link to="/industries" className={`link-item ${location.pathname === "/industries" ? "active" : ""}`}>
         <div className={`text-white font-bold uppercase leading-[18px] font-Barlow text-lg tracking-tight cursor-pointer ${location.pathname === "/industries" ? "active-link" : ""}`}>
           INDUSTRIES
         </div>
       </Link>
-      <Link to="/products/BTS-2000" className={`link-item ${location.pathname === "/products" ? "active" : ""}`}>
+      <Link to="/products" className={`link-item ${location.pathname === "/products" ? "active" : ""}`}>
         <div className={`text-white font-bold uppercase leading-[18px] font-Barlow text-lg tracking-tight cursor-pointer ${location.pathname === "/products" ? "active-link" : ""}`}>
           PRODUCTS
         </div>
       </Link>
-      <Link to="/solutions/reactive-power-compensation" className={`link-item ${location.pathname === "/solutions" ? "active" : ""}`}>
+      <Link to="/solutions" className={`link-item ${location.pathname === "/solutions" ? "active" : ""}`}>
         <div className={`text-white font-bold uppercase leading-[18px] font-Barlow text-lg tracking-tight cursor-pointer ${location.pathname === "/solutions" ? "active-link" : ""}`}>
           SOLUTIONS
         </div>
