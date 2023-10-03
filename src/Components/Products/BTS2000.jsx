@@ -3,13 +3,17 @@ import { Navbar, Footer } from "../index"
 import { product1 } from '../../assets/workImages'
 import { download } from "../../assets/images"
 import { Cimg1, Cimg2, Cimg3, Cimg4 } from '../../assets/CLogoBlack'
+ 
+import {Accordion, Accordion2, Accordion3} from "../../Components"
+
+import { CustomerLogos2 } from '../../Components'
 
 
 const BTS2000 = () => {
 
     const [selectedTag, setSelectedTag] = useState("tag1"); // State to track the selected tag
     const tagContents = {
-         tag1: 'Thermal Power Generation serves as the largest source of electrical energy today. While the technologies for running such plants have matured tremendously over the years, there continue to be several key concerns in its operations. There is a very high focus today on improved Plant Load Factor (PLF) with heightened revenue consciousness, bottom-line efficiencies, productivity benchmarks and system improvement requirements.',
+        tag1: 'Thermal Power Generation serves as the largest source of electrical energy today. While the technologies for running such plants have matured tremendously over the years, there continue to be several key concerns in its operations. There is a very high focus today on improved Plant Load Factor (PLF) with heightened revenue consciousness, bottom-line efficiencies, productivity benchmarks and system improvement requirements.',
         tag2: 'Content for tag2 goes here.',
         tag3: 'Content for tag3 goes here.',
         tag4: 'Content for tag4 goes here.',
@@ -192,9 +196,9 @@ const BTS2000 = () => {
                         onClick={() => handleTagClick('tag5')}
                     >
                         METALS
-                    </button>   
+                    </button>
 
-                    
+
                     <button
                         className={`tag ${selectedTag === 'tag6'
                             ? 'bg-white text-box-red border-box-red'
@@ -267,7 +271,7 @@ const BTS2000 = () => {
                     Please mail your custom specific requirements along with a copy of your Single Line Diagram (SLD), Specifications (if any) and Operational Philosophy to bts@aartechsolonics.com . We would be happy to assist you with our recommendations in the best possible manner.
                 </div>
 
-                <div className="flex lg:flex-row flex-col gap-x-[28px] gap-y-6 lg:mt-20 mt-10">
+                <div className="lg:flex hidden lg:flex-row flex-col gap-x-[28px] gap-y-6 lg:mt-20 mt-10">
 
                     <div className=" w-[100%] h-auto border border-slate-900 lg:py-[59px] py-6 lg:px-[39px] px-4" >
 
@@ -353,15 +357,15 @@ const BTS2000 = () => {
                 </div>
 
 
-                <div className="text-black lg:text-4xl text-[28px] font-normal font-antonio lg:mt-20 mt-10">Customers</div>
-                <div className="flex items-center space-x-5 lg:space-x-10 mt-4 lg:mt-9">
-                    <img src={Cimg1} alt="" className="w-20 h-8 lg:w-auto lg:h-auto" />
-                    <img src={Cimg2} alt="" className="w-24 h-6 lg:w-auto lg:h-auto" />
-                    <img src={Cimg3} alt="" className="w-10 h-12 lg:w-auto lg:h-auto" />
-                    <img src={Cimg4} alt="" className="w-24 h-10 lg:w-auto lg:h-auto" />
-                </div>
+                <Accordion />
+                <Accordion2 />
+                <Accordion3 />
 
-                <div className="text-black lg:text-4xl text-[28px] font-normal font-antonio lg:mt-20 mt-10">DOWNLOADS</div>
+
+                <div className="text-black lg:text-4xl text-[28px] font-normal font-antonio lg:mt-20 mt-10">Customers</div>
+                <CustomerLogos2/>
+
+                <div className="text-black lg:text-4xl text-[28px] font-normal font-antonio lg:mt-20 mt-0">DOWNLOADS</div>
 
                 <div className="lg:flex gap-x-5 lg:mt-[46px] mt-6">
                     <div className="lg:w-[60%] w-[100%]">

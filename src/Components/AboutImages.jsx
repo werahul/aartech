@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import {  abGallary1992, abGallary2005, abGallary2009, abGallary2010, abGallary2017, abGallary2019, abGallary2022, abGallary1982, abGallary1988,leftArw, rightArw } from '../assets/images';
+import { abGallary1992, abGallary2005, abGallary2009, abGallary2010, abGallary2017, abGallary2019, abGallary2022, abGallary1982, abGallary1988, leftArw, rightArw } from '../assets/images';
 
 const AboutImages = () => {
   const images = [
     // Provide URLs to your images here
-   abGallary1992, abGallary2005, abGallary2009, abGallary2010, abGallary2017 ,abGallary2019,abGallary2022, abGallary1982, abGallary1988, 
+    abGallary1992, abGallary2005, abGallary2009, abGallary2010, abGallary2017, abGallary2019, abGallary2022, abGallary1982, abGallary1988,
   ];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -32,7 +32,7 @@ const AboutImages = () => {
               <img src={leftArw} alt="" className='lg:w-full lg:h-full w-3 h-4' />
             </div>
             <div className="absolute lg:top-[40%] top-[50%] lg:right-[0px] right-[1rem]  transform -translate-y-1/2 text-black cursor-pointer font-bold text-3xl select-none hover:text-4xl" onClick={handleNext}>
-            <img src={rightArw} alt="" className='lg:w-full lg:h-full w-3 h-4'/>
+              <img src={rightArw} alt="" className='lg:w-full lg:h-full w-3 h-4' />
             </div>
           </div>
           <div className="relative w-[30%] mt-6 lg:inline-block hidden ">
@@ -41,10 +41,14 @@ const AboutImages = () => {
           </div>
         </div>
       </div>
-      <div className="h-[0px] border border-slate-900 lg:flex items-center justify-evenly mt-6 hidden">
-        <div className="w-8 h-8 bg-white rounded-full border border-red-700 cursor-pointer" ></div>
-        <div className="w-[52px] h-[52px] bg-white rounded-full border border-red-700 cursor-pointer" />
-        <div className="w-8 h-8 bg-white rounded-full border border-red-700 cursor-pointer" ></div>
+      <div className="flex justify-center items-center">
+        <div className="h-[0px] w-[23%] border border-slate-900 lg:flex items-center justify-evenly mt-6  ">
+          <div className="w-9 h-9 bg-white rounded-full border border-red-700 cursor-pointer right-[75%] absolute"  ></div>
+        </div>
+        <div className="h-[0px] w-[48%] border border-slate-900 lg:flex items-center justify-evenly mt-6 hidden ml-auto ">
+          <div className="w-[52px] h-[52px] bg-white rounded-full border border-red-700 absolute right-[48%] cursor-pointer" />
+          <div className="w-8 h-8 bg-white rounded-full border absolute right-[24%] 2xl:right-[20%] border-red-700 cursor-pointer" ></div>
+        </div>
       </div>
       <div className={`yearSection1 flex items-center justify-evenly lg:mt-8 font-Barlow -mt-36 ${currentImageIndex === 7 ? '' : 'hidden'}`}>
         <div className={`text-center text-slate-900 text-xl font-semibold font-Barlow uppercase leading-tight tracking-tight  hidden`}>2022</div>
@@ -56,7 +60,7 @@ const AboutImages = () => {
         <div className={`text-center text-red-700 lg:text-4xl text-[28px] font-Barlow font-semibold mt-[15px] customImg-margin lg:mb-0 -mb-2 uppercase leading-9 tracking-wide`}>1988</div>
         <div className={`text-center text-slate-900 text-xl font-semibold uppercase leading-tight tracking-tight  hidden`}>1992</div>
       </div>
-      
+
       <div className={`yearSection3 flex items-center justify-evenly lg:mt-8 font-Barlow -mt-36 ${currentImageIndex === 0 ? '' : 'hidden'}`}>
         <div className={`text-center text-slate-900 text-xl font-semibold font-Barlow uppercase leading-tight tracking-tight  hidden`}>1988</div>
         <div className={`text-center text-red-700 lg:text-4xl text-[28px] font-semibold lg:mt mt-[15px] customImg-margin lg:mb-0 -mb-2 uppercase leading-9 tracking-wide`}>1992</div>

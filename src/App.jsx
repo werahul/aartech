@@ -25,27 +25,25 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 const App = () => {
   return (
     <>
-    <BrowserRouter>
-      <Routes>
-      <Route exact path="/" Component={Home} />
-
-        <Route exact path="/brands" Component={OurBrands} />
-        <Route exact path="/work" />
-        <Route exact path="/contact" Component={Contact} />
-        <Route exact path="/about" Component={About} />
-        <Route exact path="/custom" Component={CustomSelect} />
-        <Route exact path="/media" Component={Media} />
-        <Route exact path="/industries" Component={Industries} />
-        <Route exact path="/products" Component={Products} />
-        <Route exact path="/solutions" Component={Solutions} />
-        <Route exact path="/announcement-page" Component={AnnouncementPage} />
-        <Route exact path="/privacy-policy" Component={Privacy} />
-        <Route exact path="/cookies" Component={Cookie} />
-        <Route exact path="/industries/wind-power" Component={WindPower} />
-        <Route exact path="/products/BTS-2000" Component={BTS2000} />
-        <Route exact path="/solutions/reactive-power-compensation" Component={Solution} />
-      </Routes>
-    </BrowserRouter>
+      <BrowserRouter>
+        <Routes>
+          <Route exact path="/" Component={Home} />
+          <Route exact path="/brands" Component={OurBrands} />
+          <Route exact path="/work" />
+          <Route exact path="/contact" Component={Contact} />
+          <Route exact path="/about" Component={About} />
+          <Route exact path="/media" Component={Media} />
+          <Route exact path="/industries" Component={Industries} />
+          <Route exact path="/products" Component={Products} />
+          <Route exact path="/solutions" Component={Solutions} />
+          <Route exact path="/announcement-page" Component={AnnouncementPage} />
+          <Route exact path="/privacy-policy" Component={Privacy} />
+          <Route exact path="/cookies" Component={Cookie} />
+          <Route exact path="/industries/wind-power" Component={WindPower} />
+          <Route exact path="/products/BTS-2000" Component={BTS2000} />
+          <Route exact path="/solutions/reactive-power-compensation" Component={Solution} />
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }

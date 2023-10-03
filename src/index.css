@@ -394,3 +394,48 @@
   transform: rotate(180deg);
   transition: all .3s ease-in-out;
 }
+
+
+/* Accordion=------ */
+.accordion {
+  border-bottom: 1px solid black;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.accordion.open .accordion-content {
+  max-height: 1000px;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.accordion-title {
+  flex-grow: 1;
+}
+
+.accordion-icon {
+  font-size: 25px;
+  color: #0C013D;
+  transform: rotate(0deg);
+  transition: transform 0.3s ease-in-out;
+}
+
+.accordion.open .accordion-icon {
+  transform: rotate(-180deg);
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.accordion.open .accordion-content {
+  max-height: 1000px;
+}
