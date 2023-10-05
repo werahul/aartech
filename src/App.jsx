@@ -16,7 +16,7 @@ import Cookie from './Pages/Cookie'
 
 // import Navbar from "./Components/Navbar"
 
-import { WindPower } from './Components/Industries'
+import { WindPower,DefenceAndExp, Renewable, NonRenewable, PowerTran ,HeavyEng, HealthCare, IT, Transport, WasteMang } from './Components/Industries'
 import { BTS2000 } from './Components/Products'
 import { Solution } from './Components/Solutions'
 
@@ -39,7 +39,19 @@ const App = () => {
           <Route exact path="/announcement-page" Component={AnnouncementPage} />
           <Route exact path="/privacy-policy" Component={Privacy} />
           <Route exact path="/cookies" Component={Cookie} />
+
+
           <Route exact path="/industries/wind-power" Component={WindPower} />
+          <Route exact path="/industries/defence-and-exploration" Component={DefenceAndExp} />
+          <Route exact path="/industries/renewable-energy" Component={Renewable} />
+          <Route exact path="/industries/non-renewable-energy" Component={NonRenewable} />
+          <Route exact path="/industries/power-transmission-and-distribution" Component={PowerTran} />
+          <Route exact path="/industries/heavy-engineering-industries" Component={HeavyEng} />
+          <Route exact path="/industries/health-care" Component={HealthCare} />
+          <Route exact path="/industries/it-and-Telecom" Component={IT} />
+          <Route exact path="/industries/transportation" Component={Transport} />
+          <Route exact path="/industries/waste-management" Component={WasteMang} />
+
           <Route exact path="/products/BTS-2000" Component={BTS2000} />
           <Route exact path="/solutions/reactive-power-compensation" Component={Solution} />
         </Routes>

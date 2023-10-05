@@ -4,6 +4,8 @@ import { rImage1, rImage2 } from "../../assets/workImages";
 import { Cimg1, Cimg2, Cimg3, Cimg4 } from '../../assets/CLogoBlack'
 import { Navbar, Footer } from "../index"
 
+import { CustomerLogos2 } from '../../Components'
+
 const Solution = () => {
   const [activeButton, setActiveButton] = useState(1);
 
@@ -123,12 +125,7 @@ const Solution = () => {
           <h2 className="mb-4 font-antonio text-[28px] lg:text-[36px]">
             CUSTOMERS
           </h2>
-          <div className="flex items-center space-x-5 lg:space-x-10 mt-4 lg:mt-9">
-            <img src={Cimg1} alt="" className="w-20 h-8 lg:w-auto lg:h-auto" />
-            <img src={Cimg2} alt="" className="w-24 h-6 lg:w-auto lg:h-auto" />
-            <img src={Cimg3} alt="" className="w-10 h-12 lg:w-auto lg:h-auto" />
-            <img src={Cimg4} alt="" className="w-24 h-10 lg:w-auto lg:h-auto" />
-          </div>
+         <CustomerLogos2/>
         </div>
       </div>
       <Footer />

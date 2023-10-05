@@ -34,13 +34,6 @@
   overflow: hidden;
   user-select: none;
 
-  /* mask-image: linear-gradient(
-    to right,
-    hsl(0 0% 0% / 0),
-    hsl(0 0% 0% / 1) 10%,
-    hsl(0 0% 0% / 1) 90%,
-    hsl(0 0% 0% / 0)
-  ); */
 }
 
 
@@ -55,15 +48,6 @@
   }
 }
 
-/* .common{
-    flex-shrink: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    white-space: nowrap;
-    width: 100%;
-    animation: scrollX 30s linear infinite;
-} */
 
 
 
@@ -328,11 +312,7 @@
 
 }
 
-/* @media (min-width:1400px) and (max-width: 2000px) {
-  .rotate-image {
-    background-position: 20rem;
-  }
-} */
+
 
 
 @media (min-width: 381px) and (max-width: 500px) {
@@ -394,6 +374,7 @@
   transform: rotate(180deg);
   transition: all .3s ease-in-out;
 }
+
 
 
 /* Accordion=------ */

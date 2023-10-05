@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Navbar, Footer } from "../index"
 import { product1 } from '../../assets/workImages'
 import { download } from "../../assets/images"
-import { Cimg1, Cimg2, Cimg3, Cimg4 } from '../../assets/CLogoBlack'
+
  
 import {Accordion, Accordion2, Accordion3} from "../../Components"
 
@@ -365,7 +365,7 @@ const BTS2000 = () => {
                 <div className="text-black lg:text-4xl text-[28px] font-normal font-antonio lg:mt-20 mt-10">Customers</div>
                 <CustomerLogos2/>
 
-                <div className="text-black lg:text-4xl text-[28px] font-normal font-antonio lg:mt-20 mt-0">DOWNLOADS</div>
+                <div className="text-black lg:text-4xl text-[28px] font-normal font-antonio lg:mt-20 mt-4">DOWNLOADS</div>
 
                 <div className="lg:flex gap-x-5 lg:mt-[46px] mt-6">
                     <div className="lg:w-[60%] w-[100%]">

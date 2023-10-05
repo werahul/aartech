@@ -3,6 +3,8 @@ import { Navbar, Footer } from "../index"
 import { industry1 } from '../../assets/workImages'
 import { Cimg1, Cimg2, Cimg3, Cimg4 } from '../../assets/CLogoBlack'
 
+import { CustomerLogos2 } from '../../Components'
+
 
 
 const WindPower = () => {
@@ -222,12 +224,8 @@ const WindPower = () => {
                 </div>
 
                 <div className="text-black lg:text-4xl text-[28px] font-normal font-antonio lg:mt-20 mt-10">Customers</div>
-                <div className="flex items-center space-x-5 lg:space-x-10 mt-3 lg:mt-9">
-                    <img src={Cimg1} alt="" className="w-20 h-8 lg:w-auto lg:h-auto" />
-                    <img src={Cimg2} alt="" className="w-24 h-6 lg:w-auto lg:h-auto" />
-                    <img src={Cimg3} alt="" className="w-10 h-12 lg:w-auto lg:h-auto" />
-                    <img src={Cimg4} alt="" className="w-24 h-10 lg:w-auto lg:h-auto" />
-                </div>
+                
+                <CustomerLogos2/>
 
             </div>
 
