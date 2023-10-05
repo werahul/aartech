@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Navbar, Footer } from "../index"
 import { industry1 } from '../../assets/workImages'
 import { Cimg1, Cimg2, Cimg3, Cimg4 } from '../../assets/CLogoBlack'
@@ -11,6 +11,12 @@ import {Power1,Power2, Power3,Power4, Power5} from '../../assets/IndImages'
 
 
 const PowerTran = () => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0); // Scroll to the top of the page
+    }, []); // Empty dependency array ensures the effect runs only 
+
+
     const [selectedTag, setSelectedTag] = useState("tag1"); // State to track the selected tag
     const [selectedProTag, setSelectedProTag] = useState('PTag1');
     const images = [Power1,Power2, Power3,Power4, Power5]; 
@@ -281,16 +287,18 @@ const PowerTran = () => {
 
                     <div className={`Pro3 flex lg:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag3' ? '' : 'hidden'}`}>
                         <div className="lg:w-[120%] w-[100%] h-auto bg-blue-300">
-                            <img src={kra} alt=""></img>
+                            <img src="" alt=""></img>
                         </div>
                         <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:ml-5 lg:mt-0 mt-4 lg:leading-tight leading-snug">The Auxiliary Power Unit (APU) proves essential in Power Transmission and Distribution operations. With an extra electrical generator, it provides auxiliary power for critical systems such as lighting and avionics, ensuring uninterrupted Power Transmission and Distribution functions. Additionally, it uses bleed air to drive environmental systems, maintaining suitable conditions in challenging environments.</div>
                     </div>
 
                     <div className={`Pro4 flex lg:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag4' ? '' : 'hidden'}`}>
-                        <div className="lg:w-[50%] w-[100%] h-auto ">
+                        <div className="lg:w-[130%] w-[100%] h-auto ">
                             <img src={clip} alt=""></img>
                         </div>
-                        <div className="text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:ml-5 lg:mt-0 mt-4 lg:leading-tight leading-snug">The CLiP operates as an electronically sensed and triggered current limiter, featuring a continuous copper bus bar for regular current flow. Under overcurrent conditions, this path opens to introduce a parallel-mounted current limiting fuse, effectively interrupting the fault.</div>
+                        <div className="text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:ml-5 lg:mt-0 mt-4 lg:leading-tight leading-snug">BestCase aids Power Transmission and Distribution by providing entrepreneurs and engineers with timely and affordable access to high-quality enclosures. Their offerings address the challenges faced by innovators, ensuring that prototypes and delicate equipment are protected during transportation and demonstrations. BestCase's commitment to quality, affordability, and availability enhances the efficiency of showcasing products in the power sector, contributing to seamless presentations and successful business endeavours in the field of Power Transmission and Distribution.
+
+                        </div>
                     </div>
 
                     <div className={`Pro5 flex lg:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag5' ? '' : 'hidden'}`}>

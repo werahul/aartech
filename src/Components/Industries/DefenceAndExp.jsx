@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Navbar, Footer } from "../index"
 import { industry1 } from '../../assets/workImages'
 import {DefenceMain, Defence1,Defence2, Defence3 ,Defence4 } from '../../assets/IndImages'
@@ -10,6 +10,11 @@ import { CustomerLogos2 } from '../../Components'
 
 
 const DefenceAndExp = () => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0); // Scroll to the top of the page
+    }, []); // Empty dependency array ensures the effect runs only 
+
 
     const images = [DefenceMain, Defence1, Defence2, Defence3, Defence4]; // Specify the images for this page
     const [selectedTag, setSelectedTag] = useState("tag1"); // State to track the selected tag

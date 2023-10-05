@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState ,useEffect } from 'react'
 import { Navbar, Footer } from "../index"
 import { industry1 } from '../../assets/workImages'
 import { bestCase, relayPannels, kra, incinerator, wtc, bts, clip } from '../../assets/ProductImages'
@@ -11,6 +11,12 @@ import {non1, non2, non3, non4, non5} from '../../assets/IndImages'
 
 
 const NonRenewable = () => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0); // Scroll to the top of the page
+    }, []); // Empty dependency array ensures the effect runs only 
+
+
     const [selectedTag, setSelectedTag] = useState("tag1"); // State to track the selected tag
     const [selectedProTag, setSelectedProTag] = useState('PTag1');
     const images = [non1, non2, non3, non4, non5 ]; 

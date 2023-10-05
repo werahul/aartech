@@ -22,18 +22,20 @@ const ImageSelect = ({ images }) => {
         </div>
         <div className="mt-4 lg:mt-0 grid grid-cols-4 lg:grid-cols-1 gap-x-3 lg:ml-5 gap-y-4 xxl:gap-y-6 2xl:gap-y-2">
           {/* Small images */}
-          {images.slice(0,4).map((image, index) => (
-            <div
-              key={index}
-              className="w-[80px] h-[94px] group"
-              onClick={() => handleSmallImageClick(index)}
-            >
-              <img
-                src={image}
-                alt={`Small Image ${index + 1}`}
-                className="w-20 h-20 2xl:h-24 cursor-pointer"
-              />
-            </div>
+          {images.map((image, index) => (
+            index !== selectedImageIndex && (
+              <div
+                key={index}
+                className="w-[80px] h-[94px] group"
+                onClick={() => handleSmallImageClick(index)}
+              >
+                <img
+                  src={image}
+                  alt={`Small Image ${index + 1}`}
+                  className="w-20 h-20 2xl:h-24 cursor-pointer"
+                />
+              </div>
+            )
           ))}
         </div>
       </div>

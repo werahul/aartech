@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Navbar, Footer } from "../index"
 import { industry1 } from '../../assets/workImages'
 import { Cimg1, Cimg2, Cimg3, Cimg4 } from '../../assets/CLogoBlack'
@@ -11,6 +11,12 @@ import {heavy1, heavy2, heavy3, heavy4, heavy5} from '../../assets/IndImages'
 
 
 const HeavyEng = () => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0); // Scroll to the top of the page
+    }, []); // Empty dependency array ensures the effect runs only 
+
+
     const [selectedTag, setSelectedTag] = useState("tag1"); // State to track the selected tag
     const [selectedProTag, setSelectedProTag] = useState('PTag1');
     const images = [heavy1, heavy2, heavy3, heavy4, heavy5]; 
@@ -416,7 +422,7 @@ const HeavyEng = () => {
                     </div>
 
                     <div className={`Pro4 flex lg:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag4' ? '' : 'hidden'}`}>
-                        <div className="lg:w-[100%] w-[100%] h-auto ">
+                        <div className="lg:w-[120%] w-[100%] h-auto ">
                             <img src={clip} alt=""></img>
                         </div>
                         <div className="text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:ml-5 lg:mt-0 mt-4 lg:leading-tight leading-snug">The Current Limiting Protector (CLiP®) is a proven solution for Heavy Engineering Industries. With over 25 years of global service, CLiP® offers superior system protection, limiting currents up to 5000A in systems rated to 38kV. It achieves fault interruption beyond 300kA rms symmetrical at 15.5kV. The CLiP® functions as an electronically sensed and triggered current limiter, enhancing safety by opening the continuous copper bus bar path under overcurrent conditions and introducing a parallel-mounted current limiting fuse to interrupt faults effectively.</div>

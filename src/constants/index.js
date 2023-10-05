@@ -12,47 +12,56 @@ const industry = [
     title: "RENEWABLE ENERGY",
     image: ind1,
     desc: "Dive into the future of renewable energy with Aartech Solonics. Leveraging our extensive expertise, global network, and robust infrastructure, we collaborate with clients to tailor comprehensive unitized power management solutions.",
+    path: "/industries/renewable-energy"
   },
   {
     title: "POWER T&D",
     image: ind2,
     desc: "Whether you're an expert in distribution, EPC contracting, or system integration, or system integration, our solutions address pressing concerns like deregulation, privatization, power quality, and more, to optimize energy management.",
+    path: "/industries/power-transmission-and-distribution"
   },
   {
     title: "HEAVY ENGINEERING",
     image: ind3,
     desc: "We pioneer solutions in industries like petrochemical, mining, textile, and cement. We optimize operations through reactive power compensation, cutting-edge control & automation via CRPS, and fault current limiting for enhanced safety.",
+    path: "/industries/heavy-engineering-industries"
   },
   {
     title: "DEFENCE & EXPLORATION",
     image: ind4,
     desc: "Elevate defense capabilities with Aartech Solonics. Empowering space, marine, and remote sensing sectors through cutting-edge solutions. Our solutions offer uninterrupted power supply and advanced control systems that redefine reliability.",
+    path: "/industries/defence-and-exploration"
   },
   {
     title: "HEALTHCARE",
     image: ind5,
     desc: "For consulting, EPC, and integration, Aartech Solonics optimizes power quality in health care industry. Our solutions address inter-dependency challenges & enhance plant utilization, revenue, productivity, and overall system improvements.",
+    path: "/industries/health-care"
   },
   {
     title: "IT & TELECOM",
     image: ind6,
     desc: "IT & Telecom demand top power quality. We offer advanced solutions to address high TCO associated with conventional UPS. Our facility protection surpasses load-only safeguarding, aligning with criticality and interdependence.",
+    path: "/industries/it-and-telecom"
   },
   {
     title: "WASTE MANAGEMENT",
     image: ind7,
     desc: "The waste management sector involves varied tasks: collecting, processing, recycling, and disposal of waste. It's vital for health, environment, & sustainable resource use. Aartech offers innovative solutions & products for this sector.",
+    path: "/industries/waste-management"
   },
   {
     title: "NON RENEWABLES",
     image: ind8,
-    desc: "We drive non-renewable industries forward. From nuclear & thermal to diesel power, we empower critical sectors. Our expertise lies in fault current limiting, ensuring system stability, distributed automation, & remote telemetry-based solutions."
+    desc: "We drive non-renewable industries forward. From nuclear & thermal to diesel power, we empower critical sectors. Our expertise lies in fault current limiting, ensuring system stability, distributed automation, & remote telemetry-based solutions.",
+    path: "/industries/non-renewable-energy"
    
   },
   {
     title: "TRANSPORTATION",
     image: ind9,
-    desc: "We offer innovations for the transport industry in engine starting, load limiting, and pulse power solutions. Our KranKing™ Ultracapacitors stand out for ensuring dependable engine starts and enhancing peripherals performance."
+    desc: "We offer innovations for the transport industry in engine starting, load limiting, and pulse power solutions. Our KranKing™ Ultracapacitors stand out for ensuring dependable engine starts and enhancing peripherals performance.",
+    path: "/industries/transportation"
   },
 
 ];

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Navbar, Footer } from "../index"
 import { industry1 } from '../../assets/workImages'
 import { Cimg1, Cimg2, Cimg3, Cimg4 } from '../../assets/CLogoBlack'
@@ -11,6 +11,12 @@ import {tran1, tran2, tran3, tran4, tran5} from '../../assets/IndImages'
 
 
 const Transport = () => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0); // Scroll to the top of the page
+    }, []); // Empty dependency array ensures the effect runs only 
+
+    
     const [selectedTag, setSelectedTag] = useState("tag1"); // State to track the selected tag
     const [selectedProTag, setSelectedProTag] = useState('PTag1');
     const images = [tran1, tran2, tran3, tran4, tran5]; 
