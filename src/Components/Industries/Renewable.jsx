@@ -143,7 +143,7 @@ const Renewable = () => {
                         className={`tag ${selectedTag === 'tag1'
                             ? 'bg-white text-box-red border-box-red'
                             : 'text-gray-500 border-gray-400'
-                            } w-[300px] h-[49px] px-[12px] py-[9px] whitespace-nowrap border  text-base font-normal font-Barlow tracking-wider`}
+                            } w-[300px] h-[49px] px-[12px] py-[9px] whitespace-nowrap border uppercase text-base font-normal font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag1')}
                     >
                         CONTROL & AUTOMATION
@@ -153,7 +153,7 @@ const Renewable = () => {
                         className={`tag ${selectedTag === 'tag2'
                             ? 'bg-white text-box-red border-box-red'
                             : 'text-gray-500 border-gray-400'
-                            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
+                            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag2')}
                     >
                         Process Continuity
@@ -162,7 +162,7 @@ const Renewable = () => {
                         className={`tag ${selectedTag === 'tag3'
                             ? 'bg-white text-box-red border-box-red'
                             : 'text-gray-500 border-gray-400'
-                            } w-[200px] h-[49px] px-[20px] py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
+                            } w-[200px] h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag3')}
                     >
                         Pulse Power
@@ -171,7 +171,7 @@ const Renewable = () => {
                         className={`tag ${selectedTag === 'tag4'
                             ? 'bg-white text-box-red border-box-red'
                             : 'text-gray-500 border-gray-400'
-                            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
+                            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag4')}
                     >
                         Customised Professional Case
@@ -180,7 +180,7 @@ const Renewable = () => {
                         className={`tag ${selectedTag === 'tag5'
                             ? 'bg-white text-box-red border-box-red'
                             : 'text-gray-500 border-gray-400'
-                            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
+                            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag5')}
                     >
                         Waste Management System
@@ -192,7 +192,7 @@ const Renewable = () => {
                         className={`tag ${selectedTag === 'tag6'
                             ? 'bg-white text-box-red border-box-red'
                             : 'text-gray-500 border-gray-400'
-                            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
+                            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag6')}
                     >
                         Solar Design, Engineering & Consultancy services

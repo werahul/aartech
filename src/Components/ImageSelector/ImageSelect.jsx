@@ -26,13 +26,13 @@ const ImageSelect = ({ images }) => {
             index !== selectedImageIndex && (
               <div
                 key={index}
-                className="w-[80px] h-[94px] group"
+                className="lg:w-[80px] lg:h-[94px]  group"
                 onClick={() => handleSmallImageClick(index)}
               >
                 <img
                   src={image}
                   alt={`Small Image ${index + 1}`}
-                  className="w-20 h-20 2xl:h-24 cursor-pointer"
+                  className="w-20 lg:h-20 2xl:h-24 cursor-pointer"
                 />
               </div>
             )

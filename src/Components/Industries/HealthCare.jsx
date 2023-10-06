@@ -6,7 +6,7 @@ import { bestCase, relayPannels, kra, incinerator, wtc, bts, clip, solar } from 
 
 import { CustomerLogos2 } from '../../Components'
 import { ImageSelect } from "../ImageSelector";
-import {health1, health2 , health3, health4 , health5} from '../../assets/IndImages'
+import { health1, health2, health3, health4, health5 } from '../../assets/IndImages'
 
 
 
@@ -19,10 +19,10 @@ const HealthCare = () => {
 
     const [selectedTag, setSelectedTag] = useState("tag1"); // State to track the selected tag
     const [selectedProTag, setSelectedProTag] = useState('PTag1');
-    const images = [health1, health2 , health3, health4 , health5]; 
+    const images = [health1, health2, health3, health4, health5];
 
     const tagContents = {
-        tag1: "Aartech's Control & Relay Panels (CRP) play a vital role in healthcare infrastructure. Designed for substations, they incorporate essential components for monitoring and controlling electrical systems, ensuring reliability and safety. These panels are adaptable for various circuit configurations, meeting the unique needs of healthcare facilities.",
+        tag1: "Control and automation technologies play a pivotal role in healthcare solutions. Aartech leverages a wide range of technologies to provide tailored solutions, ensuring high-quality and efficient outcomes. Their expertise in technology allows them to harmonise components effectively, delivering customised solutions that enhance healthcare operations. Their solid-state and microprocessor-based control products set them apart by addressing specific needs and adding significant value compared to conventional approaches with discrete electrical devices.        ",
 
         tag2: "Process continuity is a critical solution for healthcare, where electrical outages can lead to immediate and lasting disruptions in patient care and operational efficiency. These incidents are etched in the memory of healthcare professionals who witness their impact firsthand. As healthcare focuses on revenue, efficiency, productivity, and system improvements, Aartech collaborates closely with consultants, equipment manufacturers, contractors, and end users to provide holistic solutions. Our approach ensures uninterrupted processes, safeguarding patient well-being and aligning with the industry's ever-increasing performance and reliability standards.",
 
@@ -58,7 +58,7 @@ const HealthCare = () => {
                     <div className="lg:hidden text-black text-[28px] font-normal font-antonio">Healthcare</div>
                     <div className="lg:hidden text-foot-blue text-lg font-bold font-Barlow tracking-wider mb-4">INDUSTRIES</div>
 
-                    <ImageSelect images={images}/>
+                    <ImageSelect images={images} />
 
                     <div className="lg:w-[55%] lg:ml-[44px]">
                         <div className="lg:block hidden text-black text-4xl font-normal font-antonio">Healthcare</div>
@@ -135,6 +135,14 @@ const HealthCare = () => {
                         Waste Management System
                     </button>
 
+
+
+
+
+
+                </div>
+                <div div className="lg:flex hidden space-x-3 mt-3">
+
                     <button
                         className={`tag ${selectedTag === 'tag7'
                             ? 'bg-white text-box-red border-box-red'
@@ -145,11 +153,6 @@ const HealthCare = () => {
                         Solar Design, Engineering & Consultancy services
                     </button>
 
-
-
-
-                </div>
-                <div div className="lg:flex hidden space-x-3 mt-3">
                     <button
                         className={`tag ${selectedTag === 'tag8'
                             ? 'bg-white text-box-red border-box-red'
@@ -171,7 +174,7 @@ const HealthCare = () => {
                         className={`tag ${selectedTag === 'tag1'
                             ? 'bg-white text-box-red border-box-red'
                             : 'text-gray-500 border-gray-400'
-                            } w-[300px] h-[49px] px-[12px] py-[9px] whitespace-nowrap border  text-base font-normal font-Barlow tracking-wider`}
+                            } w-[300px] h-[49px] px-[12px] py-[9px] whitespace-nowrap border uppercase text-base font-normal font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag1')}
                     >
                         CONTROL & AUTOMATION
@@ -181,7 +184,7 @@ const HealthCare = () => {
                         className={`tag ${selectedTag === 'tag2'
                             ? 'bg-white text-box-red border-box-red'
                             : 'text-gray-500 border-gray-400'
-                            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
+                            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag2')}
                     >
                         Process Continuity
@@ -190,7 +193,7 @@ const HealthCare = () => {
                         className={`tag ${selectedTag === 'tag3'
                             ? 'bg-white text-box-red border-box-red'
                             : 'text-gray-500 border-gray-400'
-                            } w-[200px] h-[49px] px-[20px] py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
+                            } w-[200px] h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag3')}
                     >
                         Pulse Power
@@ -199,7 +202,7 @@ const HealthCare = () => {
                         className={`tag ${selectedTag === 'tag4'
                             ? 'bg-white text-box-red border-box-red'
                             : 'text-gray-500 border-gray-400'
-                            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
+                            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag4')}
                     >
                         Power Backup Unit
@@ -208,7 +211,7 @@ const HealthCare = () => {
                         className={`tag ${selectedTag === 'tag5'
                             ? 'bg-white text-box-red border-box-red'
                             : 'text-gray-500 border-gray-400'
-                            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
+                            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag5')}
                     >
                         Customised Professional Case
@@ -220,7 +223,7 @@ const HealthCare = () => {
                         className={`tag ${selectedTag === 'tag6'
                             ? 'bg-white text-box-red border-box-red'
                             : 'text-gray-500 border-gray-400'
-                            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
+                            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag6')}
                     >
                         Waste Management System
@@ -230,7 +233,7 @@ const HealthCare = () => {
                         className={`tag ${selectedTag === 'tag7'
                             ? 'bg-white text-box-red border-box-red'
                             : 'text-gray-500 border-gray-400'
-                            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
+                            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag7')}
                     >
                         Solar Design, Engineering & Consultancy services
@@ -240,7 +243,7 @@ const HealthCare = () => {
                         className={`tag ${selectedTag === 'tag8'
                             ? 'bg-white text-box-red border-box-red'
                             : 'text-gray-500 border-gray-400'
-                            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
+                            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag8')}
                     >
                         Energy Efficiency
@@ -293,7 +296,7 @@ const HealthCare = () => {
                             } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag4')}
                     >
-                    Auxiliary Power Unit
+                        Auxiliary Power Unit
                     </button>
 
 
@@ -328,7 +331,7 @@ const HealthCare = () => {
                             } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase  text-lg font-normal font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag7')}
                     >
-                    Incinerator
+                        Incinerator
                     </button>
 
                     <button
@@ -338,7 +341,7 @@ const HealthCare = () => {
                             } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase  text-lg font-normal font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag8')}
                     >
-                    Solar Design & Services
+                        Solar Design & Services
                     </button>
 
                     <button
@@ -348,7 +351,7 @@ const HealthCare = () => {
                             } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase  text-lg font-normal font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag9')}
                     >
-                    AC & DC UPS
+                        AC & DC UPS
                     </button>
 
 
@@ -398,7 +401,7 @@ const HealthCare = () => {
                             } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag4')}
                     >
-                    Auxiliary Power Unit
+                        Auxiliary Power Unit
                     </button>
                     <button
                         className={`tag ${selectedProTag === 'PTag5'
@@ -419,7 +422,7 @@ const HealthCare = () => {
                             } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag6')}
                     >
-                       WTC
+                        WTC
                     </button>
 
                     <button
@@ -429,7 +432,7 @@ const HealthCare = () => {
                             } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag7')}
                     >
-                    Incinerator
+                        Incinerator
                     </button>
 
                     <button
@@ -439,7 +442,7 @@ const HealthCare = () => {
                             } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag8')}
                     >
-                    Solar Design & Services
+                        Solar Design & Services
                     </button>
 
                     <button
@@ -449,7 +452,7 @@ const HealthCare = () => {
                             } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag9')}
                     >
-                    AC & DC UPS
+                        AC & DC UPS
                     </button>
 
 
@@ -462,12 +465,12 @@ const HealthCare = () => {
                 <div className="proContainer">
 
                     <div className={`Pro1 flex lg:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag1' ? '' : 'hidden'}`}>
-                        <div className="lg:w-[100%] w-[100%] h-auto">
+                        <div className="lg:w-[80%] w-[100%] h-auto">
                             <img src={relayPannels} alt=""></img>
                         </div>
                         <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:ml-5 lg:mt-0 mt-4  lg:leading-tight leading-snug">
 
-                        Aartech's Control & Relay Panels (CRP) play a vital role in healthcare infrastructure. Designed for substations, they incorporate essential components for monitoring and controlling electrical systems, ensuring reliability and safety. These panels are adaptable for various circuit configurations, meeting the unique needs of healthcare facilities.
+                            Aartech's Control & Relay Panels (CRP) play a vital role in healthcare infrastructure. Designed for substations, they incorporate essential components for monitoring and controlling electrical systems, ensuring reliability and safety. These panels are adaptable for various circuit configurations, meeting the unique needs of healthcare facilities.
 
 
 
@@ -476,7 +479,7 @@ const HealthCare = () => {
                     </div>
 
                     <div className={`Pro2 flex lg:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag2' ? '' : 'hidden'}`}>
-                        <div className="lg:w-[120%] w-[100%] h-auto ">
+                        <div className="lg:w-[80%] w-[100%] h-auto bg-gray-300 ">
                             <img src={bts} alt=""></img>
                         </div>
                         <div className="  text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:ml-5 lg:mt-0 mt-4 lg:leading-tight leading-snug">The BTS 2000 Fast Bus Transfer System ensures an uninterrupted power supply in healthcare settings. By swiftly transferring power between independent sources while adhering to safety parameters, it prevents disruptions to critical medical equipment, maintaining continuous patient care even in the event of a power source contingency.</div>
@@ -497,19 +500,19 @@ const HealthCare = () => {
                     </div>
 
                     <div className={`Pro5 flex lg:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag5' ? '' : 'hidden'}`}>
-                        <div className="lg:w-[80%] w-[100%] h-auto ">
+                        <div className="lg:w-[100%] w-[100%] h-auto ">
                             <img src={bestCase} alt=""></img>
                         </div>
                         <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:ml-5 lg:mt-0 mt-4 lg:leading-tight leading-snug">BestCase addresses the challenges in healthcare by providing timely access to quality enclosures for various medical products and equipment. It offers cost-effective solutions, eliminating the need for expensive and often subpar alternatives. BestCase ensures availability, allowing professionals to showcase their offerings effectively, whether for prototypes, demonstrations, or important meetings, contributing to their best-case scenarios in healthcare settings.</div>
                     </div>
 
                     <div className={`Pro6 flex lg:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag6' ? '' : 'hidden'}`}>
-                        <div className="lg:w-[120%] w-[100%] h-auto ">
-                            <img src={wtc } alt=""></img>  
+                        <div className="lg:w-[100%] w-[100%] h-auto ">
+                            <img src={wtc} alt=""></img>
                         </div>
                         <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:ml-5 lg:mt-0 mt-4 lg:leading-tight leading-snug">WTC or Waste To Compost machine, a fully automatic composting machine, contributes to renewable energy by swiftly converting organic waste into compost within 24 hours on-site. This eco-friendly solution adheres to the 3R Principle: reducing waste, recycling it into valuable compost, and using the compost for garden plants. Its quiet and odourless operation makes it a sustainable choice for waste management in renewable energy facilities.</div>
                     </div>
-  
+
                     <div className={`Pro7 flex lg:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag7' ? '' : 'hidden'}`}>
                         <div className="lg:w-[90%] w-[100%] h-auto bg-lime-300">
                             <img src={incinerator} alt=""></img>
@@ -519,7 +522,7 @@ const HealthCare = () => {
                     </div>
 
                     <div className={`Pro8 flex lg:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag8' ? '' : 'hidden'}`}>
-                        <div className="lg:w-[90%] w-[100%] h-auto bg-lime-300">
+                        <div className="lg:w-[100%] w-[100%] h-auto bg-lime-300">
                             <img src={solar} alt=""></img>
                         </div>
                         <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:ml-5 lg:mt-0 mt-4 lg:leading-tight leading-snug">Aarchtech's Solar Design and Services for healthcare encompass a wide range of offerings, from permit design and sales proposals to utility-scale solutions and EV chargers. Their expert team ensures tailored solar panel layouts and optimised energy generation. Compliant with industry standards and regulations, Aarchtech provides end-to-end support, covering feasibility studies, system design, and comprehensive installation and maintenance services, fostering a greener and more sustainable energy future for healthcare facilities.
