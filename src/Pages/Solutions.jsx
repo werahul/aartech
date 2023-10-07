@@ -32,7 +32,7 @@ const Solutions = () => {
     <div>
       <Navbar />
       <SlideInBar/>
-      <div className="px-5 pt-[80px] lg:pt-[88px] lg:px-20 2xl:px-[120px]">
+      <div className="px-5 pt-[20px] lg:pt-[88px] lg:px-20 2xl:px-[120px]">
        {/* <div className="font-Barlow font-[500] mt-[24px] mb-[24px] lg:mt-[28px] lg:mb-[18px] text-[#0C013D]">
           <BreadCrumbs breadcrumbs={breadcrumbs} />
   </div>*/}

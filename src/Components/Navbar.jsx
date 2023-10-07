@@ -5,12 +5,16 @@ import SlideInBar from "../Pages/SlideInBar";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isInvesterButtonActive, setIsInvesterButtonActive] = useState(false);
   const [isWorkButtonActive, setIsWorkButtonActive] = useState(false);
-  const [rotate, setRotate] = useState(0)
+  const [rotate, setRotate] = useState(false)
+  const [rotate2, setRotate2] = useState(false)
   const [isRed, setIsRed] = useState(true);
+  const [isRedInv, setIsRedInv] = useState(true);
 
   // Create state to track the visibility of the absolute div
   const [isDivVisible, setDivVisibility] = useState(false);
+  const [isDivOpen, setDivOpen] = useState(false);
 
   // Function to toggle the visibility of the absolute div
   const toggleDivVisibility = () => {
@@ -18,17 +22,26 @@ const Navbar = () => {
     setRotate(!rotate);
     setIsRed(!isRed);
   };
+  const toggleDivVisibility4Invest = () => {
+    setDivOpen(!isDivOpen);
+    setRotate2(!rotate2);
+    setIsRedInv(!isRedInv);
+  };
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
   const toggleColor = () => {
     setIsWorkButtonActive(!isWorkButtonActive);
+    setIsInvesterButtonActive(!isInvesterButtonActive);
+
   };
 
   const location = useLocation();
   const rotateClass = rotate ? 'customRotate' : '';
+  const rotateClass2 = rotate2 ? 'customRotate' : '';
   const workClass = isRed ? 'text-white' : 'text-box-red';
+  const InvClass = isRedInv ? 'text-white' : 'text-box-red';
   const linkStyle = {
     color: isWorkButtonActive ? '#DA0001' : 'white',
     fontWeight: isWorkButtonActive ? "800" : "",
@@ -42,7 +55,7 @@ const Navbar = () => {
           <img
             src={logo}
             alt=""
-            className="w-[71px] h-[49px] md:w-auto md:h-auto "
+            className="w-[85px] h-[53px] md:w-auto md:h-auto "
           />
         </Link>
         <div className="flex items-center  flex-row-reverse lg:flex-row">
@@ -73,7 +86,7 @@ const Navbar = () => {
       </div>
       <div
         className={`${isMenuOpen
-          ? "flex flex-col lg:py-20 py-[7rem] px-5 lg:text-[24px] text-lg space-y-4 fixed h-screen inset-0 bg-neutral-800"
+          ? "flex flex-col lg:py-20 py-[7rem] px-5 lg:text-[24px] text-lg space-y-4 fixed h-screen inset-0 bg-neutral-800 overflow-y-auto"
           : "hidden lg:flex"
           } flex md:items-center font-Barlow md:space-x-7 mt-0 px-5 md:px-20 z-1`}
       >
@@ -104,11 +117,6 @@ const Navbar = () => {
             <div className={`lg:border-none lg:pb-0 border-b pb-4 border-neutral-500 w-[100%] ${workClass}`}>
               WORK
               <img src={down} alt="" className={` float-right top-0 right-0 invert  text-white p-2 rounded-full cursor-pointer ${rotateClass} `} onClick={toggleDivVisibility} />
-              {/*<button className=" float-right top-0 right-0 bg-blue-500 text-white p-2 rounded-full cursor-pointer "
-        onClick={toggleDivVisibility}
-          >
-            o        
-        </button>*/}
             </div>
 
 
@@ -147,13 +155,43 @@ const Navbar = () => {
         >
           MEDIA
         </Link>
+
+
         <Link
           // to="/investors"
-          className="text-white font-bold hover:opacity-75"
+          className="text-white font-bold hover:opacity-75 lg:block hidden"
           onClick={() => setIsMenuOpen(false)}
         >
           INVESTORS
         </Link>
+
+
+        <div // to="/work"
+          className="lg:hidden">
+          <div className={`lg:border-none lg:pb-0 border-b pb-4 border-neutral-500 w-[100%] font-bold ${InvClass}`}>
+          INVESTORS
+            <img src={down} alt="" className={` float-right top-0 right-0 invert  text-white p-2 rounded-full cursor-pointer ${rotateClass2} `} onClick={toggleDivVisibility4Invest} />
+          </div>
+
+
+
+          <div
+            className={`overflow-hidden flex flex-col customTransition  ${isDivOpen ? 'h-auto opacity-100 translate-y-[0%] ' : 'h-0 opacity-0 translate-y-[-20%]'} bg-transparent rounded-lg font-bold`}
+          >
+            <Link to="" className="lg:border-none lg:pb-0 border-b pb-4 uppercase text-white  py-4 ml-14 border-neutral-500">OVERVIEW</Link>
+            <Link to="" className="lg:border-none lg:pb-0 border-b pb-4 uppercase text-white  py-4 ml-14 border-neutral-500">FINANCIAL REPORTS</Link>
+            <Link to="" className="lg:border-none  lg:pb-0 border-b pb-4 uppercase text-white py-4 ml-14 border-neutral-500">SHAREHOLDERS INFORMATION</Link>
+            <Link to="" className="lg:border-none  lg:pb-0 border-b pb-4 uppercase text-white py-4 ml-14 border-neutral-500">CHAIRMAI’S COMMUNICATION</Link>
+            <Link to="" className="lg:border-none  lg:pb-0 border-b pb-4 uppercase text-white py-4 ml-14 border-neutral-500">DISCLOSURES</Link>
+            <Link to="" className="lg:border-none  lg:pb-0 border-b pb-4 uppercase text-white py-4 ml-14 border-neutral-500">NOTICES</Link>
+            <Link to="" className="lg:border-none  lg:pb-0 border-b pb-4 uppercase text-white py-4 ml-14 border-neutral-500">CONTACTS</Link>
+            <Link to="" className="lg:border-none  lg:pb-0 border-b pb-4 uppercase text-white pl-14 py-4 border-neutral-500">DOWNLOADS</Link>
+          </div>
+        </div>
+
+
+
+
         <Link
           to="/contact"
           className={`text-white font-bold hover:opacity-75 lg:border-none lg:pb-0 border-b pb-4  border-neutral-500 ${location.pathname === "/contact" ? "active" : ""

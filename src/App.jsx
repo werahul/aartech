@@ -17,8 +17,8 @@ import Cookie from './Pages/Cookie'
 // import Navbar from "./Components/Navbar"
 
 import { WindPower,DefenceAndExp, Renewable, NonRenewable, PowerTran ,HeavyEng, HealthCare, IT, Transport, WasteMang } from './Components/Industries'
-import { BTS2000 } from './Components/Products'
-import { Solution } from './Components/Solutions'
+import { BTS2000,Kranking, ControlRelay, ClipF, BestCase, LoadChecker ,SolarDesign } from './Components/Products'
+import { Solution, CnA, Process, Reliable, Fault, Solar,SolidWaste, Customized } from './Components/Solutions'
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -41,7 +41,7 @@ const App = () => {
           <Route exact path="/cookies" Component={Cookie} />
 
 
-          <Route exact path="/industries/wind-power" Component={WindPower} />
+          
           <Route exact path="/industries/defence-and-exploration" Component={DefenceAndExp} />
           <Route exact path="/industries/renewable-energy" Component={Renewable} />
           <Route exact path="/industries/non-renewable-energy" Component={NonRenewable} />
@@ -53,7 +53,23 @@ const App = () => {
           <Route exact path="/industries/waste-management" Component={WasteMang} />
 
           <Route exact path="/products/BTS-2000" Component={BTS2000} />
-          <Route exact path="/solutions/reactive-power-compensation" Component={Solution} />
+          <Route exact path="/products/kranking-ultracapacitors" Component={Kranking} />
+          <Route exact path="/products/control-relay-panels" Component={ControlRelay} />
+          <Route exact path="/products/clip-fault-current-limiters" Component={ClipF} />
+          <Route exact path="/products/best-case" Component={BestCase} />
+          <Route exact path="/products/load-checker" Component={LoadChecker} />
+          <Route exact path="/products/solar-design" Component={SolarDesign} />
+
+
+          
+          <Route exact path="/solutions/control-and-automation" Component={CnA} />
+          <Route exact path="/solutions/process-continuity" Component={Process} />
+          <Route exact path="/solutions/reliable-engine-starting" Component={Reliable} />
+          <Route exact path="/solutions/fault-current-limiting" Component={Fault} />
+          <Route exact path="/solutions/solar-design-engineering" Component={Solar} />
+          <Route exact path="/solutions/solid-waste-treatment" Component={SolidWaste} />
+          <Route exact path="/solutions/customised-professional-case" Component={Customized} />
+          
         </Routes>
       </BrowserRouter>
     </>

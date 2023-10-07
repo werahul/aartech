@@ -50,11 +50,11 @@ const HeavyEng = () => {
         <div>
             <Navbar />
 
-            <div className=" 2xl:px-[120px] lg:py-20 lg:px-20  pt-20 px-5 py-10 lg:mt-0 mt-5 ">
+            <div className=" 2xl:px-[120px] lg:pt-20 lg:px-20  pt-20 px-5 lg:py-0  lg:mt-0 mt-5 ">
 
                 <div className="flex lg:flex-row flex-col lg:mt-20">
                     <div className="lg:hidden text-black text-[28px] font-normal font-antonio">Heavy Engineering Industries</div>
-                    <div className="lg:hidden text-foot-blue text-lg font-bold font-Barlow tracking-wider mb-4">INDUSTRIES</div>
+                    <div className="lg:hidden text-foot-blue text-lg font-bold font-Barlow tracking-widest mb-4">INDUSTRIES</div>
 
                     <ImageSelect images={images}/>
 
@@ -397,7 +397,7 @@ const HeavyEng = () => {
                 <div className="proContainer">
 
                     <div className={`Pro1 flex lg:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag1' ? '' : 'hidden'}`}>
-                        <div className="lg:w-[100%] w-[100%] h-auto">
+                        <div className="lg:w-[100%] w-[100%] h-auto lg:p-2 p-0">
                             <img src={relayPannels} alt=""></img>
                         </div>
                         <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:ml-5 lg:mt-0 mt-4  lg:leading-tight leading-snug">
@@ -408,42 +408,42 @@ const HeavyEng = () => {
                     </div>
 
                     <div className={`Pro2 flex lg:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag2' ? '' : 'hidden'}`}>
-                        <div className="lg:w-[120%] w-[100%] h-auto ">
+                        <div className="lg:w-[120%] w-[100%] h-auto lg:p-2 p-0">
                             <img src={bts} alt=""></img>
                         </div>
                         <div className="  text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:ml-5 lg:mt-0 mt-4 lg:leading-tight leading-snug">The BTS 2000 Fast Bus Transfer System ensures uninterrupted power supply for Heavy Engineering Industries. This advanced microprocessor-based system swiftly executes high-speed motor bus transfers between two independent power sources while adhering to safety parameters. It proactively prevents process interruptions, even in the event of a power source contingency, safeguarding continuous operations.</div>
                     </div>
 
                     <div className={`Pro3 flex lg:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag3' ? '' : 'hidden'}`}>
-                        <div className="lg:w-[120%] w-[100%] h-auto bg-blue-300">
+                        <div className="lg:w-[120%] w-[100%] h-auto bg-blue-300 lg:p-2 p-0">
                             <img src={kra} alt=""></img>
                         </div>
                         <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:ml-5 lg:mt-0 mt-4 lg:leading-tight leading-snug">The KranKing® Ultracapacitor series optimises engine starting in Heavy Engineering Industries. These ultracapacitors reduce the strain on lead-acid batteries during engine starts, resulting in smaller battery requirements and extended battery life. Their exceptional durability, lasting over 300,000 cycles even in extreme temperatures, enhances the reliability of engine-cranking systems, ensuring consistent performance in challenging conditions.</div>
                     </div>
 
                     <div className={`Pro4 flex lg:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag4' ? '' : 'hidden'}`}>
-                        <div className="lg:w-[120%] w-[100%] h-auto ">
+                        <div className="lg:w-[120%] w-[100%] h-auto lg:p-2 p-0">
                             <img src={clip} alt=""></img>
                         </div>
                         <div className="text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:ml-5 lg:mt-0 mt-4 lg:leading-tight leading-snug">The Current Limiting Protector (CLiP®) is a proven solution for Heavy Engineering Industries. With over 25 years of global service, CLiP® offers superior system protection, limiting currents up to 5000A in systems rated to 38kV. It achieves fault interruption beyond 300kA rms symmetrical at 15.5kV. The CLiP® functions as an electronically sensed and triggered current limiter, enhancing safety by opening the continuous copper bus bar path under overcurrent conditions and introducing a parallel-mounted current limiting fuse to interrupt faults effectively.</div>
                     </div>
 
                     <div className={`Pro5 flex lg:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag5' ? '' : 'hidden'}`}>
-                        <div className="lg:w-[80%] w-[100%] h-auto ">
+                        <div className="lg:w-[80%] w-[100%] h-auto lg:p-2 p-0">
                             <img src={bestCase} alt=""></img>
                         </div>
                         <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:ml-5 lg:mt-0 mt-4 lg:leading-tight leading-snug">Best Case facilitates the Heavy Engineering sector by offering easy access to quality enclosures through their online platform. This accessibility and affordability are crucial for industries that require specialised enclosures for machinery. Bestcase's commitment to quality and customisation aligns with the industry's demand for reliable solutions, contributing to smoother operations and project success in heavy engineering.</div>
                     </div>
 
                     <div className={`Pro6 flex lg:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag6' ? '' : 'hidden'}`}>
-                        <div className="lg:w-[120%] w-[100%] h-auto ">
+                        <div className="lg:w-[120%] w-[100%] h-auto lg:p-2 p-0">
                             <img src={solar} alt=""></img>
                         </div>
                         <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:ml-5 lg:mt-0 mt-4 lg:leading-tight leading-snug">Aartech's Solar Design and Services offer comprehensive solutions for Heavy Engineering Industries. Their services encompass every aspect of solar energy integration, from permit design to system design, catering to commercial, industrial, and utility-scale projects. Their meticulous approach to solar panel layout and energy optimisation ensures tailored solutions that enhance efficiency in heavy engineering operations. Whether reducing utility bills or improving energy sustainability, Aartech provides end-to-end support, making it a valuable partner for this sector.</div>
                     </div>
 
                     <div className={`Pro7 flex lg:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag7' ? '' : 'hidden'}`}>
-                        <div className="lg:w-[90%] w-[100%] h-auto bg-lime-300">
+                        <div className="lg:w-[90%] w-[100%] h-auto bg-lime-300 lg:p-2 p-0">
                             <img src="" alt=""></img>
                         </div>
                         <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:ml-5 lg:mt-0 mt-4 lg:leading-tight leading-snug">WTC or Waste To Compost machine, a fully automatic composting machine, contributes to renewable energy by swiftly converting organic waste into compost within 24 hours on-site. This eco-friendly solution adheres to the 3R Principle: reducing waste, recycling it into valuable compost, and using the compost for garden plants. Its quiet and odourless operation makes it a sustainable choice for waste management in renewable energy facilities.

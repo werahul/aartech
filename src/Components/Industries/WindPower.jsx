@@ -26,11 +26,11 @@ const WindPower = () => {
         <div>
             <Navbar />
 
-            <div className=" 2xl:px-[120px] lg:py-20 lg:px-20  pt-20 px-5 py-10 lg:mt-0 mt-5 ">
+            <div className=" 2xl:px-[120px] lg:pt-20 lg:px-20  pt-20 px-5 lg:py-0  lg:mt-0 mt-5 ">
 
                 <div className="flex lg:flex-row flex-col lg:mt-20">
                     <div className="lg:hidden text-black text-[28px] font-normal font-antonio">Wind Power</div>
-                    <div className="lg:hidden text-foot-blue text-lg font-bold font-Barlow tracking-wider mb-4">INDUSTRIES</div>
+                    <div className="lg:hidden text-foot-blue text-lg font-bold font-Barlow tracking-widest mb-4">INDUSTRIES</div>
 
                     <div className="lg:flex ">
                         <div className="w-full">

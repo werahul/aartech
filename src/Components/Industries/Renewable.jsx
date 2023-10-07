@@ -45,11 +45,11 @@ const Renewable = () => {
         <div>
             <Navbar />
 
-            <div className=" 2xl:px-[120px] lg:py-20 lg:px-20  pt-20 px-5 py-10 lg:mt-0 mt-5 ">
+            <div className=" 2xl:px-[120px] lg:pt-20 lg:px-20  pt-20 px-5 lg:py-0  lg:mt-0 mt-5 ">
 
                 <div className="flex lg:flex-row flex-col lg:mt-20">
                     <div className="lg:hidden text-black text-[28px] font-normal font-antonio">Renewable Energy</div>
-                    <div className="lg:hidden text-foot-blue text-lg font-bold font-Barlow tracking-wider mb-4">INDUSTRIES</div>
+                    <div className="lg:hidden text-foot-blue text-lg font-bold font-Barlow tracking-widest mb-4">INDUSTRIES</div>
 
                     <ImageSelect images={images}/>
                     <div className="lg:w-[55%] lg:ml-[44px]">
@@ -369,7 +369,7 @@ const Renewable = () => {
                 <div className="proContainer">
 
                     <div className={`Pro1 flex lg:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag1' ? '' : 'hidden'}`}>
-                        <div className="lg:w-[70%] w-[100%] h-auto">
+                        <div className="lg:w-[70%] w-[100%] h-auto lg:p-2 p-0">
                             <img src={relayPannels} alt=""></img>
                         </div>
                         <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:ml-5 lg:mt-0 mt-4  lg:leading-tight leading-snug">
@@ -379,42 +379,42 @@ const Renewable = () => {
                     </div>
 
                     <div className={`Pro2 flex lg:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag2' ? '' : 'hidden'}`}>
-                        <div className="lg:w-[110%] w-[100%] h-auto ">
+                        <div className="lg:w-[110%] w-[100%] h-auto lg:p-2 p-0 ">
                             <img src={bts} alt=""></img>
                         </div>
                         <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:ml-5 lg:mt-0 mt-4 lg:leading-tight leading-snug">The BTS 2000 Fast Bus Transfer System ensures process continuity for renewable energy systems. This advanced microprocessor-based system is designed for power generation utilities and continuous process industries. It swiftly executes motor bus transfers between two power sources while adhering to safety parameters, guaranteeing uninterrupted power supply to critical plant motors. This proactive approach prevents disruptions, enhancing the reliability of renewable energy systems for consistent operation and energy delivery.</div>
                     </div>
 
                     <div className={`Pro3 flex lg:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag3' ? '' : 'hidden'}`}>
-                        <div className="lg:w-[80%] w-[100%] h-auto bg-blue-300">
+                        <div className="lg:w-[80%] w-[100%] h-auto lg:p-2 p-0 bg-blue-300">
                             <img src={kra} alt=""></img>
                         </div>
                         <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:ml-5 lg:mt-0 mt-4 lg:leading-tight leading-snug">KranKing® Ultracapacitors are tailored to enhance renewable energy systems by reducing the strain on lead-acid batteries during engine starts, resulting in smaller battery sizes and prolonged battery life. With a track record of over 300,000 cycles, even in extreme temperatures, they outperform traditional batteries, significantly boosting the overall reliability of engine-cranking systems for renewable energy applications.</div>
                     </div>
 
                     <div className={`Pro4 flex lg:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag4' ? '' : 'hidden'}`}>
-                        <div className="lg:w-[120%] w-[100%] h-auto ">
+                        <div className="lg:w-[120%] w-[100%] h-auto lg:p-2 p-0 ">
                             <img src={bestCase} alt=""></img>
                         </div>
                         <div className="text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:ml-5 lg:mt-0 mt-4 lg:leading-tight leading-snug">BestCase aids in renewable energy by offering timely access to high-quality enclosures for various renewable energy products and components. Entrepreneurs and innovators in the renewable energy sector can benefit from affordable and readily available enclosure solutions, eliminating the need for expensive and custom-made options. BestCase ensures that renewable energy professionals can impressively showcase their offerings, meeting the highest industry standards for quality and affordability, ultimately contributing to the success of renewable energy projects.</div>
                     </div>
 
                     <div className={`Pro5 flex lg:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag5' ? '' : 'hidden'}`}>
-                        <div className="lg:w-[100%] w-[100%] h-auto ">
+                        <div className="lg:w-[100%] w-[100%] h-auto lg:p-2 p-0 ">
                             <img src={wtc} alt=""></img>
                         </div>
                         <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:ml-5 lg:mt-0 mt-4 lg:leading-tight leading-snug">WTC or Waste To Compost machine, a fully automatic composting machine, contributes to renewable energy by swiftly converting organic waste into compost within 24 hours on-site. This eco-friendly solution adheres to the 3R Principle: reducing waste, recycling it into valuable compost, and using the compost for garden plants. Its quiet and odourless operation makes it a sustainable choice for waste management in renewable energy facilities.</div>
                     </div>
 
                     <div className={`Pro6 flex lg:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag6' ? '' : 'hidden'}`}>
-                        <div className="lg:w-[100%] w-[100%] h-auto ">
+                        <div className="lg:w-[100%] w-[100%] h-auto lg:p-2 p-0 ">
                             <img src={incinerator} alt=""></img>
                         </div>
                         <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:ml-5 lg:mt-0 mt-4 lg:leading-tight leading-snug">An incinerator is a device designed to burn waste materials at high temperatures, reducing them to ash and other byproducts. In the context of renewable energy, some modern incinerators are equipped with energy recovery systems that capture the heat generated during combustion. This captured heat can then be converted into electricity or used for various heating purposes, contributing to generating renewable energy while reducing waste volume.</div>
                     </div>
 
                     <div className={`Pro7 flex lg:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag7' ? '' : 'hidden'}`}>
-                        <div className="lg:w-[100%] w-[100%] h-auto bg-lime-300">
+                        <div className="lg:w-[100%] w-[100%] h-auto lg:p-2 p-0 bg-lime-300">
                         <img src={solar} alt=""></img>
                         </div>
                         <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:ml-5 lg:mt-0 mt-4 lg:leading-tight leading-snug">Aartech Solonics' Solar Design and Services are a comprehensive solution for advancing renewable energy. Focusing on innovation and expertise, Aarchtech crafts tailored solar solutions, optimises energy generation, and provides a wide range of services, from permit design to system installation and maintenance. Their commitment to engineering excellence and sustainability transforms industries and lives by harnessing solar power, making them a key player in the transition to renewable energy sources.

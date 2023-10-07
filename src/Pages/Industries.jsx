@@ -36,7 +36,7 @@ const Industries = () => {
     <div>
       <Navbar />
       <SlideInBar />
-      <div className="px-4 pt-[80px] lg:pt-[88px] 2xl:px-[120px] lg:px-20">
+      <div className="px-4 pt-[20px] lg:pt-[88px] 2xl:px-[120px] lg:px-20">
         {/* <div className="font-Barlow font-[500] mt-[24px] mb-[24px] lg:mt-[28px] lg:mb-[18px] text-[#0C013D]">
           <BreadCrumbs breadcrumbs={breadcrumbs} />
   </div>*/}

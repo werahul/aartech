@@ -47,11 +47,11 @@ const PowerTran = () => {
         <div>
             <Navbar />
 
-            <div className=" 2xl:px-[120px] lg:py-20 lg:px-20  pt-20 px-5 py-10 lg:mt-0 mt-5 ">
+            <div className=" 2xl:px-[120px] lg:pt-20 lg:px-20  pt-20 px-5 lg:py-0  lg:mt-0 mt-5 ">
 
                 <div className="flex lg:flex-row flex-col lg:mt-20">
                     <div className="lg:hidden text-black text-[28px] font-normal font-antonio">Power Transmission and Distribution</div>
-                    <div className="lg:hidden text-foot-blue text-lg font-bold font-Barlow tracking-wider mb-4">INDUSTRIES</div>
+                    <div className="lg:hidden text-foot-blue text-lg font-bold font-Barlow tracking-widest mb-4">INDUSTRIES</div>
 
                     <ImageSelect images={images}/>
                     
@@ -261,7 +261,7 @@ const PowerTran = () => {
                 <div className="proContainer">
 
                     <div className={`Pro1 flex lg:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag1' ? '' : 'hidden'}`}>
-                        <div className="lg:w-[100%] w-[100%] h-auto">
+                        <div className="lg:w-[100%] w-[100%] h-auto lg:p-2 p-0">
                             <img src={relayPannels} alt=""></img>
                         </div>
                         <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:ml-5 lg:mt-0 mt-4  lg:leading-tight leading-snug">
@@ -270,21 +270,21 @@ const PowerTran = () => {
                     </div>
 
                     <div className={`Pro2 flex lg:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag2' ? '' : 'hidden'}`}>
-                        <div className="lg:w-[120%] w-[100%] h-auto ">
+                        <div className="lg:w-[120%] w-[100%] h-auto lg:p-2 p-0 ">
                             <img src={bts} alt=""></img>
                         </div>
                         <div className="  text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:ml-5 lg:mt-0 mt-4 lg:leading-tight leading-snug">KranKing® Ultracapacitors are tailored for Power Transmission and Distribution applications. Specifically designed for engine-cranking tasks, they alleviate the strain on lead-acid batteries during startups, reducing battery size and extending their lifespan. Their exceptional durability, with over 300,000 cycles even in extreme temperatures, enhances the reliability of power systems in Power Transmission and Distribution.</div>
                     </div>
 
                     <div className={`Pro3 flex lg:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag3' ? '' : 'hidden'}`}>
-                        <div className="lg:w-[120%] w-[100%] h-auto bg-blue-300">
+                        <div className="lg:w-[120%] w-[100%] h-auto bg-blue-300 lg:p-2 p-0">
                             <img src="" alt=""></img>
                         </div>
                         <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:ml-5 lg:mt-0 mt-4 lg:leading-tight leading-snug">The Auxiliary Power Unit (APU) proves essential in Power Transmission and Distribution operations. With an extra electrical generator, it provides auxiliary power for critical systems such as lighting and avionics, ensuring uninterrupted Power Transmission and Distribution functions. Additionally, it uses bleed air to drive environmental systems, maintaining suitable conditions in challenging environments.</div>
                     </div>
 
                     <div className={`Pro4 flex lg:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag4' ? '' : 'hidden'}`}>
-                        <div className="lg:w-[130%] w-[100%] h-auto ">
+                        <div className="lg:w-[130%] w-[100%] h-auto lg:p-2 p-0 ">
                             <img src={clip} alt=""></img>
                         </div>
                         <div className="text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:ml-5 lg:mt-0 mt-4 lg:leading-tight leading-snug">BestCase aids Power Transmission and Distribution by providing entrepreneurs and engineers with timely and affordable access to high-quality enclosures. Their offerings address the challenges faced by innovators, ensuring that prototypes and delicate equipment are protected during transportation and demonstrations. BestCase's commitment to quality, affordability, and availability enhances the efficiency of showcasing products in the power sector, contributing to seamless presentations and successful business endeavours in the field of Power Transmission and Distribution.
@@ -293,7 +293,7 @@ const PowerTran = () => {
                     </div>
 
                     <div className={`Pro5 flex lg:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag5' ? '' : 'hidden'}`}>
-                        <div className="lg:w-[100%] w-[100%] h-auto ">
+                        <div className="lg:w-[100%] w-[100%] h-auto lg:p-2 p-0 ">
                             <img src="" alt=""></img>
                         </div>
                         <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:ml-5 lg:mt-0 mt-4 lg:leading-tight leading-snug">BestCase aids Power Transmission and Distribution by providing entrepreneurs and engineers with timely and affordable access to high-quality enclosures. Their offerings address the challenges faced by innovators, ensuring that prototypes and delicate equipment are protected during transportation and demonstrations. BestCase's commitment to quality, affordability, and availability enhances the efficiency of showcasing products in the power sector, contributing to seamless presentations and successful business endeavours in the field of Power Transmission and Distribution.</div>

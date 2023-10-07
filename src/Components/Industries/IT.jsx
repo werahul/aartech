@@ -49,11 +49,11 @@ const IT = () => {
         <div>
             <Navbar />
 
-            <div className=" 2xl:px-[120px] lg:py-20 lg:px-20  pt-20 px-5 py-10 lg:mt-0 mt-5 ">
+            <div className=" 2xl:px-[120px] lg:pt-20 lg:px-20  pt-20 px-5 lg:py-0  lg:mt-0 mt-5 ">
 
                 <div className="flex lg:flex-row flex-col lg:mt-20">
                     <div className="lg:hidden text-black text-[28px] font-normal font-antonio">IT and Telecom</div>
-                    <div className="lg:hidden text-foot-blue text-lg font-bold font-Barlow tracking-wider mb-4">INDUSTRIES</div>
+                    <div className="lg:hidden text-foot-blue text-lg font-bold font-Barlow tracking-widest mb-4">INDUSTRIES</div>
 
                     <ImageSelect images={images}/>
                     
@@ -353,7 +353,7 @@ const IT = () => {
                 <div className="proContainer">
 
                     <div className={`Pro1 flex lg:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag1' ? '' : 'hidden'}`}>
-                        <div className="lg:w-[100%] w-[100%] h-auto">
+                        <div className="lg:w-[100%] w-[100%] h-auto lg:p-2 p-0">
                             <img src={relayPannels} alt=""></img>
                         </div>
                         <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:ml-5 lg:mt-0 mt-4  lg:leading-tight leading-snug">
@@ -369,7 +369,7 @@ const IT = () => {
                     </div>
 
                     <div className={`Pro2 flex lg:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag2' ? '' : 'hidden'}`}>
-                        <div className="lg:w-[120%] w-[100%] h-auto ">
+                        <div className="lg:w-[120%] w-[100%] h-auto lg:p-2 p-0">
                             <img src={kra} alt=""></img>
                         </div>
                         <div className="  text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:ml-5 lg:mt-0 mt-4 lg:leading-tight leading-snug">
@@ -378,7 +378,7 @@ const IT = () => {
                     </div>
 
                     <div className={`Pro3 flex lg:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag3' ? '' : 'hidden'}`}>
-                        <div className="lg:w-[120%] w-[100%] h-auto bg-blue-300">
+                        <div className="lg:w-[120%] w-[100%] h-auto bg-blue-300 lg:p-2 p-0">
                             <img src="" alt=""></img>
                         </div>
                         <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:ml-5 lg:mt-0 mt-4 lg:leading-tight leading-snug">
@@ -387,7 +387,7 @@ const IT = () => {
                     </div>
 
                     <div className={`Pro4 flex lg:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag4' ? '' : 'hidden'}`}>
-                        <div className="lg:w-[100%] w-[100%] h-auto ">
+                        <div className="lg:w-[100%] w-[100%] h-auto lg:p-2 p-0">
                             <img src={bestCase} alt=""></img>
                         </div>
                         <div className="text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:ml-5 lg:mt-0 mt-4 lg:leading-tight leading-snug">
@@ -397,7 +397,7 @@ const IT = () => {
                     </div>
 
                     <div className={`Pro5 flex lg:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag5' ? '' : 'hidden'}`}>
-                        <div className="lg:w-[80%] w-[100%] h-auto ">
+                        <div className="lg:w-[80%] w-[100%] h-auto lg:p-2 p-0">
                             <img src={solar} alt=""></img>
                         </div>
                         <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:ml-5 lg:mt-0 mt-4 lg:leading-tight leading-snug">
@@ -405,7 +405,7 @@ const IT = () => {
                     </div>
 
                     <div className={`Pro6 flex lg:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag6' ? '' : 'hidden'}`}>
-                        <div className="lg:w-[120%] w-[100%] h-auto ">
+                        <div className="lg:w-[120%] w-[100%] h-auto lg:p-2 p-0">
                             <img src="" alt=""></img>  
                         </div>
                         <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:ml-5 lg:mt-0 mt-4 lg:leading-tight leading-snug">

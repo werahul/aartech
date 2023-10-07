@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Navbar, Footer } from "../index"
 import { industry1 } from '../../assets/workImages'
-import {DefenceMain, Defence1,Defence2, Defence3 ,Defence4 } from '../../assets/IndImages'
+import { DefenceMain, Defence1, Defence2, Defence3, Defence4 } from '../../assets/IndImages'
 import { bestCase, relayPannels, kra, incinerator, wtc, solar } from '../../assets/ProductImages'
 import { ImageSelect } from "../ImageSelector";
 
@@ -49,13 +49,13 @@ const DefenceAndExp = () => {
         <div>
             <Navbar />
 
-            <div className=" 2xl:px-[120px] lg:py-20 lg:px-20  pt-20 px-5 py-10 lg:mt-0 mt-5 ">
+            <div className=" 2xl:px-[120px] lg:pt-20 lg:px-20  pt-20 px-5 lg:py-0  lg:mt-0 mt-5 ">
 
                 <div className="flex lg:flex-row flex-col lg:mt-20">
                     <div className="lg:hidden text-black text-[28px] font-normal font-antonio">Defence & Exploration</div>
-                    <div className="lg:hidden text-foot-blue text-lg font-bold font-Barlow tracking-wider mb-4">INDUSTRIES</div>
+                    <div className="lg:hidden text-foot-blue text-lg font-bold font-Barlow tracking-wides mb-4">INDUSTRIES</div>
 
-                    <ImageSelect images={images}/>
+                    <ImageSelect images={images} />
                     <div className="lg:w-[55%] lg:ml-[44px]">
                         <div className="lg:block hidden text-black text-4xl font-normal font-antonio">Defence & Exploration</div>
                         <div className="lg:block hidden text-foot-blue text-lg font-bold font-Barlow tracking-wider mt-2">INDUSTRIES</div>
@@ -225,12 +225,12 @@ const DefenceAndExp = () => {
                 <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow mt-8 lg:leading-tight leading-snug ">  {selectedTag && tagContents[selectedTag]}</div>
 
 
-                
-            
+
+
                 <div className="text-foot-blue text-lg font-bold font-Barlow tracking-wider lg:mt-20 mt-10">PRODUCTS</div>
 
 
-                
+
                 < div className="lg:flex hidden space-x-3 mt-8">
                     <button
                         className={`tag ${selectedProTag === 'PTag1'
@@ -409,55 +409,55 @@ const DefenceAndExp = () => {
                 <div className="proContainer">
 
                     <div className={`Pro1 flex lg:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag1' ? '' : 'hidden'}`}>
-                        <div className="lg:w-[70%] w-[100%] h-auto">
+                        <div className="lg:w-[70%] w-[100%] h-auto lg:p-2 p-0">
                             <img src={relayPannels} alt=""></img>
                         </div>
                         <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:ml-5 lg:mt-0 mt-4  lg:leading-tight leading-snug">Aartech's Control & Relay Panels (CRP), designed for 11KV and 33KV substations, use outdoor switchgear. These panels include relays, fuses, switches, wiring, and more for monitoring and controlling transformers, generators, and circuit breakers. Indoor control panels for outdoor VCBs include relays and indicators. They're customisable for single or multi-circuit use to meet customer needs.</div>
                     </div>
 
                     <div className={`Pro2 flex lg:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag2' ? '' : 'hidden'}`}>
-                        <div className="lg:w-[110%] w-[100%] h-auto bg-pink-300">
+                        <div className="lg:w-[110%] w-[100%] h-auto lg:p-2 p-0">
                             <img src={kra} alt=""></img>
                         </div>
                         <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:ml-5 lg:mt-0 mt-4 lg:leading-tight leading-snug">The KranKing® Ultracapacitor series is purpose-built for engine-cranking tasks. They effectively lessen the load on lead-acid batteries during engine starts, allowing for significant reductions in battery size and extending battery lifespan. Unlike batteries, which typically last around 1000 cycles, KranKing® devices have consistently performed well for more than 300,000 cycles, even in extreme temperatures ranging from -45°C to 55°C. This exceptional durability significantly improves the reliability of the engine-cranking system as a whole.</div>
                     </div>
 
                     <div className={`Pro3 flex lg:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag3' ? '' : 'hidden'}`}>
-                        <div className="lg:w-[70%] w-[100%] h-auto bg-blue-300"></div>
+                        <div className="lg:w-[70%] w-[100%] h-auto lg:p-2 p-0"></div>
                         <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:ml-5 lg:mt-0 mt-4 lg:leading-tight leading-snug">An Auxiliary Power Unit (APU) is a versatile device employed across various applications, including military vehicles, ships, and industrial settings, to supply auxiliary power when the primary power source is inaccessible or impractical. Equipped with an additional electrical generator, the APU generates sufficient power to operate essential systems like onboard lighting, galley electrics, and cockpit avionics. Additionally, it harnesses bleed air through its compressor to drive environmental systems, ensuring the heating and cooling of the aircraft or relevant environment.</div>
                     </div>
 
                     <div className={`Pro4 flex lg:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag4' ? '' : 'hidden'}`}>
-                        <div className="lg:w-[100%] w-[100%] h-auto ">
+                        <div className="lg:w-[100%] w-[100%] h-auto  lg:p-2 p-0">
                             <img src={bestCase} alt=""></img>
                         </div>
                         <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:ml-5 lg:mt-0 mt-4 lg:leading-tight leading-snug">BestCase is the solution for entrepreneurs, innovators, and professionals in defence and exploration. Aarchtech provides timely access to quality enclosures at an affordable price, eliminating the need for expensive, low-quantity options. Whether showcasing lab results, transporting delicate equipment, or meeting with stakeholders, Aarchtech ensures your products meet the highest standards. We're here to support your best-case scenarios, 24/7, helping you succeed in your endeavours.</div>
                     </div>
 
                     <div className={`Pro5 flex lg:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag5' ? '' : 'hidden'}`}>
-                        <div className="lg:w-[100%] w-[100%] h-auto ">
+                        <div className="lg:w-[100%] w-[100%] h-auto lg:p-2 p-0">
                             <img src={wtc} alt=""></img>
                         </div>
                         <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:ml-5 lg:mt-0 mt-4 lg:leading-tight leading-snug">WTC, or Waste To Compost machine, is a fully automatic composting machine that effortlessly transforms all types of organic waste into compost within 24 hours right on the premises. This innovative solution effectively resolves your waste management challenges by adhering to the 3R Principle: It reduces garbage at the source, recycles organic waste into valuable compost, and utilises the compost for your garden plants. Moreover, this machine operates quietly and without emitting any unpleasant odours, making it an eco-friendly addition to your environment.</div>
                     </div>
 
                     <div className={`Pro6 flex lg:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag6' ? '' : 'hidden'}`}>
-                        <div className="lg:w-[80%] w-[100%] h-auto ">
+                        <div className="lg:w-[80%] w-[100%] h-auto lg:p-2 p-0 ">
                             <img src={incinerator} alt=""></img>
                         </div>
                         <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:ml-5 lg:mt-0 mt-4 lg:leading-tight leading-snug">An incinerator is a high-temperature device that burns waste materials, reducing them to ash and gas. In defence, incinerators can be employed to safely dispose of sensitive or hazardous materials, such as classified documents or chemical agents. In exploration, portable incinerators can assist in waste management during remote missions, minimising environmental impact and ensuring the safe disposal of waste.</div>
                     </div>
 
                     <div className={`Pro7 flex lg:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag7' ? '' : 'hidden'}`}>
-                        <div className="lg:w-[110%] w-[100%] h-auto bg-lime-300">
-                        <img src={solar} alt=""></img>
+                        <div className="lg:w-[120%] w-[100%] h-auto  lg:p-2 p-0">
+                            <img src={solar} alt=""></img>
                         </div>
                         <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:ml-5 lg:mt-0 mt-4 lg:leading-tight leading-snug">Aartech's Solar Design and Services for Defence and Exploration encompass a range of activities such as permit design, sales proposal design, utility-scale solutions, and site-specific optimisation. These services involve meticulous planning, innovative engineering, and adherence to industry standards to harness solar energy effectively. By providing tailored solar solutions and comprehensive consultancy, they contribute to sustainable energy sources for remote defence operations and exploration missions, reducing environmental impact and enhancing operational efficiency.
                         </div>
                     </div>
 
                     <div className={`Pro8 flex lg:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag8' ? '' : 'hidden'}`}>
-                        <div className="lg:w-[70%] w-[100%] h-auto bg-lime-300"></div>
+                        <div className="lg:w-[70%] w-[100%] h-auto  lg:p-2 p-0"></div>
                         <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:ml-5 lg:mt-0 mt-4 lg:leading-tight leading-snug">content8</div>
                     </div>
 
