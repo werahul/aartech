@@ -3,6 +3,8 @@ import { Navbar, Footer, Accordion, Accordion2, Accordion3 } from "../index";
 
 import { best1, best2, best3, best4, best5 } from "../../assets/proImages";
 
+import { BTS1 } from "../../assets/pdf";
+
 import { ImageSelect } from "../ImageSelector";
 
 import { CustomerLogos2 } from "..";
@@ -405,11 +407,9 @@ const BestCase = () => {
               TECHNICAL PAPERS
             </div>
             <div className=" lg:mt-[27px] ml-3 ">
-              <a
-                href="https://aartechsolonics.com//wp-content/uploads/2019/02/BTS-2000-Conference-Paper-PowerGen-Middle-East-2008.pdf"
-                target="_blank"
-              >
-                {" "}
+              
+            <a href={BTS1} target="_blank">
+              
                 <li className="text-black lg:text-lg text-base lg:font-normal font-medium font-Barlow underline hover:font-medium lg:mt-12 mt-5 ">
                   A. Raje, A. A. Raje, A. Chaudhary, “Fast Bus Transfer Systems
                   – A Systems Solution Approach”, PowerGen-Middle East, Panama,

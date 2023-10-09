@@ -71,32 +71,38 @@ const product = [
     title: "BTS 2000",
     image: productImg1,
     desc: "BTS 2000 ensures uninterrupted power to critical plant motors. With precision timing and advanced features like fast transfer, phase prediction, and more, BTS 2000 excels in both thermal and nuclear power generation, as well as other sectors.",
+    path: "/products/BTS-2000"
   },
   {
     title: "CONTROL RELAY PANEL",
     image: productImg2,
     desc: "Engineered for effortless control of transformers & lines through outdoor switchgear at 11KV & 33KV substations. Complete with main relays, fuses, switches, and more, these panels ensure efficient equipment monitoring.",
+    path: "/products/control-relay-panels"
   },
   {
     title: "KRANKING ULTRACAPACITORS",
     image: productImg3,
     desc: "Innovative KranKing® range of Ultracapacitors, specifically designed to transform engine cranking applications. They improve battery performance and extend its lifespan by reducing the burden on lead-acid batteries during engine starting.",
+    path: "/products/kranking-ultracapacitors"
   },
   {
     title: "WTC",
     image: productImg4,
     desc: "WTC transforms organic waste into compost in just a day, through natural and biological processes. For larger capacities, our specialized microorganisms ensure thorough decomposition. Enjoy a noiseless and odorless experience WTC.",
+    path: ""
   },
 
   {
     title: "CLiP FAULT CURRENT LIMITORS",
     image: productImg5,
     desc: "It has been safeguarding global systems for 25+ years. It offers protection up to 38kV, with high current ratings (5000A) & fault interruption up to 300kA rms symmetrical at 15.5kV. It is electronically sensed &  triggers to limit current.",
+    path: "/products/clip-fault-current-limiters"
   },
   {
     title: "BEST CASE",
     image: productImg6,
     desc: "Best case is beyond just an enclosure, it's your product's image. For lab cuts, demos, to crucial meets, we ensure your Best Case Scenario! We offer the right, durable & affordable enclosure that is customised as per your products.",
+    path: "/products/best-case"
   },
 
   {
@@ -111,46 +117,55 @@ const solution = [
     title: "LOAD LIMITING",
     image: sol1,
     desc: "We understand the importance of maintaining optimal load levels, and our expertise lies in the creation of load limiters. These solutions offer exceptional reliability and performance, specifically catering to low-rating (< 100W) requirements.",
+    path: ""
   },
   {
     title: "PULSE POWER",
     image: sol2,
     desc: "Our FaraDigm® Ultracapacitors excel in pulse power applications. From remote solar power to automotive needs, our solution offers high reliability, long life, and maintenance-free operation. We customize integrated solutions for diverse industries.",
+    path: ""
   },
   {
     title: "ENERGY HARVESTING",
     image: sol3,
     desc: "We pioneer energy harvesting, harnessing micro sources like Solar, Wind, and Hydro power for portable devices via PV/micro-turbines. Versatile in Marine, Defense, Telecom, and more. FaraDigm™ Ultracapacitors offer tailored solutions.",
+    path: ""
   },
   {
     title: "SOLID WASTE TREATMENT",
     image: new1,
     desc: "Solid waste treatment involves responsible collection, treatment, and disposal. Aartech provides solutions like Waste to Compost machines, Plastic Shredders, and General Waste Incinerators, contributing to eco-friendly waste management.",
+    path: "/solutions/solid-waste-treatment"
   },
   {
     title: "CONTROL & AUTOMATION",
     image: sol5,
     desc: "From affordable distribution solutions to advanced customizations, we seamlessly blend technology. We craft control solutions by integrating components, adding value through solid-state & microprocessor-based controls for unique needs.",
+    path: "/solutions/control-and-automation"
   },
   {
     title: "CUSTOMIZED PLASTIC CASES",
     image: new2,
     desc: "Plastic cases safeguard against dust, impact, and more. Aartech offers a range of innovative & customized solutions to cater to various needs. Ideal for transportation and storage, these cases ensure items remain secure and intact during transit.",
+    path: "/solutions/customised-professional-case"
   },
   {
     title: "RELIABLE ENGINE STARTING",
     image: sol7,
     desc: "Our KranKing™ Ultracapacitors are a long-term solution for IC Engine cranking. Alongside batteries, they provide a powerful cranking current during the first moments of ignition, surmounting initial friction and energizing the starter motor.",
+    path: "/solutions/reliable-engine-starting"
   },
   {
     title: "FAULT CURRENT LIMITING",
     image: sol8,
     desc: "Aartech, in partnership with M/s G&W Elec. Co. USA, is a trusted integrator of CLiP® Fault Current Limiter solutions. It excels with high continuous current ratings & rapid operation. Its versatility extends to system upgrades, reactor bypass, & more.",
+    path: "/solutions/fault-current-limiting"
   },
   {
     title: "PROCESS CONTINUITY",
     image: sol9,
     desc: "We work with consultants, equipment manufacturers, contractors, and end users to address process continuity challenges. For sectors like Thermal Power, Nuclear Power, etc, our BTS 2000 Numerical Fast Bus Transfer Systems offer proven solutions.",
+    path: "/solutions/process-continuity"
   },
 ];
 

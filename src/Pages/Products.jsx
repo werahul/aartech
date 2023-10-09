@@ -1,21 +1,26 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import { Navbar, BreadCrumbs, Footer, SlideInBar } from "../Components";
 import { product } from "../constants";
+import { Link } from "react-router-dom";
 // import { breadHome } from "../assets/images";
 
-const Product = ({ title, image, desc }) => {
+const Product = ({ title, image, desc, path }) => {
   useEffect(() => {
     window.scrollTo(0, 0); // Scroll to the top of the page
   }, []); // Empty dependency array ensures the effect runs only once
   return (
     <div>
-      <h3 className="text-[#B80001] font-bold font-Barlow text-[20px] lg:text-[24px] tracking-wide">
-        {title}
-      </h3>
-      <img src={image} alt="" className="my-2 w-[100%] h-auto" />
-      <p className="font-Barlow text-[16px] lg:leading-[26px] leading-snug font-[500] lg:font-normal lg:text-[20px]">
-        {desc}
-      </p>
+      <Link to={path}>
+
+
+        <h3 className="text-[#B80001] font-bold font-Barlow text-[20px] lg:text-[24px] tracking-wide">
+          {title}
+        </h3>
+        <img src={image} alt="" className="my-2 w-[100%] h-auto" />
+        <p className="font-Barlow text-[16px] lg:leading-[26px] leading-snug font-[500] lg:font-normal lg:text-[20px]">
+          {desc}
+        </p>
+      </Link>
     </div>
   );
 };

@@ -148,7 +148,7 @@ const Fault = () => {
                 <div className="proContainer">
 
                     <div className={`Pro1 flex lg:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag1' ? '' : 'hidden'}`}>
-                        <div className="lg:w-[70%] w-[100%] h-auto">
+                        <div className="lg:w-[70%] w-[100%] h-auto lg:p-2 p-0">
                             <img src={clip2} alt=""></img>
                         </div>
                         <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:ml-5 lg:mt-0 mt-4  lg:leading-tight leading-snug">
