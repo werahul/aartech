@@ -18,7 +18,7 @@ const Contact = () => {
     return (
         <>
             <Navbar />
-            <div className="mainPage 2xl:px-[120px] lg:px-20 lg:mt-[4rem] lg:py-20 px-5 py-10 ">
+            <div className="mainPage 2xl:px-[120px] lg:px-20 lg:mt-[4rem] lg:py-20 px-5 py-10 sm:px-10 ">
                 <div className="title lg:text-4xl text-[28px] text-box-red   font-antonio lg:mt-0 mt-20">
                     Contact Us
                 </div>

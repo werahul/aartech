@@ -1,9 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Navbar, Footer } from "../index"
-import { industry1 } from '../../assets/workImages'
-import { Cimg1, Cimg2, Cimg3, Cimg4 } from '../../assets/CLogoBlack'
 import { bestCase, relayPannels, kra, incinerator, wtc, bts, clip, solar } from '../../assets/ProductImages'
-
 import { CustomerLogos2 } from '../../Components'
 import { ImageSelect } from "../ImageSelector";
 import { health1, health2, health3, health4, health5 } from '../../assets/IndImages'
@@ -52,7 +49,7 @@ const HealthCare = () => {
         <div>
             <Navbar />
 
-            <div className=" 2xl:px-[120px] lg:pt-20 lg:px-20  pt-20 px-5 lg:py-0  lg:mt-0 mt-5 ">
+            <div className=" 2xl:px-[120px] lg:pt-20 lg:px-20  pt-20 px-5 lg:py-0  lg:mt-0 mt-5 sm:px-10">
 
                 <div className="flex lg:flex-row flex-col lg:mt-20">
                     <div className="lg:hidden text-black text-[28px] font-normal font-antonio">Healthcare</div>
@@ -464,11 +461,11 @@ const HealthCare = () => {
 
                 <div className="proContainer">
 
-                    <div className={`Pro1 flex lg:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag1' ? '' : 'hidden'}`}>
-                        <div className="lg:w-[80%] w-[100%] h-auto lg:p-2 p-0">
-                            <img src={relayPannels} alt=""></img>
+                    <div className={`Pro1 flex sm:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag1' ? '' : 'hidden'}`}>
+                        <div className=" sm:w-[100%] w-[100%] h-auto sm:p-2 p-0 ">
+                            <img src={relayPannels} alt="" className='sm:w-[100%] w-[100%]'></img>
                         </div>
-                        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:ml-5 lg:mt-0 mt-4  lg:leading-tight leading-snug">
+                        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow sm:ml-5 sm:mt-0 mt-4  lg:leading-tight leading-snug">
 
                             Aartech's Control & Relay Panels (CRP) play a vital role in healthcare infrastructure. Designed for substations, they incorporate essential components for monitoring and controlling electrical systems, ensuring reliability and safety. These panels are adaptable for various circuit configurations, meeting the unique needs of healthcare facilities.
 
@@ -478,63 +475,63 @@ const HealthCare = () => {
                         </div>
                     </div>
 
-                    <div className={`Pro2 flex lg:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag2' ? '' : 'hidden'}`}>
-                        <div className="lg:w-[80%] w-[100%] h-auto bg-gray-300 lg:p-2 p-0">
-                            <img src={bts} alt=""></img>
+                    <div className={`Pro2 flex sm:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag2' ? '' : 'hidden'}`}>
+                        <div className=" sm:w-[130%] w-[100%] h-auto sm:p-2 p-0 ">
+                            <img src={bts} alt="" className='sm:w-[130%] w-[100%]'></img>
                         </div>
-                        <div className="  text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:ml-5 lg:mt-0 mt-4 lg:leading-tight leading-snug">The BTS 2000 Fast Bus Transfer System ensures an uninterrupted power supply in healthcare settings. By swiftly transferring power between independent sources while adhering to safety parameters, it prevents disruptions to critical medical equipment, maintaining continuous patient care even in the event of a power source contingency.</div>
+                        <div className="  text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow sm:ml-5 sm:mt-0 mt-4 lg:leading-tight leading-snug">The BTS 2000 Fast Bus Transfer System ensures an uninterrupted power supply in healthcare settings. By swiftly transferring power between independent sources while adhering to safety parameters, it prevents disruptions to critical medical equipment, maintaining continuous patient care even in the event of a power source contingency.</div>
                     </div>
 
-                    <div className={`Pro3 flex lg:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag3' ? '' : 'hidden'}`}>
-                        <div className="lg:w-[120%] w-[100%] h-auto bg-blue-300 lg:p-2 p-0">
-                            <img src={kra} alt=""></img>
+                    <div className={`Pro3 flex sm:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag3' ? '' : 'hidden'}`}>
+                        <div className=" sm:w-[120%] w-[100%] h-auto sm:p-2 p-0 ">
+                            <img src={kra} alt="" className='sm:w-[120%] w-[100%]'></img>
                         </div>
-                        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:ml-5 lg:mt-0 mt-4 lg:leading-tight leading-snug">KranKing® Ultracapacitors are vital for healthcare, ensuring reliable engine starts for critical equipment. They reduce the strain on lead-acid batteries during starts, prolonging battery life and decreasing their size. Unlike traditional batteries with around 1000 cycles, KranKing® Ultracapacitors excel with over 300,000 cycles, even in extreme temperatures. This exceptional durability enhances the overall reliability of engine-cranking systems in healthcare settings, guaranteeing prompt response and operation when needed most.</div>
+                        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow sm:ml-5 sm:mt-0 mt-4 lg:leading-tight leading-snug">KranKing® Ultracapacitors are vital for healthcare, ensuring reliable engine starts for critical equipment. They reduce the strain on lead-acid batteries during starts, prolonging battery life and decreasing their size. Unlike traditional batteries with around 1000 cycles, KranKing® Ultracapacitors excel with over 300,000 cycles, even in extreme temperatures. This exceptional durability enhances the overall reliability of engine-cranking systems in healthcare settings, guaranteeing prompt response and operation when needed most.</div>
                     </div>
 
-                    <div className={`Pro4 flex lg:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag4' ? '' : 'hidden'}`}>
-                        <div className="lg:w-[100%] w-[100%] h-auto lg:p-2 p-0">
+                    <div className={`Pro4 flex sm:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag4' ? '' : 'hidden'}`}>
+                        <div className=" sm:w-[120%] w-[100%] h-auto sm:p-2 p-0 ">
+                            <img src="" alt="" className='sm:w-[120%] w-[100%]'></img>
+                        </div>
+                        <div className="text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow  sm:ml-5 sm:mt-0 mt-4 lg:leading-tight leading-snug">An Auxiliary Power Unit (APU) is a versatile device employed across various healthcare applications to supply auxiliary power when the primary power source is inaccessible or impractical. Equipped with an additional electrical generator, the APU generates sufficient power to operate essential medical equipment, ensuring continuous operation in an emergency or during power outages. Additionally, it can provide heating and cooling for medical facilities, maintaining optimal conditions for patient care and comfort.</div>
+                    </div>
+
+                    <div className={`Pro5 flex sm:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag5' ? '' : 'hidden'}`}>
+                        <div className=" sm:w-[120%] w-[100%] h-auto sm:p-2 p-0 ">
+                            <img src={bestCase} alt="" className='sm:w-[120%] w-[100%]'></img>
+                        </div>
+                        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow sm:ml-5 sm:mt-0 mt-4 lg:leading-tight leading-snug">BestCase addresses the challenges in healthcare by providing timely access to quality enclosures for various medical products and equipment. It offers cost-effective solutions, eliminating the need for expensive and often subpar alternatives. BestCase ensures availability, allowing professionals to showcase their offerings effectively, whether for prototypes, demonstrations, or important meetings, contributing to their best-case scenarios in healthcare settings.</div>
+                    </div>
+
+                    <div className={`Pro6 flex sm:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag6' ? '' : 'hidden'}`}>
+                        <div className=" sm:w-[120%] w-[100%] h-auto sm:p-2 p-0 ">
+                            <img src={kra} alt="" className='sm:w-[120%] w-[100%]'></img>
+                        </div>
+                        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow sm:ml-5 sm:mt-0 mt-4 lg:leading-tight leading-snug">WTC or Waste To Compost machine, a fully automatic composting machine, contributes to renewable energy by swiftly converting organic waste into compost within 24 hours on-site. This eco-friendly solution adheres to the 3R Principle: reducing waste, recycling it into valuable compost, and using the compost for garden plants. Its quiet and odourless operation makes it a sustainable choice for waste management in renewable energy facilities.</div>
+                    </div>
+
+                    <div className={`Pro7 flex sm:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag7' ? '' : 'hidden'}`}>
+                        <div className=" sm:w-[120%] w-[100%] h-auto sm:p-2 p-0 ">
+                            <img src={incinerator} alt="" className='sm:w-[120%] w-[100%]'></img>
+                        </div>
+                        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow sm:ml-5 sm:mt-0 mt-4 lg:leading-tight leading-snug">An incinerator is a device designed to burn waste materials at high temperatures, reducing them to ash and other byproducts. In the context of renewable energy, some modern incinerators are equipped with energy recovery systems that capture the heat generated during combustion. This captured heat can then be converted into electricity or used for various heating purposes, contributing to generating renewable energy while reducing waste volume.
+                        </div>
+                    </div>
+
+                    <div className={`Pro8 flex sm:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag8' ? '' : 'hidden'}`}>
+                        <div className=" sm:w-[130%] w-[100%] h-auto sm:p-2 p-0 ">
+                            <img src={solar} alt="" className='sm:w-[130%] w-[100%]'></img>
+                        </div>
+                        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow sm:ml-5 sm:mt-0 mt-4 lg:leading-tight leading-snug">Aarchtech's Solar Design and Services for healthcare encompass a wide range of offerings, from permit design and sales proposals to utility-scale solutions and EV chargers. Their expert team ensures tailored solar panel layouts and optimised energy generation. Compliant with industry standards and regulations, Aarchtech provides end-to-end support, covering feasibility studies, system design, and comprehensive installation and maintenance services, fostering a greener and more sustainable energy future for healthcare facilities.
+
+                        </div>
+                    </div>
+
+                    <div className={`Pro9 flex sm:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag9' ? '' : 'hidden'}`}>
+                        <div className="lg:w-[90%] w-[100%] h-auto sm:p-2 p-0">
                             <img src="" alt=""></img>
                         </div>
-                        <div className="text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:ml-5 lg:mt-0 mt-4 lg:leading-tight leading-snug">An Auxiliary Power Unit (APU) is a versatile device employed across various healthcare applications to supply auxiliary power when the primary power source is inaccessible or impractical. Equipped with an additional electrical generator, the APU generates sufficient power to operate essential medical equipment, ensuring continuous operation in an emergency or during power outages. Additionally, it can provide heating and cooling for medical facilities, maintaining optimal conditions for patient care and comfort.</div>
-                    </div>
-
-                    <div className={`Pro5 flex lg:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag5' ? '' : 'hidden'}`}>
-                        <div className="lg:w-[100%] w-[100%] h-auto lg:p-2 p-0">
-                            <img src={bestCase} alt=""></img>
-                        </div>
-                        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:ml-5 lg:mt-0 mt-4 lg:leading-tight leading-snug">BestCase addresses the challenges in healthcare by providing timely access to quality enclosures for various medical products and equipment. It offers cost-effective solutions, eliminating the need for expensive and often subpar alternatives. BestCase ensures availability, allowing professionals to showcase their offerings effectively, whether for prototypes, demonstrations, or important meetings, contributing to their best-case scenarios in healthcare settings.</div>
-                    </div>
-
-                    <div className={`Pro6 flex lg:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag6' ? '' : 'hidden'}`}>
-                        <div className="lg:w-[100%] w-[100%] h-auto lg:p-2 p-0">
-                            <img src={wtc} alt=""></img>
-                        </div>
-                        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:ml-5 lg:mt-0 mt-4 lg:leading-tight leading-snug">WTC or Waste To Compost machine, a fully automatic composting machine, contributes to renewable energy by swiftly converting organic waste into compost within 24 hours on-site. This eco-friendly solution adheres to the 3R Principle: reducing waste, recycling it into valuable compost, and using the compost for garden plants. Its quiet and odourless operation makes it a sustainable choice for waste management in renewable energy facilities.</div>
-                    </div>
-
-                    <div className={`Pro7 flex lg:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag7' ? '' : 'hidden'}`}>
-                        <div className="lg:w-[90%] w-[100%] h-auto bg-lime-300 lg:p-2 p-0">
-                            <img src={incinerator} alt=""></img>
-                        </div>
-                        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:ml-5 lg:mt-0 mt-4 lg:leading-tight leading-snug">An incinerator is a device designed to burn waste materials at high temperatures, reducing them to ash and other byproducts. In the context of renewable energy, some modern incinerators are equipped with energy recovery systems that capture the heat generated during combustion. This captured heat can then be converted into electricity or used for various heating purposes, contributing to generating renewable energy while reducing waste volume.
-                        </div>
-                    </div>
-
-                    <div className={`Pro8 flex lg:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag8' ? '' : 'hidden'}`}>
-                        <div className="lg:w-[100%] w-[100%] h-auto bg-lime-300 lg:p-2 p-0">
-                            <img src={solar} alt=""></img>
-                        </div>
-                        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:ml-5 lg:mt-0 mt-4 lg:leading-tight leading-snug">Aarchtech's Solar Design and Services for healthcare encompass a wide range of offerings, from permit design and sales proposals to utility-scale solutions and EV chargers. Their expert team ensures tailored solar panel layouts and optimised energy generation. Compliant with industry standards and regulations, Aarchtech provides end-to-end support, covering feasibility studies, system design, and comprehensive installation and maintenance services, fostering a greener and more sustainable energy future for healthcare facilities.
-
-                        </div>
-                    </div>
-
-                    <div className={`Pro9 flex lg:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag9' ? '' : 'hidden'}`}>
-                        <div className="lg:w-[90%] w-[100%] h-auto lg:p-2 p-0">
-                            <img src="" alt=""></img>
-                        </div>
-                        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:ml-5 lg:mt-0 mt-4 lg:leading-tight leading-snug">AC & DC
+                        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow sm:ml-5 sm:mt-0 mt-4 lg:leading-tight leading-snug">AC & DC
                         </div>
                     </div>
 

@@ -43,7 +43,7 @@ const LoadChecker = () => {
     <div>
       <Navbar />
 
-      <div className=" 2xl:px-[120px] lg:py-20 lg:px-20  pt-20 px-5 py-10 lg:mt-0 mt-5 ">
+      <div className=" 2xl:px-[120px] lg:py-20 lg:px-20  pt-20 px-5 py-10 lg:mt-0 mt-5 sm:px-10">
         <div className="flex lg:flex-row flex-col lg:mt-20">
           <div className="lg:hidden text-black text-[28px] font-normal font-antonio">
             Load Checker

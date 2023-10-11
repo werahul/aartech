@@ -105,7 +105,7 @@ const PhotoGallery = () => {
     return (
         <>
             {/* ... other components */}
-            <div className="galaryGrid lg:grid grid-cols-3 lg:gap-x-6 lg:gap-y-[36px] lg:space-y-0 space-y-6">
+            <div className="galaryGrid grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 lg:gap-x-6 sm:gap-x-2 lg:gap-y-[36px] lg:space-y-0 sm:space-y-0 space-y-6">
                 {displayedGalleryItems.map((item, index) => (
                     <div
                         key={item.id}

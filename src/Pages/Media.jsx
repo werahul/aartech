@@ -13,7 +13,7 @@ const Media = () => {
     return (
         <>
             <Navbar />
-            <div className=" 2xl:px-[120px] lg:px-20 lg:py-20 px-5 py-10">
+            <div className=" 2xl:px-[120px] lg:px-20 lg:py-20 px-5 py-10 sm:px-10">
                 <div className="title lg:text-4xl text-[28px]  font-normal font-antonio text-box-red lg:mt-20 mt-20">
                     Announcements
                 </div>
@@ -24,7 +24,7 @@ const Media = () => {
                     <Link to='/announcement-page'
                     >
                         <div className="flex lg:flex-row flex-col   border-[1px] border-black">
-                            <div className=" lg:w-[30%] w-full lg:h-auto h-auto">
+                            <div className=" lg:w-[30%]  w-full lg:h-auto h-auto">
                                 <img src={anImg1} alt="" className='object-cover lg:h-[122px] ' /></div>
                             <div className=" lg:w-[70%] w-full h-auto lg:px-4 px-2 lg:pt-[13px] pt-[6px] lg:pb-[12px] pb-[10px] ">
                                 <div className="text lg:line-clamp-2 line-clamp-3  font-Barlow text-foot-blue lg:text-[20px] texy-[16px] font-semibold   ">Aartech bags supply order to deliver Ultracapacitor-based systems to Indian....</div>

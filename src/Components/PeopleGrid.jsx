@@ -40,7 +40,7 @@ const PersonCard = ({ name, role, description, image, linkedInIcon, link, Mimage
 )
 
 const PeopleGrid = ({ peopleData }) => (
-  <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-9 gap-6">
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 lg:gap-9 gap-6">
     {peopleData.map((person, index) => (
       <PersonCard key={index} {...person} />
     ))}

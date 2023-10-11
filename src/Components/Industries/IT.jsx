@@ -6,7 +6,7 @@ import { bestCase, relayPannels, kra, incinerator, wtc, bts, clip, solar } from 
 
 import { CustomerLogos2 } from '../../Components'
 import { ImageSelect } from "../ImageSelector";
-import {it1 ,it2, it3, it4 ,it5} from '../../assets/IndImages'
+import { it1, it2, it3, it4, it5 } from '../../assets/IndImages'
 
 
 
@@ -18,7 +18,7 @@ const IT = () => {
 
     const [selectedTag, setSelectedTag] = useState("tag1"); // State to track the selected tag
     const [selectedProTag, setSelectedProTag] = useState('PTag1');
-    const images = [it1 ,it2, it3, it4 ,it5]; 
+    const images = [it1, it2, it3, it4, it5];
 
     const tagContents = {
         tag1: "Control and Automation stand as pivotal solutions for the IT and Telecom sectors. Aartech offers various technologies, ranging from cost-effective utility and solutions to high-quality, custom solutions for discerning clients. Leveraging advanced concepts and technology expertise, Aartech excels in creating bespoke solutions tailored to precise requirements. Their focus on solid-state and microprocessor-based control products ensures substantial value addition, setting them apart from conventional integration approaches. These innovations significantly enhance efficiency and reliability in the IT and Telecom domain",
@@ -33,7 +33,7 @@ const IT = () => {
 
         tag6: "Energy",
 
-        
+
     };
 
 
@@ -49,19 +49,19 @@ const IT = () => {
         <div>
             <Navbar />
 
-            <div className=" 2xl:px-[120px] lg:pt-20 lg:px-20  pt-20 px-5 lg:py-0  lg:mt-0 mt-5 ">
+            <div className=" 2xl:px-[120px] lg:pt-20 lg:px-20  pt-20 px-5 lg:py-0  lg:mt-0 mt-5 sm:px-10 ">
 
                 <div className="flex lg:flex-row flex-col lg:mt-20">
                     <div className="lg:hidden text-black text-[28px] font-normal font-antonio">IT and Telecom</div>
                     <div className="lg:hidden text-foot-blue text-lg font-bold font-Barlow tracking-widest mb-4">INDUSTRIES</div>
 
-                    <ImageSelect images={images}/>
-                    
+                    <ImageSelect images={images} />
+
 
                     <div className="lg:w-[55%] lg:ml-[44px]">
                         <div className="lg:block hidden text-black text-4xl font-normal font-antonio">IT and Telecom</div>
                         <div className="lg:block hidden text-foot-blue text-lg font-bold font-Barlow tracking-wider mt-2">INDUSTRIES</div>
-                        <div className="text-black lg:text-[22px] text-base lg:font-normal font-medium font-Barlow mt-6 lg:leading-tight leading-snug">Information technology and telecommunications have brought forth a transformative paradigm in our society. Yet, their immediate influence on energy matters may not be readily evident. Here, you can explore innovative solutions tailored for the Information Technology and Telecom sector within this context.   
+                        <div className="text-black lg:text-[22px] text-base lg:font-normal font-medium font-Barlow mt-6 lg:leading-tight leading-snug">Information technology and telecommunications have brought forth a transformative paradigm in our society. Yet, their immediate influence on energy matters may not be readily evident. Here, you can explore innovative solutions tailored for the Information Technology and Telecom sector within this context.
                         </div>
                     </div>
                 </div>
@@ -85,7 +85,7 @@ const IT = () => {
                             } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag2')}
                     >
-                    Pulse power
+                        Pulse power
                     </button>
                     <button
                         className={`tag ${selectedTag === 'tag3'
@@ -94,7 +94,7 @@ const IT = () => {
                             } w-auto h-[49px] px-[20px]   py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag3')}
                     >
-                    Power Backup Unit
+                        Power Backup Unit
                     </button>
                     <button
                         className={`tag ${selectedTag === 'tag4'
@@ -103,7 +103,7 @@ const IT = () => {
                             } w-auto h-[49px] px-[20px]   py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag4')}
                     >
-                    Customised Professional Case
+                        Customised Professional Case
                     </button>
 
 
@@ -118,7 +118,7 @@ const IT = () => {
                             } w-auto h-[49px] px-[20px]   py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag5')}
                     >
-                    Solar Design, Engineering & Consultancy services
+                        Solar Design, Engineering & Consultancy services
                     </button>
 
 
@@ -130,11 +130,11 @@ const IT = () => {
                             } w-auto h-[49px] px-[20px]   py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag6')}
                     >
-                    Energy Efficiency
+                        Energy Efficiency
                     </button>
 
                 </div>
-               
+
 
 
                 { /*     mobile-------------------------------------------------------------*/}
@@ -159,7 +159,7 @@ const IT = () => {
                             } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag2')}
                     >
-                    Pulse Power
+                        Pulse Power
                     </button>
                     <button
                         className={`tag ${selectedTag === 'tag3'
@@ -168,7 +168,7 @@ const IT = () => {
                             } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag3')}
                     >
-                    Power Backup Unit
+                        Power Backup Unit
                     </button>
                     <button
                         className={`tag ${selectedTag === 'tag4'
@@ -177,7 +177,7 @@ const IT = () => {
                             } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag4')}
                     >
-                    Customised Professional Case
+                        Customised Professional Case
                     </button>
                     <button
                         className={`tag ${selectedTag === 'tag5'
@@ -186,7 +186,7 @@ const IT = () => {
                             } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag5')}
                     >
-                    Solar Design, Engineering & Consultancy services
+                        Solar Design, Engineering & Consultancy services
                     </button>
 
 
@@ -198,10 +198,10 @@ const IT = () => {
                             } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag6')}
                     >
-                    Energy Efficiency
+                        Energy Efficiency
                     </button>
 
-                  
+
 
                 </div>
 
@@ -230,7 +230,7 @@ const IT = () => {
                             } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag2')}
                     >
-                    Kranking Ultracapacitors
+                        Kranking Ultracapacitors
                     </button>
                     <button
                         className={`tag ${selectedProTag === 'PTag3'
@@ -239,7 +239,7 @@ const IT = () => {
                             } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag3')}
                     >
-                    Auxiliary Power Unit
+                        Auxiliary Power Unit
                     </button>
                     <button
                         className={`tag ${selectedProTag === 'PTag4'
@@ -248,7 +248,7 @@ const IT = () => {
                             } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag4')}
                     >
-                    Best Case
+                        Best Case
                     </button>
 
 
@@ -264,7 +264,7 @@ const IT = () => {
                             } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag5')}
                     >
-                    Solar Design & Services
+                        Solar Design & Services
                     </button>
                     <button
                         className={`tag ${selectedProTag === 'PTag6'
@@ -273,10 +273,10 @@ const IT = () => {
                             } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag6')}
                     >
-                    AC & DC UPS
+                        AC & DC UPS
                     </button>
 
-                  
+
                 </div>
 
 
@@ -303,7 +303,7 @@ const IT = () => {
                             } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag2')}
                     >
-                    Kranking Ultracapacitors
+                        Kranking Ultracapacitors
                     </button>
                     <button
                         className={`tag ${selectedProTag === 'PTag3'
@@ -312,7 +312,7 @@ const IT = () => {
                             } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag3')}
                     >
-                    Auxiliary Power Unit
+                        Auxiliary Power Unit
                     </button>
                     <button
                         className={`tag ${selectedProTag === 'PTag4'
@@ -321,7 +321,7 @@ const IT = () => {
                             } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag4')}
                     >
-                    Best Case
+                        Best Case
                     </button>
                     <button
                         className={`tag ${selectedProTag === 'PTag5'
@@ -330,7 +330,7 @@ const IT = () => {
                             } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag5')}
                     >
-                    Solar Design & Services
+                        Solar Design & Services
                     </button>
 
 
@@ -342,7 +342,7 @@ const IT = () => {
                             } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag6')}
                     >
-                    AC & DC UPS
+                        AC & DC UPS
                     </button>
 
                 </div>
@@ -352,67 +352,62 @@ const IT = () => {
 
                 <div className="proContainer">
 
-                    <div className={`Pro1 flex lg:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag1' ? '' : 'hidden'}`}>
-                        <div className="lg:w-[100%] w-[100%] h-auto lg:p-2 p-0">
-                            <img src={relayPannels} alt=""></img>
+                    <div className={`Pro1 flex sm:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag1' ? '' : 'hidden'}`}>
+                        <div className=" sm:w-[130%] lg:w-[100%] w-[100%] h-auto sm:p-2 p-0 ">
+                            <img src={relayPannels} alt="" className='sm:w-[100%] w-[100%]'></img>
                         </div>
-                        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:ml-5 lg:mt-0 mt-4  lg:leading-tight leading-snug">
+                        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow sm:ml-5 sm:mt-0 mt-4  lg:leading-tight leading-snug">
 
-                        Control & Relay Panels (CRP) from Aartech, tailored for 11KV and 33KV substations, play a crucial role in the IT and Telecom sector. These panels, equipped with outdoor switchgear, integrate relays, fuses, switches, and comprehensive wiring to monitor and control transformers, generators, and circuit breakers. Customisable for single or multi-circuit applications, they offer versatile solutions for precise customer requirements, ensuring the reliable operation of critical systems in IT and Telecom environments.
-
-
-
-
-
+                            Control & Relay Panels (CRP) from Aartech, tailored for 11KV and 33KV substations, play a crucial role in the IT and Telecom sector. These panels, equipped with outdoor switchgear, integrate relays, fuses, switches, and comprehensive wiring to monitor and control transformers, generators, and circuit breakers. Customisable for single or multi-circuit applications, they offer versatile solutions for precise customer requirements, ensuring the reliable operation of critical systems in IT and Telecom environments.
 
                         </div>
                     </div>
 
-                    <div className={`Pro2 flex lg:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag2' ? '' : 'hidden'}`}>
-                        <div className="lg:w-[120%] w-[100%] h-auto lg:p-2 p-0">
-                            <img src={kra} alt=""></img>
+                    <div className={`Pro2 flex sm:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag2' ? '' : 'hidden'}`}>
+                        <div className=" sm:w-[130%] lg:w-[100%] w-[100%] h-auto sm:p-2 p-0 ">
+                            <img src={kra} alt="" className='sm:w-[100%] w-[100%]'></img>
                         </div>
-                        <div className="  text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:ml-5 lg:mt-0 mt-4 lg:leading-tight leading-snug">
-                        KranKing® Ultracapacitors are vital for healthcare, ensuring reliable engine starts for critical equipment. They reduce the strain on lead-acid batteries during starts, prolonging battery life and decreasing their size. Unlike traditional batteries with around 1000 cycles, KranKing® Ultracapacitors excel with over 300,000 cycles, even in extreme temperatures. This exceptional durability enhances the overall reliability of engine-cranking systems in healthcare settings, guaranteeing prompt response and operation when needed most.
-                        </div>
-                    </div>
-
-                    <div className={`Pro3 flex lg:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag3' ? '' : 'hidden'}`}>
-                        <div className="lg:w-[120%] w-[100%] h-auto bg-blue-300 lg:p-2 p-0">
-                            <img src="" alt=""></img>
-                        </div>
-                        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:ml-5 lg:mt-0 mt-4 lg:leading-tight leading-snug">
-                        The Auxiliary Power Unit (APU) plays a crucial role in IT and Telecom operations. This versatile device supplies auxiliary power when the primary source is unavailable, ensuring uninterrupted operations. With an additional electrical generator, the APU powers essential systems, while its compressor-driven environmental control maintains ideal conditions, making it indispensable for IT and Telecom environments.
+                        <div className="  text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow sm:ml-5 sm:mt-0 mt-4 lg:leading-tight leading-snug">
+                            KranKing® Ultracapacitors are vital for healthcare, ensuring reliable engine starts for critical equipment. They reduce the strain on lead-acid batteries during starts, prolonging battery life and decreasing their size. Unlike traditional batteries with around 1000 cycles, KranKing® Ultracapacitors excel with over 300,000 cycles, even in extreme temperatures. This exceptional durability enhances the overall reliability of engine-cranking systems in healthcare settings, guaranteeing prompt response and operation when needed most.
                         </div>
                     </div>
 
-                    <div className={`Pro4 flex lg:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag4' ? '' : 'hidden'}`}>
-                        <div className="lg:w-[100%] w-[100%] h-auto lg:p-2 p-0">
-                            <img src={bestCase} alt=""></img>
+                    <div className={`Pro3 flex sm:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag3' ? '' : 'hidden'}`}>
+                        <div className=" sm:w-[130%] lg:w-[100%] w-[100%] h-auto sm:p-2 p-0 ">
+                            <img src="" alt="" className='sm:w-[100%] w-[100%]'></img>
                         </div>
-                        <div className="text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:ml-5 lg:mt-0 mt-4 lg:leading-tight leading-snug">
-                        Best Case streamlines the procurement process for IT and Telecom professionals by providing timely access to quality enclosures at affordable prices. Entrepreneurs, innovators, and product designers can avoid expensive, low-quantity purchases by utilising BestCase's readily available and cost-effective options. Whether for prototypes or showcasing products, BestCase ensures your enclosures meet high standards, offering convenience and reliability for business success in the IT and Telecom sector.
+                        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow sm:ml-5 sm:mt-0 mt-4 lg:leading-tight leading-snug">
+                            The Auxiliary Power Unit (APU) plays a crucial role in IT and Telecom operations. This versatile device supplies auxiliary power when the primary source is unavailable, ensuring uninterrupted operations. With an additional electrical generator, the APU powers essential systems, while its compressor-driven environmental control maintains ideal conditions, making it indispensable for IT and Telecom environments.
+                        </div>
+                    </div>
+
+                    <div className={`Pro4 flex sm:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag4' ? '' : 'hidden'}`}>
+                        <div className=" sm:w-[130%] lg:w-[100%] w-[100%] h-auto sm:p-2 p-0 ">
+                            <img src={bestCase} alt="" className='sm:w-[100%] w-[100%]'></img>
+                        </div>
+                        <div className="text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow sm:ml-5 sm:mt-0 mt-4 lg:leading-tight leading-snug">
+                            Best Case streamlines the procurement process for IT and Telecom professionals by providing timely access to quality enclosures at affordable prices. Entrepreneurs, innovators, and product designers can avoid expensive, low-quantity purchases by utilising BestCase's readily available and cost-effective options. Whether for prototypes or showcasing products, BestCase ensures your enclosures meet high standards, offering convenience and reliability for business success in the IT and Telecom sector.
 
                         </div>
                     </div>
 
-                    <div className={`Pro5 flex lg:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag5' ? '' : 'hidden'}`}>
-                        <div className="lg:w-[80%] w-[100%] h-auto lg:p-2 p-0">
-                            <img src={solar} alt=""></img>
+                    <div className={`Pro5 flex sm:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag5' ? '' : 'hidden'}`}>
+                        <div className=" sm:w-[130%] lg:w-[100%] w-[100%] h-auto sm:p-2 p-0 ">
+                            <img src={solar} alt="" className='sm:w-[100%] w-[100%]'></img>
                         </div>
-                        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:ml-5 lg:mt-0 mt-4 lg:leading-tight leading-snug">
-                        Aarchtech's Solar Design and Services for IT and Telecom include permit and sales proposal design, NEM application filling, commercial and industrial projects, and more. Their expertise lies in crafting customised solar solutions, from panel layouts to energy optimisation, with comprehensive support encompassing feasibility studies, system design, installation, and maintenance. They aim to reduce utility bills and enhance efficiency for residential and industrial IT and Telecom clients.</div>
+                        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow sm:ml-5 sm:mt-0 mt-4 lg:leading-tight leading-snug">
+                            Aarchtech's Solar Design and Services for IT and Telecom include permit and sales proposal design, NEM application filling, commercial and industrial projects, and more. Their expertise lies in crafting customised solar solutions, from panel layouts to energy optimisation, with comprehensive support encompassing feasibility studies, system design, installation, and maintenance. They aim to reduce utility bills and enhance efficiency for residential and industrial IT and Telecom clients.</div>
                     </div>
 
-                    <div className={`Pro6 flex lg:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag6' ? '' : 'hidden'}`}>
-                        <div className="lg:w-[120%] w-[100%] h-auto lg:p-2 p-0">
-                            <img src="" alt=""></img>  
+                    <div className={`Pro6 flex sm:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag6' ? '' : 'hidden'}`}>
+                        <div className=" sm:w-[130%] lg:w-[100%] w-[100%] h-auto sm:p-2 p-0 ">
+                            <img src="" alt="" className='sm:w-[100%] w-[100%]'></img>
                         </div>
-                        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:ml-5 lg:mt-0 mt-4 lg:leading-tight leading-snug">
-                        Energy E
+                        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow sm:ml-5 sm:mt-0 mt-4 lg:leading-tight leading-snug">
+                            Energy E
                         </div>
                     </div>
-              
+
 
                 </div>
 

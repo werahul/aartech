@@ -6,7 +6,7 @@ import { bestCase, relayPannels, kra, incinerator, wtc, bts, clip } from '../../
 
 import { CustomerLogos2 } from '../../Components'
 import { ImageSelect } from "../ImageSelector";
-import {Power1,Power2, Power3,Power4, Power5} from '../../assets/IndImages'
+import { Power1, Power2, Power3, Power4, Power5 } from '../../assets/IndImages'
 
 
 
@@ -19,7 +19,7 @@ const PowerTran = () => {
 
     const [selectedTag, setSelectedTag] = useState("tag1"); // State to track the selected tag
     const [selectedProTag, setSelectedProTag] = useState('PTag1');
-    const images = [Power1,Power2, Power3,Power4, Power5]; 
+    const images = [Power1, Power2, Power3, Power4, Power5];
 
     const tagContents = {
         tag1: 'Control and automation are essential to Power Transmission and Distribution. Providing cost-effective solutions for utility companies and premium-quality solutions for demanding customers, Aartech offers a wide range of technological offerings. Their innovative approach prioritises customer satisfaction. As a power transmission and distribution company, Aartech excels at combining diverse components to craft tailored solutions. Microprocessor and solid-state embedded control products are meticulously designed to meet customised requirements. They deliver substantial value augmentation over conventional integration methods using discrete electrical devices.',
@@ -30,9 +30,9 @@ const PowerTran = () => {
 
         tag4: "PBU",
 
-       
 
-        };
+
+    };
 
 
     const handleTagClick = (tag) => {
@@ -47,14 +47,14 @@ const PowerTran = () => {
         <div>
             <Navbar />
 
-            <div className=" 2xl:px-[120px] lg:pt-20 lg:px-20  pt-20 px-5 lg:py-0  lg:mt-0 mt-5 ">
+            <div className=" 2xl:px-[120px] lg:pt-20 lg:px-20  pt-20 px-5 lg:py-0  lg:mt-0 mt-5 sm:px-10 ">
 
                 <div className="flex lg:flex-row flex-col lg:mt-20">
                     <div className="lg:hidden text-black text-[28px] font-normal font-antonio">Power Transmission and Distribution</div>
                     <div className="lg:hidden text-foot-blue text-lg font-bold font-Barlow tracking-widest mb-4">INDUSTRIES</div>
 
-                    <ImageSelect images={images}/>
-                    
+                    <ImageSelect images={images} />
+
                     <div className="lg:w-[55%] lg:ml-[44px]">
                         <div className="lg:block hidden text-black text-4xl font-normal font-antonio">Power Transmission and Distribution</div>
                         <div className="lg:block hidden text-foot-blue text-lg font-bold font-Barlow tracking-wider mt-2">INDUSTRIES</div>
@@ -84,7 +84,7 @@ const PowerTran = () => {
                             } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag2')}
                     >
-                    Pulse power
+                        Pulse power
                     </button>
                     <button
                         className={`tag ${selectedTag === 'tag3'
@@ -93,7 +93,7 @@ const PowerTran = () => {
                             } w-auto h-[49px] px-[20px]   py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag3')}
                     >
-                    Power Backup Unit
+                        Power Backup Unit
                     </button>
                     <button
                         className={`tag ${selectedTag === 'tag4'
@@ -102,12 +102,12 @@ const PowerTran = () => {
                             } w-auto h-[49px] px-[20px]   py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag4')}
                     >
-                    Customised Professional Case
+                        Customised Professional Case
                     </button>
 
 
                 </div>
-              
+
 
                 { /*     mobile-------------------------------------------------------------*/}
 
@@ -131,7 +131,7 @@ const PowerTran = () => {
                             } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag2')}
                     >
-                    Pulse power
+                        Pulse power
                     </button>
                     <button
                         className={`tag ${selectedTag === 'tag3'
@@ -140,7 +140,7 @@ const PowerTran = () => {
                             } w-[200px] h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag3')}
                     >
-                    Power Backup Unit
+                        Power Backup Unit
                     </button>
                     <button
                         className={`tag ${selectedTag === 'tag4'
@@ -149,9 +149,9 @@ const PowerTran = () => {
                             } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag4')}
                     >
-                    Customised Professional Case
+                        Customised Professional Case
                     </button>
-                       
+
 
                 </div>
 
@@ -180,7 +180,7 @@ const PowerTran = () => {
                             } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag2')}
                     >
-                    Kranking Ultracapacitors
+                        Kranking Ultracapacitors
                     </button>
                     <button
                         className={`tag ${selectedProTag === 'PTag3'
@@ -189,7 +189,7 @@ const PowerTran = () => {
                             } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag3')}
                     >
-                    Auxiliary Power Unit
+                        Auxiliary Power Unit
                     </button>
                     <button
                         className={`tag ${selectedProTag === 'PTag4'
@@ -198,14 +198,14 @@ const PowerTran = () => {
                             } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag4')}
                     >
-                    Best Case
+                        Best Case
                     </button>
 
 
 
                 </div>
 
-               
+
 
 
 
@@ -231,7 +231,7 @@ const PowerTran = () => {
                             } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag2')}
                     >
-                    Kranking Ultracapacitors 
+                        Kranking Ultracapacitors
                     </button>
                     <button
                         className={`tag ${selectedProTag === 'PTag3'
@@ -240,7 +240,7 @@ const PowerTran = () => {
                             } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag3')}
                     >
-                    Auxiliary Power Unit
+                        Auxiliary Power Unit
                     </button>
                     <button
                         className={`tag ${selectedProTag === 'PTag4'
@@ -249,9 +249,9 @@ const PowerTran = () => {
                             } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag4')}
                     >
-                    Best Case
+                        Best Case
                     </button>
-                  
+
 
                 </div>
 
@@ -260,46 +260,40 @@ const PowerTran = () => {
 
                 <div className="proContainer">
 
-                    <div className={`Pro1 flex lg:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag1' ? '' : 'hidden'}`}>
-                        <div className="lg:w-[100%] w-[100%] h-auto lg:p-2 p-0">
-                            <img src={relayPannels} alt=""></img>
+                    <div className={`Pro1 flex sm:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag1' ? '' : 'hidden'}`}>
+                        <div className=" sm:w-[130%] lg:w-[100%] w-[100%] h-auto sm:p-2 p-0 ">
+                            <img src={relayPannels} alt="" className='sm:w-[100%] w-[100%]'></img>
                         </div>
-                        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:ml-5 lg:mt-0 mt-4  lg:leading-tight leading-snug">
-                        Aartech's Control and Relay Panels (CRP) enhance Power Transmission and Distribution systems. Panels for 11KV and 33KV substations are equipped with relays, fuses, switches, wiring, and more. Their primary functions are monitoring and controlling transformers, generators, and circuit breakers. The versatility of CRPs allows them to be customised for single or multi-circuit use, ensuring they meet specific customer requirements and contribute to the efficiency and reliability of Power Transmission and Distribution networks.
-                        </div>
-                    </div>
-
-                    <div className={`Pro2 flex lg:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag2' ? '' : 'hidden'}`}>
-                        <div className="lg:w-[120%] w-[100%] h-auto lg:p-2 p-0 ">
-                            <img src={bts} alt=""></img>
-                        </div>
-                        <div className="  text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:ml-5 lg:mt-0 mt-4 lg:leading-tight leading-snug">KranKing® Ultracapacitors are tailored for Power Transmission and Distribution applications. Specifically designed for engine-cranking tasks, they alleviate the strain on lead-acid batteries during startups, reducing battery size and extending their lifespan. Their exceptional durability, with over 300,000 cycles even in extreme temperatures, enhances the reliability of power systems in Power Transmission and Distribution.</div>
-                    </div>
-
-                    <div className={`Pro3 flex lg:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag3' ? '' : 'hidden'}`}>
-                        <div className="lg:w-[120%] w-[100%] h-auto bg-blue-300 lg:p-2 p-0">
-                            <img src="" alt=""></img>
-                        </div>
-                        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:ml-5 lg:mt-0 mt-4 lg:leading-tight leading-snug">The Auxiliary Power Unit (APU) proves essential in Power Transmission and Distribution operations. With an extra electrical generator, it provides auxiliary power for critical systems such as lighting and avionics, ensuring uninterrupted Power Transmission and Distribution functions. Additionally, it uses bleed air to drive environmental systems, maintaining suitable conditions in challenging environments.</div>
-                    </div>
-
-                    <div className={`Pro4 flex lg:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag4' ? '' : 'hidden'}`}>
-                        <div className="lg:w-[130%] w-[100%] h-auto lg:p-2 p-0 ">
-                            <img src={clip} alt=""></img>
-                        </div>
-                        <div className="text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:ml-5 lg:mt-0 mt-4 lg:leading-tight leading-snug">BestCase aids Power Transmission and Distribution by providing entrepreneurs and engineers with timely and affordable access to high-quality enclosures. Their offerings address the challenges faced by innovators, ensuring that prototypes and delicate equipment are protected during transportation and demonstrations. BestCase's commitment to quality, affordability, and availability enhances the efficiency of showcasing products in the power sector, contributing to seamless presentations and successful business endeavours in the field of Power Transmission and Distribution.
-
+                        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow sm:ml-5 sm:mt-0 mt-4  lg:leading-tight leading-snug">
+                            Aartech's Control and Relay Panels (CRP) enhance Power Transmission and Distribution systems. Panels for 11KV and 33KV substations are equipped with relays, fuses, switches, wiring, and more. Their primary functions are monitoring and controlling transformers, generators, and circuit breakers. The versatility of CRPs allows them to be customised for single or multi-circuit use, ensuring they meet specific customer requirements and contribute to the efficiency and reliability of Power Transmission and Distribution networks.
                         </div>
                     </div>
 
-                    <div className={`Pro5 flex lg:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag5' ? '' : 'hidden'}`}>
-                        <div className="lg:w-[100%] w-[100%] h-auto lg:p-2 p-0 ">
-                            <img src="" alt=""></img>
+                    <div className={`Pro2 flex sm:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag2' ? '' : 'hidden'}`}>
+                        <div className=" sm:w-[130%] lg:w-[100%] w-[100%] h-auto sm:p-2 p-0 ">
+                            <img src={bts} alt="" className='sm:w-[100%] w-[100%]'></img>
                         </div>
-                        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:ml-5 lg:mt-0 mt-4 lg:leading-tight leading-snug">BestCase aids Power Transmission and Distribution by providing entrepreneurs and engineers with timely and affordable access to high-quality enclosures. Their offerings address the challenges faced by innovators, ensuring that prototypes and delicate equipment are protected during transportation and demonstrations. BestCase's commitment to quality, affordability, and availability enhances the efficiency of showcasing products in the power sector, contributing to seamless presentations and successful business endeavours in the field of Power Transmission and Distribution.</div>
+                        <div className="  text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow sm:ml-5 sm:mt-0 mt-4 lg:leading-tight leading-snug">KranKing® Ultracapacitors are tailored for Power Transmission and Distribution applications. Specifically designed for engine-cranking tasks, they alleviate the strain on lead-acid batteries during startups, reducing battery size and extending their lifespan. Their exceptional durability, with over 300,000 cycles even in extreme temperatures, enhances the reliability of power systems in Power Transmission and Distribution.</div>
                     </div>
 
-                 
+                    <div className={`Pro3 flex sm:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag3' ? '' : 'hidden'}`}>
+                        <div className=" sm:w-[130%] lg:w-[100%] w-[100%] h-auto sm:p-2 p-0 ">
+                            <img src="" alt="" className='sm:w-[100%] w-[100%]'></img>
+                        </div>
+                        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow sm:ml-5 sm:mt-0 mt-4 lg:leading-tight leading-snug">The Auxiliary Power Unit (APU) proves essential in Power Transmission and Distribution operations. With an extra electrical generator, it provides auxiliary power for critical systems such as lighting and avionics, ensuring uninterrupted Power Transmission and Distribution functions. Additionally, it uses bleed air to drive environmental systems, maintaining suitable conditions in challenging environments.</div>
+                    </div>
+
+                    <div className={`Pro4 flex sm:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag4' ? '' : 'hidden'}`}>
+                        <div className=" sm:w-[170%] lg:w-[100%] w-[100%] h-auto sm:p-2 p-0 ">
+                            <img src={clip} alt="" className='sm:w-[100%] w-[100%]'></img>
+                        </div>
+                        <div className="text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow sm:ml-5 sm:mt-0 mt-4 lg:leading-tight leading-snug">BestCase aids Power Transmission and Distribution by providing entrepreneurs and engineers with timely and affordable access to high-quality enclosures. Their offerings address the challenges faced by innovators, ensuring that prototypes and delicate equipment are protected during transportation and demonstrations. BestCase's commitment to quality, affordability, and availability enhances the efficiency of showcasing products in the power sector, contributing to seamless presentations and successful business endeavours in the field of Power Transmission and Distribution.
+
+                        </div>
+                    </div>
+
+                   
+
 
                 </div>
 

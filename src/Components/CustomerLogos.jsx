@@ -9,7 +9,7 @@ const CustomerLogos = () => {
 
   return (
     <>
-      <div className="bg-foot-blue lg:h-[347px] h-[230px] 2xl:px-[120px] lg:px-20 lg:py-20 p-5">
+      <div className="bg-foot-blue lg:h-[347px] h-[230px] 2xl:px-[120px] lg:px-20 lg:py-20 p-5 ">
         <div className="title  lg:text-4xl text-[28px] text-white font-bold font-antonio mb-0 lg:mb-2">
           Customers
         </div>

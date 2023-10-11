@@ -40,7 +40,7 @@ const BTS2000 = () => {
     return (
         <div>
             <Navbar />
-            <div className=" 2xl:px-[120px] lg:py-20 lg:px-20  pt-20 px-5 py-10 lg:mt-0 mt-5 ">
+            <div className=" 2xl:px-[120px] lg:py-20 lg:px-20  pt-20 px-5 py-10 lg:mt-0 mt-5 sm:px-10">
 
                 <div className="lg:hidden text-black text-[28px] font-normal font-antonio ">BTS 2000 Fast Bus Transfer System
                 </div>

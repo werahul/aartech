@@ -10,14 +10,14 @@ const OurBrands = () => {
   return ( 
     <>
     <Navbar/>
-      <div className="fullPage 2xl:px-[120px] lg:px-20 lg:py-[80px] lg:mt-[4rem] pt-[8rem] w-[100%] p-4">
+      <div className="fullPage 2xl:px-[120px] lg:px-20 lg:py-[80px] lg:mt-[4rem] pt-[6rem] w-[100%] p-4 sm:px-10">
 
 
         <div className="title text-4xl text-box-red font-normal font-antonio lg:mb-8 mb-6 mt-[14px]">
           Our Brands
         </div>
 
-        <div className="brandsSection lg:flex lg:space-x-[28px] lg:space-y-0 space-y-8 mb-16 ">
+        <div className="brandsSection grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 lg:gap-x-4 lg:gap-y-0 sm:gap-y-4 sm:gap-x-4 gap-y-8 mb-16 ">
 
           <div className="brandsCard  lg:w-full lg:h-auto  lg:space-y-[23px] space-y-2" >
             <div className="brandImg flex items-center justify-center px-6 py-8 h-60 bg-box-bg lg:h-[229px]" >

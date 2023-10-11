@@ -68,7 +68,7 @@ const Reliable = () => {
     return (
         <div>
             <Navbar />
-            <div className=" 2xl:px-[120px] lg:pt-20 lg:px-20   px-5 pt-20 lg:mt-0 mt-5 ">
+            <div className=" 2xl:px-[120px] lg:pt-20 lg:px-20   px-5 pt-20 lg:mt-0 mt-5 sm:px-10">
 
                 <div className="lg:hidden text-black text-[28px] font-normal font-antonio ">Reliable Engine Starting
                 </div>
@@ -357,7 +357,7 @@ const Reliable = () => {
                     >
                         Biomass Power
                     </button>
-                    
+
                     <button
                         className={`tag ${selectedTag === 'tag7'
                             ? 'bg-white text-box-red border-box-red'
@@ -443,60 +443,60 @@ const Reliable = () => {
                     </button>
 
                     <button
-                    className={`tag ${selectedTag === 'tag16'
-                        ? 'bg-white text-box-red border-box-red'
-                        : 'text-gray-500 border-gray-400'
-                        }  w-auto h-[49px] px-[10px] uppercase py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
-                    onClick={() => handleTagClick('tag16')}
-                >
-                    Pharmaceutical
-                </button>
-                <button
-                    className={`tag ${selectedTag === 'tag17'
-                        ? 'bg-white text-box-red border-box-red'
-                        : 'text-gray-500 border-gray-400'
-                        }  w-auto h-[49px] px-[10px] uppercase py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
-                    onClick={() => handleTagClick('tag17')}
-                >
-                    Telecom
-                </button>
+                        className={`tag ${selectedTag === 'tag16'
+                            ? 'bg-white text-box-red border-box-red'
+                            : 'text-gray-500 border-gray-400'
+                            }  w-auto h-[49px] px-[10px] uppercase py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
+                        onClick={() => handleTagClick('tag16')}
+                    >
+                        Pharmaceutical
+                    </button>
+                    <button
+                        className={`tag ${selectedTag === 'tag17'
+                            ? 'bg-white text-box-red border-box-red'
+                            : 'text-gray-500 border-gray-400'
+                            }  w-auto h-[49px] px-[10px] uppercase py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
+                        onClick={() => handleTagClick('tag17')}
+                    >
+                        Telecom
+                    </button>
 
-                <button
-                    className={`tag ${selectedTag === 'tag18'
-                        ? 'bg-white text-box-red border-box-red'
-                        : 'text-gray-500 border-gray-400'
-                        }  w-auto h-[49px] px-[10px] uppercase py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
-                    onClick={() => handleTagClick('tag18')}
-                >
-                    Material Handling
-                </button>
-                <button
-                    className={`tag ${selectedTag === 'tag19'
-                        ? 'bg-white text-box-red border-box-red'
-                        : 'text-gray-500 border-gray-400'
-                        }  w-auto h-[49px] px-[10px] uppercase py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
-                    onClick={() => handleTagClick('tag19')}
-                >
-                    Railways
-                </button>
-                <button
-                    className={`tag ${selectedTag === 'tag20'
-                        ? 'bg-white text-box-red border-box-red'
-                        : 'text-gray-500 border-gray-400'
-                        }  w-auto h-[49px] px-[10px] uppercase py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
-                    onClick={() => handleTagClick('tag20')}
-                >
-                    Marine Industry
-                </button>
-                <button
-                    className={`tag ${selectedTag === 'tag21'
-                        ? 'bg-white text-box-red border-box-red'
-                        : 'text-gray-500 border-gray-400'
-                        }  w-auto h-[49px] px-[10px] uppercase py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
-                    onClick={() => handleTagClick('tag21')}
-                >
-                    Automobile Industry
-                </button>
+                    <button
+                        className={`tag ${selectedTag === 'tag18'
+                            ? 'bg-white text-box-red border-box-red'
+                            : 'text-gray-500 border-gray-400'
+                            }  w-auto h-[49px] px-[10px] uppercase py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
+                        onClick={() => handleTagClick('tag18')}
+                    >
+                        Material Handling
+                    </button>
+                    <button
+                        className={`tag ${selectedTag === 'tag19'
+                            ? 'bg-white text-box-red border-box-red'
+                            : 'text-gray-500 border-gray-400'
+                            }  w-auto h-[49px] px-[10px] uppercase py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
+                        onClick={() => handleTagClick('tag19')}
+                    >
+                        Railways
+                    </button>
+                    <button
+                        className={`tag ${selectedTag === 'tag20'
+                            ? 'bg-white text-box-red border-box-red'
+                            : 'text-gray-500 border-gray-400'
+                            }  w-auto h-[49px] px-[10px] uppercase py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
+                        onClick={() => handleTagClick('tag20')}
+                    >
+                        Marine Industry
+                    </button>
+                    <button
+                        className={`tag ${selectedTag === 'tag21'
+                            ? 'bg-white text-box-red border-box-red'
+                            : 'text-gray-500 border-gray-400'
+                            }  w-auto h-[49px] px-[10px] uppercase py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
+                        onClick={() => handleTagClick('tag21')}
+                    >
+                        Automobile Industry
+                    </button>
 
                 </div>
 
@@ -512,7 +512,7 @@ const Reliable = () => {
                             } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag1')}
                     >
-                    KranKing Ultracapacitors
+                        KranKing Ultracapacitors
                     </button>
                 </div>
 
@@ -524,18 +524,18 @@ const Reliable = () => {
                             } w-[300px] h-[49px] px-[12px] py-[9px] whitespace-nowrap border  text-base font-normal font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag1')}
                     >
-                    KranKing Ultracapacitors
+                        KranKing Ultracapacitors
                     </button>
                 </div>
 
                 <div className="proContainer">
 
-                    <div className={`Pro1 flex lg:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag1' ? '' : 'hidden'}`}>
-                        <div className="lg:w-[70%] w-[100%] h-auto lg:p-2 p-0">
-                            <img src={kra2} alt=""></img>
+                    <div className={`Pro1 flex sm:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag1' ? '' : 'hidden'}`}>
+                        <div className=" sm:w-[100%] lg:w-[100%] w-[100%] h-auto sm:p-2 p-0 ">
+                            <img src={kra2} alt="" className='sm:w-[100%] w-[100%]'></img>
                         </div>
-                        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:ml-5 lg:mt-0 mt-4  lg:leading-tight leading-snug">
-                        KranKing® Ultracapacitors revolutionise engine cranking across industries. By reducing lead-acid battery load, they enable smaller batteries and extend their lifespan. With over 300,000 proven cycles and exceptional performance in extreme temperatures, these devices significantly enhance engine-cranking reliability, especially in demanding sectors like defence.
+                        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow sm:ml-5 sm:mt-0 mt-4  lg:leading-tight leading-snug">
+                            KranKing® Ultracapacitors revolutionise engine cranking across industries. By reducing lead-acid battery load, they enable smaller batteries and extend their lifespan. With over 300,000 proven cycles and exceptional performance in extreme temperatures, these devices significantly enhance engine-cranking reliability, especially in demanding sectors like defence.
 
 
 

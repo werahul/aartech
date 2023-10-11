@@ -35,14 +35,14 @@ const Solutions = () => {
     <div>
       <Navbar />
       <SlideInBar />
-      <div className="px-5 pt-[20px] lg:pt-[88px] lg:px-20 2xl:px-[120px]">
+      <div className="px-5 pt-[20px] lg:pt-[88px] lg:px-20 2xl:px-[120px] sm:px-10">
         {/* <div className="font-Barlow font-[500] mt-[24px] mb-[24px] lg:mt-[28px] lg:mb-[18px] text-[#0C013D]">
           <BreadCrumbs breadcrumbs={breadcrumbs} />
   </div>*/}
         <h1 className="text-[28px] lg:text-[36px] mt-[80px] lg:mt-[80px] mb-[22px] lg:mb-[14px] font-antonio">
           All Solutions
         </h1>
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-x-[30px] gap-y-[48px] mb-[48px]">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-[30px] gap-y-[48px] mb-[48px]">
           {solution.map((sol, index) => {
             return <Solution key={index} {...sol} />;
           })}

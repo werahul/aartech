@@ -1,4 +1,4 @@
-import React, { useState ,useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Navbar, Footer } from "../index"
 import { industry1 } from '../../assets/workImages'
 import { bestCase, relayPannels, kra, incinerator, wtc, bts, clip } from '../../assets/ProductImages'
@@ -6,7 +6,7 @@ import { bestCase, relayPannels, kra, incinerator, wtc, bts, clip } from '../../
 import { CustomerLogos2 } from '../../Components'
 
 import { ImageSelect } from "../ImageSelector";
-import {non1, non2, non3, non4, non5} from '../../assets/IndImages'
+import { non1, non2, non3, non4, non5 } from '../../assets/IndImages'
 
 
 
@@ -19,7 +19,7 @@ const NonRenewable = () => {
 
     const [selectedTag, setSelectedTag] = useState("tag1"); // State to track the selected tag
     const [selectedProTag, setSelectedProTag] = useState('PTag1');
-    const images = [non1, non2, non3, non4, non5 ]; 
+    const images = [non1, non2, non3, non4, non5];
 
     const tagContents = {
         tag1: 'Control and Automation are key solutions in Non-Renewable Energy. Aartech, with a wide range of technology options, caters to diverse needs, providing both cost-effective utility solutions and premium-quality offerings. Their expertise and commitment to innovation create custom solutions. Aartech excels in blending components for tailored solutions, enhancing non-renewable energy system efficiency. They stand out with meticulously designed solid-state and microprocessor-based control products, distinct from conventional approaches, boosting system performance and reliability.',
@@ -50,20 +50,20 @@ const NonRenewable = () => {
         <div>
             <Navbar />
 
-            <div className=" 2xl:px-[120px] lg:pt-20 lg:px-20  pt-20 px-5 lg:py-0  lg:mt-0 mt-5 ">
+            <div className=" 2xl:px-[120px] lg:pt-20 lg:px-20  pt-20 px-5 lg:py-0  lg:mt-0 mt-5 sm:px-10 ">
 
                 <div className="flex lg:flex-row flex-col lg:mt-20">
                     <div className="lg:hidden text-black text-[28px] font-normal font-antonio">Non-Renewable Energy</div>
                     <div className="lg:hidden text-foot-blue text-lg font-bold font-Barlow tracking-widest mb-4">INDUSTRIES</div>
 
-                    <ImageSelect images={images}/>
-                    
+                    <ImageSelect images={images} />
+
                     <div className="lg:w-[55%] lg:ml-[44px]">
                         <div className="lg:block hidden text-black text-4xl font-normal font-antonio">Non-Renewable Energy</div>
                         <div className="lg:block hidden text-foot-blue text-lg font-bold font-Barlow tracking-wider mt-2">INDUSTRIES</div>
                         <div className="text-black lg:text-[22px] text-base lg:font-normal font-medium font-Barlow mt-6 lg:leading-tight leading-snug">Today, most of society's energy requirements still rely on non-renewable sources. AAs awareness of non-renewable energy's environmental impact grows, the gap between energy demand and the level of resources shrinks. This has spurred a concurrent push for improved operational practices, energy efficiency measures, and adopting safe and intelligent solutions.
-                        Aartech boasts a comprehensive portfolio in the non-renewable energy sector, encompassing Thermal Power, Nuclear Power, Diesel Power, Oil and Gas, and Captive Power, to address these evolving challenges.
-                        
+                            Aartech boasts a comprehensive portfolio in the non-renewable energy sector, encompassing Thermal Power, Nuclear Power, Diesel Power, Oil and Gas, and Captive Power, to address these evolving challenges.
+
 
 
                         </div>
@@ -400,11 +400,11 @@ const NonRenewable = () => {
                     </button>
 
                     <button
-                        className={`tag ${selectedProTag === 'PTag7'
+                        className={`tag ${selectedProTag === 'PTag8'
                             ? 'bg-white text-box-red border-box-red'
                             : 'text-gray-500 border-gray-400'
                             } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
-                        onClick={() => handleProClick('PTag7')}
+                        onClick={() => handleProClick('PTag8')}
                     >
                         Incinerator
                     </button>
@@ -416,64 +416,64 @@ const NonRenewable = () => {
 
                 <div className="proContainer">
 
-                    <div className={`Pro1 flex lg:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag1' ? '' : 'hidden'}`}>
-                        <div className="lg:w-[100%] w-[100%] h-auto lg:p-2 p-0">
-                            <img src={relayPannels} alt=""></img>
+                    <div className={`Pro1 flex sm:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag1' ? '' : 'hidden'}`}>
+                        <div className=" sm:w-[130%] lg:w-[100%] w-[100%] h-auto sm:p-2 p-0 ">
+                            <img src={relayPannels} alt="" className='sm:w-[100%] w-[100%]'></img>
                         </div>
-                        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:ml-5 lg:mt-0 mt-4  lg:leading-tight leading-snug">
+                        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow sm:ml-5 sm:mt-0 mt-4  lg:leading-tight leading-snug">
                             Aartech's Control & Relay Panels (CRP) are invaluable in non-renewable energy. Designed for 11KV and 33KV substations with outdoor switchgear, they incorporate a comprehensive range of components, including relays, fuses, switches, and wiring. These panels effectively monitor and control critical equipment like transformers, generators, and circuit breakers. Moreover, they offer customisation options, allowing adaptation for single or multi-circuit use to meet customer requirements precisely.
 
                         </div>
                     </div>
 
-                    <div className={`Pro2 flex lg:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag2' ? '' : 'hidden'}`}>
-                        <div className="lg:w-[120%] w-[100%] h-auto lg:p-2 p-0">
-                            <img src={bts} alt=""></img>
+                    <div className={`Pro2 flex sm:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag2' ? '' : 'hidden'}`}>
+                        <div className=" sm:w-[160%] lg:w-[100%] w-[100%] h-auto sm:p-2 p-0 ">
+                            <img src={bts} alt="" className='sm:w-[100%] w-[100%]'></img>
                         </div>
-                        <div className="  text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:ml-5 lg:mt-0 mt-4 lg:leading-tight leading-snug">The BTS 2000 Fast Bus Transfer System significantly bolsters non-renewable energy systems. This advanced microprocessor-based system, tailored for Power Generation Utilities and Process Industries, swiftly executes motor bus transfers between independent power sources, ensuring safety compliance. By maintaining the power supply to crucial plant motors, it prevents process interruptions, even during power source contingencies. This outstanding capability fortifies non-renewable energy system reliability and performance.</div>
+                        <div className="  text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow sm:ml-5 sm:mt-0 mt-4 lg:leading-tight leading-snug">The BTS 2000 Fast Bus Transfer System significantly bolsters non-renewable energy systems. This advanced microprocessor-based system, tailored for Power Generation Utilities and Process Industries, swiftly executes motor bus transfers between independent power sources, ensuring safety compliance. By maintaining the power supply to crucial plant motors, it prevents process interruptions, even during power source contingencies. This outstanding capability fortifies non-renewable energy system reliability and performance.</div>
                     </div>
 
-                    <div className={`Pro3 flex lg:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag3' ? '' : 'hidden'}`}>
-                        <div className="lg:w-[120%] w-[100%] h-auto bg-blue-300 lg:p-2 p-0">
-                            <img src={kra} alt=""></img>
+                    <div className={`Pro3 flex sm:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag3' ? '' : 'hidden'}`}>
+                        <div className=" sm:w-[160%] lg:w-[100%] w-[100%] h-auto sm:p-2 p-0 ">
+                            <img src={kra} alt="" className='sm:w-[100%] w-[100%]'></img>
                         </div>
-                        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:ml-5 lg:mt-0 mt-4 lg:leading-tight leading-snug">KranKing® Ultracapacitors offer substantial benefits in non-renewable energy applications. Designed specifically for engine-cranking tasks, they reduce the strain on lead-acid batteries during starts, enabling significant reductions in battery size and prolonged lifespan. Unlike traditional batteries with around 1000 cycles, KranKing® devices deliver consistent performance for over 300,000 cycles, even in extreme temperatures. This exceptional durability enhances the overall reliability of non-renewable energy systems, ensuring dependable operation in critical scenarios.</div>
+                        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow sm:ml-5 sm:mt-0 mt-4 lg:leading-tight leading-snug">KranKing® Ultracapacitors offer substantial benefits in non-renewable energy applications. Designed specifically for engine-cranking tasks, they reduce the strain on lead-acid batteries during starts, enabling significant reductions in battery size and prolonged lifespan. Unlike traditional batteries with around 1000 cycles, KranKing® devices deliver consistent performance for over 300,000 cycles, even in extreme temperatures. This exceptional durability enhances the overall reliability of non-renewable energy systems, ensuring dependable operation in critical scenarios.</div>
                     </div>
 
-                    <div className={`Pro4 flex lg:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag4' ? '' : 'hidden'}`}>
-                        <div className="lg:w-[50%] w-[100%] h-auto lg:p-2 p-0">
-                            <img src={clip} alt=""></img>
+                    <div className={`Pro4 flex sm:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag4' ? '' : 'hidden'}`}>
+                        <div className=" sm:w-[70%] lg:w-[60%] w-[100%] h-auto sm:p-2 p-0 ">
+                            <img src={clip} alt="" className='sm:w-[100%] w-[100%]'></img>
                         </div>
-                        <div className="text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:ml-5 lg:mt-0 mt-4 lg:leading-tight leading-snug">The CLiP operates as an electronically sensed and triggered current limiter, featuring a continuous copper bus bar for regular current flow. Under overcurrent conditions, this path opens to introduce a parallel-mounted current limiting fuse, effectively interrupting the fault.</div>
+                        <div className="text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow sm:ml-5 sm:mt-0 mt-4 lg:leading-tight leading-snug">The CLiP operates as an electronically sensed and triggered current limiter, featuring a continuous copper bus bar for regular current flow. Under overcurrent conditions, this path opens to introduce a parallel-mounted current limiting fuse, effectively interrupting the fault.</div>
                     </div>
 
-                    <div className={`Pro5 flex lg:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag5' ? '' : 'hidden'}`}>
-                        <div className="lg:w-[100%] w-[100%] h-auto lg:p-2 p-0">
-                            <img src="" alt=""></img>
+                    <div className={`Pro5 flex sm:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag5' ? '' : 'hidden'}`}>
+                        <div className=" sm:w-[130%] lg:w-[100%] w-[100%] h-auto sm:p-2 p-0 ">
+                            <img src="" alt="" className='sm:w-[100%] w-[100%]'></img>
                         </div>
-                        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:ml-5 lg:mt-0 mt-4 lg:leading-tight leading-snug">The Auxiliary Power Unit (APU) is a valuable asset in non-renewable energy applications. It provides essential auxiliary power when the primary source is inaccessible, enhancing operational flexibility. Equipped with an additional generator, it supports critical systems like lighting and avionics. Furthermore, it efficiently manages environmental systems, contributing to the overall reliability and functionality of non-renewable energy operations.</div>
+                        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow sm:ml-5 sm:mt-0 mt-4 lg:leading-tight leading-snug">The Auxiliary Power Unit (APU) is a valuable asset in non-renewable energy applications. It provides essential auxiliary power when the primary source is inaccessible, enhancing operational flexibility. Equipped with an additional generator, it supports critical systems like lighting and avionics. Furthermore, it efficiently manages environmental systems, contributing to the overall reliability and functionality of non-renewable energy operations.</div>
                     </div>
 
-                    <div className={`Pro6 flex lg:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag6' ? '' : 'hidden'}`}>
-                        <div className="lg:w-[120%] w-[100%] h-auto lg:p-2 p-0">
-                            <img src={bestCase} alt=""></img>
+                    <div className={`Pro6 flex sm:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag6' ? '' : 'hidden'}`}>
+                        <div className=" sm:w-[160%] lg:w-[110%] w-[100%] h-auto sm:p-2 p-0 ">
+                            <img src={bestCase} alt="" className='sm:w-[100%] w-[100%]'></img>
                         </div>
-                        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:ml-5 lg:mt-0 mt-4 lg:leading-tight leading-snug">BestCase aids in the field of Non-Renewable Energy by providing entrepreneurs and innovators timely access to quality enclosures for their products. We understand the challenges of prototyping and the importance of cost-effective solutions. Whether showcasing prototypes or carrying fragile equipment, we ensure your presentation matches the highest standards. With 24x7 online access to our products, we are committed to delivering quality, affordability, and availability, supporting your endeavours for business success in the non-renewable energy sector.</div>
+                        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow sm:ml-5 sm:mt-0 mt-4 lg:leading-tight leading-snug">BestCase aids in the field of Non-Renewable Energy by providing entrepreneurs and innovators timely access to quality enclosures for their products. We understand the challenges of prototyping and the importance of cost-effective solutions. Whether showcasing prototypes or carrying fragile equipment, we ensure your presentation matches the highest standards. With 24x7 online access to our products, we are committed to delivering quality, affordability, and availability, supporting your endeavours for business success in the non-renewable energy sector.</div>
                     </div>
 
-                    <div className={`Pro7 flex lg:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag7' ? '' : 'hidden'}`}>
-                        <div className="lg:w-[90%] w-[100%] h-auto bg-lime-300 lg:p-2 p-0">
-                            <img src={wtc} alt=""></img>
+                    <div className={`Pro7 flex sm:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag7' ? '' : 'hidden'}`}>
+                        <div className=" sm:w-[130%] lg:w-[100%] w-[100%] h-auto sm:p-2 p-0 ">
+                            <img src={wtc} alt="" className='sm:w-[100%] w-[100%]'></img>
                         </div>
-                        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:ml-5 lg:mt-0 mt-4 lg:leading-tight leading-snug">WTC or Waste To Compost machine, a fully automatic composting machine, contributes to renewable energy by swiftly converting organic waste into compost within 24 hours on-site. This eco-friendly solution adheres to the 3R Principle: reducing waste, recycling it into valuable compost, and using the compost for garden plants. Its quiet and odourless operation makes it a sustainable choice for waste management in renewable energy facilities.
+                        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow sm:ml-5 sm:mt-0 mt-4 lg:leading-tight leading-snug">WTC or Waste To Compost machine, a fully automatic composting machine, contributes to renewable energy by swiftly converting organic waste into compost within 24 hours on-site. This eco-friendly solution adheres to the 3R Principle: reducing waste, recycling it into valuable compost, and using the compost for garden plants. Its quiet and odourless operation makes it a sustainable choice for waste management in renewable energy facilities.
                         </div>
                     </div>
 
-                    <div className={`Pro8 flex lg:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag8' ? '' : 'hidden'}`}>
-                        <div className="lg:w-[90%] w-[100%] h-auto bg-lime-300 lg:p-2 p-0">
-                            <img src={incinerator} alt=""></img>
+                    <div className={`Pro8 flex sm:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag8' ? '' : 'hidden'}`}>
+                        <div className=" sm:w-[130%] lg:w-[100%] w-[100%] h-auto sm:p-2 p-0 ">
+                            <img src={incinerator} alt="" className='sm:w-[100%] w-[100%]'></img>
                         </div>
-                        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:ml-5 lg:mt-0 mt-4 lg:leading-tight leading-snug">An incinerator is a device designed to burn waste materials at high temperatures, reducing them to ash and other byproducts. In the context of renewable energy, some modern incinerators are equipped with energy recovery systems that capture the heat generated during combustion. This captured heat can then be converted into electricity or used for various heating purposes, contributing to generating renewable energy while reducing waste volume.
+                        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow sm:ml-5 sm:mt-0 mt-4 lg:leading-tight leading-snug">An incinerator is a device designed to burn waste materials at high temperatures, reducing them to ash and other byproducts. In the context of renewable energy, some modern incinerators are equipped with energy recovery systems that capture the heat generated during combustion. This captured heat can then be converted into electricity or used for various heating purposes, contributing to generating renewable energy while reducing waste volume.
                         </div>
                     </div>
 

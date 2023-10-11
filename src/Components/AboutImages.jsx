@@ -25,8 +25,8 @@ const AboutImages = () => {
             <img src={images[(currentImageIndex - 1 + images.length) % images.length]} alt="Previous" className=" cursor-pointer h-[223px] w-[398px]" />
             <div className="absolute top-1/2 left-0 transform -translate-y-1/2 text-white cursor-pointer" onClick={handlePrev}></div>
           </div>
-          <div className="relative  lg:w-[50%] lg:h-auto  h-[200px] flex  justify-center">
-            <img src={images[currentImageIndex]} alt="Current" className=" customImg lg:mx-0 mx-[46px] lg:w-auto 2xl:w-auto w-[278px] lg:h-[270px] h-[180px] shadow-lg cursor-pointer" />
+          <div className="relative  lg:w-[50%] lg:h-auto sm:mx-auto  h-[200px] flex  justify-center">
+            <img src={images[currentImageIndex]} alt="Current" className=" customImg lg:mx-0 mx-[46px] lg:w-auto sm:w-auto 2xl:w-auto w-[278px] lg:h-[270px] h-[180px] shadow-lg cursor-pointer" />
             <div className="absolute top-0 left-0 w-full h-px bg-white" />
             <div className="absolute lg:top-[40%] top-[50%] lg:left-[0rem] left-[1rem]  transform -translate-y-1/2 text-black font-extrabold  cursor-pointer text-3xl select-none hover:text-4xl " onClick={handlePrev}>
               <img src={leftArw} alt="" className='lg:w-full lg:h-full w-3 h-4' />
@@ -41,7 +41,7 @@ const AboutImages = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-center items-center">
+      <div className="lg:flex justify-center items-center hidden">
         <div className="h-[0px] w-[23%] border border-slate-900 lg:flex items-center justify-evenly mt-6  ">
           <div className="w-9 h-9 bg-white rounded-full border border-red-700 cursor-pointer right-[75%] absolute"  ></div>
         </div>

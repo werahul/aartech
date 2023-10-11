@@ -2,11 +2,11 @@ import React, { useState, useEffect } from 'react'
 import { Navbar, Footer } from "../index"
 import { industry1 } from '../../assets/workImages'
 import { Cimg1, Cimg2, Cimg3, Cimg4 } from '../../assets/CLogoBlack'
-import { bestCase, relayPannels, kra, incinerator, wtc, bts, clip , solar } from '../../assets/ProductImages'
+import { bestCase, relayPannels, kra, incinerator, wtc, bts, clip, solar } from '../../assets/ProductImages'
 
 import { CustomerLogos2 } from '../../Components'
 import { ImageSelect } from "../ImageSelector";
-import {heavy1, heavy2, heavy3, heavy4, heavy5} from '../../assets/IndImages'
+import { heavy1, heavy2, heavy3, heavy4, heavy5 } from '../../assets/IndImages'
 
 
 
@@ -19,7 +19,7 @@ const HeavyEng = () => {
 
     const [selectedTag, setSelectedTag] = useState("tag1"); // State to track the selected tag
     const [selectedProTag, setSelectedProTag] = useState('PTag1');
-    const images = [heavy1, heavy2, heavy3, heavy4, heavy5]; 
+    const images = [heavy1, heavy2, heavy3, heavy4, heavy5];
 
     const tagContents = {
         tag1: 'Control and Automation serve as indispensable solutions for the Heavy Engineering Industries. With its wide range of technologies, Aartech provides both cost-effective solutions for utility companies and high-quality solutions for discerning customers. Aarchtech’s innovative approach prioritises customer satisfaction by utilising advanced technologies for specific needs. Providing tailored solutions for Heavy Engineering Industries, Aartech seamlessly blends diverse components to enhance efficiency and effectiveness. Solid-state and microprocessor-based embedded control products are meticulously designed to address customised requirements, setting them apart from conventional integration methods. In this critical sector, this approach delivers substantial value.',
@@ -50,13 +50,13 @@ const HeavyEng = () => {
         <div>
             <Navbar />
 
-            <div className=" 2xl:px-[120px] lg:pt-20 lg:px-20  pt-20 px-5 lg:py-0  lg:mt-0 mt-5 ">
+            <div className=" 2xl:px-[120px] lg:pt-20 lg:px-20  pt-20 px-5 lg:py-0  lg:mt-0 mt-5 sm:px-10">
 
                 <div className="flex lg:flex-row flex-col lg:mt-20">
                     <div className="lg:hidden text-black text-[28px] font-normal font-antonio">Heavy Engineering Industries</div>
                     <div className="lg:hidden text-foot-blue text-lg font-bold font-Barlow tracking-widest mb-4">INDUSTRIES</div>
 
-                    <ImageSelect images={images}/>
+                    <ImageSelect images={images} />
 
                     <div className="lg:w-[55%] lg:ml-[44px]">
                         <div className="lg:block hidden text-black text-4xl font-normal font-antonio">Heavy Engineering Industries</div>
@@ -85,7 +85,7 @@ const HeavyEng = () => {
                             } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag2')}
                     >
-                    Process Continuity
+                        Process Continuity
                     </button>
                     <button
                         className={`tag ${selectedTag === 'tag3'
@@ -118,7 +118,7 @@ const HeavyEng = () => {
                             } w-auto h-[49px] px-[20px]   py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag5')}
                     >
-                    Customised Professional Case
+                        Customised Professional Case
                     </button>
 
 
@@ -130,7 +130,7 @@ const HeavyEng = () => {
                             } w-auto h-[49px] px-[20px]   py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag6')}
                     >
-                    Solar Design, Engineering & Consultancy services
+                        Solar Design, Engineering & Consultancy services
                     </button>
 
                     <button
@@ -140,7 +140,7 @@ const HeavyEng = () => {
                             } w-auto h-[49px] px-[20px]   py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag7')}
                     >
-                    Energy Efficiency
+                        Energy Efficiency
                     </button>
 
 
@@ -196,7 +196,7 @@ const HeavyEng = () => {
                             } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag5')}
                     >
-                    Customised Professional Case
+                        Customised Professional Case
                     </button>
 
 
@@ -208,7 +208,7 @@ const HeavyEng = () => {
                             } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag6')}
                     >
-                    Solar Design, Engineering & Consultancy services
+                        Solar Design, Engineering & Consultancy services
                     </button>
 
                     <button
@@ -218,7 +218,7 @@ const HeavyEng = () => {
                             } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag7')}
                     >
-                    Energy Efficiency
+                        Energy Efficiency
                     </button>
 
 
@@ -284,7 +284,7 @@ const HeavyEng = () => {
                             } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag5')}
                     >
-                    Best Case
+                        Best Case
                     </button>
                     <button
                         className={`tag ${selectedProTag === 'PTag6'
@@ -293,7 +293,7 @@ const HeavyEng = () => {
                             } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag6')}
                     >
-                    Solar Design & Services
+                        Solar Design & Services
                     </button>
 
                     <button
@@ -303,10 +303,10 @@ const HeavyEng = () => {
                             } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase  text-lg font-normal font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag7')}
                     >
-                    AC & DC UPS
+                        AC & DC UPS
                     </button>
 
-                    
+
 
 
                 </div>
@@ -329,7 +329,7 @@ const HeavyEng = () => {
                     </button>
 
                     <button
-                        className={`tag ${selectedProTag === 'PTag2'    
+                        className={`tag ${selectedProTag === 'PTag2'
                             ? 'bg-white text-box-red border-box-red'
                             : 'text-gray-500 border-gray-400'
                             } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
@@ -362,7 +362,7 @@ const HeavyEng = () => {
                             } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag5')}
                     >
-                    Best Case
+                        Best Case
                     </button>
 
 
@@ -374,7 +374,7 @@ const HeavyEng = () => {
                             } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag6')}
                     >
-                    Solar Design & Services
+                        Solar Design & Services
                     </button>
 
                     <button
@@ -384,10 +384,10 @@ const HeavyEng = () => {
                             } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag7')}
                     >
-                    AC & DC UPS
+                        AC & DC UPS
                     </button>
 
-                    
+
 
                 </div>
 
@@ -396,61 +396,61 @@ const HeavyEng = () => {
 
                 <div className="proContainer">
 
-                    <div className={`Pro1 flex lg:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag1' ? '' : 'hidden'}`}>
-                        <div className="lg:w-[100%] w-[100%] h-auto lg:p-2 p-0">
-                            <img src={relayPannels} alt=""></img>
+                    <div className={`Pro1 flex sm:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag1' ? '' : 'hidden'}`}>
+                        <div className=" sm:w-[130%] lg:w-[100%] w-[100%] h-auto sm:p-2 p-0 ">
+                            <img src={relayPannels} alt="" className='sm:w-[100%] w-[100%]'></img>
                         </div>
-                        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:ml-5 lg:mt-0 mt-4  lg:leading-tight leading-snug">
-                        Aartech's Control and relay Panels (CRP) are integral to Heavy Engineering Industries. Tailored for 11KV and 33KV substations, these panels employ outdoor switchgear and encompass relays, fuses, switches, wiring, and more to effectively monitor and control transformers, generators, and circuit breakers. Additionally, indoor control panels for outdoor VCBs feature relays and indicators, ensuring adaptability for single or multi-circuit configurations, precisely meeting customer requirements.
+                        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow sm:ml-5 sm:mt-0 mt-4  lg:leading-tight leading-snug">
+                            Aartech's Control and relay Panels (CRP) are integral to Heavy Engineering Industries. Tailored for 11KV and 33KV substations, these panels employ outdoor switchgear and encompass relays, fuses, switches, wiring, and more to effectively monitor and control transformers, generators, and circuit breakers. Additionally, indoor control panels for outdoor VCBs feature relays and indicators, ensuring adaptability for single or multi-circuit configurations, precisely meeting customer requirements.
 
 
                         </div>
                     </div>
 
-                    <div className={`Pro2 flex lg:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag2' ? '' : 'hidden'}`}>
-                        <div className="lg:w-[120%] w-[100%] h-auto lg:p-2 p-0">
-                            <img src={bts} alt=""></img>
+                    <div className={`Pro2 flex sm:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag2' ? '' : 'hidden'}`}>
+                        <div className=" sm:w-[130%] lg:w-[100%]  w-[100%] h-auto sm:p-2 p-0 ">
+                            <img src={bts} alt="" className='sm:w-[100%] w-[100%]'></img>
                         </div>
-                        <div className="  text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:ml-5 lg:mt-0 mt-4 lg:leading-tight leading-snug">The BTS 2000 Fast Bus Transfer System ensures uninterrupted power supply for Heavy Engineering Industries. This advanced microprocessor-based system swiftly executes high-speed motor bus transfers between two independent power sources while adhering to safety parameters. It proactively prevents process interruptions, even in the event of a power source contingency, safeguarding continuous operations.</div>
+                        <div className="  text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow sm:ml-5 sm:mt-0 mt-4 lg:leading-tight leading-snug">The BTS 2000 Fast Bus Transfer System ensures uninterrupted power supply for Heavy Engineering Industries. This advanced microprocessor-based system swiftly executes high-speed motor bus transfers between two independent power sources while adhering to safety parameters. It proactively prevents process interruptions, even in the event of a power source contingency, safeguarding continuous operations.</div>
                     </div>
 
-                    <div className={`Pro3 flex lg:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag3' ? '' : 'hidden'}`}>
-                        <div className="lg:w-[120%] w-[100%] h-auto bg-blue-300 lg:p-2 p-0">
-                            <img src={kra} alt=""></img>
+                    <div className={`Pro3 flex sm:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag3' ? '' : 'hidden'}`}>
+                        <div className=" sm:w-[130%] lg:w-[100%] w-[100%] h-auto sm:p-2 p-0 ">
+                            <img src={kra} alt="" className='sm:w-[100%] w-[100%]'></img>
                         </div>
-                        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:ml-5 lg:mt-0 mt-4 lg:leading-tight leading-snug">The KranKing® Ultracapacitor series optimises engine starting in Heavy Engineering Industries. These ultracapacitors reduce the strain on lead-acid batteries during engine starts, resulting in smaller battery requirements and extended battery life. Their exceptional durability, lasting over 300,000 cycles even in extreme temperatures, enhances the reliability of engine-cranking systems, ensuring consistent performance in challenging conditions.</div>
+                        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow sm:ml-5 sm:mt-0 mt-4 lg:leading-tight leading-snug">The KranKing® Ultracapacitor series optimises engine starting in Heavy Engineering Industries. These ultracapacitors reduce the strain on lead-acid batteries during engine starts, resulting in smaller battery requirements and extended battery life. Their exceptional durability, lasting over 300,000 cycles even in extreme temperatures, enhances the reliability of engine-cranking systems, ensuring consistent performance in challenging conditions.</div>
                     </div>
 
-                    <div className={`Pro4 flex lg:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag4' ? '' : 'hidden'}`}>
-                        <div className="lg:w-[120%] w-[100%] h-auto lg:p-2 p-0">
-                            <img src={clip} alt=""></img>
+                    <div className={`Pro4 flex sm:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag4' ? '' : 'hidden'}`}>
+                        <div className=" sm:w-[160%] lg:w-[120%] w-[100%] h-auto sm:p-2 p-0 ">
+                            <img src={clip} alt="" className='sm:w-[100%] w-[100%]'></img>
                         </div>
-                        <div className="text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:ml-5 lg:mt-0 mt-4 lg:leading-tight leading-snug">The Current Limiting Protector (CLiP®) is a proven solution for Heavy Engineering Industries. With over 25 years of global service, CLiP® offers superior system protection, limiting currents up to 5000A in systems rated to 38kV. It achieves fault interruption beyond 300kA rms symmetrical at 15.5kV. The CLiP® functions as an electronically sensed and triggered current limiter, enhancing safety by opening the continuous copper bus bar path under overcurrent conditions and introducing a parallel-mounted current limiting fuse to interrupt faults effectively.</div>
+                        <div className="text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow sm:ml-5 sm:mt-0 mt-4 lg:leading-tight leading-snug">The Current Limiting Protector (CLiP®) is a proven solution for Heavy Engineering Industries. With over 25 years of global service, CLiP® offers superior system protection, limiting currents up to 5000A in systems rated to 38kV. It achieves fault interruption beyond 300kA rms symmetrical at 15.5kV. The CLiP® functions as an electronically sensed and triggered current limiter, enhancing safety by opening the continuous copper bus bar path under overcurrent conditions and introducing a parallel-mounted current limiting fuse to interrupt faults effectively.</div>
                     </div>
 
-                    <div className={`Pro5 flex lg:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag5' ? '' : 'hidden'}`}>
-                        <div className="lg:w-[80%] w-[100%] h-auto lg:p-2 p-0">
-                            <img src={bestCase} alt=""></img>
+                    <div className={`Pro5 flex sm:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag5' ? '' : 'hidden'}`}>
+                        <div className=" sm:w-[140%] lg:w-[100%] w-[100%] h-auto sm:p-2 p-0 ">
+                            <img src={bestCase} alt="" className='sm:w-[100%] w-[100%]'></img>
                         </div>
-                        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:ml-5 lg:mt-0 mt-4 lg:leading-tight leading-snug">Best Case facilitates the Heavy Engineering sector by offering easy access to quality enclosures through their online platform. This accessibility and affordability are crucial for industries that require specialised enclosures for machinery. Bestcase's commitment to quality and customisation aligns with the industry's demand for reliable solutions, contributing to smoother operations and project success in heavy engineering.</div>
+                        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow sm:ml-5 sm:mt-0 mt-4 lg:leading-tight leading-snug">Best Case facilitates the Heavy Engineering sector by offering easy access to quality enclosures through their online platform. This accessibility and affordability are crucial for industries that require specialised enclosures for machinery. Bestcase's commitment to quality and customisation aligns with the industry's demand for reliable solutions, contributing to smoother operations and project success in heavy engineering.</div>
                     </div>
 
-                    <div className={`Pro6 flex lg:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag6' ? '' : 'hidden'}`}>
-                        <div className="lg:w-[120%] w-[100%] h-auto lg:p-2 p-0">
-                            <img src={solar} alt=""></img>
+                    <div className={`Pro6 flex sm:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag6' ? '' : 'hidden'}`}>
+                        <div className=" sm:w-[160%] lg:w-[120%] w-[100%] h-auto sm:p-2 p-0 ">
+                            <img src={solar} alt="" className='sm:w-[100%] w-[100%]'></img>
                         </div>
-                        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:ml-5 lg:mt-0 mt-4 lg:leading-tight leading-snug">Aartech's Solar Design and Services offer comprehensive solutions for Heavy Engineering Industries. Their services encompass every aspect of solar energy integration, from permit design to system design, catering to commercial, industrial, and utility-scale projects. Their meticulous approach to solar panel layout and energy optimisation ensures tailored solutions that enhance efficiency in heavy engineering operations. Whether reducing utility bills or improving energy sustainability, Aartech provides end-to-end support, making it a valuable partner for this sector.</div>
+                        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow sm:ml-5 sm:mt-0 mt-4 lg:leading-tight leading-snug">Aartech's Solar Design and Services offer comprehensive solutions for Heavy Engineering Industries. Their services encompass every aspect of solar energy integration, from permit design to system design, catering to commercial, industrial, and utility-scale projects. Their meticulous approach to solar panel layout and energy optimisation ensures tailored solutions that enhance efficiency in heavy engineering operations. Whether reducing utility bills or improving energy sustainability, Aartech provides end-to-end support, making it a valuable partner for this sector.</div>
                     </div>
 
-                    <div className={`Pro7 flex lg:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag7' ? '' : 'hidden'}`}>
-                        <div className="lg:w-[90%] w-[100%] h-auto bg-lime-300 lg:p-2 p-0">
-                            <img src="" alt=""></img>
+                    <div className={`Pro7 flex sm:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag7' ? '' : 'hidden'}`}>
+                        <div className=" sm:w-[100%] w-[100%] h-auto sm:p-2 p-0 ">
+                            <img src="" alt="" className='sm:w-[100%] w-[100%]'></img>
                         </div>
-                        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:ml-5 lg:mt-0 mt-4 lg:leading-tight leading-snug">WTC or Waste To Compost machine, a fully automatic composting machine, contributes to renewable energy by swiftly converting organic waste into compost within 24 hours on-site. This eco-friendly solution adheres to the 3R Principle: reducing waste, recycling it into valuable compost, and using the compost for garden plants. Its quiet and odourless operation makes it a sustainable choice for waste management in renewable energy facilities.
+                        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow sm:ml-5 sm:mt-0 mt-4 lg:leading-tight leading-snug">WTC or Waste To Compost machine, a fully automatic composting machine, contributes to renewable energy by swiftly converting organic waste into compost within 24 hours on-site. This eco-friendly solution adheres to the 3R Principle: reducing waste, recycling it into valuable compost, and using the compost for garden plants. Its quiet and odourless operation makes it a sustainable choice for waste management in renewable energy facilities.
                         </div>
                     </div>
 
-                   
+
                 </div>
 
                 <div className="text-black lg:text-4xl text-[28px] font-normal font-antonio lg:mt-20 mt-10">Customers</div>

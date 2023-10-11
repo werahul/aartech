@@ -5,7 +5,7 @@ import { bestCase, relayPannels, kra, incinerator, wtc, solar, clip2 } from '../
 
 
 import { ImageSelect } from "../ImageSelector";
-import { solar1 ,solar2, solar3, solar4, solar5} from '../../assets/solutionImages'
+import { solar1, solar2, solar3, solar4, solar5 } from '../../assets/solutionImages'
 
 
 const Solar = () => {
@@ -17,7 +17,7 @@ const Solar = () => {
 
     const [selectedTag, setSelectedTag] = useState("tag1");
     const [selectedProTag, setSelectedProTag] = useState('PTag1');
-    const images = [solar1 ,solar2, solar3, solar4, solar5];
+    const images = [solar1, solar2, solar3, solar4, solar5];
 
 
 
@@ -40,7 +40,7 @@ const Solar = () => {
     return (
         <div>
             <Navbar />
-            <div className=" 2xl:px-[120px] lg:pt-20 lg:px-20   px-5 pt-20 lg:mt-0 mt-5 ">
+            <div className=" 2xl:px-[120px] lg:pt-20 lg:px-20   px-5 pt-20 lg:mt-0 mt-5 sm:px-10">
 
                 <div className="lg:hidden text-black text-[28px] font-normal font-antonio ">Solar Design, Engineering & Consultancy Services
                 </div>
@@ -54,7 +54,7 @@ const Solar = () => {
                         <div className="lg:block hidden text-black text-4xl font-normal font-antonio">Solar Design, Engineering & Consultancy Services</div>
                         <div className="lg:block hidden text-foot-blue text-lg font-bold font-Barlow tracking-wider mt-2">SOLUTIONS</div>
                         <div className="text-black lg:text-[22px] text-base lg:font-normal font-medium font-Barlow mt-6 lg:leading-tight leading-snug">
-                        At Aartech Solonics, our commitment to engineering excellence drives our passion for harnessing solar power to create sustainable energy solutions. With a blend of innovation and expertise, our experienced team crafts tailored solar solutions, optimising energy generation and reducing utility bills. From feasibility studies to installation and maintenance, we offer end-to-end support for residential and industrial clients, paving the way for a greener future.
+                            At Aartech Solonics, our commitment to engineering excellence drives our passion for harnessing solar power to create sustainable energy solutions. With a blend of innovation and expertise, our experienced team crafts tailored solar solutions, optimising energy generation and reducing utility bills. From feasibility studies to installation and maintenance, we offer end-to-end support for residential and industrial clients, paving the way for a greener future.
                         </div>
 
 
@@ -71,10 +71,10 @@ const Solar = () => {
                             } w-auto h-[49px] px-[15px] uppercase py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag1')}
                     >
-                    Non - Renewable Energy
+                        Non - Renewable Energy
                     </button>
 
-                  
+
 
                 </div>
 
@@ -118,7 +118,7 @@ const Solar = () => {
                             } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag1')}
                     >
-                    CLiP
+                        CLiP
                     </button>
                 </div>
 
@@ -130,18 +130,18 @@ const Solar = () => {
                             } w-[300px] h-[49px] px-[12px] py-[9px] whitespace-nowrap border  text-base font-normal font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag1')}
                     >
-                    CLiP
+                        CLiP
                     </button>
                 </div>
 
                 <div className="proContainer">
 
-                    <div className={`Pro1 flex lg:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag1' ? '' : 'hidden'}`}>
-                        <div className="lg:w-[70%] w-[100%] h-auto">
-                            <img src={clip2} alt=""></img>
+                    <div className={`Pro1 flex sm:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag1' ? '' : 'hidden'}`}>
+                        <div className=" sm:w-[100%] lg:w-[100%] w-[100%] h-auto sm:p-2 p-0 ">
+                            <img src={clip2} alt="" className='sm:w-[100%] w-[100%]'></img>
                         </div>
-                        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:ml-5 lg:mt-0 mt-4  lg:leading-tight leading-snug">
-                        CLiP® (Current Limiting Protector) offers unparalleled system protection for 25+ years globally. With a current limitation for 2.8kV to 38kV systems and continuous ratings up to 5000A, it combines high current capabilities with ultra-fast operation, making it an economical solution for diverse overcurrent protection needs, from System Upgrades to Transformer Protection.
+                        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow sm:ml-5 sm:mt-0 mt-4  lg:leading-tight leading-snug">
+                            CLiP® (Current Limiting Protector) offers unparalleled system protection for 25+ years globally. With a current limitation for 2.8kV to 38kV systems and continuous ratings up to 5000A, it combines high current capabilities with ultra-fast operation, making it an economical solution for diverse overcurrent protection needs, from System Upgrades to Transformer Protection.
                         </div>
                     </div>
                 </div>

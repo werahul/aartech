@@ -5,7 +5,7 @@ import { bestCase, relayPannels, kra, incinerator, wtc, solar, bts } from '../..
 
 
 import { ImageSelect } from "../ImageSelector";
-import {pro1, pro2, pro3, pro4, pro5 } from '../../assets/solutionImages'
+import { pro1, pro2, pro3, pro4, pro5 } from '../../assets/solutionImages'
 
 
 const Process = () => {
@@ -28,7 +28,7 @@ const Process = () => {
 
         tag2: "Aartech's process continuity solutions are vital for nuclear power, ensuring seamless operations, prioritising safety, disaster management, and nuclear material handling, and enhancing operational excellence in this crucial sector.",
 
-        tag3   : "Aartech's process continuity solutions are vital for captive power, ensuring reliable supply, meeting sensitive loads, improving power quality, and enabling grid independence in compliance with evolving regulations and industry needs.",
+        tag3: "Aartech's process continuity solutions are vital for captive power, ensuring reliable supply, meeting sensitive loads, improving power quality, and enabling grid independence in compliance with evolving regulations and industry needs.",
 
 
 
@@ -45,7 +45,7 @@ const Process = () => {
     return (
         <div>
             <Navbar />
-            <div className=" 2xl:px-[120px] lg:pt-20 lg:px-20   px-5 pt-20 lg:mt-0 mt-5 ">
+            <div className=" 2xl:px-[120px] lg:pt-20 lg:px-20   px-5 pt-20 lg:mt-0 mt-5 sm:px-10">
 
                 <div className="lg:hidden text-black text-[28px] font-normal font-antonio ">Process Continuity
                 </div>
@@ -59,9 +59,9 @@ const Process = () => {
                         <div className="lg:block hidden text-black text-4xl font-normal font-antonio">Process Continuity</div>
                         <div className="lg:block hidden text-foot-blue text-lg font-bold font-Barlow tracking-wider mt-2">SOLUTIONS</div>
                         <div className="text-black lg:text-[22px] text-base lg:font-normal font-medium font-Barlow mt-6 lg:leading-tight leading-snug">
-                        Electrical outages pose immediate and lasting threats to continuous operations. Every engineer recalls such incidents vividly. As financial prudence and operational efficiency become paramount, established practices need reevaluation.
-                        Aartech collaborates with consultants, manufacturers, contractors, and end-users, crafting holistic solutions for uninterrupted processes. We prioritise seamless operations by integrating proven strategies, ensuring businesses thrive amidst evolving challenges.
-                        
+                            Electrical outages pose immediate and lasting threats to continuous operations. Every engineer recalls such incidents vividly. As financial prudence and operational efficiency become paramount, established practices need reevaluation.
+                            Aartech collaborates with consultants, manufacturers, contractors, and end-users, crafting holistic solutions for uninterrupted processes. We prioritise seamless operations by integrating proven strategies, ensuring businesses thrive amidst evolving challenges.
+
                         </div>
 
 
@@ -78,7 +78,7 @@ const Process = () => {
                             } w-auto h-[49px] px-[15px] uppercase py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag1')}
                     >
-                    Thermal Power
+                        Thermal Power
                     </button>
 
                     <button
@@ -88,7 +88,7 @@ const Process = () => {
                             }  w-auto h-[49px] px-[15px] uppercase py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag2')}
                     >
-                    Nuclear Power
+                        Nuclear Power
                     </button>
                     <button
                         className={`tag ${selectedTag === 'tag3'
@@ -97,7 +97,7 @@ const Process = () => {
                             }  w-auto h-[49px] px-[15px] uppercase py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag3')}
                     >
-                    Captive Power
+                        Captive Power
                     </button>
 
                 </div>
@@ -115,7 +115,7 @@ const Process = () => {
                             } w-auto h-[49px] px-[10px] uppercase  py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag1')}
                     >
-                    Thermal Power
+                        Thermal Power
                     </button>
                     <button
                         className={`tag ${selectedTag === 'tag2'
@@ -124,7 +124,7 @@ const Process = () => {
                             } w-auto h-[49px] px-[10px] uppercase  whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag2')}
                     >
-                    Nuclear Power
+                        Nuclear Power
                     </button>
                     <button
                         className={`tag ${selectedTag === 'tag3'
@@ -133,7 +133,7 @@ const Process = () => {
                             } w-auto h-[49px] px-[10px] uppercase  whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag3')}
                     >
-                    Captive Power
+                        Captive Power
                     </button>
 
 
@@ -151,7 +151,7 @@ const Process = () => {
                             } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag1')}
                     >
-                    BTS 2000
+                        BTS 2000
                     </button>
                 </div>
 
@@ -163,18 +163,18 @@ const Process = () => {
                             } w-[300px] h-[49px] px-[12px] py-[9px] whitespace-nowrap border  text-base font-normal font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag1')}
                     >
-                    BTS 2000
+                        BTS 2000
                     </button>
                 </div>
 
                 <div className="proContainer">
 
-                    <div className={`Pro1 flex lg:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag1' ? '' : 'hidden'}`}>
-                        <div className="lg:w-[70%] w-[100%] h-auto">
-                            <img src={bts} alt=""></img>
+                    <div className={`Pro1 flex sm:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag1' ? '' : 'hidden'}`}>
+                        <div className=" sm:w-[100%] lg:w-[100%] w-[100%] h-auto sm:p-2 p-0 ">
+                            <img src={bts} alt="" className='sm:w-[100%] w-[100%]'></img>
                         </div>
-                        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:ml-5 lg:mt-0 mt-4  lg:leading-tight leading-snug">
-                        The BTS 2000 Fast Bus Transfer System, a microprocessor-based solution for Power Generation Utilities and Continuous Process Industries, ensures uninterrupted power supply by swiftly transferring power between sources under safe parameters. Proven in thermal, nuclear, and hydropower, it supports ratings from 25MW to 800MW.
+                        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow sm:ml-5 sm:mt-0 mt-4  lg:leading-tight leading-snug">
+                            The BTS 2000 Fast Bus Transfer System, a microprocessor-based solution for Power Generation Utilities and Continuous Process Industries, ensures uninterrupted power supply by swiftly transferring power between sources under safe parameters. Proven in thermal, nuclear, and hydropower, it supports ratings from 25MW to 800MW.
 
 
 

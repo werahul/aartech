@@ -62,11 +62,11 @@ const Home = () => {
         <div className="title lg:text-4xl text-[28px] text-box-red leading-9  font-normal lg:mt-0  font-antonio lg:mb-9 mb-4">
           Our Tailored Solutions
         </div>
-        <div className='font-Barlow lg:text-[20px] text-lightBlack text-[16px] lg:w-full w-[350px] lg:font-semibold font-medium lg:mb-[32px] mb-4'  > Choose any ONE of the THREE segments below and check out corresponding 2 segments linked with your chosen one.</div>
+        <div className='font-Barlow lg:text-[20px] text-lightBlack text-[16px] lg:w-full lg:font-semibold font-medium lg:mb-[32px] mb-4'  > Choose any ONE of the THREE segments below and check out corresponding 2 segments linked with your chosen one.</div>
         <OptionsGrid />
       </div>
       <CustomerLogos />
-      <div className="fullPage 2xl:px-[120px] lg:px-20  lg:my-[3.8rem] w-[100%] lg:pt-0 lg:pb-0 pt-10 pb-[4rem] px-5">
+      <div className="fullPage 2xl:px-[120px] lg:px-20  lg:my-[3.8rem] w-[100%] lg:pt-0 lg:pb-0 pt-10 pb-[2rem] px-5 sm:px-10 ">
         <AboutUsHome />
 
       </div>

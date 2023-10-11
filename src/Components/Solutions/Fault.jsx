@@ -5,7 +5,7 @@ import { bestCase, relayPannels, kra, incinerator, wtc, solar, clip2 } from '../
 
 
 import { ImageSelect } from "../ImageSelector";
-import { Fault1, Fault2, Fault3, Fault4, Fault5} from '../../assets/solutionImages'
+import { Fault1, Fault2, Fault3, Fault4, Fault5 } from '../../assets/solutionImages'
 
 
 const Fault = () => {
@@ -43,7 +43,7 @@ const Fault = () => {
     return (
         <div>
             <Navbar />
-            <div className=" 2xl:px-[120px] lg:pt-20 lg:px-20   px-5 pt-20 lg:mt-0 mt-5 ">
+            <div className=" 2xl:px-[120px] lg:pt-20 lg:px-20   px-5 pt-20 lg:mt-0 mt-5 sm:px-10">
 
                 <div className="lg:hidden text-black text-[28px] font-normal font-antonio ">Fault Current Limiting
                 </div>
@@ -57,7 +57,7 @@ const Fault = () => {
                         <div className="lg:block hidden text-black text-4xl font-normal font-antonio">Fault Current Limiting</div>
                         <div className="lg:block hidden text-foot-blue text-lg font-bold font-Barlow tracking-wider mt-2">SOLUTIONS</div>
                         <div className="text-black lg:text-[22px] text-base lg:font-normal font-medium font-Barlow mt-6 lg:leading-tight leading-snug">
-                        Fault Current Limiter solutions, offered by Aartech in partnership with G&W Elec. Co. USA, are crucial in electrical engineering. They address evolving needs and operational requirements by mitigating electrical faults. These solutions cater to various industries, including power generation (with a focus on captive power), and sectors like cement and oil & gas. Aartech delivers comprehensive turnkey solutions across Asia, ensuring reliable electrical systems.
+                            Fault Current Limiter solutions, offered by Aartech in partnership with G&W Elec. Co. USA, are crucial in electrical engineering. They address evolving needs and operational requirements by mitigating electrical faults. These solutions cater to various industries, including power generation (with a focus on captive power), and sectors like cement and oil & gas. Aartech delivers comprehensive turnkey solutions across Asia, ensuring reliable electrical systems.
                         </div>
 
 
@@ -74,7 +74,7 @@ const Fault = () => {
                             } w-auto h-[49px] px-[15px] uppercase py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag1')}
                     >
-                    Non - Renewable Energy
+                        Non - Renewable Energy
                     </button>
 
                     <button
@@ -84,7 +84,7 @@ const Fault = () => {
                             }  w-auto h-[49px] px-[15px] uppercase py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag2')}
                     >
-                    Heavy Engineering Industry
+                        Heavy Engineering Industry
                     </button>
 
                 </div>
@@ -129,7 +129,7 @@ const Fault = () => {
                             } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag1')}
                     >
-                    CLiP
+                        CLiP
                     </button>
                 </div>
 
@@ -141,18 +141,18 @@ const Fault = () => {
                             } w-[300px] h-[49px] px-[12px] py-[9px] whitespace-nowrap border  text-base font-normal font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag1')}
                     >
-                    CLiP
+                        CLiP
                     </button>
                 </div>
 
                 <div className="proContainer">
 
-                    <div className={`Pro1 flex lg:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag1' ? '' : 'hidden'}`}>
-                        <div className="lg:w-[70%] w-[100%] h-auto lg:p-2 p-0">
-                            <img src={clip2} alt=""></img>
+                    <div className={`Pro1 flex sm:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag1' ? '' : 'hidden'}`}>
+                        <div className=" sm:w-[100%] lg:w-[100%] w-[100%] h-auto sm:p-2 p-0 ">
+                            <img src={clip2} alt="" className='sm:w-[100%] w-[100%]'></img>
                         </div>
-                        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:ml-5 lg:mt-0 mt-4  lg:leading-tight leading-snug">
-                        CLiP® (Current Limiting Protector) offers unparalleled system protection for 25+ years globally. With a current limitation for 2.8kV to 38kV systems and continuous ratings up to 5000A, it combines high current capabilities with ultra-fast operation, making it an economical solution for diverse overcurrent protection needs, from System Upgrades to Transformer Protection.
+                        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow sm:ml-5 sm:mt-0 mt-4  lg:leading-tight leading-snug">
+                            CLiP® (Current Limiting Protector) offers unparalleled system protection for 25+ years globally. With a current limitation for 2.8kV to 38kV systems and continuous ratings up to 5000A, it combines high current capabilities with ultra-fast operation, making it an economical solution for diverse overcurrent protection needs, from System Upgrades to Transformer Protection.
                         </div>
                     </div>
                 </div>
