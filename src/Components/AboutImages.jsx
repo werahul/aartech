@@ -46,7 +46,7 @@ const AboutImages = () => {
           <div className="w-8 h-8 bg-white rounded-full border border-red-700 cursor-pointer right-[84%] absolute"  ></div>
         </div>
         <div className="h-[0px] w-[48%] border border-slate-900 lg:flex items-center justify-evenly mt-6 hidden ml-auto ">
-          <div className="w-[52px] h-[52px] bg-white rounded-full border border-red-700 absolute right-[48%] cursor-pointer" />
+          <div className="w-[52px] h-[52px] bg-white rounded-full border animate-pulse border-red-700 absolute right-[48%] cursor-pointer" />
           <div className="w-8 h-8 bg-white rounded-full border absolute right-[14%] 2xl:right-[20%] border-red-700 cursor-pointer" ></div>
         </div>
       </div>
