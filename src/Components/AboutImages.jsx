@@ -19,35 +19,35 @@ const AboutImages = () => {
 
   return (
     <div className="my-8">
-      <div className="flex justify-between h-[20rem] mt-12">
+      <div className="flex justify-between h-[20rem] mt-12 lg:mb-12 mb-0">
         <div className=" flex justify-between lg:space-x-12 3xl:space-x-32 w-full">
-          <div className="relative w-[30%] mt-6 lg:inline-block hidden">
-            <img src={images[(currentImageIndex - 1 + images.length) % images.length]} alt="Previous" className=" cursor-pointer h-[223px] w-[398px]" />
-            <div className="absolute top-1/2 left-0 transform -translate-y-1/2 text-white cursor-pointer" onClick={handlePrev}></div>
+          <div className="relative w-[20%] mt-6 lg:flex items-center justify-center hidden">
+            <img src={images[(currentImageIndex - 1 + images.length) % images.length]} alt="Previous" className=" -translate-x-10 grayscale cursor-pointer h-[180px] w-auto" />
+            <div className="absolute top-1/2 left-0 transform -translate-y-1/2 text-white cursor-pointer " onClick={handlePrev}></div>
           </div>
-          <div className="relative  lg:w-[50%] lg:h-auto sm:mx-auto  h-[200px] flex  justify-center">
-            <img src={images[currentImageIndex]} alt="Current" className=" customImg lg:mx-0 mx-[46px] lg:w-auto sm:w-auto 2xl:w-auto w-[278px] lg:h-[270px] h-[180px] shadow-lg cursor-pointer" />
+          <div className="relative  lg:w-[60%] lg:h-auto sm:mx-auto  h-[300px] flex  justify-center">
+            <img src={images[currentImageIndex]} alt="Current" className=" customImg lg:mx-0 mx-[46px] lg:w-auto sm:w-auto 2xl:w-auto w-[300px] lg:h-[330px] h-[180px] shadow-lg cursor-pointer" />
             <div className="absolute top-0 left-0 w-full h-px bg-white" />
-            <div className="absolute lg:top-[40%] top-[50%] lg:left-[0rem] left-[1rem]  transform -translate-y-1/2 text-black font-extrabold  cursor-pointer text-3xl select-none hover:text-4xl " onClick={handlePrev}>
+            <div className="absolute lg:top-[50%] top-[30%] lg:left-[0rem] left-[2px]  transform -translate-y-1/2 text-black font-extrabold  cursor-pointer text-3xl select-none hover:text-4xl lg:border-2 border-black p-4 " onClick={handlePrev}>
               <img src={leftArw} alt="" className='lg:w-full lg:h-full w-3 h-4' />
             </div>
-            <div className="absolute lg:top-[40%] top-[50%] lg:right-[0px] right-[1rem]  transform -translate-y-1/2 text-black cursor-pointer font-bold text-3xl select-none hover:text-4xl" onClick={handleNext}>
+            <div className="absolute lg:top-[50%] top-[30%] lg:right-[0px] right-[2px]  transform -translate-y-1/2 text-black cursor-pointer font-bold text-3xl select-none hover:text-4xl lg:border-2 border-black p-4" onClick={handleNext}>
               <img src={rightArw} alt="" className='lg:w-full lg:h-full w-3 h-4' />
             </div>
           </div>
-          <div className="relative w-[30%] mt-6 lg:inline-block hidden ">
-            <img src={images[(currentImageIndex + 1) % images.length]} alt="Next" className="h-[223px] w-auto cursor-pointer" />
+          <div className="relative w-[20%] mt-6 lg:flex items-center justify-center hidden overflow-hidden ">
+            <img src={images[(currentImageIndex + 1) % images.length]} alt="Next" className="h-[180px] translate-x-9 grayscale w-auto cursor-pointer" />
             <div className="absolute top-1/2 right-0 transform -translate-y-1/2 text-white cursor-pointer" onClick={handleNext}></div>
           </div>
         </div>
       </div>
       <div className="lg:flex justify-center items-center hidden">
-        <div className="h-[0px] w-[23%] border border-slate-900 lg:flex items-center justify-evenly mt-6  ">
-          <div className="w-9 h-9 bg-white rounded-full border border-red-700 cursor-pointer right-[75%] absolute"  ></div>
+        <div className="h-[0px] w-[15%] border border-slate-900 lg:flex items-center justify-evenly mt-6  ">
+          <div className="w-8 h-8 bg-white rounded-full border border-red-700 cursor-pointer right-[84%] absolute"  ></div>
         </div>
         <div className="h-[0px] w-[48%] border border-slate-900 lg:flex items-center justify-evenly mt-6 hidden ml-auto ">
           <div className="w-[52px] h-[52px] bg-white rounded-full border border-red-700 absolute right-[48%] cursor-pointer" />
-          <div className="w-8 h-8 bg-white rounded-full border absolute right-[24%] 2xl:right-[20%] border-red-700 cursor-pointer" ></div>
+          <div className="w-8 h-8 bg-white rounded-full border absolute right-[14%] 2xl:right-[20%] border-red-700 cursor-pointer" ></div>
         </div>
       </div>
       <div className={`yearSection1 flex items-center justify-evenly lg:mt-8 font-Barlow -mt-36 ${currentImageIndex === 7 ? '' : 'hidden'}`}>

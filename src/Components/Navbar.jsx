@@ -83,16 +83,16 @@ const Navbar = () => {
   const location = useLocation();
   const rotateClass = rotate ? 'customRotate' : '';
   const rotateClass2 = rotate2 ? 'customRotate' : '';
-  const workClass = isRed ? 'text-white' : 'text-box-red';
-  const InvClass = isRedInv ? 'text-white' : 'text-box-red';
+  const workClass = isRed ? 'text-foot-blue ' : 'text-box-red';
+  const InvClass = isRedInv ? 'text-foot-blue ' : 'text-box-red';
   const linkStyle = {
-    color: isWorkButtonActive ? '#DA0001' : 'white',
+    color: isWorkButtonActive ? '#DA0001' : '#0C013D',
     fontWeight: isWorkButtonActive ? "800" : "",
 
   };
 
   return (
-    <div className="navbar-bg fixed inset-0 lg:h-[88px] h-[70px] sm:h-[90px] flex items-center justify-between z-20 2xl:px-[40px]">
+    <div className="navbar-bg fixed inset-0 lg:h-[88px] h-[70px] sm:h-[90px] flex items-center justify-between z-50 2xl:px-[40px]">
       <div className="flex items-center justify-between w-full px-5 md:px-20">
         <Link to="/" className="z-50 ">
           <img
@@ -103,7 +103,7 @@ const Navbar = () => {
         </Link>
         <div className="flex items-center  flex-row-reverse lg:flex-row">
           <button
-            className="lg:hidden z-50 text-white ml-4"
+            className="lg:hidden z-50 text-slate-900 ml-4"
             onClick={toggleMenu}
             aria-label="Toggle menu"
           >
@@ -133,13 +133,13 @@ const Navbar = () => {
             </select>
           </div>
           {selectedStock === "BSE" && bseData && (
-            <p className="text-white block text-[16px] font-Barlow font-bold lg:hidden animate-pulse">
+            <p className="text-slate-900 block text-[16px] font-Barlow font-bold lg:hidden animate-pulse">
               <span>₹ {" "}</span>
               {bseData}
             </p>
           )}
           {selectedStock === "NSE" && nseData && (
-            <p className="text-white block text-[16px] font-Barlow font-bold lg:hidden animate-pulse">
+            <p className="text-slate-900 block text-[16px] font-Barlow font-bold lg:hidden animate-pulse">
               <span>₹ {" "}</span>
               {nseData}
             </p>
@@ -149,13 +149,13 @@ const Navbar = () => {
       <div
         className={`${
           isMenuOpen
-            ? "flex flex-col lg:py-20 py-[7rem] px-5 lg:text-[24px] text-lg space-y-4 fixed h-screen inset-0 bg-neutral-800 overflow-y-auto"
+            ? "flex flex-col lg:py-20 py-[7rem] px-5 lg:text-[24px] text-lg space-y-4 fixed h-screen inset-0 bg-white overflow-y-auto"
             : "hidden lg:flex "
         } flex lg:items-center font-Barlow lg:space-x-7 mt-0 sm:px-10 px-5 lg:px-20 z-1 `}
       >
         <Link
           // to="/work" // Specify the route you want to link to
-          className="text-white lg:block hidden font-bold hover:opacity-75 lg:border-none lg:pb-0 border-b pb-4 border-neutral-500"
+          className="text-foot-blue lg:block hidden font-bold hover:opacity-75 lg:border-none lg:pb-0 border-b pb-4 border-neutral-500"
           style={linkStyle}
           onClick={() => {
             setIsMenuOpen(false);
@@ -167,8 +167,8 @@ const Navbar = () => {
 
         <Link
           // to="/work"
-          // const linkClasses = `text-white lg:hidden block font-bold hover:opacity-75 ${isDivVisible ? 'active2' : ''}`;
-          className={`text-white lg:hidden block font-bold  ${
+          // const linkClasses = `text-foot-blue  lg:hidden block font-bold hover:opacity-75 ${isDivVisible ? 'active2' : ''}`;
+          className={`text-slate-900 lg:hidden block font-bold  ${
             isDivVisible ? "active2" : ""
           }`}
           onClick={() => {
@@ -186,10 +186,10 @@ const Navbar = () => {
               <img
                 src={down}
                 alt=""
-                className={` float-right top-0 right-0 invert  text-white p-2 rounded-full cursor-pointer ${rotateClass} `}
+                className={` float-right top-0 right-0  text-slate-900 p-2 rounded-full cursor-pointer ${rotateClass} `}
                 onClick={toggleDivVisibility}
               />
-              {/*<button className=" float-right top-0 right-0 bg-blue-500 text-white p-2 rounded-full cursor-pointer "
+              {/*<button className=" float-right top-0 right-0 bg-blue-500 text-foot-blue  p-2 rounded-full cursor-pointer "
         onClick={toggleDivVisibility}
           >
             o        
@@ -205,19 +205,19 @@ const Navbar = () => {
             >
               <Link
                 to="/industries"
-                className="lg:border-none lg:pb-0 border-b pb-4 uppercase text-white  py-4 ml-14 border-neutral-500"
+                className="lg:border-none lg:pb-0 border-b pb-4 uppercase text-foot-blue   py-4 ml-14 border-neutral-500"
               >
                 industries
               </Link>
               <Link
                 to="/products"
-                className="lg:border-none lg:pb-0 border-b pb-4 uppercase text-white  py-4 ml-14 border-neutral-500"
+                className="lg:border-none lg:pb-0 border-b pb-4 uppercase text-foot-blue   py-4 ml-14 border-neutral-500"
               >
                 products
               </Link>
               <Link
                 to="/solutions"
-                className="lg:border-none  lg:pb-0 border-b pb-4 uppercase text-white pl-14 py-4 border-neutral-500"
+                className="lg:border-none  lg:pb-0 border-b pb-4 uppercase text-foot-blue  pl-14 py-4 border-neutral-500"
               >
                 solutions
               </Link>
@@ -227,7 +227,7 @@ const Navbar = () => {
 
         <Link
           to="/about"
-          className={`text-white font-bold hover:opacity-75 lg:border-none lg:pb-0 border-b pb-4  border-neutral-500 ${
+          className={`text-foot-blue  font-bold hover:opacity-75 lg:border-none lg:pb-0 border-b pb-4  border-neutral-500 ${
             location.pathname === "/about" ? "active" : ""
           }`}
           onClick={() => setIsMenuOpen(false)}
@@ -236,7 +236,7 @@ const Navbar = () => {
         </Link>
         <Link
           to="/brands"
-          className={`text-white font-bold hover:opacity-75 lg:border-none lg:pb-0 border-b pb-4  border-neutral-500 ${
+          className={`text-foot-blue  font-bold hover:opacity-75 lg:border-none lg:pb-0 border-b pb-4  border-neutral-500 ${
             location.pathname === "/brands" ? "active" : ""
           }`}
           onClick={() => setIsMenuOpen(false)}
@@ -245,7 +245,7 @@ const Navbar = () => {
         </Link>
         <Link
           to="/media"
-          className={`text-white font-bold hover:opacity-75 lg:border-none lg:pb-0 border-b pb-4  border-neutral-500 ${
+          className={`text-foot-blue  font-bold hover:opacity-75 lg:border-none lg:pb-0 border-b pb-4  border-neutral-500 ${
             location.pathname === "/media" ? "active" : ""
           }`}
           onClick={() => setIsMenuOpen(false)}
@@ -254,7 +254,7 @@ const Navbar = () => {
         </Link>
         <Link
           // to="/investors"
-          className="text-white font-bold hover:opacity-75 lg:block hidden"
+          className="text-foot-blue  font-bold hover:opacity-75 lg:block hidden"
           onClick={() => setIsMenuOpen(false)}
         >
           INVESTORS
@@ -264,7 +264,7 @@ const Navbar = () => {
           className="lg:hidden">
           <div className={`lg:border-none lg:pb-0 border-b pb-4 border-neutral-500 w-[100%] font-bold ${InvClass}`}>
           INVESTORS
-            <img src={down} alt="" className={` float-right top-0 right-0 invert  text-white p-2 rounded-full cursor-pointer ${rotateClass2} `} onClick={toggleDivVisibility4Invest} />
+            <img src={down} alt="" className={` float-right top-0 right-0  text-foot-blue  p-2 rounded-full cursor-pointer ${rotateClass2} `} onClick={toggleDivVisibility4Invest} />
           </div>
 
 
@@ -272,21 +272,21 @@ const Navbar = () => {
           <div
             className={`overflow-hidden flex flex-col customTransition  ${isDivOpen ? 'h-auto opacity-100 translate-y-[0%] ' : 'h-0 opacity-0 translate-y-[-20%]'} bg-transparent rounded-lg font-bold`}
           >
-            <Link to="" className="lg:border-none lg:pb-0 border-b pb-4 uppercase text-white  py-4 ml-14 border-neutral-500">OVERVIEW</Link>
-            <Link to="" className="lg:border-none lg:pb-0 border-b pb-4 uppercase text-white  py-4 ml-14 border-neutral-500">FINANCIAL REPORTS</Link>
-            <Link to="" className="lg:border-none  lg:pb-0 border-b pb-4 uppercase text-white py-4 ml-14 border-neutral-500">SHAREHOLDERS INFORMATION</Link>
-            <Link to="" className="lg:border-none  lg:pb-0 border-b pb-4 uppercase text-white py-4 ml-14 border-neutral-500">CHAIRMAI’S COMMUNICATION</Link>
-            <Link to="" className="lg:border-none  lg:pb-0 border-b pb-4 uppercase text-white py-4 ml-14 border-neutral-500">DISCLOSURES</Link>
-            <Link to="" className="lg:border-none  lg:pb-0 border-b pb-4 uppercase text-white py-4 ml-14 border-neutral-500">NOTICES</Link>
-            <Link to="" className="lg:border-none  lg:pb-0 border-b pb-4 uppercase text-white py-4 ml-14 border-neutral-500">CONTACTS</Link>
-            <Link to="" className="lg:border-none  lg:pb-0 border-b pb-4 uppercase text-white pl-14 py-4 border-neutral-500">DOWNLOADS</Link>
+            <Link to="" className="lg:border-none lg:pb-0 border-b pb-4 uppercase text-foot-blue   py-4 ml-14 border-neutral-500">OVERVIEW</Link>
+            <Link to="" className="lg:border-none lg:pb-0 border-b pb-4 uppercase text-foot-blue   py-4 ml-14 border-neutral-500">FINANCIAL REPORTS</Link>
+            <Link to="" className="lg:border-none  lg:pb-0 border-b pb-4 uppercase text-foot-blue  py-4 ml-14 border-neutral-500">SHAREHOLDERS INFORMATION</Link>
+            <Link to="" className="lg:border-none  lg:pb-0 border-b pb-4 uppercase text-foot-blue  py-4 ml-14 border-neutral-500">CHAIRMAI’S COMMUNICATION</Link>
+            <Link to="" className="lg:border-none  lg:pb-0 border-b pb-4 uppercase text-foot-blue  py-4 ml-14 border-neutral-500">DISCLOSURES</Link>
+            <Link to="" className="lg:border-none  lg:pb-0 border-b pb-4 uppercase text-foot-blue  py-4 ml-14 border-neutral-500">NOTICES</Link>
+            <Link to="" className="lg:border-none  lg:pb-0 border-b pb-4 uppercase text-foot-blue  py-4 ml-14 border-neutral-500">CONTACTS</Link>
+            <Link to="" className="lg:border-none  lg:pb-0 border-b pb-4 uppercase text-foot-blue  pl-14 py-4 border-neutral-500">DOWNLOADS</Link>
           </div>
         </div>
 
 
         <Link
           to="/contact"
-          className={`text-white font-bold hover:opacity-75 lg:border-none lg:pb-0 border-b pb-4  border-neutral-500 ${
+          className={`text-foot-blue font-bold hover:opacity-75 lg:border-none lg:pb-0 border-b pb-4  border-neutral-500 ${
             location.pathname === "/contact" ? "active" : ""
           }`}
           onClick={() => setIsMenuOpen(false)}
@@ -295,7 +295,7 @@ const Navbar = () => {
         </Link>
         <div className="flex items-center space-x-4">
           <select
-            className="lg:inline-block hidden outline-none text-white ml-4 py-1 px-3 font-barlow font-semibold select-box bse-bg"
+            className="lg:inline-block hidden outline-none text-white  ml-4 py-1 px-3 font-barlow font-semibold select-box bse-bg"
             value={selectedStock}
             onChange={handleStockSelectChange}
           >
@@ -304,13 +304,13 @@ const Navbar = () => {
           </select>
         </div>
         {selectedStock === "BSE" && bseData && (
-          <p className="text-white hidden font-bold lg:block animate-pulse">
+          <p className="text-foot-blue  hidden font-bold lg:block animate-pulse">
             <span className="mr-1">₹</span>
             {bseData}
           </p>
         )}
         {selectedStock === "NSE" && nseData && (
-          <p className="text-white hidden font-bold lg:block animate-pulse">
+          <p className="text-foot-blue  hidden font-bold lg:block animate-pulse">
             <span className="mr-1">₹</span>
             {nseData}
           </p>

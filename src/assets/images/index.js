@@ -4,7 +4,7 @@ import brand3 from "./brand3.png"
 import footImg from "./footer.png"
 import linkedin from "./linkedin.png"
 import logo from "./logo.png"
-import down from "./down.png"
+import down from "./down.svg"
 import customer1 from "./customer1.png"
 import customer2 from "./customer2.png"
 import customer3 from "./customer3.png"
@@ -66,8 +66,11 @@ import mWajid from "./mWajid.svg"
 import mAarti from "./mAarti.svg"
 import mNitisha from "./mNitisha.svg"
 import download from "./dwonload.png"
+import indBanner from "./indBanner.png"
+import proBanner from "./proBanner.png"
+import solutionBanner from "./solutionBanner.png"
 
 export { brand1, brand2 , brand3, footImg , linkedin, logo, down,
      customer1, customer2, customer3,customer4,
      customer5, customer6,customer7,customer8, customer9, customer10,customer11,
-     aboutPic1, aboutPic2, aboutPic3, testi1, headerImage ,breadHome , ashim, jay, ksh, pankaj, sonu, virendra, abImg1, linkedIcon, abGallary1982,abGallary1988,abGallary2005,abGallary2010,abGallary2017, anImg1 ,abGallary2019, abGallary1992, abGallary2009 ,abGallary2022, abBlank, abDebasis, abSsR,abSyed,abVivek, leftArw, rightArw, abAmit ,abJitendra, abPradeep , abSanjeev, abWajid, mAmit,mDebasis ,mJitendra ,mSanjeev ,mSsR ,mSyed ,mVivek, mWajid, Mpradeep, abNitisha2, mNitisha,abAarti, mAarti, download}
+     aboutPic1, aboutPic2, aboutPic3, testi1, headerImage ,breadHome , ashim, jay, ksh, pankaj, sonu, virendra, abImg1, linkedIcon, abGallary1982,abGallary1988,abGallary2005,abGallary2010,abGallary2017, anImg1 ,abGallary2019, abGallary1992, abGallary2009 ,abGallary2022, abBlank, abDebasis, abSsR,abSyed,abVivek, leftArw, rightArw, abAmit ,abJitendra, abPradeep , abSanjeev, abWajid, mAmit,mDebasis ,mJitendra ,mSanjeev ,mSsR ,mSyed ,mVivek, mWajid, Mpradeep, abNitisha2, mNitisha,abAarti, mAarti, download, indBanner, proBanner, solutionBanner}

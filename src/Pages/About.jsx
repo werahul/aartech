@@ -7,7 +7,7 @@ import { AboutImages } from '../Components'
 const peopleData = [
     {
         name: "Amit Raje (AMR)",
-        role: "CHIEF MARKETING OFFICER",
+        role: " CHIEF MANAGING DIRECTOR",
         description:
             "He is dedicated to shaping a brilliant future through innovation, & astute management. He holds a B.Tech. in Electrical Engineering from IIT Bombay ('95) and an MSEE in Power Systems & Power Electronics from the University of Minnesota, USA ('97). With over 25 years of international professional experience, he stands as a Senior Member of IEEE, USA.",
         image: abAmit,
@@ -115,6 +115,16 @@ const peopleData = [
         linkedInIcon: linkedIcon,
         link: "https://www.linkedin.com/in/jitendra-chauhan-b62b7656"
     },
+    {
+        name: "K R Tanuj Reddy",
+        role: "Company Secretary & Compliance Officer",
+        description:
+            "Holding an LLB and a Master's in Commerce from Barkatullah University, he's a member of the Institute of Company Secretaries of India. With 9+ years of experience in Corporate Governance, Listing Regulations, FEMA, ESOPs, Policy framework, Inspection, and Investigations, he leads Governance, Compliance, and Secretarial functions to ensure legal compliance.",
+        image: abJitendra,
+        Mimage: mJitendra,
+        linkedInIcon: linkedIcon,
+        link: "https://www.linkedin.com/in/jitendra-chauhan-b62b7656"
+    },
     
 ];
 
@@ -126,7 +136,7 @@ const About = () => {
     return (
         <>
             <Navbar />
-            <div className="2xl:px-[40px] text-box-red lg:text-4xl text-[28px] font-normal lg:pt-20 leading-9 font-antonio lg:mb-9 lg:mt-20 mt-[120px] lg:ml-20 ml-5 -mb-8 sm:px-10">Our History</div>
+            <div className="2xl:px-[40px] text-box-red lg:text-4xl text-[28px] font-normal lg:pt-20 leading-9 font-antonio lg:mb-9 lg:mt-20 mt-[120px] lg:ml-10 ml-5 -mb-8 sm:px-10">Our History</div>
             <AboutImages />
             <div className=" h-[325px] bg-foot-blue mb-1 lg:mt-14 mt-24 flex flex-col items-center justify-center px-5 py-10 sm:px-10" >
                 <div className="text-white lg:text-5xl text-[28px] font-normal lg:leading-[48px] leading-[39.20px] text-center font-antonio lg:mb-10 mb-[24px] lg:mt-0 mt-10">Living Passion through Engineering</div>

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <>
-      <div className="mainFOOT 2xl:px-[120px] lg:px-20 lg:pt-20 pt-12 px-6 py-10 bg-foot-blue h-auto text-white z-10">
+      <div className="mainFOOT 2xl:px-[120px] lg:px-20 lg:pt-20 pt-12 px-6 py-10 bg-foot-blue h-auto text-white z-10 sm:px-10">
         <div className="footsec lg:flex justify-between items-start ">
           <div className="first-col lg:flex space-x-20">
             <div className="footImg mb-8">

@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React, { useEffect } from 'react'
 import Footer from '../Components/Footer'
 import Navbar from '../Components/Navbar'
 // import "../App.css" 
@@ -26,15 +26,15 @@ const Contact = () => {
                     <form action="" className=' ' >
                         <div className="formDiv lg:grid grid-cols-2 lg:gap-x-[10px] lg:space-y-[12px] space-y-[16px]">
                             <CustomSelect />
-                            <CustomCountry /> 
+                            <CustomCountry />
                             <input type="text" placeholder='FIRST NAME' className='border-[1px] uppercase lg:text-[18px] text-[16px] border-black  outline-none py-2 px-6 h-[50px] w-full font-Barlow placeholder-red-600' />
                             <input type="text" placeholder='LAST NAME' className='border-[1px] uppercase lg:text-[18px] text-[16px] border-black outline-none py-2 px-6 h-[50px] w-full font-Barlow placeholder-red-600' />
                             <input type="text" placeholder='COMPANY NAME' className='border-[1px] uppercase lg:text-[18px] text-[16px] border-black   outline-none py-2 px-6 h-[50px] w-full font-Barlow placeholder-red-600' />
                             <input type="mail" placeholder='EMAIL ID' className='border-[1px] uppercase lg:text-[18px] text-[16px] border-black   outline-none py-2 px-6 h-[50px] w-full font-Barlow placeholder-red-600' />
                         </div>
                         <textarea type="text" placeholder='YOUR MESSAGE' className="border-[1px] uppercase lg:text-[18px] text-[16px] border-black lg:h-[160px] mt-4  outline-none py-2 px-6 w-full font-Barlow placeholder-red-600 resize-none h-[149px]" />
-                        </form>
-                        <button className='font-Barlow font-bold bg-box-red text-white p-2 lg:text-[18px] text-[16px] mt-3 lg:w-32 w-[100%] h-12 cursor-pointer'>SUBMIT</button>
+                    </form>
+                    <button className='font-Barlow font-bold bg-box-red text-white p-2 lg:text-[18px] text-[16px] mt-3 lg:w-32 w-[100%] h-12 cursor-pointer'>SUBMIT</button>
                 </div>
                 <div className="title lg:text-4xl text-[28px]  font-antonio lg:mt-20 mt-10">
                     Email
@@ -52,7 +52,7 @@ const Contact = () => {
                 <div className="title lg:text-4xl text-[28px]  font-antonio lg:mt-20 mt-10 lg:mb-9 mb-6">
                     Address & Phone
                 </div>
-                <div className="flexAddres lg:flex lg:space-x-7 lg:space-y-0 space-y-6 ">
+                <div className="grid lg:grid-cols-3 grid-cols-1 lg:gap-x-7 lg:gap-y-[30px] gap-y-6 ">
                     <div className="addressbox border-[1px] border-black w-[100%] lg:h-[323px] h-auto py-4 px-4 " >
                         <div className="boxtitle text-box-red font-bold flex items-center justify-center lg:my-5 font-Barlow lg:text-[24px] text-[20px]">
                             REGISTERED OFFICE
@@ -91,6 +91,34 @@ const Contact = () => {
                                 </li></a>
                                 <a href="tel:+919418509967"><li className='font-Barlow lg:text-[20px]  text-foot-blue'>
                                     Tel: +91-9418509967</li></a>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div className="addressbox border-[1px] border-black w-[100%] lg:h-[323px] h-60 py-4 px-4 " >
+                        <div className="boxtitle text-box-red font-bold flex items-center justify-center lg:my-5 font-Barlow lg:text-[24px] text-[20px]">
+                            # Onshore Office USA
+                        </div>
+                        <div className="boxContent flex flex-col leading-[26px] lg:space-x-10 font-[400] ">
+                            <ul className='list-disc  lg:ml-9 ml-6 '>
+                                <a href="" target='_blank'><li className='font-Barlow lg:text-[20px] my-4 w--full text-foot-blue '>16192 Coastal Highway, Lewes, Delaware 19958, USA
+                                </li></a>
+                                <a href=""><li className='font-Barlow lg:text-[20px]  text-foot-blue'>
+
+                                    Tel: +1 213-401-2727</li></a>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div className="addressbox border-[1px] border-black w-[100%] lg:h-[323px] h-60 py-4 px-4 " >
+                        <div className="boxtitle text-box-red font-bold flex items-center justify-center lg:my-5 font-Barlow lg:text-[24px] text-[20px]">
+                        # Onshore Office UK
+                        </div>
+                        <div className="boxContent flex flex-col leading-[26px] lg:space-x-10 font-[400] ">
+                            <ul className='list-disc  lg:ml-9 ml-6 '>
+                                <a href="" target='_blank'><li className='font-Barlow lg:text-[20px] my-4 w--full text-foot-blue '>71-75 Shelton StreetConvent GardenLondon, United Kingdom
+                                </li></a>
+                               
 
                             </ul>
                         </div>
