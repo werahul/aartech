@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Navbar, Footer } from "../index"
-import { industry1 } from '../../assets/workImages'
-import { Cimg1, Cimg2, Cimg3, Cimg4 } from '../../assets/CLogoBlack'
+import { power } from '../../assets/subImg'
 import { bestCase, relayPannels, kra, incinerator, wtc, bts, clip } from '../../assets/ProductImages'
 
 import { CustomerLogos2 } from '../../Components'
@@ -53,7 +52,7 @@ const PowerTran = () => {
                     <div className="lg:hidden text-black text-[28px] font-normal font-antonio">Power Transmission and Distribution</div>
                     <div className="lg:hidden text-foot-blue text-lg font-bold font-Barlow tracking-widest mb-4">INDUSTRIES</div>
 
-                    <ImageSelect images={images} />
+                    <ImageSelect images={images} bgImg={power}/>
 
                     <div className="lg:w-[55%] lg:ml-[44px]">
                         <div className="lg:block hidden text-black text-4xl font-normal font-antonio">Power Transmission and Distribution</div>

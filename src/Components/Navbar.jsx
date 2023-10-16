@@ -92,7 +92,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="navbar-bg fixed inset-0 lg:h-[88px] h-[70px] sm:h-[90px] flex items-center justify-between z-50 2xl:px-[40px]">
+    <div className="navbar-bg fixed inset-0 lg:h-[88px] h-[70px] sm:h-[90px] flex items-center justify-between z-50 2xl:px-[40px] shadow-lg">
       <div className="flex items-center justify-between w-full px-5 md:px-20">
         <Link to="/" className="z-50 ">
           <img

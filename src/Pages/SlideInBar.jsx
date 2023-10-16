@@ -23,7 +23,7 @@ const SlideInBar = () => {
   const location = useLocation();
 
   return (
-    <div className={`slide-in-bar ${isVisible ? "visible lg:flex items-center justify-center hidden space-x-8 " : ""}`}>
+    <div className={`slide-in-bar ${isVisible ? "visible lg:flex items-center justify-center hidden space-x-8 shadow-xl " : ""}`}>
       <Link to="/industries" className={`link-item ${location.pathname === "/industries" ? "active" : ""}`}>
         <div className={`text-white font-bold uppercase leading-[18px] font-Barlow text-lg tracking-tight cursor-pointer ${location.pathname === "/industries" ? "active-link" : ""}`}>
           INDUSTRIES

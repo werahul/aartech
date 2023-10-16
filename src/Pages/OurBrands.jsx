@@ -20,7 +20,7 @@ const OurBrands = () => {
         <div className="brandsSection grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 lg:gap-x-4 lg:gap-y-0 sm:gap-y-4 sm:gap-x-4 gap-y-8 mb-16 ">
 
           <div className="brandsCard  lg:w-full lg:h-auto  lg:space-y-[23px] space-y-2" >
-            <div className="brandImg flex items-center justify-center px-6 py-8 h-60 bg-box-bg lg:h-[229px]" >
+            <div className="brandImg flex items-center justify-center px-6 py-8 h-[12rem] bg-box-bg lg:h-[229px]" >
               <img src={brand1} alt="brands" />
             </div>
             <div className="brandText lg:text-xl lg:leading-relaxed leading-snug lg:my-[23px] my-6 font-[500] lg:font-[400] lg:text-[18px] lg:w-full w-auto font-Barlow  ">
@@ -29,7 +29,7 @@ const OurBrands = () => {
           </div>
 
           <div className="brandsCard  lg:w-full lg:h-[422px] lg:space-y-[23px] space-y-2" >
-          <div className="brandImg flex items-center justify-center px-6 lg:py-8  h-60 bg-box-bg lg:h-[229px]" >
+          <div className="brandImg flex items-center justify-center px-6 lg:py-8  h-[12rem] bg-box-bg lg:h-[229px]" >
               <img src={brand2} alt="brands" />
             </div>
             <div className="brandText lg:text-xl lg:leading-relaxed leading-snug lg:my-[23px] my-6 font-[500] lg:font-[400] lg:text-[18px] lg:w-full w-auto font-Barlow  ">
@@ -37,7 +37,7 @@ const OurBrands = () => {
             </div>
           </div>
           <div className="brandsCard  lg:w-full lg:h-[422px] lg:space-y-[23px] space-y-2" >
-            <div className="brandImg flex items-center justify-center px-6 py-8 h-60 bg-box-bg lg:h-[229px]">
+            <div className="brandImg flex items-center justify-center px-6 py-8 h-[12rem] bg-box-bg lg:h-[229px]">
               <img src={brand3} alt="brands" />
             </div>
             <div className="brandText lg:text-xl lg:leading-relaxed leading-snug lg:my-[23px] my-6 font-[500] lg:font-[400] lg:text-[18px] lg:w-full w-auto font-Barlow  ">

@@ -4,6 +4,7 @@ import { bestCase, relayPannels, kra, incinerator, wtc, bts, clip, solar } from 
 import { CustomerLogos2 } from '../../Components'
 import { ImageSelect } from "../ImageSelector";
 import { health1, health2, health3, health4, health5 } from '../../assets/IndImages'
+import { health } from '../../assets/subImg';
 
 
 
@@ -55,7 +56,7 @@ const HealthCare = () => {
                     <div className="lg:hidden text-black text-[28px] font-normal font-antonio">Healthcare</div>
                     <div className="lg:hidden text-foot-blue text-lg font-bold font-Barlow tracking-widest mb-4">INDUSTRIES</div>
 
-                    <ImageSelect images={images} />
+                    <ImageSelect images={images} bgImg={health}/>
 
                     <div className="lg:w-[55%] lg:ml-[44px]">
                         <div className="lg:block hidden text-black text-4xl font-normal font-antonio">Healthcare</div>

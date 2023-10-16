@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Navbar, Footer } from "../index"
-import { industry1 } from '../../assets/workImages'
+import { rNew } from '../../assets/subImg';
 import { bestCase, relayPannels, kra, incinerator, wtc, bts, solar } from '../../assets/ProductImages'
 
 import { ImageSelect } from "../ImageSelector";
@@ -51,7 +51,7 @@ const Renewable = () => {
                     <div className="lg:hidden text-black text-[28px] font-normal font-antonio">Renewable Energy</div>
                     <div className="lg:hidden text-foot-blue text-lg font-bold font-Barlow tracking-widest mb-4">INDUSTRIES</div>
 
-                    <ImageSelect images={images} />
+                    <ImageSelect images={images} bgImg={rNew}/>
                     <div className="lg:w-[55%] lg:ml-[44px]">
                         <div className="lg:block hidden text-black text-4xl font-normal font-antonio">Renewable Energy</div>
                         <div className="lg:block hidden text-foot-blue text-lg font-bold font-Barlow tracking-wider mt-2">INDUSTRIES</div>

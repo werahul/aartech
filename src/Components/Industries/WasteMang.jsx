@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Navbar, Footer } from "../index"
-import { industry1 } from '../../assets/workImages'
-import { Cimg1, Cimg2, Cimg3, Cimg4 } from '../../assets/CLogoBlack'
+import { waste } from '../../assets/subImg'
 import { bestCase, relayPannels, kra, incinerator, wtc, bts, clip, solar } from '../../assets/ProductImages'
 
 import { CustomerLogos2 } from '..'
@@ -48,7 +47,7 @@ const WasteMang = () => {
                     <div className="lg:hidden text-foot-blue text-lg font-bold font-Barlow tracking-widest mb-4">INDUSTRIES</div>
 
 
-                    <ImageSelect images={images} />
+                    <ImageSelect images={images} bgImg={waste}/>
 
                     <div className="lg:w-[55%] lg:ml-[44px]">
                         <div className="lg:block hidden text-black text-4xl font-normal font-antonio">Waste Management</div>

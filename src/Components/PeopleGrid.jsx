@@ -5,7 +5,7 @@ const PersonCard = ({ name, role, description, image, linkedInIcon, link, Mimage
     <div className=" flex gap-6">
       <div className="h-[50px] lg:h-auto lg:w-[200%] w-[100px]   lg:overflow-visible mt-0 lg:mt-0 lg:mb-0 mb-12">
         <img src={image} alt="" className="w-full h-[100px] lg:block hidden  lg:h-full object-cover  " />
-        <img src={Mimage} alt="" className="w-full lg:hidden block h-[100px] lg:h-full object-cover  " />
+        <img src={Mimage} alt="" className="min-w-[100px] lg:hidden block h-[100px]  object-cover  " />
       </div>
       <div className=" flex flex-col mt-4">
         <div className="nameRoleLinkedin flex lg:flex-row flex-col justify-between ">

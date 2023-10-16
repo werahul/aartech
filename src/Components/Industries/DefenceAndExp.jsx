@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Navbar, Footer } from "../index"
-import { industry1 } from '../../assets/workImages'
+import { df } from '../../assets/subImg'
 import { DefenceMain, Defence1, Defence2, Defence3, Defence4 } from '../../assets/IndImages'
 import { bestCase, relayPannels, kra, incinerator, wtc, solar } from '../../assets/ProductImages'
 import { ImageSelect } from "../ImageSelector";
@@ -55,7 +55,7 @@ const DefenceAndExp = () => {
                     <div className="lg:hidden text-black text-[28px] font-normal font-antonio">Defence & Exploration</div>
                     <div className="lg:hidden text-foot-blue text-lg font-bold font-Barlow tracking-wides mb-4">INDUSTRIES</div>
 
-                    <ImageSelect images={images} />
+                    <ImageSelect images={images} bgImg={df} />
                     <div className="lg:w-[55%] lg:ml-[44px]">
                         <div className="lg:block hidden text-black text-4xl font-normal font-antonio">Defence & Exploration</div>
                         <div className="lg:block hidden text-foot-blue text-lg font-bold font-Barlow tracking-wider mt-2">INDUSTRIES</div>

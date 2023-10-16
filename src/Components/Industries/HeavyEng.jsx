@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Navbar, Footer } from "../index"
-import { industry1 } from '../../assets/workImages'
-import { Cimg1, Cimg2, Cimg3, Cimg4 } from '../../assets/CLogoBlack'
+import { heavy } from '../../assets/subImg'
 import { bestCase, relayPannels, kra, incinerator, wtc, bts, clip, solar } from '../../assets/ProductImages'
-
 import { CustomerLogos2 } from '../../Components'
 import { ImageSelect } from "../ImageSelector";
 import { heavy1, heavy2, heavy3, heavy4, heavy5 } from '../../assets/IndImages'
@@ -56,7 +54,7 @@ const HeavyEng = () => {
                     <div className="lg:hidden text-black text-[28px] font-normal font-antonio">Heavy Engineering Industries</div>
                     <div className="lg:hidden text-foot-blue text-lg font-bold font-Barlow tracking-widest mb-4">INDUSTRIES</div>
 
-                    <ImageSelect images={images} />
+                    <ImageSelect images={images} bgImg={heavy}/>
 
                     <div className="lg:w-[55%] lg:ml-[44px]">
                         <div className="lg:block hidden text-black text-4xl font-normal font-antonio">Heavy Engineering Industries</div>
