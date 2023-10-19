@@ -19,6 +19,7 @@ import Cookie from './Pages/Cookie'
 import { WindPower,DefenceAndExp, Renewable, NonRenewable, PowerTran ,HeavyEng, HealthCare, IT, Transport, WasteMang } from './Components/Industries'
 import { BTS2000,Kranking, ControlRelay, ClipF, BestCase, LoadChecker ,SolarDesign } from './Components/Products'
 import { Solution, CnA, Process, Reliable, Fault, Solar,SolidWaste, Customized } from './Components/Solutions'
+import { ContactAndGriv,Disclosures,Downloads, Chairman, Shareholders, ShCompliance, ShCorporate, ShGovernanceReport,ShReconciliation, ShShareholdingPattern} from './Components/invester'
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -69,6 +70,18 @@ const App = () => {
           <Route exact path="/solutions/solar-design-engineering" Component={Solar} />
           <Route exact path="/solutions/solid-waste-treatment" Component={SolidWaste} />
           <Route exact path="/solutions/customised-professional-case" Component={Customized} />
+
+
+          <Route exact path="/investors/contact-and-grievance" Component={ContactAndGriv} />
+          <Route exact path="/investors/disclosures" Component={Disclosures} />
+          <Route exact path="/investors/downloads" Component={Downloads} />
+          <Route exact path="/investors/chairman-communication" Component={Chairman} />
+          <Route exact path="/investors/shareholders-information" Component={Shareholders} />
+          <Route exact path="/investors/shareholders-information-compliance-certificates" Component={ShCompliance} />
+          <Route exact path="/investors/shareholders-information-corporate-announcements" Component={ShCorporate} />
+          <Route exact path="/investors/shareholders-information-corporate-governance-report" Component={ShGovernanceReport} />
+          <Route exact path="/investors/shareholders-information-corporate-reconciliation-of-share-capital-audit-report" Component={ShReconciliation} />
+          <Route exact path="/investors/shareholders-information-shareholding-pattern" Component={ShShareholdingPattern} />
           
         </Routes>
       </BrowserRouter>

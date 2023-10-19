@@ -86,7 +86,7 @@ const product = [
     path: "/products/kranking-ultracapacitors"
   },
   {
-    title: "WTC",
+    title: "AUXILIARY POWER UNIT",
     image: productImg4,
     desc: "WTC transforms organic waste into compost in just a day, through natural and biological processes. For larger capacities, our specialized microorganisms ensure thorough decomposition. Enjoy a noiseless and odorless experience WTC.",
     path: ""
@@ -104,17 +104,36 @@ const product = [
     desc: "Best case is beyond just an enclosure, it's your product's image. For lab cuts, demos, to crucial meets, we ensure your Best Case Scenario! We offer the right, durable & affordable enclosure that is customised as per your products.",
     path: "/products/best-case"
   },
-
   {
-    title: "INCINERATOR",
+    title: "AC & DC UPS",
     image: productImg7,
     desc: "The incinerator employs controlled thermal destruction to convert waste into ash, meeting emission standards. Operating at 800°C to 1,200°C, it reduces volume, and generates energy. Our solution ensures complete incineration with no residues.",
+  },
+  {
+    title: "FLYWHEEL",
+    image: productImg7,
+    desc: "The incinerator employs controlled thermal destruction to convert waste into ash, meeting emission standards. Operating at 800°C to 1,200°C, it reduces volume, and generates energy. Our solution ensures complete incineration with no residues.",
+  },
+  {
+    title: "LOAD CHECKER",
+    image: productImg7,
+    desc: "The incinerator employs controlled thermal destruction to convert waste into ash, meeting emission standards. Operating at 800°C to 1,200°C, it reduces volume, and generates energy. Our solution ensures complete incineration with no residues.",
+  },
+  {
+    title: "SOLAR DESIGN & SERVICES",
+    image: productImg7,
+    desc: "Aartech Solonics passionately harnesses solar power for sustainable energy, committing to engineering excellence. They offer tailored solar solutions, from design to installation and maintenance, catering to residential and industrial clients.",
+  },
+  {
+    title: "SOLID WASTE TREATMENT PRODUCT",
+    image: productImg7,
+    desc: "Aartech Solonics passionately harnesses solar power for sustainable energy, committing to engineering excellence. They offer tailored solar solutions, from design to installation and maintenance, catering to residential and industrial clients.",
   },
 ];
 
 const solution = [
   {
-    title: "LOAD LIMITING",
+    title: "POWER BACKUP UNIT",
     image: sol1,
     desc: "We understand the importance of maintaining optimal load levels, and our expertise lies in the creation of load limiters. These solutions offer exceptional reliability and performance, specifically catering to low-rating (< 100W) requirements.",
     path: ""
@@ -126,7 +145,7 @@ const solution = [
     path: ""
   },
   {
-    title: "ENERGY HARVESTING",
+    title: "ENERGY EFFICIENCY",
     image: sol3,
     desc: "We pioneer energy harvesting, harnessing micro sources like Solar, Wind, and Hydro power for portable devices via PV/micro-turbines. Versatile in Marine, Defense, Telecom, and more. FaraDigm™ Ultracapacitors offer tailored solutions.",
     path: ""

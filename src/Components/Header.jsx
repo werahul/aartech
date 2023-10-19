@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { indBanner, proBanner, solutionBanner } from '../assets/images';
@@ -22,7 +23,7 @@ const Header = () => {
         <div className="relative">
             <div className="flex flex-col absolute bottom-0 left-40 z-30 md:flex-row justify-center md:space-x-4">
                 {images.map((image, index) => (
-                    <div
+                    <Link
                         key={index}
                         to={index === 0 ? '/industries' : index === 1 ? '/products' : '/solutions'}
                         className="w-full hidden lg:block md:w-[336px] h-[220px] text-white pt-8 px-4 md:px-7 font-Barlow div mb-4 md:mb-0"
@@ -40,7 +41,7 @@ const Header = () => {
                                     ? '12 products adopted across 15 countries.'
                                     : 'Over 20+ customized solutions across industries and products.'}
                         </p>
-                    </div>
+                    </Link>
                 ))}
             </div>
             <div className="image-slider relative">
