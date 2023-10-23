@@ -1,9 +1,11 @@
 import React,{useEffect} from 'react'
 import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
-import { abImg1, linkedIcon,abBlank, abDebasis, abSsR,abSyed,abVivek, abAmit, abJitendra, abPradeep , abSanjeev, abWajid,mAmit,mDebasis ,mJitendra ,mSanjeev ,mSsR ,mSyed ,mVivek, mWajid, Mpradeep,abNitisha2, mNitisha ,abAarti, mAarti} from '../assets/images'
+import { abImg1, linkedIcon,abBlank, abDebasis, abSsR,abSyed,abVivek, abAmit, abJitendra, abPradeep , abSanjeev, abWajid,mAmit,mDebasis ,mJitendra ,mSanjeev ,mSsR ,mSyed ,mVivek, mWajid, Mpradeep,abNitisha2, mNitisha ,abAarti, mAarti, abTanuj, mTanuj, blankWhite} from '../assets/images'
 import PeopleGrid from '../Components/PeopleGrid'
 import { AboutImages } from '../Components'
+
+
 const peopleData = [
     {
         name: "Amit Raje (AMR)",
@@ -27,7 +29,7 @@ const peopleData = [
     },
     {
         name: "Pradeep Narkhede",
-        role: "Chief Financial Officer",
+        role: "Chief Finance Officer",
         description:
             "He applies his financial acumen to create a harmonious fiscal environment within the company. An economics graduate with an extensive tenure spanning over 18 years at Aartech, he has demonstrated his expertise in financial management and strategic planning, leaving a huge impact on the organization's financial growth and stability.",
         image: abPradeep,
@@ -67,7 +69,7 @@ const peopleData = [
     },
     {
         name: "Ss Raghuwanshi",
-        role: " Chief Operating Office",
+        role: "Chief Operating Office",
         description:
             "He refines operations with meticulous precision, converting strategies into flawless execution and yielding remarkable outcomes. With an Engineering degree and a Master's in Business Administration, he boasts a total of 26 years of experience, including a decade of dedicated service at Aartech, where he continues to drive the company's excellence.",
         image: abSsR,
@@ -77,7 +79,7 @@ const peopleData = [
     },
     {
         name: "Nitisha Tiwari",
-        role: "BTS System Solution Decision Head",
+        role: "MIDDLE MANAGEMENT EXECUTIV",
         description:
             "She is a dedicated professional with extensive experience in technical sales, marketing, programming, engineering, and customer support. With a robust background in overseeing BTS divisions and ultra capacitors, I bring a unique fusion of skills for exceptional outcomes. Engineering Graduate, 11 years at Aartech, 16 years total experience.",
         image: abNitisha2,
@@ -87,7 +89,7 @@ const peopleData = [
     },
     {
         name: "Sanjeev Kumar",
-        role: "Sales Manager",
+        role: "MIDDLE MANAGEMENT EXECUTIVE",
         description:
             "He is an accomplished sales specialist with a distinct expertise in military applications. With an understanding of defense requirements, he crafts solutions that are finely tuned to armed forces' needs. His dedication ensures optimal performance and mission success. With a background in Marketing, he brings a strategic edge to his role.",
         image: abSanjeev,
@@ -97,7 +99,7 @@ const peopleData = [
     },
     {
         name: "Wajid Siddiqui",
-        role: "Accounts Manager",
+        role: "MIDDLE MANAGEMENT EXECUTIVE",
         description:
             "With a B.Com, CA (Inter), and Accounting Technician Diploma, he brings 13+ years' experience in the field of finance. Proficient in managing statutory compliances like Companies Act 2013, GST Filings, TDS Returns, ESIC, &  Professional Tax, his goal is to leverage his expertise to foster the growth of the company, society, and the nation as a whole.",
         image: abWajid,
@@ -107,7 +109,7 @@ const peopleData = [
     },
     {
         name: "Jitender Chauhan",
-        role: "CRP SSD Head",
+        role: "MIDDLE MANAGEMENT EXECUTIV", 
         description:
             "He plays a pivotal role by seamlessly orchestrating various aspects of the CRP segment, including production, quality control, sales, and purchasing. His approach extends across the entire value chain, ensuring efficient and cohesive operations. As an Engineering Graduate, he embodies the essence of integrated success within the organization.",
         image: abJitendra,
@@ -120,10 +122,11 @@ const peopleData = [
         role: "Company Secretary & Compliance Officer",
         description:
             "Holding an LLB and a Master's in Commerce from Barkatullah University, he's a member of the Institute of Company Secretaries of India. With 9+ years of experience in Corporate Governance, Listing Regulations, FEMA, ESOPs, Policy framework, Inspection, and Investigations, he leads Governance, Compliance, and Secretarial functions to ensure legal compliance.",
-        image: abJitendra,
-        Mimage: mJitendra,
-        linkedInIcon: linkedIcon,
-        link: "https://www.linkedin.com/in/jitendra-chauhan-b62b7656"
+        image: abTanuj,
+        Mimage: mTanuj,
+        linkedInIcon: "",
+        link: "",
+        id: 10
     },
     
 ];

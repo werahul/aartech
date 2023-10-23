@@ -1,7 +1,7 @@
 
 
-const PersonCard = ({ name, role, description, image, linkedInIcon, link, Mimage }) => (
-  <div className="border border-black  lg:flex">
+const PersonCard = ({ name, role, description, image, linkedInIcon, link, Mimage, id }) => (
+  <div className="border border-black  lg:flex " >
     <div className=" flex gap-6">
       <div className="h-[50px] lg:h-auto lg:w-[200%] w-[100px]   lg:overflow-visible mt-0 lg:mt-0 lg:mb-0 mb-12">
         <img src={image} alt="" className="w-full h-[100px] lg:block hidden  lg:h-full object-cover  " />
@@ -13,19 +13,19 @@ const PersonCard = ({ name, role, description, image, linkedInIcon, link, Mimage
             <div className="text-black text-xl 2xl:text-[22px] font-semibold leading-tight font-Barlow">
               {name}
             </div>
-            <div className="text-black uppercase text-[13px] lg:text-[16px] font-medium lg:font-normal leading-snug font-Barlow">
+            <div className="text-black uppercase text-[13px] lg:text-[16px] font-semibold lg:font-normal leading-snug font-Barlow">
               {role}
             </div>
           </div>
 
           
           <a href={link} target="_blank"> <div className="">
-            <img src={linkedInIcon} alt="" className="cursor-pointer h-6 w-6 mr-0 -ml-[2px] lg:mr-8" />
+            <img src={linkedInIcon} alt="" className={`${id ? "hidden" : ""} cursor-pointer h-6 w-6 mr-0 -ml-[2px] lg:mr-8` } />
           </div></a>
         </div>
 
 
-        <div className="text-black text-sm lg:text-[18px] 2xl:text-[20px] w-full hidden lg:block leading-relaxed pr-4 font-Barlow py-3 font-bold lg:font-normal">
+        <div className="text-black text-sm lg:text-[18px] 2xl:text-[20px] w-full hidden lg:block leading-6 pr-4 font-Barlow py-3 font-bold lg:font-normal">
           {description}
         </div>
       </div>

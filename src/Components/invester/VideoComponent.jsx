@@ -1,0 +1,39 @@
+import React, { useState } from 'react';
+import { investerVideo } from '../../assets/videos';// Update the path to your video file
+import { play } from '../../assets/invester'; // Update the path to your play button image
+
+const VideoComponent = () => {
+   
+    const [isPlaying, setIsPlaying] = useState(false);
+
+  ;
+
+    const togglePlay = () => {
+        setIsPlaying(!isPlaying);
+        var videoPlay = document.getElementById("investerVideo").play();
+        var playButton =  document.getElementById("playPause");
+        if(videoPlay){
+            playButton.classList.add("hide");
+        }
+        else {
+            playButton.classList.remove("hide");
+        }
+    };
+
+    return (
+        <div className="lg:w-[843px] lg:h-[474px] h-[200px] flex justify-center items-center cursor-pointer relative bg-zinc-300 lg:mt-9 mt-6">
+            <video
+                src={investerVideo}
+                className="lg:h-[474px] h-[200px] w-full object-cover"
+                muted="true"
+                controls={isPlaying}
+                id='investerVideo'
+                
+            ></video>
+            <img src={play} alt="Play" onClick={togglePlay} className="absolute top-auto" id='playPause' />
+            
+        </div>
+    );
+}
+
+export default VideoComponent;

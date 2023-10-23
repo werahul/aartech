@@ -3,10 +3,12 @@ import axios from "axios";
 import { Link, useLocation } from "react-router-dom";
 import { logo, down } from "../assets/images";
 import SlideInBar from "../Pages/SlideInBar";
+import SlideinBarInvester from "../Pages/SlideinBarInvester";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isWorkButtonActive, setIsWorkButtonActive] = useState(false);
+  const [isInvestButtonActive, setIsInvestButtonActive] = useState(false);
   const [isInvesterButtonActive, setIsInvesterButtonActive] = useState(false);
   const [rotate2, setRotate2] = useState(false)
   const [rotate, setRotate] = useState(0);
@@ -37,7 +39,9 @@ const Navbar = () => {
   const toggleColor = () => {
     setIsWorkButtonActive(!isWorkButtonActive);
     setIsInvesterButtonActive(!isInvesterButtonActive);
-
+  };
+  const toggleColorForInvester = () => {
+    setIsInvestButtonActive(!isInvestButtonActive);
   };
 
   const fetchData = () => {
@@ -154,7 +158,7 @@ const Navbar = () => {
         } flex lg:items-center font-Barlow lg:space-x-7 mt-0 sm:px-10 px-5 lg:px-20 z-1 `}
       >
         <Link
-          // to="/work" // Specify the route you want to link to
+          //  to="/"
           className="text-foot-blue lg:block hidden font-bold hover:opacity-75 lg:border-none lg:pb-0 border-b pb-4 border-neutral-500"
           style={linkStyle}
           onClick={() => {
@@ -255,7 +259,10 @@ const Navbar = () => {
         <Link
           // to="/investors"
           className="text-foot-blue  font-bold hover:opacity-75 lg:block hidden"
-          onClick={() => setIsMenuOpen(false)}
+          onClick={() => {
+            setIsMenuOpen(false);
+            toggleColorForInvester(); // Toggle the color
+          }}
         >
           INVESTORS
         </Link>
@@ -317,6 +324,7 @@ const Navbar = () => {
         )}
       </div>
       {isWorkButtonActive && <SlideInBar />}{" "}
+      {isInvestButtonActive && <SlideinBarInvester />}{" "}
       {/* Display the HorizontalBar when active */}
     </div>
   );

@@ -2,12 +2,14 @@ import React from 'react'
 import { main, mainMobile } from '../../assets/invester'
 import Navbar from '../Navbar'
 import Footer from '../Footer'
+import SlideinBarInvester from '../../Pages/SlideinBarInvester'
 
 const ContactAndGriv = () => {
     return (
         <div>
             <Navbar/>
-            <div className="relative lg:mt-[5.5rem] mt-[4.4rem]">
+            <SlideinBarInvester/>
+            <div className="relative lg:mt-[10.5rem] mt-[4.4rem]">
                 <img src={main} alt="" className='w-full lg:block hidden' />
                 <img src={mainMobile} alt="" className='w-full lg:hidden block' />
                 <div class="text-white absolute lg:bottom-10 bottom-5 lg:left-20 2xl:left-[7.5rem] left-5 lg:text-4xl text-[28px] font-normal font-antonio leading-9">Contacts &<br className='lg:hidden block' /> Grievance</div>

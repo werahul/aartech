@@ -2,22 +2,26 @@ import React from 'react'
 import { main, play, mainMobile } from '../../assets/invester'
 import Navbar from '../Navbar'
 import Footer from '../Footer'
+import SlideinBarInvester from '../../Pages/SlideinBarInvester'
+import VideoComponent from './VideoComponent'
 
 const Chairman = () => {
+
+   
+
     return (
         <div>
             <Navbar />
-            <div className="relative lg:mt-[5.5rem] mt-[4.4rem]">
+            <SlideinBarInvester/>
+            <div className="relative lg:mt-[10.5rem] mt-[4.4rem]">
                 <img src={main} alt="" className='w-full lg:block hidden' />
                 <img src={mainMobile} alt="" className='w-full lg:hidden block' />
-                <div class="text-white absolute lg:bottom-10 bottom-5 lg:left-20 2xl:left-[7.5rem] left-5 lg:text-4xl text-[28px] font-normal font-antonio leading-9">Chairman’s <br className='lg:hidden block' /> Communication</div>
+                <div class="text-white absolute lg:bottom-10 bottom-5 lg:left-20 2xl:left-[7.5rem] left-5 lg:text-4xl text-[28px] font-normal font-antonio leading-9">Chairman’s<br className='lg:hidden block' />Communication</div>
             </div>
             <div className=" 2xl:px-[120px] lg:py-20 lg:px-20  lg:pt-20 px-5 py-10  lg:mt-0 mt-5 sm:px-10">
                 <div class="text-foot-blue lg:text-2xl text-xl lg:font-semibold font-bold font-Barlow">Chairman’s Statement at the 46th AGM, 28 August 2023 (File name)</div>
-                <div class="lg:w-[843px] lg:h-[474px] h-[200px] flex justify-center items-center cursor-pointer bg-zinc-300 lg:mt-9 mt-6">
-                    <img src={play} alt="" />
-                </div>
 
+                <VideoComponent />
 
                 <table className='border border-black lg:w-[841px] text-left lg:mt-20 mt-10'>
                     <tr className='border border-black bg-[#0C013D] text-white font-Barlow h-[50px] text-lg  '>

@@ -2,14 +2,16 @@ import React from 'react'
 import { main, mainMobile } from '../../assets/invester'
 import Navbar from '../Navbar'
 import Footer from '../Footer'
+import SlideInBar from '../../Pages/SlideInBar'
+import SlideinBarInvester from '../../Pages/SlideinBarInvester'
 
 const Disclosures = () => {
     return (
         <div>
 
             <Navbar />
-            
-            <div className="relative lg:mt-[5.5rem] mt-[4.4rem]">
+            <SlideinBarInvester />
+            <div className="relative lg:mt-[10.5rem] mt-[4.4rem]">
                 <img src={main} alt="" className='w-full lg:block hidden' />
                 <img src={mainMobile} alt="" className='w-full lg:hidden block' />
                 <div class="text-white absolute lg:bottom-10 bottom-5 lg:left-20 2xl:left-[7.5rem] left-5 lg:text-4xl text-[28px] font-normal font-antonio leading-9">Disclosures</div>
@@ -22,15 +24,13 @@ const Disclosures = () => {
                     <div class="text-white lg:text-lg text-base font-bold font-Barlow leading-normal">DISCLOSURES UNDER REGULATION 46</div>
                 </div>
                 <div class="lg:w-[841px] h-auto border border-black lg:px-8 px-5 lg:py-8 py-5">
-                    <div className="flex flex-col justify-between h-[300px] ">
-                        <div class="text-black text-lg font-normal font-Barlow underline leading-normal cursor-pointer hover:font-semibold block">Annual Returns</div>
-                        <div class="text-black text-lg font-normal font-Barlow underline leading-normal cursor-pointer hover:font-semibold block">Policies</div>
-                        <div class="text-black text-lg font-normal font-Barlow underline leading-normal cursor-pointer hover:font-semibold block">Statement of Deviation or Variation</div>
-                        <div class="text-black text-lg font-normal font-Barlow underline leading-normal cursor-pointer hover:font-semibold block">Annual Reports</div>
-                        <div class="text-black text-lg font-normal font-Barlow underline leading-normal cursor-pointer hover:font-semibold block">Audited Yearly Results</div>
-                        <div class="text-black text-lg font-normal font-Barlow underline leading-normal cursor-pointer hover:font-semibold block">Half yearly Results</div>
-                        <div class="text-black text-lg font-normal font-Barlow underline leading-normal cursor-pointer hover:font-semibold block">Quarterly Results</div>
-                        <div class="text-black text-lg font-normal font-Barlow underline leading-normal cursor-pointer hover:font-semibold block">Subsidiary Companies Results</div>
+                    <div className="flex flex-col justify-between gap-y-3 h-auto]">
+
+                        <a href="https://drive.google.com/file/d/1LD34QhYBBPFWcU6MULxzUt-NHf02JJGH/view" target='_blank'> <div class="text-black lg:text-lg text-sm font-normal font-Barlow underline leading-snug hover:font-semibold">Annual Return for the year 2021-2022</div></a>
+                        <a href="https://drive.google.com/file/d/1LMGdoVd2vzlfbfHvbqbDoKpQMC1Tddh8/view" target='_blank'> <div class="text-black lg:text-lg text-sm font-normal font-Barlow underline leading-snug hover:font-semibold">Annual Return for the year 2020-2021</div></a>
+                        <a href="https://drive.google.com/file/d/1_lByDkYRdLIZcyPzPxBMyLZX3fQL1Ts6/view" target='_blank'> <div class="text-black lg:text-lg text-sm font-normal font-Barlow underline leading-snug hover:font-semibold">Annual Return for the year 2019-2020</div></a>
+                        <a href="https://drive.google.com/file/d/15kEEjp26k7-z7_TmzmId0wM7zPfsGmUz/view" target='_blank'> <div class="text-black lg:text-lg text-sm font-normal font-Barlow underline leading-snug hover:font-semibold">Annual Return for the year 2018-2019</div></a>
+
                     </div>
 
                 </div>

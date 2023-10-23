@@ -19,7 +19,7 @@ import Cookie from './Pages/Cookie'
 import { WindPower,DefenceAndExp, Renewable, NonRenewable, PowerTran ,HeavyEng, HealthCare, IT, Transport, WasteMang } from './Components/Industries'
 import { BTS2000,Kranking, ControlRelay, ClipF, BestCase, LoadChecker ,SolarDesign } from './Components/Products'
 import { Solution, CnA, Process, Reliable, Fault, Solar,SolidWaste, Customized } from './Components/Solutions'
-import { ContactAndGriv,Disclosures,Downloads, Chairman, Shareholders, ShCompliance, ShCorporate, ShGovernanceReport,ShReconciliation, ShShareholdingPattern} from './Components/invester'
+import { ContactAndGriv,Disclosures,Downloads, Chairman, Shareholders, ShCompliance, ShCorporate, ShGovernanceReport,ShReconciliation, ShShareholdingPattern, FinancialReport, FRAuditYearlyReport, FRAuditHalfYearlyReport, Overview, FRFaradigm, FRSubsidiary} from './Components/invester'
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -82,6 +82,12 @@ const App = () => {
           <Route exact path="/investors/shareholders-information-corporate-governance-report" Component={ShGovernanceReport} />
           <Route exact path="/investors/shareholders-information-corporate-reconciliation-of-share-capital-audit-report" Component={ShReconciliation} />
           <Route exact path="/investors/shareholders-information-shareholding-pattern" Component={ShShareholdingPattern} />
+          <Route exact path="/investors/financial-reports" Component={FinancialReport} />
+          <Route exact path="/investors/financial-reports-audit-yearly-report" Component={FRAuditYearlyReport} />
+          <Route exact path="/investors/financial-reports-audit-half-yearly-report" Component={FRAuditHalfYearlyReport} />
+          <Route exact path="/investors/overview" Component={Overview} />
+          <Route exact path="/investors/financial-reports-faradigm-subsidiary-half-yearly-results" Component={FRFaradigm} />
+          <Route exact path="/investors/financial-reports-subsidiary-half-yearly-results" Component={FRSubsidiary} />
           
         </Routes>
       </BrowserRouter>

@@ -29,6 +29,7 @@
     transition: opacity 0.3s;
 }
 
-.link-item .active {
+.link-item  .active {
     color: #0C013D;
 }
+

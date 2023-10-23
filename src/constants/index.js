@@ -139,9 +139,9 @@ const solution = [
     path: ""
   },
   {
-    title: "PULSE POWER",
+    title: "SOLAR DESIGN & ENGINEERING",
     image: sol2,
-    desc: "Our FaraDigm® Ultracapacitors excel in pulse power applications. From remote solar power to automotive needs, our solution offers high reliability, long life, and maintenance-free operation. We customize integrated solutions for diverse industries.",
+    desc: "Aartech Solonics delivers innovative solar design, engineering, and consultancy services dedicated to crafting tailored, sustainable solutions for industries and individuals, fostering a greener future with expertise and commitment.",
     path: ""
   },
   {
