@@ -1,4 +1,8 @@
 import React from 'react'
+import { serv1, serv2, serv1Mobile } from '../assets/images'
+import { Link } from 'react-router-dom'
+
+
 
 const Services = () => {
     return (
@@ -9,7 +13,10 @@ const Services = () => {
             </div>
 
             <div className="box border border-black lg:w-full  lg:h-auto ">
-                <div class=" lg:h-[155px] h-[89px] bg-zinc-300"></div>
+                <div class=" lg:h-[150px] h-[89px] ">
+                    <img src={serv1} alt="" className='lg:block hidden' />
+                    <img src={serv1Mobile} alt="" className='lg:hidden' />
+                </div>
                 <div className="lg:px-8  lg:py-8 px-4 py-6">
                     <div className="font-Barlow lg:text-[24px] text-[20px] leading-normal lg:tracking-widest  tracking-wide  font-bold text-box-red mb-4">MANUFACTURING</div>
                     <div className=" lg:flex gap-x-[96px] lg:space-y-0  space-y-4">
@@ -70,7 +77,7 @@ const Services = () => {
 
                 <div className="border-[1px] border-black w-full lg:h-auto  ">
                     <div class="lg:h-[155px] h-[89px] bg-zinc-300"></div>
-                    <div className="lg:px-8 lg:py-[52px]  px-4 py-6">
+                    <div className="lg:px-8 lg:py-[40px]  px-4 py-6">
                         <div className="font-Barlow text-box-red font-bold leading-normal lg:tracking-widest tracking-wide lg:text-[24px] text-[20px] lg:mb-[40px] mb-4" >COMMISSIONING</div>
                         <div className="">
                             <div className="lg:text-[20px] text-[16px] text-foot-blue font-bold font-Barlow">SSD Commissioning Support : </div>
@@ -95,32 +102,36 @@ const Services = () => {
 
                 </div>
                 <div className="border-[1px] border-black lg:w-full lg:h-auto   ">
-                <div class="lg:h-[155px] h-[89px] bg-zinc-300"></div>
-                    <div className="lg:px-8 lg:py-[52px] px-4 py-6">  
-                    <div className="font-Barlow text-box-red font-bold leading-normal lg:tracking-widest tracking-wide lg:text-[24px] text-[20px] lg:mb-[40px] mb-4" >RESEARCH & DEVELOPMENT</div>
-                    <div className="">
-                        <div className="lg:text-[20px] text-[16px] text-foot-blue font-bold font-Barlow">Design & Engineering : </div>
-                        <ul className=" w-auto list-disc ml-8 ">
-                            <li className='lg:text-[20px] text-[16px] text-foot-blue font-normal lg:whitespace-nowrap font-Barlow'>Each SSD conducts distinct design and engineering tasks</li>
-                            <li className='lg:text-[20px] text-[16px] text-foot-blue font-normal font-Barlow'>Meets custom-specific requirements for desired application solutions</li>
-                            <li className='lg:text-[20px] text-[16px] text-foot-blue font-normal font-Barlow'>Comprehensive study of design, specification, and interface data</li>
-                            <li className='lg:text-[20px] text-[16px] text-foot-blue font-normal font-Barlow'>Address additional interface requirements proactively</li>
-                            <li className='lg:text-[20px] text-[16px] text-foot-blue font-normal font-Barlow'>Adherence to customer wish-lists is a priority</li>
-
-                        </ul>
+                    <div class="lg:h-[155px] h-[89px] ">
+                        <img src={serv2} alt="" />
                     </div>
+                    <div className="lg:px-8 lg:py-[40px] px-4 py-6">
+                        <div className="font-Barlow text-box-red font-bold leading-normal lg:tracking-widest tracking-wide lg:text-[24px] text-[20px] lg:mb-[40px] mb-4" >RESEARCH & DEVELOPMENT</div>
+                        <div className="">
+                            <div className="lg:text-[20px] text-[16px] text-foot-blue font-bold font-Barlow">Design & Engineering : </div>
+                            <ul className=" w-auto list-disc ml-8 ">
+                                <li className='lg:text-[20px] text-[16px] text-foot-blue font-normal lg:whitespace-nowrap font-Barlow'>Each SSD conducts distinct design and engineering tasks</li>
+                                <li className='lg:text-[20px] text-[16px] text-foot-blue font-normal font-Barlow'>Meets custom-specific requirements for desired application solutions</li>
+                                <li className='lg:text-[20px] text-[16px] text-foot-blue font-normal font-Barlow'>Comprehensive study of design, specification, and interface data</li>
+                                <li className='lg:text-[20px] text-[16px] text-foot-blue font-normal font-Barlow'>Address additional interface requirements proactively</li>
+                                <li className='lg:text-[20px] text-[16px] text-foot-blue font-normal font-Barlow'>Adherence to customer wish-lists is a priority</li>
 
-                    <div className=" lg:mt-6 mt-4">
-                        <div className="lg:text-[20px] text-[16px] text-foot-blue font-bold font-Barlow">Engineering Process :   </div>
-                        <ul className="lg:w-auto list-disc ml-8">
-                            <li className='lg:text-[20px] text-[16px] text-foot-blue font-normal font-Barlow'>Utilizes the latest engineering software tools</li>
-                            <li className='lg:text-[20px] text-[16px] text-foot-blue font-normal font-Barlow'>Best practices and applicable standards guide the process</li>
-                            <li className='lg:text-[20px] text-[16px] text-foot-blue font-normal font-Barlow'>We emphasize innovation & customer feedback
-                            </li>
+                            </ul>
+                        </div>
 
+                        <div className=" lg:mt-6 mt-4">
+                            <div className="lg:text-[20px] text-[16px] text-foot-blue font-bold font-Barlow">Engineering Process :   </div>
+                            <ul className="lg:w-auto list-disc ml-8">
+                                <li className='lg:text-[20px] text-[16px] text-foot-blue font-normal font-Barlow'>Utilizes the latest engineering software tools</li>
+                                <li className='lg:text-[20px] text-[16px] text-foot-blue font-normal font-Barlow'>Best practices and applicable standards guide the process</li>
+                                <li className='lg:text-[20px] text-[16px] text-foot-blue font-normal font-Barlow'>We emphasize innovation & customer feedback
+                                </li>
+                            </ul>
+                        </div>
 
-                        </ul>
-                    </div>
+                        <Link to="" className="w-[130px] h-[43px] lg:w-[170px] lg:h-[42px] border border-black text-black flex justify-center items-center mt-10 cursor-pointer font-bold hover:border-red-700  tracking-wider lg:text-base text-sm font-Barlow whitespace-nowrap leading-none hover:text-box-red">
+                            KNOW MORE
+                        </Link>
                     </div>
                 </div>
 

@@ -94,6 +94,11 @@ const Navbar = () => {
     fontWeight: isWorkButtonActive ? "800" : "",
 
   };
+  const linkStyleForInvester = {
+    color: isInvestButtonActive ? '#DA0001' : '#0C013D',
+    fontWeight: isInvestButtonActive ? "800" : "",
+
+  };
 
   return (
     <div className="navbar-bg fixed inset-0 lg:h-[88px] h-[70px] sm:h-[90px] flex items-center justify-between z-50 2xl:px-[40px] shadow-lg">
@@ -259,6 +264,7 @@ const Navbar = () => {
         <Link
           // to="/investors"
           className="text-foot-blue  font-bold hover:opacity-75 lg:block hidden"
+          style={linkStyleForInvester}
           onClick={() => {
             setIsMenuOpen(false);
             toggleColorForInvester(); // Toggle the color
@@ -279,14 +285,14 @@ const Navbar = () => {
           <div
             className={`overflow-hidden flex flex-col customTransition  ${isDivOpen ? 'h-auto opacity-100 translate-y-[0%] ' : 'h-0 opacity-0 translate-y-[-20%]'} bg-transparent rounded-lg font-bold`}
           >
-            <Link to="" className="lg:border-none lg:pb-0 border-b pb-4 uppercase text-foot-blue   py-4 ml-14 border-neutral-500">OVERVIEW</Link>
-            <Link to="" className="lg:border-none lg:pb-0 border-b pb-4 uppercase text-foot-blue   py-4 ml-14 border-neutral-500">FINANCIAL REPORTS</Link>
-            <Link to="" className="lg:border-none  lg:pb-0 border-b pb-4 uppercase text-foot-blue  py-4 ml-14 border-neutral-500">SHAREHOLDERS INFORMATION</Link>
-            <Link to="" className="lg:border-none  lg:pb-0 border-b pb-4 uppercase text-foot-blue  py-4 ml-14 border-neutral-500">CHAIRMAI’S COMMUNICATION</Link>
-            <Link to="" className="lg:border-none  lg:pb-0 border-b pb-4 uppercase text-foot-blue  py-4 ml-14 border-neutral-500">DISCLOSURES</Link>
-            <Link to="" className="lg:border-none  lg:pb-0 border-b pb-4 uppercase text-foot-blue  py-4 ml-14 border-neutral-500">NOTICES</Link>
-            <Link to="" className="lg:border-none  lg:pb-0 border-b pb-4 uppercase text-foot-blue  py-4 ml-14 border-neutral-500">CONTACTS</Link>
-            <Link to="" className="lg:border-none  lg:pb-0 border-b pb-4 uppercase text-foot-blue  pl-14 py-4 border-neutral-500">DOWNLOADS</Link>
+            <Link to="/investors/overview" className="lg:border-none lg:pb-0 border-b pb-4 uppercase text-foot-blue   py-4 ml-14 border-neutral-500">OVERVIEW</Link>
+            <Link to="/investors/financial-reports" className="lg:border-none lg:pb-0 border-b pb-4 uppercase text-foot-blue   py-4 ml-14 border-neutral-500">FINANCIAL REPORTS</Link>
+            <Link to="/investors/shareholders-information" className="lg:border-none  lg:pb-0 border-b pb-4 uppercase text-foot-blue  py-4 ml-14 border-neutral-500">SHAREHOLDERS INFORMATION</Link>
+            <Link to="/investors/chairman-communication" className="lg:border-none  lg:pb-0 border-b pb-4 uppercase text-foot-blue  py-4 ml-14 border-neutral-500">CHAIRMAI’S COMMUNICATION</Link>
+            <Link to="/investors/disclosures" className="lg:border-none  lg:pb-0 border-b pb-4 uppercase text-foot-blue  py-4 ml-14 border-neutral-500">DISCLOSURES</Link>
+            <Link to="/investors/notices" className="lg:border-none  lg:pb-0 border-b pb-4 uppercase text-foot-blue  py-4 ml-14 border-neutral-500">NOTICES</Link>
+            <Link to="/investors/contact-and-grievance" className="lg:border-none  lg:pb-0 border-b pb-4 uppercase text-foot-blue  py-4 ml-14 border-neutral-500">CONTACTS</Link>
+            <Link to="/investors/downloads" className="lg:border-none  lg:pb-0 border-b pb-4 uppercase text-foot-blue  pl-14 py-4 border-neutral-500">DOWNLOADS</Link>
           </div>
         </div>
 

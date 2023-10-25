@@ -204,7 +204,7 @@ function Overview() {
                     <p className="whitespace-nowrap text-[16px]">
                       {member.designation}, {member.organization}
                     </p>
-                    <button className="mt-[10px] lg:mt-[21px] mb-[5px] text-[#b80001] font-bold">
+                    <button className="mt-[10px] lg:mt-[21px] mb-[5px] text-[#b80001] hover:text-black font-bold">
                       More
                     </button>
                   </div>
@@ -231,7 +231,7 @@ function Overview() {
                     <p className="whitespace-nowrap text-[16px]">
                       {member.designation}, {member.organization}
                     </p>
-                    <button className="mt-[10px] lg:mt-[21px] mb-[5px] text-[#b80001] font-bold">
+                    <button className="mt-[10px] lg:mt-[21px] mb-[5px] text-[#b80001] hover:text-black font-bold">
                       More
                     </button>
                   </div>

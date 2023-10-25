@@ -48,8 +48,8 @@ const SlideinBarInvester = () => {
                     INFORMATION
                 </div>
             </Link>
-            <Link to="/" className={`link-item ${location.pathname === "/solutions" ? "active" : ""}`}>
-                <div className={`text-white font-bold uppercase leading-[18px] font-Barlow text-lg tracking-tight cursor-pointer ${location.pathname === "" ? "active-link" : ""}`}>
+            <Link to="/investors/notices" className={`link-item ${location.pathname === "/investors/notices" ? "active" : ""}`}>
+                <div className={`text-white font-bold uppercase leading-[18px] font-Barlow text-lg tracking-tight cursor-pointer ${location.pathname === "/investors/notices" ? "active-link" : ""}`}>
                     NOTICES
                 </div>
             </Link>

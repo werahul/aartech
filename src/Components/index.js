@@ -16,7 +16,8 @@ import SlideInBar from "../Pages/SlideInBar";
 import Accordion from "./Accordion";
 import Accordion2 from "./Accordion2";
 import Accordion3 from "./Accordion3";
+import MapImage from "./MapImage";
 
 import CustomerLogos2 from "./CustomerLogos2.jsx";
 
-export { CustomerLogos, AboutUsHome,CarouselAbout, CLogos, Services, PhotoGallery, TestimonialSlider, Header, BreadCrumbs,Footer,Navbar, OptionsGrid, AboutImages, SlideInBar, Accordion, Accordion2,Accordion3, CustomerLogos2}    
+export { CustomerLogos, AboutUsHome,CarouselAbout, CLogos, Services, PhotoGallery, TestimonialSlider, Header, BreadCrumbs,Footer,Navbar, OptionsGrid, AboutImages, SlideInBar, Accordion, Accordion2,Accordion3, CustomerLogos2, MapImage}    

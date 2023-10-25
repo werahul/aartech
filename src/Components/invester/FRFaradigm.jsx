@@ -42,7 +42,7 @@ function FRFaradigm() {
                 FARADIGM SUBSIDIARY HALF-YEARLY RESULTS
               </h2>
             </div>
-            <div className="flex flex-col underline paraHover font-Barlow text-[18px] space-y-5 p-4 lg:p-9">
+            <div className="flex flex-col underline paraHover font-Barlow text-[18px] space-y-3 p-4 lg:p-9">
               <p > 
                 <a
                   href="https://drive.google.com/file/d/1iVinX4mro7TTkvELNqAojc5bkHYe6RT0/view"

@@ -123,7 +123,7 @@ const PhotoGallery = () => {
             </div>
             <div className="flex items-center justify-center lg:mt-[60px] mt-[30px] lg:pb-0 lg:mb-0">
                 <div
-                    className="viewAll font-Barlow border-[1px] border-black inline-block px-2 py-1 text-[18px] cursor-pointer"
+                    className="viewAll font-Barlow border-[1px] border-black inline-block px-4 py-1 text-[18px] cursor-pointer hover:text-box-red hover:border-box-red font-bold"
                     onClick={toggleGalleryView}
                 >
                     {showAllGalleryItems ? 'Show Less' : 'View All'}

@@ -125,7 +125,7 @@ const product = [
     desc: "Aartech Solonics passionately harnesses solar power for sustainable energy, committing to engineering excellence. They offer tailored solar solutions, from design to installation and maintenance, catering to residential and industrial clients.",
   },
   {
-    title: "SOLID WASTE TREATMENT PRODUCT",
+    title: "SOLID WASTE TREATMENT",
     image: productImg7,
     desc: "Aartech Solonics passionately harnesses solar power for sustainable energy, committing to engineering excellence. They offer tailored solar solutions, from design to installation and maintenance, catering to residential and industrial clients.",
   },

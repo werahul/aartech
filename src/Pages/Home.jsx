@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react'
 import Footer from '../Components/Footer'
 import Navbar from '../Components/Navbar'
 import { ashim, jay, ksh, pankaj, sonu, virendra } from '../assets/images'
-import { Header, OptionsGrid } from '../Components'
+import { Header, MapImage, OptionsGrid } from '../Components'
+
 
 import { CustomerLogos, AboutUsHome, Services, TestimonialSlider } from '../Components/index'
 
@@ -66,6 +67,7 @@ const Home = () => {
         <OptionsGrid />
       </div>
       <CustomerLogos />
+      <MapImage/>
       <div className="fullPage 2xl:px-[120px] lg:px-20  lg:my-[3.8rem] w-[100%] lg:pt-0 lg:pb-0 pt-10 pb-[2rem] px-5 sm:px-10 ">
         <AboutUsHome />
 

@@ -15,5 +15,10 @@ import FRAuditHalfYearlyReport from "./FRAuditHalfYearlyReport";
 import Overview from "./Overview";
 import FRSubsidiary from "./FRSubsidiary";
 import FRFaradigm from "./FRFaradigm";
+import DisPolicies from "./DisPolicies";
+import Notices from "./Notices";
+import FRSubsidiaryYearlyResult from "./FRSubsidiaryYearlyResult"
+import FRFaradigmYearlyResult from "./FRFaradigmYearlyResult"
 
-export {ContactAndGriv, Disclosures, Downloads,Chairman, Shareholders, ShCompliance, ShCorporate, ShGovernanceReport,ShReconciliation, ShShareholdingPattern, VideoComponent, FinancialReport, FRAuditYearlyReport, FRAuditHalfYearlyReport, Overview, FRSubsidiary, FRFaradigm}
+
+export {ContactAndGriv, Disclosures, Downloads,Chairman, Shareholders, ShCompliance, ShCorporate, ShGovernanceReport,ShReconciliation, ShShareholdingPattern, VideoComponent, FinancialReport, FRAuditYearlyReport, FRAuditHalfYearlyReport, Overview, FRSubsidiary, FRFaradigm, DisPolicies, Notices, FRSubsidiaryYearlyResult, FRFaradigmYearlyResult}

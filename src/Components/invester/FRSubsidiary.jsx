@@ -37,7 +37,7 @@ function FRFaradigm() {
                 AARTECH'S SUBSIDIARY HALF-YEARLY RESULTS
               </h2>
             </div>
-            <div className="flex flex-col paraHover underline font-Barlow text-[18px] space-y-5 p-4 lg:p-9 ">
+            <div className="flex flex-col paraHover underline font-Barlow text-[18px] space-y-3 p-4 lg:p-9 ">
               <p className="">
                 <a
                   href="https://drive.google.com/file/d/143vYueQFF81BQrINzkgn6cKiRTba1O_w/view"

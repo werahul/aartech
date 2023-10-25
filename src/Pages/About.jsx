@@ -1,9 +1,12 @@
-import React,{useEffect} from 'react'
+import React, { useEffect } from 'react'
 import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
-import { abImg1, linkedIcon,abBlank, abDebasis, abSsR,abSyed,abVivek, abAmit, abJitendra, abPradeep , abSanjeev, abWajid,mAmit,mDebasis ,mJitendra ,mSanjeev ,mSsR ,mSyed ,mVivek, mWajid, Mpradeep,abNitisha2, mNitisha ,abAarti, mAarti, abTanuj, mTanuj, blankWhite} from '../assets/images'
+import { abImg1, linkedIcon, abBlank, abDebasis, abSsR, abSyed, abVivek, abAmit, abJitendra, abPradeep, abSanjeev, abWajid, mAmit, mDebasis, mJitendra, mSanjeev, mSsR, mSyed, mVivek, mWajid, Mpradeep, abNitisha2, mNitisha, abAarti, mAarti, abTanuj, mTanuj, blankWhite, newAbLogo1, newAbLogo2, newAbLogo3, newAbLogo4 } from '../assets/images'
 import PeopleGrid from '../Components/PeopleGrid'
 import { AboutImages } from '../Components'
+import ParnterAbout from '../Components/AutoScroll/ParnterAbout'
+
+
 
 
 const peopleData = [
@@ -25,7 +28,7 @@ const peopleData = [
         image: abAarti,
         Mimage: mAarti,
         linkedInIcon: linkedIcon,
-        link : "https://www.linkedin.com/in/arati-raje-08342239"
+        link: "https://www.linkedin.com/in/arati-raje-08342239"
     },
     {
         name: "Pradeep Narkhede",
@@ -65,7 +68,7 @@ const peopleData = [
         image: abDebasis,
         Mimage: mDebasis,
         linkedInIcon: linkedIcon,
-        link:"https://www.linkedin.com/in/debasis-barik-electrical"
+        link: "https://www.linkedin.com/in/debasis-barik-electrical"
     },
     {
         name: "Ss Raghuwanshi",
@@ -109,7 +112,7 @@ const peopleData = [
     },
     {
         name: "Jitender Chauhan",
-        role: "MIDDLE MANAGEMENT EXECUTIV", 
+        role: "MIDDLE MANAGEMENT EXECUTIV",
         description:
             "He plays a pivotal role by seamlessly orchestrating various aspects of the CRP segment, including production, quality control, sales, and purchasing. His approach extends across the entire value chain, ensuring efficient and cohesive operations. As an Engineering Graduate, he embodies the essence of integrated success within the organization.",
         image: abJitendra,
@@ -128,12 +131,12 @@ const peopleData = [
         link: "",
         id: 10
     },
-    
+
 ];
 
 
 const About = () => {
-      useEffect(() => {
+    useEffect(() => {
         window.scrollTo(0, 0); // Scroll to the top of the page
     }, []); // Empty dependency array ensures the effect runs only once
     return (
@@ -145,8 +148,20 @@ const About = () => {
                 <div className="text-white lg:text-5xl text-[28px] font-normal lg:leading-[48px] leading-[39.20px] text-center font-antonio lg:mb-10 mb-[24px] lg:mt-0 mt-10">Living Passion through Engineering</div>
                 <div className="lg:w-[844px] text-center text-white lg:text-xl text-base lg:px-4 lg:font-semibold font-normal lg:leading-7 leading-snug lg:mb-0 mb-10 font-Barlow">Our team comprises accomplished individuals with a shared passion for excellence. Each member brings a unique blend of skills and expertise to our mission. From creative thinkers to problem solvers, we collaborate to deliver innovative solutions.</div>
             </div>
+            <div className="2xl:px-[100px] text-box-red lg:text-4xl text-[28px] font-normal lg:pt-20 pt-10 leading-9 font-antonio lg:mb-9  lg:ml-10 ml-5 -mb-8 sm:px-10">Our Partners</div>
+
+            <div className="lg:flex hidden lg:px-20 px-5 sm:px-10 2xl:px-[100px] gap-x-16">
+                <img src={newAbLogo1} alt="" />
+                <img src={newAbLogo2} alt="" />
+                <img src={newAbLogo3} alt="" />
+                <img src={newAbLogo4} alt="" />
+            </div>
+            <div className="lg:hidden block mt-8">
+                <ParnterAbout />
+            </div>
+
             <div className="2xl:px-[120px] lg:px-20 lg:py-20 px-[20px] lg:pt-0 lg:pb-[80px] pt-[10px] pb-[40px] sm:px-10">
-                <div className="text-box-red lg:text-4xl text-[28px] font-seminormal leading-9 font-antonio lg:mt-20 lg:mb-9 mb-6 mt-6">Our Team</div>
+                <div className="text-box-red lg:text-4xl text-[28px] font-seminormal leading-9 font-antonio lg:mt-20 lg:mb-9 mb-6 mt-0">Our Team</div>
 
                 <PeopleGrid peopleData={peopleData} />
             </div>

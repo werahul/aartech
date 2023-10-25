@@ -30,7 +30,7 @@ const Shareholders = () => {
                         <a href="https://drive.google.com/file/d/1URqUGGGbT6McBNsoRw8U9NIL3yVCa8Cn/view" target='_blank'> <div class="lg:w-[95%] text-black lg:text-lg text-sm font-normal font-Barlow underline leading-snug hover:font-semibold">Certificate pursuant to Regulation 7(3) of SEBI (LODR) Regulations, 2015 for half year ended March 31, 2021</div></a>
 
                     </div>
-                    <Link to="/investors/shareholders-information-compliance-certificates" class="w-[99px] h-[43px] lg:w-[110px] lg:h-[42px] border border-black flex justify-center items-center mt-9 cursor-pointer hover:border-red-700 text-red-700 lg:text-base text-sm font-normal font-Barlow whitespace-nowrap leading-none hover:text-black">
+                    <Link to="/investors/shareholders-information-compliance-certificates" class="w-[99px] h-[43px] lg:w-[110px] lg:h-[42px] border border-black flex justify-center items-center mt-9 cursor-pointer hover:border-red-700 text-black  lg:text-base text-sm font-bold font-Barlow whitespace-nowrap leading-none hover:text-box-red">
                         VIEW ALL
                     </Link>
 
@@ -69,7 +69,7 @@ const Shareholders = () => {
                     </tr>
 
                 </table>
-                <Link to="/investors/shareholders-information-corporate-announcements" class="w-[99px] h-[43px] lg:w-[110px] lg:h-[42px] border border-black flex justify-center items-center lg:mt-8 mt-5 cursor-pointer hover:border-red-700 text-red-700 lg:text-base text-sm font-normal font-Barlow whitespace-nowrap leading-none hover:text-black">
+                <Link to="/investors/shareholders-information-corporate-announcements" class="w-[99px] h-[43px] lg:w-[110px] lg:h-[42px] border border-black flex justify-center items-center lg:mt-8 mt-5 cursor-pointer hover:border-red-700 text-black  lg:text-base text-sm font-bold font-Barlow whitespace-nowrap leading-none hover:text-box-red">
                     VIEW ALL
                 </Link>
 
@@ -88,7 +88,7 @@ const Shareholders = () => {
                         <a href="" target='_blank'><div class="text-black lg:text-lg text-sm font-normal font-Barlow underline leading-snug hover:font-semibold">Annual Report for the year 2020-2021</div></a>
 
                     </div>
-                    <Link to="/investors/shareholders-information-corporate-governance-report" class="w-[99px] h-[43px] lg:w-[110px] lg:h-[42px] border border-black flex justify-center items-center mt-9 cursor-pointer hover:border-red-700 text-red-700 lg:text-base text-sm font-normal font-Barlow whitespace-nowrap leading-none hover:text-black">
+                    <Link to="/investors/shareholders-information-corporate-governance-report" class="w-[99px] h-[43px] lg:w-[110px] lg:h-[42px] border border-black flex justify-center items-center mt-9 cursor-pointer hover:border-red-700 text-black  lg:text-base text-sm font-bold font-Barlow whitespace-nowrap leading-none hover:text-box-red">
                         VIEW ALL
                     </Link>
 
@@ -112,7 +112,7 @@ const Shareholders = () => {
 
 
                     </div>
-                    <Link to="/investors/shareholders-information-corporate-reconciliation-of-share-capital-audit-report" class="w-[99px] h-[43px] lg:w-[110px] lg:h-[42px] border border-black flex justify-center items-center mt-9 cursor-pointer hover:border-red-700 text-red-700 lg:text-base text-sm font-normal font-Barlow whitespace-nowrap leading-none hover:text-black">
+                    <Link to="/investors/shareholders-information-corporate-reconciliation-of-share-capital-audit-report" class="w-[99px] h-[43px] lg:w-[110px] lg:h-[42px] border border-black flex justify-center items-center mt-9 cursor-pointer hover:border-red-700 text-black  lg:text-base text-sm font-bold font-Barlow whitespace-nowrap leading-none hover:text-box-red">
                         VIEW ALL
                     </Link>
 
@@ -133,7 +133,7 @@ const Shareholders = () => {
                     <a href="https://drive.google.com/file/d/1j4T44EEsUyxuiF0F190CbvtzTHx66kYF/view" target='_blank'><div class="text-black lg:text-lg text-sm font-normal font-Barlow underline leading-snug hover:font-semibold">Shareholding Pattern as on March 31, 2021</div></a>
 
                     </div>
-                    <Link to="/investors/shareholders-information-shareholding-pattern" class="w-[99px] h-[43px] lg:w-[110px] lg:h-[42px] border border-black flex justify-center items-center mt-9 cursor-pointer hover:border-red-700 text-red-700 lg:text-base text-sm font-normal font-Barlow whitespace-nowrap leading-none hover:text-black">
+                    <Link to="/investors/shareholders-information-shareholding-pattern" class="w-[99px] h-[43px] lg:w-[110px] lg:h-[42px] border border-black flex justify-center items-center mt-9 cursor-pointer hover:border-red-700 text-black  lg:text-base text-sm font-bold font-Barlow whitespace-nowrap leading-none hover:text-box-red">
                         VIEW ALL
                     </Link>
 
@@ -154,7 +154,7 @@ const Shareholders = () => {
                         <a href="" target='_blank'><div class="text-black lg:text-lg text-sm font-normal font-Barlow underline leading-snug hover:font-semibold">Annual Report for the year 2020-2021</div></a>
 
                     </div>
-                    <Link to="" class="w-[99px] h-[43px] lg:w-[110px] lg:h-[42px] border border-black flex justify-center items-center mt-9 cursor-pointer hover:border-red-700 text-red-700 lg:text-base text-sm font-normal font-Barlow whitespace-nowrap leading-none hover:text-black">
+                    <Link to="" class="w-[99px] h-[43px] lg:w-[110px] lg:h-[42px] border border-black flex justify-center items-center mt-9 cursor-pointer hover:border-red-700 text-black  lg:text-base text-sm font-bold font-Barlow whitespace-nowrap leading-none hover:text-box-red">
                         VIEW ALL
                     </Link>
 

@@ -6,8 +6,11 @@ import { Accordion, Accordion2, Accordion3 } from "../../Components"
 import { CustomerLogos2 } from '../../Components'
 
 
+
 import { ImageSelect } from "../ImageSelector";
 import { bts1, bts2, bts3, bts4 } from '../../assets/proImages'
+import { adani, bhel, birla, cib, dvc, indianOil, jindal, Lt, maha, npcil, ntpc  } from '../../assets/WorkBlackLogos'
+import { CustomWorkPages } from '../AutoScroll'
 
 
 const BTS2000 = () => {
@@ -37,6 +40,10 @@ const BTS2000 = () => {
         setSelectedTag(tag); // Set the selected tag
     };
 
+
+    const partnerImageSources = [
+        adani, bhel, birla, cib, dvc, indianOil, jindal, Lt, maha, npcil, ntpc 
+      ];
     return (
         <div>
             <Navbar />
@@ -285,7 +292,7 @@ const BTS2000 = () => {
 
 
                 <div className="text-black lg:text-4xl text-[28px] font-normal font-antonio lg:mt-20 mt-10">Customers</div>
-                <CustomerLogos2 />
+                <CustomWorkPages imageSources={partnerImageSources} />
 
                 <div className="text-black lg:text-4xl text-[28px] font-normal font-antonio ">DOWNLOADS</div>
 

@@ -19,9 +19,10 @@ import Cookie from './Pages/Cookie'
 import { WindPower,DefenceAndExp, Renewable, NonRenewable, PowerTran ,HeavyEng, HealthCare, IT, Transport, WasteMang } from './Components/Industries'
 import { BTS2000,Kranking, ControlRelay, ClipF, BestCase, LoadChecker ,SolarDesign } from './Components/Products'
 import { Solution, CnA, Process, Reliable, Fault, Solar,SolidWaste, Customized } from './Components/Solutions'
-import { ContactAndGriv,Disclosures,Downloads, Chairman, Shareholders, ShCompliance, ShCorporate, ShGovernanceReport,ShReconciliation, ShShareholdingPattern, FinancialReport, FRAuditYearlyReport, FRAuditHalfYearlyReport, Overview, FRFaradigm, FRSubsidiary} from './Components/invester'
+import { ContactAndGriv,Disclosures,Downloads, Chairman, Shareholders, ShCompliance, ShCorporate, ShGovernanceReport,ShReconciliation, ShShareholdingPattern, FinancialReport, FRAuditYearlyReport, FRAuditHalfYearlyReport, Overview, FRFaradigm, FRSubsidiary, DisPolicies, Notices, FRSubsidiaryYearlyResult, FRFaradigmYearlyResult} from './Components/invester'
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Awards1 } from './Pages/Awards SubPage'
 
 const App = () => {
   return (
@@ -88,6 +89,12 @@ const App = () => {
           <Route exact path="/investors/overview" Component={Overview} />
           <Route exact path="/investors/financial-reports-faradigm-subsidiary-half-yearly-results" Component={FRFaradigm} />
           <Route exact path="/investors/financial-reports-subsidiary-half-yearly-results" Component={FRSubsidiary} />
+          <Route exact path="/investors/disclosures-policies" Component={DisPolicies} />
+          <Route exact path="/investors/notices" Component={Notices} />
+          <Route exact path="/investors/financial-reports-subsidiary-yearly-results" Component={FRSubsidiaryYearlyResult} />
+          <Route exact path="/investors/financial-reports-faradigm-subsidiary-yearly-results" Component={FRFaradigmYearlyResult} />
+          
+          <Route exact path="/media/awards-and-recognitions" Component={Awards1} />
           
         </Routes>
       </BrowserRouter>
