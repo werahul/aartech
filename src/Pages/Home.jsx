@@ -60,7 +60,7 @@ const Home = () => {
       <Navbar />
       <Header />
       <div className="fullPage 2xl:px-[120px] lg:px-20 lg:pb-[74px]  lg:pt-20  w-[100%] py-10 px-5 mr-[83px] sm:px-10" >
-        <div className="title lg:text-4xl text-[28px] text-box-red leading-9  font-normal lg:mt-0  font-antonio lg:mb-9 mb-4">
+        <div className="title lg:text-4xl text-[28px] text-box-red leading-9  font-normal lg:mt-0  font-antonio lg:mb-9 mb-4" >
           Our Tailored Solutions
         </div>
         <div className='font-Barlow lg:text-[20px] text-lightBlack text-[16px] lg:w-full lg:font-semibold font-medium lg:mb-[32px] mb-4 '  > Choose any ONE of the THREE segments below and check out corresponding 2 segments linked with your chosen one.</div>
@@ -73,8 +73,7 @@ const Home = () => {
 
       </div>
       <TestimonialSlider testimonials={testimonials} />
-      <div className="fullPage 2xl:px-[120px] lg:px-20 lg:py-[80px] w-[100%] p-5 sm:px-10">
-
+      <div className="fullPage 2xl:px-[120px] lg:px-20 lg:py-[80px] w-[100%] p-5 sm:px-10" data-aos="fade-up">
         <Services />
       </div>
 

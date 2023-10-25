@@ -1,7 +1,10 @@
-
+import { useEffect } from "react";
+import Aos from "aos"
+import "aos/dist/aos.css"
 
 const PersonCard = ({ name, role, description, image, linkedInIcon, link, Mimage, id }) => (
-  <div className="border border-black  lg:flex " >
+  
+  <div className="border border-black  lg:flex " data-aos = "fade-up">
     <div className=" flex gap-6">
       <div className="h-[50px] lg:h-auto lg:w-[200%] w-[100px]   lg:overflow-visible mt-0 lg:mt-0 lg:mb-0 mb-12">
         <img src={image} alt="" className="w-full h-[100px] lg:block hidden  lg:h-full object-cover  " />
@@ -40,7 +43,8 @@ const PersonCard = ({ name, role, description, image, linkedInIcon, link, Mimage
 )
 
 const PeopleGrid = ({ peopleData }) => (
-  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 lg:gap-9 gap-6">
+
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 lg:gap-9 gap-6" >
     {peopleData.map((person, index) => (
       <PersonCard key={index} {...person} />
     ))}

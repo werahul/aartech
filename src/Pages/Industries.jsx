@@ -4,12 +4,16 @@ import { Link } from "react-router-dom";
 // import { breadHome } from "../assets/images";
 import { industry } from "../constants";
 
+import Aos from "aos"
+import "aos/dist/aos.css"
+
 const Industry = ({ title, image, desc, path }) => {
   useEffect(() => {
-    window.scrollTo(0, 0); // Scroll to the top of the page
+    window.scrollTo(0, 0);
+    Aos.init({duration: 2000});
   }, []); // Empty dependency array ensures the effect runs only once
   return (
-    <div>
+    <div data-aos="fade-up">
       <Link to={path}>
         <h3 className="text-[#B80001] font-bold font-Barlow text-[20px] lg:text-[24px] lg:tracking-wider tracking-wide">
           {title}
@@ -36,7 +40,7 @@ const Industries = () => {
     <div>
       <Navbar />
       <SlideInBar />
-      <div className="px-4 pt-[20px] lg:pt-[88px] 2xl:px-[120px] lg:px-20 sm:px-10">
+      <div className="px-4 pt-[20px] lg:pt-[88px] 2xl:px-[120px] lg:px-20 sm:px-10" >
         {/* <div className="font-Barlow font-[500] mt-[24px] mb-[24px] lg:mt-[28px] lg:mb-[18px] text-[#0C013D]">
           <BreadCrumbs breadcrumbs={breadcrumbs} />
   </div>*/}

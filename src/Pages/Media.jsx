@@ -4,11 +4,14 @@ import Navbar from '../Components/Navbar'
 import { PhotoGallery } from '../Components'
 import { Link } from 'react-router-dom'
 import { anImg1 } from '../assets/images'
+import Aos from "aos"
+import "aos/dist/aos.css"
 
 
 const Media = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
+        Aos.init({duration: 2000})
     }, []);
 
     const awardsData = [
@@ -58,7 +61,7 @@ const Media = () => {
             <Navbar />
             <div className=" 2xl:px-[120px] lg:px-20 lg:py-20 px-5 py-10 sm:px-10">
 
-                <div className="title lg:text-4xl text-[28px]  font-normal font-antonio text-box-red lg:mt-20 mt-20">
+                <div className="title lg:text-4xl text-[28px]  font-normal font-antonio text-box-red lg:mt-20 mt-20" data-aos="fade-right">
                     Awards & Recognitions
                 </div>
 
@@ -92,7 +95,7 @@ const Media = () => {
                 <div className="lg:grid grid-cols-2 gap-5 lg:mt-9 mt-6 lg:space-y-0 space-y-6">
                     <Link to='/announcement-page'
                     >
-                        <div className="flex lg:flex-row flex-col   border-[1px] border-black">
+                        <div className="flex lg:flex-row flex-col   border-[1px] border-black"  data-aos="fade-in">
                             <div className=" lg:w-[30%]  w-full lg:h-auto h-auto">
                                 <img src={anImg1} alt="" className='object-cover lg:h-[122px] ' /></div>
                             <div className=" lg:w-[70%] w-full h-auto lg:px-4 px-2 lg:pt-[13px] pt-[6px] lg:pb-[12px] pb-[10px] ">

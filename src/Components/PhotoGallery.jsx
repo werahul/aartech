@@ -1,10 +1,16 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { down } from '../assets/images';
 import { PG1, PG2, PG3, PG4, PG5, PG6, PG7, PG8, PG9, PG10, PG11 } from '../assets/photogallery';
+import Aos from "aos"
+import "aos/dist/aos.css"
 
 
 const PhotoGallery = () => {
-
+    useEffect(() => {
+       
+        Aos.init({duration: 2000})
+    }, []);
+   
     const [showAllGalleryItems, setShowAllGalleryItems] = useState(false);
     const [selectedImageIndex, setSelectedImageIndex] = useState(null); // New state for selected image index
 
@@ -110,7 +116,7 @@ const PhotoGallery = () => {
                     <div
                         key={item.id}
                         className="galaryBox inline-block"
-                        onClick={() => openImageModal(index)}
+                        onClick={() => openImageModal(index)}  data-aos="zoom-in"
                     >
                         <div className="img bg-slate-500 aspect-video overflow-hidden cursor-pointer">
                             <img src={item.imageUrl} alt="" />

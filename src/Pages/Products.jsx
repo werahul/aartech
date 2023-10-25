@@ -3,13 +3,16 @@ import { Navbar, BreadCrumbs, Footer, SlideInBar } from "../Components";
 import { product } from "../constants";
 import { Link } from "react-router-dom";
 // import { breadHome } from "../assets/images";
+import Aos from "aos"
+import "aos/dist/aos.css"
 
 const Product = ({ title, image, desc, path }) => {
   useEffect(() => {
-    window.scrollTo(0, 0); // Scroll to the top of the page
+    window.scrollTo(0, 0); 
+    Aos.init({duration: 2000});
   }, []); // Empty dependency array ensures the effect runs only once
   return (
-    <div>
+    <div data-aos="fade-up">
       <Link to={path}>
 
 

@@ -4,14 +4,16 @@ import Navbar from '../Components/Navbar'
 // import "../App.css" 
 import CustomSelect from './CustomSelect'
 import CustomCountry from './CustomCountry'
-
+import Aos from "aos"
+import "aos/dist/aos.css"
 
 
 
 
 const Contact = () => {
     useEffect(() => {
-        window.scrollTo(0, 0); // Scroll to the top of the page
+        window.scrollTo(0, 0);
+        Aos.init({duration: 2000});
     }, []); // Empty dependency array ensures the effect runs only once
 
 
@@ -19,7 +21,7 @@ const Contact = () => {
         <>
             <Navbar />
             <div className="mainPage 2xl:px-[120px] lg:px-20 lg:mt-[4rem] lg:py-20 px-5 py-10 sm:px-10 ">
-                <div className="title lg:text-4xl text-[28px] text-box-red   font-antonio lg:mt-0 mt-20">
+                <div className="title lg:text-4xl text-[28px] text-box-red   font-antonio lg:mt-0 mt-20" data-aos="fade-right"  data-aos-anchor-placement="center-bottom">
                     Contact Us
                 </div>
                 <div className="form lg:mt-4 mt-1 ">
@@ -36,7 +38,7 @@ const Contact = () => {
                     </form>
                     <button className='font-Barlow font-bold bg-box-red text-white p-2 lg:text-[18px] text-[16px] mt-3 lg:w-32 w-[100%] h-12 cursor-pointer'>SUBMIT</button>
                 </div>
-                <div className="title lg:text-4xl text-[28px]  font-antonio lg:mt-20 mt-10">
+                <div className="title lg:text-4xl text-[28px]  font-antonio lg:mt-20 mt-10"  >
                     Email
                 </div>
                 <div className="emailLinks">
@@ -53,7 +55,9 @@ const Contact = () => {
                     Address & Phone
                 </div>
                 <div className="grid lg:grid-cols-3 grid-cols-1 lg:gap-x-7 lg:gap-y-[30px] gap-y-6 ">
-                    <div className="addressbox border-[1px] border-black w-[100%] lg:h-[323px] h-auto py-4 px-4 " >
+                    <div className="addressbox border-[1px] border-black w-[100%] lg:h-[323px] h-auto py-4 px-4"  data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="1000">
                         <div className="boxtitle text-box-red font-bold flex items-center justify-center lg:my-5 font-Barlow lg:text-[24px] text-[20px]">
                             REGISTERED OFFICE
                         </div>
@@ -67,7 +71,9 @@ const Contact = () => {
                             </ul>
                         </div>
                     </div>
-                    <div className="addressbox border-[1px] border-black w-[100%] lg:h-[323px] h-auto py-4 px-4" >
+                    <div className="addressbox border-[1px] border-black w-[100%] lg:h-[323px] h-auto py-4 px-4"  data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="1000">
                         <div className="boxtitle text-box-red font-bold flex items-center justify-center lg:my-5 font-Barlow lg:text-[24px] text-[20px]">
                             UNIT #1, MANDIDEEP
                         </div>
@@ -81,7 +87,9 @@ const Contact = () => {
                             </ul>
                         </div>
                     </div>
-                    <div className="addressbox border-[1px] border-black w-[100%] lg:h-[323px] h-60 py-4 px-4 " >
+                    <div className="addressbox border-[1px] border-black w-[100%] lg:h-[323px] h-60 py-4 px-4 "  data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000">
                         <div className="boxtitle text-box-red font-bold flex items-center justify-center lg:my-5 font-Barlow lg:text-[24px] text-[20px]">
                             UNIT #2, PARWANOO
                         </div>
@@ -95,7 +103,9 @@ const Contact = () => {
                             </ul>
                         </div>
                     </div>
-                    <div className="addressbox border-[1px] border-black w-[100%] lg:h-[323px] h-60 py-4 px-4 " >
+                    <div className="addressbox border-[1px] border-black w-[100%] lg:h-[323px] h-60 py-4 px-4 "  data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000">
                         <div className="boxtitle text-box-red font-bold flex items-center justify-center lg:my-5 font-Barlow lg:text-[24px] text-[20px]">
                             # Onshore Office USA
                         </div>
@@ -110,7 +120,9 @@ const Contact = () => {
                             </ul>
                         </div>
                     </div>
-                    <div className="addressbox border-[1px] border-black w-[100%] lg:h-[323px] h-60 py-4 px-4 " >
+                    <div className="addressbox border-[1px] border-black w-[100%] lg:h-[323px] h-60 py-4 px-4 "  data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000">
                         <div className="boxtitle text-box-red font-bold flex items-center justify-center lg:my-5 font-Barlow lg:text-[24px] text-[20px]">
                         # Onshore Office UK
                         </div>
