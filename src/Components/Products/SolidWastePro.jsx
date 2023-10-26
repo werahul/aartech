@@ -2,16 +2,18 @@ import React, { useState, useEffect } from 'react'
 import { Navbar, Footer } from "../index"
 import { product1 } from '../../assets/workImages'
 import { download } from "../../assets/images"
-import { Accordion, Accordion2, Accordion3 } from "../../Components"
-import { CustomerLogos2 } from '../../Components'
+import { Accordion, Accordion2, Accordion3 } from ".."
+import { CustomerLogos2 } from '..'
 
 
 import { ImageSelect } from "../ImageSelector";
-import { clip1, clip2 ,clip3,clip4,clip5 } from '../../assets/proImages'
-import { camal, ube, holcim, regent, oxy, bp, viet, nghi, totalE, petronas, ptt, Ambatovy} from '../../assets/WorkBlackLogos'
-import { CustomWorkPages } from '../AutoScroll'
+import { cp1, cp2, cp3, cp4, cp5 } from '../../assets/proImages'
+import { indRail, CapS, CapG, hp } from '../../assets/WorkBlackLogos'
+import { SolidWasteAuto } from '../AutoScroll'
 
-const ClipF = () => {
+
+
+const SolidWastePro = () => {
     useEffect(() => {
         window.scrollTo(0, 0); // Scroll to the top of the page
     }, []); // Empty dependency array ensures the effect runs only 
@@ -19,41 +21,35 @@ const ClipF = () => {
 
 
     const [selectedTag, setSelectedTag] = useState("tag1");
-    const images = [clip1, clip2 ,clip3,clip4,clip5];
+    const images = [cp1, cp2, cp3, cp4, cp5];
 
 
     const tagContents = {
-        tag1: 'CLiP® Fault Current Limiters boost electrical safety in Defense and Exploration with up to 38kV and 5000A current limitations, averting overcurrent issues. Their flexibility and rapid operation suit various applications, safeguarding vital equipment and ensuring reliable power in demanding settings.   ',
+        tag1: 'The WTC composting machine by Aartech Solonics Ltd provides an eco-friendly waste management solution, reducing waste and promoting sustainability, which can be vital for maintaining clean and efficient environments in both the Defence and Exploration sectors.     ',
 
-        tag2: 'CLiP® Fault Current Limiters ensure grid stability and protect sensitive equipment in renewable energy systems (2.8kV to 38kV). Their compact design integrates seamlessly, reducing overcurrent risks and enhancing system reliability, making them essential for efficient and sustainable power generation.  ',
+        tag2: 'The WTC composting machine complements Renewable Energy efforts by efficiently managing organic waste, reducing environmental impact, and promoting sustainability, aligning with the principles of eco-friendly energy solutions promoted by Aartech Solonics Ltd.        ',
 
-        tag3: 'CLiP® Fault Current Limiters enhance Non-Renewable Energy stability, offering current limitations for 2.8-38kV systems with up to 5000A continuous current ratings. Their versatile design allows indoor/outdoor installation, delivering cost-effective overcurrent protection for transformers and system upgrades.',
+        tag3: "The WTC composting machine indirectly promotes non-renewable energy sector sustainability by addressing waste management challenges and enhancing operational efficiency, aligning with Aartech Solonics Ltd's commitment to responsible practices.",
 
-        tag4: 'CLiP® Fault Current Limiters enhance grid stability in Power Transmission and Distribution by limiting currents in 2.8-38kV systems with up to 5000A ratings. Their versatile design supports indoor/outdoor installation, providing reliable overcurrent protection for transformers ultimately improving network stability.        ',
+        tag4: "The WTC composting machine ensures healthcare facilities maintain high standards of waste management, aligning with sector requirements. Aartech Solonics Ltd's innovation promotes a vital, eco-friendly environment for patient well-being.",
 
-        tag5: "CLiP® Fault Current Limiters are vital in Heavy Engineering, limiting currents in 2.8-38kV systems up to 5000A, with versatile indoor/outdoor installation, ensuring robust operations for critical equipment like transformers and generators in demanding heavy engineering applications.",
-
-        tag6: "CLiP® Fault Current Limiters enhance healthcare electrical safety by limiting currents in 2.8-38kV systems, ensuring uninterrupted service for critical medical equipment and preventing electrical hazards.",
-
-        tag7: "CLiP® Fault Current Limiters are valuable for IT and Telecom applications, providing current limitations for 2.8-38kV systems and ensuring electrical system safety. Their versatile design allows indoor/outdoor installation, safeguarding critical IT infrastructure, preventing downtime, and enhancing the reliability of telecom networks.         ",
-
-        tag8: "CLiP® Fault Current Limiters enhance electrical safety in Transportation, limiting currents for 2.8-38kV systems, ensuring system reliability in vehicles and transportation infrastructure. Their compact design seamlessly integrates, preventing electrical disruptions and enhancing network safety.        ",
-
+        tag5: "The WTC composting machine contributes to transportation sustainability by managing waste efficiently, aligning with the sector's pressing energy needs. Aartech Solonics Ltd's innovation supports eco-friendly practices in the Automobile and Railways sector.        .",
 
     };
 
     const handleTagClick = (tag) => {
         setSelectedTag(tag); // Set the selected tag
     };
+
     const partnerImageSources = [
-        camal, ube, holcim, regent, oxy, bp, viet, nghi, totalE, petronas, ptt, Ambatovy
+        indRail, CapS, CapG, hp 
       ];
     return (
         <div>
             <Navbar />
             <div className=" 2xl:px-[120px] lg:py-20 lg:px-20  pt-20 px-5 py-10 lg:mt-0 mt-5 sm:px-10">
 
-                <div className="lg:hidden text-black text-[28px] font-normal font-antonio ">CLIP Fault Current Limiters</div>
+                <div className="lg:hidden text-black text-[28px] font-normal font-antonio ">Solid Waste Treatment</div>
                 <div className="lg:hidden text-foot-blue text-lg font-bold font-Barlow tracking-wider mb-4">PRODUCTS</div>
 
                 <div className="lg:flex lg:mt-20">
@@ -61,10 +57,10 @@ const ClipF = () => {
                     <ImageSelect images={images} />
 
                     <div className="lg:w-[55%] w-[100%] lg:ml-[44px]">
-                        <div className="lg:block hidden text-black text-4xl font-normal font-antonio">CLIP Fault Current Limiters</div>
+                        <div className="lg:block hidden text-black text-4xl font-normal font-antonio">Solid Waste Treatment</div>
                         <div className="lg:block hidden text-foot-blue text-lg font-bold font-Barlow tracking-wider mt-2">PRODUCTS</div>
                         <div className="flex flex-col justify-between  lg:h-[330px]">
-                            <div className="text-black lg:text-[22px] text-base lg:font-normal font-medium font-Barlow mt-6 lg:leading-tight leading-snug">CLiP® (Current Limiting Protectors) offer current limitations for 2.8-38kV systems with up to 5000A continuous current ratings. Their compact, sealed design allows for indoor or outdoor installation, pole or structure mounting, or enclosure placement. CLiP combines high continuous current ratings, current limitation, and ultra-fast operation in one cost-effective package, making it ideal for various overcurrent protection needs like system upgrades, reactor bypass, transformer protection, cogeneration, lower breaker ratings, and close bus ties.                          </div>
+                            <div className="text-black lg:text-[22px] text-base lg:font-normal font-medium font-Barlow mt-6 lg:leading-tight leading-snug">Aartech Solonics Ltd is a pioneer in specialised energy applications, offering global solutions through innovative R&D. Their WTC composting machine, a marvel of automation, transforms diverse organic waste into compost within 24 hours, adhering to the 3R Principle. This natural, biological process utilizes special microorganisms for higher capacities, ensuring noiseless and odourless operation. Ideal for any building, WTC not only reduces waste but also recycles it, offering an efficient, eco-friendly waste management solution.                        </div>
                             <div className="flex items-center lg:mt-auto mt-12 cursor-pointer">
                                 <img src={download} alt="" />
                                 <div className="text-foot-blue hover:text-box-red lg:text-lg text-base font-bold font-Barlow tracking-wider ml-[10px]">DOWNLOAD BROCHURE</div>
@@ -84,7 +80,7 @@ const ClipF = () => {
                             } w-auto h-[49px] px-[15px] uppercase py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag1')}
                     >
-                    Defence & Exploration
+                        Defence & Exploration
                     </button>
 
                     <button
@@ -112,13 +108,8 @@ const ClipF = () => {
                             }  w-auto h-[49px] px-[15px] uppercase py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag4')}
                     >
-                        Power Transmission and Distribution
+                        Healthcare
                     </button>
-
-
-
-                </div>
-                <div div className="lg:flex hidden space-x-3 mt-3">
 
                     <button
                         className={`tag ${selectedTag === 'tag5'
@@ -127,40 +118,13 @@ const ClipF = () => {
                             }  w-auto h-[49px] px-[15px] uppercase py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag5')}
                     >
-                        Heavy Engineering Industries
-                    </button>
-
-                    <button
-                        className={`tag ${selectedTag === 'tag6'
-                            ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            }  w-auto h-[49px] px-[15px] uppercase py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
-                        onClick={() => handleTagClick('tag6')}
-                    >
-                        Healthcare
-                    </button>
-
-                    <button
-                        className={`tag ${selectedTag === 'tag7'
-                            ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            }  w-auto h-[49px] px-[15px] uppercase py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
-                        onClick={() => handleTagClick('tag7')}
-                    >
                         IT & Telecom
                     </button>
 
-                    <button
-                        className={`tag ${selectedTag === 'tag8'
-                            ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            }  w-auto h-[49px] px-[15px] uppercase py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
-                        onClick={() => handleTagClick('tag8')}
-                    >
-                        Transportation
-                    </button>
+
 
                 </div>
+
 
 
 
@@ -204,7 +168,7 @@ const ClipF = () => {
                             } w-auto h-[49px] px-[10px] uppercase py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag4')}
                     >
-                        Power Transmission and Distribution
+                        Healthcare
                     </button>
                     <button
                         className={`tag ${selectedTag === 'tag5'
@@ -213,37 +177,10 @@ const ClipF = () => {
                             } w-auto h-[49px] px-[10px] uppercase py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag5')}
                     >
-                        Heavy Engineering Industries
-                    </button>
-
-                    <button
-                        className={`tag ${selectedTag === 'tag6'
-                            ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            } w-auto h-[49px] px-[10px] uppercase py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
-                        onClick={() => handleTagClick('tag6')}
-                    >
-                        Healthcare
-                    </button>
-                    <button
-                        className={`tag ${selectedTag === 'tag7'
-                            ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            } w-auto h-[49px] px-[10px] uppercase py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
-                        onClick={() => handleTagClick('tag7')}
-                    >
                         IT & Telecom
                     </button>
 
-                    <button
-                        className={`tag ${selectedTag === 'tag8'
-                            ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            } w-auto h-[49px] px-[10px] uppercase py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
-                        onClick={() => handleTagClick('tag8')}
-                    >
-                        Transportation
-                    </button>
+
 
                 </div>
                 <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow mt-8 lg:leading-tight leading-snug">  {selectedTag && tagContents[selectedTag]}</div>
@@ -251,24 +188,25 @@ const ClipF = () => {
 
 
                 <div className="text-foot-blue text-lg font-bold font-Barlow tracking-wider lg:mt-20 mt-10">FEATURES</div>
-               
-                
+
+
                 <div className="lg:flex  justify-between mt-8 ">
                     <div className="text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:leading-tight leading-snug">
-                        <p className='list-dots'>High Continuous Current- up to 5000A</p>
-                        <p className='list-dots'>Electronically Triggered – Permits breakers to work up to their ratings.</p>
-                        <p className='list-dots'>Redundant Sensing – Provides backup sensing</p>
-                        <p className='list-dots'>Low Fault Energy Let-through – Reduce Damage </p>
+                        <p className='list-dots'>Complete protection of transformer or feede </p>
+                        <p className='list-dots'>Alarm & Annunciation features</p>
+                        <p className='list-dots'>Simplex Construction</p>
+                        <p className='list-dots'>Multiple Construction Choice (front door or rear door type) </p>
                         <p className='list-dots'>Also available with Communicable Relays</p>
-                        
+
                     </div>
 
                     <div className="text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:leading-tight leading-snug lg:ml-16 lg:mt-0 mt-6">
-                    <p className='list-dots'>Very High Interrupt Ratings – Upto 120kA rms symmetrical </p>
-                    <p className='list-dots'>Wide Environmental Range – Indoor/Outdoor Applications </p>
-                    
-                    
-                  
+                        <p className='list-dots'>Multiple scheme configurations in a Single panel</p>
+                        <p className='list-dots'>Compact</p>
+                        <p className='list-dots'>CPRI tested</p>
+                        <p className='list-dots'>Vendor Approved from government Utilities like MPEB – Jabalpur, Bhopal & Indore</p>
+
+
                     </div>
                 </div>
 
@@ -375,10 +313,18 @@ const ClipF = () => {
 
 
                 <div className="text-black lg:text-4xl text-[28px] font-normal font-antonio lg:mt-20 mt-10">Customers</div>
-                <CustomWorkPages imageSources={partnerImageSources} />
 
+                <div className="lg:flex hidden gap-x-16 mt-10 mb-20 overflow-x-auto">
+                    <img src={indRail} alt="" />
+                    <img src={CapS} alt="" />
+                    <img src={CapG} alt="" />
+                    <img src={hp} alt="" />
+                </div>
+                
+                <SolidWasteAuto/>
+                
 
-                <div className="text-black lg:text-4xl text-[28px] font-normal font-antonio">DOWNLOADS</div>
+                <div className="text-black lg:text-4xl text-[28px] font-normal font-antonio ">DOWNLOADS</div>
 
                 <div className="lg:flex gap-x-5 lg:mt-[46px] mt-6">
                     <div className="lg:w-[60%] w-[100%]">
@@ -446,4 +392,4 @@ const ClipF = () => {
     )
 }
 
-export default ClipF
+export default SolidWastePro

@@ -226,9 +226,15 @@ const Navbar = () => {
               </Link>
               <Link
                 to="/solutions"
-                className="lg:border-none  lg:pb-0 border-b pb-4 uppercase text-foot-blue  pl-14 py-4 border-neutral-500"
+                className="lg:border-none  lg:pb-0 border-b pb-4 uppercase text-foot-blue   py-4 ml-14 border-neutral-500"
               >
                 solutions
+              </Link>
+              <Link
+                to="/r&d-facilities"
+                className="lg:border-none  lg:pb-0 border-b pb-4 uppercase text-foot-blue  pl-14 py-4 border-neutral-500"
+              >
+              R&D FACILITIES
               </Link>
             </div>
           </div>
@@ -286,13 +292,13 @@ const Navbar = () => {
             className={`overflow-hidden flex flex-col customTransition  ${isDivOpen ? 'h-auto opacity-100 translate-y-[0%] ' : 'h-0 opacity-0 translate-y-[-20%]'} bg-transparent rounded-lg font-bold`}
           >
             <Link to="/investors/overview" className="lg:border-none lg:pb-0 border-b pb-4 uppercase text-foot-blue   py-4 ml-14 border-neutral-500">OVERVIEW</Link>
+            <Link to="/investors/chairman-communication" className="lg:border-none  lg:pb-0 border-b pb-4 uppercase text-foot-blue  py-4 ml-14 border-neutral-500">CHAIRMAI’S COMMUNICATION</Link>
             <Link to="/investors/financial-reports" className="lg:border-none lg:pb-0 border-b pb-4 uppercase text-foot-blue   py-4 ml-14 border-neutral-500">FINANCIAL REPORTS</Link>
             <Link to="/investors/shareholders-information" className="lg:border-none  lg:pb-0 border-b pb-4 uppercase text-foot-blue  py-4 ml-14 border-neutral-500">SHAREHOLDERS INFORMATION</Link>
-            <Link to="/investors/chairman-communication" className="lg:border-none  lg:pb-0 border-b pb-4 uppercase text-foot-blue  py-4 ml-14 border-neutral-500">CHAIRMAI’S COMMUNICATION</Link>
-            <Link to="/investors/disclosures" className="lg:border-none  lg:pb-0 border-b pb-4 uppercase text-foot-blue  py-4 ml-14 border-neutral-500">DISCLOSURES</Link>
             <Link to="/investors/notices" className="lg:border-none  lg:pb-0 border-b pb-4 uppercase text-foot-blue  py-4 ml-14 border-neutral-500">NOTICES</Link>
-            <Link to="/investors/contact-and-grievance" className="lg:border-none  lg:pb-0 border-b pb-4 uppercase text-foot-blue  py-4 ml-14 border-neutral-500">CONTACTS</Link>
-            <Link to="/investors/downloads" className="lg:border-none  lg:pb-0 border-b pb-4 uppercase text-foot-blue  pl-14 py-4 border-neutral-500">DOWNLOADS</Link>
+            <Link to="/investors/disclosures" className="lg:border-none  lg:pb-0 border-b pb-4 uppercase text-foot-blue  py-4 ml-14 border-neutral-500">DISCLOSURES</Link>
+            <Link to="/investors/downloads" className="lg:border-none  lg:pb-0 border-b pb-4 uppercase text-foot-blue  py-4 ml-14 border-neutral-500">DOWNLOADS</Link>
+            <Link to="/investors/contact-and-grievance" className="lg:border-none  lg:pb-0 border-b pb-4 uppercase text-foot-blue pl-14 py-4  border-neutral-500">CONTACTS & GRIEVANCE</Link>
           </div>
         </div>
 

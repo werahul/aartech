@@ -5,6 +5,8 @@ import { abImg1, linkedIcon, abBlank, abDebasis, abSsR, abSyed, abVivek, abAmit,
 import PeopleGrid from '../Components/PeopleGrid'
 import { AboutImages } from '../Components'
 import ParnterAbout from '../Components/AutoScroll/ParnterAbout'
+import { CustomWorkPages } from '../Components/AutoScroll'
+
 
 import Aos from "aos"
 import "aos/dist/aos.css"
@@ -144,7 +146,9 @@ const About = () => {
         Aos.init({duration: 2000});
     }, []);
     
-    // Empty dependency array ensures the effect runs only once
+    const partnerImageSources = [
+        newAbLogo1, newAbLogo2, newAbLogo3, newAbLogo4
+      ];
     return (
         <>
             <Navbar />
@@ -155,9 +159,9 @@ const About = () => {
                 <div className="text-white lg:text-5xl text-[28px] font-normal lg:leading-[48px] leading-[39.20px] text-center font-antonio lg:mb-10 mb-[24px] lg:mt-0 mt-10" data-aos="fade-left">Living Passion through Engineering</div>
                 <div className="lg:w-[844px] text-center text-white lg:text-xl text-base lg:px-4 lg:font-semibold font-normal lg:leading-7 leading-snug lg:mb-0 mb-10 font-Barlow " data-aos="fade-left">Our team comprises accomplished individuals with a shared passion for excellence. Each member brings a unique blend of skills and expertise to our mission. From creative thinkers to problem solvers, we collaborate to deliver innovative solutions.</div>
             </div>
-            <div className="2xl:px-[100px] text-box-red lg:text-4xl text-[28px] font-normal lg:pt-20 pt-10 leading-9 font-antonio lg:mb-9  lg:ml-10 ml-5 -mb-8 sm:px-10">Our Partners</div>
+            <div className="2xl:px-[100px] text-box-red lg:text-4xl text-[28px] font-normal lg:pt-20 pt-10 leading-9 font-antonio px-5 sm:px-10">Our Partners</div>
 
-            <div className="lg:flex hidden lg:px-20 px-5 sm:px-10 2xl:px-[100px] gap-x-16 wow bounceInUp" data-aos = "fade-up">
+            <div className="lg:flex hidden lg:px-20 px-5 sm:px-10 mt-10 2xl:px-[100px] gap-x-16" data-aos = "fade-up">
                 <img src={newAbLogo1} alt="" />
                 <img src={newAbLogo2} alt="" />
                 <img src={newAbLogo3} alt="" />

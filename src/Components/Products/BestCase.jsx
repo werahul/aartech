@@ -1,14 +1,16 @@
 import React, { useState } from "react";
 import { Navbar, Footer, Accordion, Accordion2, Accordion3 } from "../index";
-
 import { best1, best2, best3, best4, best5 } from "../../assets/proImages";
-
 import { BTS1 } from "../../assets/pdf";
-
 import { ImageSelect } from "../ImageSelector";
-
 import { CustomerLogos2 } from "..";
-import { download } from "../../assets/images";
+import { download } from "../../assets/images"
+
+
+import { tif, cCi, thermax, electro, dataTrack, threePin, rtk, hal, varuna, aemed } from '../../assets/WorkBlackLogos'
+import { CustomWorkPages } from '../AutoScroll'
+
+
 
 const BestCase = () => {
   const images = [best1, best2, best3, best4, best5];
@@ -41,6 +43,10 @@ const BestCase = () => {
   const handleProClick = (tag) => {
     setSelectedProTag(tag);
   };
+
+  const partnerImageSources = [
+    tif, cCi, thermax, electro, dataTrack, threePin, rtk, hal, varuna, aemed
+  ];
   return (
     <div>
       <Navbar />
@@ -395,7 +401,7 @@ const BestCase = () => {
         <div className="text-black lg:text-4xl text-[28px] font-normal font-antonio lg:mt-20 mt-10">
           Customers
         </div>
-        <CustomerLogos2 />
+        <CustomWorkPages imageSources={partnerImageSources} />
 
         <div className="text-black lg:text-4xl text-[28px] font-normal font-antonio ">
           DOWNLOADS
@@ -432,7 +438,7 @@ const BestCase = () => {
                 target="_blank"
               >
                 {" "}
-                <li className="text-black lg:text-lg text-base lg:font-normal font-medium font-Barlow hover:underline hover:font-medium mt-5">
+                <li className="text-black lg:text-lg text-base lg:font-normal font-medium font-Barlow underline hover:font-medium mt-5">
                   A. Raje, A. A. Raje, A. Chaudhary, “Fast Bus Transfer Systems
                   – A Systems Solution Approach”, National Power Systems
                   Conference, Mumbai, India, Dec 2008.
@@ -451,7 +457,7 @@ const BestCase = () => {
                 target="_blank"
               >
                 {" "}
-                <li className="text-black lg:text-lg text-base lg:font-normal font-medium font-Barlow hover:underline hover:font-medium">
+                <li className="text-black lg:text-lg text-base lg:font-normal font-medium font-Barlow underline hover:font-medium">
                   BTS 2000-2008 – PowerGen Middle East Fast Bus Transfer Systems
                   – A System Solution Approach.ppt
                 </li>
@@ -468,7 +474,7 @@ const BestCase = () => {
                 href="https://aartechsolonics.com//wp-content/uploads/2019/02/Case-Study-Auto-Transfer-Requirements-in-Bus-Transfer-Schemes.pdf"
                 target="_blank"
               >
-                <li className="text-black lg:text-lg text-base lg:font-normal font-medium font-Barlow hover:underline hover:font-medium mt-5">
+                <li className="text-black lg:text-lg text-base lg:font-normal font-medium font-Barlow underline hover:font-medium mt-5">
                   Case Study – Auto Transfer Requirements in Bus Transfer
                   Schemes.pdf
                 </li>
@@ -477,7 +483,7 @@ const BestCase = () => {
                 href="https://aartechsolonics.com//wp-content/uploads/2019/02/Case-Study-Automatic-Station-to-Station-Bus-Transfer-to-avoid-AC-Failure.pdf"
                 target="_blank"
               >
-                <li className="text-black lg:text-lg text-base lg:font-normal font-medium font-Barlow hover:underline hover:font-medium mt-5">
+                <li className="text-black lg:text-lg text-base lg:font-normal font-medium font-Barlow underline hover:font-medium mt-5">
                   Case Study – Automatic Station-to-Station Bus Transfer to
                   avoid AC Failure.pdf
                 </li>
@@ -487,7 +493,7 @@ const BestCase = () => {
                 href="https://aartechsolonics.com//wp-content/uploads/2019/02/Case-Study-Breaker-Mechanism-Problem.pdf"
                 target="_blank"
               >
-                <li className="text-black lg:text-lg text-base lg:font-normal font-medium font-Barlow hover:underline hover:font-medium mt-5">
+                <li className="text-black lg:text-lg text-base lg:font-normal font-medium font-Barlow underline hover:font-medium mt-5">
                   Case Study – Breaker Mechanism Problem.pdf
                 </li>
               </a>
@@ -496,7 +502,7 @@ const BestCase = () => {
                 href="https://aartechsolonics.com//wp-content/uploads/2019/02/Case-Study-Spin-Down-Characteristics-for-Evaluating-Sequential-Fast-Transfer.pdf"
                 target="_blank"
               >
-                <li className="text-black lg:text-lg text-base lg:font-normal font-medium font-Barlow hover:underline hover:font-medium mt-5">
+                <li className="text-black lg:text-lg text-base lg:font-normal font-medium font-Barlow underline hover:font-medium mt-5">
                   Case Study – Spin Down Characteristics – for Evaluating
                   Sequential Fast Transfer.pdf
                 </li>
@@ -506,7 +512,7 @@ const BestCase = () => {
                 href="https://aartechsolonics.com//wp-content/uploads/2019/02/Case-Study-Unit-to-Station-Half-Station-to-Station-Scheme.pdf"
                 target="_blank"
               >
-                <li className="text-black lg:text-lg text-base lg:font-normal font-medium font-Barlow hover:underline hover:font-medium mt-5">
+                <li className="text-black lg:text-lg text-base lg:font-normal font-medium font-Barlow underline hover:font-medium mt-5">
                   Case Study – Unit-to-Station + Half Station-to-Station
                   Scheme.pdf
                 </li>
@@ -515,7 +521,7 @@ const BestCase = () => {
                 href="https://aartechsolonics.com//wp-content/uploads/2019/02/Case-Study-IEEE-WG-Report-Oscillographic-Report-and-Analysis-Writeup.pdf"
                 target="_blank"
               >
-                <li className="text-black lg:text-lg text-base lg:font-normal font-medium font-Barlow hover:underline hover:font-medium mt-5">
+                <li className="text-black lg:text-lg text-base lg:font-normal font-medium font-Barlow underline hover:font-medium mt-5">
                   Case Study IEEE WG Report – Oscillographic Report and Analysis
                   – Writeup.pdf
                 </li>
@@ -524,7 +530,7 @@ const BestCase = () => {
                 href="https://aartechsolonics.com//wp-content/uploads/2019/02/Case-Study-IEEE-WG-Report-Oscillographic-Report-and-Analysis-Oscillographs.pdf"
                 target="_blank"
               >
-                <li className="text-black lg:text-lg text-base lg:font-normal font-medium font-Barlow hover:underline hover:font-medium mt-5">
+                <li className="text-black lg:text-lg text-base lg:font-normal font-medium font-Barlow underline hover:font-medium mt-5">
                   Case Study IEEE WG Report – Oscillographic Report and Analysis
                   – Oscillographs.pdf
                 </li>

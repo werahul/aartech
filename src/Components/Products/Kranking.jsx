@@ -6,9 +6,12 @@ import { Accordion, Accordion2, Accordion3 } from "../../Components"
 import { CustomerLogos2 } from '../../Components'
 
 
+
+
 import { ImageSelect } from "../ImageSelector";
 import { kra1, kra2, kra3, kra4, kra5 } from '../../assets/proImages'
-
+import { bPetrol, cvrde, jws, npol, rrcat, sena, tata, wbpdcl, bhel, comp } from '../../assets/WorkBlackLogos'
+import { CustomWorkPages } from '../AutoScroll'
 
 const Kranking = () => {
     useEffect(() => {
@@ -45,6 +48,9 @@ const Kranking = () => {
         setSelectedTag(tag); // Set the selected tag
     };
 
+    const partnerImageSources = [
+        sena, npol, cvrde, rrcat, tata, jws, wbpdcl, comp, bPetrol, bhel 
+      ];
     return (
         <div>
             <Navbar />
@@ -387,7 +393,7 @@ const Kranking = () => {
 
 
                 <div className="text-black lg:text-4xl text-[28px] font-normal font-antonio lg:mt-20 mt-10">Customers</div>
-                <CustomerLogos2 />
+                <CustomWorkPages imageSources={partnerImageSources} />
 
                 <div className="text-black lg:text-4xl text-[28px] font-normal font-antonio ">DOWNLOADS</div>
 

@@ -39,6 +39,11 @@ const SlideInBar = () => {
           SOLUTIONS
         </div>
       </Link>
+      <Link to="/r&d-facilities" className={`link-item ${location.pathname === "/r&d-facilities" ? "active" : ""}`}>
+        <div className={`text-white font-bold uppercase leading-[18px] font-Barlow text-lg tracking-tight cursor-pointer ${location.pathname === "/r&d-facilities" ? "active-link" : ""}`}>
+        R&D FACILITIES
+        </div>
+      </Link>
     </div>
   );
 };

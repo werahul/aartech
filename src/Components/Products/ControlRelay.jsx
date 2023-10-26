@@ -8,6 +8,8 @@ import { CustomerLogos2 } from '../../Components'
 
 import { ImageSelect } from "../ImageSelector";
 import { cp1, cp2, cp3, cp4, cp5 } from '../../assets/proImages'
+import { pspcl, pstcl, hvpn, CapW, d, cptcl, madhyaVidhut , rajsthanVidhut, purvanchanlVidhut, UpPower, tamilNaduVidhut  } from '../../assets/WorkBlackLogos'
+import { CustomWorkPages } from '../AutoScroll'
 
 
 const ControlRelay = () => {
@@ -45,6 +47,9 @@ const ControlRelay = () => {
         setSelectedTag(tag); // Set the selected tag
     };
 
+    const partnerImageSources = [
+        pspcl, pstcl, hvpn, CapW, d, cptcl, madhyaVidhut , rajsthanVidhut, purvanchanlVidhut, UpPower, tamilNaduVidhut 
+      ];
     return (
         <div>
             <Navbar />
@@ -376,7 +381,7 @@ const ControlRelay = () => {
 
 
                 <div className="text-black lg:text-4xl text-[28px] font-normal font-antonio lg:mt-20 mt-10">Customers</div>
-                <CustomerLogos2 />
+                <CustomWorkPages imageSources={partnerImageSources} />
 
                 <div className="text-black lg:text-4xl text-[28px] font-normal font-antonio ">DOWNLOADS</div>
 

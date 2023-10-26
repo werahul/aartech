@@ -1,13 +1,13 @@
 import React, { useState } from 'react'
-import { partnerLogo1, partnerLogo2, partnerLogo3, partnerLogo4 } from '../../assets/images';
+import { indRail, CapS, CapG, hp } from '../../assets/WorkBlackLogos'
 
-const ParnterAbout = () => {
-  const row1 = [ partnerLogo1, partnerLogo2, partnerLogo3, partnerLogo4];
+const SolidWasteAuto = () => {
+  const row1 = [ indRail, CapS, CapG, hp];
   const [index, setIndex] = useState(null);
 
   return (
     <>
-      <div className=" lg:h-[200px] h-[140px] lg:py-10  lg:px-20 2xl:px-[100px] px-5 lg:hidden block">
+      <div className=" lg:h-[200px] h-[140px]  lg:hidden block">
         <div className="marquee">
           <div className="marqueeGroup">
             {row1.map((el, i) => (
@@ -29,5 +29,5 @@ const ParnterAbout = () => {
   );
 }
 
-export default ParnterAbout;
+export default SolidWasteAuto;
 

@@ -35,7 +35,7 @@ const Shareholders = () => {
                     </Link>
 
                 </div>
-                <div class="text-black lg:text-4xl text-[28px] font-normal font-antonio lg:leading-9 leading-7 mt-5">Corporate announcements</div>
+                <div class="text-black lg:text-4xl text-[28px] font-normal font-antonio lg:leading-9 leading-7 lg:mt-20 mt-5">Corporate announcements</div>
 
                 <table className='border border-black lg:w-[841px] text-left lg:mt-9 mt-6'>
                     <tr className='border border-black bg-[#0C013D] text-white font-Barlow h-[50px] lg:text-lg text-sm'>
@@ -78,21 +78,14 @@ const Shareholders = () => {
                     <div class="text-white lg:text-lg text-base font-bold font-Barlow leading-normal">DOCUMENT NAME / DATE</div>
                 </div>
                 <div class="lg:w-[841px] h-auto border border-black lg:px-8 px-5 lg:py-8 py-5">
-                    <div className="flex flex-col justify-between lg:h-[270px] h-[230px]">
-                        <a href="" target='_blank'> <div class="text-black lg:text-lg text-sm font-normal font-Barlow underline leading-snug hover:font-semibold">Annual Report for the year 2022-2023</div></a>
-                        <a href="" target='_blank'><div class="text-black lg:text-lg text-sm font-normal font-Barlow underline leading-snug hover:font-semibold">Annual Report for the year 2021-2022</div></a>
-                        <a href="" target='_blank'><div class="text-black lg:text-lg text-sm font-normal font-Barlow underline leading-snug hover:font-semibold">Annual Report for the year 2020-2021</div></a>
-                        <a href="" target='_blank'><div class="text-black lg:text-lg text-sm font-normal font-Barlow underline leading-snug hover:font-semibold">Annual Report for the year 2020-2021</div></a>
-                        <a href="" target='_blank'><div class="text-black lg:text-lg text-sm font-normal font-Barlow underline leading-snug hover:font-semibold">Annual Report for the year 2020-2021</div></a>
-                        <a href="" target='_blank'><div class="text-black lg:text-lg text-sm font-normal font-Barlow underline leading-snug hover:font-semibold">Annual Report for the year 2020-2021</div></a>
-                        <a href="" target='_blank'><div class="text-black lg:text-lg text-sm font-normal font-Barlow underline leading-snug hover:font-semibold">Annual Report for the year 2020-2021</div></a>
-
+                    <div className="flex flex-col justify-between h-auto gap-y-3">
+                        <a href="https://drive.google.com/file/d/1SwHD-b17Ma91ebI_nJZ4UAM-NNiRH3-E/view" target='_blank'> <div class="text-black lg:text-lg text-sm font-normal font-Barlow underline leading-snug hover:font-semibold">Corporate Governance June 2023</div></a>
+                        <a href="https://drive.google.com/file/d/1MnzCQFzth4IN1rvhT_ehfFCAJXxicHkU/view" target='_blank'><div class="text-black lg:text-lg text-sm font-normal font-Barlow underline leading-snug hover:font-semibold">Corporate Governance September 2023</div></a>
+                        
                     </div>
-                    <Link to="/investors/shareholders-information-corporate-governance-report" class="w-[99px] h-[43px] lg:w-[110px] lg:h-[42px] border border-black flex justify-center items-center mt-9 cursor-pointer hover:border-red-700 text-black  lg:text-base text-sm font-bold font-Barlow whitespace-nowrap leading-none hover:text-box-red">
-                        VIEW ALL
-                    </Link>
-
+                  
                 </div>
+                
 
 
                 <div class="text-black lg:text-4xl text-[28px] font-normal font-antonio lg:leading-9 leading-7 mt-20">Reconciliation of share capital audit report</div>

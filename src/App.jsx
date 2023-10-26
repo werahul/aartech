@@ -13,11 +13,12 @@ import AnnouncementPage from './Pages/AnnouncementPage'
 import Work from './Pages/Work'
 import Privacy from './Pages/Privacy'
 import Cookie from './Pages/Cookie'
+import RnD from './Pages/RnD'
 
 // import Navbar from "./Components/Navbar"
 
 import { WindPower,DefenceAndExp, Renewable, NonRenewable, PowerTran ,HeavyEng, HealthCare, IT, Transport, WasteMang } from './Components/Industries'
-import { BTS2000,Kranking, ControlRelay, ClipF, BestCase, LoadChecker ,SolarDesign } from './Components/Products'
+import { BTS2000,Kranking, ControlRelay, ClipF, BestCase, LoadChecker ,SolarDesign, SolidWastePro } from './Components/Products'
 import { Solution, CnA, Process, Reliable, Fault, Solar,SolidWaste, Customized } from './Components/Solutions'
 import { ContactAndGriv,Disclosures,Downloads, Chairman, Shareholders, ShCompliance, ShCorporate, ShGovernanceReport,ShReconciliation, ShShareholdingPattern, FinancialReport, FRAuditYearlyReport, FRAuditHalfYearlyReport, Overview, FRFaradigm, FRSubsidiary, DisPolicies, Notices, FRSubsidiaryYearlyResult, FRFaradigmYearlyResult} from './Components/invester'
 
@@ -61,6 +62,7 @@ const App = () => {
           <Route exact path="/products/best-case" Component={BestCase} />
           <Route exact path="/products/load-checker" Component={LoadChecker} />
           <Route exact path="/products/solar-design" Component={SolarDesign} />
+          <Route exact path="/products/solid-waste-treatment" Component={SolidWastePro} />
 
 
           
@@ -95,6 +97,7 @@ const App = () => {
           <Route exact path="/investors/financial-reports-faradigm-subsidiary-yearly-results" Component={FRFaradigmYearlyResult} />
           
           <Route exact path="/media/awards-and-recognitions" Component={Awards1} />
+          <Route exact path="/r&d-facilities" Component={RnD} />
           
         </Routes>
       </BrowserRouter>

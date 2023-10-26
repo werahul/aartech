@@ -31,19 +31,19 @@ const Chairman = () => {
 
                     </tr>
                     <tr className='border border-black font-Barlow h-[50px] text-lg '>
-                        <td className='border border-[#0C013D] lg:w-[180px] px-5 text-black font-normal text-sm lg:text-lg font-Barlow'>31.12.2023</td>
+                        <td className='border border-[#0C013D] lg:w-[180px] px-5 text-black font-normal text-sm lg:text-lg font-Barlow'>30.09.2019</td>
                         <a href="https://drive.google.com/file/d/1oy51n24gwc1pWm4vTn64kch1BdWykcs7/view?pli=1" target='_blank'> <td className='  px-5 py-2 text-black font-normal font-Barlow underline hover:font-semibold cursor-pointer text-sm lg:text-lg'>Chairman’s statement at Aartech’s 37th AGM</td></a>
                         <td className='border border-[#0C013D] lg:w-[150px] px-5 text-black font-normal font-Barlow underline hover:font-semibold cursor-pointer text-sm lg:text-lg'>Virtual</td>
                     </tr>
                     <tr className='border border-black font-Barlow h-[50px] text-lg '>
-                        <td className='border border-[#0C013D] lg:w-[180px]  px-5 text-black font-normal font-Barlow text-sm lg:text-lg'>31.12.2023</td>
+                        <td className='border border-[#0C013D] lg:w-[180px]  px-5 text-black font-normal font-Barlow text-sm lg:text-lg'>02.09.2023</td>
 
                         <a href="https://drive.google.com/file/d/1R5jfodLwUWhwYHYSYLnqtDbLuC_lveTR/view" target='_blank'> <td className='  px-5 py-2 text-black font-normal font-Barlow underline hover:font-semibold cursor-pointer text-sm lg:text-lg'>Chairman’s statement at Aartech’s 38th AGM</td></a>
 
                         <td className='border border-[#0C013D] lg:w-[150px] px-5 text-black font-normal font-Barlow underline hover:font-semibold cursor-pointer text-sm lg:text-lg'>Virtual</td>
                     </tr>
                     <tr className='border border-black font-Barlow h-[50px] text-lg '>
-                        <td className='border border-[#0C013D] lg:w-[180px]  px-5 text-black font-normal font-Barlow text-sm lg:text-lg'>31.12.2023</td>
+                        <td className='border border-[#0C013D] lg:w-[180px]  px-5 text-black font-normal font-Barlow text-sm lg:text-lg'>06.09.2021</td>
 
                         <a href="https://drive.google.com/file/d/1iqOlQOnrGhW0dN-DbB-ir-vmVOXRkd6o/view" target='_blank'> <td className='  px-5 py-2 text-black font-normal font-Barlow underline hover:font-semibold cursor-pointer text-sm lg:text-lg'>Chairman’s statement at Aartech’s 39th AGM</td></a>
 
@@ -51,7 +51,7 @@ const Chairman = () => {
                     </tr>
 
                     <tr className='border border-black font-Barlow h-[50px] text-lg '>
-                        <td className='border border-[#0C013D] lg:w-[180px]  px-5 text-black font-normal font-Barlow text-sm lg:text-lg'>31.12.2023</td>
+                        <td className='border border-[#0C013D] lg:w-[180px]  px-5 text-black font-normal font-Barlow text-sm lg:text-lg'>16.08.2023</td>
 
                         <a href="https://drive.google.com/file/d/1oZV3XpQal-8g2UC8MamPS1xSfMA7S1Vh/view" target='_blank'> <td className='  px-5 py-2 text-black font-normal font-Barlow underline hover:font-semibold cursor-pointer text-sm lg:text-lg'>Chairman’s statement at Aartech’s 40th AGM</td></a>
 
@@ -59,7 +59,7 @@ const Chairman = () => {
                     </tr>
 
                     <tr className='border border-black font-Barlow h-[50px] text-lg '>
-                        <td className='border border-[#0C013D] lg:w-[180px] px-5 text-black font-normal font-Barlow text-sm lg:text-lg'>31.12.2023</td>
+                        <td className='border border-[#0C013D] lg:w-[180px] px-5 text-black font-normal font-Barlow text-sm lg:text-lg'>06.09.2023</td>
 
                         <a href="https://drive.google.com/file/d/1oKexQiT77qso2wYBlYwftcn-yfvwzt5A/view" target='_blank'> <td className='  px-5 py-2 text-black font-normal font-Barlow underline hover:font-semibold cursor-pointer text-sm lg:text-lg'>Chairman’s statement at Aartech’s 41th AGM</td></a>
 
