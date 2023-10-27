@@ -129,7 +129,7 @@ const Services = () => {
                             </ul>
                         </div>
 
-                        <Link to="" className="w-[130px] h-[43px] lg:w-[170px] lg:h-[42px] border border-black text-black flex justify-center items-center mt-10 cursor-pointer font-bold hover:border-red-700  tracking-wider lg:text-base text-sm font-Barlow whitespace-nowrap leading-none hover:text-box-red">
+                        <Link to="/r&d-facilities" className="w-[130px] h-[43px] lg:w-[170px] lg:h-[42px] border border-black text-black flex justify-center items-center mt-10 cursor-pointer font-bold hover:border-red-700  tracking-wider lg:text-base text-sm font-Barlow whitespace-nowrap leading-none hover:text-box-red">
                             KNOW MORE
                         </Link>
                     </div>

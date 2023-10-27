@@ -27,13 +27,19 @@ const DefenceAndExp = () => {
 
         tag3: 'A Power Backup Unit solution for Defense and Exploration is a robust and reliable system designed to ensure uninterrupted power supply in challenging environments. It is essential in remote defence outposts, exploration missions, and critical operations where power disruptions can be detrimental. This solution typically includes backup generators, advanced energy storage systems, and renewable energy integration, providing a dependable source of electricity even in remote or harsh conditions. It ensures mission-critical equipment and communication systems remain operational, enhancing the effectiveness and safety of defence and exploration activities.',
 
-        tag4: "Content for tag4 goes here.",
+        tag4: "Customised Professional Cases play a pivotal role in Defense and Exploration, transcending their role as enclosures. Aarchtech Solonics provides the crucial advantage of timely, cost-effective, and tailored solutions. In these high-stakes environments, where first impressions matter, these cases not only protect equipment but also convey a strong product and company image. Aarchtech's dedication to quality, affordability, and availability is invaluable, ensuring that professionals, including innovators and entrepreneurs in defence and exploration, can confidently showcase their offerings, ultimately contributing to mission success and business growth.",
 
-        tag5: "Content for tag5 goes here.",
+        tag5: "In Defense and Exploration, a Waste Management System proves crucial for safeguarding the environment in remote and sensitive areas. It plays a pivotal role by efficiently collecting, processing, and recycling various waste types, minimising environmental impact, and reducing the need for landfills. This not only ensures responsible waste handling but also supports sustainability, a critical consideration in defence outposts and exploration missions. It adheres to stringent waste management practices and employs the latest technology to preserve delicate ecosystems and maintain operational integrity.",
 
-        tag6: 'Solar Design, Engineering, and Consultancy services offer a sustainable solution for Defence and Exploration by harnessing solar power. These services provide tailored solar solutions, optimising energy generation and reducing reliance on conventional power sources. They contribute to energy efficiency in remote locations, making them ideal for exploration missions. Additionally, in defence applications, solar solutions ensure a reliable and renewable power source, enhancing operational capabilities and reducing the logistics burden of fuel supply in remote areas. This commitment to engineering excellence helps transform industries and promotes a greener future for critical sectors like Defense and Exploration.',
+        tag6: 'Plastic shredders play a crucial role in the Defense and Exploration Industry. These machines efficiently reduce the volume of plastic waste, a key consideration in remote and sensitive environments. With the ability to shred various plastics, including containers and packaging, they aid in recycling and minimising waste footprint. Their modern technology, energy efficiency, and durability make them versatile tools for both waste management and repurposing, contributing to environmental sustainability in these industries.',
 
-        tag7: 'Content for tag7 goes here.',
+        tag7: 'Solar Design, Engineering, and Consultancy services offer a sustainable solution for Defence and Exploration by harnessing solar power. These services provide tailored solar solutions, optimising energy generation and reducing reliance on conventional power sources. They contribute to energy efficiency in remote locations, making them ideal for exploration missions. Additionally, in defence applications, solar solutions ensure a reliable and renewable power source, enhancing operational capabilities and reducing the logistics burden of fuel supply in remote areas. This commitment to engineering excellence helps transform industries and promotes a greener future for critical sectors like Defense and Exploration.',
+
+        tag8: 'In the Defense and Exploration sectors, uninterrupted power supply (UPS) is paramount for critical operations. Conventional UPS solutions often fall short in providing efficient power protection for large-scale systems. Aartech partners with S&C USA to offer PureWave UPS, a cutting-edge Smart Grid solution. This system ensures superior power quality, safeguarding equipment against voltage sags, surges, and outages. Its rapid response and extended backup capabilities, up to 180 seconds, make it ideal for essential applications. The technology aligns with Tier III and Tier IV electrical requirements and supports Class A and Class B cooling needs, ensuring uninterrupted power for vital defence and exploration activities.',
+
+        tag9: 'Energy storage solutions are indispensable in the Defense and Exploration Industry. They enable the harnessing of micro energy sources like solar, wind, and hydropower through technologies like PV panels and microturbines. This harvested energy can be stored and used to power various portable devices, such as communication tools and instruments, ensuring uninterrupted operations in remote and challenging environments. From soldiers in the field to data buoys in harsh climates, these solutions enhance energy autonomy and support critical functions in marine, defence, space, remote sensing, and telecom applications.',
+
+        tag10: 'Load Limiting technology finds crucial applications in Defense and Exploration by ensuring efficient energy allocation and preventing overloads in remote and critical environments. This solution enables automated corrections and ensures power is distributed fairly. In defence, it aids in resource-efficient energy management, which is vital for mission-critical operations. In exploration, where power sources are limited, load limiting helps avoid system strain. This cost-effective approach benefits various sectors, enhancing energy control, security, and reliability in challenging settings, addressing non-technical losses, and promoting efficient allocation in areas of social obligation.',
     };
 
 
@@ -48,7 +54,7 @@ const DefenceAndExp = () => {
     return (
         <div>
             <Navbar />
-            
+
             <div className=" 2xl:px-[120px] lg:pt-20 lg:px-20  pt-20 px-5 lg:py-0  lg:mt-0 mt-5 sm:px-10">
 
                 <div className="flex lg:flex-row flex-col lg:mt-20">
@@ -71,7 +77,7 @@ const DefenceAndExp = () => {
                     <button
                         className={`tag ${selectedTag === 'tag1'
                             ? 'bg-white text-box-red border-box-red '
-                            : 'text-gray-500 border-gray-400   hover:text-box-red hover:border-box-red ' 
+                            : 'text-gray-500 border-gray-400   hover:text-box-red hover:border-box-red '
                             } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag1')}
                     >
@@ -80,7 +86,7 @@ const DefenceAndExp = () => {
 
                     <button
                         className={`tag ${selectedTag === 'tag2'
-                            ? 'bg-white text-box-red border-box-red ' 
+                            ? 'bg-white text-box-red border-box-red '
                             : 'text-gray-500 border-gray-400  hover:text-box-red hover:border-box-red'
                             } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag2')}
@@ -89,7 +95,7 @@ const DefenceAndExp = () => {
                     </button>
                     <button
                         className={`tag ${selectedTag === 'tag3'
-                            ? 'bg-white text-box-red border-box-red' 
+                            ? 'bg-white text-box-red border-box-red'
                             : 'text-gray-500 border-gray-400  hover:text-box-red hover:border-box-red'
                             } w-auto h-[49px] px-[20px]   py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag3')}
@@ -103,7 +109,7 @@ const DefenceAndExp = () => {
                             } w-auto h-[49px] px-[20px]   py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag4')}
                     >
-                        Customised Professional Case
+                        Customised PLASTIC Case
                     </button>
 
 
@@ -130,7 +136,7 @@ const DefenceAndExp = () => {
                             } w-auto h-[49px] px-[20px]   py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag6')}
                     >
-                        Solar Design, Engineering & Consultancy services
+                        Plastic Shredder
                     </button>
 
                     <button
@@ -140,8 +146,49 @@ const DefenceAndExp = () => {
                             } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag7')}
                     >
-                        Energy Efficiency
+                        Solar Design & Engineering
                     </button>
+
+
+                </div>
+                < div className="lg:flex hidden space-x-3 mt-3">
+
+
+                    <button
+                        className={`tag ${selectedTag === 'tag8'
+                            ? 'bg-white text-box-red border-box-red'
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
+                        onClick={() => handleTagClick('tag8')}
+                    >
+                        Uninterrupted Power Supply
+                    </button>
+
+                    <button
+                        className={`tag ${selectedTag === 'tag9'
+                            ? 'bg-white text-box-red border-box-red'
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
+                        onClick={() => handleTagClick('tag9')}
+                    >
+                       Energy Storage
+                    </button>
+                    <button
+                        className={`tag ${selectedTag === 'tag10'
+                            ? 'bg-white text-box-red border-box-red'
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
+                        onClick={() => handleTagClick('tag10')}
+                    >
+                    Load Limiting
+                    </button>
+
+
+
+
+
+
+
 
                 </div>
 
@@ -186,7 +233,7 @@ const DefenceAndExp = () => {
                             } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag4')}
                     >
-                        Customised Professional Case
+                        Customised PLASTIC Case
                     </button>
                     <button
                         className={`tag ${selectedTag === 'tag5'
@@ -207,7 +254,7 @@ const DefenceAndExp = () => {
                             } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag6')}
                     >
-                        Solar Design, Engineering & Consultancy services
+                        Plastic Shredder
                     </button>
 
                     <button
@@ -217,7 +264,7 @@ const DefenceAndExp = () => {
                             } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag7')}
                     >
-                        Energy Efficiency
+                    Solar Design, Engineering
                     </button>
 
                 </div>

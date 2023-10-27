@@ -1,11 +1,29 @@
 import React, { useState } from "react";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
+import { main, cross } from '../../assets/invester'
+import {
+  amit,
+  anil,
+  arati,
+  dabshish,
+  kshi,
+  pradeep,
+  sohail,
+  ssr,
+  supriya,
+  vivek,
+} from "../../assets/invester/overview";
 import SlideinBarInvester from "../../Pages/SlideinBarInvester";
-import { main, cross } from "../../assets/invester";
-import { amit, anil, arati, dabshish, kshi, pradeep, sohail, ssr, supriya, vivek } from "../../assets/invester/overview";
 
-function Popup({ name, designation, organization, description, onClose, image }) {
+function Popup({
+  name,
+  designation,
+  organization,
+  description,
+  onClose,
+  image,
+}) {
   return (
     <div className="popup">
       <div className="popup-content mx-5 lg:mx-20 2xl:mx-[120px]">
@@ -13,12 +31,16 @@ function Popup({ name, designation, organization, description, onClose, image })
           <img src={cross} alt="" />
         </div>
         <div className=" pt-10 lg:pt-0 flex">
-          <div className="w-[300px] lg:w-[600px] h-auto ">
-            <img src={image} alt="" className="h-[200px]"/>
+          <div className=" h-auto ">
+            <img
+              src={image}
+              alt=""
+              className="h-auto w-[300px] lg:w-[600px] lg:h-[200px]"
+            />
           </div>
           <div className=" font-Barlow lg:px-[33px] px-5">
-            <h3 className="font-bold text-[24px] lg:text-[28px]">{name}</h3>
-            <p className="text-[16px]">
+            <h3 className="font-bold text-[20px] lg:text-[28px]">{name}</h3>
+            <p className="text-[14px] lg:text-[16px] ">
               {designation}, {organization}
             </p>
             <p className="font-Barlow pt-[15px] hidden lg:block text-[20px]">
@@ -84,7 +106,7 @@ function Overview() {
     },
     {
       name: "Supriya Sunil Chitre",
-      designation: "Non-executive Director",
+      designation: "independent & Non-executive Director",
       organization: "Aartech Solonics Limited",
       description:
         "Squadron Leader Supriya Chitre (Retd), a dynamic educator and psychologist, dedicated a decade to the Indian Air Force, serving at the National Defense Academy. Post-retirement, she passionately imparts her wisdom to the youth, nurturing future leaders and inspiring them to contribute to the nation's growth.        ",
@@ -120,7 +142,7 @@ function Overview() {
     },
     {
       name: "Debashish Barik",
-      designation: "Chief Revenue Officer,",
+      designation: "Chief Revenue Officer",
       organization: "Aartech Solonics",
       description:
         "Debasis, a seasoned marketing expert in the bus transfer systems industry, boasts extensive domestic and international travel experience, often spanning months at a time. He's esteemed by both customers and colleagues for his no-nonsense approach to problem-solving and his role as a valuable resource for mentoring junior team members.",
@@ -210,17 +232,21 @@ function Overview() {
                   className="border border-black flex"
                   onClick={() => openPopup("board", index)}
                 >
-                  <div className="w-[140px] lg:w-[150px] lg:h-[150px] bg-[#d9d9d9]">
-                    <img src={member.image} alt="" />
+                  <div className="overflow-hidden">
+                    <img
+                      src={member.image}
+                      alt=""
+                      className=" w-full h-full object-cover lg:w-[150px] lg:h-[150px] "
+                    />
                   </div>
                   <div className="pt-[13px] lg:pt-[10px] font-Barlow px-[24px] lg:px-[33px]">
-                    <h3 className="font-bold text-[24px] lg:text-[28px] uppercase tracking-widest">
+                    <h3 className="font-bold text-[18px] lg:text-[28px] uppercase tracking wider lg:tracking-widest">
                       {member.name}
                     </h3>
-                    <p className="whitespace-nowrap text-[16px] uppercase">
+                    <p className=" text-[12px]  lg:text-[16px] uppercase">
                       {member.designation}, <br /> {member.organization}
                     </p>
-                    <button className="mt-[10px] lg:mt-[15px] mb-[5px] text-[#b80001] hover:text-black font-bold">
+                    <button className="mt-[10px]  lg:mt-[15px] mb-[5px] text-[#b80001] hover:text-black font-bold">
                       More
                     </button>
                   </div>
@@ -239,14 +265,18 @@ function Overview() {
                   className="border border-black flex"
                   onClick={() => openPopup("kmp", index)}
                 >
-                  <div className="w-[140px] lg:w-[150px] lg:h-[150px] bg-[#d9d9d9]">
-                    <img src={member.image} alt="" />
+                  <div className="overflow-hidden">
+                    <img
+                      src={member.image}
+                      alt=""
+                      className=" w-full h-full object-cover lg:w-[150px] lg:h-[150px] "
+                    />
                   </div>
                   <div className="pt-[13px] lg:pt-[10px] font-Barlow px-[24px] lg:px-[33px]">
-                    <h3 className="font-bold text-[24px] lg:text-[28px] uppercase tracking-widest">
+                    <h3 className="font-bold text-[18px] lg:text-[28px] uppercase tracking-wider lg:tracking-widest">
                       {member.name}
                     </h3>
-                    <p className="whitespace-nowrap text-[16px] uppercase">
+                    <p className="whitespace-nowrap text-[12px] lg:text-[16px] uppercase">
                       {member.designation}, <br /> {member.organization}
                     </p>
                     <button className="mt-[10px] lg:mt-[15px] mb-[5px] text-[#b80001] hover:text-black font-bold">
@@ -285,7 +315,6 @@ function Overview() {
               description={kmpMembersData[index].description}
               image={kmpMembersData[index].image}
               onClose={() => cross("kmp", index)}
-
               className="z-50 fixed top-[50%] left-[20%]"
             />
           )
