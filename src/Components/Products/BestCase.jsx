@@ -85,8 +85,8 @@ const BestCase = () => {
           <button
             className={`tag ${selectedTag === "tag1"
                 ? "bg-white text-box-red border-box-red"
-                : "text-gray-500 border-gray-400"
-              } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
+                : "text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red"
+              } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
             onClick={() => handleTagClick("tag1")}
           >
             Defence & Exploration
@@ -94,8 +94,8 @@ const BestCase = () => {
           <button
             className={`tag ${selectedTag === "tag2"
                 ? "bg-white text-box-red border-box-red"
-                : "text-gray-500 border-gray-400"
-              } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
+                : "text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red"
+              } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
             onClick={() => handleTagClick("tag2")}
           >
             Renewable Energy
@@ -104,8 +104,8 @@ const BestCase = () => {
           <button
             className={`tag ${selectedTag === "tag3"
                 ? "bg-white text-box-red border-box-red"
-                : "text-gray-500 border-gray-400"
-              } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
+                : "text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red"
+              } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
             onClick={() => handleTagClick("tag3")}
           >
             Non-Renewable Energy
@@ -113,8 +113,8 @@ const BestCase = () => {
           <button
             className={`tag ${selectedTag === "tag4"
                 ? "bg-white text-box-red border-box-red"
-                : "text-gray-500 border-gray-400"
-              } w-auto h-[49px] px-[20px]   py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
+                : "text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red"
+              } w-auto h-[49px] px-[20px]   py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
             onClick={() => handleTagClick("tag4")}
           >
             Healthcare
@@ -122,8 +122,8 @@ const BestCase = () => {
           <button
             className={`tag ${selectedTag === "tag5"
                 ? "bg-white text-box-red border-box-red"
-                : "text-gray-500 border-gray-400"
-              } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
+                : "text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red"
+              } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
             onClick={() => handleTagClick("tag5")}
           >
             IT & Telecom
@@ -133,8 +133,8 @@ const BestCase = () => {
           <button
             className={`tag ${selectedTag === "tag6"
                 ? "bg-white text-box-red border-box-red"
-                : "text-gray-500 border-gray-400"
-              } w-auto h-[49px] px-[20px]   py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
+                : "text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red"
+              } w-auto h-[49px] px-[20px]   py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
             onClick={() => handleTagClick("tag6")}
           >
             Power Transmission and Distribution
@@ -143,8 +143,8 @@ const BestCase = () => {
           <button
             className={`tag ${selectedTag === "tag7"
                 ? "bg-white text-box-red border-box-red"
-                : "text-gray-500 border-gray-400"
-              } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
+                : "text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red"
+              } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
             onClick={() => handleTagClick("tag7")}
           >
             Transportation
@@ -152,8 +152,8 @@ const BestCase = () => {
           <button
             className={`tag ${selectedTag === "tag8"
                 ? "bg-white text-box-red border-box-red"
-                : "text-gray-500 border-gray-400"
-              } w-auto h-[49px] px-[20px]   py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
+                : "text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red"
+              } w-auto h-[49px] px-[20px]   py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
             onClick={() => handleTagClick("tag8")}
           >
             Heavy Engineering Industries
@@ -166,8 +166,8 @@ const BestCase = () => {
           <button
             className={`tag ${selectedTag === "tag1"
                 ? "bg-white text-box-red border-box-red"
-                : "text-gray-500 border-gray-400"
-              } w-[300px] h-[49px] px-[12px] py-[9px] whitespace-nowrap uppercase border  text-base font-normal font-Barlow tracking-wider`}
+                : "text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red"
+              } w-[300px] h-[49px] px-[12px] py-[9px] whitespace-nowrap uppercase border  text-lg font-bold font-Barlow tracking-wider`}
             onClick={() => handleTagClick("tag1")}
           >
             Defence & Exploration
@@ -175,8 +175,8 @@ const BestCase = () => {
           <button
             className={`tag ${selectedTag === "tag2"
                 ? "bg-white text-box-red border-box-red"
-                : "text-gray-500 border-gray-400"
-              } w-[300px] h-[49px] px-[12px] py-[9px] whitespace-nowrap uppercase border  text-base font-normal font-Barlow tracking-wider`}
+                : "text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red"
+              } w-[300px] h-[49px] px-[12px] py-[9px] whitespace-nowrap uppercase border  text-lg font-bold font-Barlow tracking-wider`}
             onClick={() => handleTagClick("tag2")}
           >
             Renewable Energy
@@ -185,8 +185,8 @@ const BestCase = () => {
           <button
             className={`tag ${selectedTag === "tag3"
                 ? "bg-white text-box-red border-box-red"
-                : "text-gray-500 border-gray-400"
-              } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap uppercase border  text-lg font-normal font-Barlow tracking-wider`}
+                : "text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red"
+              } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap uppercase border  text-lg font-bold font-Barlow tracking-wider`}
             onClick={() => handleTagClick("tag3")}
           >
             Non-Renewable Energy
@@ -195,8 +195,8 @@ const BestCase = () => {
           <button
             className={`tag ${selectedTag === "tag4"
                 ? "bg-white text-box-red border-box-red"
-                : "text-gray-500 border-gray-400"
-              } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap uppercase  border  text-lg font-normal font-Barlow tracking-wider`}
+                : "text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red"
+              } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap uppercase  border  text-lg font-bold font-Barlow tracking-wider`}
             onClick={() => handleTagClick("tag4")}
           >
             Healthcare
@@ -204,8 +204,8 @@ const BestCase = () => {
           <button
             className={`tag ${selectedTag === "tag5"
                 ? "bg-white text-box-red border-box-red"
-                : "text-gray-500 border-gray-400"
-              } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap uppercase  border  text-lg font-normal font-Barlow tracking-wider`}
+                : "text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red"
+              } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap uppercase  border  text-lg font-bold font-Barlow tracking-wider`}
             onClick={() => handleTagClick("tag5")}
           >
             IT & Telecom
@@ -213,8 +213,8 @@ const BestCase = () => {
           <button
             className={`tag ${selectedTag === "tag6"
                 ? "bg-white text-box-red border-box-red"
-                : "text-gray-500 border-gray-400"
-              } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap uppercase  border  text-lg font-normal font-Barlow tracking-wider`}
+                : "text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red"
+              } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap uppercase  border  text-lg font-bold font-Barlow tracking-wider`}
             onClick={() => handleTagClick("tag6")}
           >
             POWER TRANSMISSION AND DISTRIBUTION
@@ -222,8 +222,8 @@ const BestCase = () => {
           <button
             className={`tag ${selectedTag === "tag7"
                 ? "bg-white text-box-red border-box-red"
-                : "text-gray-500 border-gray-400"
-              } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap uppercase  border  text-lg font-normal font-Barlow tracking-wider`}
+                : "text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red"
+              } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap uppercase  border  text-lg font-bold font-Barlow tracking-wider`}
             onClick={() => handleTagClick("tag7")}
           >
             TRANSPORTATION
@@ -231,8 +231,8 @@ const BestCase = () => {
           <button
             className={`tag ${selectedTag === "tag8"
                 ? "bg-white text-box-red border-box-red"
-                : "text-gray-500 border-gray-400"
-              } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap uppercase  border  text-lg font-normal font-Barlow tracking-wider`}
+                : "text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red"
+              } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap uppercase  border  text-lg font-bold font-Barlow tracking-wider`}
             onClick={() => handleTagClick("tag8")}
           >
             HEAVY ENGINEERING INDUSTRIES

@@ -138,9 +138,6 @@ const Notices = () => {
                         <td className='border border-[#0C013D] lg:w-[621px] px-5 text-black font-normal font-Barlow underline hover:font-semibold cursor-pointer'><a href="https://drive.google.com/file/d/1FU4utReRyR1uc0OnhYGqhZACzovfu6Q9/view" target="_blank" rel="noopener noreferrer">    03.11.2021
                         Notice for Record Date For 41st Annual General Meeting  </a></td>
                     </tr>
-
-
-
                 </table>
 
             </div>

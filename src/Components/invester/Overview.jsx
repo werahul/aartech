@@ -3,8 +3,9 @@ import Navbar from "../Navbar";
 import Footer from "../Footer";
 import SlideinBarInvester from "../../Pages/SlideinBarInvester";
 import { main, cross } from "../../assets/invester";
+import { amit, anil, arati, dabshish, kshi, pradeep, sohail, ssr, supriya, vivek } from "../../assets/invester/overview";
 
-function Popup({ name, designation, organization, description, onClose }) {
+function Popup({ name, designation, organization, description, onClose, image }) {
   return (
     <div className="popup">
       <div className="popup-content mx-5 lg:mx-20 2xl:mx-[120px]">
@@ -12,13 +13,15 @@ function Popup({ name, designation, organization, description, onClose }) {
           <img src={cross} alt="" />
         </div>
         <div className=" pt-10 lg:pt-0 flex">
-          <div className="w-[300px] lg:w-[600px] h-auto bg-[#d9d9d9]"></div>
+          <div className="w-[300px] lg:w-[600px] h-auto ">
+            <img src={image} alt="" className="h-[200px]"/>
+          </div>
           <div className=" font-Barlow lg:px-[33px] px-5">
             <h3 className="font-bold text-[24px] lg:text-[28px]">{name}</h3>
             <p className="text-[16px]">
               {designation}, {organization}
             </p>
-            <p className="font-Barlow pt-[28px] hidden lg:block text-[20px]">
+            <p className="font-Barlow pt-[15px] hidden lg:block text-[20px]">
               {description}
             </p>
           </div>
@@ -34,93 +37,104 @@ function Popup({ name, designation, organization, description, onClose }) {
 function Overview() {
   const boardMembersData = [
     {
-      name: "Name 1",
-      designation: "Designation 1",
-      organization: "Organization 1",
+      name: "Amit Anil Raje",
+      designation: "Chief Managing Director",
+      organization: "Aartech Solonics Limited",
       description:
-        "He is dedicated to shaping a brilliant future through innovation, & astute management. He holds a B.Tech. in Electrical Engineering from IIT Bombay ('95) and an MSEE in Power Systems & Power Electronics from the University of Minnesota, USA ('97). With over 25 years of international professional experience, he stands as a Senior Member of IEEE, USA.",
+        "Amit Anil Raje is an engineer with a B.Tech. in Electrical Engineering and an M.S.E.E. in Power Systems and Power Electronics, leading as Chairman and Managing Director. With over 21 years at Aartech, he drives innovations in control, protection, automation, energy storage, and more, aligning with the company's objectives        ",
+      image: amit,
     },
     {
-      name: "Name 2",
-      designation: "Designation 2",
-      organization: "Organization 2",
+      name: "Anil Anant Raje",
+      designation: "Director ",
+      organization: "Aartech Solonics Limited",
       description:
-        "He is dedicated to shaping a brilliant future through innovation, & astute management. He holds a B.Tech. in Electrical Engineering from IIT Bombay ('95) and an MSEE in Power Systems & Power Electronics from the University of Minnesota, USA ('97). With over 25 years of international professional experience, he stands as a Senior Member of IEEE, USA.",
+        "Anil Anant Raje is a distinguished engineer and entrepreneur with over 40 years of experience in the power sector. He co-founded Aartech Solonics, pioneering import-substitute fast bus transfer systems. An alumnus of MACT, he's a leader in the field, known internationally for his expertise and contributions to the industry.",
+      image: anil,
     },
     {
-      name: "Name 2",
-      designation: "Designation 2",
-      organization: "Organization 2",
+      name: "Arati Nath",
+      designation: "Chief Executive Officer ",
+      organization: "Aartech Solonics Limited",
       description:
-        "He is dedicated to shaping a brilliant future through innovation, & astute management. He holds a B.Tech. in Electrical Engineering from IIT Bombay ('95) and an MSEE in Power Systems & Power Electronics from the University of Minnesota, USA ('97). With over 25 years of international professional experience, he stands as a Senior Member of IEEE, USA.",
+        "With over 15 years of financial expertise, Arati Nath, a PGDBA-Finance graduate from Welingkar Institute of Management, Mumbai, and a Commerce alumni of Pune University, has ascended from General Manager of Aarchtech Solonics Limited in 2015 to its CEO since May 2020, showcasing her impressive career journey.",
+      image: arati,
     },
     {
-      name: "Name 2",
-      designation: "Designation 2",
-      organization: "Organization 2",
+      name: "Chaaya Anil Raje",
+      designation: "Promoter",
+      organization: "Aartech Solonics Limited",
       description:
-        "He is dedicated to shaping a brilliant future through innovation, & astute management. He holds a B.Tech. in Electrical Engineering from IIT Bombay ('95) and an MSEE in Power Systems & Power Electronics from the University of Minnesota, USA ('97). With over 25 years of international professional experience, he stands as a Senior Member of IEEE, USA.",
+        "Chhaya Anil Raje, a founding member of Aarchtech, brings over 42 years of experience as a qualified chemical scientist. She holds a Master's degree and has excelled academically. As the company's Promoter, Mrs Chhaya Raje has been instrumental in ensuring financial sustainability, prioritising even the smallest stakeholder's interests.",
     },
     {
-      name: "Name 2",
-      designation: "Designation 2",
-      organization: "Organization 2",
+      name: "Kshitij Negi",
+      designation: "independent & Non-executive Director",
+      organization: "Aartech Solonics Limited",
       description:
-        "He is dedicated to shaping a brilliant future through innovation, & astute management. He holds a B.Tech. in Electrical Engineering from IIT Bombay ('95) and an MSEE in Power Systems & Power Electronics from the University of Minnesota, USA ('97). With over 25 years of international professional experience, he stands as a Senior Member of IEEE, USA.",
+        "Kshitij Negi, a visionary leader with 25+ years of experience, drives organisational transformations at KoeN Meta Consulting. As the founder, he guides clients through innovative Consulting and Facilitation. With a rich background in leadership development, he crafts unique experiences, leaving a profound impact on executives worldwide.",
+      image: kshi,
     },
     {
-      name: "Name 2",
-      designation: "Designation 2",
-      organization: "Organization 2",
+      name: "P D Lowelekar",
+      designation: "Non-executive Director",
+      organization: "Aartech Solonics Limited",
       description:
-        "He is dedicated to shaping a brilliant future through innovation, & astute management. He holds a B.Tech. in Electrical Engineering from IIT Bombay ('95) and an MSEE in Power Systems & Power Electronics from the University of Minnesota, USA ('97). With over 25 years of international professional experience, he stands as a Senior Member of IEEE, USA.",
+        "Prashant Dattatrey Lowlekar, a seasoned Fellow Member of the Institute of Chartered Accountants of India, brings over 25 years of experience to his role as an Independent Director. His journey includes partnership at A.V Lowlekar and Co., internal auditing for the United Group, and continued success at 'MAMTANI AND LOWLEKAR' since 1993.",
+    },
+    {
+      name: "Supriya Sunil Chitre",
+      designation: "Non-executive Director",
+      organization: "Aartech Solonics Limited",
+      description:
+        "Squadron Leader Supriya Chitre (Retd), a dynamic educator and psychologist, dedicated a decade to the Indian Air Force, serving at the National Defense Academy. Post-retirement, she passionately imparts her wisdom to the youth, nurturing future leaders and inspiring them to contribute to the nation's growth.        ",
+      image: supriya,
     },
     // Add more board member data as needed
   ];
 
   const kmpMembersData = [
     {
-      name: "Name 1",
-      designation: "Designation 1",
-      organization: "Organization 1",
+      name: "Vivek Attri",
+      designation: "Chief Marketing Officer",
+      organization: "Aartech Solonics",
       description:
-        "He is dedicated to shaping a brilliant future through innovation, & astute management. He holds a B.Tech. in Electrical Engineering from IIT Bombay ('95) and an MSEE in Power Systems & Power Electronics from the University of Minnesota, USA ('97). With over 25 years of international professional experience, he stands as a Senior Member of IEEE, USA.",
+        "Vivek Attri, our BTS leader in Parwanu, Himachal Pradesh, is a skilled manager and a strong advocate for teamwork. He sets ambitious targets and motivates his team to achieve outstanding results. Highly regarded by clients, colleagues, and visitors to the Parwanu Unit, he is at the forefront of international project development.        ",
+      image: vivek,
     },
     {
-      name: "Name 2",
-      designation: "Designation 2",
-      organization: "Organization 2",
+      name: "Sohail Hussain",
+      designation: "Chief Experience Officer",
+      organization: "Aartech Solonics",
       description:
-        "He is dedicated to shaping a brilliant future through innovation, & astute management. He holds a B.Tech. in Electrical Engineering from IIT Bombay ('95) and an MSEE in Power Systems & Power Electronics from the University of Minnesota, USA ('97). With over 25 years of international professional experience, he stands as a Senior Member of IEEE, USA.",
+        "Sohail, a charismatic Bhopal native, adeptly juggles diverse roles, handling Fault Limiters, Control Panels, Relay settings, and Technical purchases. He also mentors aspiring engineers with an ever-present smile. Notably, he's played a pivotal role in independently commissioning numerous cutting-edge G & W USA Fault Limiters worldwide.",
+      image: sohail,
     },
     {
-      name: "Name 2",
-      designation: "Designation 2",
-      organization: "Organization 2",
+      name: "Pradeep Narkhede",
+      designation: "Chief Finance Officer",
+      organization: "Aartech Solonics",
       description:
-        "He is dedicated to shaping a brilliant future through innovation, & astute management. He holds a B.Tech. in Electrical Engineering from IIT Bombay ('95) and an MSEE in Power Systems & Power Electronics from the University of Minnesota, USA ('97). With over 25 years of international professional experience, he stands as a Senior Member of IEEE, USA.",
+        "Pradeep Narkhede, a steadfast beacon in every crisis and our dependable champion, faces no shortage of challenges. Amidst the chaos, he adeptly oversees the F&A operations, ensuring all groups meet their obligations. A venerable Aartech Clan veteran of three decades, he stands as one of the most seasoned Aartechies.",
+      image: pradeep,
     },
     {
-      name: "Name 2",
-      designation: "Designation 2",
-      organization: "Organization 2",
+      name: "Debashish Barik",
+      designation: "Chief Revenue Officer,",
+      organization: "Aartech Solonics",
       description:
-        "He is dedicated to shaping a brilliant future through innovation, & astute management. He holds a B.Tech. in Electrical Engineering from IIT Bombay ('95) and an MSEE in Power Systems & Power Electronics from the University of Minnesota, USA ('97). With over 25 years of international professional experience, he stands as a Senior Member of IEEE, USA.",
+        "Debasis, a seasoned marketing expert in the bus transfer systems industry, boasts extensive domestic and international travel experience, often spanning months at a time. He's esteemed by both customers and colleagues for his no-nonsense approach to problem-solving and his role as a valuable resource for mentoring junior team members.",
+      image: dabshish,
     },
     {
-      name: "Name 2",
-      designation: "Designation 2",
-      organization: "Organization 2",
+      name: "S S Raghuwanshi",
+      designation: "Chief Operating Officer",
+      organization: "Aartech Solonics",
       description:
-        "He is dedicated to shaping a brilliant future through innovation, & astute management. He holds a B.Tech. in Electrical Engineering from IIT Bombay ('95) and an MSEE in Power Systems & Power Electronics from the University of Minnesota, USA ('97). With over 25 years of international professional experience, he stands as a Senior Member of IEEE, USA.",
+        "Shailendra Raghuwanshi epitomises urban charm in sales. Exceptionally responsive to both customers and colleagues, he pursues business leads with unwavering dedication, demonstrating remarkable patience. His unobtrusive approach and single-minded focus characterise his interactions, making him a standout professional in the sales arena.        ",
+      image: ssr,
     },
-    {
-      name: "Name 2",
-      designation: "Designation 2",
-      organization: "Organization 2",
-      description:
-        "He is dedicated to shaping a brilliant future through innovation, & astute management. He holds a B.Tech. in Electrical Engineering from IIT Bombay ('95) and an MSEE in Power Systems & Power Electronics from the University of Minnesota, USA ('97). With over 25 years of international professional experience, he stands as a Senior Member of IEEE, USA.",
-    },
+
     // Add more KMP data as needed
   ];
 
@@ -158,7 +172,7 @@ function Overview() {
   return (
     <div>
       <Navbar />
-      <SlideinBarInvester/>
+      <SlideinBarInvester />
       <div className="pt-[69px] lg:pt-[10.5rem]">
         <div className="relative">
           <img
@@ -196,15 +210,17 @@ function Overview() {
                   className="border border-black flex"
                   onClick={() => openPopup("board", index)}
                 >
-                  <div className="w-[140px] lg:w-[150px] lg:h-[150px] bg-[#d9d9d9]"></div>
-                  <div className="pt-[13px] lg:pt-[26px] font-Barlow px-[24px] lg:px-[33px]">
-                    <h3 className="font-bold text-[24px] lg:text-[28px]">
+                  <div className="w-[140px] lg:w-[150px] lg:h-[150px] bg-[#d9d9d9]">
+                    <img src={member.image} alt="" />
+                  </div>
+                  <div className="pt-[13px] lg:pt-[10px] font-Barlow px-[24px] lg:px-[33px]">
+                    <h3 className="font-bold text-[24px] lg:text-[28px] uppercase tracking-widest">
                       {member.name}
                     </h3>
-                    <p className="whitespace-nowrap text-[16px]">
-                      {member.designation}, {member.organization}
+                    <p className="whitespace-nowrap text-[16px] uppercase">
+                      {member.designation}, <br /> {member.organization}
                     </p>
-                    <button className="mt-[10px] lg:mt-[21px] mb-[5px] text-[#b80001] hover:text-black font-bold">
+                    <button className="mt-[10px] lg:mt-[15px] mb-[5px] text-[#b80001] hover:text-black font-bold">
                       More
                     </button>
                   </div>
@@ -223,15 +239,17 @@ function Overview() {
                   className="border border-black flex"
                   onClick={() => openPopup("kmp", index)}
                 >
-                  <div className="w-[140px] lg:w-[150px] lg:h-[150px] bg-[#d9d9d9]"></div>
-                  <div className="pt-[13px] lg:pt-[26px] font-Barlow px-[24px] lg:px-[33px]">
-                    <h3 className="font-bold text-[24px] lg:text-[28px]">
+                  <div className="w-[140px] lg:w-[150px] lg:h-[150px] bg-[#d9d9d9]">
+                    <img src={member.image} alt="" />
+                  </div>
+                  <div className="pt-[13px] lg:pt-[10px] font-Barlow px-[24px] lg:px-[33px]">
+                    <h3 className="font-bold text-[24px] lg:text-[28px] uppercase tracking-widest">
                       {member.name}
                     </h3>
-                    <p className="whitespace-nowrap text-[16px]">
-                      {member.designation}, {member.organization}
+                    <p className="whitespace-nowrap text-[16px] uppercase">
+                      {member.designation}, <br /> {member.organization}
                     </p>
-                    <button className="mt-[10px] lg:mt-[21px] mb-[5px] text-[#b80001] hover:text-black font-bold">
+                    <button className="mt-[10px] lg:mt-[15px] mb-[5px] text-[#b80001] hover:text-black font-bold">
                       More
                     </button>
                   </div>
@@ -251,6 +269,7 @@ function Overview() {
               designation={boardMembersData[index].designation}
               organization={boardMembersData[index].organization}
               description={boardMembersData[index].description}
+              image={boardMembersData[index].image}
               onClose={() => cross("board", index)}
             />
           )
@@ -264,7 +283,9 @@ function Overview() {
               designation={kmpMembersData[index].designation}
               organization={kmpMembersData[index].organization}
               description={kmpMembersData[index].description}
+              image={kmpMembersData[index].image}
               onClose={() => cross("kmp", index)}
+
               className="z-50 fixed top-[50%] left-[20%]"
             />
           )

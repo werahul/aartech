@@ -56,8 +56,8 @@ const WindPower = () => {
                     <button
                         className={`tag ${selectedTag === 'tag1'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            } w-[360px] h-[49px] px-[39px] py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-[360px] h-[49px] px-[39px] py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag1')}
                     >
                         UNITIZED POWER MANAGEMENT
@@ -66,8 +66,8 @@ const WindPower = () => {
                     <button
                         className={`tag ${selectedTag === 'tag2'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            } w-[310px] h-[49px] px-[39px] py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-[310px] h-[49px] px-[39px] py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag2')}
                     >
                         FAULT CURRENT LIMITING
@@ -75,8 +75,8 @@ const WindPower = () => {
                     <button
                         className={`tag ${selectedTag === 'tag3'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            } w-[274px] h-[49px] px-[39px] py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-[274px] h-[49px] px-[39px] py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag3')}
                     >
                         ENERGY HARVESTING
@@ -84,8 +84,8 @@ const WindPower = () => {
                     <button
                         className={`tag ${selectedTag === 'tag4'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            } w-[210px] h-[49px] px-[39px] py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-[210px] h-[49px] px-[39px] py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag4')}
                     >
                         PULSE POWER
@@ -99,8 +99,8 @@ const WindPower = () => {
                     <button
                         className={`tag ${selectedTag === 'tag5'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            } w-[213px] h-[49px] px-[39px] py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-[213px] h-[49px] px-[39px] py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag5')}
                     >
                         LOAD LIMITING
@@ -111,8 +111,8 @@ const WindPower = () => {
                     <button
                         className={`tag ${selectedTag === 'tag6'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            } w-[306px] h-[49px] px-[39px] py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-[306px] h-[49px] px-[39px] py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag6')}
                     >
                         CONTROL & AUTOMATION
@@ -121,8 +121,8 @@ const WindPower = () => {
                     <button
                         className={`tag ${selectedTag === 'tag7'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            } w-[370px] h-[49px] px-[39px] py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-[370px] h-[49px] px-[39px] py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag7')}
                     >
                         UNITISED POWER MANAGEMENT
@@ -135,8 +135,8 @@ const WindPower = () => {
                     <button
                         className={`tag ${selectedTag === 'tag1'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            } w-[300px] h-[49px] px-[12px] py-[9px] whitespace-nowrap border  text-base font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-[300px] h-[49px] px-[12px] py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag1')}
                     >
                         UNITIZED POWER MANAGEMENT
@@ -145,8 +145,8 @@ const WindPower = () => {
                     <button
                         className={`tag ${selectedTag === 'tag2'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            } w-[310px] h-[49px] px-[39px] py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-[310px] h-[49px] px-[39px] py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag2')}
                     >
                         FAULT CURRENT LIMITING
@@ -154,8 +154,8 @@ const WindPower = () => {
                     <button
                         className={`tag ${selectedTag === 'tag3'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            } w-[274px] h-[49px] px-[39px] py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-[274px] h-[49px] px-[39px] py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag3')}
                     >
                         ENERGY HARVESTING
@@ -163,8 +163,8 @@ const WindPower = () => {
                     <button
                         className={`tag ${selectedTag === 'tag4'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            } w-[210px] h-[49px] px-[39px] py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-[210px] h-[49px] px-[39px] py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag4')}
                     >
                         PULSE POWER
@@ -172,8 +172,8 @@ const WindPower = () => {
                     <button
                         className={`tag ${selectedTag === 'tag5'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            } w-[213px] h-[49px] px-[39px] py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-[213px] h-[49px] px-[39px] py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag5')}
                     >
                         LOAD LIMITING
@@ -184,8 +184,8 @@ const WindPower = () => {
                     <button
                         className={`tag ${selectedTag === 'tag6'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            } w-[306px] h-[49px] px-[39px] py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-[306px] h-[49px] px-[39px] py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag6')}
                     >
                         CONTROL & AUTOMATION
@@ -194,8 +194,8 @@ const WindPower = () => {
                     <button
                         className={`tag ${selectedTag === 'tag7'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            } w-[370px] h-[49px] px-[39px] py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-[370px] h-[49px] px-[39px] py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag7')}
                     >
                         UNITISED POWER MANAGEMENT

@@ -3,8 +3,9 @@ import { Link } from 'react-router-dom';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { indBanner, proBanner, solutionBanner } from '../assets/images';
+import { FaChevronLeft, FaChevronRight } from 'react-icons/fa'; // Import arrow icons
 
-const linkBackgroundColors = ['#B80001', '#B80001', '#B80001']; // Define background colors for links
+const linkBackgroundColors = ['#B80001', '#B80001', '#B80001'];
 
 const images = [indBanner, proBanner, solutionBanner];
 
@@ -19,9 +20,25 @@ const Header = () => {
         return () => clearInterval(interval);
     }, []);
 
+    const handleArrowClick = (direction) => {
+        if (direction === 'left') {
+            setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
+        } else if (direction === 'right') {
+            setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+        }
+    };
+
     return (
-        <div className="relative">
-            <div className="flex flex-col absolute bottom-0 left-40 z-30 md:flex-row justify-center md:space-x-4">
+        <div className="relative w-full lg:block hidden">
+            <div className="flex flex-col absolute bottom-0 left-0 z-30 md:flex-row justify-center items-center w-full md:space-x-4">
+                {/* Left Arrow */}
+                <div
+                    className="w-14 h-14 border bg-white hover:opacity-75 transition absolute left-0 -top-[10rem] transform -translate-y-50% flex justify-center items-center cursor-pointer"
+                    onClick={() => handleArrowClick('left')}
+                >
+                    <FaChevronLeft size={24} color="#000000" />
+                </div>
+
                 {images.map((image, index) => (
                     <Link
                         key={index}
@@ -43,8 +60,16 @@ const Header = () => {
                         </p>
                     </Link>
                 ))}
+
+                {/* Right Arrow */}
+                <div
+                    className="w-14 h-14 border bg-white hover:opacity-75 transition absolute right-0 -top-[10rem] transform  flex justify-center items-center cursor-pointer"
+                    onClick={() => handleArrowClick('right')}
+                >
+                    <FaChevronRight size={24} color="#000000" />
+                </div>
             </div>
-            <div className="image-slider relative">
+            <div className="image-slider relative w-full">
                 <Carousel
                     showArrows={false}
                     selectedItem={currentIndex}
@@ -58,13 +83,6 @@ const Header = () => {
                     {images.map((image, index) => (
                         <div key={index}>
                             <img src={image} alt={`Image ${index + 1}`} />
-                           {/* <p className="legend">
-                                {index === 0
-                                    ? 'INDUSTRIES'
-                                    : index === 1
-                                        ? 'PRODUCTS'
-                                        : 'SOLUTIONS'}
-                                </p>*/}
                         </div>
                     ))}
                 </Carousel>

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import Footer from '../Components/Footer'
 import Navbar from '../Components/Navbar'
 import { ashim, jay, ksh, pankaj, sonu, virendra } from '../assets/images'
-import { Header, MapImage, OptionsGrid } from '../Components'
+import { Header, MapImage, OptionsGrid, Header2 } from '../Components'
 
 
 import { CustomerLogos, AboutUsHome, Services, TestimonialSlider } from '../Components/index'
@@ -59,6 +59,7 @@ const Home = () => {
     <>
       <Navbar />
       <Header />
+      <Header2/>
       <div className="fullPage 2xl:px-[120px] lg:px-20 lg:pb-[74px]  lg:pt-20  w-[100%] py-10 px-5 mr-[83px] sm:px-10" >
         <div className="title lg:text-4xl text-[28px] text-box-red leading-9  font-normal lg:mt-0  font-antonio lg:mb-9 mb-4" >
           Our Tailored Solutions
@@ -67,13 +68,13 @@ const Home = () => {
         <OptionsGrid />
       </div>
       <CustomerLogos />
-      <MapImage/>
+      <MapImage />
       <div className="fullPage 2xl:px-[120px] lg:px-20  lg:my-[3.8rem] w-[100%] lg:pt-0 lg:pb-0 pt-10 pb-[2rem] px-5 sm:px-10 ">
         <AboutUsHome />
 
       </div>
       <TestimonialSlider testimonials={testimonials} />
-      <div className="fullPage 2xl:px-[120px] lg:px-20 lg:py-[80px] w-[100%] p-5 sm:px-10" data-aos="fade-up">
+      <div className="fullPage 2xl:px-[120px] lg:px-20 lg:py-[80px] w-[100%] p-5 sm:px-10">
         <Services />
       </div>
 

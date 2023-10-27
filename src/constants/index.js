@@ -86,9 +86,9 @@ const product = [
     path: "/products/kranking-ultracapacitors"
   },
   {
-    title: "AUXILIARY POWER UNIT",
+    title: "Fuel Cell",
     image: productImg4,
-    desc: "WTC transforms organic waste into compost in just a day, through natural and biological processes. For larger capacities, our specialized microorganisms ensure thorough decomposition. Enjoy a noiseless and odorless experience WTC.",
+    desc: "Fuel cells are the top choice for defence, outperforming IC engines. With high efficiency, enduring power, compact size, light portability, quiet operation, durability, wide range, and eco-friendliness, they excel in various applications.",
     path: ""
   },
 
@@ -107,17 +107,17 @@ const product = [
   {
     title: "AC & DC UPS",
     image: productImg7,
-    desc: "The incinerator employs controlled thermal destruction to convert waste into ash, meeting emission standards. Operating at 800°C to 1,200°C, it reduces volume, and generates energy. Our solution ensures complete incineration with no residues.",
+    desc: "J. Schneider's DC uninterruptible power supplies guarantee safe process continuity during voltage interruptions or fluctuations, complemented by chargers for ultracapacitors and batteries, plus essential accessories.",
   },
   {
     title: "FLYWHEEL",
     image: productImg7,
-    desc: "The incinerator employs controlled thermal destruction to convert waste into ash, meeting emission standards. Operating at 800°C to 1,200°C, it reduces volume, and generates energy. Our solution ensures complete incineration with no residues.",
+    desc: "A flywheel, a mechanical component, stores energy through its spinning motion. When torque is applied, it accelerates, accumulating more rotational energy and becoming a kinetic energy reservoir.",
   },
   {
     title: "LOAD CHECKER",
     image: productImg7,
-    desc: "The incinerator employs controlled thermal destruction to convert waste into ash, meeting emission standards. Operating at 800°C to 1,200°C, it reduces volume, and generates energy. Our solution ensures complete incineration with no residues.",
+    desc: "Load Checker automatically cuts off power if excessive current is detected and seamlessly restores power when the load is disconnected for a brief period, with no manual intervention needed. Its soft-blocking technology ensures longevity.",
   },
   {
     title: "SOLAR DESIGN & SERVICES",
@@ -127,7 +127,7 @@ const product = [
   {
     title: "SOLID WASTE TREATMENT",
     image: productImg7,
-    desc: "Aartech Solonics passionately harnesses solar power for sustainable energy, committing to engineering excellence. They offer tailored solar solutions, from design to installation and maintenance, catering to residential and industrial clients.",
+    desc: "WTC rapidly converts organic waste to odourless compost using natural processes and microorganisms for large-scale decomposition. The incinerator meets emission standards, reducing waste to ash at 800-1,200°C while producing energy, leaving no residues.",
   },
 ];
 
@@ -135,7 +135,7 @@ const solution = [
   {
     title: "POWER BACKUP UNIT",
     image: sol1,
-    desc: "We understand the importance of maintaining optimal load levels, and our expertise lies in the creation of load limiters. These solutions offer exceptional reliability and performance, specifically catering to low-rating (< 100W) requirements.",
+    desc: "A Power Backup Unit is a device that provides temporary electrical power during outages or fluctuations, ensuring uninterrupted operation of critical equipment and appliances in homes, offices, or other settings.",
     path: ""
   },
   {
@@ -145,9 +145,9 @@ const solution = [
     path: ""
   },
   {
-    title: "ENERGY EFFICIENCY",
+    title: "UNINTERRUPTED POWER SUPPLY",
     image: sol3,
-    desc: "We pioneer energy harvesting, harnessing micro sources like Solar, Wind, and Hydro power for portable devices via PV/micro-turbines. Versatile in Marine, Defense, Telecom, and more. FaraDigm™ Ultracapacitors offer tailored solutions.",
+    desc: "UPS, or Uninterruptible Power Supply, is essential for safeguarding sensitive electrical loads, offering superior power quality, reduced Total Cost of Ownership, and full facility protection for critical installations.",
     path: ""
   },
   {
@@ -185,6 +185,18 @@ const solution = [
     image: sol9,
     desc: "We work with consultants, equipment manufacturers, contractors, and end users to address process continuity challenges. For sectors like Thermal Power, Nuclear Power, etc, our BTS 2000 Numerical Fast Bus Transfer Systems offer proven solutions.",
     path: "/solutions/process-continuity"
+  },
+  {
+    title: "ENERGY STORAGE",
+    image: sol9,
+    desc: "Energy storage tech harnesses solar, wind, and hydropower via micro sources like PV panels and turbines. It fuels portable devices and aids various sectors, such as Marine, Defense, Space, Telecom, and Real Estate, boosting efficiency.",
+    path: ""
+  },
+  {
+    title: "LOAD LIMITING",
+    image: sol9,
+    desc: "Load limiting, a crucial strategy for equitable energy distribution, addresses supply challenges by controlling electricity usage. It promotes fairness and reduces losses for utilities in high-demand regions.",
+    path: ""
   },
 ];
 

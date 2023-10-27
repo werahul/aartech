@@ -7,6 +7,7 @@ import Services from "./Services";
 import PhotoGallery from "./PhotoGallery";
 import TestimonialSlider from "./TestimonialSlider";
 import Header from "./Header";
+import Header2 from "./Header2";
 import BreadCrumbs from "./BreadCrumbs";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
@@ -20,4 +21,4 @@ import MapImage from "./MapImage";
 
 import CustomerLogos2 from "./CustomerLogos2.jsx";
 
-export { CustomerLogos, AboutUsHome,CarouselAbout, CLogos, Services, PhotoGallery, TestimonialSlider, Header, BreadCrumbs,Footer,Navbar, OptionsGrid, AboutImages, SlideInBar, Accordion, Accordion2,Accordion3, CustomerLogos2, MapImage}    
+export { CustomerLogos, AboutUsHome,CarouselAbout, CLogos, Services, PhotoGallery, TestimonialSlider, Header, BreadCrumbs,Footer,Navbar, OptionsGrid, AboutImages, SlideInBar, Accordion, Accordion2,Accordion3, CustomerLogos2, MapImage, Header2}    

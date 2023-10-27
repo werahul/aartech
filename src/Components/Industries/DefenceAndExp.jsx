@@ -70,9 +70,9 @@ const DefenceAndExp = () => {
                 < div className="lg:flex hidden space-x-3 mt-8">
                     <button
                         className={`tag ${selectedTag === 'tag1'
-                            ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
+                            ? 'bg-white text-box-red border-box-red '
+                            : 'text-gray-500 border-gray-400   hover:text-box-red hover:border-box-red ' 
+                            } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag1')}
                     >
                         CONTROL & AUTOMATION
@@ -80,18 +80,18 @@ const DefenceAndExp = () => {
 
                     <button
                         className={`tag ${selectedTag === 'tag2'
-                            ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
+                            ? 'bg-white text-box-red border-box-red ' 
+                            : 'text-gray-500 border-gray-400  hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag2')}
                     >
                         Pulse Power
                     </button>
                     <button
                         className={`tag ${selectedTag === 'tag3'
-                            ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            } w-auto h-[49px] px-[20px]   py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
+                            ? 'bg-white text-box-red border-box-red' 
+                            : 'text-gray-500 border-gray-400  hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[20px]   py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag3')}
                     >
                         Power Backup Unit
@@ -99,8 +99,8 @@ const DefenceAndExp = () => {
                     <button
                         className={`tag ${selectedTag === 'tag4'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            } w-auto h-[49px] px-[20px]   py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[20px]   py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag4')}
                     >
                         Customised Professional Case
@@ -114,8 +114,8 @@ const DefenceAndExp = () => {
                     <button
                         className={`tag ${selectedTag === 'tag5'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            } w-auto h-[49px] px-[20px]   py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[20px]   py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag5')}
                     >
                         Waste Management System
@@ -126,8 +126,8 @@ const DefenceAndExp = () => {
                     <button
                         className={`tag ${selectedTag === 'tag6'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            } w-auto h-[49px] px-[20px]   py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[20px]   py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag6')}
                     >
                         Solar Design, Engineering & Consultancy services
@@ -136,8 +136,8 @@ const DefenceAndExp = () => {
                     <button
                         className={`tag ${selectedTag === 'tag7'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag7')}
                     >
                         Energy Efficiency
@@ -154,8 +154,8 @@ const DefenceAndExp = () => {
                     <button
                         className={`tag ${selectedTag === 'tag1'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            } w-auto h-[49px] px-[12px] py-[9px] whitespace-nowrap border uppercase text-base font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[12px] py-[9px] whitespace-nowrap border uppercase text-lg font-bold  font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag1')}
                     >
                         CONTROL & AUTOMATION
@@ -164,8 +164,8 @@ const DefenceAndExp = () => {
                     <button
                         className={`tag ${selectedTag === 'tag2'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag2')}
                     >
                         Pulse Power
@@ -173,8 +173,8 @@ const DefenceAndExp = () => {
                     <button
                         className={`tag ${selectedTag === 'tag3'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag3')}
                     >
                         Power Backup Unit
@@ -182,8 +182,8 @@ const DefenceAndExp = () => {
                     <button
                         className={`tag ${selectedTag === 'tag4'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag4')}
                     >
                         Customised Professional Case
@@ -191,8 +191,8 @@ const DefenceAndExp = () => {
                     <button
                         className={`tag ${selectedTag === 'tag5'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag5')}
                     >
                         Waste Management System
@@ -203,8 +203,8 @@ const DefenceAndExp = () => {
                     <button
                         className={`tag ${selectedTag === 'tag6'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag6')}
                     >
                         Solar Design, Engineering & Consultancy services
@@ -213,8 +213,8 @@ const DefenceAndExp = () => {
                     <button
                         className={`tag ${selectedTag === 'tag7'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag7')}
                     >
                         Energy Efficiency
@@ -235,8 +235,8 @@ const DefenceAndExp = () => {
                     <button
                         className={`tag ${selectedProTag === 'PTag1'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag1')}
                     >
                         CONTROL & RELAY PANELS
@@ -245,8 +245,8 @@ const DefenceAndExp = () => {
                     <button
                         className={`tag ${selectedProTag === 'PTag2'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag2')}
                     >
                         Kranking Ultracapacitors
@@ -254,8 +254,8 @@ const DefenceAndExp = () => {
                     <button
                         className={`tag ${selectedProTag === 'PTag3'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag3')}
                     >
                         Auxiliary Power Unit
@@ -263,8 +263,8 @@ const DefenceAndExp = () => {
                     <button
                         className={`tag ${selectedProTag === 'PTag4'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag4')}
                     >
                         Best Case
@@ -273,8 +273,8 @@ const DefenceAndExp = () => {
                     <button
                         className={`tag ${selectedProTag === 'PTag5'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag5')}
                     >
                         WTC
@@ -287,8 +287,8 @@ const DefenceAndExp = () => {
                     <button
                         className={`tag ${selectedProTag === 'PTag6'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag6')}
                     >
                         Incinerator
@@ -297,8 +297,8 @@ const DefenceAndExp = () => {
                     <button
                         className={`tag ${selectedProTag === 'PTag7'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase  text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase  text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag7')}
                     >
                         Solar Design & Services
@@ -307,8 +307,8 @@ const DefenceAndExp = () => {
                     <button
                         className={`tag ${selectedProTag === 'PTag8'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase  text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase  text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag8')}
                     >
                         AC & DC UPS
@@ -326,8 +326,8 @@ const DefenceAndExp = () => {
                     <button
                         className={`tag ${selectedProTag === 'PTag1'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            } w-[300px] h-[49px] px-[12px] py-[9px] whitespace-nowrap border  text-base font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-[300px] h-[49px] px-[12px] py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag1')}
                     >
                         CONTROL & RELAY PANELS
@@ -336,8 +336,8 @@ const DefenceAndExp = () => {
                     <button
                         className={`tag ${selectedProTag === 'PTag2'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag2')}
                     >
                         Kranking Ultracapacitors
@@ -345,8 +345,8 @@ const DefenceAndExp = () => {
                     <button
                         className={`tag ${selectedProTag === 'PTag3'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag3')}
                     >
                         Auxiliary Power Unit
@@ -354,8 +354,8 @@ const DefenceAndExp = () => {
                     <button
                         className={`tag ${selectedProTag === 'PTag4'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag4')}
                     >
                         Best Case
@@ -363,8 +363,8 @@ const DefenceAndExp = () => {
                     <button
                         className={`tag ${selectedProTag === 'PTag5'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag5')}
                     >
                         WTC
@@ -375,8 +375,8 @@ const DefenceAndExp = () => {
                     <button
                         className={`tag ${selectedProTag === 'PTag6'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag6')}
                     >
                         Incinerator
@@ -385,8 +385,8 @@ const DefenceAndExp = () => {
                     <button
                         className={`tag ${selectedProTag === 'PTag7'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag7')}
                     >
                         Solar Design & Services
@@ -394,8 +394,8 @@ const DefenceAndExp = () => {
                     <button
                         className={`tag ${selectedProTag === 'PTag8'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag8')}
                     >
                         AC & DC UPS

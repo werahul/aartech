@@ -96,8 +96,8 @@ const Reliable = () => {
                     <button
                         className={`tag ${selectedTag === 'tag1'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            } w-auto h-[49px] px-[15px] uppercase py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[15px] uppercase py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag1')}
                     >
                         Defense Industry
@@ -106,8 +106,8 @@ const Reliable = () => {
                     <button
                         className={`tag ${selectedTag === 'tag2'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            }  w-auto h-[49px] px-[15px] uppercase py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            }  w-auto h-[49px] px-[15px] uppercase py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag2')}
                     >
                         Thermal Power
@@ -115,8 +115,8 @@ const Reliable = () => {
                     <button
                         className={`tag ${selectedTag === 'tag3'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            }  w-auto h-[49px] px-[15px] uppercase py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            }  w-auto h-[49px] px-[15px] uppercase py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag3')}
                     >
                         Nuclear Power
@@ -124,8 +124,8 @@ const Reliable = () => {
                     <button
                         className={`tag ${selectedTag === 'tag4'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            }  w-auto h-[49px] px-[15px] uppercase py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            }  w-auto h-[49px] px-[15px] uppercase py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag4')}
                     >
                         Hydro Power
@@ -133,8 +133,8 @@ const Reliable = () => {
                     <button
                         className={`tag ${selectedTag === 'tag5'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            }  w-auto h-[49px] px-[15px] uppercase py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            }  w-auto h-[49px] px-[15px] uppercase py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag5')}
                     >
                         Diesel Power
@@ -142,8 +142,8 @@ const Reliable = () => {
                     <button
                         className={`tag ${selectedTag === 'tag6'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            }  w-auto h-[49px] px-[15px] uppercase py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            }  w-auto h-[49px] px-[15px] uppercase py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag6')}
                     >
                         Biomass Power
@@ -155,8 +155,8 @@ const Reliable = () => {
                     <button
                         className={`tag ${selectedTag === 'tag7'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            }  w-auto h-[49px] px-[15px] uppercase py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            }  w-auto h-[49px] px-[15px] uppercase py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag7')}
                     >
                         Captive Power
@@ -165,8 +165,8 @@ const Reliable = () => {
                     <button
                         className={`tag ${selectedTag === 'tag8'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            }  w-auto h-[49px] px-[15px] uppercase py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            }  w-auto h-[49px] px-[15px] uppercase py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag8')}
                     >
                         Metals
@@ -175,8 +175,8 @@ const Reliable = () => {
                     <button
                         className={`tag ${selectedTag === 'tag9'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            }  w-auto h-[49px] px-[15px] uppercase py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            }  w-auto h-[49px] px-[15px] uppercase py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag9')}
                     >
                         Oil & Gas
@@ -184,8 +184,8 @@ const Reliable = () => {
                     <button
                         className={`tag ${selectedTag === 'tag10'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            }  w-auto h-[49px] px-[15px] uppercase py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            }  w-auto h-[49px] px-[15px] uppercase py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag10')}
                     >
                         Mining
@@ -193,8 +193,8 @@ const Reliable = () => {
                     <button
                         className={`tag ${selectedTag === 'tag11'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            }  w-auto h-[49px] px-[15px] uppercase py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            }  w-auto h-[49px] px-[15px] uppercase py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag11')}
                     >
                         Chemical
@@ -202,8 +202,8 @@ const Reliable = () => {
                     <button
                         className={`tag ${selectedTag === 'tag12'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            }  w-auto h-[49px] px-[15px] uppercase py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            }  w-auto h-[49px] px-[15px] uppercase py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag12')}
                     >
                         Textile
@@ -211,8 +211,8 @@ const Reliable = () => {
                     <button
                         className={`tag ${selectedTag === 'tag13'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            }  w-auto h-[49px] px-[15px] uppercase py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            }  w-auto h-[49px] px-[15px] uppercase py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag13')}
                     >
                         Cement
@@ -220,8 +220,8 @@ const Reliable = () => {
                     <button
                         className={`tag ${selectedTag === 'tag14'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            }  w-auto h-[49px] px-[15px] uppercase py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            }  w-auto h-[49px] px-[15px] uppercase py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag14')}
                     >
                         Paper
@@ -229,8 +229,8 @@ const Reliable = () => {
                     <button
                         className={`tag ${selectedTag === 'tag15'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            }  w-auto h-[49px] px-[15px] uppercase py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            }  w-auto h-[49px] px-[15px] uppercase py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag15')}
                     >
                         Sugar
@@ -242,8 +242,8 @@ const Reliable = () => {
                     <button
                         className={`tag ${selectedTag === 'tag16'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            }  w-auto h-[49px] px-[15px] uppercase py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            }  w-auto h-[49px] px-[15px] uppercase py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag16')}
                     >
                         Pharmaceutical
@@ -251,8 +251,8 @@ const Reliable = () => {
                     <button
                         className={`tag ${selectedTag === 'tag17'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            }  w-auto h-[49px] px-[15px] uppercase py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            }  w-auto h-[49px] px-[15px] uppercase py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag17')}
                     >
                         Telecom
@@ -261,8 +261,8 @@ const Reliable = () => {
                     <button
                         className={`tag ${selectedTag === 'tag18'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            }  w-auto h-[49px] px-[15px] uppercase py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            }  w-auto h-[49px] px-[15px] uppercase py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag18')}
                     >
                         Material Handling
@@ -270,8 +270,8 @@ const Reliable = () => {
                     <button
                         className={`tag ${selectedTag === 'tag19'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            }  w-auto h-[49px] px-[15px] uppercase py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            }  w-auto h-[49px] px-[15px] uppercase py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag19')}
                     >
                         Railways
@@ -279,8 +279,8 @@ const Reliable = () => {
                     <button
                         className={`tag ${selectedTag === 'tag20'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            }  w-auto h-[49px] px-[15px] uppercase py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            }  w-auto h-[49px] px-[15px] uppercase py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag20')}
                     >
                         Marine Industry
@@ -288,8 +288,8 @@ const Reliable = () => {
                     <button
                         className={`tag ${selectedTag === 'tag21'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            }  w-auto h-[49px] px-[15px] uppercase py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            }  w-auto h-[49px] px-[15px] uppercase py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag21')}
                     >
                         Automobile Industry
@@ -305,8 +305,8 @@ const Reliable = () => {
                     <button
                         className={`tag ${selectedTag === 'tag1'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            } w-auto h-[49px] px-[10px] uppercase py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[10px] uppercase py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag1')}
                     >
                         Defense Industry
@@ -315,8 +315,8 @@ const Reliable = () => {
                     <button
                         className={`tag ${selectedTag === 'tag2'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            }  w-auto h-[49px] px-[10px] uppercase py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            }  w-auto h-[49px] px-[10px] uppercase py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag2')}
                     >
                         Thermal Power
@@ -324,8 +324,8 @@ const Reliable = () => {
                     <button
                         className={`tag ${selectedTag === 'tag3'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            }  w-auto h-[49px] px-[10px] uppercase py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            }  w-auto h-[49px] px-[10px] uppercase py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag3')}
                     >
                         Nuclear Power
@@ -333,8 +333,8 @@ const Reliable = () => {
                     <button
                         className={`tag ${selectedTag === 'tag4'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            }  w-auto h-[49px] px-[10px] uppercase py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            }  w-auto h-[49px] px-[10px] uppercase py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag4')}
                     >
                         Hydro Power
@@ -342,8 +342,8 @@ const Reliable = () => {
                     <button
                         className={`tag ${selectedTag === 'tag5'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            }  w-auto h-[49px] px-[10px] uppercase py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            }  w-auto h-[49px] px-[10px] uppercase py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag5')}
                     >
                         Diesel Power
@@ -351,8 +351,8 @@ const Reliable = () => {
                     <button
                         className={`tag ${selectedTag === 'tag6'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            }  w-auto h-[49px] px-[10px] uppercase py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            }  w-auto h-[49px] px-[10px] uppercase py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag6')}
                     >
                         Biomass Power
@@ -361,8 +361,8 @@ const Reliable = () => {
                     <button
                         className={`tag ${selectedTag === 'tag7'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            }  w-auto h-[49px] px-[10px] uppercase py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            }  w-auto h-[49px] px-[10px] uppercase py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag7')}
                     >
                         Captive Power
@@ -371,8 +371,8 @@ const Reliable = () => {
                     <button
                         className={`tag ${selectedTag === 'tag8'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            }  w-auto h-[49px] px-[10px] uppercase py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            }  w-auto h-[49px] px-[10px] uppercase py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag8')}
                     >
                         Metals
@@ -381,8 +381,8 @@ const Reliable = () => {
                     <button
                         className={`tag ${selectedTag === 'tag9'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            }  w-auto h-[49px] px-[10px] uppercase py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            }  w-auto h-[49px] px-[10px] uppercase py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag9')}
                     >
                         Oil & Gas
@@ -390,8 +390,8 @@ const Reliable = () => {
                     <button
                         className={`tag ${selectedTag === 'tag10'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            }  w-auto h-[49px] px-[10px] uppercase py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            }  w-auto h-[49px] px-[10px] uppercase py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag10')}
                     >
                         Mining
@@ -399,8 +399,8 @@ const Reliable = () => {
                     <button
                         className={`tag ${selectedTag === 'tag11'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            }  w-auto h-[49px] px-[10px] uppercase py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            }  w-auto h-[49px] px-[10px] uppercase py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag11')}
                     >
                         Chemical
@@ -408,8 +408,8 @@ const Reliable = () => {
                     <button
                         className={`tag ${selectedTag === 'tag12'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            }  w-auto h-[49px] px-[10px] uppercase py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            }  w-auto h-[49px] px-[10px] uppercase py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag12')}
                     >
                         Textile
@@ -417,8 +417,8 @@ const Reliable = () => {
                     <button
                         className={`tag ${selectedTag === 'tag13'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            }  w-auto h-[49px] px-[10px] uppercase py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            }  w-auto h-[49px] px-[10px] uppercase py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag13')}
                     >
                         Cement
@@ -426,8 +426,8 @@ const Reliable = () => {
                     <button
                         className={`tag ${selectedTag === 'tag14'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            }  w-auto h-[49px] px-[10px] uppercase py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            }  w-auto h-[49px] px-[10px] uppercase py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag14')}
                     >
                         Paper
@@ -435,8 +435,8 @@ const Reliable = () => {
                     <button
                         className={`tag ${selectedTag === 'tag15'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            }  w-auto h-[49px] px-[10px] uppercase py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            }  w-auto h-[49px] px-[10px] uppercase py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag15')}
                     >
                         Sugar
@@ -445,8 +445,8 @@ const Reliable = () => {
                     <button
                         className={`tag ${selectedTag === 'tag16'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            }  w-auto h-[49px] px-[10px] uppercase py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            }  w-auto h-[49px] px-[10px] uppercase py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag16')}
                     >
                         Pharmaceutical
@@ -454,8 +454,8 @@ const Reliable = () => {
                     <button
                         className={`tag ${selectedTag === 'tag17'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            }  w-auto h-[49px] px-[10px] uppercase py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            }  w-auto h-[49px] px-[10px] uppercase py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag17')}
                     >
                         Telecom
@@ -464,8 +464,8 @@ const Reliable = () => {
                     <button
                         className={`tag ${selectedTag === 'tag18'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            }  w-auto h-[49px] px-[10px] uppercase py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            }  w-auto h-[49px] px-[10px] uppercase py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag18')}
                     >
                         Material Handling
@@ -473,8 +473,8 @@ const Reliable = () => {
                     <button
                         className={`tag ${selectedTag === 'tag19'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            }  w-auto h-[49px] px-[10px] uppercase py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            }  w-auto h-[49px] px-[10px] uppercase py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag19')}
                     >
                         Railways
@@ -482,8 +482,8 @@ const Reliable = () => {
                     <button
                         className={`tag ${selectedTag === 'tag20'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            }  w-auto h-[49px] px-[10px] uppercase py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            }  w-auto h-[49px] px-[10px] uppercase py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag20')}
                     >
                         Marine Industry
@@ -491,8 +491,8 @@ const Reliable = () => {
                     <button
                         className={`tag ${selectedTag === 'tag21'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            }  w-auto h-[49px] px-[10px] uppercase py-[9px] whitespace-nowrap border  text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            }  w-auto h-[49px] px-[10px] uppercase py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag21')}
                     >
                         Automobile Industry
@@ -508,8 +508,8 @@ const Reliable = () => {
                     <button
                         className={`tag ${selectedProTag === 'PTag1'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag1')}
                     >
                         KranKing Ultracapacitors
@@ -520,8 +520,8 @@ const Reliable = () => {
                     <button
                         className={`tag ${selectedProTag === 'PTag1'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            } w-[300px] h-[49px] px-[12px] py-[9px] whitespace-nowrap border  text-base font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-[300px] h-[49px] px-[12px] py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag1')}
                     >
                         KranKing Ultracapacitors

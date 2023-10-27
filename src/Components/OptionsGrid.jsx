@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom';
 
 
 
@@ -217,33 +218,45 @@ const OptionsGrid = () => {
           <div className="">
             <ul>
               <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Industry</p>
-              <li
-                className='border border-black py-3 lg:py-[6px] my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow'
-                onClick={() => handleItemClick('Defense & Exploration')}
-              >
-                Defense & Exploration
-              </li>
+              <Link to="/industries/defence-and-exploration">
+                <li
+                  className='border border-black py-3 lg:py-[6px] my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow'
+                  onClick={() => handleItemClick('Defense & Exploration')}
+                >
+                  Defense & Exploration
+                </li></Link>
             </ul>
           </div>
           <div className="">
             <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold'>Related Products</p>
             <ul>
-              <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base  font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Kranking Ultracapacitors</li>
-              <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base  font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Bestcase</li>
-              <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base  font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Incinerator</li>
-              <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base  font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>WTC</li>
+              <Link to="/products/kranking-ultracapacitors">
+                <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base  font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' >Kranking Ultracapacitors</li></Link>
+              <Link to="/products/best-case">
+                <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base  font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' >Bestcase</li></Link>
+              <Link to="">
+                <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base  font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Incinerator</li></Link>
+              <Link to="">
+                <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base  font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>WTC</li></Link>
 
             </ul>
           </div>
           <div className="">
             <p className='lg:hidden block text-box-red  uppercase font-Barlow font-bold'>Related Solutions</p>
             <ul>
-              <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Load Limiting</li>
-              <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Reliable Engine Starting</li>
-              <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Pulse Power</li>
-              <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Energy Harvesting</li>
-              <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Customised Cases</li>
-              <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Solid Waste Treatment</li>
+              <Link to="">
+                <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Load Limiting</li></Link>
+              <Link to="/solutions/reliable-engine-starting">
+                <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' >Reliable Engine Starting</li></Link>
+              <Link to="">
+                <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Pulse Power</li></Link>
+              <Link to="">
+                <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Energy Harvesting</li></Link>
+              <Link to="/solutions/customised-professional-case">
+                <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' >Customised Cases</li></Link>
+              <Link to="/solutions/solid-waste-treatment">
+                <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' >Solid Waste Treatment</li></Link>
+
             </ul>
           </div>
         </div>
@@ -268,6 +281,7 @@ const OptionsGrid = () => {
         <div className="">
           <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Industry</p>
           <ul>
+            <Link to="/industries/renewable-energy"></Link>
             <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Renewable Energy</li>
           </ul>
         </div>

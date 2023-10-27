@@ -71,8 +71,8 @@ const Transport = () => {
                     <button
                         className={`tag ${selectedTag === 'tag1'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag1')}
                     >
                         CONTROL & AUTOMATION
@@ -81,8 +81,8 @@ const Transport = () => {
                     <button
                         className={`tag ${selectedTag === 'tag2'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag2')}
                     >
                         Pulse power
@@ -90,8 +90,8 @@ const Transport = () => {
                     <button
                         className={`tag ${selectedTag === 'tag3'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            } w-auto h-[49px] px-[20px]   py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[20px]   py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag3')}
                     >
                         Power Backup Unit
@@ -99,8 +99,8 @@ const Transport = () => {
                     <button
                         className={`tag ${selectedTag === 'tag4'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            } w-auto h-[49px] px-[20px]   py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[20px]   py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag4')}
                     >
                         Customised Professional Case
@@ -114,8 +114,8 @@ const Transport = () => {
                     <button
                         className={`tag ${selectedTag === 'tag5'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            } w-auto h-[49px] px-[20px]   py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[20px]   py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag5')}
                     >
                         Waste Management System
@@ -126,8 +126,8 @@ const Transport = () => {
                     <button
                         className={`tag ${selectedTag === 'tag6'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            } w-auto h-[49px] px-[20px]   py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[20px]   py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag6')}
                     >
                         Energy Efficiency
@@ -145,8 +145,8 @@ const Transport = () => {
                     <button
                         className={`tag ${selectedTag === 'tag1'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            } w-[300px] h-[49px] px-[12px] py-[9px] whitespace-nowrap border uppercase text-base font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-[300px] h-[49px] px-[12px] py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag1')}
                     >
                         CONTROL & AUTOMATION
@@ -155,8 +155,8 @@ const Transport = () => {
                     <button
                         className={`tag ${selectedTag === 'tag2'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag2')}
                     >
                         Pulse Power
@@ -164,8 +164,8 @@ const Transport = () => {
                     <button
                         className={`tag ${selectedTag === 'tag3'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            } w-[200px] h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-[200px] h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag3')}
                     >
                         Power Backup Unit
@@ -173,8 +173,8 @@ const Transport = () => {
                     <button
                         className={`tag ${selectedTag === 'tag4'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag4')}
                     >
                         Customised Professional Case
@@ -182,8 +182,8 @@ const Transport = () => {
                     <button
                         className={`tag ${selectedTag === 'tag5'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag5')}
                     >
                         Waste Management System
@@ -194,8 +194,8 @@ const Transport = () => {
                     <button
                         className={`tag ${selectedTag === 'tag6'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag6')}
                     >
                         Energy Efficiency
@@ -216,8 +216,8 @@ const Transport = () => {
                     <button
                         className={`tag ${selectedProTag === 'PTag1'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag1')}
                     >
                         CONTROL & RELAY PANELS
@@ -226,8 +226,8 @@ const Transport = () => {
                     <button
                         className={`tag ${selectedProTag === 'PTag2'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag2')}
                     >
                         Kranking Ultracapacitors
@@ -235,8 +235,8 @@ const Transport = () => {
                     <button
                         className={`tag ${selectedProTag === 'PTag3'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag3')}
                     >
                         Auxiliary Power Unit
@@ -244,8 +244,8 @@ const Transport = () => {
                     <button
                         className={`tag ${selectedProTag === 'PTag4'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag4')}
                     >
                         Best Case
@@ -260,8 +260,8 @@ const Transport = () => {
                     <button
                         className={`tag ${selectedProTag === 'PTag5'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag5')}
                     >
                         WTC
@@ -269,8 +269,8 @@ const Transport = () => {
                     <button
                         className={`tag ${selectedProTag === 'PTag6'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag6')}
                     >
                         Incinerator
@@ -279,8 +279,8 @@ const Transport = () => {
                     <button
                         className={`tag ${selectedProTag === 'PTag7'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag7')}
                     >
                         AC & DC UPS
@@ -299,8 +299,8 @@ const Transport = () => {
                     <button
                         className={`tag ${selectedProTag === 'PTag1'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            } w-[300px] h-[49px] px-[12px] py-[9px] whitespace-nowrap border  text-base font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-[300px] h-[49px] px-[12px] py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag1')}
                     >
                         CONTROL & RELAY PANELS
@@ -309,8 +309,8 @@ const Transport = () => {
                     <button
                         className={`tag ${selectedProTag === 'PTag2'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag2')}
                     >
                         Kranking Ultracapacitors
@@ -318,8 +318,8 @@ const Transport = () => {
                     <button
                         className={`tag ${selectedProTag === 'PTag3'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag3')}
                     >
                         Auxiliary Power Unit
@@ -327,8 +327,8 @@ const Transport = () => {
                     <button
                         className={`tag ${selectedProTag === 'PTag4'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag4')}
                     >
                         Best Case
@@ -336,8 +336,8 @@ const Transport = () => {
                     <button
                         className={`tag ${selectedProTag === 'PTag5'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag5')}
                     >
                         WTC
@@ -348,8 +348,8 @@ const Transport = () => {
                     <button
                         className={`tag ${selectedProTag === 'PTag6'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag6')}
                     >
                         Incinerator
@@ -358,8 +358,8 @@ const Transport = () => {
                     <button
                         className={`tag ${selectedProTag === 'PTag7'
                             ? 'bg-white text-box-red border-box-red'
-                            : 'text-gray-500 border-gray-400'
-                            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-normal font-Barlow tracking-wider`}
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag7')}
                     >
                         AC & DC UPS
