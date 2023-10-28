@@ -69,7 +69,7 @@ const Media = () => {
                 <div className="lg:grid grid-cols-2 gap-5 lg:mt-9 mt-6 lg:space-y-0 space-y-6">
                     {awardsData.map((item) => (
                         <Link to={item.paths}>
-                            <div key={item.id} className="flex lg:flex-row flex-col border-[1px] border-black">
+                            <div key={item.id} className="flex lg:flex-row flex-col border-[1px] mb-5 lg:mb-0 border-black">
 
                                 <div className="lg:w-[30%] w-full lg:h-auto h-auto bg-gray-100">
                                     <img src={item.imgSrc} alt="" className="object-fill lg:h-[122px]" />
@@ -89,7 +89,7 @@ const Media = () => {
 
 
 
-                <div className="title lg:text-4xl text-[28px]  font-normal font-antonio text-box-red lg:mt-20 mt-20">
+                <div className="title lg:text-4xl text-[28px]  font-normal font-antonio text-box-red lg:mt-20 mt-10">
                     Announcements
                 </div>
 
