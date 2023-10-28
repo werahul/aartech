@@ -4,7 +4,7 @@ import {
   industryimg3,
   industryimg4,
   productImg1,productImg2,productImg3,productImg4,productImg5,productImg6,productImg7,
-  ind1,ind2,ind3, ind4, ind5, ind6, ind7, ind8, ind9,sol1,sol2,sol3,sol4,sol5,sol6,sol7,sol8,sol9, new1 , new2
+  ind1,ind2,ind3, ind4, ind5, ind6, ind7, ind8, ind9,sol1,sol2,sol3,sol4,sol5,sol6,sol7,sol8,sol9, new1 , new2, blank, sol10, productImg10, productImg11, productImg12, productImg8, productImg9
 } from "../assets/industryimages";
 
 const industry = [
@@ -106,27 +106,27 @@ const product = [
   },
   {
     title: "AC & DC UPS",
-    image: productImg7,
+    image: productImg8,
     desc: "J. Schneider's DC uninterruptible power supplies guarantee safe process continuity during voltage interruptions or fluctuations, complemented by chargers for ultracapacitors and batteries, plus essential accessories.",
   },
   {
     title: "FLYWHEEL",
-    image: productImg7,
+    image: productImg9,
     desc: "A flywheel, a mechanical component, stores energy through its spinning motion. When torque is applied, it accelerates, accumulating more rotational energy and becoming a kinetic energy reservoir.",
   },
   {
     title: "LOAD CHECKER",
-    image: productImg7,
+    image: productImg10,
     desc: "Load Checker automatically cuts off power if excessive current is detected and seamlessly restores power when the load is disconnected for a brief period, with no manual intervention needed. Its soft-blocking technology ensures longevity.",
   },
   {
     title: "SOLAR DESIGN & SERVICES",
-    image: productImg7,
+    image: productImg11,
     desc: "Aartech Solonics passionately harnesses solar power for sustainable energy, committing to engineering excellence. They offer tailored solar solutions, from design to installation and maintenance, catering to residential and industrial clients.",
   },
   {
     title: "SOLID WASTE TREATMENT",
-    image: productImg7,
+    image: productImg12,
     desc: "WTC rapidly converts organic waste to odourless compost using natural processes and microorganisms for large-scale decomposition. The incinerator meets emission standards, reducing waste to ash at 800-1,200°C while producing energy, leaving no residues.",
   },
 ];
@@ -134,21 +134,21 @@ const product = [
 const solution = [
   {
     title: "POWER BACKUP UNIT",
-    image: sol1,
+    image: blank,
     desc: "A Power Backup Unit is a device that provides temporary electrical power during outages or fluctuations, ensuring uninterrupted operation of critical equipment and appliances in homes, offices, or other settings.",
-    path: ""
+    path: "/solutions/power-backup-unit"
   },
   {
     title: "SOLAR DESIGN & ENGINEERING",
     image: sol2,
     desc: "Aartech Solonics delivers innovative solar design, engineering, and consultancy services dedicated to crafting tailored, sustainable solutions for industries and individuals, fostering a greener future with expertise and commitment.",
-    path: ""
+    path: "/solutions/solar-design-engineering"
   },
   {
     title: "UNINTERRUPTED POWER SUPPLY",
-    image: sol3,
+    image: blank,
     desc: "UPS, or Uninterruptible Power Supply, is essential for safeguarding sensitive electrical loads, offering superior power quality, reduced Total Cost of Ownership, and full facility protection for critical installations.",
-    path: ""
+    path: "/solutions/uninterrupted-power-supply"
   },
   {
     title: "SOLID WASTE TREATMENT",
@@ -166,7 +166,7 @@ const solution = [
     title: "CUSTOMIZED PLASTIC CASES",
     image: new2,
     desc: "Plastic cases safeguard against dust, impact, and more. Aartech offers a range of innovative & customized solutions to cater to various needs. Ideal for transportation and storage, these cases ensure items remain secure and intact during transit.",
-    path: "/solutions/customised-professional-case"
+    path: "/solutions/customised-plastic-case"
   },
   {
     title: "RELIABLE ENGINE STARTING",
@@ -188,15 +188,15 @@ const solution = [
   },
   {
     title: "ENERGY STORAGE",
-    image: sol9,
+    image: blank,
     desc: "Energy storage tech harnesses solar, wind, and hydropower via micro sources like PV panels and turbines. It fuels portable devices and aids various sectors, such as Marine, Defense, Space, Telecom, and Real Estate, boosting efficiency.",
-    path: ""
+    path: "/solutions/energy-storage"
   },
   {
     title: "LOAD LIMITING",
-    image: sol9,
+    image: sol10,
     desc: "Load limiting, a crucial strategy for equitable energy distribution, addresses supply challenges by controlling electricity usage. It promotes fairness and reduces losses for utilities in high-demand regions.",
-    path: ""
+    path: "/solutions/load-limiting"
   },
 ];
 

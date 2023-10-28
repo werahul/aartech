@@ -20,23 +20,29 @@ const OptionsGrid = () => {
   const products = [
     "KRANKING ULTRACAPACITORS",
     "BESTCASE",
-    "INCINERATOR",
-    "WTC",
+    "FUEL CELL",
+    "SOLID WASTE TREATMENT",
     "CLIP FAULT CURRENT LIMITORS",
     "CONTROL RELAY PANELS",
-    "BTS 2000"
+    "BTS 2000",
+    "AC & DC UPS",
+    "FLYWHEEL",
+    "SOLAR DESIGN & SERVICES",
+    "LOAD LIMITING"
   ];
 
   const solutions = [
     "LOAD LIMITING",
     "RELIABLE ENGINE STARTING",
-    "PULSE POWER",
-    "ENERGY HARVESTING",
-    "CUSTOMISED CASES",
+    "POWER BACKUP UNIT",
+    "ENERGY STORAGE",
+    "CUSTOMIZED PLASTIC CASE",
     "SOLID WASTE TREATMENT",
     "CONTROL & AUTOMATION",
     "PROCESS CONTINUITY",
-    "FAULT CURRENT LIMITING"
+    "FAULT CURRENT LIMITING",
+    "UNINTERRUPTED POWER SUPPLY",
+    "SOLAR DESIGN, ENGINEERING"
   ];
 
 
@@ -99,31 +105,49 @@ const OptionsGrid = () => {
     if (selectedProduct === products[6] && index === 15) {
       return "";
     }
-    if (selectedSolution === solutions[0] && index === 16) {
+    if (selectedProduct === products[7] && index === 16) {
       return "";
     }
-    if (selectedSolution === solutions[1] && index === 17) {
+    if (selectedProduct === products[8] && index === 17) {
       return "";
     }
-    if (selectedSolution === solutions[2] && index === 18) {
+    if (selectedProduct === products[9] && index === 18) {
       return "";
     }
-    if (selectedSolution === solutions[3] && index === 19) {
+    if (selectedProduct === products[10] && index === 19) {
       return "";
     }
-    if (selectedSolution === solutions[4] && index === 20) {
+    if (selectedSolution === solutions[0] && index === 20) {
       return "";
     }
-    if (selectedSolution === solutions[5] && index === 21) {
+    if (selectedSolution === solutions[1] && index === 21) {
       return "";
     }
-    if (selectedSolution === solutions[6] && index === 22) {
+    if (selectedSolution === solutions[2] && index === 22) {
       return "";
     }
-    if (selectedSolution === solutions[7] && index === 23) {
+    if (selectedSolution === solutions[3] && index === 23) {
       return "";
     }
-    if (selectedSolution === solutions[8] && index === 24) {
+    if (selectedSolution === solutions[4] && index === 24) {
+      return "";
+    }
+    if (selectedSolution === solutions[5] && index === 25) {
+      return "";
+    }
+    if (selectedSolution === solutions[6] && index === 26) {
+      return "";
+    }
+    if (selectedSolution === solutions[7] && index === 27) {
+      return "";
+    }
+    if (selectedSolution === solutions[8] && index === 28) {
+      return "";
+    }
+    if (selectedSolution === solutions[9] && index === 29) {
+      return "";
+    }
+    if (selectedSolution === solutions[10] && index === 30) {
       return "";
     }
     if (selectedProduct && index >= 9 && index <= 10) {
@@ -221,7 +245,7 @@ const OptionsGrid = () => {
               <Link to="/industries/defence-and-exploration">
                 <li
                   className='border border-black py-3 lg:py-[6px] my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow'
-                  onClick={() => handleItemClick('Defense & Exploration')}
+                  onClick={() => handleItemClick('D')}
                 >
                   Defense & Exploration
                 </li></Link>
@@ -230,34 +254,65 @@ const OptionsGrid = () => {
           <div className="">
             <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold'>Related Products</p>
             <ul>
-              <Link to="/products/kranking-ultracapacitors">
-                <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base  font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' >Kranking Ultracapacitors</li></Link>
-              <Link to="/products/best-case">
-                <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base  font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' >Bestcase</li></Link>
               <Link to="">
-                <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base  font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Incinerator</li></Link>
+                <li className='our-tailored-class' onClick={() => handleItemClick('D')}>Control Relay Panels  </li>
+              </Link>
               <Link to="">
-                <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base  font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>WTC</li></Link>
+                <li className='our-tailored-class' onClick={() => handleItemClick('D')}>Kranking Ultracapacitors   </li>
+              </Link>
+              <Link to="">
+                <li className='our-tailored-class' onClick={() => handleItemClick('D')}>Fuel Cell </li>
+              </Link>
+              <Link to="">
+                <li className='our-tailored-class' onClick={() => handleItemClick('D')}>Best Case   </li>
+              </Link>
+              <Link to="">
+                <li className='our-tailored-class' onClick={() => handleItemClick('D')}>Solid Waste Treatment     </li>
+              </Link>
+              <Link to="">
+                <li className='our-tailored-class' onClick={() => handleItemClick('D')}>Solar Design & Services   </li>
+              </Link>
+              <Link to="">
+                <li className='our-tailored-class' onClick={() => handleItemClick('D')}>FLYWHEEL   </li>
+              </Link>
+              <Link to="">
+                <li className='our-tailored-class' onClick={() => handleItemClick('D')}>AC & DC UPS   </li>
+              </Link>
+              <Link to="">
+                <li className='our-tailored-class' onClick={() => handleItemClick('D')}>Load Checker    </li>
+              </Link>
 
             </ul>
           </div>
           <div className="">
             <p className='lg:hidden block text-box-red  uppercase font-Barlow font-bold'>Related Solutions</p>
             <ul>
-              <Link to="">
-                <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Load Limiting</li></Link>
               <Link to="/solutions/reliable-engine-starting">
-                <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' >Reliable Engine Starting</li></Link>
-              <Link to="">
-                <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Pulse Power</li></Link>
-              <Link to="">
-                <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Energy Harvesting</li></Link>
-              <Link to="/solutions/customised-professional-case">
-                <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' >Customised Cases</li></Link>
+                <li className='our-tailored-class'>Reliable Engine Starting</li>
+              </Link>
+              <Link to="/solutions/uninterrupted-power-supply">
+                <li className='our-tailored-class'>Uninterrupted Power Supply</li>
+              </Link>
+              <Link to="/solutions/power-backup-unit">
+                <li className='our-tailored-class'>Power Backup Unit</li>
+              </Link>
+              <Link to="/solutions/customised-plastic-case">
+                <li className='our-tailored-class'>Customized Plastic Case</li>
+              </Link>
               <Link to="/solutions/solid-waste-treatment">
-                <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' >Solid Waste Treatment</li></Link>
-
+                <li className='our-tailored-class'>Solid Waste Treatment</li>
+              </Link>
+              <Link to="/solutions/solar-design-engineering">
+                <li className='our-tailored-class'>Solar Design Engineering</li>
+              </Link>
+              <Link to="/solutions/energy-storage">
+                <li className='our-tailored-class'>Energy Storage</li>
+              </Link>
+              <Link to="/solutions/load-limiting">
+                <li className='our-tailored-class'>Load Limiting</li>
+              </Link>
             </ul>
+
           </div>
         </div>
         {/* Modal */}
@@ -277,38 +332,82 @@ const OptionsGrid = () => {
         )}
       </div>
 
+      {/*------------------------------------------------------------------------------------------------------------------------*/}
+
+
       <div className={`section2 grid grid-cols-1 lg:grid-cols-3 lg:gap-x-[29px]   ${getSectionClass(1)}`}>
         <div className="">
           <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Industry</p>
           <ul>
-            <Link to="/industries/renewable-energy"></Link>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Renewable Energy</li>
+            <Link to="/industries/renewable-energy            ">
+              <li className='our-tailored-class' onClick={() => handleItemClick('D')}>Renewable Energy</li>
+            </Link>
           </ul>
         </div>
 
         <div className="">
           <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold'>Related Products</p>
           <ul>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Kranking Ultracapacitors</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Bestcase</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Incinerator</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>WTC</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>CLIP Fault Current Limitors</li>
+            <Link to="" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Control Relay Panels</li>
+            </Link>
+            <Link to="" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>BTS 2000</li>
+            </Link>
+            <Link to="" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Kranking Ultracapacitors</li>
+            </Link>
+            <Link to="" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Best Case</li>
+            </Link>
+            <Link to="" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Solid waste treatment</li>
+            </Link>
+            <Link to="" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Solar Design & Services</li>
+            </Link>
+            <Link to="" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>FLYWHEEL    </li>
+            </Link>
+            <Link to="" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Load Checker </li>
+            </Link>
           </ul>
+
         </div>
         <div className="">
           <p className='lg:hidden block text-box-red  uppercase font-Barlow font-bold'>Related Solutions</p>
           <ul>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Control & Automation</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Process Continuity</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Load Limiting</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Reliable Engine Starting</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Fault Current Limiting</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Pulse Power</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Energy Harvesting</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Customised Plastic Cases</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Solid Waste Treatment</li>
+            <Link to="/solutions/control-and-automation" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Control & Automation</li>
+            </Link>
+            <Link to="/solutions/process-continuity" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Process Continuity</li>
+            </Link>
+            <Link to="/solutions/load-limiting" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Load Limiting</li>
+            </Link>
+            <Link to="/solutions/reliable-engine-starting" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Reliable Engine Starting</li>
+            </Link>
+            <Link to="/solutions/fault-current-limiting" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Fault Current Limiting</li>
+            </Link>
+            <Link to="/solutions/energy-storage" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Energy Storage</li>
+            </Link>
+            <Link to="/solutions/customised-plastic-case" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Customized Plastic Case</li>
+            </Link>
+            <Link to="/solutions/solid-waste-treatment" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Solid Waste Treatment</li>
+            </Link>
+            <Link to="/solutions/solar-design-engineering" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Solar Design, Engineering</li>
+            </Link>
           </ul>
+
+
         </div>
       </div>
 
@@ -317,34 +416,69 @@ const OptionsGrid = () => {
         <div className="">
           <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Industry</p>
           <ul>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Non-Renewable Energy</li>
+            <Link to="/industries/non-renewable-energy">
+              <li className='our-tailored-class' onClick={() => handleItemClick('D')}>Non-Renewable Energy</li>
+            </Link>
           </ul>
         </div>
 
         <div className="">
           <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold'>Related Products</p>
           <ul>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Control Relay Panels</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>BTS 2000</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Kranking Ultracapacitors</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>CLIP Fault Current Limitors</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Best Case</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Incinerator</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>WTC</li>
+            <Link to="">
+              <li className='our-tailored-class' onClick={() => handleItemClick('D')}>Control Relay Panels</li>
+            </Link>
+            <Link to="">
+              <li className='our-tailored-class' onClick={() => handleItemClick('D')}>BTS 2000</li>
+            </Link>
+            <Link to="">
+              <li className='our-tailored-class' onClick={() => handleItemClick('D')}>Kranking Ultracapacitors</li>
+            </Link>
+            <Link to="">
+              <li className='our-tailored-class' onClick={() => handleItemClick('D')}>CLIP Fault Current Limitors</li>
+            </Link>
+            <Link to="">
+              <li className='our-tailored-class' onClick={() => handleItemClick('D')}>Best Case</li>
+            </Link>
+            <Link to="">
+              <li className='our-tailored-class' onClick={() => handleItemClick('D')}> Solid Waste Treatment Products</li>
+            </Link>
+            <Link to="">
+              <li className='our-tailored-class' onClick={() => handleItemClick('D')}>Load Checker</li>
+            </Link>
           </ul>
+
         </div>
         <div className="">
           <p className='lg:hidden block text-box-red  uppercase font-Barlow font-bold'>Related Solutions</p>
           <ul>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Control & Automation</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Process Continuity</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Load Limiting</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Reliable Engine Starting</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Fault Current Limiting</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Pulse Power</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Customised Cases</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Solid Waste Treatment</li>
+            <Link to="/solutions/control-and-automation" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Control & Automation</li>
+            </Link>
+            <Link to="/solutions/process-continuity" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Process Continuity</li>
+            </Link>
+            <Link to="/solutions/load-limiting" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Load Limiting</li>
+            </Link>
+            <Link to="/solutions/reliable-engine-starting" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Reliable Engine Starting</li>
+            </Link>
+            <Link to="/solutions/fault-current-limiting" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Fault Current Limiting</li>
+            </Link>
+            <Link to="/solutions/customised-plastic-case" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Customised Plastic Case</li>
+            </Link>
+            <Link to="/solutions/solid-waste-treatment" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Solid Waste Treatment</li>
+            </Link>
+            <Link to="/solutions/energy-storage" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Energy Storage</li>
+            </Link>
           </ul>
+
+
         </div>
       </div>
 
@@ -353,23 +487,60 @@ const OptionsGrid = () => {
         <div className="">
           <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Industry</p>
           <ul>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Power Transmission & Distribution</li>
+            <Link to="/industries/power-transmission-and-distribution
+            " onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Power Transmission & Distribution</li>
+            </Link>
           </ul>
         </div>
 
         <div className="">
           <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold'>Related Products</p>
           <ul>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Control Relay Panels</li>
+            <Link to="" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Control Relay Panels</li>
+            </Link>
+            <Link to="" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Kranking Ultracapacitors</li>
+            </Link>
+            <Link to="" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Fuel Cell</li>
+            </Link>
+            <Link to="" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Best Case</li>
+            </Link>
+            <Link to="" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>FLYWHEEL</li>
+            </Link>
+            <Link to="" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Load Checkers</li>
+            </Link>
           </ul>
         </div>
         <div className="">
           <p className='lg:hidden block text-box-red  uppercase font-Barlow font-bold'>Related Solutions</p>
           <ul>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Control & Automation</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Customised Cases</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Solid Waste Treatment</li>
+            <Link to="/solutions/control-and-automation" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Control & Automation</li>
+            </Link>
+            <Link to="/solutions/customised-plastic-case" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Customized Plastic Case</li>
+            </Link>
+            <Link to="/solutions/reliable-engine-starting" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Reliable Engine Starting</li>
+            </Link>
+            <Link to="/solutions/power-backup-unit" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Power Backup Unit</li>
+            </Link>
+            <Link to="/solutions/energy-storage" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Energy Storage</li>
+            </Link>
+            <Link to="/solutions/load-limiting" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Load Limiting</li>
+            </Link>
           </ul>
+
+
         </div>
       </div>
 
@@ -377,35 +548,81 @@ const OptionsGrid = () => {
         <div className="">
           <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Industry</p>
           <ul>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Heavy Engineering Industries</li>
+            <Link to="/industries/heavy-engineering-industries " onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Heavy Engineering Industries</li>
+            </Link>
           </ul>
         </div>
 
         <div className="">
           <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold'>Related Products</p>
           <ul>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Control Relay Panels</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>BTS 2000</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Kranking Ultracapacitors</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>CLIP Fault Current Limitors</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Best Case</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Incinerator</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>WTC</li>
+            <Link to="" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Control Relay Panels</li>
+            </Link>
+            <Link to="" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>BTS 2000</li>
+            </Link>
+            <Link to="" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Kranking Ultracapacitors</li>
+            </Link>
+            <Link to="" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>CLIP Fault Current Limitors</li>
+            </Link>
+            <Link to="" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Best Case</li>
+            </Link>
+            <Link to="" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Solar Design & Services</li>
+            </Link>
+            <Link to="" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>AC & DC UPS</li>
+            </Link>
+            <Link to="" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>FLYWHEEL</li>
+            </Link>
+            <Link to="" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Load Checker</li>
+            </Link>
           </ul>
+
         </div>
         <div className="">
           <p className='lg:hidden block text-box-red  uppercase font-Barlow font-bold'>Related Solutions</p>
           <ul>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Control & Automation</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Process Continuity</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Load Limiting</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Reliable Engine Starting</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Fault Current Limiting</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Pulse Power</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Energy Harvesting</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Customised Cases</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Solid Waste Treatment</li>
+            <Link to="/solutions/control-and-automation" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Control & Automation</li>
+            </Link>
+            <Link to="/solutions/process-continuity" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Process Continuity</li>
+            </Link>
+            <Link to="/solutions/load-limiting" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Load Limiting</li>
+            </Link>
+            <Link to="/solutions/reliable-engine-starting" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Reliable Engine Starting</li>
+            </Link>
+            <Link to="/solutions/fault-current-limiting" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Fault Current Limiting</li>
+            </Link>
+            <Link to="/solutions/customised-plastic-case" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Customized Plastic Case</li>
+            </Link>
+            <Link to="/solutions/solid-waste-treatment" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Solid Waste Treatment</li>
+            </Link>
+            <Link to="/solutions/solar-design-engineering" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Solar Design, Engineering</li>
+            </Link>
+            <Link to="/solutions/uninterrupted-power-supply" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Uninterrupted Power Supply</li>
+            </Link>
+            <Link to="/solutions/energy-storage" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Energy Storage</li>
+            </Link>
           </ul>
+
+
         </div>
       </div>
 
@@ -413,53 +630,158 @@ const OptionsGrid = () => {
         <div className="">
           <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Industry</p>
           <ul>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Healthcare</li>
+            <Link to="/industries/health-care    " onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Healthcare</li>
+            </Link>
           </ul>
         </div>
 
         <div className="">
           <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold'>Related Products</p>
           <ul>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Control Relay Panels</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>BTS 2000</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Kranking Ultracapacitors</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Incinerator</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>WTC</li>
+            <Link to="" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Control Relay Panels</li>
+            </Link>
+            <Link to="" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>BTS 2000</li>
+            </Link>
+            <Link to="" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Kranking Ultracapacitors</li>
+            </Link>
+            <Link to="" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Fuel Cell</li>
+            </Link>
+            <Link to="" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Best Case</li>
+            </Link>
+            <Link to="" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Solid Waste Treatment</li>
+            </Link>
+            <Link to="" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'> Solar Design & Services</li>
+            </Link>
+            <Link to="" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>AC & DC UPS</li>
+            </Link>
+            <Link to="" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Load Checker</li>
+            </Link>
+            <Link to="" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>FLYWHEEL</li>
+            </Link>
           </ul>
+
         </div>
         <div className="">
           <p className='lg:hidden block text-box-red  uppercase font-Barlow font-bold'>Related Solutions</p>
           <ul>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Control & Automation</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Process Continuity</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Load Limiting</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Reliable Engine Starting</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Solid Waste Treatment</li>
+            <Link to="/solutions/control-and-automation" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Control & Automation</li>
+            </Link>
+            <Link to="/solutions/process-continuity" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Process Continuity</li>
+            </Link>
+            <Link to="/solutions/power-backup-unit" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Power Backup Unit</li>
+            </Link>
+            <Link to="/solutions/customised-plastic-case" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Customized Plastic Case</li>
+            </Link>
+            <Link to="/solutions/load-limiting" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Load Limiting</li>
+            </Link>
+            <Link to="/solutions/reliable-engine-starting" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Reliable Engine Starting</li>
+            </Link>
+            <Link to="/solutions/solid-waste-treatment" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Solid Waste Treatment</li>
+            </Link>
+            <Link to="/solutions/solar-design-engineering" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Solar Design, Engineering</li>
+            </Link>
+            <Link to="/solutions/uninterrupted-power-supply" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Uninterrupted Power Supply</li>
+            </Link>
+            <Link to="/solutions/energy-storage" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Energy Storage</li>
+            </Link>
           </ul>
+
+
         </div>
-      </div>
+      </div >
 
       <div className={`section7 grid grid-cols-1 lg:grid-cols-3 lg:gap-x-[29px]   ${getSectionClass(6)}`}>
         <div className="">
           <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Industry</p>
           <ul>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>IT & Telecom</li>
+            <Link to="/industries/it-and-Telecom  " onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>IT & Telecom</li>
+            </Link>
           </ul>
         </div>
 
         <div className="">
           <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold'>Related Products</p>
           <ul>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Control Relay Panels</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>BTS 2000</li>
+            <Link to="" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Kranking Ultracapacitors</li>
+            </Link>
+            <Link to="" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Control Relay Panels</li>
+            </Link>
+            <Link to="" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>BTS 2000</li>
+            </Link>
+            <Link to="" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Fuel Cell</li>
+            </Link>
+            <Link to="" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Best Case</li>
+            </Link>
+            <Link to="" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Solar Design & Services</li>
+            </Link>
+            <Link to="" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>AC & DC UPS</li>
+            </Link>
+            <Link to="" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>FLYWHEEL</li>
+            </Link>
+            <Link to="" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Load Checker</li>
+            </Link>
           </ul>
         </div>
         <div className="">
           <p className='lg:hidden block text-box-red  uppercase font-Barlow font-bold'>Related Solutions</p>
           <ul>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Control & Automation</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Process Continuity</li>
+            <Link to="/solutions/control-and-automation" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Control & Automation</li>
+            </Link>
+            <Link to="/solutions/reliable-engine-starting" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Reliable Engine Starting</li>
+            </Link>
+            <Link to="/solutions/power-backup-unit" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Power Backup Unit</li>
+            </Link>
+            <Link to="/solutions/customised-plastic-case" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Customized Plastic Case</li>
+            </Link>
+            <Link to="/solutions/solar-design-engineering" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Solar Design, Engineering</li>
+            </Link>
+            <Link to="/solutions/uninterrupted-power-supply" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Uninterrupted Power Supply</li>
+            </Link>
+            <Link to="/solutions/energy-storage" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Energy Storage</li>
+            </Link>
+            <Link to="/solutions/load-limiting" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Load Limiting</li>
+            </Link>
           </ul>
+
         </div>
       </div>
 
@@ -467,22 +789,45 @@ const OptionsGrid = () => {
         <div className="">
           <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Industry</p>
           <ul>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Waste Management</li>
+            <Link to="/industries/waste-management" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Waste Management</li>
+            </Link>
           </ul>
         </div>
 
         <div className="">
           <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold'>Related Products</p>
           <ul>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Incinerator</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>WTC</li>
+            <Link to="" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>AC & DC UPS</li>
+            </Link>
+            <Link to="" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Solid Waste Treatment Products</li>
+            </Link>
+            <Link to="" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Best Case</li>
+            </Link>
           </ul>
+
         </div>
         <div className="">
           <p className='lg:hidden block text-box-red  uppercase font-Barlow font-bold'>Related Solutions</p>
           <ul>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Solid Waste Treatment</li>
+            <Link to="/solutions/solid-waste-treatment" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Solid Waste Treatment</li>
+            </Link>
+            <Link to="/solutions/customised-plastic-case" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Customized Plastic Case</li>
+            </Link>
+            <Link to="/solutions/uninterrupted-power-supply" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Uninterrupted Power Supply</li>
+            </Link>
+            <Link to="/solutions/energy-storage" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Energy Storage</li>
+            </Link>
           </ul>
+
+
         </div>
       </div>
 
@@ -491,28 +836,72 @@ const OptionsGrid = () => {
         <div className="">
           <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Industry</p>
           <ul>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Transportation</li>
+            <Link to="/industries/transportation" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Transportation</li>
+            </Link>
           </ul>
+
         </div>
 
         <div className="">
           <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold'>Related Products</p>
           <ul>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Control Relay Panels</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Bestcase</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Kranking Ultracapacitors</li>
+            <Link to="" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Control Relay Panels</li>
+            </Link>
+            <Link to="" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Bestcase</li>
+            </Link>
+            <Link to="" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Kranking Ultracapacitors</li>
+            </Link>
+            <Link to="" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Fuel Cell</li>
+            </Link>
+            <Link to="" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Solid Waste Treatment</li>
+            </Link>
+            <Link to="" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>AC & DC UPS</li>
+            </Link>
+            <Link to="" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>FLYWHEEL</li>
+            </Link>
           </ul>
         </div>
         <div className="">
           <p className='lg:hidden block text-box-red  uppercase font-Barlow font-bold'>Related Solutions</p>
           <ul>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Control & Automation</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Load Limiting</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Reliable Engine Starting</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Customised Cases</li>
+            <Link to="/solutions/control-and-automation" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Control & Automation</li>
+            </Link>
+            <Link to="/solutions/load-limiting" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Load Limiting</li>
+            </Link>
+            <Link to="/solutions/power-backup-unit" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Power Backup Unit</li>
+            </Link>
+            <Link to="/solutions/reliable-engine-starting" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Reliable Engine Starting</li>
+            </Link>
+            <Link to="/solutions/customised-plastic-case" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Customized Plastic Case</li>
+            </Link>
+            <Link to="/solutions/solid-waste-treatment" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Solid Waste Treatment</li>
+            </Link>
+            <Link to="/solutions/uninterrupted-power-supply" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Uninterrupted Power Supply</li>
+            </Link>
+            <Link to="/solutions/energy-storage" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Energy Storage</li>
+            </Link>
           </ul>
+
+
+
         </div>
-      </div>
+      </div >
 
 
 
@@ -529,56 +918,107 @@ const OptionsGrid = () => {
         <div className="">
           <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Related Industries</p>
           <ul>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Defense & Exploration</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Renewable Energy</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Non-Renewable Energy</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Heavy Engineering Industries</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Healthcare</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Transportation</li>
+            <Link to="/industries/defence-and-exploration" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Defense & Exploration</li>
+            </Link>
+            <Link to="/industries/renewable-energy" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Renewable Energy</li>
+            </Link>
+            <Link to="/industries/non-renewable-energy" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Non-Renewable Energy</li>
+            </Link>
+            <Link to="/industries/power-transmission-and-distribution" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Power Transmission and Distribution</li>
+            </Link>
+            <Link to="/industries/heavy-engineering-industries" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Heavy Engineering Industries</li>
+            </Link>
+            <Link to="/industries/health-care" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Healthcare</li>
+            </Link>
+            <Link to="/industries/it-and-telecom" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>IT and Telecom</li>
+            </Link>
+            <Link to="/industries/transportation" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Transportation</li>
+            </Link>
           </ul>
+
+
         </div>
         <div className="">
           <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Product</p>
           <ul>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Kranking Ultracapacitors</li>
+            <Link to="" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Kranking Ultracapacitors</li>
+            </Link>
           </ul>
+
         </div>
         <div className="">
           <p className='lg:hidden block text-box-red  uppercase font-Barlow font-bold'>Related Solutions</p>
           <ul>
-
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Reliable Engine Starting</li>
-
+            <Link to="/solutions/reliable-engine-starting" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Reliable Engine Starting</li>
+            </Link>
           </ul>
+
+
         </div>
-      </div>
+      </div >
 
       <div className={`section11 grid grid-cols-1 lg:grid-cols-3 lg:gap-x-[29px]   ${getSectionClass(10)}`}>
         <div className="">
           <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Related Industries</p>
           <ul>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Defense & Exploration</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Renewable Energy</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Transportation</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>
-              Non-renewable Energy
-            </li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>
-              Heavy Engineering Industries
-            </li>
+            <Link to="/industries/defence-and-exploration" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Defense & Exploration</li>
+            </Link>
+            <Link to="/industries/renewable-energy" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Renewable Energy</li>
+            </Link>
+            <Link to="/industries/non-renewable-energy" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Non-Renewable Energy</li>
+            </Link>
+            <Link to="/industries/power-transmission-and-distribution" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Power Transmission and Distribution</li>
+            </Link>
+            <Link to="/industries/heavy-engineering-industries" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Heavy Engineering Industries</li>
+            </Link>
+            <Link to="/industries/health-care" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Healthcare</li>
+            </Link>
+            <Link to="/industries/it-and-telecom" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>IT and Telecom</li>
+            </Link>
+            <Link to="/industries/transportation" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Transportation</li>
+            </Link>
+            <Link to="/industries/waste-management" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Waste Management</li>
+            </Link>
           </ul>
+
+
         </div>
         <div className="">
           <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Product</p>
           <ul>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Bestcase</li>
+            <Link to="" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Bestcase</li>
+            </Link>
           </ul>
         </div>
         <div className="">
           <p className='lg:hidden block text-box-red  uppercase font-Barlow font-bold'>Related Solutions</p>
           <ul>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Customised Cases</li>
+            <Link to="/solutions/customised-plastic-case" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Customized Plastic Case</li>
+            </Link>
           </ul>
+
+
         </div>
       </div>
 
@@ -586,25 +1026,38 @@ const OptionsGrid = () => {
         <div className="">
           <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Related Industries</p>
           <ul>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Defense & Exploration</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Renewable Energy</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Non-Renewable Energy</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Heavy Engineering Industries</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Healthcare</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Waste Management</li>
-
+            <Link to="/industries/defence-and-exploration" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Defense & Exploration</li>
+            </Link>
+            <Link to="/industries/non-renewable-energy" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Non-Renewable Energy</li>
+            </Link>
+            <Link to="/industries/power-transmission-and-distribution" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Power Transmission and Distribution</li>
+            </Link>
+            <Link to="/industries/health-care" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Healthcare</li>
+            </Link>
+            <Link to="/industries/it-and-telecom" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>IT and Telecom</li>
+            </Link>
+            <Link to="/industries/transportation" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Transportation</li>
+            </Link>
           </ul>
+
+
         </div>
         <div className="">
           <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Product</p>
           <ul>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Incinerator</li>
+            <li className='our-tailored-class' onClick={() => handleItemClick('D')}>Fuel Cell</li>
           </ul>
         </div>
         <div className="">
           <p className='lg:hidden block text-box-red  uppercase font-Barlow font-bold'>Related Solutions</p>
           <ul>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Pulse Power</li>
+            <li className='our-tailored-class' onClick={() => handleItemClick('D')}>Customized Plastic Case</li>
 
           </ul>
         </div>
@@ -614,27 +1067,45 @@ const OptionsGrid = () => {
         <div className="">
           <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Related Industries</p>
           <ul>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Defense & Exploration</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Renewable Energy</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Non-Renewable Energy</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Heavy Engineering Industries</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Healthcare</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Waste Management</li>
-
+            <Link to="/industries/defence-and-exploration" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Defense & Exploration</li>
+            </Link>
+            <Link to="/industries/renewable-energy" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Renewable Energy</li>
+            </Link>
+            <Link to="/industries/non-renewable-energy" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Non-Renewable Energy</li>
+            </Link>
+            <Link to="/industries/health-care" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Healthcare</li>
+            </Link>
+            <Link to="/industries/transportation" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Transportation</li>
+            </Link>
+            <Link to="/industries/waste-management" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Waste Management</li>
+            </Link>
           </ul>
+
+
         </div>
         <div className="">
           <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Product</p>
           <ul>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>WTC</li>
+            <Link to="" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Solid Waste Treatment </li>
+            </Link>
           </ul>
+
         </div>
         <div className="">
           <p className='lg:hidden block text-box-red  uppercase font-Barlow font-bold'>Related Solutions</p>
           <ul>
-
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Solid Waste Treatment</li>
+            <Link to="/solutions/solid-waste-treatment" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Solid Waste Treatment</li>
+            </Link>
           </ul>
+
         </div>
       </div>
 
@@ -642,21 +1113,33 @@ const OptionsGrid = () => {
         <div className="">
           <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Related Industries</p>
           <ul>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Renewable Energy</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Non-Renewable Energy</li>
+            <Link to="/industries/power-transmission-and-distribution" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Power Transmission and Distribution</li>
+            </Link>
+            <Link to="/industries/heavy-engineering-industries" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Heavy Engineering Industries</li>
+            </Link>
           </ul>
+
+
         </div>
         <div className="">
           <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Product</p>
           <ul>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>CLIP Fault Current Limitors</li>
+            <Link to="" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>CLIP Fault Current Limitors</li>
+            </Link>
           </ul>
+
         </div>
         <div className="">
           <p className='lg:hidden block text-box-red  uppercase font-Barlow font-bold'>Related Solutions</p>
           <ul>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Fault Current Limiting</li>
+            <Link to="/solutions/fault-current-limiting" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Fault Current Limiting</li>
+            </Link>
           </ul>
+
         </div>
       </div>
 
@@ -664,290 +1147,851 @@ const OptionsGrid = () => {
         <div className="">
           <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Related Industries</p>
           <ul>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Non-Renewable Energy</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Power Transmission & Distribution</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Heavy Engineering Industries</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Healthcare</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>IT & Telecom</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Waste Management</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Transportation</li>
+            <Link to="/industries/defence-and-exploration" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Defense & Exploration</li>
+            </Link>
+            <Link to="/industries/non-renewable-energy" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Non-Renewable Energy</li>
+            </Link>
+            <Link to="/industries/power-transmission-and-distribution" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Power Transmission and Distribution</li>
+            </Link>
+            <Link to="/industries/heavy-engineering-industries" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Heavy Engineering Industries</li>
+            </Link>
+            <Link to="/industries/health-care" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Healthcare</li>
+            </Link>
+            <Link to="/industries/it-and-telecom" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>IT and Telecom</li>
+            </Link>
+            <Link to="/industries/transportation" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Transportation</li>
+            </Link>
+            <Link to="/industries/waste-management" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Waste Management</li>
+            </Link>
           </ul>
+
+
         </div>
         <div className="">
           <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Product</p>
           <ul>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Control Relay Panels</li>
+            <Link to="" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Control Relay Panels</li>
+            </Link>
           </ul>
+
         </div>
         <div className="">
           <p className='lg:hidden block text-box-red  uppercase font-Barlow font-bold'>Related Solutions</p>
           <ul>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Control & Automation</li>
+            <Link to="/solutions/control-and-automation" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Control & Automation</li>
+            </Link>
           </ul>
+
+
         </div>
-      </div>
+      </div >
 
       <div className={`section16 grid grid-cols-1 lg:grid-cols-3 lg:gap-x-[29px]   ${getSectionClass(15)}`}>
         <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Related Industries</p>
         <div className="">
           <ul>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Non-Renewable Energy</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Heavy Engineering Industries</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Healthcare</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>IT & Telecom</li>
+            <Link to="/industries/renewable-energy" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Renewable Energy</li>
+            </Link>
+            <Link to="/industries/non-renewable-energy" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Non-Renewable Energy</li>
+            </Link>
+            <Link to="/industries/heavy-engineering-industries" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Heavy Engineering Industries</li>
+            </Link>
+            <Link to="/industries/health-care" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Healthcare</li>
+            </Link>
           </ul>
+
+
         </div>
         <div className="">
           <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Product</p>
           <ul>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>BTS 2000</li>
+            <Link to="" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>BTS 2000</li>
+            </Link>
           </ul>
+
         </div>
         <div className="">
           <p className='lg:hidden block text-box-red  uppercase font-Barlow font-bold'>Related Solutions</p>
           <ul>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Process Continuity</li>
+            <Link to="/solutions/process-continuity" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Process Continuity</li>
+            </Link>
           </ul>
+
+
         </div>
-      </div>
-
-
-
-
-
-
-
-      <div className={`section17 grid grid-cols-1 lg:grid-cols-3 lg:gap-x-[29px]   ${getSectionClass(16)}`}>
+      </div >
+      {/*<div className={`section15 grid grid-cols-1 lg:grid-cols-3 lg:gap-x-[29px]   ${getSectionClass(15)}`}>
         <div className="">
           <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Related Industries</p>
           <ul>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Defense & Exploration</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Renewable Energy</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Non-Renewable Energy</li>
-
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Heavy Engineering Industries</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Healthcare</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Transportation</li>
+            <Link to="" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Defence & Exploration</li>
+            </Link>
+            <Link to="" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Non- Renewable Energy</li>
+            </Link>
+            <Link to="" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Power Transmission and Distribution</li>
+            </Link>
+            <Link to="" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Heavy Engineering Industries</li>
+            </Link>
+            <Link to="" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Healthcare</li>
+            </Link>
+            <Link to="" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>IT and Telecom</li>
+            </Link>
+            <Link to="" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Transportation</li>
+            </Link>
+            <Link to="" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Waste Management</li>
+            </Link>
           </ul>
+
+        </div>
+        <div className="">
+          <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Product</p>
+          <ul>
+            <Link to="" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>BTS 2000</li>
+            </Link>
+          </ul>
+
+        </div>
+        <div className="">
+          <p className='lg:hidden block text-box-red  uppercase font-Barlow font-bold'>Related Solutions</p>
+          <ul>
+            <Link to="" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Control & Automation</li>
+            </Link>
+          </ul>
+
+        </div>
+        </div>*/}
+
+      <div className={`section16 grid grid-cols-1 lg:grid-cols-3 lg:gap-x-[29px]   ${getSectionClass(16)}`}>
+        <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Related Industries</p>
+        <div className="">
+          <ul>
+            <Link to="/industries/defence-and-exploration" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Defense & Exploration</li>
+            </Link>
+            <Link to="/industries/heavy-engineering-industries" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Heavy Engineering Industries</li>
+            </Link>
+            <Link to="/industries/health-care" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Healthcare</li>
+            </Link>
+            <Link to="/industries/it-and-telecom" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>IT and Telecom</li>
+            </Link>
+            <Link to="/industries/transportation" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Transportation</li>
+            </Link>
+            <Link to="/industries/waste-management" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Waste Management</li>
+            </Link>
+          </ul>
+
+
+        </div>
+        <div className="">
+          <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Product</p>
+          <ul>
+            <Link to="" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>AC & DC UPS</li>
+            </Link>
+          </ul>
+
+        </div>
+        <div className="">
+          <p className='lg:hidden block text-box-red  uppercase font-Barlow font-bold'>Related Solutions</p>
+          <ul>
+            <Link to="/solutions/uninterrupted-power-supply" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Uninterrupted Power Supply</li>
+            </Link>
+          </ul>
+
+
+        </div>
+      </div >
+      <div className={`section16 grid grid-cols-1 lg:grid-cols-3 lg:gap-x-[29px]   ${getSectionClass(17)}`}>
+        <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Related Industries</p>
+        <div className="">
+          <ul>
+            <Link to="/industries/defence-and-exploration" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Defense & Exploration</li>
+            </Link>
+            <Link to="/industries/renewable-energy" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Renewable Energy</li>
+            </Link>
+            <Link to="/industries/power-transmission-and-distribution" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Power Transmission and Distribution</li>
+            </Link>
+            <Link to="/industries/heavy-engineering-industries" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Heavy Engineering Industries</li>
+            </Link>
+            <Link to="/industries/health-care" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Healthcare</li>
+            </Link>
+            <Link to="/industries/it-and-telecom" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>IT and Telecom</li>
+            </Link>
+            <Link to="/industries/transportation" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Transportation</li>
+            </Link>
+          </ul>
+
+
+        </div>
+        <div className="">
+          <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Product</p>
+          <ul>
+            <Link to="" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>FLYWHEEL</li>
+            </Link>
+          </ul>
+
+        </div>
+        <div className="">
+          <p className='lg:hidden block text-box-red  uppercase font-Barlow font-bold'>Related Solutions</p>
+          <ul>
+            <Link to="/solutions/energy-storage" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Energy Storage</li>
+            </Link>
+          </ul>
+
+
+        </div>
+      </div >
+      <div className={`section16 grid grid-cols-1 lg:grid-cols-3 lg:gap-x-[29px]   ${getSectionClass(18)}`}>
+        <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Related Industries</p>
+        <div className="">
+          <ul>
+            <Link to="/industries/defence-and-exploration" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Defense & Exploration</li>
+            </Link>
+            <Link to="/industries/renewable-energy" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Renewable Energy</li>
+            </Link>
+            <Link to="/industries/heavy-engineering-industries" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Heavy Engineering Industries</li>
+            </Link>
+            <Link to="/industries/health-care" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Healthcare</li>
+            </Link>
+            <Link to="/industries/it-and-telecom" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>IT and Telecom</li>
+            </Link>
+          </ul>
+
+
+        </div>
+        <div className="">
+          <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Product</p>
+          <ul>
+            <Link to="" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Solar Design & Services</li>
+            </Link>
+          </ul>
+
+        </div>
+        <div className="">
+          <p className='lg:hidden block text-box-red  uppercase font-Barlow font-bold'>Related Solutions</p>
+          <ul>
+            <Link to="/solutions/solar-design-engineering" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Solar Design, Engineering</li>
+            </Link>
+          </ul>
+
+
+        </div>
+      </div >
+      <div className={`section16 grid grid-cols-1 lg:grid-cols-3 lg:gap-x-[29px]   ${getSectionClass(19)}`}>
+        <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Related Industries</p>
+        <div className="">
+          <ul>
+            <Link to="/industries/defence-and-exploration" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Defense & Exploration</li>
+            </Link>
+            <Link to="/industries/renewable-energy" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Renewable Energy</li>
+            </Link>
+            <Link to="/industries/non-renewable-energy" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Non-Renewable Energy</li>
+            </Link>
+            <Link to="/industries/power-transmission-and-distribution" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Power Transmission and Distribution</li>
+            </Link>
+            <Link to="/industries/heavy-engineering-industries" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Heavy Engineering Industries</li>
+            </Link>
+            <Link to="/industries/health-care" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Healthcare</li>
+            </Link>
+            <Link to="/industries/it-and-telecom" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>IT and Telecom</li>
+            </Link>
+          </ul>
+
+
+        </div>
+        <div className="">
+          <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Product</p>
+          <ul>
+            <Link to="" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Load Limiting</li>
+            </Link>
+          </ul>
+
+        </div>
+        <div className="">
+          <p className='lg:hidden block text-box-red  uppercase font-Barlow font-bold'>Related Solutions</p>
+          <ul>
+            <Link to="/solutions/load-limiting" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Load Limiting</li>
+            </Link>
+          </ul>
+
+
+        </div>
+      </div >
+
+
+
+
+      {/*Solution-Start */}
+
+
+      <div className={`section17 grid grid-cols-1 lg:grid-cols-3 lg:gap-x-[29px]   ${getSectionClass(20)}`}>
+        <div className="">
+          <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Related Industries</p>
+          <ul>
+            <Link to="/industries/defence-and-exploration" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Defense & Exploration</li>
+            </Link>
+            <Link to="/industries/renewable-energy" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Renewable Energy</li>
+            </Link>
+            <Link to="/industries/non-renewable-energy" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Non-Renewable Energy</li>
+            </Link>
+            <Link to="/industries/power-transmission-and-distribution" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Power Transmission and Distribution</li>
+            </Link>
+            <Link to="/industries/heavy-engineering-industries" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Heavy Engineering Industries</li>
+            </Link>
+            <Link to="/industries/health-care" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Healthcare</li>
+            </Link>
+            <Link to="/industries/it-and-telecom" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>IT and Telecom</li>
+            </Link>
+          </ul>
+
+
         </div>
         <div className="">
 
           <ul>
-
+            <Link to="" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Load Checker</li>
+            </Link>
           </ul>
         </div>
         <div className="">
           <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Soultion</p>
           <ul>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Load Limiting</li>
+            <Link to="/solutions/load-limiting" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Load Limiting</li>
+            </Link>
           </ul>
+
+
         </div>
       </div>
 
-      <div className={`section18 grid grid-cols-1 lg:grid-cols-3 lg:gap-x-[29px]   ${getSectionClass(17)}`}>
+      <div className={`section18 grid grid-cols-1 lg:grid-cols-3 lg:gap-x-[29px]   ${getSectionClass(21)}`}>
         <div className="">
           <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Related Industries</p>
           <ul>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Defense & Exploration</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Renewable Energy</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Non-Renewable Energy</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Heavy Engineering Industries</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Healthcare</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Transportation</li>
+            <Link to="/industries/defence-and-exploration" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Defense & Exploration</li>
+            </Link>
+            <Link to="/industries/renewable-energy" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Renewable Energy</li>
+            </Link>
+            <Link to="/industries/non-renewable-energy" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Non-Renewable Energy</li>
+            </Link>
+            <Link to="/industries/power-transmission-and-distribution" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Power Transmission and Distribution</li>
+            </Link>
+            <Link to="/industries/heavy-engineering-industries" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Heavy Engineering Industries</li>
+            </Link>
+            <Link to="/industries/health-care" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Healthcare</li>
+            </Link>
+            <Link to="/industries/it-and-telecom" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>IT and Telecom</li>
+            </Link>
+            <Link to="/industries/transportation" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Transportation</li>
+            </Link>
           </ul>
+
+
         </div>
         <div className="">
           <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Related Products</p>
           <ul>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Kranking Ultracapacitors</li>
+            <Link to="" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Kranking Ultracapacitors</li>
+            </Link>
+          </ul>
 
+        </div>
+        <div className="">
+          <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Soultion</p>
+          <ul>
+            <Link to="/solutions/reliable-engine-starting" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Reliable Engine Starting</li>
+            </Link>
+          </ul>
+
+
+        </div>
+      </div >
+
+      <div className={`section19 grid grid-cols-1 lg:grid-cols-3 lg:gap-x-[29px]   ${getSectionClass(22)}`}>
+        <div className="">
+          <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Related Industries</p>
+          <ul>
+            <Link to="/industries/defence-and-exploration" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Defense & Exploration</li>
+            </Link>
+            <Link to="/industries/non-renewable-energy" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Non-Renewable Energy</li>
+            </Link>
+            <Link to="/industries/power-transmission-and-distribution" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Power Transmission and Distribution</li>
+            </Link>
+            <Link to="/industries/health-care" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Healthcare</li>
+            </Link>
+            <Link to="/industries/it-and-telecom" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>IT and Telecom</li>
+            </Link>
+            <Link to="/industries/transportation" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Transportation</li>
+            </Link>
+          </ul>
+
+
+        </div>
+        <div className="">
+          <ul>
+            <Link to="" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Fuel Cell</li>
+            </Link>
           </ul>
         </div>
         <div className="">
           <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Soultion</p>
           <ul>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Reliable Engine Starting</li>
+            <Link to="/solutions/power-backup-unit" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Power Backup Unit</li>
+            </Link>
           </ul>
         </div>
-      </div>
+      </div >
 
-      <div className={`section19 grid grid-cols-1 lg:grid-cols-3 lg:gap-x-[29px]   ${getSectionClass(18)}`}>
+      <div className={`section20 grid grid-cols-1 lg:grid-cols-3 lg:gap-x-[29px]   ${getSectionClass(23)}`}>
         <div className="">
           <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Related Industries</p>
           <ul>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Defense & Exploration</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Renewable Energy</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Non-Renewable Energy</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Heavy Engineering Industries</li>
-
+            <Link to="/industries/defence-and-exploration" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Defense & Exploration</li>
+            </Link>
+            <Link to="/industries/renewable-energy" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Renewable Energy</li>
+            </Link>
+            <Link to="/industries/power-transmission-and-distribution" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Power Transmission and Distribution</li>
+            </Link>
+            <Link to="/industries/heavy-engineering-industries" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Heavy Engineering Industries</li>
+            </Link>
+            <Link to="/industries/health-care" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Healthcare</li>
+            </Link>
+            <Link to="/industries/it-and-telecom" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>IT and Telecom</li>
+            </Link>
+            <Link to="/industries/transportation" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Transportation</li>
+            </Link>
           </ul>
+
+
         </div>
         <div className="">
           <ul>
-
+            <Link to="" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>FLYWHEEL</li>
+            </Link>
           </ul>
         </div>
         <div className="">
           <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Soultion</p>
           <ul>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Pulse Power</li>
+            <Link to="/solutions/energy-storage" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>ENERGY STORAGE</li>
+            </Link>
           </ul>
+
+
         </div>
       </div>
 
-      <div className={`section20 grid grid-cols-1 lg:grid-cols-3 lg:gap-x-[29px]   ${getSectionClass(19)}`}>
+      <div className={`section21 grid grid-cols-1 lg:grid-cols-3 lg:gap-x-[29px]   ${getSectionClass(24)}`}>
         <div className="">
           <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Related Industries</p>
           <ul>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Defense & Exploration</li>
-
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Heavy Engineering Industries</li>
-
+            <Link to="/industries/defence-and-exploration" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Defense & Exploration</li>
+            </Link>
+            <Link to="/industries/renewable-energy" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Renewable Energy</li>
+            </Link>
+            <Link to="/industries/non-renewable-energy" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Non-Renewable Energy</li>
+            </Link>
+            <Link to="/industries/power-transmission-and-distribution" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Power Transmission and Distribution</li>
+            </Link>
+            <Link to="/industries/heavy-engineering-industries" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Heavy Engineering Industries</li>
+            </Link>
+            <Link to="/industries/health-care" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Healthcare</li>
+            </Link>
+            <Link to="/industries/it-and-telecom" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>IT and Telecom</li>
+            </Link>
+            <Link to="/industries/transportation" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Transportation</li>
+            </Link>
+            <Link to="/industries/waste-management" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Waste Management</li>
+            </Link>
           </ul>
-        </div>
-        <div className="">
-          <ul>
 
-          </ul>
-        </div>
-        <div className="">
-          <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Soultion</p>
-          <ul>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Energy Harvesting</li>
-          </ul>
-        </div>
-      </div>
 
-      <div className={`section21 grid grid-cols-1 lg:grid-cols-3 lg:gap-x-[29px]   ${getSectionClass(20)}`}>
-        <div className="">
-          <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Related Industries</p>
-          <ul>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Defense & Exploration</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Renewable Energy</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Non-Renewable Energy</li>
-
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Heavy Engineering Industries</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>WTC</li>
-          </ul>
         </div>
         <div className="">
           <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Related Products</p>
           <ul>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Bestcase</li>
+            <Link to="" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Bestcase</li>
+            </Link>
           </ul>
+
         </div>
         <div className="">
           <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Soultion</p>
           <ul>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Customised Cases</li>
+            <Link to="/solutions/customised-plastic-case" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Customized Plastic Case</li>
+            </Link>
           </ul>
-        </div>
-      </div>
 
-      <div className={`section22 grid grid-cols-1 lg:grid-cols-3 lg:gap-x-[29px]   ${getSectionClass(21)}`}>
+
+        </div>
+      </div >
+
+      <div className={`section22 grid grid-cols-1 lg:grid-cols-3 lg:gap-x-[29px]   ${getSectionClass(25)}`}>
         <div className="">
           <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Related Industries</p>
           <ul>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Defense & Exploration</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Renewable Energy</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Non-Renewable Energy</li>
-
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Heavy Engineering Industries</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Healthcare</li>
-
+            <Link to="/industries/defence-and-exploration" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Defense & Exploration</li>
+            </Link>
+            <Link to="/industries/renewable-energy" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Renewable Energy</li>
+            </Link>
+            <Link to="/industries/non-renewable-energy" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Non-Renewable Energy</li>
+            </Link>
+            <Link to="/industries/health-care" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Healthcare</li>
+            </Link>
+            <Link to="/industries/transportation" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Transportation</li>
+            </Link>
+            <Link to="/industries/waste-management" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Waste Management</li>
+            </Link>
           </ul>
+
         </div>
         <div className="">
           <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Related Products</p>
           <ul>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Incinerator</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>WTC</li>
+            <Link to="" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Solid Waste Treatment</li>
+            </Link>
           </ul>
+
         </div>
         <div className="">
           <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Soultion</p>
           <ul>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Solid Waste Treatment</li>
+            <Link to="/solutions/solid-waste-treatment" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Solid Waste Treatment</li>
+            </Link>
           </ul>
+
+
         </div>
       </div>
 
-      <div className={`section23 grid grid-cols-1 lg:grid-cols-3 lg:gap-x-[29px]   ${getSectionClass(22)}`}>
+      <div className={`section23 grid grid-cols-1 lg:grid-cols-3 lg:gap-x-[29px]   ${getSectionClass(26)}`}>
         <div className="">
           <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Related Industries</p>
           <ul>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Renewable Energy</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Non-Renewable Energy</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Power Transmission & Distribution</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Heavy Engineering Industries</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Healthcare</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>IT & Telecom</li>
-
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Transportation</li>
+            <Link to="/industries/defence-and-exploration" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Defense & Exploration</li>
+            </Link>
+            <Link to="/industries/renewable-energy" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Renewable Energy</li>
+            </Link>
+            <Link to="/industries/non-renewable-energy" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Non-Renewable Energy</li>
+            </Link>
+            <Link to="/industries/power-transmission-and-distribution" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Power Transmission & Distribution</li>
+            </Link>
+            <Link to="/industries/heavy-engineering-industries" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Heavy Engineering Industries</li>
+            </Link>
+            <Link to="/industries/health-care" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Healthcare</li>
+            </Link>
+            <Link to="/industries/it-and-telecom" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>IT & Telecom</li>
+            </Link>
+            <Link to="/industries/transportation" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Transportation</li>
+            </Link>
           </ul>
+
+
         </div>
         <div className="">
           <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Related Products</p>
           <ul>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Control Relay Panels</li>
-
+            <Link to="" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Control Relay Panels</li>
+            </Link>
           </ul>
+
         </div>
         <div className="">
           <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Soultion</p>
           <ul>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Control & Automation</li>
+            <Link to="/solutions/control-and-automation" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Control & Automation</li>
+            </Link>
           </ul>
-        </div>
-      </div>
 
-      <div className={`section24 grid grid-cols-1 lg:grid-cols-3 lg:gap-x-[29px]   ${getSectionClass(23)}`}>
+
+        </div>
+      </div >
+
+      <div className={`section24 grid grid-cols-1 lg:grid-cols-3 lg:gap-x-[29px]   ${getSectionClass(27)}`}>
         <div className="">
           <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Related Industries</p>
           <ul>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Renewable Energy</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Non-Renewable Energy</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Heavy Engineering Industries</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Healthcare</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>IT & Telecom</li>
+            <Link to="/industries/renewable-energy" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Renewable Energy</li>
+            </Link>
+            <Link to="/industries/non-renewable-energy" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Non-Renewable Energy</li>
+            </Link>
+            <Link to="/industries/heavy-engineering-industries" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Heavy Engineering Industries</li>
+            </Link>
+            <Link to="/industries/health-care" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Healthcare</li>
+            </Link>
           </ul>
+
+
         </div>
         <div className="">
           <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Related Products</p>
           <ul>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>BTS 2000</li>
+            <Link to="" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>BTS 2000</li>
+            </Link>
           </ul>
+
         </div>
         <div className="">
           <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Soultion</p>
           <ul>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Process Continuity</li>
+            <Link to="/solutions/process-continuity" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Process Continuity</li>
+            </Link>
           </ul>
-        </div>
-      </div>
 
-      <div className={`section25 grid grid-cols-1 lg:grid-cols-3 lg:gap-x-[29px]   ${getSectionClass(24)}`}>
+
+        </div>
+      </div >
+
+      <div className={`section25 grid grid-cols-1 lg:grid-cols-3 lg:gap-x-[29px]   ${getSectionClass(28)}`}>
         <div className="">
           <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Related Industries</p>
           <ul>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Renewable Energy</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Non-Renewable Energy</li>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Heavy Engineering Industries</li>
+            <Link to="/industries/non-renewable-energy" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Non-Renewable Energy</li>
+            </Link>
+            <Link to="/industries/heavy-engineering-industries" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Heavy Engineering Industries</li>
+            </Link>
           </ul>
+
+
         </div>
         <div className="">
           <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Related Products</p>
           <ul>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>CLIP Fault Current Limitors</li>
+            <Link to="" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>CLIP Fault Current Limitors</li>
+            </Link>
           </ul>
+
         </div>
         <div className="">
           <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Soultion</p>
           <ul>
-            <li className='border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow' onClick={() => handleItemClick('Defense & Exploration')}>Fault Current Limiting</li>
+            <Link to="/solutions/fault-current-limiting" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Fault Current Limiting</li>
+            </Link>
           </ul>
+
+
+        </div>
+      </div >
+      <div className={`section25 grid grid-cols-1 lg:grid-cols-3 lg:gap-x-[29px]   ${getSectionClass(29)}`}>
+        <div className="">
+          <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Related Industries</p>
+          <ul>
+            <Link to="/industries/defence-and-exploration" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Defense & Exploration</li>
+            </Link>
+            <Link to="/industries/heavy-engineering-industries" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Heavy Engineering Industries</li>
+            </Link>
+            <Link to="/industries/health-care" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Healthcare</li>
+            </Link>
+            <Link to="/industries/it-and-telecom" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>IT and Telecom</li>
+            </Link>
+            <Link to="/industries/transportation" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Transportation</li>
+            </Link>
+            <Link to="/industries/waste-management" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Waste Management</li>
+            </Link>
+          </ul>
+
+
+        </div>
+        <div className="">
+          <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Related Products</p>
+          <ul>
+            <Link to="" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>AC & DC UPS</li>
+            </Link>
+          </ul>
+
+        </div>
+        <div className="">
+          <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Soultion</p>
+          <ul>
+            <Link to="/solutions/uninterrupted-power-supply" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Uninterrupted Power Supply</li>
+            </Link>
+          </ul>
+
+
         </div>
       </div>
+      <div className={`section25 grid grid-cols-1 lg:grid-cols-3 lg:gap-x-[29px]   ${getSectionClass(30)}`}>
+        <div className="">
+          <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Related Industries</p>
+          <ul>
+            <Link to="/industries/defence-and-exploration" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Defense & Exploration</li>
+            </Link>
+            <Link to="/industries/renewable-energy" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Renewable Energy</li>
+            </Link>
+            <Link to="/industries/heavy-engineering-industries" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Heavy Engineering Industries</li>
+            </Link>
+            <Link to="/industries/health-care" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Healthcare</li>
+            </Link>
+            <Link to="/industries/it-and-telecom" onClick={() => handleItemClick('D')}>
+            <li className='our-tailored-class'>IT and Telecom</li>
+          </Link>
+        </ul>
+
+      </div>
+      <div className="">
+        <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Related Products</p>
+        <ul>
+          <Link to="" onClick={() => handleItemClick('D')}>
+            <li className='our-tailored-class'>Solar Design & Services</li>
+          </Link>
+        </ul>
+
+      </div>
+      <div className="">
+        <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Soultion</p>
+        <ul>
+          <Link to="/solutions/solar-design-engineering" onClick={() => handleItemClick('D')}>
+            <li className='our-tailored-class'>Solar Design, Engineering</li>
+          </Link>
+        </ul>
+
+
+      </div>
+    </div >
 
 
 

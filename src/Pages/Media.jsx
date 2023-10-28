@@ -4,7 +4,7 @@ import Navbar from '../Components/Navbar'
 import { PhotoGallery } from '../Components'
 import { Link } from 'react-router-dom'
 import { anImg1 } from '../assets/images'
-import { thumb1, thumb2, thumb3, thumb4 } from '../assets/mediaAwards'
+import { thumb1, thumb2, thumb3, thumb4, thumb5 } from '../assets/mediaAwards'
 import Aos from "aos"
 import "aos/dist/aos.css"
 
@@ -46,7 +46,7 @@ const Media = () => {
         },
         {
             id: 5,
-            imgSrc: "", // Define the image source for each item
+            imgSrc: thumb5, // Define the image source for each item
             title: 'Winner in the FLCTD Innovation Challenge 2022 Facility For Low Carbon Technology Deployment(FLCTD)......',
             uploadTime: '29 April 2021',
             paths: "/media/winner-in-the-flctd-innovation-challenge-2022"

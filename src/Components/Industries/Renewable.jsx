@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Navbar, Footer } from "../index"
 import { rNew } from '../../assets/subImg';
-import { bestCase, relayPannels, kra, incinerator, wtc, bts, solar } from '../../assets/ProductImages'
+import { bestCase, relayPannels, kra, incinerator, wtc, bts, solar, flywheel, load } from '../../assets/ProductImages'
 
 import { ImageSelect } from "../ImageSelector";
 import { Renew1, Renew2, Renew3, Renew4, Renew5 } from '../../assets/IndImages'
@@ -23,13 +23,15 @@ const Renewable = () => {
 
         tag3: 'Reliable Engine Starting/Pulse Power is a vital solution for renewable energy systems, addressing common battery failures during engine starts due to issues like discharged and ageing batteries, along with cold temperatures. While traditional methods prioritise proper sizing and maintenance, real-world applications often require brief, variable-duty bursts of power. In these cases, pulse power sources/sinks, whether standalone or paired with a base-level power source, prove indispensable. They ensure dependable energy bursts, effectively managing load fluctuations, enhancing renewable energy system reliability, and maintaining consistent operation in challenging conditions.',
 
-        tag4: "Costmized Case",
+        tag4: "Customised Plastic Cases play a crucial role in the renewable energy sector by safeguarding and showcasing sensitive equipment such as solar panel controllers and wind turbine components. Aarchtech Solonics' tailored solutions ensure that renewable energy companies can effectively present and protect their cutting-edge technology, facilitating a positive image and boosting business success. Their commitment to quality and affordability makes these cases an essential asset in this rapidly evolving industry.",
 
-        tag5: "Waste MAng",
+        tag5: "The Solid Waste Treatment plays a crucial role in promoting renewable energy by reducing the environmental impact of waste disposal. By efficiently managing and recycling materials, it contributes to resource conservation and minimizes the need for new raw materials. Additionally, waste-to-energy technologies can convert organic waste into biogas or other biofuels, providing a sustainable energy source. This holistic approach aligns with renewable energy goals, making waste management a valuable component of environmentally responsible and sustainable practices.",
 
         tag6: 'Solar Design, Engineering, and Consultancy services offered by Aartech Solonics are a pivotal solution for advancing renewable energy adoption. Their expertise in meticulously designing solar solutions, optimising energy generation, and tailoring designs to unique needs accelerates the transition to sustainable power sources. They cover the entire spectrum of solar energy integration, making them an ideal choice for residential clients seeking cost-effective energy solutions and industrial players aiming to enhance efficiency. Their commitment to engineering excellence and innovative approach paves the way for a greener future, transforming industries and lives by harnessing the power of the sun to create sustainable energy solutions.',
 
-        tag7: 'Content for tag7 goes here.',
+        tag7: 'Energy storage solutions are pivotal in the Renewable Energy Industry. They harness micro-energy sources like Solar, Wind, and Hydro Power using technologies such as Photo Voltaic (PV) and microturbines. The harvested energy is stored for on-demand use, powering various devices, from cell phones to remote sensing equipment. For instance, soldiers can charge communication devices with portable PV modules, while remote sensing buoys in challenging environments gather and utilise energy. These solutions cater to diverse sectors, including Marine, Defense, Real Estate, and Lighting, offering efficient, site-independent energy utilisation.',
+
+        tag8: "Load Limiting Solutions are instrumental in Renewable Energy by ensuring equitable and efficient energy distribution. These systems promote fair allocation of power resources, catering to the growing consumer base while addressing technical and operational challenges. They play a key role in Smart Grids' self-healing concept, automating problem correction at the source. By encouraging demand-side management and responsible usage, load limiting helps minimise distribution sector issues and contributes to the reliable and sustainable integration of renewable energy sources into the grid, aligning with environmental and economic goals.",
     };
 
 
@@ -51,7 +53,7 @@ const Renewable = () => {
                     <div className="lg:hidden text-black text-[28px] font-normal font-antonio">Renewable Energy</div>
                     <div className="lg:hidden text-foot-blue text-lg font-bold font-Barlow tracking-widest mb-4">INDUSTRIES</div>
 
-                    <ImageSelect images={images} bgImg={rNew}/>
+                    <ImageSelect images={images} bgImg={rNew} />
                     <div className="lg:w-[55%] lg:ml-[44px]">
                         <div className="lg:block hidden text-black text-4xl font-normal font-antonio">Renewable Energy</div>
                         <div className="lg:block hidden text-foot-blue text-lg font-bold font-Barlow tracking-wider mt-2">INDUSTRIES</div>
@@ -100,7 +102,7 @@ const Renewable = () => {
                             } w-auto h-[49px] px-[20px]   py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag4')}
                     >
-                        Customised Professional Case
+                        Customised PLASTIC Case
                     </button>
 
 
@@ -115,7 +117,7 @@ const Renewable = () => {
                             } w-auto h-[49px] px-[20px]   py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag5')}
                     >
-                        Waste Management System
+                        Solid Waste Treatment
                     </button>
 
 
@@ -127,7 +129,25 @@ const Renewable = () => {
                             } w-auto h-[49px] px-[20px]   py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag6')}
                     >
-                        Solar Design, Engineering & Consultancy services
+                        Solar Design, Engineering
+                    </button>
+                    <button
+                        className={`tag ${selectedTag === 'tag7'
+                            ? 'bg-white text-box-red border-box-red'
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[20px]   py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
+                        onClick={() => handleTagClick('tag7')}
+                    >
+                        Energy Storage
+                    </button>
+                    <button
+                        className={`tag ${selectedTag === 'tag8'
+                            ? 'bg-white text-box-red border-box-red'
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[20px]   py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
+                        onClick={() => handleTagClick('tag8')}
+                    >
+                        Load Limiting
                     </button>
 
 
@@ -174,7 +194,7 @@ const Renewable = () => {
                             } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag4')}
                     >
-                        Customised Professional Case
+                        Customised PLASTIC Case
                     </button>
                     <button
                         className={`tag ${selectedTag === 'tag5'
@@ -183,7 +203,7 @@ const Renewable = () => {
                             } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag5')}
                     >
-                        Waste Management System
+                        Solid Waste Treatment
                     </button>
 
 
@@ -195,7 +215,25 @@ const Renewable = () => {
                             } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag6')}
                     >
-                        Solar Design, Engineering & Consultancy services
+                        Solar Design, Engineering
+                    </button>
+                    <button
+                        className={`tag ${selectedTag === 'tag7'
+                            ? 'bg-white text-box-red border-box-red'
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
+                        onClick={() => handleTagClick('tag7')}
+                    >
+                        Energy Storage
+                    </button>
+                    <button
+                        className={`tag ${selectedTag === 'tag8'
+                            ? 'bg-white text-box-red border-box-red'
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
+                        onClick={() => handleTagClick('tag8')}
+                    >
+                        Load Limiting
                     </button>
 
 
@@ -247,7 +285,6 @@ const Renewable = () => {
                     >
                         Best Case
                     </button>
-
                     <button
                         className={`tag ${selectedProTag === 'PTag5'
                             ? 'bg-white text-box-red border-box-red'
@@ -255,12 +292,16 @@ const Renewable = () => {
                             } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag5')}
                     >
-                        WTC
+                        Solid Waste Treatment
                     </button>
+                   
+
 
                 </div>
 
                 < div className="lg:flex hidden space-x-3 mt-3">
+
+
 
                     <button
                         className={`tag ${selectedProTag === 'PTag6'
@@ -281,6 +322,25 @@ const Renewable = () => {
                     >
                         Solar Design & Services
                     </button>
+
+                    <button
+                    className={`tag ${selectedProTag === 'PTag8'
+                        ? 'bg-white text-box-red border-box-red'
+                        : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                        } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
+                    onClick={() => handleProClick('PTag8')}
+                >
+                Flywheel
+                </button>
+                <button
+                    className={`tag ${selectedProTag === 'PTag9'
+                        ? 'bg-white text-box-red border-box-red'
+                        : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                        } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
+                    onClick={() => handleProClick('PTag9')}
+                >
+                Load Checker
+                </button>
 
 
                 </div>
@@ -336,7 +396,7 @@ const Renewable = () => {
                             } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag5')}
                     >
-                        WTC
+                        solid waste Treatment
                     </button>
 
 
@@ -359,6 +419,24 @@ const Renewable = () => {
                         onClick={() => handleProClick('PTag7')}
                     >
                         Solar Design & Services
+                    </button>
+                    <button
+                        className={`tag ${selectedProTag === 'PTag8'
+                            ? 'bg-white text-box-red border-box-red'
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
+                        onClick={() => handleProClick('PTag8')}
+                    >
+                       Flywheel
+                    </button>
+                    <button
+                        className={`tag ${selectedProTag === 'PTag9'
+                            ? 'bg-white text-box-red border-box-red'
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
+                        onClick={() => handleProClick('PTag9')}
+                    >
+                        load Checker
                     </button>
 
                 </div>
@@ -403,22 +481,35 @@ const Renewable = () => {
                         <div className=" sm:w-[130%] lg:w-[100%] w-[100%] h-auto sm:p-2 p-0 ">
                             <img src={wtc} alt="" className='sm:w-[100%] w-[100%]'></img>
                         </div>
-                        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow sm:ml-5 sm:mt-0 mt-4 lg:leading-tight leading-snug">WTC or Waste To Compost machine, a fully automatic composting machine, contributes to renewable energy by swiftly converting organic waste into compost within 24 hours on-site. This eco-friendly solution adheres to the 3R Principle: reducing waste, recycling it into valuable compost, and using the compost for garden plants. Its quiet and odourless operation makes it a sustainable choice for waste management in renewable energy facilities.</div>
+                        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow sm:ml-5 sm:mt-0 mt-4 lg:leading-tight leading-snug">WTC machines convert organic waste into compost, following the 3R Principle: reducing waste, recycling it into compost, and using it for plants. They offer an eco-friendly, quiet, and odourless waste management solution in renewable energy facilities. Plastic Shredders efficiently reduce plastic waste volume for recycling, contributing to environmental sustainability. Incinerators like the A-INC-50 model convert general waste into energy, aligning with the renewable energy industry's goals of waste reduction and resource efficiency.
+                        </div>
                     </div>
 
                     <div className={`Pro6 flex sm:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag6' ? '' : 'hidden'}`}>
                         <div className=" sm:w-[130%] lg:w-[100%] w-[100%] h-auto sm:p-2 p-0 ">
                             <img src={incinerator} alt="" className='sm:w-[100%] w-[100%]'></img>
                         </div>
-                        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow sm:ml-5 sm:mt-0 mt-4 lg:leading-tight leading-snug">An incinerator is a device designed to burn waste materials at high temperatures, reducing them to ash and other byproducts. In the context of renewable energy, some modern incinerators are equipped with energy recovery systems that capture the heat generated during combustion. This captured heat can then be converted into electricity or used for various heating purposes, contributing to generating renewable energy while reducing waste volume.</div>
+                        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow sm:ml-5 sm:mt-0 mt-4 lg:leading-tight leading-snug">Incinerators, such as the A-INC-50 model, play a significant role in the Renewable Energy industry by efficiently converting general waste into energy. With a high-temperature combustion process and minimal gas residence time, they produce heat and power, contributing to the generation of renewable energy. This sustainable approach not only reduces waste but also harnesses energy from it, aligning with the industry's goals of environmental responsibility and resource efficiency.</div>
                     </div>
 
                     <div className={`Pro7 flex sm:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag7' ? '' : 'hidden'}`}>
                         <div className=" sm:w-[130%] lg:w-[100%] w-[100%] h-auto sm:p-2 p-0 ">
                             <img src={solar} alt="" className='sm:w-[100%] w-[100%]'></img>
                         </div>
-                        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow sm:ml-5 sm:mt-0 mt-4 lg:leading-tight leading-snug">Aartech Solonics' Solar Design and Services are a comprehensive solution for advancing renewable energy. Focusing on innovation and expertise, Aarchtech crafts tailored solar solutions, optimises energy generation, and provides a wide range of services, from permit design to system installation and maintenance. Their commitment to engineering excellence and sustainability transforms industries and lives by harnessing solar power, making them a key player in the transition to renewable energy sources.
+                        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow sm:ml-5 sm:mt-0 mt-4 lg:leading-tight leading-snug">Aartech Solonics' Solar Design and Services are a comprehensive solution for advancing renewable energy. Focusing on innovation and expertise, Aarchtech crafts tailored solar solutions, optimises energy generation, and provides a wide range of services, from permit design to system installation and maintenance. Their commitment to engineering excellence and sustainability transforms industries and lives by harnessing solar power, making them a key player in the transition to renewable energy sources. </div>
+                    </div>
+                    <div className={`Pro7 flex sm:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag8' ? '' : 'hidden'}`}>
+                        <div className=" sm:w-[130%] lg:w-[100%] w-[100%] h-auto sm:p-2 p-0 ">
+                            <img src={flywheel} alt="" className='sm:w-[100%] w-[100%]'></img>
                         </div>
+                        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow sm:ml-5 sm:mt-0 mt-4 lg:leading-tight leading-snug">Flywheels play a vital role in the Renewable Energy industry by storing and efficiently managing energy. In electric vehicles, they mitigate 'range anxiety' by providing fast-charging capability without location restrictions. They also aid in grid stabilisation for large-scale solar and wind farms, addressing over-voltage issues. Furthermore, in process industries, they act as an Uninterrupted Power Supply, ensuring productivity, reducing emissions, and stabilising power systems..
+                        </div>
+                    </div>
+                    <div className={`Pro7 flex sm:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag9' ? '' : 'hidden'}`}>
+                        <div className=" sm:w-[130%] lg:w-[100%] w-[100%] h-auto sm:p-2 p-0 ">
+                            <img src={load} alt="" className='sm:w-[100%] w-[100%]'></img>
+                        </div>
+                        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow sm:ml-5 sm:mt-0 mt-4 lg:leading-tight leading-snug">Load Checker plays a pivotal role in Renewable Energy applications. By blocking the mains supply during excessive current draw, the machine ensures system safety. Its patented self-reset feature automatically restores supply post-load disconnection, eliminating manual intervention. Operating with soft blocking technology, it guarantees longevity. Permitting temporary overloads, especially during motor starting, ensures seamless operations in renewable energy systems, enhancing efficiency and reliability.    </div>
                     </div>
 
                 </div>

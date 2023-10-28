@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'
-import { CustomerLogos2 } from '../Components'
 import { ImageSelect } from '../Components/ImageSelector';
 import { r1, r2, r3, r4, r5, rn1, rn2, rn3, rn4 } from '../assets/rndImages';
 import { Footer, Navbar } from '../Components';

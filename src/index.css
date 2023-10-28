@@ -5,6 +5,11 @@
 @tailwind components;
 @tailwind utilities;
 
+
+.our-tailored-class {
+  @apply border border-black py-3 lg:py-[6px]  my-5 h-[45px] text-black lg:text-lg text-base font-semibold leading-[18px] tracking-wider text-center uppercase font-Barlow;
+}
+
 .navbar-bg {
   background-color: #ffffff;
 }

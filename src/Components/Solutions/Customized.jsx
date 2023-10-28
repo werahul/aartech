@@ -3,7 +3,7 @@ import { Navbar, Footer } from "../index"
 import { download } from "../../assets/images"
 import { Accordion, Accordion2, Accordion3 } from "../../Components"
 import { CustomerLogos2 } from '../../Components'
-import { bestCase, relayPannels, kra, incinerator, wtc, solar } from '../../assets/ProductImages'
+import { bestCase, relayPannels, kra, incinerator, wtc, solar, bestCase2 } from '../../assets/ProductImages'
 
 
 import { ImageSelect } from "../ImageSelector";
@@ -47,7 +47,7 @@ const Customized = () => {
             <Navbar />
             <div className=" 2xl:px-[120px] lg:pt-20 lg:px-20   px-5 pt-20 lg:mt-0 mt-5 sm:px-10">
 
-                <div className="lg:hidden text-black text-[28px] font-normal font-antonio ">Customised Professional Case
+                <div className="lg:hidden text-black text-[28px] font-normal font-antonio ">Customised Plastic Case
                 </div>
                 <div className="lg:hidden text-foot-blue text-lg font-bold font-Barlow tracking-wide mb-4">SOLUTIONS</div>
 
@@ -56,10 +56,10 @@ const Customized = () => {
                     <ImageSelect images={images} />
 
                     <div className="lg:w-[55%] w-[100%] lg:ml-[44px]">
-                        <div className="lg:block hidden text-black text-4xl font-normal font-antonio">Customised Professional Case</div>
+                        <div className="lg:block hidden text-black text-4xl font-normal font-antonio">Customised Plastic Case</div>
                         <div className="lg:block hidden text-foot-blue text-lg font-bold font-Barlow tracking-wider mt-2">SOLUTIONS</div>
                         <div className="text-black lg:text-[22px] text-base lg:font-normal font-medium font-Barlow mt-6 lg:leading-tight leading-snug">
-                            Aartech excels in the control and automation industry, offering a wide range of solutions, from cost-effective options for distribution utilities to advanced, customised solutions using cutting-edge technology. We have the expertise to integrate the right components to create tailored solutions and specialise in solid-state and microprocessor-based control products designed to meet specific needs, departing from traditional approaches using discrete electrical devices.
+                            Aarchtech offers the Customised Professional Case, a solution designed to meet the unique needs of businesses and professionals. This customisable case or enclosure serves as a critical element in presenting and protecting your products. Whether for prototyping, product demonstrations, or showcasing innovations, Aarchtech ensures you have access to high-quality, affordable, and readily available enclosures, supporting your business success with convenience and customisation.
                         </div>
 
 
@@ -76,11 +76,89 @@ const Customized = () => {
                             } w-auto h-[49px] px-[15px] uppercase py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag1')}
                     >
-                        Power Distribution
+                        Defence and Exploration
+                    </button>
+                    <button
+                        className={`tag ${selectedTag === 'tag2'
+                            ? 'bg-white text-box-red border-box-red'
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[15px] uppercase py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
+                        onClick={() => handleTagClick('tag2')}
+                    >
+                        Renewable Energy
+                    </button>
+                    <button
+                        className={`tag ${selectedTag === 'tag3'
+                            ? 'bg-white text-box-red border-box-red'
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[15px] uppercase py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
+                        onClick={() => handleTagClick('tag3')}
+                    >
+                        Non-Renewable Energy
                     </button>
 
 
 
+
+                </div>
+                <div div className="lg:flex hidden space-x-3 mt-3">
+                    <button
+                        className={`tag ${selectedTag === 'tag4'
+                            ? 'bg-white text-box-red border-box-red'
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[15px] uppercase py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
+                        onClick={() => handleTagClick('tag4')}
+                    >
+                        Power Transmission and Distribution
+                    </button>
+                    <button
+                        className={`tag ${selectedTag === 'tag5'
+                            ? 'bg-white text-box-red border-box-red'
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[15px] uppercase py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
+                        onClick={() => handleTagClick('tag5')}
+                    >
+                        Heavy Engineering Industries
+                    </button>
+                    <button
+                        className={`tag ${selectedTag === 'tag6'
+                            ? 'bg-white text-box-red border-box-red'
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[15px] uppercase py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
+                        onClick={() => handleTagClick('tag6')}
+                    >
+                        Healthcare
+                    </button>
+                    <button
+                        className={`tag ${selectedTag === 'tag7'
+                            ? 'bg-white text-box-red border-box-red'
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[15px] uppercase py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
+                        onClick={() => handleTagClick('tag7')}
+                    >
+                        IT and Telecom
+                    </button>
+
+                </div>
+                <div div className="lg:flex hidden space-x-3 mt-3">
+                    <button
+                        className={`tag ${selectedTag === 'tag8'
+                            ? 'bg-white text-box-red border-box-red'
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[15px] uppercase py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
+                        onClick={() => handleTagClick('tag8')}
+                    >
+                        Transportation
+                    </button>
+                    <button
+                        className={`tag ${selectedTag === 'tag9'
+                            ? 'bg-white text-box-red border-box-red'
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[15px] uppercase py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
+                        onClick={() => handleTagClick('tag9')}
+                    >
+                        Waste Management
+                    </button>
                 </div>
 
 
@@ -93,11 +171,84 @@ const Customized = () => {
                         className={`tag ${selectedTag === 'tag1'
                             ? 'bg-white text-box-red border-box-red'
                             : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
-                            } w-auto h-[49px] px-[10px] uppercase  py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
+                            } w-auto h-[49px] px-[15px] uppercase py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag1')}
                     >
-                        Power Distribution
+                        Defence and Exploration
                     </button>
+                    <button
+                        className={`tag ${selectedTag === 'tag2'
+                            ? 'bg-white text-box-red border-box-red'
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[15px] uppercase py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
+                        onClick={() => handleTagClick('tag2')}
+                    >
+                        Renewable Energy
+                    </button>
+                    <button
+                        className={`tag ${selectedTag === 'tag3'
+                            ? 'bg-white text-box-red border-box-red'
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[15px] uppercase py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
+                        onClick={() => handleTagClick('tag3')}
+                    >
+                        Non-Renewable Energy
+                    </button>
+                    <button
+                        className={`tag ${selectedTag === 'tag4'
+                            ? 'bg-white text-box-red border-box-red'
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[15px] uppercase py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
+                        onClick={() => handleTagClick('tag4')}
+                    >
+                        Power Transmission and Distribution
+                    </button>
+                    <button
+                        className={`tag ${selectedTag === 'tag5'
+                            ? 'bg-white text-box-red border-box-red'
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[15px] uppercase py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
+                        onClick={() => handleTagClick('tag5')}
+                    >
+                        Heavy Engineering Industries
+                    </button>
+                    <button
+                        className={`tag ${selectedTag === 'tag6'
+                            ? 'bg-white text-box-red border-box-red'
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[15px] uppercase py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
+                        onClick={() => handleTagClick('tag6')}
+                    >
+                        Healthcare
+                    </button>
+                    <button
+                        className={`tag ${selectedTag === 'tag7'
+                            ? 'bg-white text-box-red border-box-red'
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[15px] uppercase py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
+                        onClick={() => handleTagClick('tag7')}
+                    >
+                        IT and Telecom
+                    </button>
+                    <button
+                        className={`tag ${selectedTag === 'tag8'
+                            ? 'bg-white text-box-red border-box-red'
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[15px] uppercase py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
+                        onClick={() => handleTagClick('tag8')}
+                    >
+                        Transportation
+                    </button>
+                    <button
+                        className={`tag ${selectedTag === 'tag9'
+                            ? 'bg-white text-box-red border-box-red'
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[15px] uppercase py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
+                        onClick={() => handleTagClick('tag9')}
+                    >
+                        Waste Management
+                    </button>
+
 
 
 
@@ -115,7 +266,7 @@ const Customized = () => {
                             } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag1')}
                     >
-                        CONTROL & RELAY PANELS
+                    Best Case
                     </button>
                 </div>
 
@@ -127,18 +278,18 @@ const Customized = () => {
                             } w-[300px] h-[49px] px-[12px] py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag1')}
                     >
-                        CONTROL & RELAY PANELS
+                    Best Case
                     </button>
                 </div>
 
                 <div className="proContainer">
 
                     <div className={`Pro1 flex sm:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag1' ? '' : 'hidden'}`}>
-                        <div className=" sm:w-[100%] w-[100%] h-auto sm:p-2 p-0 ">
-                            <img src={relayPannels} alt="" className='sm:w-[100%] w-[100%]'></img>
+                        <div className=" sm:w-[100%] w-[100%] h-auto sm:p-2 p-0 lg:p-0 ">
+                            <img src={bestCase2} alt="" className='sm:w-[100%] w-[100%]'></img>
                         </div>
                         <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow sm:ml-5 sm:mt-0 mt-4  lg:leading-tight leading-snug">
-                            A control & relay panel is a comprehensive unit designed to manage 11KV and 33KV zonal substations. It integrates main and auxiliary relays, annunciation relays, fuses, switches, and more. These panels monitor and control transformers, generators, and circuit breakers, ensuring efficient electrical equipment management. They come in single or multi-circuit configurations based on customer needs.
+                        Best Case is dedicated to providing accessible, high-quality product enclosures. Understanding the challenges entrepreneurs face, they offer affordable options, ensuring businesses can effectively showcase their products. They focus on meeting the best benchmarks for success, offering both standard and custom solutions striving for continual improvement in their services to support innovators and designers.
 
                         </div>
                     </div>

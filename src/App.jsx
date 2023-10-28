@@ -17,9 +17,9 @@ import RnD from './Pages/RnD'
 
 // import Navbar from "./Components/Navbar"
 
-import { WindPower,DefenceAndExp, Renewable, NonRenewable, PowerTran ,HeavyEng, HealthCare, IT, Transport, WasteMang } from './Components/Industries'
+import {DefenceAndExp, Renewable, NonRenewable, PowerTran ,HeavyEng, HealthCare, IT, Transport, WasteMang } from './Components/Industries'
 import { BTS2000,Kranking, ControlRelay, ClipF, BestCase, LoadChecker ,SolarDesign, SolidWastePro } from './Components/Products'
-import { Solution, CnA, Process, Reliable, Fault, Solar,SolidWaste, Customized } from './Components/Solutions'
+import { CnA, Process, Reliable, Fault, Solar,SolidWaste, Customized, Ups, PowerBackup, Energy, Load } from './Components/Solutions'
 import { ContactAndGriv,Disclosures,Downloads, Chairman, Shareholders, ShCompliance, ShCorporate, ShGovernanceReport,ShReconciliation, ShShareholdingPattern, FinancialReport, FRAuditYearlyReport, FRAuditHalfYearlyReport, Overview, FRFaradigm, FRSubsidiary, DisPolicies, Notices, FRSubsidiaryYearlyResult, FRFaradigmYearlyResult} from './Components/invester'
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -72,7 +72,11 @@ const App = () => {
           <Route exact path="/solutions/fault-current-limiting" Component={Fault} />
           <Route exact path="/solutions/solar-design-engineering" Component={Solar} />
           <Route exact path="/solutions/solid-waste-treatment" Component={SolidWaste} />
-          <Route exact path="/solutions/customised-professional-case" Component={Customized} />
+          <Route exact path="/solutions/customised-plastic-case" Component={Customized} />
+          <Route exact path="/solutions/uninterrupted-power-supply" Component={Ups} />
+          <Route exact path="/solutions/power-backup-unit" Component={PowerBackup} />
+          <Route exact path="/solutions/energy-storage" Component={Energy} />
+          <Route exact path="/solutions/load-limiting" Component={Load} />
 
 
           <Route exact path="/investors/contact-and-grievance" Component={ContactAndGriv} />

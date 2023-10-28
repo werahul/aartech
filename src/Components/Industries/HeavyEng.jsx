@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Navbar, Footer } from "../index"
 import { heavy } from '../../assets/subImg'
-import { bestCase, relayPannels, kra, incinerator, wtc, bts, clip, solar } from '../../assets/ProductImages'
+import { bestCase, relayPannels, kra, incinerator, wtc, bts, clip, solar, fuel ,flywheel,ac, load } from '../../assets/ProductImages'
 import { CustomerLogos2 } from '../../Components'
 import { ImageSelect } from "../ImageSelector";
 import { heavy1, heavy2, heavy3, heavy4, heavy5 } from '../../assets/IndImages'
@@ -10,9 +10,9 @@ import { heavy1, heavy2, heavy3, heavy4, heavy5 } from '../../assets/IndImages'
 
 const HeavyEng = () => {
 
-    useEffect(() => {
-        window.scrollTo(0, 0); // Scroll to the top of the page
-    }, []); // Empty dependency array ensures the effect runs only 
+    // useEffect(() => {
+    //     window.scrollTo(0, 0); // Scroll to the top of the page
+    // }, []); // Empty dependency array ensures the effect runs only 
 
 
     const [selectedTag, setSelectedTag] = useState("tag1"); // State to track the selected tag
@@ -22,17 +22,21 @@ const HeavyEng = () => {
     const tagContents = {
         tag1: 'Control and Automation serve as indispensable solutions for the Heavy Engineering Industries. With its wide range of technologies, Aartech provides both cost-effective solutions for utility companies and high-quality solutions for discerning customers. Aarchtech’s innovative approach prioritises customer satisfaction by utilising advanced technologies for specific needs. Providing tailored solutions for Heavy Engineering Industries, Aartech seamlessly blends diverse components to enhance efficiency and effectiveness. Solid-state and microprocessor-based embedded control products are meticulously designed to address customised requirements, setting them apart from conventional integration methods. In this critical sector, this approach delivers substantial value.',
 
-        tag2: "Process Continuity is a vital solution for Heavy Engineering Industries. Electrical outages can cause immediate and lasting harm to continuous process operations, profoundly affecting witnesses. As industries increasingly prioritise revenue, efficiency, productivity, and system enhancement, it becomes imperatiev to reevaluate established practices and seek innovative solutions.        Aartech collaborates closely with consultants, equipment manufacturers, contractors, and end-users to tackle process continuity challenges comprehensively. This approach ensures that Heavy Engineering Industries maintain operational resilience, minimising downtime, safeguarding revenue, and meeting efficiency and productivity benchmarks.        ",
+        tag2: "Process Continuity is a vital solution for Heavy Engineering Industries. Electrical outages can cause immediate and lasting harm to continuous process operations, profoundly affecting witnesses. As industries increasingly prioritise revenue, efficiency, productivity, and system enhancement, it becomes imperatiev to reevaluate established practices and seek innovative solutions.        Aartech collaborates closely with consultants, equipment manufacturers, contractors, and end-users to tackle process continuity challenges comprehensively. This approach ensures that Heavy Engineering Industries maintain operational resilience, minimising downtime, safeguarding revenue, and meeting efficiency and productivity benchmarks. ",
 
         tag3: 'Reliable Engine Starting/Pulse Power is a crucial solution for Heavy Engineering Industries. It mitigates the common issue of engine starting failures caused by battery issues like discharge, ageing, or low temperatures. While conventional approaches stress proper sizing and maintenance, real-world applications often demand short bursts of power with variable duty cycles. In such scenarios, a pulse power source/sink plays a vital role, whether operating independently or complementing a base-level power source. This technology ensures the reliable supply of short bursts of energy when needed, effectively handling load fluctuations and enhancing the dependability and performance of Heavy Engineering Industries.',
 
         tag4: "Fault Current Limiting (FCL) is a pivotal solution for Heavy Engineering Industries. Aartech, in partnership with G&W Elec. Co. USA, delivers comprehensive FCL solutions to address evolving electrical system demands. These solutions cater to power generation, including captive power addition and diverse industries such as cement, oil, and gas. FCL technology effectively restrains excessive fault currents, safeguarding equipment and infrastructure while ensuring operational continuity. Aartech's expertise in implementing FCL enhances reliability, safety, and efficiency across Heavy Engineering Industries.",
 
-        tag5: "C Cse",
+        tag5: "In heavy engineering industries, Customised Professional Cases play a pivotal role by serving as protective showcases for vital equipment. Aarchtech Solonics' solutions help maintain the integrity of intricate machinery during transportation and storage. These cases not only protect valuable assets but also uphold the industry's professional image. Aarchtech's emphasis on quality, affordability, and availability ensures that heavy engineering businesses can secure the most suitable and cost-effective enclosures, ultimately contributing to their operational efficiency and success.",
 
         tag6: "Solar Design, Engineering, and Consultancy services offered by Aartech Solonics serve as a sustainable solution for Heavy Engineering Industries. Their commitment to harnessing solar power aligns with the industry's growing need for eco-friendly and efficient energy sources. Aartech's innovative approach, tailored solar solutions, and meticulous energy optimisation provide heavy engineering industries with sustainable power options. They offer a comprehensive suite of services, including feasibility studies, system design, and maintenance, making them a valuable partner in reducing energy costs and enhancing operational efficiency for industrial clients in this sector.",
 
-        tag7: 'Waste',
+        tag7: "In Heavy Engineering Industries, Uninterrupted Power Supply (UPS) solutions, such as S&C's PureWave UPS offered by Aartech, play a pivotal role in maintaining uninterrupted operations. These industries rely on critical equipment and processes that demand superior power quality and continuity. The advanced UPS technology safeguards against voltage fluctuations, surges, and momentary disruptions, ensuring uninterrupted power to heavy machinery. It supports crucial applications, like manufacturing and processing, where even the slightest power disturbance can result in costly downtime. By meeting stringent electrical and cooling requirements, these UPS solutions enhance the reliability, efficiency, and productivity of heavy engineering operations.",
+
+        tag8: 'Energy storage solutions play a crucial role in the Heavy Engineering industry by harnessing micro-energy sources from sources like Solar Power, Wind Power, and Hydro Power. These sources are tapped using technologies such as PV modules, micro wind turbines, and micro-hydro turbines. The stored energy is used to power various portable devices, making them ideal for applications in the Marine, Defense, Space, Remote Sensing, and Telecom industries. They enable energy independence and can power communication devices for soldiers in the field, remote data collection buoys, and even provide backup power in real estate and lighting applications, reducing the need for extensive cabling.',
+
+        tag9: 'Load Limiting Solutions offer substantial benefits to Heavy Engineering Industries. These industries often operate critical equipment and machinery, and sudden overloads can lead to power disruptions and equipment damage. Load limiting devices provide automated protection against excessive loads, preventing downtime and costly repairs. They promote energy efficiency, reducing the risk of power interruptions, which is particularly crucial in heavy engineering, where precision and safety are paramount. Moreover, these solutions contribute to resource and cost savings by avoiding the need for manual metering and ensuring fair utilisation of energy resources in large industrial setups.',
     };
 
 
@@ -54,7 +58,7 @@ const HeavyEng = () => {
                     <div className="lg:hidden text-black text-[28px] font-normal font-antonio">Heavy Engineering Industries</div>
                     <div className="lg:hidden text-foot-blue text-lg font-bold font-Barlow tracking-widest mb-4">INDUSTRIES</div>
 
-                    <ImageSelect images={images} bgImg={heavy}/>
+                    <ImageSelect images={images} bgImg={heavy} />
 
                     <div className="lg:w-[55%] lg:ml-[44px]">
                         <div className="lg:block hidden text-black text-4xl font-normal font-antonio">Heavy Engineering Industries</div>
@@ -116,7 +120,7 @@ const HeavyEng = () => {
                             } w-auto h-[49px] px-[20px]   py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag5')}
                     >
-                        Customised Professional Case
+                        Customised PLASTIC Case
                     </button>
 
 
@@ -128,7 +132,7 @@ const HeavyEng = () => {
                             } w-auto h-[49px] px-[20px]   py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag6')}
                     >
-                        Solar Design, Engineering & Consultancy services
+                        Solar Design, Engineering
                     </button>
 
                     <button
@@ -138,7 +142,29 @@ const HeavyEng = () => {
                             } w-auto h-[49px] px-[20px]   py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag7')}
                     >
-                        Energy Efficiency
+                        Uninterrupted Power Supply
+                    </button>
+
+
+                </div>
+                < div className="lg:flex hidden space-x-3 mt-3">
+                    <button
+                        className={`tag ${selectedTag === 'tag8'
+                            ? 'bg-white text-box-red border-box-red'
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[20px]   py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
+                        onClick={() => handleTagClick('tag8')}
+                    >
+                    Energy Storage
+                    </button>
+                    <button
+                        className={`tag ${selectedTag === 'tag9'
+                            ? 'bg-white text-box-red border-box-red'
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[20px]   py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
+                        onClick={() => handleTagClick('tag9')}
+                    >
+                    Load Limiting
                     </button>
 
 
@@ -194,10 +220,8 @@ const HeavyEng = () => {
                             } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag5')}
                     >
-                        Customised Professional Case
+                    Customised PLASTIC Case
                     </button>
-
-
 
                     <button
                         className={`tag ${selectedTag === 'tag6'
@@ -206,7 +230,7 @@ const HeavyEng = () => {
                             } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag6')}
                     >
-                        Solar Design, Engineering & Consultancy services
+                        Solar Design, Engineering
                     </button>
 
                     <button
@@ -216,7 +240,25 @@ const HeavyEng = () => {
                             } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag7')}
                     >
-                        Energy Efficiency
+                    Uninterrupted Power Supply
+                    </button>
+                    <button
+                        className={`tag ${selectedTag === 'tag8'
+                            ? 'bg-white text-box-red border-box-red'
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
+                        onClick={() => handleTagClick('tag8')}
+                    >
+                    Energy Storage
+                    </button>
+                    <button
+                        className={`tag ${selectedTag === 'tag9'
+                            ? 'bg-white text-box-red border-box-red'
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
+                        onClick={() => handleTagClick('tag9')}
+                    >
+                    Load Limiting
                     </button>
 
 
@@ -301,7 +343,25 @@ const HeavyEng = () => {
                             } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase  text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag7')}
                     >
-                        AC & DC UPS
+                    AC & DC UPS
+                    </button>
+                    <button
+                        className={`tag ${selectedProTag === 'PTag8'
+                            ? 'bg-white text-box-red border-box-red'
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase  text-lg font-bold font-Barlow tracking-wider`}
+                        onClick={() => handleProClick('PTag8')}
+                    >
+                    Flywheel
+                    </button>
+                    <button
+                        className={`tag ${selectedProTag === 'PTag9'
+                            ? 'bg-white text-box-red border-box-red'
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase  text-lg font-bold font-Barlow tracking-wider`}
+                        onClick={() => handleProClick('PTag9')}
+                    >
+                    Load Checker
                     </button>
 
 
@@ -385,6 +445,25 @@ const HeavyEng = () => {
                         AC & DC UPS
                     </button>
 
+                    <button
+                        className={`tag ${selectedProTag === 'PTag8'
+                            ? 'bg-white text-box-red border-box-red'
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase  text-lg font-bold font-Barlow tracking-wider`}
+                        onClick={() => handleProClick('PTag8')}
+                    >
+                    Flywheel
+                    </button>
+                    <button
+                        className={`tag ${selectedProTag === 'PTag9'
+                            ? 'bg-white text-box-red border-box-red'
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase  text-lg font-bold font-Barlow tracking-wider`}
+                        onClick={() => handleProClick('PTag9')}
+                    >
+                    Load Checker
+                    </button>
+
 
 
                 </div>
@@ -442,10 +521,21 @@ const HeavyEng = () => {
 
                     <div className={`Pro7 flex sm:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag7' ? '' : 'hidden'}`}>
                         <div className=" sm:w-[100%] w-[100%] h-auto sm:p-2 p-0 ">
-                            <img src="" alt="" className='sm:w-[100%] w-[100%]'></img>
+                            <img src={ac} alt="" className='sm:w-[100%] w-[100%]'></img>
                         </div>
-                        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow sm:ml-5 sm:mt-0 mt-4 lg:leading-tight leading-snug">WTC or Waste To Compost machine, a fully automatic composting machine, contributes to renewable energy by swiftly converting organic waste into compost within 24 hours on-site. This eco-friendly solution adheres to the 3R Principle: reducing waste, recycling it into valuable compost, and using the compost for garden plants. Its quiet and odourless operation makes it a sustainable choice for waste management in renewable energy facilities.
+                        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow sm:ml-5 sm:mt-0 mt-4 lg:leading-tight leading-snug">The DC UPS System from J. Schneider plays a crucial role in Heavy Engineering Industries by ensuring uninterrupted power for control systems and processes. With its microcontroller-supported charging and discharging, it provides a reliable solution for safeguarding operations during voltage interruptions or fluctuations. This robust, German-made technology offers a wide power range and customisable features, making it an ideal choice for heavy engineering applications where uninterrupted power is essential for safety and productivity.</div>
+                    </div>
+                    <div className={`Pro7 flex sm:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag8' ? '' : 'hidden'}`}>
+                        <div className=" sm:w-[100%] w-[100%] h-auto sm:p-2 p-0 ">
+                            <img src={flywheel} alt="" className='sm:w-[100%] w-[100%]'></img>
                         </div>
+                        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow sm:ml-5 sm:mt-0 mt-4 lg:leading-tight leading-snug">Flywheels are pivotal in Heavy Engineering, acting as an energy storage solution with diverse applications. In Electric Vehicles, they enable rapid charging, easing grid demands. They stabilise power transmission, addressing voltage issues in renewables. In Public Transport, they recover energy from braking, reducing waste. In Process Industries, they offer uninterruptible power supply, ensuring productivity, emissions reduction, and cost-efficiency. Flywheels elevate efficiency and sustainability in heavy engineering.</div>
+                    </div>
+                    <div className={`Pro7 flex sm:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag9' ? '' : 'hidden'}`}>
+                        <div className=" sm:w-[100%] w-[100%] h-auto sm:p-2 p-0 ">
+                            <img src={load} alt="" className='sm:w-[100%] w-[100%]'></img>
+                        </div>
+                        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow sm:ml-5 sm:mt-0 mt-4 lg:leading-tight leading-snug">Load Checker is a crucial asset in Heavy Engineering Industries. It safeguards machinery and electrical systems by blocking the mains supply if excessive current is drawn, preventing potential damage due to overload. The patented self-reset feature ensures uninterrupted operation without manual intervention. Load Checker's soft blocking technology offers a long product life and allows for temporary overloads, making it an essential tool for heavy machinery and equipment protection in the heavy engineering sector.</div>
                     </div>
 
 

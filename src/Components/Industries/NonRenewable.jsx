@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Navbar, Footer } from "../index"
 import { nonRew } from '../../assets/subImg'
-import { bestCase, relayPannels, kra, incinerator, wtc, bts, clip } from '../../assets/ProductImages'
+import { bestCase, relayPannels, kra, incinerator, wtc, bts, clip,load, fuel } from '../../assets/ProductImages'
 
 import { CustomerLogos2 } from '../../Components'
 
@@ -30,11 +30,13 @@ const NonRenewable = () => {
 
         tag4: "Electrical engineering solutions must often adapt to evolving demands and operational considerations. Aartech is a trusted partner, collaborating with M/s G&W Elec. Co. USA as a value-added system integrator for their CLiP® Fault Current Limiter solutions. We offer comprehensive, end-to-end solutions in this domain, serving customers across Asia, particularly in power generation (especially captive power addition) and industries like cement and oil & gas. CLiP® (Current Limiting Protector) boasts a 25-year track record as a globally trusted system protector. It delivers current limitation benefits for systems up to 38kV, with high continuous current ratings of up to 5000A. Remarkably, it has achieved fault interruption beyond 300kA rms symmetrical at 15.5kV.",
 
-        tag5: "A Power Backup Unit (PBU) solution for non-renewable energy is a system designed to provide uninterrupted power supply during outages or periods of high demand. It typically relies on conventional energy sources such as fossil fuels or nuclear power to generate electricity. The PBU includes backup generators, energy storage systems, or redundant power sources to ensure continuity in critical applications like hospitals, data centres, and industries. While not based on renewable energy sources, PBUs are essential for maintaining essential services and minimising disruptions in power supply when primary energy sources fail or fluctuate.",
+        tag5: "A Power Backup Unit (PBU) solution for non-renewable energy is a system designed to provide uninterrupted power supply during outages or periods of high demand. It typically relies on conventional energy sources such as fossil fuels or nuclear power to generate electricity. The PBU includes backup generators, energy storage systems, or redundant power sources to ensure continuity in critical applications like hospitals, data centres, and industries. While not based on renewable energy sources, PBUs are essential for maintaining essential services and minimising disruptions in power supply when primary energy sources fail or fluctuate. ",
 
-        tag6: 'C Case',
+        tag6: "Customised Plastic Cases play a pivotal role in the non-renewable energy sector by safeguarding critical equipment and delicate instrumentation. They ensure that sensitive components and tools used in non-renewable energy production are protected during transportation and storage. Aarchtech Solonics' solutions offer durability, precision, and customisation to meet the unique requirements of this industry. Whether it's for showcasing equipment at trade shows or safely transporting vital machinery to remote energy sites, these cases maintain the integrity of valuable non-renewable energy assets while presenting a professional image.",
 
-        tag7: 'Waste',
+        tag7: 'The Solid Waste Treatment plays a crucial role in non-renewable energy sectors. By minimising landfill usage and promoting recycling, it conserves valuable resources and reduces the environmental impact of waste. This contributes to the sustainable use of non-renewable energy sources, as recycling and resource recovery can decrease the need for virgin materials and energy-intensive production processes, ultimately conserving non-renewable resources and lessening the carbon footprint associated with their extraction and utilisation. Moreover, it can generate energy from waste, further supporting non-renewable energy production.',
+
+        tag8: "Load Limiting Solutions are paramount in Non-Renewable Energy sectors, bridging the demand-supply gap and ensuring equitable energy distribution. By enforcing controlled usage and encouraging responsible energy consumption, these solutions address challenges faced by power utilities. They play a pivotal role in demand-side management, ensuring fair allocation of electricity for various needs. Moreover, in distributed generation operations, especially those relying on limited sources like Hydro, Solar, Wind, Biomass, or Diesel, load limiting becomes essential for technical, operational, and commercial viability. These solutions provide automated overload management, promoting efficient energy utilisation and reducing operational complexities.",
     };
 
 
@@ -134,7 +136,7 @@ const NonRenewable = () => {
                             } w-auto h-[49px] px-[20px]   py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag6')}
                     >
-                        Customised Professional Case
+                    Customised PLASTIC Case
                     </button>
 
                     <button
@@ -144,7 +146,16 @@ const NonRenewable = () => {
                             } w-auto h-[49px] px-[20px]   py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag7')}
                     >
-                        Waste Management System
+                    Solid Waste Treatment
+                    </button>
+                    <button
+                        className={`tag ${selectedTag === 'tag8'
+                            ? 'bg-white text-box-red border-box-red'
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[20px]   py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
+                        onClick={() => handleTagClick('tag8')}
+                    >
+                    Load Limiting
                     </button>
 
 
@@ -212,7 +223,7 @@ const NonRenewable = () => {
                             } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag6')}
                     >
-                        Customised Professional Case
+                    Customised PLASTIC Case
                     </button>
 
                     <button
@@ -222,7 +233,16 @@ const NonRenewable = () => {
                             } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag7')}
                     >
-                        Waste Management System
+                    Solid Waste Treatment
+                    </button>
+                    <button
+                        className={`tag ${selectedTag === 'tag8'
+                            ? 'bg-white text-box-red border-box-red'
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
+                        onClick={() => handleTagClick('tag8')}
+                    >
+                    Load Limiting   
                     </button>
 
 
@@ -288,7 +308,7 @@ const NonRenewable = () => {
                             } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag5')}
                     >
-                        Auxiliary Power Unit
+                    Fuel Cell
                     </button>
                     <button
                         className={`tag ${selectedProTag === 'PTag6'
@@ -307,7 +327,7 @@ const NonRenewable = () => {
                             } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase  text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag7')}
                     >
-                        WTC
+                    Solid Waste Treatment Products
                     </button>
 
                     <button
@@ -317,7 +337,7 @@ const NonRenewable = () => {
                             } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase  text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag8')}
                     >
-                        Incinerator
+                    Load Checker
                     </button>
 
 
@@ -374,7 +394,7 @@ const NonRenewable = () => {
                             } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag5')}
                     >
-                        Auxiliary Power Unit
+                    Fuel Cell
                     </button>
 
 
@@ -396,7 +416,7 @@ const NonRenewable = () => {
                             } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag7')}
                     >
-                        WTC
+                    Solid Waste Treatment Products
                     </button>
 
                     <button
@@ -406,7 +426,7 @@ const NonRenewable = () => {
                             } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap border uppercase text-lg font-bold    font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag8')}
                     >
-                        Incinerator
+                    Load Checker
                     </button>
 
                 </div>
@@ -449,9 +469,9 @@ const NonRenewable = () => {
 
                     <div className={`Pro5 flex sm:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag5' ? '' : 'hidden'}`}>
                         <div className=" sm:w-[130%] lg:w-[100%] w-[100%] h-auto sm:p-2 p-0 ">
-                            <img src="" alt="" className='sm:w-[100%] w-[100%]'></img>
+                            <img src={fuel} alt="" className='sm:w-[100%] w-[100%]'></img>
                         </div>
-                        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow sm:ml-5 sm:mt-0 mt-4 lg:leading-tight leading-snug">The Auxiliary Power Unit (APU) is a valuable asset in non-renewable energy applications. It provides essential auxiliary power when the primary source is inaccessible, enhancing operational flexibility. Equipped with an additional generator, it supports critical systems like lighting and avionics. Furthermore, it efficiently manages environmental systems, contributing to the overall reliability and functionality of non-renewable energy operations.</div>
+                        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow sm:ml-5 sm:mt-0 mt-4 lg:leading-tight leading-snug">Fuel cells have become a crucial technology in non-renewable energy applications, especially in defence. Their higher efficiency, longer endurance, compact size, portability, silent operation, and rugged durability make them superior to conventional internal combustion engines. They offer reliable power solutions for communication, surveillance, and unmanned systems, both onboard and stationary, providing a more environmentally friendly alternative within the non-renewable energy sector.</div>
                     </div>
 
                     <div className={`Pro6 flex sm:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag6' ? '' : 'hidden'}`}>
@@ -465,16 +485,14 @@ const NonRenewable = () => {
                         <div className=" sm:w-[130%] lg:w-[100%] w-[100%] h-auto sm:p-2 p-0 ">
                             <img src={wtc} alt="" className='sm:w-[100%] w-[100%]'></img>
                         </div>
-                        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow sm:ml-5 sm:mt-0 mt-4 lg:leading-tight leading-snug">WTC or Waste To Compost machine, a fully automatic composting machine, contributes to renewable energy by swiftly converting organic waste into compost within 24 hours on-site. This eco-friendly solution adheres to the 3R Principle: reducing waste, recycling it into valuable compost, and using the compost for garden plants. Its quiet and odourless operation makes it a sustainable choice for waste management in renewable energy facilities.
-                        </div>
+                        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow sm:ml-5 sm:mt-0 mt-4 lg:leading-tight leading-snug">The Waste to Compost machine (WTC) swiftly converts organic waste into compost, promoting sustainability in non-renewable energy systems. Plastic Shredders aid renewable energy by recycling plastic waste for biofuel. Incinerators reduce non-recyclable waste to ash, generating heat and electricity in non-renewable energy contexts, minimizing waste disposal problems. These technologies contribute to eco-friendly waste management and energy generation.           </div>
                     </div>
 
                     <div className={`Pro8 flex sm:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag8' ? '' : 'hidden'}`}>
                         <div className=" sm:w-[130%] lg:w-[100%] w-[100%] h-auto sm:p-2 p-0 ">
-                            <img src={incinerator} alt="" className='sm:w-[100%] w-[100%]'></img>
+                            <img src={load} alt="" className='sm:w-[100%] w-[100%]'></img>
                         </div>
-                        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow sm:ml-5 sm:mt-0 mt-4 lg:leading-tight leading-snug">An incinerator is a device designed to burn waste materials at high temperatures, reducing them to ash and other byproducts. In the context of renewable energy, some modern incinerators are equipped with energy recovery systems that capture the heat generated during combustion. This captured heat can then be converted into electricity or used for various heating purposes, contributing to generating renewable energy while reducing waste volume.
-                        </div>
+                        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow sm:ml-5 sm:mt-0 mt-4 lg:leading-tight leading-snug">The Load Checker plays a pivotal role in Non-Renewable Energy by preventing excessive current draw. This device automatically blocks the mains supply if the load exceeds limits, ensuring safety. Its patented self-reset feature restores supply after load disconnection, eliminating manual intervention. With soft blocking technology, it offers an extended lifespan. Permitting temporary overloads, like during motor startup, guarantees efficient non-renewable energy usage, enhancing safety and device longevity.          </div>
                     </div>
 
                 </div>

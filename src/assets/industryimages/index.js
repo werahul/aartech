@@ -9,6 +9,11 @@ import productImg4 from "./productImg4.png";
 import productImg5 from "./productImg5.png";
 import productImg6 from "./productImg6.png";
 import productImg7 from "./productImg7.png";
+import productImg8 from "./productImg8.png";
+import productImg9 from "./productImg9.png";
+import productImg10 from "./productImg10.png";
+import productImg11 from "./productImg11.png";
+import productImg12 from "./productImg12.png";
 import ind1 from "./ind1.png";
 import ind2 from "./ind2.png";
 import ind3 from "./ind3.png";
@@ -29,8 +34,11 @@ import sol8 from "./sol8.png";
 import sol9 from "./sol9.png";
 import new1 from "./sol1.svg";
 import new2 from "./sol2.svg";
+import blank from "./blank.png";
+import sol10 from "./sol10.png";
 
 
 export { industryimg1, industryimg2, industryimg3, industryimg4,
 productImg1,productImg2,productImg3,productImg4,productImg5,productImg6, productImg7,
-ind1,ind2,ind3, ind4, ind5, ind6, ind7, ind8, ind9, sol1,sol2,sol3,sol4,sol5,sol6,sol7,sol8,sol9,new1,new2 };
+ind1,ind2,ind3, ind4, ind5, ind6, ind7, ind8, ind9, sol1,sol2,sol3,sol4,sol5,sol6,sol7,sol8,sol9,new1,new2, blank, sol10,
+productImg10, productImg11, productImg12, productImg8, productImg9};

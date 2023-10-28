@@ -1,6 +1,6 @@
 import React from 'react'
 import { Navbar, Footer } from '../../Components'
-import { BigThumb4 } from '../../assets/mediaAwards'
+import { BigThumb5 } from '../../assets/mediaAwards'
 
 
 const Awards5 = () => {
@@ -13,8 +13,8 @@ const Awards5 = () => {
                     Facility For Low Carbon Technology Deployment(FLCTD)
 
                 </div>
-                <div className="w-full h-[500px]  mt-8 bg-slate-500">
-                    <img src="" alt="" className='w-full ' />
+                <div className="w-full   mt-8 ">
+                    <img src={BigThumb5} alt="" className='w-full ' />
                 </div>
                 <div class="text-black text-xl font-normal font-Barlow leading-relaxed mt-8">The project was launched in 2016 with the objective of identifying innovative energy efficiency and low-carbon technology solutions that address the existing technology gaps in Indian industrial and commercial sectors.</div>
 

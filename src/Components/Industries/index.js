@@ -1,4 +1,4 @@
-import WindPower from "./WindPower";
+
 import DefenceAndExp from "./DefenceAndExp";
 import Renewable from "./Renewable";
 import NonRenewable from "./NonRenewable";
@@ -9,5 +9,5 @@ import IT from "./IT";
 import Transport from "./Transport";
 import WasteMang from "./WasteMang";
 
-export {WindPower, DefenceAndExp, Renewable, NonRenewable,PowerTran, HeavyEng, HealthCare, IT ,Transport,
+export { DefenceAndExp, Renewable, NonRenewable,PowerTran, HeavyEng, HealthCare, IT ,Transport,
 WasteMang}

@@ -24,9 +24,15 @@ const Solar = () => {
 
 
     const tagContents = {
-        tag1: "Aartech, in partnership with G&W Elec. Co. USA, offers CLiP® Fault Current Limiter solutions, enhancing electrical reliability in non-renewable energy sectors like cement and oil & gas amid a shifting energy landscape towards renewables.        ",
+        tag1: "Aartech Solonics' Solar Design, Engineering and Consultancy services provide sustainable energy solutions for the Defense and Exploration Industry, enhancing energy generation, reducing costs, and promoting environmental sustainability.     ",
 
-        tag2: "Aartech's CLiP® Fault Current Limiter solutions, in partnership with G&W Elec. Co. USA, enhance electrical reliability in heavy engineering industries like metals, material handling, petrochemicals, and more, improving operational efficiency and ROI in infrastructure development.",
+        tag2: "Aartech Solonics' Solar Design, Engineering, and Consultancy services offer tailored solar solutions, from feasibility studies to installation and maintenance, optimising energy generation and reducing utility bills in the renewable energy industry.        ",
+
+        tag3: "Aartech Solonics' Solar Design, Engineering, and Consultancy services drive sustainability in the Heavy Engineering Industries by delivering customised solar solutions that optimise energy generation, reduce costs, and support a greener future.        ",
+
+        tag4: "Aartech Solonics' Solar Design, Engineering, and Consultancy services benefit the Healthcare Industry by providing tailored solar solutions that optimise energy generation, reduce utility bills, and support a sustainable, environmentally friendly future.        ",
+
+        tag5: "Aartech Solonics' Solar Design, Engineering, and Consultancy services benefit the IT and Telecom Industry by delivering customised solar solutions, enhancing energy generation efficiency, and reducing operational costs.        ",
 
     };
 
@@ -71,13 +77,51 @@ const Solar = () => {
                             } w-auto h-[49px] px-[15px] uppercase py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag1')}
                     >
-                        Non - Renewable Energy
+                        Defence and Exploration
+                    </button>
+                    <button
+                        className={`tag ${selectedTag === 'tag2'
+                            ? 'bg-white text-box-red border-box-red'
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[15px] uppercase py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
+                        onClick={() => handleTagClick('tag2')}
+                    >
+                        Renewable Energy
+                    </button>
+                    <button
+                        className={`tag ${selectedTag === 'tag3'
+                            ? 'bg-white text-box-red border-box-red'
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[15px] uppercase py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
+                        onClick={() => handleTagClick('tag3')}
+                    >
+                        Heavy Engineering Industries
+                    </button>
+                    <button
+                        className={`tag ${selectedTag === 'tag4'
+                            ? 'bg-white text-box-red border-box-red'
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[15px] uppercase py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
+                        onClick={() => handleTagClick('tag4')}
+                    >
+                        Healthcare
                     </button>
 
 
 
-                </div>
 
+                </div>
+                <div div className="lg:flex hidden space-x-3 mt-3">
+                    <button
+                        className={`tag ${selectedTag === 'tag5'
+                            ? 'bg-white text-box-red border-box-red'
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[15px] uppercase py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
+                        onClick={() => handleTagClick('tag5')}
+                    >
+                        IT and Telecom
+                    </button>
+                </div>
 
 
 
@@ -88,19 +132,46 @@ const Solar = () => {
                         className={`tag ${selectedTag === 'tag1'
                             ? 'bg-white text-box-red border-box-red'
                             : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
-                            } w-auto h-[49px] px-[10px] uppercase  py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
+                            } w-auto h-[49px] px-[15px] uppercase py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag1')}
                     >
-                        Power Distribution
+                        Defence and Exploration
                     </button>
                     <button
                         className={`tag ${selectedTag === 'tag2'
                             ? 'bg-white text-box-red border-box-red'
                             : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
-                            } w-auto h-[49px] px-[10px] uppercase  whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
+                            } w-auto h-[49px] px-[15px] uppercase py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleTagClick('tag2')}
                     >
-                        Power Transmission
+                        Renewable Energy
+                    </button>
+                    <button
+                        className={`tag ${selectedTag === 'tag3'
+                            ? 'bg-white text-box-red border-box-red'
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[15px] uppercase py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
+                        onClick={() => handleTagClick('tag3')}
+                    >
+                        Heavy Engineering Industries
+                    </button>
+                    <button
+                        className={`tag ${selectedTag === 'tag4'
+                            ? 'bg-white text-box-red border-box-red'
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[15px] uppercase py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
+                        onClick={() => handleTagClick('tag4')}
+                    >
+                        Healthcare
+                    </button>
+                    <button
+                        className={`tag ${selectedTag === 'tag5'
+                            ? 'bg-white text-box-red border-box-red'
+                            : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
+                            } w-auto h-[49px] px-[15px] uppercase py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
+                        onClick={() => handleTagClick('tag5')}
+                    >
+                        IT and Telecom
                     </button>
 
 
@@ -118,7 +189,7 @@ const Solar = () => {
                             } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag1')}
                     >
-                        CLiP
+                    Solar Design & Services
                     </button>
                 </div>
 
@@ -130,18 +201,19 @@ const Solar = () => {
                             } w-[300px] h-[49px] px-[12px] py-[9px] whitespace-nowrap border  text-base font-bold font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag1')}
                     >
-                        CLiP
+                    Solar Design & Services
                     </button>
                 </div>
 
                 <div className="proContainer">
 
                     <div className={`Pro1 flex sm:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag1' ? '' : 'hidden'}`}>
-                        <div className=" sm:w-[100%] lg:w-[100%] w-[100%] h-auto sm:p-2 p-0 ">
-                            <img src={clip2} alt="" className='sm:w-[100%] w-[100%]'></img>
+                        <div className=" sm:w-[100%] lg:w-[100%] w-[100%] h-auto sm:p-2 p-0 lg:p-0">
+                            <img src={solar} alt="" className='sm:w-[100%] w-[100%]'></img>
                         </div>
                         <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow sm:ml-5 sm:mt-0 mt-4  lg:leading-tight leading-snug">
-                            CLiP® (Current Limiting Protector) offers unparalleled system protection for 25+ years globally. With a current limitation for 2.8kV to 38kV systems and continuous ratings up to 5000A, it combines high current capabilities with ultra-fast operation, making it an economical solution for diverse overcurrent protection needs, from System Upgrades to Transformer Protection.
+                        Aartech Solonics offers AHJS & Codes Compliant solutions for site-specific optimization. We utilize industry-standard tools, conduct simulations and analytics, provide PE stamping, and deliver comprehensive documentation. Our consultancy services cater to multi-disciplinary activities, while our staff augmentation ensures your solar projects are executed seamlessly.
+
                         </div>
                     </div>
                 </div>
