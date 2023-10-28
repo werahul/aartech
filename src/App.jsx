@@ -18,7 +18,7 @@ import RnD from './Pages/RnD'
 // import Navbar from "./Components/Navbar"
 
 import {DefenceAndExp, Renewable, NonRenewable, PowerTran ,HeavyEng, HealthCare, IT, Transport, WasteMang } from './Components/Industries'
-import { BTS2000,Kranking, ControlRelay, ClipF, BestCase, LoadChecker ,SolarDesign, SolidWastePro } from './Components/Products'
+import { BTS2000,Kranking, ControlRelay, ClipF, BestCase, LoadChecker ,SolarDesign, SolidWastePro, AcAndDc, Flywheel } from './Components/Products'
 import { CnA, Process, Reliable, Fault, Solar,SolidWaste, Customized, Ups, PowerBackup, Energy, Load } from './Components/Solutions'
 import { ContactAndGriv,Disclosures,Downloads, Chairman, Shareholders, ShCompliance, ShCorporate, ShGovernanceReport,ShReconciliation, ShShareholdingPattern, FinancialReport, FRAuditYearlyReport, FRAuditHalfYearlyReport, Overview, FRFaradigm, FRSubsidiary, DisPolicies, Notices, FRSubsidiaryYearlyResult, FRFaradigmYearlyResult} from './Components/invester'
 
@@ -55,14 +55,18 @@ const App = () => {
           <Route exact path="/industries/transportation" Component={Transport} />
           <Route exact path="/industries/waste-management" Component={WasteMang} />
 
+
           <Route exact path="/products/BTS-2000" Component={BTS2000} />
           <Route exact path="/products/kranking-ultracapacitors" Component={Kranking} />
           <Route exact path="/products/control-relay-panels" Component={ControlRelay} />
           <Route exact path="/products/clip-fault-current-limiters" Component={ClipF} />
           <Route exact path="/products/best-case" Component={BestCase} />
           <Route exact path="/products/load-checker" Component={LoadChecker} />
-          <Route exact path="/products/solar-design" Component={SolarDesign} />
+          <Route exact path="/products/solar-design-and-services" Component={SolarDesign} />
           <Route exact path="/products/solid-waste-treatment" Component={SolidWastePro} />
+          <Route exact path="/products/ac-and-dc" Component={AcAndDc} />
+          <Route exact path="/products/flywheel" Component={Flywheel} />
+          <Route exact path="/products/fuel-cell" Component={Flywheel} />
 
 
           

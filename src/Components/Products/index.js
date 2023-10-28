@@ -6,6 +6,9 @@ import BestCase from "./BestCase";
 import LoadChecker from "./LoadChecker";
 import SolarDesign from "./SolarDesign";
 import SolidWastePro from "./SolidWastePro";
+import AcAndDc from "./AcAndDc";
+import Flywheel from "./Flywheel";
 
 
-export {BTS2000, Kranking, ControlRelay, ClipF, BestCase, LoadChecker ,SolarDesign, SolidWastePro}
+export {BTS2000, Kranking, ControlRelay, ClipF, BestCase, LoadChecker ,SolarDesign, SolidWastePro, AcAndDc,
+Flywheel}

@@ -61,6 +61,21 @@ import SWT from "./SWT.png";
 import Ups from "./Ups.png";
 import flywheel from "./flywheel.png";
 
+import flywheel1 from "./flywheel1.png";
+import flywheel2 from "./flywheel2.png";
+import flywheel3 from "./flywheel3.png";
+import flywheel4 from "./flywheel4.png";
+import flywheel5 from "./flywheel5.png";
+
+import ac1 from "./ac1.png"
+import blank from "./blank.png"
+
+import Load1 from "./Load1.png"
+import Load2 from "./Load2.png"
+import Load3 from "./Load3.png"
+import Load4 from "./Load4.png"
+import Load5 from "./Load5.png"
+
 
 
 
@@ -72,4 +87,7 @@ heavy1, heavy2, heavy3, heavy4, heavy5,
 health1, health2 , health3, health4 , health5,
 it1 ,it2, it3, it4 ,it5,
 tran1, tran2, tran3, tran4, tran5,
-waste1, waste2, waste3, waste4, waste5, Load, flywheel, fuel1, solar1design, SWT, Ups}
+waste1, waste2, waste3, waste4, waste5, Load, flywheel, fuel1, solar1design, SWT, Ups,
+flywheel1, flywheel2, flywheel3, flywheel4, flywheel5,
+blank ,ac1,
+Load1, Load2,Load3, Load4,Load5}

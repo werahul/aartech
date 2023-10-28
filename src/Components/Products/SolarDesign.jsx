@@ -43,7 +43,7 @@ const SolarDesign = () => {
     <div>
       <Navbar />
 
-      <div className=" 2xl:px-[120px] lg:py-20 lg:px-20  pt-20 px-5 py-10 lg:mt-0 mt-5 sm:px-10">
+      <div className=" 2xl:px-[120px] lg:pt-20 lg:px-20  pt-10 px-5 py-10 lg:mt-0 mt-5 sm:px-10">
         <div className="flex lg:flex-row flex-col lg:mt-20">
           <div className="lg:hidden text-black text-[28px] font-normal font-antonio">
             Solar Design & Services
@@ -62,12 +62,20 @@ const SolarDesign = () => {
             </div>
             <div className="flex flex-col justify-between  lg:h-[330px]">
               <div className="text-black lg:text-[22px] text-base lg:font-normal font-medium font-Barlow mt-6 lg:leading-tight leading-snug">
-              Aartech Solonics delivers superior solar design as a commitment to engineering excellence. Our expert team tailors solar solutions to your specific needs, focusing on intricate panel layouts and energy optimisation. Our comprehensive services cover the entire solar integration spectrum, offering support from feasibility studies and system design to installation and maintenance. Whether residential or industrial, we ensure efficient, customised solutions to meet your energy goals.
-
+                Aartech Solonics delivers superior solar design as a commitment
+                to engineering excellence. Our expert team tailors solar
+                solutions to your specific needs, focusing on intricate panel
+                layouts and energy optimisation. Our comprehensive services
+                cover the entire solar integration spectrum, offering support
+                from feasibility studies and system design to installation and
+                maintenance. Whether residential or industrial, we ensure
+                efficient, customised solutions to meet your energy goals.
               </div>
               <div className="flex items-center lg:mt-auto mt-12 cursor-pointer">
                 <img src={download} alt="" />
-                <div className="text-foot-blue hover:text-box-red lg:text-lg text-base font-bold font-Barlow tracking-wider ml-[10px]">DOWNLOAD BROCHURE</div>
+                <div className="text-foot-blue hover:text-box-red lg:text-lg text-base font-bold font-Barlow tracking-wider ml-[10px]">
+                  DOWNLOAD BROCHURE
+                </div>
               </div>
             </div>
           </div>
@@ -78,105 +86,111 @@ const SolarDesign = () => {
         </div>
         <div className="lg:flex hidden space-x-3 mt-8">
           <button
-            className={`tag ${selectedTag === "tag1"
-              ? "bg-white text-box-red border-box-red"
-              : "text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red"
-              } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
+            className={`tag ${
+              selectedTag === "tag1"
+                ? "bg-white text-box-red border-box-red"
+                : "text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red"
+            } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
             onClick={() => handleTagClick("tag1")}
           >
             Defence & Exploration
           </button>
           <button
-            className={`tag ${selectedTag === "tag2"
-              ? "bg-white text-box-red border-box-red"
-              : "text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red"
-              } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
+            className={`tag ${
+              selectedTag === "tag2"
+                ? "bg-white text-box-red border-box-red"
+                : "text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red"
+            } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
             onClick={() => handleTagClick("tag2")}
           >
             Renewable Energy
           </button>
 
           <button
-            className={`tag ${selectedTag === "tag3"
-              ? "bg-white text-box-red border-box-red"
-              : "text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red"
-              } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
+            className={`tag ${
+              selectedTag === "tag3"
+                ? "bg-white text-box-red border-box-red"
+                : "text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red"
+            } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
             onClick={() => handleTagClick("tag3")}
           >
             Heavy Engineering Industries
           </button>
           <button
-            className={`tag ${selectedTag === "tag4"
-              ? "bg-white text-box-red border-box-red"
-              : "text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red"
-              } w-auto h-[49px] px-[20px]   py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
+            className={`tag ${
+              selectedTag === "tag4"
+                ? "bg-white text-box-red border-box-red"
+                : "text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red"
+            } w-auto h-[49px] px-[20px]   py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
             onClick={() => handleTagClick("tag4")}
           >
             Healthcare
           </button>
-         
         </div>
         <div className="lg:flex hidden space-x-3 mt-3">
-         
-
           <button
-            className={`tag ${selectedTag === "tag5"
-              ? "bg-white text-box-red border-box-red"
-              : "text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red"
-              } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
+            className={`tag ${
+              selectedTag === "tag5"
+                ? "bg-white text-box-red border-box-red"
+                : "text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red"
+            } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
             onClick={() => handleTagClick("tag5")}
           >
             IT & Telecom
           </button>
-          
         </div>
 
         {/*     mobile-------------------------------------------------------------*/}
 
         <div className="flex lg:hidden space-x-3 mt-8 overflow-auto">
           <button
-            className={`tag ${selectedTag === "tag1"
-              ? "bg-white text-box-red border-box-red"
-              : "text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red"
-              } w-[300px] h-[49px] px-[12px] py-[9px] whitespace-nowrap uppercase border  text-lg font-bold font-Barlow tracking-wider`}
+            className={`tag ${
+              selectedTag === "tag1"
+                ? "bg-white text-box-red border-box-red"
+                : "text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red"
+            } w-[300px] h-[49px] px-[12px] py-[9px] whitespace-nowrap uppercase border  text-lg font-bold font-Barlow tracking-wider`}
             onClick={() => handleTagClick("tag1")}
           >
             Defence & Exploration
           </button>
           <button
-            className={`tag ${selectedTag === "tag2"
-              ? "bg-white text-box-red border-box-red"
-              : "text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red"
-              } w-[300px] h-[49px] px-[12px] py-[9px] whitespace-nowrap uppercase border  text-lg font-bold font-Barlow tracking-wider`}
+            className={`tag ${
+              selectedTag === "tag2"
+                ? "bg-white text-box-red border-box-red"
+                : "text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red"
+            } w-[300px] h-[49px] px-[12px] py-[9px] whitespace-nowrap uppercase border  text-lg font-bold font-Barlow tracking-wider`}
             onClick={() => handleTagClick("tag2")}
           >
             Renewable Energy
           </button>
 
           <button
-            className={`tag ${selectedTag === "tag3"
-              ? "bg-white text-box-red border-box-red"
-              : "text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red"
-              } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap uppercase border  text-lg font-bold font-Barlow tracking-wider`}
+            className={`tag ${
+              selectedTag === "tag3"
+                ? "bg-white text-box-red border-box-red"
+                : "text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red"
+            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap uppercase border  text-lg font-bold font-Barlow tracking-wider`}
             onClick={() => handleTagClick("tag3")}
           >
             HEAVY ENGINEERING INDUSTRIES
           </button>
 
           <button
-            className={`tag ${selectedTag === "tag4"
-              ? "bg-white text-box-red border-box-red"
-              : "text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red"
-              } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap uppercase  border  text-lg font-bold font-Barlow tracking-wider`}
+            className={`tag ${
+              selectedTag === "tag4"
+                ? "bg-white text-box-red border-box-red"
+                : "text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red"
+            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap uppercase  border  text-lg font-bold font-Barlow tracking-wider`}
             onClick={() => handleTagClick("tag4")}
           >
             Healthcare
           </button>
           <button
-            className={`tag ${selectedTag === "tag5"
-              ? "bg-white text-box-red border-box-red"
-              : "text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red"
-              } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap uppercase  border  text-lg font-bold font-Barlow tracking-wider`}
+            className={`tag ${
+              selectedTag === "tag5"
+                ? "bg-white text-box-red border-box-red"
+                : "text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red"
+            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap uppercase  border  text-lg font-bold font-Barlow tracking-wider`}
             onClick={() => handleTagClick("tag5")}
           >
             IT & Telecom
@@ -220,19 +234,13 @@ const SolarDesign = () => {
         <div className="text-foot-blue text-lg font-bold font-Barlow tracking-wider lg:mt-20 mt-10">
           FEATURES
         </div>
-        <div className="lg:flex  justify-between mt-8 ">
-          <div className="text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:leading-tight leading-snug">
-            <p className="list-dots">High Continuous Current- up to 5000A</p>
-            <p className="list-dots">
-              Electronically Triggered – Permits breakers to work up to their
-              ratings.
-            </p>
-            <p className="list-dots">
-              Redundant Sensing – Provides backup sensing
-            </p>
-            <p className="list-dots">
-              Low Fault En className="list-dots"ergy Let-through – Reduce Damage
-            </p>
+        <div className="lg:flex  justify-start space-x-96 mt-8 ">
+          <div className="text-black lg:text-2xl text-base space-y-2 lg:font-normal font-medium font-Barlow lg:leading-tight leading-snug">
+            <p className="list-dots">AHJs & Codes Compliant</p>
+            <p className="list-dots">Site Specific Optimization</p>
+            <p className="list-dots">Industry Standard Tools</p>
+            <p className="list-dots">Simulations & Analytics</p>
+            <p className="list-dots">PE Stamping</p>
             {/* <li>Residual Voltage Transfer Mode</li>
             <li>
               Protective Transfer Initiation on Upstream Protective Relay
@@ -243,13 +251,11 @@ const SolarDesign = () => {
               voltage, frequency, |df/dt| criterion
             </li> */}
           </div>
-          <div className="text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:leading-tight leading-snug lg:ml-16 lg:mt-0 mt-6">
-            <p className="list-dots">
-              Very High Interrupt Ratings – Upto 120kA rms symmetrical
-            </p>
-            <p className="list-dots">
-              Wide Environmental Range – Indoor/Outdoor Applications
-            </p>
+          <div className="text-black lg:text-2xl space-y-2 text-base lg:font-normal font-medium font-Barlow lg:leading-tight leading-snug lg:ml-16 lg:mt-0 mt-6">
+            <p className="list-dots">Documentation</p>
+            <p className="list-dots">Consultancy</p>
+            <p className="list-dots">Staff Augmentation</p>
+            <p className="list-dots">Multi-Disciplinary Activities</p>
             {/* <li>Continuous Breaker Circuit Monitoring</li>
             <li>Smart Breaker Failure Processing</li>
             <li>Integrated System Interlocks</li>
@@ -266,24 +272,23 @@ const SolarDesign = () => {
           CUSTOMISATION
         </div>
         <div className="text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:leading-tight leading-snug mt-8">
-          BTS 2000 is generally customised to project specific requirements.
-          While there may be certain product configurations that are similar if
-          not identical between projects, there is always a need to ensure that
-          the switchgear circuits are appropriately designed and integrated to
-          match the bus transfer requirements. <br />
-          <br />
-          The product range illustrated to the right are therefore meant to
-          serve as a general reference while specifics may vary on a case to
-          case basis.
-          <br />
-          <br />
-          Please mail your custom specific requirements along with a copy of
-          your Single Line Diagram (SLD), Specifications (if any) and
-          Operational Philosophy to bts@aartechsolonics.com . We would be happy
-          to assist you with our recommendations in the best possible manner.
+          Aartech Solonics excels in customising solar designs to meet
+          individual requirements, with a dedicated team specialising in
+          intricate panel layouts and energy optimisation. Their comprehensive
+          services cater to both residential and industrial needs, ensuring
+          efficient and tailored solutions for all energy goals. If you have any
+          custom-specific requirements, mail us with details of your system at
+          our email id{" "}
+          <a href="mailto:solar@aartechsolonics.com">
+            {" "}
+            <span className="text-red-600 hover:underline cursor-pointer">
+              solar@aartechsolonics.com
+            </span>
+          </a>{" "}
+          .
         </div>
 
-        <div className="lg:flex hidden lg:flex-row flex-col gap-x-[28px] gap-y-6 lg:mt-20 mt-10">
+        {/* <div className="lg:flex hidden lg:flex-row flex-col gap-x-[28px] gap-y-6 lg:mt-20 mt-10">
           <div className=" w-[100%] h-auto border border-slate-900 lg:py-[59px] py-6 lg:px-[39px] px-4">
             <div className="text-black text-base font-bold font-['Barlow'] tracking-wider">
               MAIN - TIE - MAIN (3 BREAKER SCHEME)
@@ -370,14 +375,14 @@ const SolarDesign = () => {
 
         <Accordion />
         <Accordion2 />
-        <Accordion3 />
+        <Accordion3 /> */}
 
         <div className="text-black lg:text-4xl text-[28px] font-normal font-antonio lg:mt-20 mt-10">
           Customers
         </div>
         <CustomerLogos2 />
 
-        <div className="text-black lg:text-4xl text-[28px] font-normal font-antonio">
+        {/* <div className="text-black lg:text-4xl text-[28px] font-normal font-antonio">
           DOWNLOADS
         </div>
 
@@ -513,7 +518,7 @@ const SolarDesign = () => {
               </a>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
 
       <Footer />

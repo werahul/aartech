@@ -1,74 +1,84 @@
-import React, { useState } from "react";
-import { Navbar, Footer, Accordion, Accordion2, Accordion3 } from "../index";
-
-import { Load1, Load2, Load3, Load4, Load5 } from "../../assets/IndImages";
+import React, { useState, useEffect } from "react";
+import { Navbar, Footer } from "../index";
+import { product1 } from "../../assets/workImages";
+import { download } from "../../assets/images";
+import { Accordion, Accordion2, Accordion3 } from "..";
+import { CustomerLogos2 } from "..";
 
 import { ImageSelect } from "../ImageSelector";
+// import { cp1, cp2, cp3, cp4, cp5 } from "../../assets/proImages";
+import {
+  flywheel1,
+  flywheel2,
+  flywheel3,
+  flywheel4,
+  flywheel5,
+} from "../../assets/IndImages";
+import { indRail, CapS, CapG, hp } from "../../assets/WorkBlackLogos";
+import { SolidWasteAuto } from "../AutoScroll";
 
-import { CustomerLogos2 } from "..";
-import { download } from "../../assets/images";
+const Flywheel = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to the top of the page
+  }, []); // Empty dependency array ensures the effect runs only
 
-const LoadChecker = () => {
-  const images = [Load1, Load2, Load3, Load4, Load5];
   const [selectedTag, setSelectedTag] = useState("tag1");
-  const [selectedProTag, setSelectedProTag] = useState("PTag1");
+  const images = [flywheel1, flywheel2, flywheel3, flywheel4, flywheel5];
 
   const tagContents = {
-    tag1: "Load Checker safeguards the Defence and Exploration sectors by preventing equipment damage due to excessive current, offering automated reset and enhancing energy management, and ensuring reliability and cost-effectiveness for critical applications.",
+    tag1: "Flywheels provide crucial power reliability for defence and exploration and offer versatile applications in electric vehicles, grid stability, public transport, and uninterrupted power supply, promoting efficiency and emission reduction.",
 
-    tag2: "Load Checker, a crucial tool in renewable energy, blocks excessive current, ensuring uninterrupted power for load management and grid optimisation. It minimises manual intervention, benefiting utilities and consumers across sectors.",
+    tag2: "Flywheels benefit the renewable energy industry by providing grid stability and energy storage. They combat the intermittent nature of solar and wind power, enhance grid performance, facilitate EV charging, and recover energy in various applications.",
 
-    tag3: "Load Checker improves Non-Renewable Energy sector efficiency by blocking excess current and optimising load management. Its self-reset feature ensures power stability and reduces manual interventions, benefiting consumers and distribution utilities.",
+    tag3: "Flywheels enhance the Power Transmission sector by ensuring grid stability, aiding electric vehicle charging, enabling energy recovery in transportation, and serving as reliable power backups, resulting in cost and emission reductions.",
 
-    tag4: "Load Checker is a load-limiting device that improves power distribution by preventing excessive current, promoting fair energy allocation and supporting smart grids. It automates control, reduces manual intervention, and enhances efficiency.",
+    tag4: "Flywheels boost grid stability for renewables in heavy engineering. They enhance efficiency, cut emissions, and improve reliability in EV charging, grid stabilisation, public transport energy recovery, and uninterrupted power supply applications.",
 
-    tag5: "Load Checker automates load control in heavy engineering, preventing overloads, reducing manual intervention, and enhancing energy efficiency. It's particularly valuable for sectors like railways and distributed generation, optimising power management.",
+    tag5: "Flywheels in healthcare ensure uninterrupted power supply during critical operations and equipment usage. They offer reliability and stability, making them a valuable solution for various medical applications and patient care.",
 
-    tag6: "Load Checker ensures stable power in healthcare settings by preventing excess current, offering a self-reset feature for consistent performance, reducing manual intervention, and enhancing device longevity. Vital for critical load management.",
+    tag6: "Flywheel technology stores kinetic energy and provides power grid stability for IT and telecom. It aids EV charging, grid stabilisation and energy recovery and serves as an uninterruptible power supply across industries.",
 
-    tag7: "Load Checker, by Aartech, aids the IT and Telecom industry with efficient power management. It prevents excessive current self-resets and facilitates cost-effective load control, reducing non-technical losses and the need for resource-intensive metering.",
-
-    // tag8: "Best Case streamlines access to high-quality, cost-effective enclosures for Heavy Engineering Industries, ensuring timely availability and customisation options. This support enhances product development, transportation of delicate equipment, and presentations, aligning with industry benchmarks for success.",
+    tag7: "Flywheels, such as Inertia Drive, are essential in transportation, offering grid stability, EV fast charging, grid stabilisation, energy recovery, and uninterruptible power supply for industry, leveraging kinetic energy for sustainability.",
   };
 
   const handleTagClick = (tag) => {
     setSelectedTag(tag); // Set the selected tag
-    // Set the selected tag
   };
 
-  const handleProClick = (tag) => {
-    setSelectedProTag(tag);
-  };
+  const partnerImageSources = [indRail, CapS, CapG, hp];
   return (
     <div>
       <Navbar />
+      <div className=" 2xl:px-[120px] lg:pt-20 lg:px-20  pt-10 px-5 lg:mt-0 mt-5 sm:px-10">
+        <div className="lg:hidden text-black text-[28px] font-normal font-antonio ">
+        Flywheel
+        </div>
+        <div className="lg:hidden text-foot-blue text-lg font-bold font-Barlow tracking-wider mb-4">
+          PRODUCTS
+        </div>
 
-      <div className=" 2xl:px-[120px] lg:pt-20 lg:px-20  pt-10 px-5 py-10 lg:mt-0 mt-5 sm:px-10">
-        <div className="flex lg:flex-row flex-col lg:mt-20">
-          <div className="lg:hidden text-black text-[28px] font-normal font-antonio">
-            Load Checker
-          </div>
-          <div className="lg:hidden text-foot-blue text-lg font-bold font-Barlow tracking-wider mb-4">
-            PRODUCTS
-          </div>
-
+        <div className="lg:flex lg:mt-20">
           <ImageSelect images={images} />
-          <div className="lg:w-[55%] lg:ml-[44px]">
+
+          <div className="lg:w-[55%] w-[100%] lg:ml-[44px]">
             <div className="lg:block hidden text-black text-4xl font-normal font-antonio">
-              Load Checker
+              Flywheel
             </div>
             <div className="lg:block hidden text-foot-blue text-lg font-bold font-Barlow tracking-wider mt-2">
               PRODUCTS
             </div>
             <div className="flex flex-col justify-between  lg:h-[330px]">
               <div className="text-black lg:text-[22px] text-base lg:font-normal font-medium font-Barlow mt-6 lg:leading-tight leading-snug">
-                LoadChecker is designed to safeguard your electrical systems by
-                automatically cutting off the mains supply if it detects
-                excessive current. Thanks to its patented self-reset feature, it
-                will restore power to your load once it has been disconnected
-                for a brief period, all without any manual intervention. This
-                technology ensures an extended lifespan for the product while
-                maintaining your electrical safety.
+                The flywheel is a mechanical energy storage device that stores
+                kinetic energy as rotational momentum. Inertia Drive technology
+                utilises flywheels to address issues in renewable energy
+                integration and grid stability. These flywheels can be grouped
+                in clusters, from 65 kW to 500 kW, with scalability options.
+                They offer quick installation in various environments and
+                deliver rapid power response with a 7.5 kWh energy capacity.
+                Notably, these flywheels achieve over 90% round-trip efficiency,
+                operate within a wide temperature range, and have a 100% Depth
+                of Discharge (DoD) with unlimited cycles.
               </div>
               <div className="flex items-center lg:mt-auto mt-12 cursor-pointer">
                 <img src={download} alt="" />
@@ -89,52 +99,52 @@ const LoadChecker = () => {
               selectedTag === "tag1"
                 ? "bg-white text-box-red border-box-red"
                 : "text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red"
-            } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
+            } w-auto h-[49px] px-[15px] uppercase py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
             onClick={() => handleTagClick("tag1")}
           >
-            Defence and Exploration
+            Defence & Exploration
           </button>
+
           <button
             className={`tag ${
               selectedTag === "tag2"
                 ? "bg-white text-box-red border-box-red"
                 : "text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red"
-            } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
+            }  w-auto h-[49px] px-[15px] uppercase py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
             onClick={() => handleTagClick("tag2")}
           >
             Renewable Energy
           </button>
-
           <button
             className={`tag ${
               selectedTag === "tag3"
                 ? "bg-white text-box-red border-box-red"
                 : "text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red"
-            } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
+            }  w-auto h-[49px] px-[15px] uppercase py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
             onClick={() => handleTagClick("tag3")}
-          >
-            Non-Renewable Energy
-          </button>
-          <button
-            className={`tag ${
-              selectedTag === "tag4"
-                ? "bg-white text-box-red border-box-red"
-                : "text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red"
-            } w-auto h-[49px] px-[20px]   py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
-            onClick={() => handleTagClick("tag4")}
           >
             Power Transmission and Distribution
           </button>
-        </div>
-        <div className="lg:flex hidden space-x-3 mt-4">
-          {" "}
+
           <button
             className={`tag ${
               selectedTag === "tag5"
                 ? "bg-white text-box-red border-box-red"
                 : "text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red"
-            } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
+            }  w-auto h-[49px] px-[15px] uppercase py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
             onClick={() => handleTagClick("tag5")}
+          >
+            Healthcare
+          </button>
+        </div>
+        <div className="lg:flex hidden space-x-3 mt-3">
+          <button
+            className={`tag ${
+              selectedTag === "tag4"
+                ? "bg-white text-box-red border-box-red"
+                : "text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red"
+            }  w-auto h-[49px] px-[15px] uppercase py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
+            onClick={() => handleTagClick("tag4")}
           >
             Heavy Engineering Industries
           </button>
@@ -143,42 +153,41 @@ const LoadChecker = () => {
               selectedTag === "tag6"
                 ? "bg-white text-box-red border-box-red"
                 : "text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red"
-            } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
+            }  w-auto h-[49px] px-[15px] uppercase py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
             onClick={() => handleTagClick("tag6")}
           >
-            Healthcare
+            IT and Telecom
           </button>
           <button
             className={`tag ${
               selectedTag === "tag7"
                 ? "bg-white text-box-red border-box-red"
                 : "text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red"
-            } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
+            }  w-auto h-[49px] px-[15px] uppercase py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
             onClick={() => handleTagClick("tag7")}
           >
-            IT and Telecom
+            Transportation
           </button>
         </div>
 
         {/*     mobile-------------------------------------------------------------*/}
-
         <div className="flex lg:hidden space-x-3 mt-8 overflow-auto">
           <button
             className={`tag ${
               selectedTag === "tag1"
                 ? "bg-white text-box-red border-box-red"
                 : "text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red"
-            } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
+            } w-auto h-[49px] px-[10px] uppercase  py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
             onClick={() => handleTagClick("tag1")}
           >
-            Defence and Exploration
+            Defence & Exploration
           </button>
           <button
             className={`tag ${
               selectedTag === "tag2"
                 ? "bg-white text-box-red border-box-red"
                 : "text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red"
-            } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
+            } w-auto h-[49px] px-[10px] uppercase  whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
             onClick={() => handleTagClick("tag2")}
           >
             Renewable Energy
@@ -189,65 +198,68 @@ const LoadChecker = () => {
               selectedTag === "tag3"
                 ? "bg-white text-box-red border-box-red"
                 : "text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red"
-            } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
+            } w-auto h-[49px] px-[10px] uppercase py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
             onClick={() => handleTagClick("tag3")}
           >
-            Non-Renewable Energy
+            Power Transmission and Distribution
           </button>
           <button
             className={`tag ${
               selectedTag === "tag4"
                 ? "bg-white text-box-red border-box-red"
                 : "text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red"
-            } w-auto h-[49px] px-[20px]   py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
+            } w-auto h-[49px] px-[10px] uppercase py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
             onClick={() => handleTagClick("tag4")}
           >
-            Power Transmission and Distribution
+            Heavy Engineering Industries
           </button>
           <button
             className={`tag ${
               selectedTag === "tag5"
                 ? "bg-white text-box-red border-box-red"
                 : "text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red"
-            } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
+            } w-auto h-[49px] px-[10px] uppercase py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
             onClick={() => handleTagClick("tag5")}
           >
-            Heavy Engineering Industries
+            Healthcare
           </button>
           <button
             className={`tag ${
               selectedTag === "tag6"
                 ? "bg-white text-box-red border-box-red"
                 : "text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red"
-            } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
+            } w-auto h-[49px] px-[10px] uppercase py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
             onClick={() => handleTagClick("tag6")}
           >
-            Healthcare
+            IT & Telecom
           </button>
           <button
             className={`tag ${
               selectedTag === "tag7"
                 ? "bg-white text-box-red border-box-red"
                 : "text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red"
-            } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
+            } w-auto h-[49px] px-[10px] uppercase py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
             onClick={() => handleTagClick("tag7")}
           >
-            IT and Telecom
+            Transportation
           </button>
         </div>
-
-        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow mt-8 lg:leading-tight leading-snug ">
+        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow mt-8 lg:leading-tight leading-snug">
           {" "}
           {selectedTag && tagContents[selectedTag]}
         </div>
+
         <div className="text-foot-blue text-lg font-bold font-Barlow tracking-wider lg:mt-20 mt-10">
           FEATURES
         </div>
+
         <div className="lg:flex  justify-start mt-8 ">
           <div className="text-black lg:text-2xl text-base space-y-1 lg:font-normal font-medium font-Barlow lg:leading-tight leading-snug">
-            <p className="list-dots">Alternative to 100%</p>
-            <p className="list-dots">Highly Economic</p>
-            <p className="list-dots">Highly Effective</p>
+            <p className="list-dots">Inertia Drive (ID)</p>
+            <p className="list-dots">Flywheel Container</p>
+            <p className="list-dots">Outstanding Technical Performances</p>
+            <p className="list-dots">Industries, Applications & Solutions</p>
+            <p className="list-dots">Electric Vehicles (EV) Charging</p>
 
             {/* <li>Residual Voltage Transfer Mode</li>
             <li>
@@ -260,9 +272,14 @@ const LoadChecker = () => {
             </li> */}
           </div>
           <div className="text-black lg:text-2xl space-y-1 text-base lg:font-normal font-medium font-Barlow lg:leading-tight leading-snug lg:ml-80 lg:mt-0 mt-6">
-            <p className="list-dots">Minimum investment</p>
-            <p className="list-dots">Zero maintenance</p>
-            <p className="list-dots">Zero Upkeep cost</p>
+            <p className="list-dots">Power Transmission (Grid Stabilization)</p>
+            <p className="list-dots">Public Transport (Energy Recovery)</p>
+            <p className="list-dots">
+              Process Industries (Uninterruptible Power Supply - UPS)
+            </p>
+            <p className="list-dots">
+              100% Depth of Discharge (DoD) and unlimited cycles
+            </p>
             {/* <li>Continuous Breaker Circuit Monitoring</li>
             <li>Smart Breaker Failure Processing</li>
             <li>Integrated System Interlocks</li>
@@ -279,22 +296,14 @@ const LoadChecker = () => {
           CUSTOMISATION
         </div>
         <div className="text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:leading-tight leading-snug mt-8">
-          Aartech offers adaptable settings and parameters, allowing users to
-          fine-tune the Load Checker to specific requirements. This
-          customisation ensures optimal electrical safety and extended product
-          longevity. If you have any custom specific requirements, mail us with
-          details of your system at our email id{" "}
-          <a href="mailto:lc@aartechsolonics.com">
-            {" "}
-            <span className="text-red-600 hover:underline cursor-pointer">
-              lc@aartechsolonics.com
-            </span>
-          </a>{" "}
-          .
+          Aartech specialises in tailoring flywheels for diverse requirements,
+          offering custom solutions within the 65 kW to 500 kW range with
+          scalability. Their expertise ensures efficient, adaptable energy
+          storage systems.
         </div>
 
         {/* <div className="lg:flex hidden lg:flex-row flex-col gap-x-[28px] gap-y-6 lg:mt-20 mt-10">
-          <div className=" w-[100%] h-auto border border-slate-900 lg:py-[59px] py-6 lg:px-[39px] px-4">
+          <div className=" w-[100%] h-auto border border-slate-900 lg:py-[40px] py-6 lg:px-[39px] px-4">
             <div className="text-black text-base font-bold font-['Barlow'] tracking-wider">
               MAIN - TIE - MAIN (3 BREAKER SCHEME)
             </div>
@@ -330,7 +339,7 @@ const LoadChecker = () => {
             </div>
           </div>
 
-          <div className=" w-[100%] h-auto border border-slate-900 lg:py-[59px] py-6 lg:px-[39px] px-4">
+          <div className=" w-[100%] h-auto border border-slate-900 lg:py-[40px] py-6 lg:px-[39px] px-4">
             <div className="text-black text-base font-bold font-['Barlow'] tracking-wider">
               MAIN - TIE (2 BREAKER SCHEMES)
             </div>
@@ -364,7 +373,7 @@ const LoadChecker = () => {
             </div>
           </div>
 
-          <div className=" w-[100%] lg:h-auto h-[550px] border border-slate-900 lg:py-[59px] py-6 lg:px-[39px] px-4">
+          <div className=" w-[100%] lg:h-auto h-[550px] border border-slate-900 lg:py-[40px] py-6 lg:px-[39px] px-4">
             <div className="text-black text-base font-bold font-Barlow tracking-wider">
               OTHER CUSTOMISED SCHEMES
             </div>
@@ -385,6 +394,7 @@ const LoadChecker = () => {
         <div className="text-black lg:text-4xl text-[28px] font-normal font-antonio lg:mt-20 mt-10">
           Customers
         </div>
+
         <CustomerLogos2 />
 
         {/* <div className="text-black lg:text-4xl text-[28px] font-normal font-antonio ">
@@ -424,7 +434,7 @@ const LoadChecker = () => {
                 target="_blank"
               >
                 {" "}
-                <li className="text-black lg:text-lg text-base lg:font-normal font-medium font-Barlow hover:underline hover:font-medium mt-5">
+                <li className="text-black lg:text-lg text-base lg:font-normal font-medium font-Barlow underline hover:font-medium mt-5">
                   A. Raje, A. A. Raje, A. Chaudhary, “Fast Bus Transfer Systems
                   – A Systems Solution Approach”, National Power Systems
                   Conference, Mumbai, India, Dec 2008.
@@ -443,7 +453,7 @@ const LoadChecker = () => {
                 target="_blank"
               >
                 {" "}
-                <li className="text-black lg:text-lg text-base lg:font-normal font-medium font-Barlow hover:underline hover:font-medium">
+                <li className="text-black lg:text-lg text-base lg:font-normal font-medium font-Barlow underline hover:font-medium">
                   BTS 2000-2008 – PowerGen Middle East Fast Bus Transfer Systems
                   – A System Solution Approach.ppt
                 </li>
@@ -460,7 +470,7 @@ const LoadChecker = () => {
                 href="https://aartechsolonics.com//wp-content/uploads/2019/02/Case-Study-Auto-Transfer-Requirements-in-Bus-Transfer-Schemes.pdf"
                 target="_blank"
               >
-                <li className="text-black lg:text-lg text-base lg:font-normal font-medium font-Barlow hover:underline hover:font-medium mt-5">
+                <li className="text-black lg:text-lg text-base lg:font-normal font-medium font-Barlow underline hover:font-medium mt-5">
                   Case Study – Auto Transfer Requirements in Bus Transfer
                   Schemes.pdf
                 </li>
@@ -469,7 +479,7 @@ const LoadChecker = () => {
                 href="https://aartechsolonics.com//wp-content/uploads/2019/02/Case-Study-Automatic-Station-to-Station-Bus-Transfer-to-avoid-AC-Failure.pdf"
                 target="_blank"
               >
-                <li className="text-black lg:text-lg text-base lg:font-normal font-medium font-Barlow hover:underline hover:font-medium mt-5">
+                <li className="text-black lg:text-lg text-base lg:font-normal font-medium font-Barlow underline hover:font-medium mt-5">
                   Case Study – Automatic Station-to-Station Bus Transfer to
                   avoid AC Failure.pdf
                 </li>
@@ -479,7 +489,7 @@ const LoadChecker = () => {
                 href="https://aartechsolonics.com//wp-content/uploads/2019/02/Case-Study-Breaker-Mechanism-Problem.pdf"
                 target="_blank"
               >
-                <li className="text-black lg:text-lg text-base lg:font-normal font-medium font-Barlow hover:underline hover:font-medium mt-5">
+                <li className="text-black lg:text-lg text-base lg:font-normal font-medium font-Barlow underline hover:font-medium mt-5">
                   Case Study – Breaker Mechanism Problem.pdf
                 </li>
               </a>
@@ -488,7 +498,7 @@ const LoadChecker = () => {
                 href="https://aartechsolonics.com//wp-content/uploads/2019/02/Case-Study-Spin-Down-Characteristics-for-Evaluating-Sequential-Fast-Transfer.pdf"
                 target="_blank"
               >
-                <li className="text-black lg:text-lg text-base lg:font-normal font-medium font-Barlow hover:underline hover:font-medium mt-5">
+                <li className="text-black lg:text-lg text-base lg:font-normal font-medium font-Barlow underline hover:font-medium mt-5">
                   Case Study – Spin Down Characteristics – for Evaluating
                   Sequential Fast Transfer.pdf
                 </li>
@@ -498,7 +508,7 @@ const LoadChecker = () => {
                 href="https://aartechsolonics.com//wp-content/uploads/2019/02/Case-Study-Unit-to-Station-Half-Station-to-Station-Scheme.pdf"
                 target="_blank"
               >
-                <li className="text-black lg:text-lg text-base lg:font-normal font-medium font-Barlow hover:underline hover:font-medium mt-5">
+                <li className="text-black lg:text-lg text-base lg:font-normal font-medium font-Barlow underline hover:font-medium mt-5">
                   Case Study – Unit-to-Station + Half Station-to-Station
                   Scheme.pdf
                 </li>
@@ -507,7 +517,7 @@ const LoadChecker = () => {
                 href="https://aartechsolonics.com//wp-content/uploads/2019/02/Case-Study-IEEE-WG-Report-Oscillographic-Report-and-Analysis-Writeup.pdf"
                 target="_blank"
               >
-                <li className="text-black lg:text-lg text-base lg:font-normal font-medium font-Barlow hover:underline hover:font-medium mt-5">
+                <li className="text-black lg:text-lg text-base lg:font-normal font-medium font-Barlow underline hover:font-medium mt-5">
                   Case Study IEEE WG Report – Oscillographic Report and Analysis
                   – Writeup.pdf
                 </li>
@@ -516,7 +526,7 @@ const LoadChecker = () => {
                 href="https://aartechsolonics.com//wp-content/uploads/2019/02/Case-Study-IEEE-WG-Report-Oscillographic-Report-and-Analysis-Oscillographs.pdf"
                 target="_blank"
               >
-                <li className="text-black lg:text-lg text-base lg:font-normal font-medium font-Barlow hover:underline hover:font-medium mt-5">
+                <li className="text-black lg:text-lg text-base lg:font-normal font-medium font-Barlow underline hover:font-medium mt-5">
                   Case Study IEEE WG Report – Oscillographic Report and Analysis
                   – Oscillographs.pdf
                 </li>
@@ -525,10 +535,9 @@ const LoadChecker = () => {
           </div>
         </div> */}
       </div>
-
       <Footer />
     </div>
   );
 };
 
-export default LoadChecker;
+export default Flywheel;

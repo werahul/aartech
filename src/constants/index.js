@@ -108,26 +108,32 @@ const product = [
     title: "AC & DC UPS",
     image: productImg8,
     desc: "J. Schneider's DC uninterruptible power supplies guarantee safe process continuity during voltage interruptions or fluctuations, complemented by chargers for ultracapacitors and batteries, plus essential accessories.",
+    path: "/products/ac-and-dc"
   },
   {
     title: "FLYWHEEL",
     image: productImg9,
     desc: "A flywheel, a mechanical component, stores energy through its spinning motion. When torque is applied, it accelerates, accumulating more rotational energy and becoming a kinetic energy reservoir.",
+    path: "/products/flywheel"
   },
   {
     title: "LOAD CHECKER",
     image: productImg10,
     desc: "Load Checker automatically cuts off power if excessive current is detected and seamlessly restores power when the load is disconnected for a brief period, with no manual intervention needed. Its soft-blocking technology ensures longevity.",
+    path: "/products/load-checker"
+    
   },
   {
     title: "SOLAR DESIGN & SERVICES",
     image: productImg11,
     desc: "Aartech Solonics passionately harnesses solar power for sustainable energy, committing to engineering excellence. They offer tailored solar solutions, from design to installation and maintenance, catering to residential and industrial clients.",
+    path: "/products/solar-design-and-services"
   },
   {
     title: "SOLID WASTE TREATMENT",
     image: productImg12,
     desc: "WTC rapidly converts organic waste to odourless compost using natural processes and microorganisms for large-scale decomposition. The incinerator meets emission standards, reducing waste to ash at 800-1,200°C while producing energy, leaving no residues.",
+    path: "/products/solid-waste-treatment"
   },
 ];
 

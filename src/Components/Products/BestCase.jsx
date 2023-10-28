@@ -4,13 +4,21 @@ import { best1, best2, best3, best4, best5 } from "../../assets/proImages";
 import { BTS1 } from "../../assets/pdf";
 import { ImageSelect } from "../ImageSelector";
 import { CustomerLogos2 } from "..";
-import { download } from "../../assets/images"
+import { download } from "../../assets/images";
 
-
-import { tif, cCi, thermax, electro, dataTrack, threePin, rtk, hal, varuna, aemed } from '../../assets/WorkBlackLogos'
-import { CustomWorkPages } from '../AutoScroll'
-
-
+import {
+  tif,
+  cCi,
+  thermax,
+  electro,
+  dataTrack,
+  threePin,
+  rtk,
+  hal,
+  varuna,
+  aemed,
+} from "../../assets/WorkBlackLogos";
+import { CustomWorkPages } from "../AutoScroll";
 
 const BestCase = () => {
   const images = [best1, best2, best3, best4, best5];
@@ -45,13 +53,22 @@ const BestCase = () => {
   };
 
   const partnerImageSources = [
-    tif, cCi, thermax, electro, dataTrack, threePin, rtk, hal, varuna, aemed
+    tif,
+    cCi,
+    thermax,
+    electro,
+    dataTrack,
+    threePin,
+    rtk,
+    hal,
+    varuna,
+    aemed,
   ];
   return (
     <div>
       <Navbar />
 
-      <div className=" 2xl:px-[120px] lg:py-20 lg:px-20  pt-20 px-5 py-10 lg:mt-0 mt-5 sm:px-10">
+      <div className=" 2xl:px-[120px] lg:pt-20 lg:px-20  px-5 pt-10 lg:mt-0 mt-5 sm:px-10">
         <div className="flex lg:flex-row flex-col lg:mt-20">
           <div className="lg:hidden text-black text-[28px] font-normal font-antonio">
             Best Case
@@ -69,10 +86,23 @@ const BestCase = () => {
               PRODUCTS
             </div>
             <div className="flex flex-col justify-between  lg:h-[330px]">
-              <div className="text-black lg:text-[22px] text-base lg:font-normal font-medium font-Barlow mt-6 lg:leading-tight leading-snug">The Entrepreneurs, innovators, and product professionals often struggle to access affordable, high-quality enclosures for their prototypes and products. Traditional options are costly and inflexible, while local alternatives may lack quality. BestCase offers a solution by providing convenient online access to a range of enclosures, ensuring your products meet the highest standards. Our commitment to quality, affordability, and availability means you can rely on us for your enclosure needs, whether standard or custom. We're here to support your business success 24/7.                         </div>
+              <div className="text-black lg:text-[22px] text-base lg:font-normal font-medium font-Barlow mt-6 lg:leading-tight leading-snug">
+                The Entrepreneurs, innovators, and product professionals often
+                struggle to access affordable, high-quality enclosures for their
+                prototypes and products. Traditional options are costly and
+                inflexible, while local alternatives may lack quality. BestCase
+                offers a solution by providing convenient online access to a
+                range of enclosures, ensuring your products meet the highest
+                standards. Our commitment to quality, affordability, and
+                availability means you can rely on us for your enclosure needs,
+                whether standard or custom. We're here to support your business
+                success 24/7.{" "}
+              </div>
               <div className="flex items-center lg:mt-auto mt-12 cursor-pointer">
                 <img src={download} alt="" />
-                <div className="text-foot-blue hover:text-box-red lg:text-lg text-base font-bold font-Barlow tracking-wider ml-[10px]">DOWNLOAD BROCHURE</div>
+                <div className="text-foot-blue hover:text-box-red lg:text-lg text-base font-bold font-Barlow tracking-wider ml-[10px]">
+                  DOWNLOAD BROCHURE
+                </div>
               </div>
             </div>
           </div>
@@ -83,47 +113,52 @@ const BestCase = () => {
         </div>
         <div className="lg:flex hidden space-x-3 mt-8">
           <button
-            className={`tag ${selectedTag === "tag1"
+            className={`tag ${
+              selectedTag === "tag1"
                 ? "bg-white text-box-red border-box-red"
                 : "text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red"
-              } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
+            } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
             onClick={() => handleTagClick("tag1")}
           >
             Defence & Exploration
           </button>
           <button
-            className={`tag ${selectedTag === "tag2"
+            className={`tag ${
+              selectedTag === "tag2"
                 ? "bg-white text-box-red border-box-red"
                 : "text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red"
-              } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
+            } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
             onClick={() => handleTagClick("tag2")}
           >
             Renewable Energy
           </button>
 
           <button
-            className={`tag ${selectedTag === "tag3"
+            className={`tag ${
+              selectedTag === "tag3"
                 ? "bg-white text-box-red border-box-red"
                 : "text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red"
-              } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
+            } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
             onClick={() => handleTagClick("tag3")}
           >
             Non-Renewable Energy
           </button>
           <button
-            className={`tag ${selectedTag === "tag4"
+            className={`tag ${
+              selectedTag === "tag4"
                 ? "bg-white text-box-red border-box-red"
                 : "text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red"
-              } w-auto h-[49px] px-[20px]   py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
+            } w-auto h-[49px] px-[20px]   py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
             onClick={() => handleTagClick("tag4")}
           >
             Healthcare
           </button>
           <button
-            className={`tag ${selectedTag === "tag5"
+            className={`tag ${
+              selectedTag === "tag5"
                 ? "bg-white text-box-red border-box-red"
                 : "text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red"
-              } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
+            } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
             onClick={() => handleTagClick("tag5")}
           >
             IT & Telecom
@@ -131,29 +166,32 @@ const BestCase = () => {
         </div>
         <div className="lg:flex hidden space-x-3 mt-3">
           <button
-            className={`tag ${selectedTag === "tag6"
+            className={`tag ${
+              selectedTag === "tag6"
                 ? "bg-white text-box-red border-box-red"
                 : "text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red"
-              } w-auto h-[49px] px-[20px]   py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
+            } w-auto h-[49px] px-[20px]   py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
             onClick={() => handleTagClick("tag6")}
           >
             Power Transmission and Distribution
           </button>
 
           <button
-            className={`tag ${selectedTag === "tag7"
+            className={`tag ${
+              selectedTag === "tag7"
                 ? "bg-white text-box-red border-box-red"
                 : "text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red"
-              } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
+            } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
             onClick={() => handleTagClick("tag7")}
           >
             Transportation
           </button>
           <button
-            className={`tag ${selectedTag === "tag8"
+            className={`tag ${
+              selectedTag === "tag8"
                 ? "bg-white text-box-red border-box-red"
                 : "text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red"
-              } w-auto h-[49px] px-[20px]   py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
+            } w-auto h-[49px] px-[20px]   py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
             onClick={() => handleTagClick("tag8")}
           >
             Heavy Engineering Industries
@@ -164,75 +202,83 @@ const BestCase = () => {
 
         <div className="flex lg:hidden space-x-3 mt-8 overflow-auto">
           <button
-            className={`tag ${selectedTag === "tag1"
+            className={`tag ${
+              selectedTag === "tag1"
                 ? "bg-white text-box-red border-box-red"
                 : "text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red"
-              } w-[300px] h-[49px] px-[12px] py-[9px] whitespace-nowrap uppercase border  text-lg font-bold font-Barlow tracking-wider`}
+            } w-[300px] h-[49px] px-[12px] py-[9px] whitespace-nowrap uppercase border  text-lg font-bold font-Barlow tracking-wider`}
             onClick={() => handleTagClick("tag1")}
           >
             Defence & Exploration
           </button>
           <button
-            className={`tag ${selectedTag === "tag2"
+            className={`tag ${
+              selectedTag === "tag2"
                 ? "bg-white text-box-red border-box-red"
                 : "text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red"
-              } w-[300px] h-[49px] px-[12px] py-[9px] whitespace-nowrap uppercase border  text-lg font-bold font-Barlow tracking-wider`}
+            } w-[300px] h-[49px] px-[12px] py-[9px] whitespace-nowrap uppercase border  text-lg font-bold font-Barlow tracking-wider`}
             onClick={() => handleTagClick("tag2")}
           >
             Renewable Energy
           </button>
 
           <button
-            className={`tag ${selectedTag === "tag3"
+            className={`tag ${
+              selectedTag === "tag3"
                 ? "bg-white text-box-red border-box-red"
                 : "text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red"
-              } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap uppercase border  text-lg font-bold font-Barlow tracking-wider`}
+            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap uppercase border  text-lg font-bold font-Barlow tracking-wider`}
             onClick={() => handleTagClick("tag3")}
           >
             Non-Renewable Energy
           </button>
 
           <button
-            className={`tag ${selectedTag === "tag4"
+            className={`tag ${
+              selectedTag === "tag4"
                 ? "bg-white text-box-red border-box-red"
                 : "text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red"
-              } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap uppercase  border  text-lg font-bold font-Barlow tracking-wider`}
+            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap uppercase  border  text-lg font-bold font-Barlow tracking-wider`}
             onClick={() => handleTagClick("tag4")}
           >
             Healthcare
           </button>
           <button
-            className={`tag ${selectedTag === "tag5"
+            className={`tag ${
+              selectedTag === "tag5"
                 ? "bg-white text-box-red border-box-red"
                 : "text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red"
-              } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap uppercase  border  text-lg font-bold font-Barlow tracking-wider`}
+            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap uppercase  border  text-lg font-bold font-Barlow tracking-wider`}
             onClick={() => handleTagClick("tag5")}
           >
             IT & Telecom
           </button>
           <button
-            className={`tag ${selectedTag === "tag6"
+            className={`tag ${
+              selectedTag === "tag6"
                 ? "bg-white text-box-red border-box-red"
                 : "text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red"
-              } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap uppercase  border  text-lg font-bold font-Barlow tracking-wider`}
+            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap uppercase  border  text-lg font-bold font-Barlow tracking-wider`}
             onClick={() => handleTagClick("tag6")}
           >
             POWER TRANSMISSION AND DISTRIBUTION
           </button>
           <button
-            className={`tag ${selectedTag === "tag7"
+            className={`tag ${
+              selectedTag === "tag7"
                 ? "bg-white text-box-red border-box-red"
                 : "text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red"
-              } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap uppercase  border  text-lg font-bold font-Barlow tracking-wider`}
+            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap uppercase  border  text-lg font-bold font-Barlow tracking-wider`}
             onClick={() => handleTagClick("tag7")}
           >
             TRANSPORTATION
           </button>
           <button
-            className={`tag ${selectedTag === "tag8"
+            className={`tag ${
+              selectedTag === "tag8"
                 ? "bg-white text-box-red border-box-red"
                 : "text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red"
-              } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap uppercase  border  text-lg font-bold font-Barlow tracking-wider`}
+            } w-auto h-[49px] px-[20px] py-[9px] whitespace-nowrap uppercase  border  text-lg font-bold font-Barlow tracking-wider`}
             onClick={() => handleTagClick("tag8")}
           >
             HEAVY ENGINEERING INDUSTRIES
@@ -248,43 +294,15 @@ const BestCase = () => {
         </div>
         <div className="lg:flex  justify-between mt-8 ">
           <div className="text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:leading-tight leading-snug">
-            <p className="list-dots">High Continuous Current- up to 5000A</p>
+            <p className="list-dots">High-quality enclosures</p>
+            <p className="list-dots">Cost-effective enclosure solutions</p>
+            <p className="list-dots">24x7 online availability</p>
+            <p className="list-dots">Customisation</p>
             <p className="list-dots">
-              Electronically Triggered – Permits breakers to work up to their
-              ratings.
+              Support for Entrepreneurs and Innovators
             </p>
-            <p className="list-dots">
-              Redundant Sensing – Provides backup sensing
-            </p>
-            <p className="list-dots">
-              Low Fault En className="list-dots"ergy Let-through – Reduce Damage
-            </p>
-            {/* <li>Residual Voltage Transfer Mode</li>
-            <li>
-              Protective Transfer Initiation on Upstream Protective Relay
-              Operation
-            </li>
-            <li>
-              Intelligent Automatic Transfer Initiation using under/over
-              voltage, frequency, |df/dt| criterion
-            </li> */}
-          </div>
-          <div className="text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:leading-tight leading-snug lg:ml-16 lg:mt-0 mt-6">
-            <p className="list-dots">
-              Very High Interrupt Ratings – Upto 120kA rms symmetrical
-            </p>
-            <p className="list-dots">
-              Wide Environmental Range – Indoor/Outdoor Applications
-            </p>
-            {/* <li>Continuous Breaker Circuit Monitoring</li>
-            <li>Smart Breaker Failure Processing</li>
-            <li>Integrated System Interlocks</li>
-            <li>Advanced Software Tools for Virtual Testing</li>
-            <li>
-              Transfer Event Upload Replay “What If” Analysis,Oscilography &
-              SOE.
-            </li>
-            <li>Standard communication protocols</li> */}
+            <p className="list-dots">Streamlined Procurement</p>
+            <p className="list-dots">Support for Marketing and Sales</p>
           </div>
         </div>
 
@@ -292,24 +310,21 @@ const BestCase = () => {
           CUSTOMISATION
         </div>
         <div className="text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:leading-tight leading-snug mt-8">
-          BTS 2000 is generally customised to project specific requirements.
-          While there may be certain product configurations that are similar if
-          not identical between projects, there is always a need to ensure that
-          the switchgear circuits are appropriately designed and integrated to
-          match the bus transfer requirements. <br />
-          <br />
-          The product range illustrated to the right are therefore meant to
-          serve as a general reference while specifics may vary on a case to
-          case basis.
-          <br />
-          <br />
-          Please mail your custom specific requirements along with a copy of
-          your Single Line Diagram (SLD), Specifications (if any) and
-          Operational Philosophy to bts@aartechsolonics.com . We would be happy
-          to assist you with our recommendations in the best possible manner.
+          Aarchtech ensures your product's enclosure is not just a box but a
+          crucial part of your brand's image. We provide timely, cost-effective,
+          and quality custom solutions for all your enclosure needs.  If you
+          have any custom-specific requirements, mail us with details of your
+          system to our email id{" "}
+          <a href="mailto:bestcase@aartechsolonics.com">
+            {" "}
+            <span className="text-red-600 hover:underline cursor-pointer">
+              bestcase@aartechsolonics.com
+            </span>
+          </a>{" "}
+          .
         </div>
 
-        <div className="lg:flex hidden lg:flex-row flex-col gap-x-[28px] gap-y-6 lg:mt-20 mt-10">
+        {/* <div className="lg:flex hidden lg:flex-row flex-col gap-x-[28px] gap-y-6 lg:mt-20 mt-10">
           <div className=" w-[100%] h-auto border border-slate-900 lg:py-[59px] py-6 lg:px-[39px] px-4">
             <div className="text-black text-base font-bold font-['Barlow'] tracking-wider">
               MAIN - TIE - MAIN (3 BREAKER SCHEME)
@@ -396,14 +411,14 @@ const BestCase = () => {
 
         <Accordion />
         <Accordion2 />
-        <Accordion3 />
+        <Accordion3 /> */}
 
         <div className="text-black lg:text-4xl text-[28px] font-normal font-antonio lg:mt-20 mt-10">
           Customers
         </div>
         <CustomWorkPages imageSources={partnerImageSources} />
 
-        <div className="text-black lg:text-4xl text-[28px] font-normal font-antonio ">
+        {/* <div className="text-black lg:text-4xl text-[28px] font-normal font-antonio ">
           DOWNLOADS
         </div>
 
@@ -413,9 +428,7 @@ const BestCase = () => {
               TECHNICAL PAPERS
             </div>
             <div className=" lg:mt-[27px] ml-3 ">
-              
-            <a href={BTS1} target="_blank">
-              
+              <a href={BTS1} target="_blank">
                 <li className="text-black lg:text-lg text-base lg:font-normal font-medium font-Barlow underline hover:font-medium lg:mt-12 mt-5 ">
                   A. Raje, A. A. Raje, A. Chaudhary, “Fast Bus Transfer Systems
                   – A Systems Solution Approach”, PowerGen-Middle East, Panama,
@@ -537,7 +550,7 @@ const BestCase = () => {
               </a>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
 
       <Footer />
