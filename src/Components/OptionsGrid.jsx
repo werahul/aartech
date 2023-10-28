@@ -254,33 +254,36 @@ const OptionsGrid = () => {
           <div className="">
             <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold'>Related Products</p>
             <ul>
-              <Link to="">
-                <li className='our-tailored-class' onClick={() => handleItemClick('D')}>Control Relay Panels  </li>
-              </Link>
-              <Link to="">
-                <li className='our-tailored-class' onClick={() => handleItemClick('D')}>Kranking Ultracapacitors   </li>
-              </Link>
-              <Link to="">
-                <li className='our-tailored-class' onClick={() => handleItemClick('D')}>Fuel Cell </li>
-              </Link>
-              <Link to="">
-                <li className='our-tailored-class' onClick={() => handleItemClick('D')}>Best Case   </li>
-              </Link>
-              <Link to="">
-                <li className='our-tailored-class' onClick={() => handleItemClick('D')}>Solid Waste Treatment     </li>
-              </Link>
-              <Link to="">
-                <li className='our-tailored-class' onClick={() => handleItemClick('D')}>Solar Design & Services   </li>
-              </Link>
-              <Link to="">
-                <li className='our-tailored-class' onClick={() => handleItemClick('D')}>FLYWHEEL   </li>
-              </Link>
-              <Link to="">
-                <li className='our-tailored-class' onClick={() => handleItemClick('D')}>AC & DC UPS   </li>
-              </Link>
-              <Link to="">
-                <li className='our-tailored-class' onClick={() => handleItemClick('D')}>Load Checker    </li>
-              </Link>
+              <ul>
+                <Link to="/products/BTS-2000" onClick={() => handleItemClick('D')}>
+                  <li className='our-tailored-class'>BTS-2000</li>
+                </Link>
+                <Link to="/products/kranking-ultracapacitors" onClick={() => handleItemClick('D')}>
+                  <li className='our-tailored-class'>Kranking Ultracapacitors</li>
+                </Link>
+                <Link to="/products/fuel-cell" onClick={() => handleItemClick('D')}>
+                  <li className='our-tailored-class'>Fuel Cell</li>
+                </Link>
+                <Link to="/products/best-case" onClick={() => handleItemClick('D')}>
+                  <li className='our-tailored-class'>Best Case</li>
+                </Link>
+                <Link to="/products/solid-waste-treatment" onClick={() => handleItemClick('D')}>
+                  <li className='our-tailored-class'>Solid Waste Treatment</li>
+                </Link>
+                <Link to="/products/solar-design-and-services" onClick={() => handleItemClick('D')}>
+                  <li className='our-tailored-class'>Solar Design & Services</li>
+                </Link>
+                <Link to="/products/flywheel" onClick={() => handleItemClick('D')}>
+                  <li className='our-tailored-class'>FLYWHEEL</li>
+                </Link>
+                <Link to="/products/ac-and-dc" onClick={() => handleItemClick('D')}>
+                  <li className='our-tailored-class'>AC & DC UPS</li>
+                </Link>
+                <Link to="/products/load-checker" onClick={() => handleItemClick('D')}>
+                  <li className='our-tailored-class'>Load Checker</li>
+                </Link>
+              </ul>
+
 
             </ul>
           </div>
@@ -348,33 +351,34 @@ const OptionsGrid = () => {
         <div className="">
           <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold'>Related Products</p>
           <ul>
-            <Link to="" onClick={() => handleItemClick('D')}>
+            <Link to="/products/control-relay-panels" onClick={() => handleItemClick('D')}>
               <li className='our-tailored-class'>Control Relay Panels</li>
             </Link>
-            <Link to="" onClick={() => handleItemClick('D')}>
+            <Link to="/products/BTS-2000" onClick={() => handleItemClick('D')}>
               <li className='our-tailored-class'>BTS 2000</li>
             </Link>
-            <Link to="" onClick={() => handleItemClick('D')}>
+            <Link to="/products/kranking-ultracapacitors" onClick={() => handleItemClick('D')}>
               <li className='our-tailored-class'>Kranking Ultracapacitors</li>
             </Link>
-            <Link to="" onClick={() => handleItemClick('D')}>
+            <Link to="/products/best-case" onClick={() => handleItemClick('D')}>
               <li className='our-tailored-class'>Best Case</li>
             </Link>
-            <Link to="" onClick={() => handleItemClick('D')}>
-              <li className='our-tailored-class'>Solid waste treatment</li>
+            <Link to="/products/solid-waste-treatment" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Solid Waste Treatment</li>
             </Link>
-            <Link to="" onClick={() => handleItemClick('D')}>
+            <Link to="/products/solar-design-and-services" onClick={() => handleItemClick('D')}>
               <li className='our-tailored-class'>Solar Design & Services</li>
             </Link>
-            <Link to="" onClick={() => handleItemClick('D')}>
-              <li className='our-tailored-class'>FLYWHEEL    </li>
+            <Link to="/products/flywheel" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>FLYWHEEL</li>
             </Link>
-            <Link to="" onClick={() => handleItemClick('D')}>
-              <li className='our-tailored-class'>Load Checker </li>
+            <Link to="/products/load-checker" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Load Checker</li>
             </Link>
-          </ul>
+          </ul >
 
-        </div>
+
+        </div >
         <div className="">
           <p className='lg:hidden block text-box-red  uppercase font-Barlow font-bold'>Related Solutions</p>
           <ul>
@@ -409,7 +413,7 @@ const OptionsGrid = () => {
 
 
         </div>
-      </div>
+      </div >
 
 
       <div className={`section3 grid grid-cols-1 lg:grid-cols-3 lg:gap-x-[29px]  ${getSectionClass(2)}`}>
@@ -425,28 +429,29 @@ const OptionsGrid = () => {
         <div className="">
           <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold'>Related Products</p>
           <ul>
-            <Link to="">
-              <li className='our-tailored-class' onClick={() => handleItemClick('D')}>Control Relay Panels</li>
+            <Link to="/products/control-relay-panels" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Control Relay Panels</li>
             </Link>
-            <Link to="">
-              <li className='our-tailored-class' onClick={() => handleItemClick('D')}>BTS 2000</li>
+            <Link to="/products/BTS-2000" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>BTS 2000</li>
             </Link>
-            <Link to="">
-              <li className='our-tailored-class' onClick={() => handleItemClick('D')}>Kranking Ultracapacitors</li>
+            <Link to="/products/kranking-ultracapacitors" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Kranking Ultracapacitors</li>
             </Link>
-            <Link to="">
-              <li className='our-tailored-class' onClick={() => handleItemClick('D')}>CLIP Fault Current Limitors</li>
+            <Link to="/products/clip-fault-current-limiters" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>CLIP Fault Current Limiters</li>
             </Link>
-            <Link to="">
-              <li className='our-tailored-class' onClick={() => handleItemClick('D')}>Best Case</li>
+            <Link to="/products/best-case" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Best Case</li>
             </Link>
-            <Link to="">
-              <li className='our-tailored-class' onClick={() => handleItemClick('D')}> Solid Waste Treatment Products</li>
+            <Link to="/products/solid-waste-treatment" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Solid Waste Treatment Products</li>
             </Link>
-            <Link to="">
-              <li className='our-tailored-class' onClick={() => handleItemClick('D')}>Load Checker</li>
+            <Link to="/products/load-checker" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Load Checker</li>
             </Link>
           </ul>
+
 
         </div>
         <div className="">
@@ -497,25 +502,26 @@ const OptionsGrid = () => {
         <div className="">
           <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold'>Related Products</p>
           <ul>
-            <Link to="" onClick={() => handleItemClick('D')}>
+            <Link to="/products/control-relay-panels" onClick={() => handleItemClick('D')}>
               <li className='our-tailored-class'>Control Relay Panels</li>
             </Link>
-            <Link to="" onClick={() => handleItemClick('D')}>
+            <Link to="/products/kranking-ultracapacitors" onClick={() => handleItemClick('D')}>
               <li className='our-tailored-class'>Kranking Ultracapacitors</li>
             </Link>
-            <Link to="" onClick={() => handleItemClick('D')}>
+            <Link to="/products/fuel-cell" onClick={() => handleItemClick('D')}>
               <li className='our-tailored-class'>Fuel Cell</li>
             </Link>
-            <Link to="" onClick={() => handleItemClick('D')}>
+            <Link to="/products/best-case" onClick={() => handleItemClick('D')}>
               <li className='our-tailored-class'>Best Case</li>
             </Link>
-            <Link to="" onClick={() => handleItemClick('D')}>
+            <Link to="/products/flywheel" onClick={() => handleItemClick('D')}>
               <li className='our-tailored-class'>FLYWHEEL</li>
             </Link>
-            <Link to="" onClick={() => handleItemClick('D')}>
+            <Link to="/products/load-checker" onClick={() => handleItemClick('D')}>
               <li className='our-tailored-class'>Load Checkers</li>
             </Link>
           </ul>
+
         </div>
         <div className="">
           <p className='lg:hidden block text-box-red  uppercase font-Barlow font-bold'>Related Solutions</p>
@@ -542,7 +548,7 @@ const OptionsGrid = () => {
 
 
         </div>
-      </div>
+      </div >
 
       <div className={`section5 grid grid-cols-1 lg:grid-cols-3 lg:gap-x-[29px]   ${getSectionClass(4)}`}>
         <div className="">
@@ -557,34 +563,35 @@ const OptionsGrid = () => {
         <div className="">
           <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold'>Related Products</p>
           <ul>
-            <Link to="" onClick={() => handleItemClick('D')}>
+            <Link to="/products/control-relay-panels" onClick={() => handleItemClick('D')}>
               <li className='our-tailored-class'>Control Relay Panels</li>
             </Link>
-            <Link to="" onClick={() => handleItemClick('D')}>
+            <Link to="/products/bts-2000" onClick={() => handleItemClick('D')}>
               <li className='our-tailored-class'>BTS 2000</li>
             </Link>
-            <Link to="" onClick={() => handleItemClick('D')}>
+            <Link to="/products/kranking-ultracapacitors" onClick={() => handleItemClick('D')}>
               <li className='our-tailored-class'>Kranking Ultracapacitors</li>
             </Link>
-            <Link to="" onClick={() => handleItemClick('D')}>
-              <li className='our-tailored-class'>CLIP Fault Current Limitors</li>
+            <Link to="/products/clip-fault-current-limiters" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>CLIP Fault Current Limiters</li>
             </Link>
-            <Link to="" onClick={() => handleItemClick('D')}>
+            <Link to="/products/best-case" onClick={() => handleItemClick('D')}>
               <li className='our-tailored-class'>Best Case</li>
             </Link>
-            <Link to="" onClick={() => handleItemClick('D')}>
+            <Link to="/products/solar-design-and-services" onClick={() => handleItemClick('D')}>
               <li className='our-tailored-class'>Solar Design & Services</li>
             </Link>
-            <Link to="" onClick={() => handleItemClick('D')}>
+            <Link to="/products/ac-and-dc" onClick={() => handleItemClick('D')}>
               <li className='our-tailored-class'>AC & DC UPS</li>
             </Link>
-            <Link to="" onClick={() => handleItemClick('D')}>
+            <Link to="/products/flywheel" onClick={() => handleItemClick('D')}>
               <li className='our-tailored-class'>FLYWHEEL</li>
             </Link>
-            <Link to="" onClick={() => handleItemClick('D')}>
+            <Link to="/products/load-checker" onClick={() => handleItemClick('D')}>
               <li className='our-tailored-class'>Load Checker</li>
             </Link>
           </ul>
+
 
         </div>
         <div className="">
@@ -639,37 +646,38 @@ const OptionsGrid = () => {
         <div className="">
           <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold'>Related Products</p>
           <ul>
-            <Link to="" onClick={() => handleItemClick('D')}>
+            <Link to="/products/control-relay-panels" onClick={() => handleItemClick('D')}>
               <li className='our-tailored-class'>Control Relay Panels</li>
             </Link>
-            <Link to="" onClick={() => handleItemClick('D')}>
+            <Link to="/products/bts-2000" onClick={() => handleItemClick('D')}>
               <li className='our-tailored-class'>BTS 2000</li>
             </Link>
-            <Link to="" onClick={() => handleItemClick('D')}>
+            <Link to="/products/kranking-ultracapacitors" onClick={() => handleItemClick('D')}>
               <li className='our-tailored-class'>Kranking Ultracapacitors</li>
             </Link>
-            <Link to="" onClick={() => handleItemClick('D')}>
+            <Link to="/products/fuel-cell" onClick={() => handleItemClick('D')}>
               <li className='our-tailored-class'>Fuel Cell</li>
             </Link>
-            <Link to="" onClick={() => handleItemClick('D')}>
+            <Link to="/products/best-case" onClick={() => handleItemClick('D')}>
               <li className='our-tailored-class'>Best Case</li>
             </Link>
-            <Link to="" onClick={() => handleItemClick('D')}>
+            <Link to="/products/solid-waste-treatment" onClick={() => handleItemClick('D')}>
               <li className='our-tailored-class'>Solid Waste Treatment</li>
             </Link>
-            <Link to="" onClick={() => handleItemClick('D')}>
-              <li className='our-tailored-class'> Solar Design & Services</li>
+            <Link to="/products/solar-design-and-services" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Solar Design & Services</li>
             </Link>
-            <Link to="" onClick={() => handleItemClick('D')}>
+            <Link to="/products/ac-and-dc" onClick={() => handleItemClick('D')}>
               <li className='our-tailored-class'>AC & DC UPS</li>
             </Link>
-            <Link to="" onClick={() => handleItemClick('D')}>
+            <Link to="/products/load-checker" onClick={() => handleItemClick('D')}>
               <li className='our-tailored-class'>Load Checker</li>
             </Link>
-            <Link to="" onClick={() => handleItemClick('D')}>
+            <Link to="/products/flywheel" onClick={() => handleItemClick('D')}>
               <li className='our-tailored-class'>FLYWHEEL</li>
             </Link>
           </ul>
+
 
         </div>
         <div className="">
@@ -724,34 +732,35 @@ const OptionsGrid = () => {
         <div className="">
           <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold'>Related Products</p>
           <ul>
-            <Link to="" onClick={() => handleItemClick('D')}>
+            <Link to="/products/kranking-ultracapacitors" onClick={() => handleItemClick('D')}>
               <li className='our-tailored-class'>Kranking Ultracapacitors</li>
             </Link>
-            <Link to="" onClick={() => handleItemClick('D')}>
+            <Link to="/products/control-relay-panels" onClick={() => handleItemClick('D')}>
               <li className='our-tailored-class'>Control Relay Panels</li>
             </Link>
-            <Link to="" onClick={() => handleItemClick('D')}>
+            <Link to="/products/bts-2000" onClick={() => handleItemClick('D')}>
               <li className='our-tailored-class'>BTS 2000</li>
             </Link>
-            <Link to="" onClick={() => handleItemClick('D')}>
+            <Link to="/products/fuel-cell" onClick={() => handleItemClick('D')}>
               <li className='our-tailored-class'>Fuel Cell</li>
             </Link>
-            <Link to="" onClick={() => handleItemClick('D')}>
+            <Link to="/products/best-case" onClick={() => handleItemClick('D')}>
               <li className='our-tailored-class'>Best Case</li>
             </Link>
-            <Link to="" onClick={() => handleItemClick('D')}>
+            <Link to="/products/solar-design-and-services" onClick={() => handleItemClick('D')}>
               <li className='our-tailored-class'>Solar Design & Services</li>
             </Link>
-            <Link to="" onClick={() => handleItemClick('D')}>
+            <Link to="/products/ac-and-dc" onClick={() => handleItemClick('D')}>
               <li className='our-tailored-class'>AC & DC UPS</li>
             </Link>
-            <Link to="" onClick={() => handleItemClick('D')}>
+            <Link to="/products/flywheel" onClick={() => handleItemClick('D')}>
               <li className='our-tailored-class'>FLYWHEEL</li>
             </Link>
-            <Link to="" onClick={() => handleItemClick('D')}>
+            <Link to="/products/load-checker" onClick={() => handleItemClick('D')}>
               <li className='our-tailored-class'>Load Checker</li>
             </Link>
           </ul>
+
         </div>
         <div className="">
           <p className='lg:hidden block text-box-red  uppercase font-Barlow font-bold'>Related Solutions</p>
@@ -798,16 +807,17 @@ const OptionsGrid = () => {
         <div className="">
           <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold'>Related Products</p>
           <ul>
-            <Link to="" onClick={() => handleItemClick('D')}>
+            <Link to="/products/ac-and-dc" onClick={() => handleItemClick('D')}>
               <li className='our-tailored-class'>AC & DC UPS</li>
             </Link>
-            <Link to="" onClick={() => handleItemClick('D')}>
+            <Link to="/products/solid-waste-treatment" onClick={() => handleItemClick('D')}>
               <li className='our-tailored-class'>Solid Waste Treatment Products</li>
             </Link>
-            <Link to="" onClick={() => handleItemClick('D')}>
+            <Link to="/products/best-case" onClick={() => handleItemClick('D')}>
               <li className='our-tailored-class'>Best Case</li>
             </Link>
           </ul>
+
 
         </div>
         <div className="">
@@ -829,7 +839,7 @@ const OptionsGrid = () => {
 
 
         </div>
-      </div>
+      </div >
 
 
       <div className={`section9 grid grid-cols-1 lg:grid-cols-3 lg:gap-x-[29px]   ${getSectionClass(8)}`}>
@@ -868,6 +878,7 @@ const OptionsGrid = () => {
               <li className='our-tailored-class'>FLYWHEEL</li>
             </Link>
           </ul>
+
         </div>
         <div className="">
           <p className='lg:hidden block text-box-red  uppercase font-Barlow font-bold'>Related Solutions</p>
@@ -949,10 +960,11 @@ const OptionsGrid = () => {
         <div className="">
           <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Product</p>
           <ul>
-            <Link to="" onClick={() => handleItemClick('D')}>
+            <Link to="/products/kranking-ultracapacitors" onClick={() => handleItemClick('D')}>
               <li className='our-tailored-class'>Kranking Ultracapacitors</li>
             </Link>
           </ul>
+
 
         </div>
         <div className="">
@@ -1005,10 +1017,11 @@ const OptionsGrid = () => {
         <div className="">
           <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Product</p>
           <ul>
-            <Link to="" onClick={() => handleItemClick('D')}>
+            <Link to="/products/best-case" onClick={() => handleItemClick('D')}>
               <li className='our-tailored-class'>Bestcase</li>
             </Link>
           </ul>
+
         </div>
         <div className="">
           <p className='lg:hidden block text-box-red  uppercase font-Barlow font-bold'>Related Solutions</p>
@@ -1051,14 +1064,18 @@ const OptionsGrid = () => {
         <div className="">
           <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Product</p>
           <ul>
-            <li className='our-tailored-class' onClick={() => handleItemClick('D')}>Fuel Cell</li>
+            <Link to="/products/fuel-cell" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Fuel Cell</li>
+            </Link>
           </ul>
+
         </div>
         <div className="">
           <p className='lg:hidden block text-box-red  uppercase font-Barlow font-bold'>Related Solutions</p>
           <ul>
-            <li className='our-tailored-class' onClick={() => handleItemClick('D')}>Customized Plastic Case</li>
-
+            <Link to="/solutions/customised-plastic-case" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class' onClick={() => handleItemClick('D')}>Customized Plastic Case</li>
+            </Link>
           </ul>
         </div>
       </div>
@@ -1092,10 +1109,11 @@ const OptionsGrid = () => {
         <div className="">
           <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Product</p>
           <ul>
-            <Link to="" onClick={() => handleItemClick('D')}>
-              <li className='our-tailored-class'>Solid Waste Treatment </li>
+            <Link to="/products/solid-waste-treatment" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Solid Waste Treatment</li>
             </Link>
           </ul>
+
 
         </div>
         <div className="">
@@ -1126,10 +1144,11 @@ const OptionsGrid = () => {
         <div className="">
           <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Product</p>
           <ul>
-            <Link to="" onClick={() => handleItemClick('D')}>
+            <Link to="/products/clip-fault-current-limiters" onClick={() => handleItemClick('D')}>
               <li className='our-tailored-class'>CLIP Fault Current Limitors</li>
             </Link>
           </ul>
+
 
         </div>
         <div className="">
@@ -1178,10 +1197,11 @@ const OptionsGrid = () => {
         <div className="">
           <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Product</p>
           <ul>
-            <Link to="" onClick={() => handleItemClick('D')}>
+            <Link to="/products/control-relay-panels" onClick={() => handleItemClick('D')}>
               <li className='our-tailored-class'>Control Relay Panels</li>
             </Link>
           </ul>
+
 
         </div>
         <div className="">
@@ -1219,10 +1239,11 @@ const OptionsGrid = () => {
         <div className="">
           <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Product</p>
           <ul>
-            <Link to="" onClick={() => handleItemClick('D')}>
+            <Link to="/products/BTS-2000" onClick={() => handleItemClick('D')}>
               <li className='our-tailored-class'>BTS 2000</li>
             </Link>
           </ul>
+
 
         </div>
         <div className="">
@@ -1316,10 +1337,11 @@ const OptionsGrid = () => {
         <div className="">
           <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Product</p>
           <ul>
-            <Link to="" onClick={() => handleItemClick('D')}>
+            <Link to="/products/ac-and-dc" onClick={() => handleItemClick('D')}>
               <li className='our-tailored-class'>AC & DC UPS</li>
             </Link>
           </ul>
+
 
         </div>
         <div className="">
@@ -1365,10 +1387,11 @@ const OptionsGrid = () => {
         <div className="">
           <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Product</p>
           <ul>
-            <Link to="" onClick={() => handleItemClick('D')}>
+            <Link to="/products/flywheel" onClick={() => handleItemClick('D')}>
               <li className='our-tailored-class'>FLYWHEEL</li>
             </Link>
           </ul>
+
 
         </div>
         <div className="">
@@ -1408,10 +1431,11 @@ const OptionsGrid = () => {
         <div className="">
           <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Product</p>
           <ul>
-            <Link to="" onClick={() => handleItemClick('D')}>
+            <Link to="/products/solar-design-and-services" onClick={() => handleItemClick('D')}>
               <li className='our-tailored-class'>Solar Design & Services</li>
             </Link>
           </ul>
+
 
         </div>
         <div className="">
@@ -1457,10 +1481,11 @@ const OptionsGrid = () => {
         <div className="">
           <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Product</p>
           <ul>
-            <Link to="" onClick={() => handleItemClick('D')}>
+            <Link to="/products/load-limiting" onClick={() => handleItemClick('D')}>
               <li className='our-tailored-class'>Load Limiting</li>
             </Link>
           </ul>
+
 
         </div>
         <div className="">
@@ -1511,12 +1536,13 @@ const OptionsGrid = () => {
 
         </div>
         <div className="">
-
+          <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Related Soultion</p>
           <ul>
-            <Link to="" onClick={() => handleItemClick('D')}>
+            <Link to="/products/load-checker" onClick={() => handleItemClick('D')}>
               <li className='our-tailored-class'>Load Checker</li>
             </Link>
           </ul>
+
         </div>
         <div className="">
           <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Soultion</p>
@@ -1565,10 +1591,11 @@ const OptionsGrid = () => {
         <div className="">
           <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Related Products</p>
           <ul>
-            <Link to="" onClick={() => handleItemClick('D')}>
+            <Link to="/products/kranking-ultracapacitors" onClick={() => handleItemClick('D')}>
               <li className='our-tailored-class'>Kranking Ultracapacitors</li>
             </Link>
           </ul>
+
 
         </div>
         <div className="">
@@ -1610,11 +1637,13 @@ const OptionsGrid = () => {
 
         </div>
         <div className="">
+          <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Related Products</p>
           <ul>
-            <Link to="" onClick={() => handleItemClick('D')}>
+            <Link to="/products/fuel-cell" onClick={() => handleItemClick('D')}>
               <li className='our-tailored-class'>Fuel Cell</li>
             </Link>
           </ul>
+
         </div>
         <div className="">
           <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Soultion</p>
@@ -1656,11 +1685,13 @@ const OptionsGrid = () => {
 
         </div>
         <div className="">
+          <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Related Products</p>
           <ul>
-            <Link to="" onClick={() => handleItemClick('D')}>
+            <Link to="/products/flywheel" onClick={() => handleItemClick('D')}>
               <li className='our-tailored-class'>FLYWHEEL</li>
             </Link>
           </ul>
+
         </div>
         <div className="">
           <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Soultion</p>
@@ -1712,10 +1743,11 @@ const OptionsGrid = () => {
         <div className="">
           <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Related Products</p>
           <ul>
-            <Link to="" onClick={() => handleItemClick('D')}>
+            <Link to="/products/best-case" onClick={() => handleItemClick('D')}>
               <li className='our-tailored-class'>Bestcase</li>
             </Link>
           </ul>
+
 
         </div>
         <div className="">
@@ -1758,10 +1790,11 @@ const OptionsGrid = () => {
         <div className="">
           <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Related Products</p>
           <ul>
-            <Link to="" onClick={() => handleItemClick('D')}>
+            <Link to="/products/solid-waste-treatment" onClick={() => handleItemClick('D')}>
               <li className='our-tailored-class'>Solid Waste Treatment</li>
             </Link>
           </ul>
+
 
         </div>
         <div className="">
@@ -1811,10 +1844,11 @@ const OptionsGrid = () => {
         <div className="">
           <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Related Products</p>
           <ul>
-            <Link to="" onClick={() => handleItemClick('D')}>
+            <Link to="/products/control-relay-panels" onClick={() => handleItemClick('D')}>
               <li className='our-tailored-class'>Control Relay Panels</li>
             </Link>
           </ul>
+
 
         </div>
         <div className="">
@@ -1852,10 +1886,11 @@ const OptionsGrid = () => {
         <div className="">
           <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Related Products</p>
           <ul>
-            <Link to="" onClick={() => handleItemClick('D')}>
+            <Link to="/products/BTS-2000" onClick={() => handleItemClick('D')}>
               <li className='our-tailored-class'>BTS 2000</li>
             </Link>
           </ul>
+
 
         </div>
         <div className="">
@@ -1887,10 +1922,11 @@ const OptionsGrid = () => {
         <div className="">
           <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Related Products</p>
           <ul>
-            <Link to="" onClick={() => handleItemClick('D')}>
-              <li className='our-tailored-class'>CLIP Fault Current Limitors</li>
+            <Link to="/products/clip-fault-current-limiters" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>CLIP Fault Current Limiters</li>
             </Link>
           </ul>
+
 
         </div>
         <div className="">
@@ -1933,7 +1969,7 @@ const OptionsGrid = () => {
         <div className="">
           <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Related Products</p>
           <ul>
-            <Link to="" onClick={() => handleItemClick('D')}>
+            <Link to="/products/ac-and-dc" onClick={() => handleItemClick('D')}>
               <li className='our-tailored-class'>AC & DC UPS</li>
             </Link>
           </ul>
@@ -1967,31 +2003,32 @@ const OptionsGrid = () => {
               <li className='our-tailored-class'>Healthcare</li>
             </Link>
             <Link to="/industries/it-and-telecom" onClick={() => handleItemClick('D')}>
-            <li className='our-tailored-class'>IT and Telecom</li>
-          </Link>
-        </ul>
+              <li className='our-tailored-class'>IT and Telecom</li>
+            </Link>
+          </ul>
 
-      </div>
-      <div className="">
-        <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Related Products</p>
-        <ul>
-          <Link to="" onClick={() => handleItemClick('D')}>
-            <li className='our-tailored-class'>Solar Design & Services</li>
-          </Link>
-        </ul>
-
-      </div>
-      <div className="">
-        <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Soultion</p>
-        <ul>
-          <Link to="/solutions/solar-design-engineering" onClick={() => handleItemClick('D')}>
-            <li className='our-tailored-class'>Solar Design, Engineering</li>
-          </Link>
-        </ul>
+        </div>
+        <div className="">
+          <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Related Products</p>
+          <ul>
+            <Link to="/products/solar-design-and-services" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Solar Design & Services</li>
+            </Link>
+          </ul>
 
 
-      </div>
-    </div >
+        </div>
+        <div className="">
+          <p className='lg:hidden block text-box-red uppercase font-Barlow font-bold mt-8'>Selected Soultion</p>
+          <ul>
+            <Link to="/solutions/solar-design-engineering" onClick={() => handleItemClick('D')}>
+              <li className='our-tailored-class'>Solar Design, Engineering</li>
+            </Link>
+          </ul>
+
+
+        </div>
+      </div >
 
 
 

@@ -89,7 +89,7 @@ const product = [
     title: "Fuel Cell",
     image: productImg4,
     desc: "Fuel cells are the top choice for defence, outperforming IC engines. With high efficiency, enduring power, compact size, light portability, quiet operation, durability, wide range, and eco-friendliness, they excel in various applications.",
-    path: ""
+    path: "/products/fuel-cell"
   },
 
   {

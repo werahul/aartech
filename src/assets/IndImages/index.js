@@ -76,6 +76,9 @@ import Load3 from "./Load3.png"
 import Load4 from "./Load4.png"
 import Load5 from "./Load5.png"
 
+import fuelcell1 from "./fuelcell1.png";
+import fuelcell2 from "./fuelcell2.png";
+
 
 
 
@@ -90,4 +93,4 @@ tran1, tran2, tran3, tran4, tran5,
 waste1, waste2, waste3, waste4, waste5, Load, flywheel, fuel1, solar1design, SWT, Ups,
 flywheel1, flywheel2, flywheel3, flywheel4, flywheel5,
 blank ,ac1,
-Load1, Load2,Load3, Load4,Load5}
+Load1, Load2,Load3, Load4,Load5, fuelcell1 ,fuelcell2}
