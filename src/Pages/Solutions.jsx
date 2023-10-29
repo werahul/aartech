@@ -13,7 +13,7 @@ const Solution = ({ title, image, desc, path }) => {
   return (
     <div data-aos="fade-up"> 
       <Link to={path}>
-        <h3 className="text-[#B80001] font-Barlow font-bold whitespace-nowrap text-[20px] lg:text-[24px] lg:tracking-widest tracking-wide">
+        <h3 className="text-[#B80001] font-Barlow font-bold whitespace-nowrap text-[20px] lg:text-[23px] lg:tracking-widest tracking-wide">
           {title}
         </h3>
         <img src={image} alt="" className="my-2 w-[100%] h-auto " />

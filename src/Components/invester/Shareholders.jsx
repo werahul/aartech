@@ -43,29 +43,68 @@ const Shareholders = () => {
                         <th className='border border-[#0C013D] lg:w-[621px] px-5'>TITLE</th>
 
                     </tr>
-                    <tr className='border border-black font-Barlow h-[50px] lg:text-lg text-sm'>
-                        <td className='border border-[#0C013D] lg:w-[220px] px-5 text-black lg:font-normal font-medium font-Barlow'>31.12.2023</td>
-                        <td className='border border-[#0C013D] lg:w-[621px] px-5 text-black lg:font-normal font-medium font-Barlow underline hover:font-semibold cursor-pointer'>Certificate under Reg. 74 (5) of SEBI (DP) Regulations, 2018</td>
+                    <tr className="border border-black font-Barlow h-[80px] lg:text-lg text-sm">
+                        <td className="border border-[#0C013D] lg:w-[220px] px-5 text-black font-normal font-Barlow">
+                            08.09.2023
+                        </td>
+                        <td className="border border-[#0C013D] lg:w-[621px] px-5 text-black font-normal font-Barlow underline hover:font-semibold cursor-pointer">
+                            <a
+                                href="https://drive.google.com/file/d/1nhVQqSEubMB03mJIqvQLJtZL6EcPs6BM/view?usp=drive_link"
+                                target="_blank"
+                            >
+                                Change in LOGO of the Company
+                            </a>
+                        </td>
                     </tr>
-                    <tr className='border border-black font-Barlow h-[50px] lg:text-lg text-sm'>
-                        <td className='border border-[#0C013D] lg:w-[220px] px-5 text-black lg:font-normal font-medium font-Barlow'>31.12.2023</td>
-                        <td className='border border-[#0C013D] lg:w-[621px] px-5 text-black lg:font-normal font-medium font-Barlow underline hover:font-semibold cursor-pointer'>Chairman’s statement at Aartech AGM</td>
+                    <tr className="border border-black font-Barlow h-[80px] lg:text-lg text-sm">
+                        <td className="border border-[#0C013D] lg:w-[220px] px-5 text-black font-normal font-Barlow">
+                            08.09.2023
+                        </td>
+                        <td className="border border-[#0C013D] lg:w-[621px] px-5 text-black font-normal font-Barlow underline hover:font-semibold cursor-pointer">
+                            <a href="https://drive.google.com/file/d/1hq1U3rj2VcOc9tfEl3l2gQAJ5fheGRvi/view?usp=drive_link">
+                                {" "}
+                                Newspaper Clippings – Advertisement w.r.t. Annual General
+                                Meeting to be held through VC or OAVM
+                            </a>
+                        </td>
                     </tr>
-                    <tr className='border border-black font-Barlow h-[50px] lg:text-lg text-sm'>
-                        <td className='border border-[#0C013D] lg:w-[220px] px-5 text-black lg:font-normal font-medium font-Barlow'>31.12.2023</td>
-                        <td className='border border-[#0C013D] lg:w-[621px] px-5 text-black lg:font-normal font-medium font-Barlow underline hover:font-semibold cursor-pointer'>Chairman’s statement at Aartech AGM</td>
+                    <tr className="border border-black font-Barlow h-[80px] lg:text-lg text-sm">
+                        <td className="border border-[#0C013D] lg:w-[220px] px-5 text-black font-normal font-Barlow">
+                            06.09.2023
+                        </td>
+                        <td className="border border-[#0C013D] lg:w-[621px] px-5 text-black font-normal font-Barlow underline hover:font-semibold cursor-pointer">
+                            <a href="https://drive.google.com/file/d/19H6pYe5HGQk5wOgWVl-0Of3aT05-D04i/view?usp=drive_link">
+                                Notice Of The Forty-First Annual General Meeting For The
+                                Financial Year 2022-23
+                            </a>
+                        </td>
                     </tr>
-                    <tr className='border border-black font-Barlow h-[50px] lg:text-lg text-sm'>
-                        <td className='border border-[#0C013D] lg:w-[220px] px-5 text-black lg:font-normal font-medium font-Barlow'>31.12.2023</td>
-                        <td className='border border-[#0C013D] lg:w-[621px] px-5 text-black lg:font-normal font-medium font-Barlow underline hover:font-semibold cursor-pointer'>Chairman’s statement at Aartech AGM</td>
+                    <tr className="border border-black font-Barlow h-[80px] lg:text-lg text-sm">
+                        <td className="border border-[#0C013D] lg:w-[220px] px-5 text-black font-normal font-Barlow">
+                            06.09.2023
+                        </td>
+                        <td className="border border-[#0C013D] lg:w-[621px] px-5 text-black font-normal font-Barlow underline hover:font-semibold cursor-pointer">
+                            <a href="https://drive.google.com/file/d/1ieBSvMonpju_MO9x6pHfhSKkvSAI41EE/view?usp=drive_link">
+                                Disclosure under Regulation 30 and other applicable regulations
+                                of the SEBI (LODR) Regulations, 2015- Outcome of Board Meeting
+                            </a>
+                        </td>
                     </tr>
-                    <tr className='border border-black font-Barlow h-[50px] lg:text-lg text-sm'>
-                        <td className='border border-[#0C013D] lg:w-[220px] px-5 text-black lg:font-normal font-medium font-Barlow'>31.12.2023</td>
-                        <td className='border border-[#0C013D] lg:w-[621px] px-5 text-black lg:font-normal font-medium font-Barlow underline hover:font-semibold cursor-pointer'>Chairman’s statement at Aartech AGM</td>
-                    </tr>
-                    <tr className='border border-black font-Barlow h-[50px] lg:text-lg text-sm'>
-                        <td className='border border-[#0C013D] lg:w-[220px] px-5 text-black lg:font-normal font-medium font-Barlow'>31.12.2023</td>
-                        <td className='border border-[#0C013D] lg:w-[621px] px-5 text-black lg:font-normal font-medium font-Barlow underline hover:font-semibold cursor-pointer'>Chairman’s statement at Aartech AGM</td>
+                    <tr className="border border-black font-Barlow h-[80px] lg:text-lg text-sm">
+                        <td className="border border-[#0C013D] lg:w-[220px] px-5 text-black font-normal font-Barlow">
+                            06.09.2023
+                        </td>
+                        <td className="border border-[#0C013D] lg:w-[621px] px-5 text-black font-normal font-Barlow underline hover:font-semibold cursor-pointer">
+                            <a
+                                href="https://drive.google.com/file/d/186Z3mRkAz_IqM6LYn8nqjOKJbAlQwS2V/view?usp=drive_link"
+                                target="_blank"
+                            >
+                                {" "}
+                                Intimation of Book Closure and Record Date pursuant to Section
+                                91 of Companies Act 2013 and Regulation 42 of the SEBI (LODR)
+                                Regulations, 2015
+                            </a>
+                        </td>
                     </tr>
 
                 </table>
@@ -151,7 +190,7 @@ const Shareholders = () => {
                         </div>
 
                     </div>
-                    
+
 
                 </div>
 

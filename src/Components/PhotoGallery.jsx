@@ -141,7 +141,7 @@ const PhotoGallery = () => {
                 <div className="modal fixed inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center z-50 select-none">
                     {/* Modal content */}
                     <div className="modal-container my-auto w-screen lg:p-16 p-5 lg:overflow-auto overflow-visible relative">
-                        <div className="modal-content bg-gray-200 shadow-lg w-[100%] max-h-[500px] h-auto mb-2 overflow-hidden">
+                        <div className="modal-content bg-gray-200 shadow-lg w-[100%] max-h-[560px] h-auto mb-2 overflow-hidden">
                             <img src={galleryItems[selectedImageIndex].imageUrl} alt="" />
                         </div>
                         {/*<div className="modal-content grid grid-cols-4 gap-x-2">

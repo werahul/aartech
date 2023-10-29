@@ -128,7 +128,7 @@ const Contact = () => {
                         </div>
                         <div className="boxContent flex flex-col leading-[26px] lg:space-x-10 font-[400] ">
                             <ul className='list-disc  lg:ml-9 ml-6 '>
-                                <a href="" target='_blank'><li className='font-Barlow lg:text-[20px] my-4 w--full text-foot-blue '>71-75 Shelton StreetConvent GardenLondon, United Kingdom
+                                <a href="" target='_blank'><li className='font-Barlow lg:text-[20px] my-4 w--full text-foot-blue '>71-75 Shelton Street Convent Garden London, United Kingdom
                                 </li></a>
                                
 
