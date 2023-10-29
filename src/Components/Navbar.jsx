@@ -47,7 +47,7 @@ const Navbar = () => {
   const fetchData = () => {
     // Make an HTTP request to fetch the NSE data
     axios
-      .get("http://localhost:3001/nse-data")
+      .get("https://graceful-sarong-bass.cyclic.app/nse-data")
       .then((response) => {
         setNseData(response.data);
         setLoading(false);
@@ -59,7 +59,7 @@ const Navbar = () => {
       });
 
     axios
-      .get("http://localhost:3001/bse-data")
+      .get("https://graceful-sarong-bass.cyclic.app/bse-data")
       .then((response) => {
         setBseData(response.data);
         setLoading(false);
