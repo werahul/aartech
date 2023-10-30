@@ -89,7 +89,7 @@ import MapHome from "./Map.png"
 import mIndBanner from "./mIndBanner.svg"
 import mProBanner from "./mProBanner.svg"
 import mSolBanner from "./mSolBanner.svg"
-import mMap from "./mMap.png"
+import mMap from "./mMap.svg"
 
 export {
      brand1, brand2, brand3, footImg, linkedin, logo, down,
