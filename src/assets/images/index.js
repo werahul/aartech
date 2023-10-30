@@ -74,6 +74,8 @@ import solutionBanner from "./solutionBanner.png"
 import blankWhite from "./blankWhite.jpg"
 import serv1 from "./serv1.png"
 import serv1Mobile from "./serv1Mobile.png"
+import serv3 from "./serv3.png"
+import serv3Mobile from "./serv3Mobile.png"
 import serv2 from "./serv2.png"
 import newAbLogo1 from "./newAbLogo1.svg"
 import newAbLogo2 from "./newAbLogo2.svg"
@@ -87,12 +89,12 @@ import MapHome from "./Map.png"
 import mIndBanner from "./mIndBanner.svg"
 import mProBanner from "./mProBanner.svg"
 import mSolBanner from "./mSolBanner.svg"
-import mMap from "./mMap.svg"
+import mMap from "./mMap.png"
 
 export {
      brand1, brand2, brand3, footImg, linkedin, logo, down,
      customer1, customer2, customer3, customer4,
      customer5, customer6, customer7, customer8, customer9, customer10, customer11,
      aboutPic1, aboutPic2, aboutPic3, testi1, headerImage, breadHome, ashim, jay, ksh, pankaj, sonu, virendra, abImg1, linkedIcon, abGallary1982, abGallary1988, abGallary2005, abGallary2010, abGallary2017, anImg1, abGallary2019, abGallary1992, abGallary2009, abGallary2022, abBlank, abDebasis, abSsR, abSyed, abVivek, leftArw, rightArw, abAmit, abJitendra, abPradeep, abSanjeev, abWajid, mAmit, mDebasis, mJitendra, mSanjeev, mSsR, mSyed, mVivek, mWajid, Mpradeep, abNitisha2, mNitisha, abAarti, mAarti, download, indBanner, proBanner, solutionBanner, mTanuj, abTanuj, blankWhite, serv1, serv2, serv1Mobile,
-     newAbLogo1, newAbLogo2, newAbLogo3, newAbLogo4, MapHome, partnerLogo1, partnerLogo2, partnerLogo3, partnerLogo4, mIndBanner, mProBanner, mSolBanner, mMap
+     newAbLogo1, newAbLogo2, newAbLogo3, newAbLogo4, MapHome, partnerLogo1, partnerLogo2, partnerLogo3, partnerLogo4, mIndBanner, mProBanner, mSolBanner, mMap, serv3, serv3Mobile
 }

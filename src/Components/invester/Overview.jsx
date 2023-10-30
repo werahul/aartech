@@ -39,8 +39,8 @@ function Popup({
             />
           </div>
           <div className=" font-Barlow lg:px-[33px] px-5">
-            <h3 className="font-bold text-[20px] lg:text-[28px]">{name}</h3>
-            <p className="text-[14px] lg:text-[16px] ">
+            <h3 className="font-bold text-[20px] lg:text-[28px] uppercase tracking-wider">{name}</h3>
+            <p className="text-[14px] lg:text-[16px] uppercase">
               {designation}, {organization}
             </p>
             <p className="font-Barlow pt-[15px] hidden lg:block text-[20px]">
@@ -90,6 +90,7 @@ function Overview() {
         "Chhaya Anil Raje, a founding member of Aarchtech, brings over 42 years of experience as a qualified chemical scientist. She holds a Master's degree and has excelled academically. As the company's Promoter, Mrs Chhaya Raje has been instrumental in ensuring financial sustainability, prioritising even the smallest stakeholder's interests.",
     },
     {
+      id: 1,
       name: "Kshitij Negi",
       designation: "independent & Non-executive Director",
       organization: "Aartech Solonics Limited",
@@ -105,6 +106,7 @@ function Overview() {
         "Prashant Dattatrey Lowlekar, a seasoned Fellow Member of the Institute of Chartered Accountants of India, brings over 25 years of experience to his role as an Independent Director. His journey includes partnership at A.V Lowlekar and Co., internal auditing for the United Group, and continued success at 'MAMTANI AND LOWLEKAR' since 1993.",
     },
     {
+      id: 2,
       name: "Supriya Sunil Chitre",
       designation: "independent & Non-executive Director",
       organization: "Aartech Solonics Limited",
@@ -207,19 +209,8 @@ function Overview() {
           </p>
         </div>
         <div className="px-5 lg:px-20 2xl:px-[120px]">
-          <p className="font-Barlow pt-7 pb-10 lg:pb-20 text-[16px] lg:text-2xl 2xl:text-[24px] lg:leading-7">
-            In the world of control and automation, many different technologies
-            are available today. Aartech meets various needs, from simple and
-            affordable solutions for utility companies to complex and
-            high-quality requirements for demanding customers. They use advanced
-            ideas to make their customers happy. Demonstrating adeptness in
-            technology, Aartech is proficient in harmonising the optimal
-            assortment of components to craft tailored solutions tailored to
-            specific requirements. Moreover, substantial value augmentation is
-            achieved through solid-state and microprocessor-based embedded
-            control products, which are meticulously crafted to address
-            customised needs, distinguishing themselves from conventional
-            integration through discrete electrical devices.
+          <p className="font-Barlow lg:pt-[56px] pt-6 lg:font-normal font-medium  pb-10 lg:pb-20 text-[16px] lg:text-2xl 2xl:text-[24px] lg:leading-7">
+          Within Aartech, the strength of our leadership and management is paramount. Our Board of Directors comprises visionary individuals who bring a wealth of experience and strategic insight to the company. Their guidance ensures that Aartech remains at the forefront of innovation and customer satisfaction. For our valued investors, rest assured that Aartech is backed by a robust and capable team. Our management is adept at harmonizing the optimal assortment of components to craft tailored solutions. We consistently deliver results by focusing on cutting-edge technology and a commitment to meeting specific customer requirements.
           </p>
           <div>
             <h2 className="font-antonio text-[28px] lg:text-[36px] pb-5 lg:pb-9">
@@ -236,11 +227,11 @@ function Overview() {
                     <img
                       src={member.image}
                       alt=""
-                      className=" w-full h-full object-cover lg:w-[150px] lg:h-[150px] "
+                      className=" w-full h-full object-cover min-w-[130px] lg:w-[150px] lg:h-[150px] "
                     />
                   </div>
-                  <div className="pt-[13px] lg:pt-[10px] font-Barlow px-[24px] lg:px-[33px]">
-                    <h3 className="font-bold text-[18px] lg:text-[28px] uppercase tracking wider lg:tracking-widest">
+                  <div className="pt-[13px] lg:pt-[10px] font-Barlow px-[10px] lg:px-[33px]">
+                    <h3 className="font-bold text-[18px] lg:text-[28px] uppercase tracking wider lg:tracking-wider ">
                       {member.name}
                     </h3>
                     <p className=" text-[12px]  lg:text-[16px] uppercase">
@@ -273,7 +264,7 @@ function Overview() {
                     />
                   </div>
                   <div className="pt-[13px] lg:pt-[10px] font-Barlow px-[24px] lg:px-[33px]">
-                    <h3 className="font-bold text-[18px] lg:text-[28px] uppercase tracking-wider lg:tracking-widest">
+                    <h3 className="font-bold text-[18px] lg:text-[28px] uppercase tracking-wider lg:tracking-wider">
                       {member.name}
                     </h3>
                     <p className="whitespace-nowrap text-[12px] lg:text-[16px] uppercase">

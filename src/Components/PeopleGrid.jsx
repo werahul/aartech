@@ -4,7 +4,7 @@ import "aos/dist/aos.css"
 
 const PersonCard = ({ name, role, description, image, linkedInIcon, link, Mimage, id }) => (
   
-  <div className="border border-black  lg:flex " data-aos = "fade-up">
+  <div className="border border-black  lg:flex ">
     <div className=" flex gap-6">
       <div className="h-[50px] lg:h-auto lg:w-[200%] w-[100px]   lg:overflow-visible mt-0 lg:mt-0 lg:mb-0 mb-12">
         <img src={image} alt="" className="w-full h-[100px] lg:block hidden  lg:h-full object-cover  " />
@@ -16,7 +16,7 @@ const PersonCard = ({ name, role, description, image, linkedInIcon, link, Mimage
             <div className="text-black text-xl 2xl:text-[22px] font-semibold leading-tight font-Barlow">
               {name}
             </div>
-            <div className="text-black uppercase text-[13px] lg:text-[16px] font-semibold lg:font-normal leading-snug font-Barlow">
+            <div className="text-black uppercase text-[13px] lg:text-[15px] font-semibold lg:font-normal leading-snug font-Barlow">
               {role}
             </div>
           </div>
@@ -28,7 +28,7 @@ const PersonCard = ({ name, role, description, image, linkedInIcon, link, Mimage
         </div>
 
 
-        <div className="text-black text-sm lg:text-[18px] 2xl:text-[20px] w-full hidden lg:block leading-6 pr-4 font-Barlow py-3 font-bold lg:font-normal">
+        <div className="text-black text-sm lg:text-[18px] 2xl:text-[20px] w-full hidden lg:block leading-6 pr-4 lg:mt-3 font-Barlow py-2 font-bold lg:font-normal">
           {description}
         </div>
       </div>

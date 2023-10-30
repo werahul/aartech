@@ -19,14 +19,14 @@ const Media = () => {
         {
             id: 1,
             imgSrc: thumb1, // Define the image source for each item
-            title: 'Aarchtech secured a significant IDEX Grant worth up to 1.5 Crore INR as one of the five winners during DEFCONNECT 0 in April 2022, with the award presented by the Defense Minister.',
+            title: 'Aartech secured a significant IDEX Grant worth up to 1.5 Crore INR as one of the five winners during DEFCONNECT 0 in April 2022, with the award presented by the Defense Minister.',
             uploadTime: '26 April 2021',
             paths: "/media/award-presented-by-the-defense-minister"
         },
         {
             id: 2,
             imgSrc: thumb2, // Define the image source for each item
-            title: 'Aarchtech has been recognised by the Department of Scientific & Industrial Research (DSIR), Department of Science & Technology, Government of India.',
+            title: 'Aartech has been recognised by the Department of Scientific & Industrial Research (DSIR), Department of Science & Technology, Government of India.',
             uploadTime: '27 April 2021',
             paths: "/media/recognised-by-the-department-of-scientific-and-industrial-research"
         },
@@ -40,7 +40,7 @@ const Media = () => {
         {
             id: 4,
             imgSrc: thumb4, // Define the image source for each item
-            title: 'Aarchtech has been selected by the Atal Innovation Mission, NITI AAYOG, to establish and host a Startup Incubation Centre.',
+            title: 'Aartech has been selected by the Atal Innovation Mission, NITI AAYOG, to establish and host a Startup Incubation Centre.',
             uploadTime: '29 April 2021',
             paths: "/media/serves-as-an-atal-incubation-centre"
         },
@@ -62,7 +62,7 @@ const Media = () => {
             <Navbar />
             <div className=" 2xl:px-[120px] lg:px-20 lg:py-20 px-5 py-10 sm:px-10">
 
-                <div className="title lg:text-4xl text-[28px]  font-normal font-antonio text-box-red lg:mt-20 mt-20" data-aos="fade-right">
+                <div className="title lg:text-4xl text-[28px]  font-normal font-antonio text-box-red lg:mt-20 mt-20" >
                     Awards & Recognitions
                 </div>
 
@@ -95,10 +95,10 @@ const Media = () => {
 
 
 
-                <div className="lg:grid grid-cols-2 gap-5 lg:mt-9 mt-6 lg:space-y-0 space-y-6">
+                <div className="lg:grid grid-cols-2 gap-5 lg:mt-9 mt-5 lg:space-y-0 space-y-6">
                     <Link to='/announcement-page'
                     >
-                        <div className="flex lg:flex-row flex-col   border-[1px] border-black" data-aos="fade-in">
+                        <div className="flex lg:flex-row flex-col   border-[1px] border-black" >
                             <div className=" lg:w-[30%]  w-full lg:h-auto h-auto">
                                 <img src={anImg1} alt="" className='object-cover lg:h-[122px] ' /></div>
                             <div className=" lg:w-[70%] w-full h-auto lg:px-4 px-2 lg:pt-[13px] pt-[6px] lg:pb-[12px] pb-[10px] ">

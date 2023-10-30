@@ -21,7 +21,7 @@ const Contact = () => {
         <>
             <Navbar />
             <div className="mainPage 2xl:px-[120px] lg:px-20 lg:mt-[4rem] lg:py-20 px-5 py-10 sm:px-10 ">
-                <div className="title lg:text-4xl text-[28px] text-box-red   font-antonio lg:mt-0 mt-20" data-aos="fade-right"  data-aos-anchor-placement="center-bottom">
+                <div className="title lg:text-4xl text-[28px] text-box-red   font-antonio lg:mt-0 mt-20"  >
                     Contact Us
                 </div>
                 <div className="form lg:mt-4 mt-1 ">
@@ -29,12 +29,12 @@ const Contact = () => {
                         <div className="formDiv lg:grid grid-cols-2 lg:gap-x-[10px] lg:space-y-[12px] space-y-[16px]">
                             <CustomSelect />
                             <CustomCountry />
-                            <input type="text" placeholder='FIRST NAME' className='border-[1px] uppercase lg:text-[18px] text-[16px] border-black  outline-none py-2 px-6 h-[50px] w-full font-Barlow placeholder-red-600' />
-                            <input type="text" placeholder='LAST NAME' className='border-[1px] uppercase lg:text-[18px] text-[16px] border-black outline-none py-2 px-6 h-[50px] w-full font-Barlow placeholder-red-600' />
-                            <input type="text" placeholder='COMPANY NAME' className='border-[1px] uppercase lg:text-[18px] text-[16px] border-black   outline-none py-2 px-6 h-[50px] w-full font-Barlow placeholder-red-600' />
-                            <input type="mail" placeholder='EMAIL ID' className='border-[1px] uppercase lg:text-[18px] text-[16px] border-black   outline-none py-2 px-6 h-[50px] w-full font-Barlow placeholder-red-600' />
+                            <input type="text" placeholder='FIRST NAME' className='border-[1px] uppercase lg:text-[18px] text-[16px] border-black  outline-none py-2 lg:px-6 px-3 h-[50px] w-full font-Barlow placeholder-red-600 font-medium' />
+                            <input type="text" placeholder='LAST NAME' className='border-[1px] uppercase lg:text-[18px] text-[16px] border-black outline-none py-2 lg:px-6 px-3 h-[50px] w-full font-Barlow placeholder-red-600 font-medium' />
+                            <input type="text" placeholder='COMPANY NAME' className='border-[1px] uppercase lg:text-[18px] text-[16px] border-black   outline-none py-2 lg:px-6 px-3 h-[50px] w-full font-Barlow placeholder-red-600 font-medium' />
+                            <input type="mail" placeholder='EMAIL ID' className='border-[1px] uppercase lg:text-[18px] text-[16px] border-black   outline-none py-2 lg:px-6 px-3 h-[50px] w-full font-Barlow placeholder-red-600 font-medium' />
                         </div>
-                        <textarea type="text" placeholder='YOUR MESSAGE' className="border-[1px] uppercase lg:text-[18px] text-[16px] border-black lg:h-[160px] mt-4  outline-none py-2 px-6 w-full font-Barlow placeholder-red-600 resize-none h-[149px]" />
+                        <textarea type="text" placeholder='YOUR MESSAGE' className="border-[1px] uppercase lg:text-[18px] text-[16px] border-black lg:h-[160px] mt-4  outline-none py-2 lg:px-6 px-3 w-full font-Barlow placeholder-red-600 font-medium resize-none h-[149px]" />
                     </form>
                     <button className='font-Barlow font-bold bg-box-red text-white p-2 lg:text-[18px] text-[16px] mt-3 lg:w-32 w-[100%] h-12 cursor-pointer'>SUBMIT</button>
                 </div>
@@ -55,9 +55,7 @@ const Contact = () => {
                     Address & Phone
                 </div>
                 <div className="grid lg:grid-cols-3 grid-cols-1 lg:gap-x-7 lg:gap-y-[30px] gap-y-6 ">
-                    <div className="addressbox border-[1px] border-black w-[100%] lg:h-[323px] h-auto py-4 px-4"  data-aos="flip-left"
-                    data-aos-easing="ease-out-cubic"
-                    data-aos-duration="1000">
+                    <div className="addressbox border-[1px] border-black w-[100%] lg:h-[323px] h-auto py-4 px-4">
                         <div className="boxtitle text-box-red font-bold flex items-center justify-center lg:my-5 font-Barlow lg:text-[24px] text-[20px]">
                             REGISTERED OFFICE
                         </div>
@@ -71,9 +69,7 @@ const Contact = () => {
                             </ul>
                         </div>
                     </div>
-                    <div className="addressbox border-[1px] border-black w-[100%] lg:h-[323px] h-auto py-4 px-4"  data-aos="flip-left"
-                    data-aos-easing="ease-out-cubic"
-                    data-aos-duration="1000">
+                    <div className="addressbox border-[1px] border-black w-[100%] lg:h-[323px] h-auto py-4 px-4">
                         <div className="boxtitle text-box-red font-bold flex items-center justify-center lg:my-5 font-Barlow lg:text-[24px] text-[20px]">
                             UNIT #1, MANDIDEEP
                         </div>
@@ -87,9 +83,7 @@ const Contact = () => {
                             </ul>
                         </div>
                     </div>
-                    <div className="addressbox border-[1px] border-black w-[100%] lg:h-[323px] h-60 py-4 px-4 "  data-aos="flip-left"
-                    data-aos-easing="ease-out-cubic"
-                    data-aos-duration="2000">
+                    <div className="addressbox border-[1px] border-black w-[100%] lg:h-[323px] h-60 py-4 px-4 ">
                         <div className="boxtitle text-box-red font-bold flex items-center justify-center lg:my-5 font-Barlow lg:text-[24px] text-[20px]">
                             UNIT #2, PARWANOO
                         </div>
@@ -103,10 +97,8 @@ const Contact = () => {
                             </ul>
                         </div>
                     </div>
-                    <div className="addressbox border-[1px] border-black w-[100%] lg:h-[323px] h-60 py-4 px-4 "  data-aos="flip-left"
-                    data-aos-easing="ease-out-cubic"
-                    data-aos-duration="2000">
-                        <div className="boxtitle text-box-red font-bold flex items-center justify-center lg:my-5 font-Barlow lg:text-[24px] text-[20px]">
+                    <div className="addressbox border-[1px] border-black w-[100%] lg:h-[323px] h-60 py-4 px-4 "  >
+                        <div className="boxtitle text-box-red font-bold flex items-center justify-center lg:my-5 font-Barlow lg:text-[24px] text-[20px] uppercase">
                             # Onshore Office USA
                         </div>
                         <div className="boxContent flex flex-col leading-[26px] lg:space-x-10 font-[400] ">
@@ -120,10 +112,8 @@ const Contact = () => {
                             </ul>
                         </div>
                     </div>
-                    <div className="addressbox border-[1px] border-black w-[100%] lg:h-[323px] h-60 py-4 px-4 "  data-aos="flip-left"
-                    data-aos-easing="ease-out-cubic"
-                    data-aos-duration="2000">
-                        <div className="boxtitle text-box-red font-bold flex items-center justify-center lg:my-5 font-Barlow lg:text-[24px] text-[20px]">
+                    <div className="addressbox border-[1px] border-black w-[100%] lg:h-[323px] h-60 py-4 px-4 ">
+                        <div className="boxtitle text-box-red font-bold flex items-center justify-center lg:my-5 font-Barlow lg:text-[24px] text-[20px] uppercase">
                         # Onshore Office UK
                         </div>
                         <div className="boxContent flex flex-col leading-[26px] lg:space-x-10 font-[400] ">

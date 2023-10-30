@@ -43,20 +43,20 @@ const Header = () => {
                     <Link
                         key={index}
                         to={index === 0 ? '/industries' : index === 1 ? '/products' : '/solutions'}
-                        className="w-full hidden lg:block md:w-[336px] h-[220px] text-white pt-8 px-4 md:px-7 font-Barlow div mb-4 md:mb-0"
+                        className="w-full hidden lg:block md:w-[336px] h-[200px] text-white pt-8 px-4 md:px-7 font-Barlow div mb-4 md:mb-0"
                         style={{
                             backgroundColor: index === currentIndex ? linkBackgroundColors[index] : 'transparent',
                         }}
                     >
-                        {<h2 className="font-[800] border-b-2 text-[14px] tracking-[.2em] md:text-[18px] mb-2 md:mb-6">
+                        {<h2 className="font-[700] border-b-2 text-[14px] tracking-[.2em] md:text-[18px] mb-2 md:mb-6 lg:mb-4 leading-10">
                             {index === 0 ? 'INDUSTRIES' : index === 1 ? 'PRODUCTS' : 'SOLUTIONS'}
                         </h2>}
                         <p className="font-normal font-Barlow text-[16px] md:text-[20px]">
                             {index === 0
                                 ? 'Work spanning 9 major industries & 33 sub-industries.'
                                 : index === 1
-                                    ? '12 products adopted across 15 countries.'
-                                    : 'Over 20+ customized solutions across industries and products.'}
+                                    ? '11 products adopted across 15 countries.'
+                                    : 'Over 11+ customized solutions across industries and products.'}
                         </p>
                     </Link>
                 ))}

@@ -92,8 +92,12 @@ const Navbar = () => {
   const linkStyle = {
     color: isWorkButtonActive ? '#DA0001' : '#0C013D',
     fontWeight: isWorkButtonActive ? "800" : "",
-
+    transition: 'color 0.3s',
+    ':hover': {
+      color: '#DA0001', // Red color on hover
+    },
   };
+  
   const linkStyleForInvester = {
     color: isInvestButtonActive ? '#DA0001' : '#0C013D',
     fontWeight: isInvestButtonActive ? "800" : "",
@@ -160,11 +164,11 @@ const Navbar = () => {
           isMenuOpen
             ? "flex flex-col lg:py-20 py-[7rem] px-5 lg:text-[24px] text-lg space-y-4 fixed h-screen inset-0 bg-white overflow-y-auto"
             : "hidden lg:flex "
-        } flex lg:items-center font-Barlow lg:space-x-7 mt-0 sm:px-10 px-5 lg:px-20 z-1 `}
+        } flex lg:items-center font-Barlow lg:space-x-8 mt-0 sm:px-10 px-5 lg:px-20 z-1 `}
       >
         <Link
           //  to="/"
-          className="text-foot-blue lg:block hidden font-bold hover:opacity-75 lg:border-none lg:pb-0 border-b pb-4 border-neutral-500"
+          className="text-foot-blue lg:block hidden font-bold hover:text-box-red lg:border-none lg:pb-0 border-b pb-4 border-neutral-500"
           style={linkStyle}
           onClick={() => {
             setIsMenuOpen(false);
@@ -176,7 +180,7 @@ const Navbar = () => {
 
         <Link
           // to="/work"
-          // const linkClasses = `text-foot-blue  lg:hidden block font-bold hover:opacity-75 ${isDivVisible ? 'active2' : ''}`;
+          // const linkClasses = `text-foot-blue  lg:hidden block font-bold hover:text-box-red ${isDivVisible ? 'active2' : ''}`;
           className={`text-slate-900 lg:hidden block font-bold  ${
             isDivVisible ? "active2" : ""
           }`}
@@ -242,7 +246,7 @@ const Navbar = () => {
 
         <Link
           to="/about"
-          className={`text-foot-blue  font-bold hover:opacity-75 lg:border-none lg:pb-0 border-b pb-4  border-neutral-500 ${
+          className={`text-foot-blue  font-bold hover:text-box-red lg:border-none lg:pb-0 border-b pb-4  border-neutral-500 ${
             location.pathname === "/about" ? "active" : ""
           }`}
           onClick={() => setIsMenuOpen(false)}
@@ -251,7 +255,7 @@ const Navbar = () => {
         </Link>
         <Link
           to="/brands"
-          className={`text-foot-blue  font-bold hover:opacity-75 lg:border-none lg:pb-0 border-b pb-4  border-neutral-500 ${
+          className={`text-foot-blue  font-bold hover:text-box-red lg:border-none lg:pb-0 border-b pb-4  border-neutral-500 ${
             location.pathname === "/brands" ? "active" : ""
           }`}
           onClick={() => setIsMenuOpen(false)}
@@ -260,7 +264,7 @@ const Navbar = () => {
         </Link>
         <Link
           to="/media"
-          className={`text-foot-blue  font-bold hover:opacity-75 lg:border-none lg:pb-0 border-b pb-4  border-neutral-500 ${
+          className={`text-foot-blue  font-bold hover:text-box-red lg:border-none lg:pb-0 border-b pb-4  border-neutral-500 ${
             location.pathname === "/media" ? "active" : ""
           }`}
           onClick={() => setIsMenuOpen(false)}
@@ -269,7 +273,7 @@ const Navbar = () => {
         </Link>
         <Link
           // to="/investors"
-          className="text-foot-blue  font-bold hover:opacity-75 lg:block hidden"
+          className="text-foot-blue  font-bold hover:text-box-red lg:block hidden"
           style={linkStyleForInvester}
           onClick={() => {
             setIsMenuOpen(false);
@@ -292,7 +296,7 @@ const Navbar = () => {
             className={`overflow-hidden flex flex-col customTransition  ${isDivOpen ? 'h-auto opacity-100 translate-y-[0%] ' : 'h-0 opacity-0 translate-y-[-20%]'} bg-transparent rounded-lg font-bold`}
           >
             <Link to="/investors/overview" className="lg:border-none lg:pb-0 border-b pb-4 uppercase text-foot-blue   py-4 ml-14 border-neutral-500">OVERVIEW</Link>
-            <Link to="/investors/chairman-communication" className="lg:border-none  lg:pb-0 border-b pb-4 uppercase text-foot-blue  py-4 ml-14 border-neutral-500">CHAIRMAI’S COMMUNICATION</Link>
+            <Link to="/investors/chairman-communication" className="lg:border-none  lg:pb-0 border-b pb-4 uppercase text-foot-blue  py-4 ml-14 border-neutral-500">CHAIRMAN’S COMMUNICATION</Link>
             <Link to="/investors/financial-reports" className="lg:border-none lg:pb-0 border-b pb-4 uppercase text-foot-blue   py-4 ml-14 border-neutral-500">FINANCIAL REPORTS</Link>
             <Link to="/investors/shareholders-information" className="lg:border-none  lg:pb-0 border-b pb-4 uppercase text-foot-blue  py-4 ml-14 border-neutral-500">SHAREHOLDERS INFORMATION</Link>
             <Link to="/investors/notices" className="lg:border-none  lg:pb-0 border-b pb-4 uppercase text-foot-blue  py-4 ml-14 border-neutral-500">NOTICES</Link>
@@ -305,7 +309,7 @@ const Navbar = () => {
 
         <Link
           to="/contact"
-          className={`text-foot-blue font-bold hover:opacity-75 lg:border-none lg:pb-0 border-b pb-4  border-neutral-500 ${
+          className={`text-foot-blue font-bold hover:text-box-red lg:border-none lg:pb-0 border-b pb-4  border-neutral-500 ${
             location.pathname === "/contact" ? "active" : ""
           }`}
           onClick={() => setIsMenuOpen(false)}
@@ -314,7 +318,7 @@ const Navbar = () => {
         </Link>
         <div className="flex items-center space-x-4">
           <select
-            className="lg:inline-block hidden outline-none text-white  ml-4 py-1 px-3 font-barlow font-semibold select-box bse-bg"
+            className="lg:inline-block hidden outline-none text-white  ml-3 py-1 pr-6 pl-2 font-barlow font-semibold select-box bse-bg"
             value={selectedStock}
             onChange={handleStockSelectChange}
           >

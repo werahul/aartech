@@ -1,5 +1,5 @@
 import React from 'react'
-import { serv1, serv2, serv1Mobile } from '../assets/images'
+import { serv1, serv2, serv1Mobile, serv3, serv3Mobile } from '../assets/images'
 import { Link } from 'react-router-dom'
 
 
@@ -17,11 +17,11 @@ const Services = () => {
                     <img src={serv1} alt="" className='lg:block hidden' />
                     <img src={serv1Mobile} alt="" className='lg:hidden' />
                 </div>
-                <div className="lg:px-8  lg:py-8 px-4 py-6">
-                    <div className="font-Barlow lg:text-[24px] text-[20px] leading-normal lg:tracking-widest  tracking-wide  font-bold text-box-red mb-4">MANUFACTURING</div>
+                <div className="lg:py-9 lg:px-9 px-4 py-6">
+                    <div className="font-Barlow lg:text-[24px] text-[20px] leading-normal lg:tracking-widest  tracking-wide  font-bold text-box-red mb-4 lg:mb-7">MANUFACTURING</div>
                     <div className=" lg:flex gap-x-[96px] lg:space-y-0  space-y-4">
                         <div className="">
-                            <div className="lg:text-[20px] text-[16px] text-foot-blue font-semibold font-Barlow  lg:mb-3 mb-4 ">Manufacturing Hubs</div>
+                            <div className="lg:text-[20px] text-[16px] text-foot-blue  font-bold  font-Barlow  lg:mb-3 mb-4 ">Manufacturing Hubs</div>
                             <div className="lg:text-[20px] text-[16px] text-foot-blue font-bold font-Barlow">Unit#1: Mandideep, M.P. :</div>
                             <ul className="lg:w-[495px]  list-disc ml-8">
                                 <li className='lg:text-[20px] text-[16px] text-foot-blue font-normal font-Barlow'>Located in Mandideep, 20 kms from Bhopal</li>
@@ -76,9 +76,11 @@ const Services = () => {
             <div className="lg:flex lg:space-x-6 lg:space-y-0 space-y-6 mt-6 lg:mb-0 mb-[14px]">
 
                 <div className="border-[1px] border-black w-full lg:h-auto  ">
-                    <div class="lg:h-[155px] h-[89px] bg-zinc-300"></div>
+                    <div class="lg:h-auto h-auto w-full">
+                    <img src={serv3} alt="" />
+                    </div>
                     <div className="lg:px-8 lg:py-[40px]  px-4 py-6">
-                        <div className="font-Barlow text-box-red font-bold leading-normal lg:tracking-widest tracking-wide lg:text-[24px] text-[20px] lg:mb-[40px] mb-4" >COMMISSIONING</div>
+                        <div className="font-Barlow text-box-red font-bold leading-normal lg:tracking-widest tracking-wide lg:text-[24px] text-[20px] lg:mb-[20px] mb-4" >COMMISSIONING</div>
                         <div className="">
                             <div className="lg:text-[20px] text-[16px] text-foot-blue font-bold font-Barlow">SSD Commissioning Support : </div>
                             <ul className="w-auto list-disc ml-8 ">
@@ -101,12 +103,12 @@ const Services = () => {
                     </div>
 
                 </div>
-                <div className="border-[1px] border-black lg:w-full lg:h-auto   ">
-                    <div class="lg:h-[155px] h-[89px] ">
+                <div className="border-[1px] border-black   w-full lg:h-auto   ">
+                    <div class="lg:h-[150px] h-auto ">
                         <img src={serv2} alt="" />
                     </div>
                     <div className="lg:px-8 lg:py-[40px] px-4 py-6">
-                        <div className="font-Barlow text-box-red font-bold leading-normal lg:tracking-widest tracking-wide lg:text-[24px] text-[20px] lg:mb-[40px] mb-4" >RESEARCH & DEVELOPMENT</div>
+                        <div className="font-Barlow text-box-red font-bold leading-normal lg:tracking-widest tracking-wide lg:text-[24px] text-[20px] lg:mb-[20px] mb-4" >RESEARCH & DEVELOPMENT</div>
                         <div className="">
                             <div className="lg:text-[20px] text-[16px] text-foot-blue font-bold font-Barlow">Design & Engineering : </div>
                             <ul className=" w-auto list-disc ml-8 ">
@@ -129,7 +131,7 @@ const Services = () => {
                             </ul>
                         </div>
 
-                        <Link to="/r&d-facilities" className="w-[130px] h-[43px] lg:w-[170px] lg:h-[42px] border border-black text-black flex justify-center items-center mt-10 cursor-pointer font-bold hover:border-red-700  tracking-wider lg:text-base text-sm font-Barlow whitespace-nowrap leading-none hover:text-box-red">
+                        <Link to="/r&d-facilities" className="w-[130px] h-[43px] lg:w-[170px] lg:h-[42px] border border-black text-black flex justify-center items-center mt-10 cursor-pointer font-extrabold hover:border-red-700  tracking-wider lg:text-base text-sm font-Barlow whitespace-nowrap leading-none hover:text-box-red ">
                             KNOW MORE
                         </Link>
                     </div>

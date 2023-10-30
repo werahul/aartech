@@ -26,108 +26,108 @@ const Notices = () => {
                     </tr>
                     <tr className='border border-black font-Barlow h-[50px] lg:text-lg text-sm'>
                         <td className='border border-[#0C013D] lg:w-[220px] px-5 text-black font-normal font-Barlow'>11.01.2023</td>
-                        <td className='border border-[#0C013D] lg:w-[621px] px-5 text-black font-normal font-Barlow underline hover:font-semibold cursor-pointer'><a href="https://drive.google.com/file/d/1PR6OrJr-7tjr42mzzDlao6EuMllWxb0t/view" target="_blank" rel="noopener noreferrer">Copy of Notice of Board Meeting</a></td>
+                        <td className='border border-[#0C013D] lg:w-[621px] px-5 text-black font-normal font-Barlow underline hover:font-semibold cursor-pointer'><a href="https://drive.google.com/file/d/1PR6OrJr-7tjr42mzzDlao6EuMllWxb0t/view" target="_blank" rel="noopener noreferrer"> Notice of Board Meeting</a></td>
                     </tr>
                     <tr className='border border-black font-Barlow h-[50px] lg:text-lg text-sm'>
                         <td className='border border-[#0C013D] lg:w-[220px] px-5 text-black font-normal font-Barlow'>19.02.2023</td>
-                        <td className='border border-[#0C013D] lg:w-[621px] px-5 text-black font-normal font-Barlow underline hover:font-semibold cursor-pointer'><a href="https://drive.google.com/file/d/1N0LzH8_0QDxhLAqw7Q36lPWcATUGAUWz/view" target="_blank" rel="noopener noreferrer">Copy of Notice of Postal Ballot</a></td>
+                        <td className='border border-[#0C013D] lg:w-[621px] px-5 text-black font-normal font-Barlow underline hover:font-semibold cursor-pointer'><a href="https://drive.google.com/file/d/1N0LzH8_0QDxhLAqw7Q36lPWcATUGAUWz/view" target="_blank" rel="noopener noreferrer"> Notice of Postal Ballot</a></td>
                     </tr>
 
                     <tr className='border border-black font-Barlow h-[50px] lg:text-lg text-sm'>
                         <td className='border border-[#0C013D] lg:w-[220px] px-5 text-black font-normal font-Barlow'>23.03.2023</td>
-                        <td className='border border-[#0C013D] lg:w-[621px] px-5 text-black font-normal font-Barlow underline hover:font-semibold cursor-pointer'><a href="https://drive.google.com/file/d/1TLHU-Bb4Dx9QwB7tkNtQHKjSTW4WNfqi/view" target="_blank" rel="noopener noreferrer">Copy of Notice of Board Meeting </a></td>
+                        <td className='border border-[#0C013D] lg:w-[621px] px-5 text-black font-normal font-Barlow underline hover:font-semibold cursor-pointer'><a href="https://drive.google.com/file/d/1TLHU-Bb4Dx9QwB7tkNtQHKjSTW4WNfqi/view" target="_blank" rel="noopener noreferrer"> Notice of Board Meeting </a></td>
                     </tr>
                     <tr className='border border-black font-Barlow h-[50px] lg:text-lg text-sm'>
                         <td className='border border-[#0C013D] lg:w-[220px] px-5 text-black font-normal font-Barlow'>11.05.2023</td>
-                        <td className='border border-[#0C013D] lg:w-[621px] px-5 text-black font-normal font-Barlow underline hover:font-semibold cursor-pointer'><a href="https://drive.google.com/file/d/1aoBKTbS-9njg7yIRTh6mwIoD3xqVbqt6/view" target="_blank" rel="noopener noreferrer">Copy of Notice of Board Meeting </a></td>
+                        <td className='border border-[#0C013D] lg:w-[621px] px-5 text-black font-normal font-Barlow underline hover:font-semibold cursor-pointer'><a href="https://drive.google.com/file/d/1aoBKTbS-9njg7yIRTh6mwIoD3xqVbqt6/view" target="_blank" rel="noopener noreferrer"> Notice of Board Meeting </a></td>
                     </tr>
                     <tr className='border border-black font-Barlow h-[50px] lg:text-lg text-sm'>
                         <td className='border border-[#0C013D] lg:w-[220px] px-5 text-black font-normal font-Barlow'>  19.06.2023  </td>
-                        <td className='border border-[#0C013D] lg:w-[621px] px-5 text-black font-normal font-Barlow underline hover:font-semibold cursor-pointer'><a href="https://drive.google.com/file/d/16BS654-2IDWqWHg9h5Xo4plKF1gFD0TN/view" target="_blank" rel="noopener noreferrer">    Copy of Notice of Postal Ballot     </a></td>
+                        <td className='border border-[#0C013D] lg:w-[621px] px-5 text-black font-normal font-Barlow underline hover:font-semibold cursor-pointer'><a href="https://drive.google.com/file/d/16BS654-2IDWqWHg9h5Xo4plKF1gFD0TN/view" target="_blank" rel="noopener noreferrer">     Notice of Postal Ballot     </a></td>
                     </tr>
                     <tr className='border border-black font-Barlow h-[50px] lg:text-lg text-sm'>
                         <td className='border border-[#0C013D] lg:w-[220px] px-5 text-black font-normal font-Barlow'>  14.08.2023  </td>
-                        <td className='border border-[#0C013D] lg:w-[621px] px-5 text-black font-normal font-Barlow underline hover:font-semibold cursor-pointer'><a href="https://drive.google.com/file/d/1h5R2QKfK54l_E9oyPlNDOP-MGaFdP_Pe/view" target="_blank" rel="noopener noreferrer">   Copy of Notice of Board Meeting     </a></td>
+                        <td className='border border-[#0C013D] lg:w-[621px] px-5 text-black font-normal font-Barlow underline hover:font-semibold cursor-pointer'><a href="https://drive.google.com/file/d/1h5R2QKfK54l_E9oyPlNDOP-MGaFdP_Pe/view" target="_blank" rel="noopener noreferrer">    Notice of Board Meeting     </a></td>
                     </tr>
                     <tr className='border border-black font-Barlow h-[50px] lg:text-lg text-sm'>
                         <td className='border border-[#0C013D] lg:w-[220px] px-5 text-black font-normal font-Barlow'>  06.09.2023  </td>
-                        <td className='border border-[#0C013D] lg:w-[621px] px-5 text-black font-normal font-Barlow underline hover:font-semibold cursor-pointer'><a href="https://drive.google.com/file/d/1kQ7aA69O9uB-0hAdN_t6z8NpWsQS_jCz/view" target="_blank" rel="noopener noreferrer">   Copy of Notice of Board Meeting     </a></td>
+                        <td className='border border-[#0C013D] lg:w-[621px] px-5 text-black font-normal font-Barlow underline hover:font-semibold cursor-pointer'><a href="https://drive.google.com/file/d/1kQ7aA69O9uB-0hAdN_t6z8NpWsQS_jCz/view" target="_blank" rel="noopener noreferrer">    Notice of Board Meeting     </a></td>
                     </tr>
                     <tr className='border border-black font-Barlow h-[50px] lg:text-lg text-sm'>
                         <td className='border border-[#0C013D] lg:w-[220px] px-5 text-black font-normal font-Barlow'>  21.03.2022 </td>
-                        <td className='border border-[#0C013D] lg:w-[621px] px-5 text-black font-normal font-Barlow underline hover:font-semibold cursor-pointer'><a href="https://drive.google.com/file/d/1wbq6UL3GDUxaBhyD676V96WbPT7wY6jO/view" target="_blank" rel="noopener noreferrer">   Copy of Notice of Board Meeting     </a></td>
+                        <td className='border border-[#0C013D] lg:w-[621px] px-5 text-black font-normal font-Barlow underline hover:font-semibold cursor-pointer'><a href="https://drive.google.com/file/d/1wbq6UL3GDUxaBhyD676V96WbPT7wY6jO/view" target="_blank" rel="noopener noreferrer">    Notice of Board Meeting     </a></td>
                     </tr>
                     <tr className='border border-black font-Barlow h-[50px] lg:text-lg text-sm'>
                         <td className='border border-[#0C013D] lg:w-[220px] px-5 text-black font-normal font-Barlow'>  12.05.2022</td>
-                        <td className='border border-[#0C013D] lg:w-[621px] px-5 text-black font-normal font-Barlow underline hover:font-semibold cursor-pointer'><a href="https://drive.google.com/file/d/1sDD7a4ZMl07IGdE6sLNUFHhHIruSP4dj/view" target="_blank" rel="noopener noreferrer">   Copy of Notice of Board Meeting     </a></td>
+                        <td className='border border-[#0C013D] lg:w-[621px] px-5 text-black font-normal font-Barlow underline hover:font-semibold cursor-pointer'><a href="https://drive.google.com/file/d/1sDD7a4ZMl07IGdE6sLNUFHhHIruSP4dj/view" target="_blank" rel="noopener noreferrer">    Notice of Board Meeting     </a></td>
                     </tr>
                     <tr className='border border-black font-Barlow h-[50px] lg:text-lg text-sm'>
                         <td className='border border-[#0C013D] lg:w-[220px] px-5 text-black font-normal font-Barlow'> 16.08.2022</td>
-                        <td className='border border-[#0C013D] lg:w-[621px] px-5 text-black font-normal font-Barlow underline hover:font-semibold cursor-pointer'><a href="https://drive.google.com/file/d/12uh6x3ucrbF3w-5DHS-1bRDto_RH1kuR/view" target="_blank" rel="noopener noreferrer">   Copy of Notice of Board Meeting     </a></td>
+                        <td className='border border-[#0C013D] lg:w-[621px] px-5 text-black font-normal font-Barlow underline hover:font-semibold cursor-pointer'><a href="https://drive.google.com/file/d/12uh6x3ucrbF3w-5DHS-1bRDto_RH1kuR/view" target="_blank" rel="noopener noreferrer">    Notice of Board Meeting     </a></td>
                     </tr>
                     <tr className='border border-black font-Barlow h-[50px] lg:text-lg text-sm'>
                         <td className='border border-[#0C013D] lg:w-[220px] px-5 text-black font-normal font-Barlow'> 09.09.2022</td>
-                        <td className='border border-[#0C013D] lg:w-[621px] px-5 text-black font-normal font-Barlow underline hover:font-semibold cursor-pointer'><a href="https://drive.google.com/file/d/1sGflX_U2TTpxdd9ga3KSMOic8My57e56/view" target="_blank" rel="noopener noreferrer">   Copy of Notice of Annual General Meeting      </a></td>
+                        <td className='border border-[#0C013D] lg:w-[621px] px-5 text-black font-normal font-Barlow underline hover:font-semibold cursor-pointer'><a href="https://drive.google.com/file/d/1sGflX_U2TTpxdd9ga3KSMOic8My57e56/view" target="_blank" rel="noopener noreferrer">    Notice of Annual General Meeting      </a></td>
                     </tr>
                     <tr className='border border-black font-Barlow h-[50px] lg:text-lg text-sm'>
                         <td className='border border-[#0C013D] lg:w-[220px] px-5 text-black font-normal font-Barlow'> 12.11.2022</td>
-                        <td className='border border-[#0C013D] lg:w-[621px] px-5 text-black font-normal font-Barlow underline hover:font-semibold cursor-pointer'><a href="https://drive.google.com/file/d/1DNtLItdHUwqydbe_d5e3K4-3Lzk9Zjcv/view" target="_blank" rel="noopener noreferrer">   Copy of Notice of Board Meeting      </a></td>
+                        <td className='border border-[#0C013D] lg:w-[621px] px-5 text-black font-normal font-Barlow underline hover:font-semibold cursor-pointer'><a href="https://drive.google.com/file/d/1DNtLItdHUwqydbe_d5e3K4-3Lzk9Zjcv/view" target="_blank" rel="noopener noreferrer">    Notice of Board Meeting      </a></td>
                     </tr>
                     <tr className='border border-black font-Barlow h-[50px] lg:text-lg text-sm'>
                         <td className='border border-[#0C013D] lg:w-[220px] px-5 text-black font-normal font-Barlow'> 08.02.2021</td>
-                        <td className='border border-[#0C013D] lg:w-[621px] px-5 text-black font-normal font-Barlow underline hover:font-semibold cursor-pointer'><a href="https://drive.google.com/file/d/1lEgGUgxdlEh_1hDREkMWvUuWRSWSfTfV/view" target="_blank" rel="noopener noreferrer">    Copy of Notice of Board Meeting </a></td>
+                        <td className='border border-[#0C013D] lg:w-[621px] px-5 text-black font-normal font-Barlow underline hover:font-semibold cursor-pointer'><a href="https://drive.google.com/file/d/1lEgGUgxdlEh_1hDREkMWvUuWRSWSfTfV/view" target="_blank" rel="noopener noreferrer">     Notice of Board Meeting </a></td>
                     </tr>
                     <tr className='border border-black font-Barlow h-[50px] lg:text-lg text-sm'>
                         <td className='border border-[#0C013D] lg:w-[220px] px-5 text-black font-normal font-Barlow'> 15.06.2021</td>
-                        <td className='border border-[#0C013D] lg:w-[621px] px-5 text-black font-normal font-Barlow underline hover:font-semibold cursor-pointer'><a href="https://drive.google.com/file/d/1g6ByEwL9unUaWykORNbhO8UiowVT02xF/view" target="_blank" rel="noopener noreferrer">    Copy of Notice of Board Meeting      </a></td>
+                        <td className='border border-[#0C013D] lg:w-[621px] px-5 text-black font-normal font-Barlow underline hover:font-semibold cursor-pointer'><a href="https://drive.google.com/file/d/1g6ByEwL9unUaWykORNbhO8UiowVT02xF/view" target="_blank" rel="noopener noreferrer">     Notice of Board Meeting      </a></td>
                     </tr>
                     <tr className='border border-black font-Barlow h-[50px] lg:text-lg text-sm'>
                         <td className='border border-[#0C013D] lg:w-[220px] px-5 text-black font-normal font-Barlow'> 06.09.2021</td>
-                        <td className='border border-[#0C013D] lg:w-[621px] px-5 text-black font-normal font-Barlow underline hover:font-semibold cursor-pointer'><a href="https://drive.google.com/file/d/10DxzC_ZzC38iw_p13eTiuyiUsqBDXhju/view" target="_blank" rel="noopener noreferrer">    Copy of Notice of Board Meeting     </a></td>
+                        <td className='border border-[#0C013D] lg:w-[621px] px-5 text-black font-normal font-Barlow underline hover:font-semibold cursor-pointer'><a href="https://drive.google.com/file/d/10DxzC_ZzC38iw_p13eTiuyiUsqBDXhju/view" target="_blank" rel="noopener noreferrer">     Notice of Board Meeting     </a></td>
                     </tr>
 
 
                     <tr className='border border-black font-Barlow h-[50px] lg:text-lg text-sm'>
                         <td className='border border-[#0C013D] lg:w-[220px] px-5 text-black font-normal font-Barlow'> 29.09.2021</td>
-                        <td className='border border-[#0C013D] lg:w-[621px] px-5 text-black font-normal font-Barlow underline hover:font-semibold cursor-pointer'><a href="https://drive.google.com/file/d/1L-MiOL4_riEL1qYfqOO1Mamp1bSnemzK/view" target="_blank" rel="noopener noreferrer">    Copy of Notice of Annual General Meeting   </a></td>
+                        <td className='border border-[#0C013D] lg:w-[621px] px-5 text-black font-normal font-Barlow underline hover:font-semibold cursor-pointer'><a href="https://drive.google.com/file/d/1L-MiOL4_riEL1qYfqOO1Mamp1bSnemzK/view" target="_blank" rel="noopener noreferrer">     Notice of Annual General Meeting   </a></td>
                     </tr>
                     <tr className='border border-black font-Barlow h-[50px] lg:text-lg text-sm'>
                         <td className='border border-[#0C013D] lg:w-[220px] px-5 text-black font-normal font-Barlow'> 03.11.2021</td>
                         <td className='border border-[#0C013D] lg:w-[621px] px-5 text-black font-normal font-Barlow underline hover:font-semibold cursor-pointer'><a href="https://drive.google.com/file/d/1E_g-gv_khuO4pbx8BEuICe_zrDojH-DO/view" target="_blank" rel="noopener noreferrer">  
-                        Copy of Notice of Board Meeting       </a></td>
+                         Notice of Board Meeting       </a></td>
                     </tr>
                     <tr className='border border-black font-Barlow h-[50px] lg:text-lg text-sm'>
                         <td className='border border-[#0C013D] lg:w-[220px] px-5 text-black font-normal font-Barlow'> 10.11.2021</td>
-                        <td className='border border-[#0C013D] lg:w-[621px] px-5 text-black font-normal font-Barlow underline hover:font-semibold cursor-pointer'><a href="https://drive.google.com/file/d/1wUGYnLoq5LqfV8yV-0KjTFFafHSUY1Et/view" target="_blank" rel="noopener noreferrer">    Copy of Notice of Board Meeting     </a></td>
+                        <td className='border border-[#0C013D] lg:w-[621px] px-5 text-black font-normal font-Barlow underline hover:font-semibold cursor-pointer'><a href="https://drive.google.com/file/d/1wUGYnLoq5LqfV8yV-0KjTFFafHSUY1Et/view" target="_blank" rel="noopener noreferrer">     Notice of Board Meeting     </a></td>
                     </tr>
                     <tr className='border border-black font-Barlow h-[50px] lg:text-lg text-sm'>
                         <td className='border border-[#0C013D] lg:w-[220px] px-5 text-black font-normal font-Barlow'> 29.06.2020</td>
-                        <td className='border border-[#0C013D] lg:w-[621px] px-5 text-black font-normal font-Barlow underline hover:font-semibold cursor-pointer'><a href="https://drive.google.com/file/d/1SjP4YuiCWwmivLwLW2jVoMqnJtDvglR1/view" target="_blank" rel="noopener noreferrer">    Copy of Notice of Board Meeting     </a></td>
+                        <td className='border border-[#0C013D] lg:w-[621px] px-5 text-black font-normal font-Barlow underline hover:font-semibold cursor-pointer'><a href="https://drive.google.com/file/d/1SjP4YuiCWwmivLwLW2jVoMqnJtDvglR1/view" target="_blank" rel="noopener noreferrer">     Notice of Board Meeting     </a></td>
                     </tr>
                     <tr className='border border-black font-Barlow h-[50px] lg:text-lg text-sm'>
                         <td className='border border-[#0C013D] lg:w-[220px] px-5 text-black font-normal font-Barlow'> 02.09.2020</td>
-                        <td className='border border-[#0C013D] lg:w-[621px] px-5 text-black font-normal font-Barlow underline hover:font-semibold cursor-pointer'><a href="https://drive.google.com/file/d/1xqZ1GjK1T7P9tYaqMHbSI52uQL-w1dHB/view" target="_blank" rel="noopener noreferrer">    Copy of Notice of Board Meeting     </a></td>
+                        <td className='border border-[#0C013D] lg:w-[621px] px-5 text-black font-normal font-Barlow underline hover:font-semibold cursor-pointer'><a href="https://drive.google.com/file/d/1xqZ1GjK1T7P9tYaqMHbSI52uQL-w1dHB/view" target="_blank" rel="noopener noreferrer">     Notice of Board Meeting     </a></td>
                     </tr>
                     <tr className='border border-black font-Barlow h-[50px] lg:text-lg text-sm'>
                         <td className='border border-[#0C013D] lg:w-[220px] px-5 text-black font-normal font-Barlow'> 24.09.2020</td>
                         <td className='border border-[#0C013D] lg:w-[621px] px-5 text-black font-normal font-Barlow underline hover:font-semibold cursor-pointer'><a href="https://drive.google.com/file/d/1-sJOoUGdGYWUBh9wXakf786hJZvURAsg/view" target="_blank" rel="noopener noreferrer">    24.09.2020
-                        Copy of Notice of Annual General Meeting </a></td>
+                         Notice of Annual General Meeting </a></td>
                     </tr>
                     <tr className='border border-black font-Barlow h-[50px] lg:text-lg text-sm'>
                         <td className='border border-[#0C013D] lg:w-[220px] px-5 text-black font-normal font-Barlow'> 13.11.2020</td>
-                        <td className='border border-[#0C013D] lg:w-[621px] px-5 text-black font-normal font-Barlow underline hover:font-semibold cursor-pointer'><a href="https://drive.google.com/file/d/1L1LjcXZJUGUd0ow48bgxmhiAamDhHWzj/view" target="_blank" rel="noopener noreferrer">    Copy of Notice of Board Meeting     </a></td>
+                        <td className='border border-[#0C013D] lg:w-[621px] px-5 text-black font-normal font-Barlow underline hover:font-semibold cursor-pointer'><a href="https://drive.google.com/file/d/1L1LjcXZJUGUd0ow48bgxmhiAamDhHWzj/view" target="_blank" rel="noopener noreferrer">     Notice of Board Meeting     </a></td>
                     </tr>
                     <tr className='border border-black font-Barlow h-[50px] lg:text-lg text-sm'>
                         <td className='border border-[#0C013D] lg:w-[220px] px-5 text-black font-normal font-Barlow'> 30.04.2019</td>
-                        <td className='border border-[#0C013D] lg:w-[621px] px-5 text-black font-normal font-Barlow underline hover:font-semibold cursor-pointer'><a href="https://drive.google.com/file/d/19-k9QnLtOPJH4W2Yf0AwGXdrmopAz4ES/view" target="_blank" rel="noopener noreferrer">    Copy of Notice of Board Meeting     </a></td>
+                        <td className='border border-[#0C013D] lg:w-[621px] px-5 text-black font-normal font-Barlow underline hover:font-semibold cursor-pointer'><a href="https://drive.google.com/file/d/19-k9QnLtOPJH4W2Yf0AwGXdrmopAz4ES/view" target="_blank" rel="noopener noreferrer">     Notice of Board Meeting     </a></td>
                     </tr>
                     <tr className='border border-black font-Barlow h-[50px] lg:text-lg text-sm'>
                         <td className='border border-[#0C013D] lg:w-[220px] px-5 text-black font-normal font-Barlow'> 04.06.2019 </td>
-                        <td className='border border-[#0C013D] lg:w-[621px] px-5 text-black font-normal font-Barlow underline hover:font-semibold cursor-pointer'><a href="https://drive.google.com/file/d/12NjGJu2ze23Kad1810O8B3s81AmZnBzU/view" target="_blank" rel="noopener noreferrer">    Copy of Notice of Board Meeting     </a></td>
+                        <td className='border border-[#0C013D] lg:w-[621px] px-5 text-black font-normal font-Barlow underline hover:font-semibold cursor-pointer'><a href="https://drive.google.com/file/d/12NjGJu2ze23Kad1810O8B3s81AmZnBzU/view" target="_blank" rel="noopener noreferrer">     Notice of Board Meeting     </a></td>
                     </tr>
                     <tr className='border border-black font-Barlow h-[50px] lg:text-lg text-sm'>
                         <td className='border border-[#0C013D] lg:w-[220px] px-5 text-black font-normal font-Barlow'> 14.11.2019 </td>
-                        <td className='border border-[#0C013D] lg:w-[621px] px-5 text-black font-normal font-Barlow underline hover:font-semibold cursor-pointer'><a href="https://drive.google.com/file/d/1SEsRfvSI8_mzacx2vLzesvPZ4kDC7Dje/view" target="_blank" rel="noopener noreferrer">    Copy of Notice of Board Meeting     </a></td>
+                        <td className='border border-[#0C013D] lg:w-[621px] px-5 text-black font-normal font-Barlow underline hover:font-semibold cursor-pointer'><a href="https://drive.google.com/file/d/1SEsRfvSI8_mzacx2vLzesvPZ4kDC7Dje/view" target="_blank" rel="noopener noreferrer">     Notice of Board Meeting     </a></td>
                     </tr>
                     <tr className='border border-black font-Barlow h-[50px] lg:text-lg text-sm'>
                         <td className='border border-[#0C013D] lg:w-[220px] px-5 text-black font-normal font-Barlow'>06.09.2023</td>

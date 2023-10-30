@@ -24,17 +24,17 @@ const PowerBackup = () => {
 
 
     const tagContents = {
-        tag1: "Fuel cells offer superior efficiency, extended endurance, portability, silent operation, ruggedness, and environmental friendliness, making them the top choice for defence and exploration over traditional IC engines. ",
+        tag1: "Power Backup Units are crucial in defence and exploration, ensuring uninterrupted power supply in remote outposts and missions. They combine generators, storage, and renewables for reliability, enhancing equipment operation and safety.",
 
-        tag2: "Fuel cells excel in non-renewable energy due to their high efficiency, durability, portability, silent operation, resilience, and eco-friendliness, making them preferred over traditional internal combustion engines.",
+        tag2: "The Power Backup Unit ensures uninterrupted power supply in remote areas, enhancing safety and effectiveness for mission-critical operations. It combines generators, energy storage, and renewable energy integration, crucial for non-renewable energy scenarios.",
 
-        tag3: "Fuel cells, with their efficiency, endurance, portability, silence, durability, and eco-friendliness, are preferred in healthcare, surpassing traditional IC engines for various medical equipment and applications.        ",
+        tag3: "In healthcare, the Power Backup Unit ensures uninterrupted power for vital medical equipment, enhancing patient safety and enabling continuous operation during emergencies, critical for patient care and life-saving procedures. ",
 
-        tag4: "Fuel cells excel in IT and Telecom with high efficiency, longer endurance, portability, quietness, durability, and eco-friendliness, outperforming traditional IC engines in these industries.        ",
+        tag4: "The Power Backup Unit ensures uninterrupted power for mission-critical IT and Telecom systems, improving operational efficiency and safety in remote and challenging environments through backup generators, energy storage, and renewable energy integration.  ",
 
-        tag5: "Fuel cells excel in power transmission and distribution, providing superior efficiency, extended endurance, portability, silent operation, ruggedness, and eco-friendliness. They surpass traditional IC engines as the industry's preferred choice.        ",
+        tag5: "The Power Backup Unit guarantees uninterrupted power supply for critical operations, combining generators, energy storage, and renewables for reliability in remote and challenging environments, enhancing mission effectiveness and safety.",
 
-        tag6: "Fuel cells in transportation provide exceptional efficiency, endurance, portability, quiet operation, durability, and eco-friendliness, surpassing traditional IC engines, making them the preferred choice in the industry.      ",
+        tag6: "In transportation, the Power Backup Unit ensures uninterrupted power supply in remote and challenging situations, improving the reliability of mission-critical equipment and communication systems, thereby enhancing overall effectiveness and safety.",
 
 
 

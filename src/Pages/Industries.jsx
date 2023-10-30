@@ -47,7 +47,7 @@ const Industries = () => {
         <h1 className="text-[28px] lg:text-[36px] mt-[80px] lg:mt-[80px] lg:mb-[14px] mb-[24px] font-antonio">
           All Industries
         </h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-[30px] lg:gap-y-[48px] gap-y-10 lg:mb-[80px] mb-10 font-Barlow">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-[30px] lg:gap-y-[40px] gap-y-8 lg:mb-[80px] mb-10 font-Barlow">
           {industry.map((indus, index) => {
             return <Industry key={index} {...indus} />;
           })}

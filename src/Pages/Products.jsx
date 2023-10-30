@@ -47,7 +47,7 @@ const Products = () => {
         <h1 className="text-[28px] lg:text-[36px] mt-[80px] lg:mt-[80px] mb-[22px] lg:mb-[14px] font-antonio">
           All Products
         </h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-[30px] lg:gap-y-[48px] gap-y-10 mb-[48px]">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-[30px] lg:gap-y-[40px] gap-y-8 mb-[48px]">
           {product.map((prod, index) => {
             return <Product key={index} {...prod} />;
           })}

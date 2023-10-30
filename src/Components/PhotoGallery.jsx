@@ -116,7 +116,7 @@ const PhotoGallery = () => {
                     <div
                         key={item.id}
                         className="galaryBox inline-block"
-                        onClick={() => openImageModal(index)}  data-aos="zoom-in"
+                        onClick={() => openImageModal(index)}  
                     >
                         <div className="img bg-slate-500 aspect-video overflow-hidden cursor-pointer">
                             <img src={item.imageUrl} alt="" />
@@ -129,7 +129,7 @@ const PhotoGallery = () => {
             </div>
             <div className="flex items-center justify-center lg:mt-[60px] mt-[30px] lg:pb-0 lg:mb-0">
                 <div
-                    className="viewAll font-Barlow border-[1px] border-black inline-block px-4 py-1 text-[18px] cursor-pointer hover:text-box-red hover:border-box-red font-bold"
+                    className="viewAll font-Barlow border-[1px] border-black inline-block px-10 py-1 text-[18px] cursor-pointer hover:text-box-red hover:border-box-red font-bold "
                     onClick={toggleGalleryView}
                 >
                     {showAllGalleryItems ? 'Show Less' : 'View All'}

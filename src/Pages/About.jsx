@@ -77,7 +77,7 @@ const peopleData = [
     },
     {
         name: "Ss Raghuwanshi",
-        role: "Chief Operating Office",
+        role: "Chief Operating Officer",
         description:
             "He refines operations with meticulous precision, converting strategies into flawless execution and yielding remarkable outcomes. With an Engineering degree and a Master's in Business Administration, he boasts a total of 26 years of experience, including a decade of dedicated service at Aartech, where he continues to drive the company's excellence.",
         image: abSsR,
@@ -87,7 +87,7 @@ const peopleData = [
     },
     {
         name: "Nitisha Tiwari",
-        role: "MIDDLE MANAGEMENT EXECUTIV",
+        role: "MIDDLE MANAGEMENT EXECUTIVE",
         description:
             "She is a dedicated professional with extensive experience in technical sales, marketing, programming, engineering, and customer support. With a robust background in overseeing BTS divisions and ultra capacitors, I bring a unique fusion of skills for exceptional outcomes. Engineering Graduate, 11 years at Aartech, 16 years total experience.",
         image: abNitisha2,
@@ -117,7 +117,7 @@ const peopleData = [
     },
     {
         name: "Jitender Chauhan",
-        role: "MIDDLE MANAGEMENT EXECUTIV",
+        role: "MIDDLE MANAGEMENT EXECUTIVE",
         description:
             "He plays a pivotal role by seamlessly orchestrating various aspects of the CRP segment, including production, quality control, sales, and purchasing. His approach extends across the entire value chain, ensuring efficient and cohesive operations. As an Engineering Graduate, he embodies the essence of integrated success within the organization.",
         image: abJitendra,
@@ -152,16 +152,16 @@ const About = () => {
     return (
         <>
             <Navbar />
-            <div className="2xl:px-[40px] text-box-red lg:text-4xl text-[28px] font-normal lg:pt-20 leading-9 font-antonio lg:mb-9 lg:mt-20 mt-[120px] lg:ml-10 ml-5 -mb-8 sm:px-10 " data-aos="fade-right"
+            <div className="2xl:px-[80px] text-box-red lg:text-4xl text-[28px] font-normal lg:pt-20 leading-9 font-antonio lg:mb-9 lg:mt-20 mt-[120px] lg:ml-10 ml-5 -mb-8 sm:px-10 " 
             >Our History</div>
             <AboutImages />
             <div className=" h-[325px] bg-foot-blue mb-1 lg:mt-14 mt-24 flex flex-col items-center justify-center px-5 py-10 sm:px-10" >
-                <div className="text-white lg:text-5xl text-[28px] font-normal lg:leading-[48px] leading-[39.20px] text-center font-antonio lg:mb-10 mb-[24px] lg:mt-0 mt-10" data-aos="fade-left">Living Passion through Engineering</div>
-                <div className="lg:w-[844px] text-center text-white lg:text-xl text-base lg:px-4 lg:font-semibold font-normal lg:leading-7 leading-snug lg:mb-0 mb-10 font-Barlow " data-aos="fade-left">Our team comprises accomplished individuals with a shared passion for excellence. Each member brings a unique blend of skills and expertise to our mission. From creative thinkers to problem solvers, we collaborate to deliver innovative solutions.</div>
+                <div className="text-white lg:text-5xl text-[28px] font-normal lg:leading-[48px] leading-[39.20px] text-center font-antonio lg:mb-10 mb-[24px] lg:mt-0 mt-10" >Living Passion through Engineering</div>
+                <div className="lg:w-[844px] text-center text-white lg:text-xl text-base lg:px-4 lg:font-semibold font-medium lg:leading-7 leading-snug lg:mb-0 mb-10 font-Barlow " >Our team comprises accomplished individuals with a shared passion for excellence. Each member brings a unique blend of skills and expertise to our mission. From creative thinkers to problem solvers, we collaborate to deliver innovative solutions.</div>
             </div>
-            <div className="2xl:px-[100px] text-box-red lg:text-4xl text-[28px] font-normal lg:pt-20 pt-10 leading-9 font-antonio px-5 sm:px-10">Our Partners</div>
+            <div className="2xl:px-[120px] lg:px-20 text-box-red lg:text-4xl text-[28px] font-normal lg:pt-20 pt-10 leading-9 font-antonio px-5 sm:px-10">Our Partners</div>
 
-            <div className="lg:flex hidden lg:px-20 px-5 sm:px-10 mt-10 2xl:px-[100px] gap-x-16" data-aos = "fade-up">
+            <div className="lg:flex hidden lg:px-20  2xl:px-[120px] px-5 sm:px-10 mt-10  gap-x-16" >
                 <img src={newAbLogo1} alt="" />
                 <img src={newAbLogo2} alt="" />
                 <img src={newAbLogo3} alt="" />
