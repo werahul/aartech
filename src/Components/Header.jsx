@@ -55,7 +55,7 @@ const Header = () => {
                             {index === 0
                                 ? 'Work spanning 9 major industries & 33 sub-industries.'
                                 : index === 1
-                                    ? '11 products adopted across 15 countries.'
+                                    ? '11+ products adopted across 15 countries.'
                                     : 'Over 11+ customized solutions across industries and products.'}
                         </p>
                     </Link>

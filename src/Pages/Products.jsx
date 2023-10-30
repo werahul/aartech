@@ -12,7 +12,7 @@ const Product = ({ title, image, desc, path }) => {
     Aos.init({duration: 2000});
   }, []); // Empty dependency array ensures the effect runs only once
   return (
-    <div data-aos="fade-up">
+    <div >
       <Link to={path}>
 
 

@@ -13,7 +13,7 @@ const Industry = ({ title, image, desc, path }) => {
     Aos.init({duration: 2000});
   }, []); // Empty dependency array ensures the effect runs only once
   return (
-    <div data-aos="fade-up">
+    <div>
       <Link to={path}>
         <h3 className="text-[#B80001] font-bold font-Barlow text-[20px] lg:text-[24px] lg:tracking-wider tracking-wide">
           {title}
