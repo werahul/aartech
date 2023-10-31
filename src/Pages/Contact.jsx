@@ -1,7 +1,7 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState, useRef } from 'react'
 import Footer from '../Components/Footer'
 import Navbar from '../Components/Navbar'
-// import "../App.css" 
+import emailjs from '@emailjs/browser'
 import CustomSelect from './CustomSelect'
 import CustomCountry from './CustomCountry'
 import Aos from "aos"
@@ -15,6 +15,102 @@ const Contact = () => {
         window.scrollTo(0, 0);
         Aos.init({duration: 2000});
     }, []); // Empty dependency array ensures the effect runs only once
+
+    const [firstName, setFirstName] = useState("");
+    const [lastName, setLastName] = useState("");
+    const [salutation, setSalutation] = useState("");
+    const [country, setCountry] = useState("");
+    const [email, setEmail] = useState("");
+    const [company, setCompany] = useState("");
+    const [message, setMessage] = useState("");
+    const [error, setError] = useState('');
+
+
+    const handleFirstNameChange = (e) => {
+        setFirstName(e.target.value);
+    };
+    const handleLastNameChange = (e) => {
+        setLastName(e.target.value);
+    };
+
+    const handleEmailChange = (e) => {
+        setEmail(e.target.value);
+        setError('');
+    };
+
+    const handleSalutationChange = (e) => {
+        setSalutation(e.target.value);
+    };
+
+    const handleCountryChange = (e) => {
+        setCountry(e.target.value);
+    };
+
+    const handleCompanyChange = (e) => {
+        setCompany(e.target.value);
+    };
+    const handleMessageChange = (e) => {
+        setMessage(e.target.value);
+    };
+
+    const formField = useRef();
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+
+       
+            try {
+               
+                const formData = {
+                    firstName,
+                    lastName,
+                    email,
+                    company,
+                    salutation,
+                    country,
+                    message,
+                };
+               
+                emailjs
+                    .send(
+                        "service_melangedigital",
+                        "template_d80pgaj",
+                        {
+                            from_name: formData.name,
+                            to_name: "Sanket Bolinjkar",
+                            from_email: formData.email,
+                            from_phone: formData.phone,
+                            from_company: formData.company,
+
+                            to_email: "hello@melangedigital.in",
+                        },
+                        "11W3shu7B6S46t437"
+                    )
+                    .then(
+                        () => {
+                                                     
+                           
+                            if (formField.current) {
+                                formField.current.reset();
+                            }
+                        },
+                        (error) => {
+                            setLoading(false);
+                            console.log(error);
+                            alert("Something went wrong!");
+                        }
+                    );
+
+                // Reset form fields
+                setName("");
+                setEmail("");
+                setPhone("");
+                setCompany("");
+                setLoader(false)
+            } catch (error) {
+                console.log(error)
+            }
+        }
+
 
 
     return (
@@ -35,8 +131,8 @@ const Contact = () => {
                             <input type="mail" placeholder='EMAIL ID' className='border-[1px] uppercase lg:text-[18px] text-[16px] border-black   outline-none py-2 lg:px-6 px-3 h-[50px] w-full font-Barlow placeholder-red-600 font-medium' />
                         </div>
                         <textarea type="text" placeholder='YOUR MESSAGE' className="border-[1px] uppercase lg:text-[18px] text-[16px] border-black lg:h-[160px] mt-4  outline-none py-2 lg:px-6 px-3 w-full font-Barlow placeholder-red-600 font-medium resize-none h-[149px]" />
+                        <button className='font-Barlow font-bold bg-box-red text-white p-2 lg:text-[18px] text-[16px] mt-3 lg:w-32 w-[100%] h-12 cursor-pointer'>SUBMIT</button>
                     </form>
-                    <button className='font-Barlow font-bold bg-box-red text-white p-2 lg:text-[18px] text-[16px] mt-3 lg:w-32 w-[100%] h-12 cursor-pointer'>SUBMIT</button>
                 </div>
                 <div className="title lg:text-4xl text-[28px]  font-antonio lg:mt-20 mt-10"  >
                     Email

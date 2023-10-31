@@ -216,7 +216,7 @@ function Overview() {
             <h2 className="font-antonio text-[28px] lg:text-[36px] pb-5 lg:pb-9">
               Board of directors
             </h2>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-[30px] gap-y-[32px]">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-[30px] lg:gap-y-[32px] gap-y-6">
               {boardMembersData.map((member, index) => (
                 <div
                   key={index}
@@ -234,7 +234,7 @@ function Overview() {
                     <h3 className="font-bold text-[18px] lg:text-[28px] uppercase tracking wider lg:tracking-wider ">
                       {member.name}
                     </h3>
-                    <p className=" text-[12px]  lg:text-[16px] uppercase">
+                    <p className=" text-[12px]  lg:text-[16px] uppercase lg:font-normal font-medium">
                       {member.designation}, <br /> {member.organization}
                     </p>
                     <button className="mt-[10px]  lg:mt-[15px] mb-[5px] text-[#b80001] hover:text-black font-bold">
@@ -245,11 +245,11 @@ function Overview() {
               ))}
             </div>
           </div>
-          <div className="py-20">
-            <h2 className="font-antonio text-[28px] lg:text-[36px] pb-5 lg:pb-9">
+          <div className="lg:py-20 py-6">
+            <h2 className="font-antonio text-[26px] lg:text-[36px] pb-3 lg:pb-9">
               Key managerial personnel (KMP)
             </h2>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-[30px] gap-y-[32px]">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-[30px] lg:gap-y-[32px] gap-y-6">
               {kmpMembersData.map((member, index) => (
                 <div
                   key={index}
@@ -267,7 +267,7 @@ function Overview() {
                     <h3 className="font-bold text-[18px] lg:text-[28px] uppercase tracking-wider lg:tracking-wider">
                       {member.name}
                     </h3>
-                    <p className="whitespace-nowrap text-[12px] lg:text-[16px] uppercase">
+                    <p className="whitespace-nowrap text-[12px] lg:text-[16px] uppercase lg:font-normal font-medium ">
                       {member.designation}, <br /> {member.organization}
                     </p>
                     <button className="mt-[10px] lg:mt-[15px] mb-[5px] text-[#b80001] hover:text-black font-bold">
