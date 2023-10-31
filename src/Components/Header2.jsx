@@ -2,13 +2,11 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import { mIndBanner, mProBanner, mSolBanner } from '../assets/images';
 
 const images = [mIndBanner, mProBanner, mSolBanner];
 const imageLinks = ['/industries', '/products', '/solutions'];
-
 
 const Header2 = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -29,9 +27,9 @@ const Header2 = () => {
         }
     };
 
-    const handleCarouselTouchStart = (e) => {
-        // Prevent touch event propagation to allow scrolling
-        e.stopPropagation();
+    const handleImageClick = (index) => {
+        // Redirect to the specified link when an image is clicked
+        window.location.href = imageLinks[index];
     };
 
     return (
@@ -50,7 +48,7 @@ const Header2 = () => {
                     <FaChevronRight size={24} color="#000000" />
                 </div>
             </div>
-            <div className="image-slider relative w-full" onTouchStart={handleCarouselTouchStart}>
+            <div className="image-slider relative w-full">
                 <Carousel
                     showArrows={false}
                     selectedItem={currentIndex}
@@ -61,14 +59,15 @@ const Header2 = () => {
                     interval={5000}
                     infiniteLoop
                     swipeable={true}
-                   
-                  
-                   
                 >
                     {images.map((image, index) => (
-                        <Link to={imageLinks[index]} key={index}>
+                        <div
+                            key={index}
+                            onClick={() => handleImageClick(index)}
+                            style={{ cursor: 'pointer' }}
+                        >
                             <img src={image} alt={`Image ${index + 1}`} />
-                        </Link>
+                        </div>
                     ))}
                 </Carousel>
             </div>

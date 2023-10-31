@@ -28,6 +28,10 @@ const Header = () => {
         }
     };
 
+    const handleLinkHover = (index) => {
+        setCurrentIndex(index);
+    };
+
     return (
         <div className="relative w-full lg:block hidden">
             <div className="flex flex-col absolute bottom-0 left-0 z-30 md:flex-row justify-center items-center w-full md:space-x-4">
@@ -47,6 +51,7 @@ const Header = () => {
                         style={{
                             backgroundColor: index === currentIndex ? linkBackgroundColors[index] : 'transparent',
                         }}
+                        onMouseEnter={() => handleLinkHover(index)}
                     >
                         {<h2 className="font-[700] border-b-2 text-[14px] tracking-[.2em] md:text-[18px] mb-2 md:mb-6 lg:mb-4 leading-10">
                             {index === 0 ? 'INDUSTRIES' : index === 1 ? 'PRODUCTS' : 'SOLUTIONS'}
