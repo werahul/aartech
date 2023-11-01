@@ -39,11 +39,11 @@ const Navbar = () => {
     setDivOpen(!isDivOpen);
     setRotate2(!rotate2);
     setIsRedInv(!isRedInv);
-    
-     // Close the other link
-     setDivVisibility(false);
-     setRotate(false);
-     setIsRed(!false);
+
+    // Close the other link
+    setDivVisibility(false);
+    setRotate(false);
+    setIsRed(!false);
   };
 
   const toggleColor = () => {
@@ -238,8 +238,8 @@ const Navbar = () => {
       </div>
       <div
         className={`${isMenuOpen
-            ? "flex flex-col lg:py-20 py-[7rem] px-5 lg:text-[24px] text-lg space-y-4 fixed h-screen inset-0 bg-white overflow-y-auto"
-            : "hidden lg:flex "
+          ? "flex flex-col lg:py-20 py-[7rem] px-5 lg:text-[24px] text-lg space-y-4 fixed h-screen inset-0 bg-white overflow-y-auto"
+          : "hidden lg:flex "
           } flex lg:items-center font-Barlow lg:space-x-8 mt-0 sm:px-10 px-5 lg:px-20 z-1 `}
       >
         {/*<Link
@@ -292,8 +292,8 @@ const Navbar = () => {
 
             <div
               className={`overflow-hidden flex flex-col customTransition  ${isDivVisible
-                  ? "h-auto opacity-100 translate-y-[0%] "
-                  : "h-0 opacity-0 translate-y-[-5%]"
+                ? "h-auto opacity-100 translate-y-[0%] "
+                : "h-0 opacity-0 translate-y-[-5%]"
                 } bg-transparent rounded-lg`}
             >
               <Link
@@ -402,28 +402,32 @@ const Navbar = () => {
         >
           CONTACT
         </Link>
-        <div className="flex items-center space-x-4">
-          <select
-            className="lg:inline-block hidden outline-none text-white  ml-3 py-1 pr-6 pl-2 font-barlow font-semibold select-box bse-bg"
-            value={selectedStock}
-            onChange={handleStockSelectChange}
-          >
-            <option value="BSE">BSE</option>
-            <option value="NSE">NSE</option>
-          </select>
+
+        <div className="flex items-center space-x-3">
+          <div className="">
+            <select
+              className="lg:inline-block hidden outline-none text-white  ml-3 py-1 pr-6 pl-2 font-barlow font-semibold select-box bse-bg"
+              value={selectedStock}
+              onChange={handleStockSelectChange}
+            >
+              <option value="BSE">BSE</option>
+              <option value="NSE">NSE</option>
+            </select>
+
+          </div>
+          {selectedStock === "BSE" && bseData && (
+            <p className="text-foot-blue  hidden font-bold lg:block animate-pulse">
+              <span className="mr-1">₹</span>
+              {bseData}
+            </p>
+          )}
+          {selectedStock === "NSE" && nseData && (
+            <p className="text-foot-blue  hidden font-bold lg:block animate-pulse">
+              <span className="mr-1">₹</span>
+              {nseData}
+            </p>
+          )}
         </div>
-        {selectedStock === "BSE" && bseData && (
-          <p className="text-foot-blue  hidden font-bold lg:block animate-pulse">
-            <span className="mr-1">₹</span>
-            {bseData}
-          </p>
-        )}
-        {selectedStock === "NSE" && nseData && (
-          <p className="text-foot-blue  hidden font-bold lg:block animate-pulse">
-            <span className="mr-1">₹</span>
-            {nseData}
-          </p>
-        )}
       </div>
       {isWorkButtonActive && <SlideInBar />}{" "}
       {isInvestButtonActive && <SlideinBarInvester />}{" "}
