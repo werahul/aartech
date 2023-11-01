@@ -43,7 +43,7 @@ function Popup({
           <div className=" font-Barlow lg:px-[33px] px-5">
             <h3 className="font-bold text-[20px] lg:text-[28px] uppercase tracking-wider">{name}</h3>
             <p className="text-[14px] lg:text-[16px] uppercase">
-              {designation}, {organization}
+              {designation}
             </p>
             <p className="font-Barlow pt-[15px] hidden lg:block text-[20px]">
               {description}

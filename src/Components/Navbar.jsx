@@ -29,11 +29,21 @@ const Navbar = () => {
     setDivVisibility(!isDivVisible);
     setRotate(!rotate);
     setIsRed(!isRed);
+
+    // Close the other link
+    setDivOpen(false);
+    setRotate2(false);
+    setIsRedInv(!false);
   };
   const toggleDivVisibility4Invest = () => {
     setDivOpen(!isDivOpen);
     setRotate2(!rotate2);
     setIsRedInv(!isRedInv);
+    
+     // Close the other link
+     setDivVisibility(false);
+     setRotate(false);
+     setIsRed(!false);
   };
 
   const toggleColor = () => {
