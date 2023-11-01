@@ -10,6 +10,7 @@ const Footer = () => {
           <div className="first-col lg:flex space-x-20">
             <div className="footImg mb-8 -mt-2 lg:block flex justify-between">
               <img src={footImg} alt="" />
+              <div class="w-[152px] h-[37px] text-white text-base font-normal font-Barlow leading-tight lg:mt-4 lg:block hidden">Living Passion through Engineering</div>
               <div className="flex lg:hidden space-x-1   items-center justify-end lg:ml-[2rem] w-auto  ">
               <span className="font-Barlow capitalize leading-relaxed  whitespace-nowrap block lg:text-lg text-[18px] font-semibold  ">
                 Follow us
@@ -29,6 +30,7 @@ const Footer = () => {
                   <Link to="/"> <li className="font-Barlow">HOME</li></Link>
                   <Link to="/brands"> <li className="font-Barlow">BRANDS</li></Link>
                   <Link to="/media"> <li className="font-Barlow">MEDIA</li></Link>
+                  <Link to="/investors/overview"> <li className="font-Barlow">INVESTORS</li></Link>
                   <Link to="/contact">  <li className="font-Barlow">CONTACT</li></Link>
                 </ul>
               </div>

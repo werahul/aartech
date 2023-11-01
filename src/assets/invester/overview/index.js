@@ -9,4 +9,14 @@ import ssr from "./ssr.svg"
 import supriya from "./supriya.svg"
 import vivek from "./vivek.svg"
 
-export {amit, anil, arati, dabshish, kshi, pradeep, sohail, ssr, supriya, vivek}
+import mAmit from "./mAmit.svg"
+import mAnil from "./mAnil.svg"
+import mArati from "./mArati.svg"
+import mBlank from "./mBlank.svg"
+import mKshitij from "./mKshitij.svg"
+import mSupriya from "./mSupriya.svg"
+
+
+
+export {amit, anil, arati, dabshish, kshi, pradeep, sohail, ssr, supriya, vivek,
+mAmit, mAnil ,mArati, mBlank, mKshitij, mSupriya}

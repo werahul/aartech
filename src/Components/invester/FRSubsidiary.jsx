@@ -2,22 +2,19 @@ import React from "react";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
 import { Link } from "react-router-dom";
-import { main } from "../../assets/invester";
+import { main , mainMobile } from "../../assets/invester";
+import SlideinBarInvestor from "../../Pages/SlideinBarInvester";
 
 function FRFaradigm() {
   return (
     <div>
       <Navbar />
-      <div className="pt-[69px] lg:pt-[88px]">
-        <div className="relative">
-          <img
-            src={main}
-            alt="Overview Image"
-            className="w-full object-cover h-32 lg:h-auto"
-          />
-          <p className="font-antonio absolute bottom-10 text-[28px] lg:text-[36px] px-5 lg:px-20 2xl:px-[120px] text-white">
-            Financial Reports
-          </p>
+      <SlideinBarInvestor />
+      <div className="pt-0">
+        <div className="relative lg:mt-[10.5rem] mt-[4.4rem]">
+          <img src={main} alt="" className='w-full lg:block hidden' />
+          <img src={mainMobile} alt="" className='w-full lg:hidden block' />
+          <div class="text-foot-blue  absolute lg:bottom-10 bottom-5 lg:left-20 2xl:left-[7.5rem] left-5 lg:text-4xl text-[28px] font-normal font-antonio leading-9">Financial <br className='lg:hidden block' /> Reports</div>
         </div>
         <div className="px-5 lg:px-20 py-5 lg:py-9 2xl:px-[120px]">
           <Link
@@ -86,7 +83,7 @@ function FRFaradigm() {
                   Financial Results for the half year ended 31 March, 2021
                 </a>
               </p>
-              
+
             </div>
           </div>
         </div>

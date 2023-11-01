@@ -43,6 +43,9 @@ const Navbar = () => {
   const toggleColorForInvester = () => {
     setIsInvestButtonActive(!isInvestButtonActive);
   };
+  const toggleColorForWork = () => {
+    setIsWorkButtonActive(!isWorkButtonActive);
+  };
 
   const fetchData = () => {
     // Make an HTTP request to fetch the NSE data
@@ -83,7 +86,7 @@ const Navbar = () => {
   const handleStockSelectChange = (e) => {
     setSelectedStock(e.target.value);
   };
- 
+
   const location = useLocation();
   const rotateClass = rotate ? 'customRotate' : '';
   const rotateClass2 = rotate2 ? 'customRotate' : '';
@@ -97,12 +100,76 @@ const Navbar = () => {
       color: '#DA0001', // Red color on hover
     },
   };
-  
+
   const linkStyleForInvester = {
     color: isInvestButtonActive ? '#DA0001' : '#0C013D',
     fontWeight: isInvestButtonActive ? "800" : "",
 
   };
+  const investorsPaths = [
+    '/investors/overview',
+    '/investors/chairman-communication',
+    '/investors/financial-reports',
+    '/investors/shareholders-information',
+    '/investors/notices',
+    '/investors/disclosures',
+    '/investors/downloads',
+    '/investors/contact-and-grievance',
+    "/investors/financial-reports-audit-yearly-report",
+    "/investors/financial-reports-audit-half-yearly-report",
+    "/investors/financial-reports-faradigm-subsidiary-half-yearly-results",
+    "/investors/financial-reports-subsidiary-half-yearly-results",
+    "/investors/financial-reports-subsidiary-yearly-results",
+    "/investors/financial-reports-faradigm-subsidiary-yearly-results",
+    "/investors/shareholders-information-compliance-certificates",
+    "/investors/shareholders-information-corporate-announcements",
+    "/investors/shareholders-information-corporate-governance-report",
+    "/investors/shareholders-information-corporate-reconciliation-of-share-capital-audit-report",
+    "/investors/shareholders-information-shareholding-pattern"
+  ];
+  const workPaths = [
+    "/industries",
+    "/products",
+    "/solutions",
+    "/r&d-facilities",
+    "/industries/defence-and-exploration",
+    "/industries/renewable-energy",
+    "/industries/non-renewable-energy",
+    "/industries/power-transmission-and-distribution",
+    "/industries/heavy-engineering-industries",
+    "/industries/health-care",
+    "/industries/it-and-Telecom",
+    "/industries/transportation",
+    "/industries/waste-management",
+    "/products/BTS-2000",
+    "/products/kranking-ultracapacitors",
+    "/products/control-relay-panels",
+    "/products/clip-fault-current-limiters",
+    "/products/best-case",
+    "/products/load-checker",
+    "/products/solar-design-and-services",
+    "/products/solid-waste-treatment",
+    "/products/ac-and-dc",
+    "/products/flywheel",
+    "/products/fuel-cell",
+    "/solutions/control-and-automation",
+    "/solutions/process-continuity",
+    "/solutions/reliable-engine-starting",
+    "/solutions/fault-current-limiting",
+    "/solutions/solar-design-engineering",
+    "/solutions/solid-waste-treatment",
+    "/solutions/customised-plastic-case",
+    "/solutions/uninterrupted-power-supply",
+    "/solutions/power-backup-unit",
+    "/solutions/energy-storage",
+    "/solutions/load-limiting"
+
+
+  ];
+  const isInvestorsPath = investorsPaths.some((path) => location.pathname === path);
+  const isWorkPath = workPaths.some((path) => location.pathname === path);
+  const linkClassName = `text-foot-blue font-bold hover:text-box-red lg:block hidden ${isInvestorsPath ? 'red-font-color' : ''}`;
+  const linkClassNameForWork = `text-foot-blue font-bold hover:text-box-red lg:block hidden ${isWorkPath ? 'red-font-color' : ''}`;
 
   return (
     <div className="navbar-bg fixed inset-0 lg:h-[88px] h-[70px] sm:h-[90px] flex items-center justify-between z-50 2xl:px-[40px] shadow-lg">
@@ -160,14 +227,13 @@ const Navbar = () => {
         </div>
       </div>
       <div
-        className={`${
-          isMenuOpen
+        className={`${isMenuOpen
             ? "flex flex-col lg:py-20 py-[7rem] px-5 lg:text-[24px] text-lg space-y-4 fixed h-screen inset-0 bg-white overflow-y-auto"
             : "hidden lg:flex "
-        } flex lg:items-center font-Barlow lg:space-x-8 mt-0 sm:px-10 px-5 lg:px-20 z-1 `}
+          } flex lg:items-center font-Barlow lg:space-x-8 mt-0 sm:px-10 px-5 lg:px-20 z-1 `}
       >
-        <Link
-          //  to="/"
+        {/*<Link
+          to="/industries"
           className="text-foot-blue lg:block hidden font-bold hover:text-box-red lg:border-none lg:pb-0 border-b pb-4 border-neutral-500"
           style={linkStyle}
           onClick={() => {
@@ -176,14 +242,24 @@ const Navbar = () => {
           }}
         >
           WORK
+        </Link>*/}
+        <Link
+          to={"/industries"}
+          className={linkClassNameForWork}
+          onClick={() => {
+            setIsMenuOpen(false);
+            toggleColorForWork(); // Toggle the color
+          }}
+
+        >
+          WORK
         </Link>
 
         <Link
           // to="/work"
           // const linkClasses = `text-foot-blue  lg:hidden block font-bold hover:text-box-red ${isDivVisible ? 'active2' : ''}`;
-          className={`text-slate-900 lg:hidden block font-bold  ${
-            isDivVisible ? "active2" : ""
-          }`}
+          className={`text-slate-900 lg:hidden block font-bold  ${isDivVisible ? "active2" : ""
+            }`}
           onClick={() => {
             // setIsMenuOpen(false);
             setIsWorkButtonActive(!isWorkButtonActive); // Toggle the state
@@ -202,19 +278,13 @@ const Navbar = () => {
                 className={` float-right top-0 right-0  text-slate-900 p-2 rounded-full cursor-pointer ${rotateClass} `}
                 onClick={toggleDivVisibility}
               />
-              {/*<button className=" float-right top-0 right-0 bg-blue-500 text-foot-blue  p-2 rounded-full cursor-pointer "
-        onClick={toggleDivVisibility}
-          >
-            o        
-        </button>*/}
             </div>
 
             <div
-              className={`overflow-hidden flex flex-col customTransition  ${
-                isDivVisible
+              className={`overflow-hidden flex flex-col customTransition  ${isDivVisible
                   ? "h-auto opacity-100 translate-y-[0%] "
-                  : "h-0 opacity-0 translate-y-[-20%]"
-              } bg-transparent rounded-lg`}
+                  : "h-0 opacity-0 translate-y-[-5%]"
+                } bg-transparent rounded-lg`}
             >
               <Link
                 to="/industries"
@@ -238,7 +308,7 @@ const Navbar = () => {
                 to="/r&d-facilities"
                 className="lg:border-none  lg:pb-0 border-b pb-4 uppercase text-foot-blue  pl-14 py-4 border-neutral-500"
               >
-              R&D FACILITIES
+                R&D FACILITIES
               </Link>
             </div>
           </div>
@@ -246,35 +316,42 @@ const Navbar = () => {
 
         <Link
           to="/about"
-          className={`text-foot-blue  font-bold hover:text-box-red lg:border-none lg:pb-0 border-b pb-4  border-neutral-500 ${
-            location.pathname === "/about" ? "active" : ""
-          }`}
+          className={`text-foot-blue  font-bold hover:text-box-red lg:border-none lg:pb-0 border-b pb-4  border-neutral-500 ${location.pathname === "/about" ? "active" : ""
+            }`}
           onClick={() => setIsMenuOpen(false)}
         >
           ABOUT
         </Link>
         <Link
           to="/brands"
-          className={`text-foot-blue  font-bold hover:text-box-red lg:border-none lg:pb-0 border-b pb-4  border-neutral-500 ${
-            location.pathname === "/brands" ? "active" : ""
-          }`}
+          className={`text-foot-blue  font-bold hover:text-box-red lg:border-none lg:pb-0 border-b pb-4  border-neutral-500 ${location.pathname === "/brands" ? "active" : ""
+            }`}
           onClick={() => setIsMenuOpen(false)}
         >
           BRANDS
         </Link>
         <Link
           to="/media"
-          className={`text-foot-blue  font-bold hover:text-box-red lg:border-none lg:pb-0 border-b pb-4  border-neutral-500 ${
-            location.pathname === "/media" ? "active" : ""
-          }`}
+          className={`text-foot-blue  font-bold hover:text-box-red lg:border-none lg:pb-0 border-b pb-4  border-neutral-500 ${location.pathname === "/media" ? "active" : ""
+            }`}
           onClick={() => setIsMenuOpen(false)}
         >
           MEDIA
         </Link>
-        <Link
-          // to="/investors"
+        {/* <Link
+          to="/investors/overview"
           className="text-foot-blue  font-bold hover:text-box-red lg:block hidden"
           style={linkStyleForInvester}
+          onClick={() => {
+            setIsMenuOpen(false);
+            toggleColorForInvester(); // Toggle the color
+          }}
+        >
+          INVESTORS
+        </Link>*/}
+        <Link
+          to={"/investors/overview"}
+          className={linkClassName}
           onClick={() => {
             setIsMenuOpen(false);
             toggleColorForInvester(); // Toggle the color
@@ -286,14 +363,14 @@ const Navbar = () => {
         <div // to="/work"
           className="lg:hidden">
           <div className={`lg:border-none lg:pb-0 border-b pb-4 border-neutral-500 w-[100%] font-bold ${InvClass}`}>
-          INVESTORS
+            INVESTORS
             <img src={down} alt="" className={` float-right top-0 right-0  text-foot-blue  p-2 rounded-full cursor-pointer ${rotateClass2} `} onClick={toggleDivVisibility4Invest} />
           </div>
 
 
 
           <div
-            className={`overflow-hidden flex flex-col customTransition  ${isDivOpen ? 'h-auto opacity-100 translate-y-[0%] ' : 'h-0 opacity-0 translate-y-[-20%]'} bg-transparent rounded-lg font-bold`}
+            className={`overflow-hidden flex flex-col customTransition  ${isDivOpen ? 'h-auto opacity-100 translate-y-[0%] ' : 'h-0 opacity-0 translate-y-[-5%]'} bg-transparent rounded-lg font-bold`}
           >
             <Link to="/investors/overview" className="lg:border-none lg:pb-0 border-b pb-4 uppercase text-foot-blue   py-4 ml-14 border-neutral-500">OVERVIEW</Link>
             <Link to="/investors/chairman-communication" className="lg:border-none  lg:pb-0 border-b pb-4 uppercase text-foot-blue  py-4 ml-14 border-neutral-500">CHAIRMAN’S COMMUNICATION</Link>
@@ -309,9 +386,8 @@ const Navbar = () => {
 
         <Link
           to="/contact"
-          className={`text-foot-blue font-bold hover:text-box-red lg:border-none lg:pb-0 border-b pb-4  border-neutral-500 ${
-            location.pathname === "/contact" ? "active" : ""
-          }`}
+          className={`text-foot-blue font-bold hover:text-box-red lg:border-none lg:pb-0 border-b pb-4  border-neutral-500 ${location.pathname === "/contact" ? "active" : ""
+            }`}
           onClick={() => setIsMenuOpen(false)}
         >
           CONTACT

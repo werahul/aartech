@@ -79,7 +79,7 @@ const Services = () => {
                     <div class="lg:h-auto h-auto w-full">
                     <img src={serv3} alt="" />
                     </div>
-                    <div className="lg:px-8 lg:py-[40px]  px-4 py-6">
+                    <div className="lg:px-8 lg:py-[28px]  px-4 py-6">
                         <div className="font-Barlow text-box-red font-bold leading-normal lg:tracking-widest tracking-wide lg:text-[24px] text-[20px] lg:mb-[20px] mb-4" >COMMISSIONING</div>
                         <div className="">
                             <div className="lg:text-[20px] text-[16px] text-foot-blue font-bold font-Barlow">SSD Commissioning Support : </div>
@@ -107,7 +107,7 @@ const Services = () => {
                     <div class="lg:h-[150px] h-auto ">
                         <img src={serv2} alt="" />
                     </div>
-                    <div className="lg:px-8 lg:py-[40px] px-4 py-6">
+                    <div className="lg:px-8 lg:py-[30px] px-4 py-6">
                         <div className="font-Barlow text-box-red font-bold leading-normal lg:tracking-widest tracking-wide lg:text-[24px] text-[20px] lg:mb-[20px] mb-4" >RESEARCH & DEVELOPMENT</div>
                         <div className="">
                             <div className="lg:text-[20px] text-[16px] text-foot-blue font-bold font-Barlow">Design & Engineering : </div>

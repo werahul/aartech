@@ -423,7 +423,7 @@
 }
 
 .customTransition {
-  transition: all 0.5s linear;
+  transition: all 0.2s linear;
 }
 
 .customRotate {
@@ -532,4 +532,28 @@
   top: 20px;
   right: 30px;
   cursor: pointer;
+}
+.red-font-color{
+  color: #DA0001;
+  font-weight: 800;
+}
+.blue-font-color{
+  color: #0C013D;
+  font-weight: 800;
+}
+
+/* --------- */
+.extraline{
+  animation: animateLine 0.5s linear;
+}
+
+@keyframes animateLine{
+  0% {
+    transform: translateX(-100%);
+    
+  }
+  100% {
+    transform: translateX(0);
+    
+  }
 }

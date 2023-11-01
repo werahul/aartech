@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Navbar, Footer } from "../index"
+import { Navbar, Footer, SlideInBar } from "../index"
 import { nonRew } from '../../assets/subImg'
 import { bestCase, relayPannels, kra, incinerator, wtc, bts, clip,load, fuel } from '../../assets/ProductImages'
 
@@ -51,8 +51,8 @@ const NonRenewable = () => {
     return (
         <div>
             <Navbar />
-
-            <div className=" 2xl:px-[120px] lg:pt-20 lg:px-20  pt-20 px-5 lg:py-0  lg:mt-0 mt-5 sm:px-10 ">
+            <SlideInBar/>
+            <div className=" 2xl:px-[120px] lg:pt-28 lg:px-20  pt-20 px-5 lg:py-0  lg:mt-0 mt-5 sm:px-10 ">
 
                 <div className="flex lg:flex-row flex-col lg:mt-20">
                     <div className="lg:hidden text-black text-[28px] font-normal font-antonio">Non-Renewable Energy</div>

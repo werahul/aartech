@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Navbar, Footer } from "../index";
+import { Navbar, Footer, SlideInBar } from "../index";
 import { product1 } from "../../assets/workImages";
 import { download } from "../../assets/images";
 import { Accordion, Accordion2, Accordion3 } from "../../Components";
@@ -66,7 +66,8 @@ const Kranking = () => {
   return (
     <div>
       <Navbar />
-      <div className=" 2xl:px-[120px] lg:pt-20 lg:pb-0 lg:px-20  pt-20 px-5 py-10 lg:mt-0 mt-5 sm:px-10">
+      <SlideInBar/>
+      <div className=" 2xl:px-[120px] lg:pt-28 lg:pb-0 lg:px-20  pt-20 px-5 py-10 lg:mt-0 mt-5 sm:px-10">
         <div className="lg:hidden text-black text-[28px] font-normal font-antonio ">
           Kranking Ultracapacitors
         </div>

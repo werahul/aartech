@@ -53,7 +53,7 @@ const Header = () => {
                         }}
                         onMouseEnter={() => handleLinkHover(index)}
                     >
-                        {<h2 className="font-[700] border-b-2 text-[14px] tracking-[.2em] md:text-[18px] mb-2 md:mb-6 lg:mb-4 leading-10">
+                        {<h2 className="font-[700] border-b-2 text-[14px] tracking-[.1em] md:text-[18px] mb-2 md:mb-6 lg:mb-4 leading-10">
                             {index === 0 ? 'INDUSTRIES' : index === 1 ? 'PRODUCTS' : 'SOLUTIONS'}
                         </h2>}
                         <p className="font-normal font-Barlow text-[16px] md:text-[20px]">
