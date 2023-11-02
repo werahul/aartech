@@ -61,7 +61,7 @@ const BTS2000 = () => {
     <div>
       <Navbar />
       <SlideInBar/>
-      <div className=" 2xl:px-[120px] lg:py-20 lg:px-20  lg:pt-28 pt-10 px-5 py-10 lg:mt-0 mt-5 sm:px-10">
+      <div className=" 2xl:px-[120px] lg:py-20 lg:px-20  lg:pt-28 pt-20 px-5 py-10 lg:mt-0 mt-5 sm:px-10">
         <div className="lg:hidden text-black text-[28px] font-normal font-antonio ">
           BTS 2000 Fast Bus Transfer System
         </div>
@@ -269,7 +269,7 @@ const BTS2000 = () => {
             </span>
           </a>{" "}
           . We would be happy to assist you with our recommendations in the best
-          possible manner..
+          possible manner.
         </div>
 
         <div className="hidden lg:block lg:mt-20 mt-10">
@@ -342,8 +342,8 @@ const BTS2000 = () => {
           </div>
 
           <div className=" w-[100%]  lg:py-[40px] py-6">
-            <div className="text-[#0C013D] mb-[32px] text-[18px] font-bold font-Barlow tracking-wider">
-              OTHER CUSTOMISED SCHEMES
+            <div className="text-[#0C013D] mb-[32px] text-[18px] font-bold font-Barlow tracking-wider uppercase">
+            Selection Guide
             </div>
 
             <p className="text-black text-[22px] font-Barlow tracking-wider">
@@ -370,7 +370,7 @@ const BTS2000 = () => {
         <CustomWorkPages imageSources={partnerImageSources} />
 
         <div className="text-black lg:text-4xl text-[28px] font-normal font-antonio ">
-          DOWNLOADS
+        Downloads
         </div>
 
         <div className="lg:flex gap-x-40 lg:mt-[46px] mt-6">

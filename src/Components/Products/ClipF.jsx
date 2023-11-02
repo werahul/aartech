@@ -70,7 +70,7 @@ const ClipF = () => {
     <div>
       <Navbar />
       <SlideInBar/>
-      <div className=" 2xl:px-[120px] lg:py-20 lg:px-20  lg:pt-28 pt-10 px-5 py-10 lg:mt-0 mt-5 sm:px-10">
+      <div className=" 2xl:px-[120px] lg:py-20 lg:px-20  lg:pt-28 pt-20 px-5 py-10 lg:mt-0 mt-5 sm:px-10">
         <div className="lg:hidden text-black text-[28px] font-normal font-antonio ">
           CLIP Fault Current Limiters
         </div>
@@ -439,7 +439,7 @@ const ClipF = () => {
         <CustomWorkPages imageSources={partnerImageSources} />
 
         <div className="text-black lg:text-4xl text-[28px] font-normal font-antonio">
-          DOWNLOADS
+        Downloads
         </div>
 
         <div className="lg:mt-[46px] font-Barlow text-[18px] space-y-3 mt-6">

@@ -42,7 +42,7 @@ const FuelCell = () => {
     <div>
       <Navbar />
       <SlideInBar/>
-      <div className=" 2xl:px-[120px] lg:pt-28 lg:px-20  pt-10 px-5 lg:mt-0 mt-5 sm:px-10">
+      <div className=" 2xl:px-[120px] lg:pt-28 lg:px-20  pt-20 px-5 lg:mt-0 mt-5 sm:px-10">
         <div className="lg:hidden text-black text-[28px] font-normal font-antonio ">
           Fuel Cell
         </div>
