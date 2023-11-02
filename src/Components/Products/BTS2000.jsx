@@ -326,7 +326,7 @@ const BTS2000 = () => {
 
               <p className="mt-4">
                 During startup, the station board supplies power until the
-                generator synchronizes, after which the unit board is connected
+                generator synchronises, after which the unit board is connected
                 to the UAT in a Station-to-Unit transfer. Unit-to-Station
                 transfers occur automatically during various tripping
                 conditions, ensuring continuous supply. Manual transfers are

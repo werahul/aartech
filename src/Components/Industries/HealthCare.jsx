@@ -44,7 +44,7 @@ const HealthCare = () => {
 
     tag4: "A Power Backup Unit Solution plays a crucial role in Heavy Healthcare settings by ensuring uninterrupted power supply to critical medical equipment and facilities. Power outages can have severe consequences in the healthcare sector, where patient lives and well-being are at stake. These backup units are designed to instantly kick in during power failures, preventing disruptions to life-saving equipment like ventilators, monitors, and surgical instruments. They provide a seamless transition to backup power, safeguarding critical healthcare operations. Additionally, they reduce downtime, maintenance costs, and the risk of data loss, contributing to enhanced patient care, safety, and overall hospital efficiency.",
 
-    tag5: "In the healthcare industry, Customised Plastic Cases play a pivotal role by safeguarding and enhancing the image of medical equipment and devices. Aarchtech Solonics offers timely, cost-effective, and tailored solutions, enabling healthcare professionals to showcase their innovative products and prototypes effectively. These cases ensure that delicate and specialised medical equipment is transported securely for demonstrations or fieldwork, aligning with the industry's stringent quality standards and budget constraints, ultimately supporting the success of healthcare businesses.",
+    tag5: "In the healthcare industry, Customised Plastic Cases play a pivotal role by safeguarding and enhancing the image of medical equipment and devices. Aartech Solonics offers timely, cost-effective, and tailored solutions, enabling healthcare professionals to showcase their innovative products and prototypes effectively. These cases ensure that delicate and specialised medical equipment is transported securely for demonstrations or fieldwork, aligning with the industry's stringent quality standards and budget constraints, ultimately supporting the success of healthcare businesses.",
 
     tag6: "In the healthcare industry, a robust Solid Waste Treatment is crucial for safeguarding public health and the environment. By efficiently collecting, transporting, processing, and disposing of various waste types, including hazardous medical waste, this system ensures the reduction of environmental harm. It minimises landfill usage, contributes to sustainability through recycling, and abides by stringent regulations. Advanced technology and infrastructure in healthcare waste management not only protect healthcare workers and patients from contamination but also promote eco-friendly waste disposal practices, enhancing overall healthcare service quality",
 
@@ -361,7 +361,7 @@ const HealthCare = () => {
             } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
             onClick={() => handleProClick("PTag1")}
           >
-            CONTROL & RELAY PANELS
+            CONTROL RELAY PANELS
           </button>
 
           <button
@@ -473,7 +473,7 @@ const HealthCare = () => {
             } w-[300px] h-[49px] px-[12px] py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
             onClick={() => handleProClick("PTag1")}
           >
-            CONTROL & RELAY PANELS
+            CONTROL RELAY PANELS
           </button>
 
           <button
@@ -586,7 +586,7 @@ const HealthCare = () => {
               ></img>
             </div>
             <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow sm:ml-5 sm:mt-0 mt-4  lg:leading-tight leading-snug">
-              Aartech's Control & Relay Panels (CRP) play a vital role in
+              Aartech's Control Relay Panels (CRP) play a vital role in
               healthcare infrastructure. Designed for substations, they
               incorporate essential components for monitoring and controlling
               electrical systems, ensuring reliability and safety. These panels
@@ -663,10 +663,10 @@ const HealthCare = () => {
               <img src={bestCase} alt="" className="sm:w-[120%] w-[100%]"></img>
             </div>
             <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow sm:ml-5 sm:mt-0 mt-4 lg:leading-tight leading-snug">
-              BestCase addresses the challenges in healthcare by providing
+              Best Case addresses the challenges in healthcare by providing
               timely access to quality enclosures for various medical products
               and equipment. It offers cost-effective solutions, eliminating the
-              need for expensive and often subpar alternatives. BestCase ensures
+              need for expensive and often subpar alternatives. Best Case ensures
               availability, allowing professionals to showcase their offerings
               effectively, whether for prototypes, demonstrations, or important
               meetings, contributing to their best-case scenarios in healthcare
@@ -686,12 +686,12 @@ const HealthCare = () => {
               The Waste To Compost (WTC) machine is a healthcare facility
               solution that converts organic waste into compost within 24 hours
               onsite, following the 3R Principle (reduce, recycle, reuse). It's
-              eco-friendly, quiet, and odor-free, improving waste management in
+              eco-friendly, quiet, and odour-free, improving waste management in
               healthcare environments. Plastic Shredders reduce plastic waste
               volume, with custom shred sizes for versatility. Incinerators,
               like the A-INC-50 model, safely dispose of general waste and
               hazardous materials, reducing contamination and environmental
-              harm, making them crucial in healthcare waste management.
+              harm, and making them crucial in healthcare waste management.
             </div>
           </div>
 
@@ -708,7 +708,7 @@ const HealthCare = () => {
               wide range of offerings, from permit design and sales proposals to
               utility-scale solutions and EV chargers. Their expert team ensures
               tailored solar panel layouts and optimised energy generation.
-              Compliant with industry standards and regulations, Aarchtech
+              Compliant with industry standards and regulations, Aartech
               provides end-to-end support, covering feasibility studies, system
               design, and comprehensive installation and maintenance services,
               fostering a greener and more sustainable energy future for

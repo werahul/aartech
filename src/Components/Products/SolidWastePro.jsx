@@ -63,7 +63,7 @@ const SolidWastePro = () => {
                 composting system that transforms organic waste into compost
                 within a day using natural and biological processes. Plastic
                 Shredder Machines efficiently reduce plastic volume for
-                recycling, addressing environmental concerns. Customizable shred
+                recycling, addressing environmental concerns. Customisable shred
                 sizes (1mm to 30mm) cater to specific needs. Incinerators play a
                 vital role in waste management, ensuring the safe disposal of
                 general waste and sanitary items at high temperatures.
@@ -233,7 +233,7 @@ const SolidWastePro = () => {
             <p className="list-dots">Processing of Various Materials</p>
             <p className="list-dots">Heavy Structure for Tough Materials</p>
             <p className="list-dots">Disc (Blade) Variety and Replacement</p>
-            <p className="list-dots">Customizable Shred Size</p>
+            <p className="list-dots">Customisable Shred Size</p>
           </div>
           <div className="text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:leading-tight leading-snug lg:mt-8 mt-6">
             <h3 className="font-bold">Sanitary Pad Incinerator:</h3>
@@ -265,10 +265,10 @@ const SolidWastePro = () => {
           CUSTOMISATION
         </div>
         <div className="text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:leading-tight leading-snug mt-8">
-          Aarchtech customises WTC Machines with precision, adapting their rapid
+          Aartech customises WTC Machines with precision, adapting their rapid
           organic waste transformation process to diverse needs. Whether it's
           addressing food waste concerns or providing clean disposal solutions
-          like the Sanitary Pad Incinerator, Aarchtech tailors WTC Machines for
+          like the Sanitary Pad Incinerator, Aartech tailors WTC Machines for
           specific applications, ensuring effective and eco-friendly waste
           management.
         </div>

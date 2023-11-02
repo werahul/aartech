@@ -23,7 +23,7 @@ const Renewable = () => {
 
         tag3: 'Reliable Engine Starting/Pulse Power is a vital solution for renewable energy systems, addressing common battery failures during engine starts due to issues like discharged and ageing batteries, along with cold temperatures. While traditional methods prioritise proper sizing and maintenance, real-world applications often require brief, variable-duty bursts of power. In these cases, pulse power sources/sinks, whether standalone or paired with a base-level power source, prove indispensable. They ensure dependable energy bursts, effectively managing load fluctuations, enhancing renewable energy system reliability, and maintaining consistent operation in challenging conditions.',
 
-        tag4: "Customised Plastic Cases play a crucial role in the renewable energy sector by safeguarding and showcasing sensitive equipment such as solar panel controllers and wind turbine components. Aarchtech Solonics' tailored solutions ensure that renewable energy companies can effectively present and protect their cutting-edge technology, facilitating a positive image and boosting business success. Their commitment to quality and affordability makes these cases an essential asset in this rapidly evolving industry.",
+        tag4: "Customised Plastic Cases play a crucial role in the renewable energy sector by safeguarding and showcasing sensitive equipment such as solar panel controllers and wind turbine components. Aartech Solonics' tailored solutions ensure that renewable energy companies can effectively present and protect their cutting-edge technology, facilitating a positive image and boosting business success. Their commitment to quality and affordability makes these cases an essential asset in this rapidly evolving industry.",
 
         tag5: "The Solid Waste Treatment plays a crucial role in promoting renewable energy by reducing the environmental impact of waste disposal. By efficiently managing and recycling materials, it contributes to resource conservation and minimizes the need for new raw materials. Additionally, waste-to-energy technologies can convert organic waste into biogas or other biofuels, providing a sustainable energy source. This holistic approach aligns with renewable energy goals, making waste management a valuable component of environmentally responsible and sustainable practices.",
 
@@ -255,7 +255,7 @@ const Renewable = () => {
                             } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag1')}
                     >
-                        CONTROL & RELAY PANELS
+                        CONTROL RELAY PANELS
                     </button>
 
                     <button
@@ -359,7 +359,7 @@ const Renewable = () => {
                             } w-[300px] h-[49px] px-[12px] py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag1')}
                     >
-                        CONTROL & RELAY PANELS
+                        CONTROL RELAY PANELS
                     </button>
 
                     <button
@@ -451,7 +451,7 @@ const Renewable = () => {
                             <img src={relayPannels} alt="" className='sm:w-[100%] w-[100%]'></img>
                         </div>
                         <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow sm:ml-5 sm:mt-0 mt-4  lg:leading-tight leading-snug">
-                            Control and relay panels are vital for managing renewable energy systems, controlling equipment like transformers and generators, and offering protection through relays, fuses, and switches. They can be tailored to specific needs, providing both single and multi-circuit options for different setups.
+                            Control relay panels are vital for managing renewable energy systems, controlling equipment like transformers and generators, and offering protection through relays, fuses, and switches. They can be tailored to specific needs, providing both single and multi-circuit options for different setups.
 
                         </div>
                     </div>
@@ -474,7 +474,7 @@ const Renewable = () => {
                         <div className=" sm:w-[170%] lg:w-[120%] w-[100%] h-auto sm:p-2 p-0 ">
                             <img src={bestCase} alt="" className='sm:w-[100%] w-[100%]'></img>
                         </div>
-                        <div className="text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow sm:ml-5 sm:mt-0 mt-4 lg:leading-tight leading-snug">BestCase aids in renewable energy by offering timely access to high-quality enclosures for various renewable energy products and components. Entrepreneurs and innovators in the renewable energy sector can benefit from affordable and readily available enclosure solutions, eliminating the need for expensive and custom-made options. BestCase ensures that renewable energy professionals can impressively showcase their offerings, meeting the highest industry standards for quality and affordability, ultimately contributing to the success of renewable energy projects.</div>
+                        <div className="text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow sm:ml-5 sm:mt-0 mt-4 lg:leading-tight leading-snug">Best Case aids in renewable energy by offering timely access to high-quality enclosures for various renewable energy products and components. Entrepreneurs and innovators in the renewable energy sector can benefit from affordable and readily available enclosure solutions, eliminating the need for expensive and custom-made options. Best Case ensures that renewable energy professionals can impressively showcase their offerings, meeting the highest industry standards for quality and affordability, ultimately contributing to the success of renewable energy projects.</div>
                     </div>
 
                     <div className={`Pro5 flex sm:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag5' ? '' : 'hidden'}`}>
@@ -496,7 +496,7 @@ const Renewable = () => {
                         <div className=" sm:w-[130%] lg:w-[100%] w-[100%] h-auto sm:p-2 p-0 ">
                             <img src={solar} alt="" className='sm:w-[100%] w-[100%]'></img>
                         </div>
-                        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow sm:ml-5 sm:mt-0 mt-4 lg:leading-tight leading-snug">Aartech Solonics' Solar Design and Services are a comprehensive solution for advancing renewable energy. Focusing on innovation and expertise, Aarchtech crafts tailored solar solutions, optimises energy generation, and provides a wide range of services, from permit design to system installation and maintenance. Their commitment to engineering excellence and sustainability transforms industries and lives by harnessing solar power, making them a key player in the transition to renewable energy sources. </div>
+                        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow sm:ml-5 sm:mt-0 mt-4 lg:leading-tight leading-snug">Aartech Solonics' Solar Design and Services are a comprehensive solution for advancing renewable energy. Focusing on innovation and expertise, Aartech crafts tailored solar solutions, optimises energy generation, and provides a wide range of services, from permit design to system installation and maintenance. Their commitment to engineering excellence and sustainability transforms industries and lives by harnessing solar power, making them a key player in the transition to renewable energy sources. </div>
                     </div>
                     <div className={`Pro7 flex sm:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag8' ? '' : 'hidden'}`}>
                         <div className=" sm:w-[130%] lg:w-[100%] w-[100%] h-auto sm:p-2 p-0 ">

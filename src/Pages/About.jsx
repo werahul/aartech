@@ -156,7 +156,7 @@ const About = () => {
             >Our History</div>
             <AboutImages />
             <div className=" h-[325px] bg-foot-blue mb-1 lg:mt-14 mt-24 flex flex-col items-center justify-center px-5 py-10 sm:px-10" >
-                <div className="text-white lg:text-5xl text-[28px] font-normal lg:leading-[48px] leading-[39.20px] text-center font-antonio lg:mb-10 mb-[24px] lg:mt-0 mt-10" >Living Passion through Engineering</div>
+                <div className="text-white lg:text-4xl text-[28px] font-normal lg:leading-[48px] leading-[39.20px] text-center font-antonio lg:mb-10 mb-[24px] lg:mt-0 mt-10" >Living Passion through Engineering</div>
                 <div className="lg:w-[844px] text-center text-white lg:text-xl text-base lg:px-4 lg:font-semibold font-medium lg:leading-7 leading-snug lg:mb-0 mb-10 font-Barlow " >Our team comprises accomplished individuals with a shared passion for excellence. Each member brings a unique blend of skills and expertise to our mission. From creative thinkers to problem solvers, we collaborate to deliver innovative solutions.</div>
             </div>
             <div className="2xl:px-[120px] lg:px-20 text-box-red lg:text-4xl text-[28px] font-normal lg:pt-20 pt-10 leading-9 font-antonio px-5 sm:px-10">Our Partners</div>

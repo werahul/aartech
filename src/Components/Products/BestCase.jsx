@@ -90,13 +90,13 @@ const BestCase = () => {
                 The Entrepreneurs, innovators, and product professionals often
                 struggle to access affordable, high-quality enclosures for their
                 prototypes and products. Traditional options are costly and
-                inflexible, while local alternatives may lack quality. BestCase
+                inflexible, while local alternatives may lack quality. Best Case
                 offers a solution by providing convenient online access to a
                 range of enclosures, ensuring your products meet the highest
                 standards. Our commitment to quality, affordability, and
                 availability means you can rely on us for your enclosure needs,
                 whether standard or custom. We're here to support your business
-                success 24/7.{" "}
+                success 24/7.
               </div>
               <div className="flex items-center lg:mt-auto mt-12 cursor-pointer">
                 <img src={download} alt="" />
@@ -310,7 +310,7 @@ const BestCase = () => {
           CUSTOMISATION
         </div>
         <div className="text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:leading-tight leading-snug mt-8">
-          Aarchtech ensures your product's enclosure is not just a box but a
+          Aartech ensures your product's enclosure is not just a box but a
           crucial part of your brand's image. We provide timely, cost-effective,
           and quality custom solutions for all your enclosure needs.  If you
           have any custom-specific requirements, mail us with details of your

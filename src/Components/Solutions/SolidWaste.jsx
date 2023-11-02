@@ -232,11 +232,11 @@ const SolidWaste = () => {
                 <div className="proContainer">
 
                     <div className={`Pro1 flex sm:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag1' ? '' : 'hidden'}`}>
-                        <div className=" sm:w-[130%] lg:w-[100%] w-[100%] h-auto sm:p-2 p-0 lg:p-0 ">
+                        <div className=" sm:w-[130%] lg:w-[70%] w-[100%] h-auto sm:p-2 p-0 lg:p-0 ">
                             <img src={wtc} alt="" className='sm:w-[100%] w-[100%]'></img>
                         </div>
                         <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow sm:ml-5 sm:mt-0 mt-4  lg:leading-tight leading-snug">
-                        The WTC machine provides one-day composting for organic waste using natural methods. High-capacity machines efficiently decompose various organics, odorlessly. Plastic Shredder Machines reduce plastic waste and offer custom shredder solutions. Incinerators thermally destroy waste materials at high temperatures, minimizing environmental impact, and can generate energy.
+                        The WTC machine provides one-day composting for organic waste using natural methods. High-capacity machines efficiently decompose various organics, odorlessly. Plastic Shredder Machines reduce plastic waste and offer custom shredder solutions. Incinerators thermally destroy waste materials at high temperatures, minimising environmental impact, and can generate energy.
 
                         </div>
                     </div>

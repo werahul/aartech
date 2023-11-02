@@ -22,11 +22,17 @@ const SlideinBarInvestor = () => {
         "/investors/shareholders-information-corporate-reconciliation-of-share-capital-audit-report",
         "/investors/shareholders-information-shareholding-pattern"
       ];
+    const pathDisclo = [
+        "/investors/disclosures-policies",
+        "/investors/disclosures"
+      ];
 
       const isFinancePath = pathFinancail.some((path) => location.pathname === path);
       const isShareHolderPath = pathShareHolder.some((path) => location.pathname === path);
+      const isDiscloPath = pathDisclo.some((path) => location.pathname === path);
       const linkFinanceClassName = `text-foot-blue font-bold hover:text-box-red lg:block hidden ${isFinancePath ? 'blue-font-color' : ''}`;
       const linkShareHolderClassName = `text-foot-blue font-bold hover:text-box-red lg:block hidden ${isShareHolderPath ? 'blue-font-color' : ''}`;
+      const linkDiscloClassName = `text-foot-blue font-bold hover:text-box-red lg:block hidden ${isDiscloPath ? 'blue-font-color' : ''}`;
     return (
         <div
             className="slide-in-bar visible lg:flex items-center justify-center space-x-8 shadow-xl py-10  hidden"
@@ -67,8 +73,8 @@ const SlideinBarInvestor = () => {
                     NOTICES
                 </div>
             </Link>
-            <Link to="/investors/disclosures" className={`link-item ${location.pathname === "/investors/disclosures" ? "active" : ""}`}>
-                <div className={`text-white font-bold uppercase leading-[18px] font-Barlow text-lg tracking-tight cursor-pointer hover:text-foot-blue ${location.pathname === "/investors/disclosures" ? "active-link" : ""}`}>
+            <Link to="/investors/disclosures" className={`link-item ${location.pathname === linkDiscloClassName ? "active" : ""}`}>
+                <div className={`text-white font-bold uppercase leading-[18px] font-Barlow text-lg tracking-tight cursor-pointer hover:text-foot-blue ${linkDiscloClassName}`}>
                     DISCLOUSURES
                 </div>
             </Link>

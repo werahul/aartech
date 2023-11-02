@@ -209,11 +209,11 @@ const Solar = () => {
                 <div className="proContainer">
 
                     <div className={`Pro1 flex sm:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag1' ? '' : 'hidden'}`}>
-                        <div className=" sm:w-[100%] lg:w-[100%] w-[100%] h-auto sm:p-2 p-0 lg:p-0">
+                        <div className=" sm:w-[100%] lg:w-[80%] w-[100%] h-auto sm:p-2 p-0 lg:p-0">
                             <img src={solar} alt="" className='sm:w-[100%] w-[100%]'></img>
                         </div>
                         <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow sm:ml-5 sm:mt-0 mt-4  lg:leading-tight leading-snug">
-                        Aartech Solonics offers AHJS & Codes Compliant solutions for site-specific optimization. We utilize industry-standard tools, conduct simulations and analytics, provide PE stamping, and deliver comprehensive documentation. Our consultancy services cater to multi-disciplinary activities, while our staff augmentation ensures your solar projects are executed seamlessly.
+                        Aartech Solonics offers AHJS & Codes Compliant solutions for site-specific optimisation . We utilise industry-standard tools, conduct simulations and analytics, provide PE stamping, and deliver comprehensive documentation. Our consultancy services cater to multi-disciplinary activities, while our staff augmentation ensures your solar projects are executed seamlessly.
 
                         </div>
                     </div>

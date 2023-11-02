@@ -19,7 +19,7 @@ const AnnouncementPage = () => {
           Aartech is a 30+ year old, BSE-SME Listed, ISO-9001:2015 certified techno-preneurially driven company working in the field of selected and specialized energy applications. Its R&D facility is recognized by DSIR (Department of Scientific & Industrial Research), DST, Govt of India and has pioneered introduction of several innovations and system solutions in different domains including power generation, transmission, distribution, continuous process industries, defence, railways, renewables and several industrial applications in India and abroad.
           KranKing®, FaraDigm® and Aartech Solonics Ltd® are the registered trademark of Aartech Solonics Limited. All rights reserved. <br /><br />
 
-          For more information, please visit <span className='underline'><a href="https://aartechsolonics.com/">aartechsolonics.com</a></span></div>
+          For more information, please visit <span className='underline text-box-red'><a href="https://aartechsolonics.com/">aartechsolonics.com</a></span></div>
       </div>
       <Footer />
     </>

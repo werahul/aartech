@@ -16,9 +16,9 @@ const Chairman = () => {
             <div className="relative lg:mt-[10.5rem] mt-[4.4rem]">
                 <img src={main} alt="" className='w-full lg:block hidden' />
                 <img src={mainMobile} alt="" className='w-full lg:hidden block' />
-                <div class="text-foot-blue absolute lg:bottom-10 bottom-5 lg:left-20 2xl:left-[7.5rem] left-5 lg:text-4xl text-[28px] font-normal font-antonio leading-9">Chairman’s<br className='lg:hidden block' />Communication</div>
+                <div class="text-foot-blue absolute lg:bottom-10 bottom-5 lg:left-20 2xl:left-[7.5rem] left-5 lg:text-4xl text-[28px] font-normal font-antonio leading-9">Chairman’s<br className='lg:hidden block' /> Communication</div>
             </div>
-            <div className=" 2xl:px-[120px] lg:py-20 lg:px-20  lg:pt-20 px-5 py-10  lg:mt-0 mt-5 sm:px-10">
+            <div className=" 2xl:px-[120px] lg:py-20 lg:px-20  lg:pt-14 px-5 py-10  lg:mt-0 mt-5 sm:px-10">
                 <div class="text-foot-blue lg:text-4xl text-xl lg:font-semibold font-bold font-Barlow">Introduction of Aartech Solonics Limited by Mr. Amit Raje</div>
 
                 <VideoComponent />
@@ -36,7 +36,7 @@ const Chairman = () => {
                         <td className='border border-[#0C013D] lg:w-[150px] px-5 text-black  font-Barlow font-semibold cursor-pointer text-sm lg:text-lg'>Virtual</td>
                     </tr>
                     <tr className='border border-black font-Barlow h-[50px] text-lg '>
-                        <td className='border border-[#0C013D] lg:w-[180px]  px-5 text-black font-normal font-Barlow text-sm lg:text-lg'>02.09.2023</td>
+                        <td className='border border-[#0C013D] lg:w-[180px]  px-5 text-black font-normal font-Barlow text-sm lg:text-lg'>02.09.2020</td>
 
                         <a href="https://drive.google.com/file/d/1R5jfodLwUWhwYHYSYLnqtDbLuC_lveTR/view" target='_blank'> <td className='  px-5 py-2 text-black font-normal font-Barlow underline hover:font-semibold cursor-pointer text-sm lg:text-lg'>Chairman’s statement at Aartech’s 38th AGM</td></a>
 

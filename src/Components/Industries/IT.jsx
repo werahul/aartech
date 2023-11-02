@@ -42,9 +42,9 @@ const IT = () => {
 
     tag3: "The Power Backup Unit (PBU) solution plays a crucial role in IT and Telecom by ensuring uninterrupted power supply to critical infrastructure. In this sector, downtime can result in significant data loss, communication disruptions, and revenue losses. PBUs provide a seamless transition to backup power sources during electrical outages, protecting servers, data centres, and communication networks. They enhance reliability and reduce the risk of service interruptions, enabling IT and Telecom operations to function smoothly, maintain connectivity, and meet customer demands even during power fluctuations or failures.",
 
-    tag4: "Customised Plastic Cases from Aartech Solonics are indispensable in the IT and Telecom industry. They transcend basic enclosures, reflecting your brand and product image. These bespoke solutions facilitate entrepreneurs, innovators, and professionals in showcasing their offerings effectively, whether for prototypes or presentations. Aarchtech's dedication to quality, affordability, and accessibility aligns with diverse enclosure requirements, playing a pivotal role in bolstering success within the dynamic IT and Telecom sector.",
+    tag4: "Customised Plastic Cases from Aartech Solonics are indispensable in the IT and Telecom industry. They transcend basic enclosures, reflecting your brand and product image. These bespoke solutions facilitate entrepreneurs, innovators, and professionals in showcasing their offerings effectively, whether for prototypes or presentations. Aartech's dedication to quality, affordability, and accessibility aligns with diverse enclosure requirements, playing a pivotal role in bolstering success within the dynamic IT and Telecom sector.",
 
-    tag5: "Aartech Solonics offers Solar Design, Engineering, and Consultancy services as a sustainable energy solution for IT and Telecom industries. Their commitment to engineering excellence shows their passion for harnessing solar power for a greener future. Aarchtech’s experienced team tailors solar solutions to meet IT and Telecom clients' unique needs, including intricate solar panel layouts and energy generation optimisation. Their comprehensive services cover everything from feasibility studies and system design to installation and ongoing maintenance, providing end-to-end support for clients looking to reduce utility bills and enhance efficiency in these industries.",
+    tag5: "Aartech Solonics offers Solar Design, Engineering, and Consultancy services as a sustainable energy solution for IT and Telecom industries. Their commitment to engineering excellence shows their passion for harnessing solar power for a greener future. Aartech’s experienced team tailors solar solutions to meet IT and Telecom clients' unique needs, including intricate solar panel layouts and energy generation optimisation. Their comprehensive services cover everything from feasibility studies and system design to installation and ongoing maintenance, providing end-to-end support for clients looking to reduce utility bills and enhance efficiency in these industries.",
 
     tag6: "In the IT and Telecom industry, Uninterrupted Power Supply (UPS) Solutions are paramount for maintaining superior power quality and ensuring continuous operation of critical systems. Traditional UPS models often incur high costs due to efficiency loss, frequent battery replacements, and limited protection. Aartech's partnership with S&C USA introduces the PureWave UPS, offering a groundbreaking solution. This advanced Smart Grid UPS safeguards power-sensitive equipment from disturbances, supporting the entire load with clean power for up to 60 seconds, effectively eliminating 99% of power quality issues. With reduced loads supported for up to 180 seconds, it guarantees uninterrupted operations in the IT and Telecom sectors, enhancing reliability and performance.",
 
@@ -287,7 +287,7 @@ const IT = () => {
             } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
             onClick={() => handleProClick("PTag1")}
           >
-            CONTROL & RELAY PANELS
+            CONTROL RELAY PANELS
           </button>
 
           <button
@@ -376,7 +376,7 @@ const IT = () => {
             } w-[300px] h-[49px] px-[12px] py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
             onClick={() => handleProClick("PTag1")}
           >
-            CONTROL & RELAY PANELS
+            CONTROL RELAY PANELS
           </button>
 
           <button
@@ -466,7 +466,7 @@ const IT = () => {
               ></img>
             </div>
             <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow sm:ml-5 sm:mt-0 mt-4  lg:leading-tight leading-snug">
-              Control & Relay Panels (CRP) from Aartech, tailored for 11KV and
+              Control Relay Panels (CRP) from Aartech, tailored for 11KV and
               33KV substations, play a crucial role in the IT and Telecom
               sector. These panels, equipped with outdoor switchgear, integrate
               relays, fuses, switches, and comprehensive wiring to monitor and
@@ -531,8 +531,8 @@ const IT = () => {
               professionals by providing timely access to quality enclosures at
               affordable prices. Entrepreneurs, innovators, and product
               designers can avoid expensive, low-quantity purchases by utilising
-              BestCase's readily available and cost-effective options. Whether
-              for prototypes or showcasing products, BestCase ensures your
+              Best Case's readily available and cost-effective options. Whether
+              for prototypes or showcasing products, Best Case ensures your
               enclosures meet high standards, offering convenience and
               reliability for business success in the IT and Telecom sector.
             </div>
@@ -547,7 +547,7 @@ const IT = () => {
               <img src={solar} alt="" className="sm:w-[100%] w-[100%]"></img>
             </div>
             <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow sm:ml-5 sm:mt-0 mt-4 lg:leading-tight leading-snug">
-              Aarchtech's Solar Design and Services for IT and Telecom include
+              Aartech's Solar Design and Services for IT and Telecom include
               permit and sales proposal design, NEM application filling,
               commercial and industrial projects, and more. Their expertise lies
               in crafting customised solar solutions, from panel layouts to

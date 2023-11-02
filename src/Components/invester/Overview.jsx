@@ -30,7 +30,7 @@ function Popup({
     <div className="popup">
       <div className="popup-content mx-5 lg:mx-20 2xl:mx-[120px]">
         <div className="popup-close" onClick={onClose}>
-          <img src={cross} alt="" />
+          <img src={cross} alt="" className="w-4 h-4 lg:w-6 lg:h-6"/>
         </div>
         <div className=" pt-10 lg:pt-0 flex">
           <div className=" h-auto ">

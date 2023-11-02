@@ -27,7 +27,7 @@ const PowerTran = () => {
 
         tag3: 'Power Backup Unit Solutions play a crucial role in Power Transmission and Distribution by ensuring uninterrupted electricity supply during outages and voltage fluctuations. These systems consist of backup generators, battery banks, and sophisticated control systems. When the primary power source experiences a disruption, the backup unit seamlessly takes over, preventing service interruptions for critical infrastructure like hospitals, data centres, and manufacturing plants. This enhances the reliability of power distribution networks and minimises downtime, ultimately improving the overall efficiency and resilience of the grid. Additionally, power backup units can be integrated with renewable energy sources to provide a cleaner and more sustainable energy supply.        ',
 
-        tag4: "Customised Plastic Cases play a crucial role in the Power Transmission and Distribution system by safeguarding essential equipment and components. Aarchtech Solonics provides timely, cost-effective, and quality solutions that ensure the protection and secure transportation of vital electrical and electronic devices. These cases not only enhance equipment safety during transport and storage but also project a professional image for the company, ultimately contributing to the success and reliability of the power transmission and distribution infrastructure.",
+        tag4: "Customised Plastic Cases play a crucial role in the Power Transmission and Distribution system by safeguarding essential equipment and components. Aartech Solonics provides timely, cost-effective, and quality solutions that ensure the protection and secure transportation of vital electrical and electronic devices. These cases not only enhance equipment safety during transport and storage but also project a professional image for the company, ultimately contributing to the success and reliability of the power transmission and distribution infrastructure.",
 
         tag5: "Energy storage solutions are indispensable in the Power Transmission and Distribution Industry. These systems leverage energy harvesting technologies to capture power from micro sources like Solar, Wind, and Hydro. The collected energy is stored and can be used when needed to support various applications, from handheld devices to remote sensing and telecom equipment. In real estate, energy storage facilitates efficient utilisation of passive and active energy sources, such as using solar tiles with PV arrays and LED lights for decorative or security purposes, reducing the need for extensive cabling.",
 
@@ -215,7 +215,7 @@ const PowerTran = () => {
                             } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag1')}
                     >
-                        CONTROL & RELAY PANELS
+                        CONTROL RELAY PANELS
                     </button>
 
                     <button
@@ -286,7 +286,7 @@ const PowerTran = () => {
                             } w-[300px] h-[49px] px-[12px] py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag1')}
                     >
-                        CONTROL & RELAY PANELS
+                        CONTROL RELAY PANELS
                     </button>
 
                     <button
@@ -348,7 +348,7 @@ const PowerTran = () => {
                             <img src={relayPannels} alt="" className='sm:w-[100%] w-[100%]'></img>
                         </div>
                         <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow sm:ml-5 sm:mt-0 mt-4  lg:leading-tight leading-snug">
-                            Aartech's Control and Relay Panels (CRP) enhance Power Transmission and Distribution systems. Panels for 11KV and 33KV substations are equipped with relays, fuses, switches, wiring, and more. Their primary functions are monitoring and controlling transformers, generators, and circuit breakers. The versatility of CRPs allows them to be customised for single or multi-circuit use, ensuring they meet specific customer requirements and contribute to the efficiency and reliability of Power Transmission and Distribution networks.
+                            Aartech's Control Relay Panels (CRP) enhance Power Transmission and Distribution systems. Panels for 11KV and 33KV substations are equipped with relays, fuses, switches, wiring, and more. Their primary functions are monitoring and controlling transformers, generators, and circuit breakers. The versatility of CRPs allows them to be customised for single or multi-circuit use, ensuring they meet specific customer requirements and contribute to the efficiency and reliability of Power Transmission and Distribution networks.
                         </div>
                     </div>
 

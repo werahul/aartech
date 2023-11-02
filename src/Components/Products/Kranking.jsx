@@ -363,7 +363,7 @@ const Kranking = () => {
           CUSTOMISATION
         </div>
         <div className="text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:leading-tight leading-snug mt-8">
-          Aarchtech empowers customers to tailor The KranKing® Ultracapacitor to
+          Aartech empowers customers to tailor The KranKing® Ultracapacitor to
           their unique requirements, enhancing engine-cranking performance while
           extending battery life. This customisation ensures optimal results
           across a wide temperature range, boosting system reliability. If you

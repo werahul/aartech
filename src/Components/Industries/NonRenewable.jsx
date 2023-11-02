@@ -32,7 +32,7 @@ const NonRenewable = () => {
 
         tag5: "A Power Backup Unit (PBU) solution for non-renewable energy is a system designed to provide uninterrupted power supply during outages or periods of high demand. It typically relies on conventional energy sources such as fossil fuels or nuclear power to generate electricity. The PBU includes backup generators, energy storage systems, or redundant power sources to ensure continuity in critical applications like hospitals, data centres, and industries. While not based on renewable energy sources, PBUs are essential for maintaining essential services and minimising disruptions in power supply when primary energy sources fail or fluctuate. ",
 
-        tag6: "Customised Plastic Cases play a pivotal role in the non-renewable energy sector by safeguarding critical equipment and delicate instrumentation. They ensure that sensitive components and tools used in non-renewable energy production are protected during transportation and storage. Aarchtech Solonics' solutions offer durability, precision, and customisation to meet the unique requirements of this industry. Whether it's for showcasing equipment at trade shows or safely transporting vital machinery to remote energy sites, these cases maintain the integrity of valuable non-renewable energy assets while presenting a professional image.",
+        tag6: "Customised Plastic Cases play a pivotal role in the non-renewable energy sector by safeguarding critical equipment and delicate instrumentation. They ensure that sensitive components and tools used in non-renewable energy production are protected during transportation and storage. Aartech Solonics' solutions offer durability, precision, and customisation to meet the unique requirements of this industry. Whether it's for showcasing equipment at trade shows or safely transporting vital machinery to remote energy sites, these cases maintain the integrity of valuable non-renewable energy assets while presenting a professional image.",
 
         tag7: 'The Solid Waste Treatment plays a crucial role in non-renewable energy sectors. By minimising landfill usage and promoting recycling, it conserves valuable resources and reduces the environmental impact of waste. This contributes to the sustainable use of non-renewable energy sources, as recycling and resource recovery can decrease the need for virgin materials and energy-intensive production processes, ultimately conserving non-renewable resources and lessening the carbon footprint associated with their extraction and utilisation. Moreover, it can generate energy from waste, further supporting non-renewable energy production.',
 
@@ -264,7 +264,7 @@ const NonRenewable = () => {
                             } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag1')}
                     >
-                        CONTROL & RELAY PANELS
+                        CONTROL RELAY PANELS
                     </button>
 
                     <button
@@ -357,7 +357,7 @@ const NonRenewable = () => {
                             } w-[300px] h-[49px] px-[12px] py-[9px] whitespace-nowrap border  text-base font-bold font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag1')}
                     >
-                        CONTROL & RELAY PANELS
+                        CONTROL RELAY PANELS
                     </button>
 
                     <button
@@ -441,7 +441,7 @@ const NonRenewable = () => {
                             <img src={relayPannels} alt="" className='sm:w-[100%] w-[100%]'></img>
                         </div>
                         <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow sm:ml-5 sm:mt-0 mt-4  lg:leading-tight leading-snug">
-                            Aartech's Control & Relay Panels (CRP) are invaluable in non-renewable energy. Designed for 11KV and 33KV substations with outdoor switchgear, they incorporate a comprehensive range of components, including relays, fuses, switches, and wiring. These panels effectively monitor and control critical equipment like transformers, generators, and circuit breakers. Moreover, they offer customisation options, allowing adaptation for single or multi-circuit use to meet customer requirements precisely.
+                            Aartech's Control Relay Panels (CRP) are invaluable in non-renewable energy. Designed for 11KV and 33KV substations with outdoor switchgear, they incorporate a comprehensive range of components, including relays, fuses, switches, and wiring. These panels effectively monitor and control critical equipment like transformers, generators, and circuit breakers. Moreover, they offer customisation options, allowing adaptation for single or multi-circuit use to meet customer requirements precisely.
 
                         </div>
                     </div>
@@ -478,7 +478,7 @@ const NonRenewable = () => {
                         <div className=" sm:w-[160%] lg:w-[110%] w-[100%] h-auto sm:p-2 p-0 ">
                             <img src={bestCase} alt="" className='sm:w-[100%] w-[100%]'></img>
                         </div>
-                        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow sm:ml-5 sm:mt-0 mt-4 lg:leading-tight leading-snug">BestCase aids in the field of Non-Renewable Energy by providing entrepreneurs and innovators timely access to quality enclosures for their products. We understand the challenges of prototyping and the importance of cost-effective solutions. Whether showcasing prototypes or carrying fragile equipment, we ensure your presentation matches the highest standards. With 24x7 online access to our products, we are committed to delivering quality, affordability, and availability, supporting your endeavours for business success in the non-renewable energy sector.</div>
+                        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow sm:ml-5 sm:mt-0 mt-4 lg:leading-tight leading-snug">Best Case aids in the field of Non-Renewable Energy by providing entrepreneurs and innovators timely access to quality enclosures for their products. We understand the challenges of prototyping and the importance of cost-effective solutions. Whether showcasing prototypes or carrying fragile equipment, we ensure your presentation matches the highest standards. With 24x7 online access to our products, we are committed to delivering quality, affordability, and availability, supporting your endeavours for business success in the non-renewable energy sector.</div>
                     </div>
 
                     <div className={`Pro7 flex sm:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag7' ? '' : 'hidden'}`}>

@@ -17,7 +17,7 @@ const Disclosures = () => {
                 <div class="text-foot-blue  absolute lg:bottom-10 bottom-5 lg:left-20 2xl:left-[7.5rem] left-5 lg:text-4xl text-[28px] font-normal font-antonio leading-9">Disclosures</div>
             </div>
 
-            <div className=" 2xl:px-[120px] lg:py-20 lg:px-20  lg:pt-20 px-5 py-10  lg:mt-0  sm:px-10">
+            <div className=" 2xl:px-[120px] lg:py-20 lg:px-20  lg:pt-14 px-5 py-10  lg:mt-0  sm:px-10">
                 <div class="text-black lg:text-4xl text-[28px] font-normal font-antonio leading-9">Disclosures under Regulation 46 and 62 of SEBI (LODR) Regulations ,2015</div>
 
                 <div class="lg:w-[841px] h-[50px] flex justify-start lg:px-8 px-5 items-center bg-foot-blue border border-black  mt-8">
@@ -48,7 +48,7 @@ const Disclosures = () => {
                         <a href="https://drive.google.com/file/d/1K04mmbYugaoq4x_4Ne9jHTT72Y89SBZK/view" target='_blank'> <div class="text-black lg:text-lg text-sm font-normal font-Barlow underline leading-snug hover:font-semibold"> Policy on dealing with related party transactions</div></a>
                         <a href="https://drive.google.com/file/d/10aONtdvdgA0ZY-D3MBtH4xhJGyCFMy7D/view" target='_blank'> <div class="text-black lg:text-lg text-sm font-normal font-Barlow underline leading-snug hover:font-semibold">Policy for determining material Subsidiaries</div></a>
 
-                        <Link to="/investors/disclosures-policies" class="w-[99px] h-[43px] lg:w-[110px] lg:h-[42px] border border-black flex justify-center items-center mt-6 cursor-pointer hover:border-red-700 text-red-700 lg:text-base text-sm font-normal font-Barlow whitespace-nowrap leading-none hover:text-black">
+                        <Link to="/investors/disclosures-policies" class="w-[99px] h-[43px] lg:w-[159px] lg:h-[54px] border border-black flex justify-center items-center mt-9 cursor-pointer hover:border-red-700 text-black  lg:text-base text-sm font-bold font-Barlow whitespace-nowrap leading-none hover:text-box-red">
                             VIEW ALL
                         </Link>
 
@@ -64,8 +64,8 @@ const Disclosures = () => {
                         <a href="https://drive.google.com/file/d/1OxT0rITXjEiW-JNnJ-YC01nYFTvNLJgZ/view" target='_blank'> <div class="text-black lg:text-lg text-sm font-normal font-Barlow underline leading-snug hover:font-semibold">Statement of deviaion or variation as on September 30, 2020</div></a>
                         <a href="https://drive.google.com/file/d/1REqsXP9Wd6cZwam5xu7DVuAFTV2i9AXh/view" target='_blank'> <div class="text-black lg:text-lg text-sm font-normal font-Barlow underline leading-snug hover:font-semibold">Statement of deviaion or variation as on September 30, 2019</div></a>
                         <a href="https://drive.google.com/file/d/12JYqcz-7vzvPGTe4J9iV5QYd5YdwWCap/view" target='_blank'> <div class="text-black lg:text-lg text-sm font-normal font-Barlow underline leading-snug hover:font-semibold">Statement of deviaion or variation as on March 31, 2021</div></a>
-                        <a href="https://drive.google.com/file/d/1PaNpgaOQhRq71eYdq07pmcMLDa_driac/view" target='_blank'> <div class="text-black lg:text-lg text-sm font-normal font-Barlow underline leading-snug hover:font-semibold">Statement of deviaion or variation as on March 31, 2020</div></a>                       
-                      
+                        <a href="https://drive.google.com/file/d/1PaNpgaOQhRq71eYdq07pmcMLDa_driac/view" target='_blank'> <div class="text-black lg:text-lg text-sm font-normal font-Barlow underline leading-snug hover:font-semibold">Statement of deviaion or variation as on March 31, 2020</div></a>
+
                     </div>
 
                 </div>

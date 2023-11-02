@@ -328,7 +328,7 @@ const ClipF = () => {
           CUSTOMISATION
         </div>
         <div className="text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:leading-tight leading-snug mt-8">
-          Aarchtech provides tailored solutions for the CLiP®, accommodating
+          Aartech provides tailored solutions for the CLiP®, accommodating
           different requirements by adjusting its settings and configurations.
           Whether it's for system upgrades, transformer protection, or close bus
           ties, CLiP® can be customised to meet specific overcurrent protection

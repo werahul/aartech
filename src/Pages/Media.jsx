@@ -96,7 +96,7 @@ const Media = () => {
 
 
                 <div className="lg:grid grid-cols-2 gap-5 lg:mt-9 mt-5 lg:space-y-0 space-y-6">
-                    <Link to='/announcement-page'
+                    <Link to='/media/announcement-page'
                     >
                         <div className="flex lg:flex-row flex-col   border-[1px] border-black" >
                             <div className=" lg:w-[30%]  w-full lg:h-auto h-auto">

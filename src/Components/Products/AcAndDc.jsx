@@ -65,7 +65,7 @@ const AcAndDc = () => {
                         </div>
                         <div className="flex flex-col justify-between  lg:h-[330px]">
                             <div className="text-black lg:text-[22px] text-base lg:font-normal font-medium font-Barlow mt-6 lg:leading-tight leading-snug">
-                                J. Schneider offers DC UPS systems with microcontroller-supported charging and discharging, load shedding, and customizable backup times, ensuring control and process protection. These systems, with a 0.2 to 600 A range, are compatible with 12/24/48 V DC voltages and are ideal for safety-critical applications, with German development and production. They offer robust technology, cascading capabilities, and customizability for complete systems, making them a reliable choice for power stability in critical applications.
+                                J. Schneider offers DC UPS systems with microcontroller-supported charging and discharging, load shedding, and customisable backup times, ensuring control and process protection. These systems, with a 0.2 to 600 A range, are compatible with 12/24/48 V DC voltages and are ideal for safety-critical applications, with German development and production. They offer robust technology, cascading capabilities, and customisability for complete systems, making them a reliable choice for power stability in critical applications.
                             </div>
                             <div className="flex items-center lg:mt-auto mt-12 cursor-pointer">
                                 <img src={download} alt="" />
@@ -239,7 +239,7 @@ const AcAndDc = () => {
                     CUSTOMISATION
                 </div>
                 <div className="text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:leading-tight leading-snug mt-8">
-                Aarchtech excels in tailoring J. Schneider's DC UPS systems to diverse requirements, offering customisation for complete systems. With programmable features, compatibility with various voltages, and German engineering, they ensure reliability for critical applications, guaranteeing power stability.
+                Aartech excels in tailoring J. Schneider's DC UPS systems to diverse requirements, offering customisation for complete systems. With programmable features, compatibility with various voltages, and German engineering, they ensure reliability for critical applications, guaranteeing power stability.
                 </div>
 
                 {/* <div className="lg:flex hidden lg:flex-row flex-col gap-x-[28px] gap-y-6 lg:mt-20 mt-10">

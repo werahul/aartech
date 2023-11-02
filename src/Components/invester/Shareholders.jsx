@@ -15,7 +15,7 @@ const Shareholders = () => {
                 <img src={mainMobile} alt="" className='w-full lg:hidden block' />
                 <div class="text-foot-blue  absolute lg:bottom-10 bottom-5 lg:left-20 2xl:left-[7.5rem] left-5 lg:text-4xl text-[28px] font-normal font-antonio leading-9">Shareholders <br className='lg:hidden block' /> Information</div>
             </div>
-            <div className="2xl:px-[120px] lg:py-20 lg:px-20  lg:pt-20 px-5 py-10  lg:mt-0 mt-5 sm:px-10">
+            <div className="2xl:px-[120px] lg:py-20 lg:px-20  lg:pt-14 px-5 py-10  lg:mt-0 mt-5 sm:px-10">
 
                 <div class="text-black lg:text-4xl text-[28px] font-normal font-antonio lg:leading-9 leading-7">Compliance certificates</div>
                 <div class="lg:w-[841px] h-[50px] flex justify-start lg:px-8 px-5 items-center bg-foot-blue border border-black  lg:mt-8 mt-5">
@@ -30,7 +30,7 @@ const Shareholders = () => {
                         <a href="https://drive.google.com/file/d/1URqUGGGbT6McBNsoRw8U9NIL3yVCa8Cn/view" target='_blank'> <div class="lg:w-[95%] text-black lg:text-lg text-sm lg:font-normal font-medium fomt font-Barlow underline leading-snug hover:font-semibold">Certificate pursuant to Regulation 7(3) of SEBI (LODR) Regulations, 2015 for half year ended March 31, 2021</div></a>
 
                     </div>
-                    <Link to="/investors/shareholders-information-compliance-certificates" class="w-[99px] h-[43px] lg:w-[110px] lg:h-[42px] border border-black flex justify-center items-center mt-9 cursor-pointer hover:border-red-700 text-black  lg:text-base text-sm font-bold font-Barlow whitespace-nowrap leading-none hover:text-box-red">
+                    <Link to="/investors/shareholders-information-compliance-certificates" class="w-[99px] h-[43px] lg:w-[159px] lg:h-[54px] border border-black flex justify-center items-center mt-9 cursor-pointer hover:border-red-700 text-black  lg:text-base text-sm font-bold font-Barlow whitespace-nowrap leading-none hover:text-box-red">
                         VIEW ALL
                     </Link>
 
@@ -108,7 +108,7 @@ const Shareholders = () => {
                     </tr>
 
                 </table>
-                <Link to="/investors/shareholders-information-corporate-announcements" class="w-[99px] h-[43px] lg:w-[110px] lg:h-[42px] border border-black flex justify-center items-center lg:mt-8 mt-5 cursor-pointer hover:border-red-700 text-black  lg:text-base text-sm font-bold font-Barlow whitespace-nowrap leading-none hover:text-box-red">
+                <Link to="/investors/shareholders-information-corporate-announcements" class="w-[99px] h-[43px] lg:w-[159px] lg:h-[54px] border border-black flex justify-center items-center lg:mt-8 mt-5 cursor-pointer hover:border-red-700 text-black  lg:text-base text-sm font-bold font-Barlow whitespace-nowrap leading-none hover:text-box-red">
                     VIEW ALL
                 </Link>
 
@@ -144,7 +144,7 @@ const Shareholders = () => {
 
 
                     </div>
-                    <Link to="/investors/shareholders-information-corporate-reconciliation-of-share-capital-audit-report" class="w-[99px] h-[43px] lg:w-[110px] lg:h-[42px] border border-black flex justify-center items-center mt-9 cursor-pointer hover:border-red-700 text-black  lg:text-base text-sm font-bold font-Barlow whitespace-nowrap leading-none hover:text-box-red">
+                    <Link to="/investors/shareholders-information-corporate-reconciliation-of-share-capital-audit-report" class="w-[99px] h-[43px] lg:w-[159px] lg:h-[54px] border border-black flex justify-center items-center mt-9 cursor-pointer hover:border-red-700 text-black  lg:text-base text-sm font-bold font-Barlow whitespace-nowrap leading-none hover:text-box-red">
                         VIEW ALL
                     </Link>
 
@@ -165,7 +165,7 @@ const Shareholders = () => {
                         <a href="https://drive.google.com/file/d/1j4T44EEsUyxuiF0F190CbvtzTHx66kYF/view" target='_blank'><div class="text-black lg:text-lg text-sm lg:font-normal font-medium font-Barlow underline leading-snug hover:font-semibold">Shareholding Pattern as on March 31, 2021</div></a>
 
                     </div>
-                    <Link to="/investors/shareholders-information-shareholding-pattern" class="w-[99px] h-[43px] lg:w-[110px] lg:h-[42px] border border-black flex justify-center items-center mt-9 cursor-pointer hover:border-red-700 text-black  lg:text-base text-sm font-bold font-Barlow whitespace-nowrap leading-none hover:text-box-red">
+                    <Link to="/investors/shareholders-information-shareholding-pattern" class="w-[99px] h-[43px] lg:w-[159px] lg:h-[54px] border border-black flex justify-center items-center mt-9 cursor-pointer hover:border-red-700 text-black  lg:text-base text-sm font-bold font-Barlow whitespace-nowrap leading-none hover:text-box-red">
                         VIEW ALL
                     </Link>
 

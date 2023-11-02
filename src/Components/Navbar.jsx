@@ -116,6 +116,16 @@ const Navbar = () => {
     fontWeight: isInvestButtonActive ? "800" : "",
 
   };
+
+  const mediaSectionPaths = [
+    "/media",
+    "/media/announcement-page",
+    "/media/award-presented-by-the-defense-minister",
+    "/media/recognised-by-the-department-of-scientific-and-industrial-research",
+    "/media/iso-9001-2015-certification",
+    "/media/serves-as-an-atal-incubation-centre",
+    "/media/winner-in-the-flctd-innovation-challenge-2022"
+  ]
   const investorsPaths = [
     '/investors/overview',
     '/investors/chairman-communication',
@@ -135,7 +145,8 @@ const Navbar = () => {
     "/investors/shareholders-information-corporate-announcements",
     "/investors/shareholders-information-corporate-governance-report",
     "/investors/shareholders-information-corporate-reconciliation-of-share-capital-audit-report",
-    "/investors/shareholders-information-shareholding-pattern"
+    "/investors/shareholders-information-shareholding-pattern",
+    "/investors/disclosures-policies"
   ];
   const workPaths = [
     "/industries",
@@ -177,14 +188,16 @@ const Navbar = () => {
 
   ];
   const isInvestorsPath = investorsPaths.some((path) => location.pathname === path);
+  const isMediaPath = mediaSectionPaths.some((path) => location.pathname === path);
   const isWorkPath = workPaths.some((path) => location.pathname === path);
-  const linkClassName = `text-foot-blue font-bold hover:text-box-red lg:block hidden ${isInvestorsPath ? 'red-font-color' : ''}`;
-  const linkClassNameForWork = `text-foot-blue font-bold hover:text-box-red lg:block hidden ${isWorkPath ? 'red-font-color' : ''}`;
+  const linkClassName = `text-foot-blue text-lg font-bold hover:hover:text-[#DE0001] lg:block hidden ${isInvestorsPath ? 'red-font-color' : ''}`;
+  const linkClassNameForWork = `text-foot-blue text-lg font-bold hover:text-[#DE0001] lg:block hidden ${isWorkPath ? 'red-font-color' : ''}`;
+  const linkClassNameForMedia = `text-foot-blue text-lg font-bold hover:text-[#DE0001] lg:block hidden ${isMediaPath ? 'red-font-color' : ''}`;
 
   return (
     <div className="navbar-bg fixed inset-0 lg:h-[88px] h-[70px] sm:h-[90px] flex items-center justify-between z-50 2xl:px-[40px] shadow-lg">
       <div className="flex items-center justify-between w-full px-5 md:px-20">
-        <Link to="/" className="z-50 ">
+        <Link to="/" className="z-50 bg-white ">
           <img
             src={logo}
             alt=""
@@ -238,9 +251,9 @@ const Navbar = () => {
       </div>
       <div
         className={`${isMenuOpen
-          ? "flex flex-col lg:py-20 py-[7rem] px-5 lg:text-[24px] text-lg space-y-4 fixed h-screen inset-0 bg-white overflow-y-auto"
-          : "hidden lg:flex "
-          } flex lg:items-center font-Barlow lg:space-x-8 mt-0 sm:px-10 px-5 lg:px-20 z-1 `}
+          ? "flex flex-col lg:py-20 py-[7rem] px-5 lg:text-[24px] text-lg space-y-4 fixed h-screen inset-0 bg-white  overflow-y-auto "
+          : "hidden lg:flex"
+          } flex lg:items-center font-Barlow lg:space-x-8 mt-0 sm:px-10 px-5 lg:px-20 z-1`}
       >
         {/*<Link
           to="/industries"
@@ -326,7 +339,7 @@ const Navbar = () => {
 
         <Link
           to="/about"
-          className={`text-foot-blue  font-bold hover:text-box-red lg:border-none lg:pb-0 border-b pb-4  border-neutral-500 ${location.pathname === "/about" ? "active" : ""
+          className={`text-foot-blue lg:text-lg font-bold hover:text-[#DE0001] lg:border-none lg:pb-0 border-b pb-4  border-neutral-500 ${location.pathname === "/about" ? "active" : ""
             }`}
           onClick={() => setIsMenuOpen(false)}
         >
@@ -334,20 +347,20 @@ const Navbar = () => {
         </Link>
         <Link
           to="/brands"
-          className={`text-foot-blue  font-bold hover:text-box-red lg:border-none lg:pb-0 border-b pb-4  border-neutral-500 ${location.pathname === "/brands" ? "active" : ""
+          className={`text-foot-blue lg:text-lg font-bold hover:text-[#DE0001] lg:border-none lg:pb-0 border-b pb-4  border-neutral-500 ${location.pathname === "/brands" ? "active" : ""
             }`}
           onClick={() => setIsMenuOpen(false)}
         >
           BRANDS
         </Link>
         <Link
-          to="/media"
-          className={`text-foot-blue  font-bold hover:text-box-red lg:border-none lg:pb-0 border-b pb-4  border-neutral-500 ${location.pathname === "/media" ? "active" : ""
-            }`}
+          to= {"/media"}
+          className={linkClassNameForMedia}
           onClick={() => setIsMenuOpen(false)}
         >
           MEDIA
         </Link>
+        
         {/* <Link
           to="/investors/overview"
           className="text-foot-blue  font-bold hover:text-box-red lg:block hidden"
@@ -396,7 +409,7 @@ const Navbar = () => {
 
         <Link
           to="/contact"
-          className={`text-foot-blue font-bold hover:text-box-red lg:border-none lg:pb-0 border-b pb-4  border-neutral-500 ${location.pathname === "/contact" ? "active" : ""
+          className={`text-foot-blue lg:text-lg font-bold hover:text-[#DE0001] lg:border-none lg:pb-0 border-b pb-4  border-neutral-500 ${location.pathname === "/contact" ? "active" : ""
             }`}
           onClick={() => setIsMenuOpen(false)}
         >
@@ -416,13 +429,13 @@ const Navbar = () => {
 
           </div>
           {selectedStock === "BSE" && bseData && (
-            <p className="text-foot-blue  hidden font-bold lg:block animate-pulse">
+            <p className="text-foot-blue text-lg hidden font-bold lg:block animate-pulse">
               <span className="mr-1">₹</span>
               {bseData}
             </p>
           )}
           {selectedStock === "NSE" && nseData && (
-            <p className="text-foot-blue  hidden font-bold lg:block animate-pulse">
+            <p className="text-foot-blue text-lg hidden font-bold lg:block animate-pulse">
               <span className="mr-1">₹</span>
               {nseData}
             </p>

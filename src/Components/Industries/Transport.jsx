@@ -42,7 +42,7 @@ const Transport = () => {
 
     tag3: "The Power Backup Unit (PBU) solution significantly enhances transportation systems by ensuring an uninterrupted power supply, vital for various critical functions. This solution is crucial in transportation in supporting essential systems such as traffic lights, signalling systems, and communication networks. During power outages or emergencies, the PBU seamlessly takes over, maintaining the safe and efficient transportation infrastructure operation. This reliability minimises disruptions, traffic congestion, and safety risks, improving transportation systems' efficiency and safety. The Power Backup Unit helps maintain the continuity and reliability of transportation services, ensuring passenger safety and system integrity.",
 
-    tag4: "Customised Plastic Cases from Aarchtech Solonics offer the transportation industry a tailored solution for showcasing and protecting their products. These cases not only safeguard valuable equipment but also enhance a company's image. Aarchtech Solonics' commitment to quality, affordability, and timely access supports transportation professionals, ensuring their offerings are presented impressively. Whether for prototypes or displays, these cases contribute to business success by providing a cost-effective means to protect and showcase products, helping entrepreneurs and innovators thrive in the competitive transportation sector.",
+    tag4: "Customised Plastic Cases from Aartech Solonics offer the transportation industry a tailored solution for showcasing and protecting their products. These cases not only safeguard valuable equipment but also enhance a company's image. Aartech Solonics' commitment to quality, affordability, and timely access supports transportation professionals, ensuring their offerings are presented impressively. Whether for prototypes or displays, these cases contribute to business success by providing a cost-effective means to protect and showcase products, helping entrepreneurs and innovators thrive in the competitive transportation sector.",
 
     tag5: "In the transportation industry, a comprehensive Solid Waste Treatment is invaluable. It addresses the responsible handling of various waste types generated during transportation operations, including solid, hazardous, and organic waste. This system not only reduces the industry's environmental footprint but also promotes sustainability by prioritising practices such as recycling and resource recovery. By incorporating regulations, infrastructure, and technology, it ensures efficient, eco-friendly waste disposal, minimises landfill usage, and contributes to a cleaner, more sustainable transportation sector that aligns with modern environmental standards and regulations.",
 
@@ -265,7 +265,7 @@ const Transport = () => {
             } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
             onClick={() => handleProClick("PTag1")}
           >
-            CONTROL & RELAY PANELS
+            CONTROL RELAY PANELS
           </button>
 
           <button
@@ -345,7 +345,7 @@ const Transport = () => {
             } w-[300px] h-[49px] px-[12px] py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
             onClick={() => handleProClick("PTag1")}
           >
-            CONTROL & RELAY PANELS
+            CONTROL  RELAY PANELS
           </button>
 
           <button
@@ -426,7 +426,7 @@ const Transport = () => {
               ></img>
             </div>
             <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow sm:ml-5 sm:mt-0 mt-4  lg:leading-tight leading-snug">
-              Aartech's Control and relay Panels (CRP) are integral to enhancing
+              Aartech's Control relay Panels (CRP) are integral to enhancing
               Transportation systems. Specifically designed for 11KV and 33KV
               substations, these panels incorporate outdoor switchgear, relays,
               fuses, switches, and wiring. They offer comprehensive monitoring
@@ -512,7 +512,7 @@ const Transport = () => {
               The Waste To Compost (WTC) machine is an automated composting
               solution for transportation, converting organic waste into compost
               in 24 hours, following the 3R Principle for waste reduction. It
-              operates quietly and eco-friendly. Plastic shredders reduce
+              operates quietly and is eco-friendly. Plastic shredders reduce
               plastic waste volume, with customizable and energy-efficient
               options for waste management and biofuel production. Incinerators
               like the A-INC-50 model efficiently dispose of general waste in

@@ -132,7 +132,7 @@ const CnA = () => {
                             } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag1')}
                     >
-                        CONTROL & RELAY PANELS
+                        CONTROL RELAY PANELS
                     </button>
                 </div>
 
@@ -144,18 +144,18 @@ const CnA = () => {
                             } w-[300px] h-[49px] px-[12px] py-[9px] whitespace-nowrap border  text-base font-bold font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag1')}
                     >
-                        CONTROL & RELAY PANELS
+                        CONTROL RELAY PANELS
                     </button>
                 </div>
 
                 <div className="proContainer">
 
                     <div className={`Pro1 flex sm:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag1' ? '' : 'hidden'}`}>
-                    <div className=" sm:w-[100%] w-[100%] h-auto sm:p-2 p-0 ">
+                    <div className=" sm:w-[100%] w-[100%] lg:w-[70%] h-auto sm:p-2 p-0 lg:p-0 ">
                     <img src={relayPannels} alt="" className='sm:w-[100%] w-[100%]'></img>
                 </div>
                         <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow sm:ml-5 sm:mt-0 mt-4  lg:leading-tight leading-snug">
-                            A control & relay panel is a comprehensive unit designed to manage 11KV and 33KV zonal substations. It integrates main and auxiliary relays, annunciation relays, fuses, switches, and more. These panels monitor and control transformers, generators, and circuit breakers, ensuring efficient electrical equipment management. They come in single or multi-circuit configurations based on customer needs.
+                            A control relay panel is a comprehensive unit designed to manage 11KV and 33KV zonal substations. It integrates main and auxiliary relays, annunciation relays, fuses, switches, and more. These panels monitor and control transformers, generators, and circuit breakers, ensuring efficient electrical equipment management. They come in single or multi-circuit configurations based on customer needs.
 
                         </div>
                     </div>

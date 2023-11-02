@@ -89,7 +89,7 @@ const ControlRelay = () => {
             </div>
             <div className="flex flex-col justify-between  lg:h-[330px]">
               <div className="text-black lg:text-[22px] text-base lg:font-normal font-medium font-Barlow mt-6 lg:leading-tight leading-snug">
-                A Control & Relay Panel is a self-contained unit designed for
+                A Control Relay Panel is a self-contained unit designed for
                 controlling associated 11KV and 33KV line or transformer
                 equipment via outdoor switchgear at zonal substations. These
                 panels encompass main and auxiliary relays, annunciation relays,
@@ -329,7 +329,7 @@ const ControlRelay = () => {
           CUSTOMISATION
         </div>
         <div className="text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:leading-tight leading-snug mt-8">
-          Aarchtech excels in customising Control and Relay Panels to cater to
+          Aartech excels in customising Control Relay Panels to cater to
           diverse needs by seamlessly integrating specific components, ensuring
           optimal functionality for monitoring and controlling various
           electrical equipment at 11KV and 33KV levels. If you have any

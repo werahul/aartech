@@ -20,7 +20,7 @@ const HeavyEng = () => {
     const images = [heavy1, heavy2, heavy3, heavy4, heavy5];
 
     const tagContents = {
-        tag1: 'Control and Automation serve as indispensable solutions for the Heavy Engineering Industries. With its wide range of technologies, Aartech provides both cost-effective solutions for utility companies and high-quality solutions for discerning customers. Aarchtech’s innovative approach prioritises customer satisfaction by utilising advanced technologies for specific needs. Providing tailored solutions for Heavy Engineering Industries, Aartech seamlessly blends diverse components to enhance efficiency and effectiveness. Solid-state and microprocessor-based embedded control products are meticulously designed to address customised requirements, setting them apart from conventional integration methods. In this critical sector, this approach delivers substantial value.',
+        tag1: 'Control and Automation serve as indispensable solutions for the Heavy Engineering Industries. With its wide range of technologies, Aartech provides both cost-effective solutions for utility companies and high-quality solutions for discerning customers. Aartech’s innovative approach prioritises customer satisfaction by utilising advanced technologies for specific needs. Providing tailored solutions for Heavy Engineering Industries, Aartech seamlessly blends diverse components to enhance efficiency and effectiveness. Solid-state and microprocessor-based embedded control products are meticulously designed to address customised requirements, setting them apart from conventional integration methods. In this critical sector, this approach delivers substantial value.',
 
         tag2: "Process Continuity is a vital solution for Heavy Engineering Industries. Electrical outages can cause immediate and lasting harm to continuous process operations, profoundly affecting witnesses. As industries increasingly prioritise revenue, efficiency, productivity, and system enhancement, it becomes imperatiev to reevaluate established practices and seek innovative solutions.        Aartech collaborates closely with consultants, equipment manufacturers, contractors, and end-users to tackle process continuity challenges comprehensively. This approach ensures that Heavy Engineering Industries maintain operational resilience, minimising downtime, safeguarding revenue, and meeting efficiency and productivity benchmarks. ",
 
@@ -28,7 +28,7 @@ const HeavyEng = () => {
 
         tag4: "Fault Current Limiting (FCL) is a pivotal solution for Heavy Engineering Industries. Aartech, in partnership with G&W Elec. Co. USA, delivers comprehensive FCL solutions to address evolving electrical system demands. These solutions cater to power generation, including captive power addition and diverse industries such as cement, oil, and gas. FCL technology effectively restrains excessive fault currents, safeguarding equipment and infrastructure while ensuring operational continuity. Aartech's expertise in implementing FCL enhances reliability, safety, and efficiency across Heavy Engineering Industries.",
 
-        tag5: "In heavy engineering industries, Customised Professional Cases play a pivotal role by serving as protective showcases for vital equipment. Aarchtech Solonics' solutions help maintain the integrity of intricate machinery during transportation and storage. These cases not only protect valuable assets but also uphold the industry's professional image. Aarchtech's emphasis on quality, affordability, and availability ensures that heavy engineering businesses can secure the most suitable and cost-effective enclosures, ultimately contributing to their operational efficiency and success.",
+        tag5: "In heavy engineering industries, Customised Professional Cases play a pivotal role by serving as protective showcases for vital equipment. Aartech Solonics' solutions help maintain the integrity of intricate machinery during transportation and storage. These cases not only protect valuable assets but also uphold the industry's professional image. Aartech's emphasis on quality, affordability, and availability ensures that heavy engineering businesses can secure the most suitable and cost-effective enclosures, ultimately contributing to their operational efficiency and success.",
 
         tag6: "Solar Design, Engineering, and Consultancy services offered by Aartech Solonics serve as a sustainable solution for Heavy Engineering Industries. Their commitment to harnessing solar power aligns with the industry's growing need for eco-friendly and efficient energy sources. Aartech's innovative approach, tailored solar solutions, and meticulous energy optimisation provide heavy engineering industries with sustainable power options. They offer a comprehensive suite of services, including feasibility studies, system design, and maintenance, making them a valuable partner in reducing energy costs and enhancing operational efficiency for industrial clients in this sector.",
 
@@ -281,7 +281,7 @@ const HeavyEng = () => {
                             } w-auto h-[49px] px-[20px]  py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag1')}
                     >
-                        CONTROL & RELAY PANELS
+                        CONTROL RELAY PANELS
                     </button>
 
                     <button
@@ -384,7 +384,7 @@ const HeavyEng = () => {
                             } w-[300px] h-[49px] px-[12px] py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag1')}
                     >
-                        CONTROL & RELAY PANELS
+                        CONTROL RELAY PANELS
                     </button>
 
                     <button
@@ -479,7 +479,7 @@ const HeavyEng = () => {
                             <img src={relayPannels} alt="" className='sm:w-[100%] w-[100%]'></img>
                         </div>
                         <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow sm:ml-5 sm:mt-0 mt-4  lg:leading-tight leading-snug">
-                            Aartech's Control and relay Panels (CRP) are integral to Heavy Engineering Industries. Tailored for 11KV and 33KV substations, these panels employ outdoor switchgear and encompass relays, fuses, switches, wiring, and more to effectively monitor and control transformers, generators, and circuit breakers. Additionally, indoor control panels for outdoor VCBs feature relays and indicators, ensuring adaptability for single or multi-circuit configurations, precisely meeting customer requirements.
+                            Aartech's Control relay Panels (CRP) are integral to Heavy Engineering Industries. Tailored for 11KV and 33KV substations, these panels employ outdoor switchgear and encompass relays, fuses, switches, wiring, and more to effectively monitor and control transformers, generators, and circuit breakers. Additionally, indoor control panels for outdoor VCBs feature relays and indicators, ensuring adaptability for single or multi-circuit configurations, precisely meeting customer requirements.
 
 
                         </div>
@@ -510,7 +510,7 @@ const HeavyEng = () => {
                         <div className=" sm:w-[140%] lg:w-[100%] w-[100%] h-auto sm:p-2 p-0 ">
                             <img src={bestCase} alt="" className='sm:w-[100%] w-[100%]'></img>
                         </div>
-                        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow sm:ml-5 sm:mt-0 mt-4 lg:leading-tight leading-snug">Best Case facilitates the Heavy Engineering sector by offering easy access to quality enclosures through their online platform. This accessibility and affordability are crucial for industries that require specialised enclosures for machinery. Bestcase's commitment to quality and customisation aligns with the industry's demand for reliable solutions, contributing to smoother operations and project success in heavy engineering.</div>
+                        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow sm:ml-5 sm:mt-0 mt-4 lg:leading-tight leading-snug">Best Case facilitates the Heavy Engineering sector by offering easy access to quality enclosures through their online platform. This accessibility and affordability are crucial for industries that require specialised enclosures for machinery. Best case's commitment to quality and customisation aligns with the industry's demand for reliable solutions, contributing to smoother operations and project success in heavy engineering.</div>
                     </div>
 
                     <div className={`Pro6 flex sm:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag6' ? '' : 'hidden'}`}>
