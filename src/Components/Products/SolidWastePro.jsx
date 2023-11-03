@@ -6,7 +6,7 @@ import { Accordion, Accordion2, Accordion3 } from "..";
 import { CustomerLogos2 } from "..";
 
 import { ImageSelect } from "../ImageSelector";
-import { cp1, cp2, cp3, cp4, cp5 } from "../../assets/proImages";
+import { Swaste1,Swaste2,Swaste3, Swaste4 } from "../../assets/proImages";
 import { indRail, CapS, CapG, hp } from "../../assets/WorkBlackLogos";
 import { SolidWasteAuto } from "../AutoScroll";
 
@@ -16,7 +16,7 @@ const SolidWastePro = () => {
   }, []); // Empty dependency array ensures the effect runs only
 
   const [selectedTag, setSelectedTag] = useState("tag1");
-  const images = [cp1, cp2, cp3, cp4, cp5];
+  const images = [Swaste1,Swaste2,Swaste3, Swaste4, Swaste2];
 
   const tagContents = {
     tag1: "The WTC composting machine by Aartech Solonics Ltd provides an eco-friendly waste management solution, reducing waste and promoting sustainability, which can be vital for maintaining clean and efficient environments in both the Defence and Exploration sectors.     ",
@@ -43,7 +43,7 @@ const SolidWastePro = () => {
         <div className="lg:hidden text-black text-[28px] font-normal font-antonio ">
           Solid Waste Treatment
         </div>
-        <div className="lg:hidden text-foot-blue text-lg font-bold font-Barlow tracking-wider mb-4">
+        <div className="lg:hidden text-foot-blue text-lg font-bold font-Barlow tracking-wide mb-2 mt-1">
           PRODUCTS
         </div>
 
@@ -137,7 +137,7 @@ const SolidWastePro = () => {
         </div>
 
         {/*     mobile-------------------------------------------------------------*/}
-        <div className="flex lg:hidden space-x-3 mt-8 overflow-auto">
+        <div className="flex lg:hidden space-x-3 mt-3 overflow-auto">
           <button
             className={`tag ${
               selectedTag === "tag1"
@@ -190,7 +190,7 @@ const SolidWastePro = () => {
             IT & Telecom
           </button>
         </div>
-        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow mt-8 lg:leading-tight leading-snug">
+        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow mt-3 lg:leading-tight leading-snug">
           {" "}
           {selectedTag && tagContents[selectedTag]}
         </div>
@@ -199,10 +199,10 @@ const SolidWastePro = () => {
           FEATURES
         </div>
 
-        <div className="mt-8 ">
+        <div className="lg:mt-4 mt-2 ">
           <div className="text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:leading-tight leading-snug">
-            <h3 className="font-bold">Organic Waste Compost Machine:</h3>
-            <p className="list-dots">Fully Automatic Operation</p>
+            <h3 className="font-semibold">Organic Waste Compost Machine:</h3>
+            <p className="list-dots mt-2">Fully Automatic Operation</p>
             <p className="list-dots">Natural and Biological Process</p>
             <p className="list-dots">
               High-Productive Fertiliser Generation from Food Waste
@@ -223,8 +223,8 @@ const SolidWastePro = () => {
           </div>
 
           <div className="text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:leading-tight leading-snug lg:mt-8 mt-6">
-            <h3 className="font-bold">Plastic Shredder:</h3>
-            <p className="list-dots">Modern Technology-Based</p>
+            <h3 className="font-semibold">Plastic Shredder:</h3>
+            <p className="list-dots mt-2">Modern Technology-Based</p>
             <p className="list-dots">Energy Efficient</p>
             <p className="list-dots">Durable</p>
             <p className="list-dots">Dual Shafted and Slow-Speed Shredding</p>
@@ -236,8 +236,8 @@ const SolidWastePro = () => {
             <p className="list-dots">Customisable Shred Size</p>
           </div>
           <div className="text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:leading-tight leading-snug lg:mt-8 mt-6">
-            <h3 className="font-bold">Sanitary Pad Incinerator:</h3>
-            <p className="list-dots">Automatic Operation</p>
+            <h3 className="font-semibold ">Sanitary Pad Incinerator:</h3>
+            <p className="list-dots mt-2">Automatic Operation</p>
             <p className="list-dots">Safe, Clean, and Hygienic Disposal</p>
             <p className="list-dots">
               Environmentally Friendly Menstrual Waste Disposal
@@ -264,7 +264,7 @@ const SolidWastePro = () => {
         <div className="text-foot-blue text-lg font-bold font-Barlow tracking-wider lg:mt-20 mt-10">
           CUSTOMISATION
         </div>
-        <div className="text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:leading-tight leading-snug mt-8">
+        <div className="text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:leading-tight leading-snug lg:mt-4 mt-2">
           Aartech customises WTC Machines with precision, adapting their rapid
           organic waste transformation process to diverse needs. Whether it's
           addressing food waste concerns or providing clean disposal solutions

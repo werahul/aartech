@@ -73,7 +73,7 @@ const BestCase = () => {
           <div className="lg:hidden text-black text-[28px] font-normal font-antonio">
             Best Case
           </div>
-          <div className="lg:hidden text-foot-blue text-lg font-bold font-Barlow tracking-wider mb-4">
+          <div className="lg:hidden text-foot-blue text-lg font-bold font-Barlow tracking-wide mb-2 mt-1">
             PRODUCTS
           </div>
 
@@ -200,7 +200,7 @@ const BestCase = () => {
 
         {/*     mobile-------------------------------------------------------------*/}
 
-        <div className="flex lg:hidden space-x-3 mt-8 overflow-auto">
+        <div className="flex lg:hidden space-x-3 mt-3 overflow-auto">
           <button
             className={`tag ${
               selectedTag === "tag1"
@@ -285,14 +285,14 @@ const BestCase = () => {
           </button>
         </div>
 
-        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow mt-8 lg:leading-tight leading-snug ">
+        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow mt-3 lg:leading-tight leading-snug ">
           {" "}
           {selectedTag && tagContents[selectedTag]}
         </div>
         <div className="text-foot-blue text-lg font-bold font-Barlow tracking-wider lg:mt-20 mt-10">
           FEATURES
         </div>
-        <div className="lg:flex  justify-between mt-8 ">
+        <div className="lg:flex  justify-between lg:mt-4 mt-2 ">
           <div className="text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:leading-tight leading-snug">
             <p className="list-dots">High-quality enclosures</p>
             <p className="list-dots">Cost-effective enclosure solutions</p>
@@ -309,7 +309,7 @@ const BestCase = () => {
         <div className="text-foot-blue text-lg font-bold font-Barlow tracking-wider lg:mt-20 mt-10">
           CUSTOMISATION
         </div>
-        <div className="text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:leading-tight leading-snug mt-8">
+        <div className="text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:leading-tight leading-snug lg:mt-4 mt-2">
           Aartech ensures your product's enclosure is not just a box but a
           crucial part of your brand's image. We provide timely, cost-effective,
           and quality custom solutions for all your enclosure needs.  If you

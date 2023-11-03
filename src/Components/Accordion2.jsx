@@ -17,7 +17,7 @@ const Accordion2 = () => {
         <div className="accordion-icon mt-[15px]">{isOpen ? "-" : "+"}</div>
       </div>
       <div className="accordion-content">
-        <div className="text-black text-[18px] font-Barlow tracking-wider">
+        <div className="text-black text-[16px] font-medium font-Barlow tracking-wider">
           <p>
             The 2-breaker scheme ensures a reliable power supply to a motor bus
             from two sources in scenarios like thermal power plants. A normal

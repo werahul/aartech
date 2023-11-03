@@ -17,7 +17,7 @@ const Accordion3 = () => {
         <div className="accordion-icon mt-[15px]">{isOpen ? "-" : "+"}</div>
       </div>
       <div className="accordion-content">
-        <p className="text-black text-[18px] my-4 font-Barlow tracking-wider">
+        <p className="text-black text-[16px] font-medium my-4 font-Barlow tracking-wider">
           BTS 2000 is tailored to each project's unique needs. Although some
           configurations may resemble others, it's crucial to design and
           integrate switchgear circuits to match specific bus transfer

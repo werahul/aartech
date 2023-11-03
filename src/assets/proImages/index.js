@@ -33,9 +33,15 @@ import solar3 from "./solar3.png"
 import solar4 from "./solar4.png"
 import solar5 from "./solar5.png"
 
+import Swaste1 from "./Swaste1.png"
+import Swaste2 from "./Swaste2.png"
+import Swaste3 from "./Swaste3.png"
+import Swaste4 from "./Swaste4.png"
+
 export {bts1, bts2 , bts3 , bts4,
 kra1, kra2, kra3 , kra4 ,kra5,
 cp1, cp2, cp3 ,cp4, cp5,
 clip1, clip2 ,clip3,clip4,clip5,
 best1, best2, best3, best4, best5,
-solar1, solar2 ,solar3 ,solar4 ,solar5}
+solar1, solar2 ,solar3 ,solar4 ,solar5,
+Swaste1,Swaste2,Swaste3, Swaste4}

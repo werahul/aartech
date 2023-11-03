@@ -26,9 +26,23 @@ const Customized = () => {
 
 
     const tagContents = {
-        tag1: "Aartech's control and automation solutions improve power distribution through efficient last-mile connectivity, enhanced reliability, and addressing key factors like deregulation, tariff management, load shedding, and power quality for the public's benefit",
+        tag1: "Customised Professional Case provides essential enclosures for defence and exploration equipment. These quality, affordable, and readily available solutions ensure products are impressively presented and meet the high benchmarks required for critical demonstrations, trials, and meetings.",
 
-        // tag2: 'Control and automation solutions, like those offered by Aartech, play a pivotal role in optimising power transmission infrastructure, ensuring efficiency, reliability, and effective energy management, and addressing crucial factors such as deregulation, tariff, load shedding, and power quality.        ',
+        tag2: "Customised Plastic Case assists in Renewable Energy by providing high-quality, customisable enclosures. These enclosures play a crucial role in housing renewable energy components, ensuring they are well-protected and can withstand various environmental conditions.",
+
+        tag3: "Customised Plastic Case is a high-quality enclosure that focuses on quality, affordability, and availability, crucial for the non-renewable energy industry. They support entrepreneurs, innovators, and businesses in presenting their offerings professionally.",
+
+        tag4: "Customised Plastic Case ensures timely access to the right enclosures for power transmission and distribution needs. With a focus on quality, affordability, and availability, it provides a range of standard and custom enclosures, helping businesses meet the highest benchmarks in showcasing their offerings.",
+
+        tag5: "Customised Plastic Case plays a vital role in Heavy Engineering Industries by ensuring timely access to quality enclosures. This helps engineers and production teams find the right solution for their product, avoiding costly changes and presenting their offerings impressively.",
+
+        tag6: "Customised Plastic Case assists the healthcare industry by providing quality, affordable, and readily available enclosures. It ensures medical equipment and prototypes meet high standards, supporting professionals in making impressive presentations and facilitating product development.",
+
+        tag7: "Customised Plastic Case provides a crucial solution for the IT and Telecom industry, offering timely access to quality enclosures for product development and demonstrations. This ensures impressive presentations and efficient product development, contributing to business success.",
+
+        tag8: "Customised Plastic Case revolutionises the transportation industry by providing high-quality, affordable, and readily available enclosures. Whether for prototypes or showcasing equipment, Best Case ensures your products match the best benchmarks, making a lasting impression.",
+
+        tag9: "Customised Plastic Case streamlines the waste management industry by providing high-quality, readily available enclosures. With their focus on quality, affordability, and availability, they support waste management professionals in showcasing their products effectively and efficiently.",
 
 
 
@@ -50,7 +64,7 @@ const Customized = () => {
 
                 <div className="lg:hidden text-black text-[28px] font-normal font-antonio ">Customised Plastic Case
                 </div>
-                <div className="lg:hidden text-foot-blue text-lg font-bold font-Barlow tracking-wide mb-4">SOLUTIONS</div>
+                <div className="lg:hidden text-foot-blue text-lg font-bold font-Barlow tracking-wide mb-2 mt-1">SOLUTIONS</div>
 
                 <div className="lg:flex lg:mt-20">
 
@@ -166,7 +180,7 @@ const Customized = () => {
 
 
                 { /*     mobile-------------------------------------------------------------*/}
-                <div className="flex lg:hidden space-x-3 mt-4 overflow-auto">
+                <div className="flex lg:hidden space-x-3 mt-3 overflow-auto">
 
                     <button
                         className={`tag ${selectedTag === 'tag1'
@@ -255,7 +269,7 @@ const Customized = () => {
 
                 </div>
 
-                <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow mt-8 lg:leading-tight leading-snug">  {selectedTag && tagContents[selectedTag]}</div>
+                <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow mt-3    lg:leading-tight leading-snug">  {selectedTag && tagContents[selectedTag]}</div>
 
 
                 <div className="text-foot-blue text-lg font-bold font-Barlow tracking-wider lg:mt-20 mt-10">PRODUCTS</div>
@@ -276,7 +290,7 @@ const Customized = () => {
                         className={`tag ${selectedProTag === 'PTag1'
                             ? 'bg-white text-box-red border-box-red'
                             : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
-                            } w-[300px] h-[49px] px-[12px] py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
+                            } w-auto h-[49px] px-[12px] py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag1')}
                     >
                     Best Case

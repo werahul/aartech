@@ -15,9 +15,8 @@ const Notices = () => {
                 <img src={mainMobile} alt="" className='w-full lg:hidden block' />
                 <div class="text-foot-blue absolute lg:bottom-10 bottom-5 lg:left-20 2xl:left-[7.5rem] left-5 lg:text-4xl text-[28px] font-normal font-antonio leading-9">Notices</div>
             </div>
-            <div className="2xl:px-[120px] lg:py-20 lg:px-20  lg:pt-14 px-5 py-10  lg:mt-0  sm:px-10">
+            <div className="2xl:px-[120px] lg:py-20 lg:px-20  lg:pt-8 px-5 py-10 pt-4  lg:mt-0  sm:px-10">
 
-                <div class="text-black lg:text-4xl text-[28px] font-normal font-antonio lg:leading-9 leading-7 ">Notices</div>
                 <table className='border border-black lg:w-[841px] text-left lg:mt-9 mt-6'>
                     <tr className='border border-black bg-[#0C013D] text-white font-Barlow h-[50px] lg:text-lg text-sm'>
                         <th className='border border-[#0C013D] lg:w-[220px] px-5'>DATE</th>

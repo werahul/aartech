@@ -50,7 +50,7 @@ const Process = () => {
 
                 <div className="lg:hidden text-black text-[28px] font-normal font-antonio ">Process Continuity
                 </div>
-                <div className="lg:hidden text-foot-blue text-lg font-bold font-Barlow tracking-wide mb-4">SOLUTIONS</div>
+                <div className="lg:hidden text-foot-blue text-lg font-bold font-Barlow tracking-wide mb-2 mt-1">SOLUTIONS</div>
 
                 <div className="lg:flex lg:mt-20">
 
@@ -140,7 +140,7 @@ const Process = () => {
 
                 </div>
 
-                <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow mt-8 lg:leading-tight leading-snug">  {selectedTag && tagContents[selectedTag]}</div>
+                <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow mt-3 lg:leading-tight leading-snug">  {selectedTag && tagContents[selectedTag]}</div>
 
 
                 <div className="text-foot-blue text-lg font-bold font-Barlow tracking-wider lg:mt-20 mt-10">PRODUCTS</div>
@@ -161,7 +161,7 @@ const Process = () => {
                         className={`tag ${selectedProTag === 'PTag1'
                             ? 'bg-white text-box-red border-box-red'
                             : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
-                            } w-[300px] h-[49px] px-[12px] py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
+                            } w-auto h-[49px] px-[12px] py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag1')}
                     >
                         BTS 2000

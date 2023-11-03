@@ -48,7 +48,7 @@ const LoadChecker = () => {
           <div className="lg:hidden text-black text-[28px] font-normal font-antonio">
             Load Checker
           </div>
-          <div className="lg:hidden text-foot-blue text-lg font-bold font-Barlow tracking-wider mb-4">
+          <div className="lg:hidden text-foot-blue text-lg font-bold font-Barlow tracking-wide mb-2 mt-1">
             PRODUCTS
           </div>
 
@@ -162,7 +162,7 @@ const LoadChecker = () => {
 
         {/*     mobile-------------------------------------------------------------*/}
 
-        <div className="flex lg:hidden space-x-3 mt-8 overflow-auto">
+        <div className="flex lg:hidden space-x-3 mt-3 overflow-auto">
           <button
             className={`tag ${
               selectedTag === "tag1"
@@ -236,14 +236,14 @@ const LoadChecker = () => {
           </button>
         </div>
 
-        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow mt-8 lg:leading-tight leading-snug ">
+        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow mt-3 lg:leading-tight leading-snug ">
           {" "}
           {selectedTag && tagContents[selectedTag]}
         </div>
         <div className="text-foot-blue text-lg font-bold font-Barlow tracking-wider lg:mt-20 mt-10">
           FEATURES
         </div>
-        <div className="lg:flex  justify-start mt-8 ">
+        <div className="lg:flex  justify-start lg:mt-4 mt-2 ">
           <div className="text-black lg:text-2xl text-base space-y-1 lg:font-normal font-medium font-Barlow lg:leading-tight leading-snug">
             <p className="list-dots">Alternative to 100%</p>
             <p className="list-dots">Highly Economic</p>
@@ -259,7 +259,7 @@ const LoadChecker = () => {
               voltage, frequency, |df/dt| criterion
             </li> */}
           </div>
-          <div className="text-black lg:text-2xl space-y-1 text-base lg:font-normal font-medium font-Barlow lg:leading-tight leading-snug lg:ml-80 lg:mt-0 mt-6">
+          <div className="text-black lg:text-2xl space-y-1 text-base lg:font-normal font-medium font-Barlow lg:leading-tight leading-snug lg:ml-80 lg:mt-0 mt-1">
             <p className="list-dots">Minimum investment</p>
             <p className="list-dots">Zero maintenance</p>
             <p className="list-dots">Zero Upkeep cost</p>
@@ -278,7 +278,7 @@ const LoadChecker = () => {
         <div className="text-foot-blue text-lg font-bold font-Barlow tracking-wider lg:mt-20 mt-10">
           CUSTOMISATION
         </div>
-        <div className="text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:leading-tight leading-snug mt-8">
+        <div className="text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:leading-tight leading-snug lg:mt-4 mt-2">
           Aartech offers adaptable settings and parameters, allowing users to
           fine-tune the Load Checker to specific requirements. This
           customisation ensures optimal electrical safety and extended product

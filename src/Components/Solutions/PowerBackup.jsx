@@ -56,7 +56,7 @@ const PowerBackup = () => {
 
                 <div className="lg:hidden text-black text-[28px] font-normal font-antonio ">Power Backup Unit
                 </div>
-                <div className="lg:hidden text-foot-blue text-lg font-bold font-Barlow tracking-wide mb-4">SOLUTIONS</div>
+                <div className="lg:hidden text-foot-blue text-lg font-bold font-Barlow tracking-wide mb-2 mt-1">SOLUTIONS</div>
 
                 <div className="lg:flex lg:mt-20">
 
@@ -204,7 +204,7 @@ const PowerBackup = () => {
 
                 </div>
 
-                <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow mt-8 lg:leading-tight leading-snug">  {selectedTag && tagContents[selectedTag]}</div>
+                <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow mt-3 lg:leading-tight leading-snug">  {selectedTag && tagContents[selectedTag]}</div>
 
 
                 <div className="text-foot-blue text-lg font-bold font-Barlow tracking-wider lg:mt-20 mt-10">PRODUCTS</div>
@@ -225,7 +225,7 @@ const PowerBackup = () => {
                         className={`tag ${selectedProTag === 'PTag1'
                             ? 'bg-white text-box-red border-box-red'
                             : 'text-gray-500 border-gray-400 hover:text-box-red hover:border-box-red'
-                            } w-[300px] h-[49px] px-[12px] py-[9px] whitespace-nowrap border  text-lg font-bold font-Barlow tracking-wider`}
+                            } w-auto h-[49px] px-[12px] py-[9px] whitespace-nowrap border uppercase text-lg font-bold font-Barlow tracking-wider`}
                         onClick={() => handleProClick('PTag1')}
                     >
                     Fuel Cell
@@ -236,7 +236,7 @@ const PowerBackup = () => {
 
                     <div className={`Pro1 flex sm:flex-row flex-col justify-start items-start mt-8 ${selectedProTag === 'PTag1' ? '' : 'hidden'}`}>
                         <div className=" sm:w-[100%] lg:w-[100%] w-[100%] h-auto sm:p-2 p-0 lg:p-0">
-                            <img src={fuel} alt="" className='sm:w-[100%] w-[90%]'></img>
+                            <img src={fuel} alt="" className='sm:w-[100%] lg:w-[90%] w-[100%]'></img>
                         </div>
                         <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow sm:ml-5 sm:mt-0 mt-4  lg:leading-tight leading-snug">
                         Fuel Cells are a favoured power source for diverse applications due to their high efficiency, extended endurance, compact size, lightweight portability, silent operations, durability, wide operating range, and eco-friendly nature. They outperform conventional IC engine options in efficiency, endurance, and environmental impact, making them ideal for various defence and other industrial applications.

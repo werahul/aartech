@@ -46,7 +46,7 @@ const FuelCell = () => {
         <div className="lg:hidden text-black text-[28px] font-normal font-antonio ">
           Fuel Cell
         </div>
-        <div className="lg:hidden text-foot-blue text-lg font-bold font-Barlow tracking-wider mb-4">
+        <div className="lg:hidden text-foot-blue text-lg font-bold font-Barlow tracking-wide mb-2 mt-1">
           PRODUCTS
         </div>
 
@@ -154,7 +154,7 @@ const FuelCell = () => {
         </div>
 
         {/*     mobile-------------------------------------------------------------*/}
-        <div className="flex lg:hidden space-x-3 mt-8 overflow-auto">
+        <div className="flex lg:hidden space-x-3 mt-3 overflow-auto">
           <button
             className={`tag ${
               selectedTag === "tag1"
@@ -217,7 +217,7 @@ const FuelCell = () => {
             Transportation
           </button>
         </div>
-        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow mt-8 lg:leading-tight leading-snug">
+        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow mt-3 lg:leading-tight leading-snug">
           {" "}
           {selectedTag && tagContents[selectedTag]}
         </div>
@@ -226,7 +226,7 @@ const FuelCell = () => {
           FEATURES
         </div>
 
-        <div className="lg:flex  justify-start mt-8 ">
+        <div className="lg:flex  justify-start lg:mt-4 mt-2 ">
           <div className="text-black lg:text-2xl text-base space-y-1 lg:font-normal font-medium font-Barlow lg:leading-tight leading-snug">
             <p className="list-dots">Higher Efficiency</p>
             <p className="list-dots">Longer Endurance</p>
@@ -272,7 +272,7 @@ const FuelCell = () => {
         <div className="text-foot-blue text-lg font-bold font-Barlow tracking-wider lg:mt-20 mt-10">
           CUSTOMISATION
         </div>
-        <div className="text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:leading-tight leading-snug mt-8">
+        <div className="text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:leading-tight leading-snug lg:mt-4 mt-2">
           Aartech Solonics delivers tailored system integrations conforming to
           MIL standards through Best Case, our customised product, ensuring
           precise solutions tailored to your needs.

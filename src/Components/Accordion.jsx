@@ -17,7 +17,7 @@ const Accordion = () => {
         <div className="accordion-icon mt-[43px]">{isOpen ? "-" : "+"}</div>
       </div>
       <div className="accordion-content">
-        <div className="text-black text-[16px]  font-Barlow tracking-wider">
+        <div className="text-black text-[16px] font-medium font-Barlow tracking-wider">
           <p>
             A tiebreaker facilitates the connection of two motor buses in a
             process industry setting, with two separate power sources, SOURCES I

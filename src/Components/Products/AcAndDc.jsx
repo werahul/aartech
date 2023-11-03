@@ -49,7 +49,7 @@ const AcAndDc = () => {
                 <div className="lg:hidden text-black text-[28px] font-normal font-antonio ">
                     AC and DC UPS
                 </div>
-                <div className="lg:hidden text-foot-blue text-lg font-bold font-Barlow tracking-wider mb-4">
+                <div className="lg:hidden text-foot-blue text-lg font-bold font-Barlow tracking-wider mb-2 mt-1">
                     PRODUCTS
                 </div>
 
@@ -60,7 +60,7 @@ const AcAndDc = () => {
                         <div className="lg:block hidden text-black text-4xl font-normal font-antonio">
                             AC and DC UPS
                         </div>
-                        <div className="lg:block hidden text-foot-blue text-lg font-bold font-Barlow tracking-wider mt-2">
+                        <div className="lg:block hidden text-foot-blue text-lg font-bold font-Barlow tracking-wide mt-2">
                             PRODUCTS
                         </div>
                         <div className="flex flex-col justify-between  lg:h-[330px]">
@@ -143,7 +143,7 @@ const AcAndDc = () => {
                 </div>
 
                 {/*     mobile-------------------------------------------------------------*/}
-                <div className="flex lg:hidden space-x-3 mt-8 overflow-auto">
+                <div className="flex lg:hidden space-x-3 mt-3 overflow-auto">
                     <button
                         className={`tag ${selectedTag === "tag1"
                             ? "bg-white text-box-red border-box-red"
@@ -203,7 +203,7 @@ const AcAndDc = () => {
                     </button>
 
                 </div>
-                <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow mt-8 lg:leading-tight leading-snug">
+                <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow mt-3 lg:leading-tight leading-snug">
                     
                     {selectedTag && tagContents[selectedTag]}
                 </div>
@@ -212,7 +212,7 @@ const AcAndDc = () => {
                     FEATURES
                 </div>
 
-                <div className="lg:flex  justify-start mt-8 ">
+                <div className="lg:flex  justify-start lg:mt-4 mt-2 ">
                     <div className="text-black lg:text-2xl text-base space-y-1 lg:font-normal font-medium font-Barlow lg:leading-tight leading-snug">
                         <p className="list-dots">Robust technology </p>
                         <p className="list-dots">The large product range in the power range 0.2 - 600 A</p>
@@ -238,7 +238,7 @@ const AcAndDc = () => {
                 <div className="text-foot-blue text-lg font-bold font-Barlow tracking-wider lg:mt-20 mt-10">
                     CUSTOMISATION
                 </div>
-                <div className="text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:leading-tight leading-snug mt-8">
+                <div className="text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:leading-tight leading-snug lg:mt-4 mt-2">
                 Aartech excels in tailoring J. Schneider's DC UPS systems to diverse requirements, offering customisation for complete systems. With programmable features, compatibility with various voltages, and German engineering, they ensure reliability for critical applications, guaranteeing power stability.
                 </div>
 

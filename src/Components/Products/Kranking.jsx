@@ -71,7 +71,7 @@ const Kranking = () => {
         <div className="lg:hidden text-black text-[28px] font-normal font-antonio ">
           Kranking Ultracapacitors
         </div>
-        <div className="lg:hidden text-foot-blue text-lg font-bold font-Barlow tracking-wider mb-4">
+        <div className="lg:hidden text-foot-blue text-lg font-bold font-Barlow tracking-wide mb-2 mt-1">
           PRODUCTS
         </div>
 
@@ -82,7 +82,7 @@ const Kranking = () => {
             <div className="lg:block hidden text-black text-4xl font-normal font-antonio">
               Kranking Ultracapacitors
             </div>
-            <div className="lg:block hidden text-foot-blue text-lg font-bold font-Barlow tracking-wider mt-2">
+            <div className="lg:block hidden text-foot-blue text-lg font-bold font-Barlow tracking-wide mt-2">
               PRODUCTS
             </div>
             <div className="flex flex-col justify-between  lg:h-[330px]">
@@ -110,7 +110,7 @@ const Kranking = () => {
         <div className="text-foot-blue text-lg font-bold font-Barlow tracking-wider lg:mt-20 mt-10">
           INDUSTRIES
         </div>
-        <div className="lg:flex hidden space-x-3 mt-8">
+        <div className="lg:flex hidden space-x-3 lg:mt-8">
           <button
             className={`tag ${
               selectedTag === "tag1"
@@ -200,7 +200,7 @@ const Kranking = () => {
         </div>
 
         {/*     mobile-------------------------------------------------------------*/}
-        <div className="flex lg:hidden space-x-3 mt-8 overflow-auto">
+        <div className="flex lg:hidden space-x-3 mt-3 overflow-auto">
           <button
             className={`tag ${
               selectedTag === "tag1"
@@ -285,7 +285,7 @@ const Kranking = () => {
             Transportation
           </button>
         </div>
-        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow mt-8 lg:leading-tight leading-snug">
+        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow mt-3 lg:leading-tight leading-snug">
           {" "}
           {selectedTag && tagContents[selectedTag]}
         </div>
@@ -293,16 +293,16 @@ const Kranking = () => {
         <div className="text-foot-blue text-lg font-bold font-Barlow tracking-wider lg:mt-20 mt-10">
           FEATURES
         </div>
-        <div className="flex items-center justify-between mt-8">
-          <div class="text-black text-2xl font-medium font-Barlow ">
+        <div className="flex items-center justify-between lg:mt-8 mt-4">
+          <div class="text-black lg:text-2xl text-lg font-medium font-Barlow ">
             KranKingTM for Your IC Engine Cranking Needs:
           </div>
-          <div class="text-black text-2xl font-medium font-Barlow">
+          <div class="text-black lg:text-2xl text-base font-medium font-Barlow lg:block hidden">
             KranKingTM Ultracapacitor Technology and Performance:
           </div>
         </div>
 
-        <div className="lg:flex  justify-between mt-4 ">
+        <div className="lg:flex  justify-between lg:mt-4 mt-2 ">
           <div className="text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:leading-tight leading-snug">
             <p className="list-dots">
               Proven Technology - More than 15 years of Rich Experience
@@ -347,8 +347,11 @@ const Kranking = () => {
             </p>
           </div>
 
-          <div className="text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:leading-tight leading-snug lg:ml-16 lg:mt-0 mt-6">
-            <p className="list-dots">
+          <div className="text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:leading-tight leading-snug lg:ml-16 2xl:ml-20 lg:mt-0 mt-6">
+          <p class="text-black text-lg font-medium font-Barlow lg:hidden">
+            KranKingTM Ultracapacitor Technology and Performance:
+          </p>  
+          <p className="list-dots">
               Electrochemical Double Layer Capacitor (EDLC) Construction
             </p>
             <p className="list-dots">
@@ -362,7 +365,7 @@ const Kranking = () => {
         <div className="text-foot-blue text-lg font-bold font-Barlow tracking-wider lg:mt-20 mt-10">
           CUSTOMISATION
         </div>
-        <div className="text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:leading-tight leading-snug mt-8">
+        <div className="text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:leading-tight leading-snug lg:mt-8 mt-2">
           Aartech empowers customers to tailor The KranKing® Ultracapacitor to
           their unique requirements, enhancing engine-cranking performance while
           extending battery life. This customisation ensures optimal results

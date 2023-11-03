@@ -204,30 +204,11 @@ const Navbar = () => {
             className="w-[71px] h-[49px] md:w-auto md:h-auto "
           />
         </Link>
-        <div className="flex items-center  flex-row-reverse lg:flex-row">
-          <button
-            className="lg:hidden z-50 text-slate-900 ml-4"
-            onClick={toggleMenu}
-            aria-label="Toggle menu"
-          >
-            <svg
-              className="w-8 h-8"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-            </svg>
-          </button>
-          <div className="flex items-center space-x-4">
+        <div className="flex items-center  flex-row lg:flex-row">
+
+          <div className="flex items-center space-x-2">
             <select
-              className="inline-block lg:hidden outline-none text-white ml-4 py-1 px-3 font-barlow font-semibold bse-bg"
+              className="inline-block lg:hidden outline-none text-white ml-0 py-1 px-3 font-barlow font-semibold bse-bg"
               value={selectedStock}
               onChange={handleStockSelectChange}
             >
@@ -235,19 +216,41 @@ const Navbar = () => {
               <option value="NSE">NSE</option>
             </select>
           </div>
-          {selectedStock === "BSE" && bseData && (
-            <p className="text-slate-900 block text-[16px] font-Barlow font-bold lg:hidden animate-pulse">
-              <span>₹ {" "}</span>
-              {bseData}
-            </p>
-          )}
-          {selectedStock === "NSE" && nseData && (
-            <p className="text-slate-900 block text-[16px] font-Barlow font-bold lg:hidden animate-pulse">
-              <span>₹ {" "}</span>
-              {nseData}
-            </p>
-          )}
+          <div className="ml-3">
+            {selectedStock === "BSE" && bseData && (
+              <p className="text-slate-900 block text-[16px] font-Barlow font-bold lg:hidden animate-pulse">
+                <span>₹ {" "}</span>
+                {bseData}
+              </p>
+            )}
+            {selectedStock === "NSE" && nseData && (
+              <p className="text-slate-900 block text-[16px] font-Barlow font-bold lg:hidden animate-pulse">
+                <span>₹ {" "}</span>
+                {nseData}
+              </p>
+            )}
+          </div>
         </div>
+        <button
+          className="lg:hidden z-50 text-slate-900 ml-0"
+          onClick={toggleMenu}
+          aria-label="Toggle menu"
+        >
+          <svg
+            className="w-8 h-8"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
       </div>
       <div
         className={`${isMenuOpen
@@ -354,13 +357,13 @@ const Navbar = () => {
           BRANDS
         </Link>
         <Link
-          to= {"/media"}
+          to={"/media"}
           className={linkClassNameForMedia}
           onClick={() => setIsMenuOpen(false)}
         >
           MEDIA
         </Link>
-        
+
         {/* <Link
           to="/investors/overview"
           className="text-foot-blue  font-bold hover:text-box-red lg:block hidden"

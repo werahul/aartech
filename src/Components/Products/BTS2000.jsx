@@ -65,7 +65,7 @@ const BTS2000 = () => {
         <div className="lg:hidden text-black text-[28px] font-normal font-antonio ">
           BTS 2000 Fast Bus Transfer System
         </div>
-        <div className="lg:hidden text-foot-blue text-lg font-bold font-Barlow tracking-wider mb-4">
+        <div className="lg:hidden text-foot-blue text-lg font-bold font-Barlow tracking-wide mb-2 mt-1">
           PRODUCTS
         </div>
 
@@ -149,7 +149,7 @@ const BTS2000 = () => {
         </div>
 
         {/*     mobile-------------------------------------------------------------*/}
-        <div className="flex lg:hidden space-x-3 mt-8 overflow-auto">
+        <div className="flex lg:hidden space-x-3 mt-3 overflow-auto">
           <button
             className={`tag ${
               selectedTag === "tag1"
@@ -192,7 +192,7 @@ const BTS2000 = () => {
             Healthcare
           </button>
         </div>
-        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow mt-8 lg:leading-tight leading-snug">
+        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow mt-3 lg:leading-tight leading-snug">
           {" "}
           {selectedTag && tagContents[selectedTag]}
         </div>
@@ -200,7 +200,7 @@ const BTS2000 = () => {
         <div className="text-foot-blue text-lg font-bold font-Barlow tracking-wider lg:mt-20 mt-10">
           FEATURES
         </div>
-        <div className="lg:flex  justify-between mt-8 ">
+        <div className="lg:flex  justify-between lg:mt-4 mt-2 ">
           <div className="text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:leading-tight leading-snug">
             <p className="list-dots">
               Fast Transfer with less than 2 cycles of dead bus time
@@ -243,7 +243,7 @@ const BTS2000 = () => {
         <div className="text-foot-blue text-lg font-bold font-Barlow tracking-wider lg:mt-20 mt-10">
           CUSTOMISATION
         </div>
-        <div className="text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:leading-tight leading-snug mt-8">
+        <div className="text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:leading-tight leading-snug lg:mt-4 mt-2">
           The BTS 2000 Fast Bus Transfer System is highly customisable to meet
           project-specific needs. While some product configurations may resemble
           each other, each system is tailored to match the precise bus transfer
@@ -369,22 +369,22 @@ const BTS2000 = () => {
         </div>
         <CustomWorkPages imageSources={partnerImageSources} />
 
-        <div className="text-black lg:text-4xl text-[28px] font-normal font-antonio ">
+        <div className="text-black lg:text-4xl text-[28px] font-normal font-antonio lg:-mt-8 mt-8">
         Downloads
         </div>
 
-        <div className="lg:flex gap-x-40 lg:mt-[46px] mt-6">
+        <div className="lg:flex gap-x-40 lg:mt-6 mt-2">
           <div className="lg:w-[60%] w-[100%]">
             <div className="w-[280px] text-black lg:text-xl text-lg font-medium  font-Barlow tracking-wider ">
               TECHNICAL PAPERS
             </div>
-            <div className=" lg:mt-[27px] ml-3 ">
+            <div className=" lg:mt-4 ml-3 ">
               <a
                 href="https://drive.google.com/file/d/1yJ7XINNL0zU8-DXGKmbo6kTLmIcfnjEE/view"
                 target="_blank"
               >
                 {" "}
-                <li className="text-black lg:text-lg text-base lg:font-normal font-medium font-Barlow underline hover:font-medium lg:mt-12 mt-5 ">
+                <li className="text-black lg:text-lg text-base lg:font-normal font-medium font-Barlow underline hover:font-medium lg:mt-5 mt-5 ">
                   A. Raje, A. A. Raje, A. Chaudhary, “Fast Bus Transfer Systems
                   – A Systems Solution Approach”, PowerGen-Middle East, Panama,
                   Bahrain, Feb 2008
@@ -437,7 +437,7 @@ const BTS2000 = () => {
             <div className="w-[280px] text-black lg:text-xl text-lg font-medium font-Barlow tracking-wider lg:mt-0 mt-6">
               CASE STUDIES
             </div>
-            <div className="  lg:mt-[46px] mt-6 ml-3">
+            <div className="  lg:mt-5 mt-6 ml-3">
               <a
                 href="https://drive.google.com/file/d/16dfgqSNoeChHQgtYphEma86k0yrAyDo2/view"
                 target="_blank"

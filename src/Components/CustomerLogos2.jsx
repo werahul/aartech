@@ -9,7 +9,7 @@ const CustomerLogos2 = () => {
 
   return (
     <>
-      <div className=" lg:h-[200px] h-[140px]   lg:py-10 py-5 ">
+      <div className=" lg:h-[200px] h-[140px]   lg:py-10 py-5 lg:mb-0  ">
         <div className="marquee">
           <div className="marqueeGroup">
             {row1.map((el, i) => (

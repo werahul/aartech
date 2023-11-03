@@ -54,7 +54,7 @@ const Flywheel = () => {
         <div className="lg:hidden text-black text-[28px] font-normal font-antonio ">
         Flywheel
         </div>
-        <div className="lg:hidden text-foot-blue text-lg font-bold font-Barlow tracking-wider mb-4">
+        <div className="lg:hidden text-foot-blue text-lg font-bold font-Barlow tracking-wide mb-2 mt-1">
           PRODUCTS
         </div>
 
@@ -172,7 +172,7 @@ const Flywheel = () => {
         </div>
 
         {/*     mobile-------------------------------------------------------------*/}
-        <div className="flex lg:hidden space-x-3 mt-8 overflow-auto">
+        <div className="flex lg:hidden space-x-3 mt-3 overflow-auto">
           <button
             className={`tag ${
               selectedTag === "tag1"
@@ -245,7 +245,7 @@ const Flywheel = () => {
             Transportation
           </button>
         </div>
-        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow mt-8 lg:leading-tight leading-snug">
+        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow mt-3 lg:leading-tight leading-snug">
           {" "}
           {selectedTag && tagContents[selectedTag]}
         </div>
@@ -254,7 +254,7 @@ const Flywheel = () => {
           FEATURES
         </div>
 
-        <div className="lg:flex  justify-start mt-8 ">
+        <div className="lg:flex  justify-start lg:mt-4 mt-2 ">
           <div className="text-black lg:text-2xl text-base space-y-1 lg:font-normal font-medium font-Barlow lg:leading-tight leading-snug">
             <p className="list-dots">Inertia Drive (ID)</p>
             <p className="list-dots">Flywheel Container</p>
@@ -272,7 +272,7 @@ const Flywheel = () => {
               voltage, frequency, |df/dt| criterion
             </li> */}
           </div>
-          <div className="text-black lg:text-2xl space-y-1 text-base lg:font-normal font-medium font-Barlow lg:leading-tight leading-snug lg:ml-80 lg:mt-0 mt-6">
+          <div className="text-black lg:text-2xl space-y-1 text-base lg:font-normal font-medium font-Barlow lg:leading-tight leading-snug lg:ml-64 lg:mt-0 mt-0">
             <p className="list-dots">Power Transmission (Grid Stabilization)</p>
             <p className="list-dots">Public Transport (Energy Recovery)</p>
             <p className="list-dots">
@@ -296,7 +296,7 @@ const Flywheel = () => {
         <div className="text-foot-blue text-lg font-bold font-Barlow tracking-wider lg:mt-20 mt-10">
           CUSTOMISATION
         </div>
-        <div className="text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:leading-tight leading-snug mt-8">
+        <div className="text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:leading-tight leading-snug lg:mt-4 mt-2">
           Aartech specialises in tailoring flywheels for diverse requirements,
           offering custom solutions within the 65 kW to 500 kW range with
           scalability. Their expertise ensures efficient, adaptable energy

@@ -86,7 +86,7 @@ const product = [
     path: "/products/kranking-ultracapacitors"
   },
   {
-    title: "Fuel Cell",
+    title: "FUEL CELL",
     image: productImg4,
     desc: "Fuel cells are the top choice for defence, outperforming IC engines. With high efficiency, enduring power, compact size, light portability, quiet operation, durability, wide range, and eco-friendliness, they excel in various applications.",
     path: "/products/fuel-cell"

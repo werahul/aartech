@@ -75,7 +75,7 @@ const HealthCare = () => {
           <div className="lg:hidden text-black text-[28px] font-normal font-antonio">
             Healthcare
           </div>
-          <div className="lg:hidden text-foot-blue text-lg font-bold font-Barlow tracking-widest mb-4">
+          <div className="lg:hidden text-foot-blue text-lg font-bold font-Barlow tracking-wide mb-2 mt-1">
             INDUSTRIES
           </div>
 
@@ -343,7 +343,7 @@ const HealthCare = () => {
           </button>
         </div>
 
-        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow mt-8 lg:leading-tight leading-snug ">
+        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow mt-3 lg:leading-tight leading-snug ">
           {" "}
           {selectedTag && tagContents[selectedTag]}
         </div>

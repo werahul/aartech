@@ -48,7 +48,7 @@ const SolarDesign = () => {
           <div className="lg:hidden text-black text-[28px] font-normal font-antonio">
             Solar Design & Services
           </div>
-          <div className="lg:hidden text-foot-blue text-lg font-bold font-Barlow tracking-wider mb-4">
+          <div className="lg:hidden text-foot-blue text-lg font-bold font-Barlow tracking-wide mb-2 mt-1">
             PRODUCTS
           </div>
 
@@ -142,7 +142,7 @@ const SolarDesign = () => {
 
         {/*     mobile-------------------------------------------------------------*/}
 
-        <div className="flex lg:hidden space-x-3 mt-8 overflow-auto">
+        <div className="flex lg:hidden space-x-3 mt-3 overflow-auto">
           <button
             className={`tag ${
               selectedTag === "tag1"
@@ -227,14 +227,14 @@ const SolarDesign = () => {
           </button> */}
         </div>
 
-        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow mt-8 lg:leading-tight leading-snug ">
+        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow mt-3 lg:leading-tight leading-snug ">
           {" "}
           {selectedTag && tagContents[selectedTag]}
         </div>
         <div className="text-foot-blue text-lg font-bold font-Barlow tracking-wider lg:mt-20 mt-10">
           FEATURES
         </div>
-        <div className="lg:flex  justify-start space-x-96 mt-8 ">
+        <div className="lg:flex  justify-start lg:space-x-96 lg:mt-4 mt-2 ">
           <div className="text-black lg:text-2xl text-base space-y-2 lg:font-normal font-medium font-Barlow lg:leading-tight leading-snug">
             <p className="list-dots">AHJs & Codes Compliant</p>
             <p className="list-dots">Site Specific Optimization</p>
@@ -251,7 +251,7 @@ const SolarDesign = () => {
               voltage, frequency, |df/dt| criterion
             </li> */}
           </div>
-          <div className="text-black lg:text-2xl space-y-2 text-base lg:font-normal font-medium font-Barlow lg:leading-tight leading-snug lg:ml-16 lg:mt-0 mt-6">
+          <div className="text-black lg:text-2xl space-y-2 text-base lg:font-normal font-medium font-Barlow lg:leading-tight leading-snug lg:ml-16 lg:mt-0 mt-1">
             <p className="list-dots">Documentation</p>
             <p className="list-dots">Consultancy</p>
             <p className="list-dots">Staff Augmentation</p>
@@ -271,7 +271,7 @@ const SolarDesign = () => {
         <div className="text-foot-blue text-lg font-bold font-Barlow tracking-wider lg:mt-20 mt-10">
           CUSTOMISATION
         </div>
-        <div className="text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:leading-tight leading-snug mt-8">
+        <div className="text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:leading-tight leading-snug lg:mt-4 mt-2">
           Aartech Solonics excels in customising solar designs to meet
           individual requirements, with a dedicated team specialising in
           intricate panel layouts and energy optimisation. Their comprehensive

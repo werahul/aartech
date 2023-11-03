@@ -73,7 +73,7 @@ const ControlRelay = () => {
         <div className="lg:hidden text-black text-[28px] font-normal font-antonio ">
           Control Relay Panels
         </div>
-        <div className="lg:hidden text-foot-blue text-lg font-bold font-Barlow tracking-wider mb-4">
+        <div className="lg:hidden text-foot-blue text-lg font-bold font-Barlow tracking-wide mb-2 mt-1">
           PRODUCTS
         </div>
 
@@ -201,7 +201,7 @@ const ControlRelay = () => {
         </div>
 
         {/*     mobile-------------------------------------------------------------*/}
-        <div className="flex lg:hidden space-x-3 mt-8 overflow-auto">
+        <div className="flex lg:hidden space-x-3 mt-3 overflow-auto">
           <button
             className={`tag ${
               selectedTag === "tag1"
@@ -286,7 +286,7 @@ const ControlRelay = () => {
             Transportation
           </button>
         </div>
-        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow mt-8 lg:leading-tight leading-snug">
+        <div className=" text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow mt-3 lg:leading-tight leading-snug">
           {" "}
           {selectedTag && tagContents[selectedTag]}
         </div>
@@ -299,7 +299,7 @@ const ControlRelay = () => {
                 <div class="text-black text-2xl font-medium font-Barlow">KranKingTM Ultracapacitor Technology and Performance:</div>
                         </div>*/}
 
-        <div className="lg:flex  justify-between mt-8 ">
+        <div className="lg:flex  justify-between lg:mt-4 mt-2 ">
           <div className="text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:leading-tight leading-snug">
             <p className="list-dots">
               Complete protection of transformer or feede{" "}
@@ -328,7 +328,7 @@ const ControlRelay = () => {
         <div className="text-foot-blue text-lg font-bold font-Barlow tracking-wider lg:mt-20 mt-10">
           CUSTOMISATION
         </div>
-        <div className="text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:leading-tight leading-snug mt-8">
+        <div className="text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:leading-tight leading-snug lg:mt-4 mt-2">
           Aartech excels in customising Control Relay Panels to cater to
           diverse needs by seamlessly integrating specific components, ensuring
           optimal functionality for monitoring and controlling various
@@ -439,11 +439,11 @@ const ControlRelay = () => {
         </div>
         <CustomWorkPages imageSources={partnerImageSources} />
 
-        <div className="text-black lg:text-4xl text-[28px] font-normal font-antonio">
+        <div className="text-black lg:text-4xl text-[28px] font-normal font-antonio lg:mt-0 mt-10">
         Downloads
         </div>
 
-        <div className="lg:mt-[46px] font-Barlow text-[18px] space-y-3 mt-6">
+        <div className="lg:mt-8 font-Barlow text-[18px] space-y-3 mt-3">
           <p className="list-dots ">
             <a
               href="https://drive.google.com/file/d/1dAg9DOVY5fXUHN_tfKFF5YTxpdPcgD3E/view"

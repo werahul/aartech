@@ -5,7 +5,7 @@ const CustomWorkPages = ({ imageSources }) => {
 
   return (
     <>
-      <div className="lg:h-[200px] h-[140px] lg:py-10 py-0 lg:mb-20">
+      <div className="lg:h-[200px] h-[140px] lg:py-10 py-5 lg:mb-20 mb-20">
         <div className="marquee">
           <div className="marqueeGroup">
             {imageSources.map((src, i) => (
