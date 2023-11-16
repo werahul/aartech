@@ -50,11 +50,13 @@ const Footer = () => {
               “Ashirwad” E2/57, Arera Colony, Bhopal, Madhya Pradesh (M.P.)
               India 462016 Tel:+91-755-2463593/4276335 Mob No. +91-9752531167,
               9993091167
-              <Link to="/contact">
+              
                 <div className="flex ">
+                <Link to="/contact">
                   <button className="border border-slate-100 outline-none py-2 px-3 text-[18px] my-4 w-[137px] lg:w-[144px] h-[44px] hover:text-black hover:bg-white transition-all">
                     CONTACT US
                   </button>
+                  </Link>
                   <div className="contactImg  lg:flex hidden space-x-1 top-[-400px] right-0 lg:-top-1 lg:right-[13rem]    items-center justify-center lg:ml-[2rem]  ">
                     <span className="font-Barlow capitalize leading-relaxed  whitespace-nowrap block lg:text-lg text-[18px]  ">
                       Follow us
@@ -67,7 +69,7 @@ const Footer = () => {
                     </a>
                   </div>
                 </div>
-              </Link>
+            
             </div>
           </div>
         </div>

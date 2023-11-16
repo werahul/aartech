@@ -1,17 +1,27 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { down } from '../assets/images';
 
-const CustomSelect = () => {
+const CustomSelect = ({ onSalutationChange, formSuccess }) => {
+  useEffect(() => {
+    if (formSuccess) {
+      setSelectedOption('SALUTATION'); // Reset the selected option only on form success
+      setIsButtonClicked(false);
+    }
+  }, [formSuccess]);
+
   const options = ["Mr.", "Ms.", "Mrs."];
   const [selectedOption, setSelectedOption] = useState('SALUTATION');
+
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isButtonClicked, setIsButtonClicked] = useState(false);
   const dropdownRef = useRef(null);
+
 
   const handleOptionClick = (option) => {
     setSelectedOption(option);
     setIsDropdownOpen(false);
     setIsButtonClicked(true);
+    onSalutationChange(option);
   };
 
   const handleButtonClick = () => {
@@ -27,19 +37,17 @@ const CustomSelect = () => {
     <div className="relative">
       <button
         type="button"
-        className={`flex items-center lg:px-6 px-3 py-2 focus:outline-none w-full transition mt-5 font-medium  ${
-          isButtonClicked && (selectedOption === 'SALUTATION' || isDropdownOpen)
+        className={`flex items-center lg:px-6 px-3 py-2 focus:outline-none w-full transition mt-5 font-medium  ${isButtonClicked && (selectedOption === 'SALUTATION' || isDropdownOpen)
             ? 'bg-red-700 text-white h-[50px] font-Barlow lg:text-[18px] text-[16px]'
-            : 'border-[1px] border-black outline-none py-0 lg:px-6 h-[50px] w-full text-base font-Barlow text-black'
-        }`}
+            : 'border-[1px] border-black outline-none py-0 lg:px-6 h-[50px] w-full lg:text-lg text-base font-Barlow text-black'
+          }`}
         onClick={handleButtonClick}
       >
         {selectedOption}
         <svg
           xmlns={down}
-          className={`ml-auto transform ${
-            isDropdownOpen ? 'rotate-180' : 'rotate-0'
-          } transition-transform duration-300 ease-in-out`}
+          className={`ml-auto transform ${isDropdownOpen ? 'rotate-180' : 'rotate-0'
+            } transition-transform duration-300 ease-in-out`}
           viewBox="0 0 20 20"
           fill="currentColor"
           width="40"
@@ -61,9 +69,8 @@ const CustomSelect = () => {
           {options.map((option, index) => (
             <React.Fragment key={index}>
               <li
-                className={`px-6 py-2 h-[50px] cursor-pointer hover:bg-slate-200 hover:bg-slate-300${
-                  option === selectedOption ? 'bg-red-700 text-white' : 'bg-white text-black'
-                }`}
+                className={`px-6 py-2 h-[50px] cursor-pointer hover:bg-slate-200 hover:bg-slate-300${option === selectedOption ? 'bg-red-700 text-white' : 'bg-white text-black'
+                  }`}
                 onClick={() => {
                   if (option !== selectedOption) {
                     handleOptionClick(option);

@@ -44,7 +44,7 @@ const FinancialReport = () => {
                             <div className="text-white lg:text-lg text-base font-bold font-Barlow leading-normal">FINANCIAL PRESENTATIONS</div>
                         </div>
                         <div className="lg:min-h-[370px] min-h-[230px] border flex  justify-center items-center border-black lg:px-5 px-5 lg:py-8 py-5">
-                            <div className=" h-[100%] text-center text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:leading-[31.20px] my-auto">
+                            <div className=" h-[100%] text-center text-black lg:text-lg text-sm lg:font-normal font-medium font-Barlow lg:leading-[31.20px] my-auto">
                                 {/* <a href="" target='_blank'> <div className="text-black lg:text-lg text-sm lg:font-normal font-medium font-Barlow underline leading-snug hover:font-semibold">2023 - 2024 Financial Presentation - Q1 Results 21, July | 2023</div></a>
                                 <a href="" target='_blank'><div className="text-black lg:text-lg text-sm lg:font-normal font-medium font-Barlow underline leading-snug hover:font-semibold">2022 - 2023 Financial Presentation - Q4 Results 21, April | 2023</div></a>
                                 <a href="" target='_blank'> <div className="lg:w-[95%] text-black lg:text-lg text-sm lg:font-normal font-medium font-Barlow underline leading-snug hover:font-semibold">2022 - 2023 Financial Presentation - Q3 Results 20, January | 2023</div></a>

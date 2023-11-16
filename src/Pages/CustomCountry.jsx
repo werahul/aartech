@@ -1,9 +1,17 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { down } from '../assets/images'
 
 // import '../styles/tailwind.css'; // Make sure to include your Tailwind CSS file
 
-const CustomSelect = () => {
+const CustomSelect = ({ onCountryChange, formSuccess }) => {
+
+  useEffect(() => {
+    if (formSuccess) {
+      setSelectedOption('COUNTRY'); // Reset the selected option only on form success
+      setIsButtonClicked(false);
+    }
+  }, [formSuccess]);
+
   const options = [
     "AFGHANISTAN", "ALBANIA", "ALGERIA", "ANDORRA", "ANGOLA", "ANTIGUA AND BARBUDA",
     "ARGENTINA", "ARMENIA", "AUSTRALIA", "AUSTRIA", "AZERBAIJAN", "BAHAMAS", "BAHRAIN",
@@ -45,6 +53,7 @@ const CustomSelect = () => {
         setSelectedOption(option);
         setIsDropdownOpen(false);
         setIsButtonClicked(true);
+        onCountryChange(option);
       };
     
       const handleButtonClick = () => {
@@ -63,7 +72,7 @@ const CustomSelect = () => {
             className={`flex items-center  lg:px-6 px-3 py-2 focus:outline-none w-full transition mt-2 font-medium ${
               isButtonClicked && (selectedOption === 'COUNTRY' || isDropdownOpen)
                 ? 'bg-box-red text-white h-[50px] font-Barlow lg:text-[18px] text-[16px]'
-                : 'border-[1px] border-black outline-none py-0 lg:px-6 h-[50px] w-full text-[16px] font-Barlow text-black'
+                : 'border-[1px] border-black outline-none py-0 lg:px-6 h-[50px] w-full lg:text-lg text-base font-Barlow text-black'
             }`}
             onClick={handleButtonClick}
           >

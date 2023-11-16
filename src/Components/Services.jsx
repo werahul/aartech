@@ -77,7 +77,7 @@ const Services = () => {
 
                 <div className="border-[1px] border-black w-full lg:h-auto  ">
                     <div class="lg:h-auto h-auto w-full">
-                    <img src={serv3} alt="" />
+                    <img src={serv3} alt="" className='w-full'/>
                     </div>
                     <div className="lg:px-8 lg:py-[28px]  px-4 py-6">
                         <div className="font-Barlow text-box-red font-bold leading-normal lg:tracking-widest tracking-wide lg:text-[24px] text-[20px] lg:mb-[20px] mb-4" >COMMISSIONING</div>
@@ -104,8 +104,8 @@ const Services = () => {
 
                 </div>
                 <div className="border-[1px] border-black   w-full lg:h-auto   ">
-                    <div class="lg:h-[150px] h-auto ">
-                        <img src={serv2} alt="" />
+                    <div class="lg:h-auto h-auto ">
+                        <img src={serv2} alt="" className='w-full'/>
                     </div>
                     <div className="lg:px-8 lg:py-[30px] px-4 py-6">
                         <div className="font-Barlow text-box-red font-bold leading-normal lg:tracking-widest tracking-wide lg:text-[24px] text-[20px] lg:mb-[20px] mb-4" >RESEARCH & DEVELOPMENT</div>

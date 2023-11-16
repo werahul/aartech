@@ -185,7 +185,7 @@ const Shareholders = () => {
                         <a href="" target='_blank'><div class="text-black lg:text-lg text-sm lg:font-normal font-medium font-Barlow underline leading-snug hover:font-semibold">Annual Report for the year 2020-2021</div></a>
     <a href="" target='_blank'><div class="text-black lg:text-lg text-sm lg:font-normal font-medium font-Barlow underline leading-snug hover:font-semibold">Annual Report for the year 2020-2021</div></a>*/}
 
-                        <div className=" h-[100%] text-center text-black lg:text-2xl text-base lg:font-normal font-medium font-Barlow lg:leading-[31.20px] my-auto">
+                        <div className=" h-[100%] text-center text-black lg:text-lg text-sm lg:font-normal font-medium font-Barlow lg:leading-[31.20px] my-auto">
                             "Content will be uploaded soon”
                         </div>
 
