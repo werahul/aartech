@@ -201,7 +201,7 @@ const Navbar = () => {
           <img
             src={logo}
             alt=""
-            className="w-[71px] h-[49px] md:w-auto md:h-auto "
+            className="w-[71px] h-[49px] md:w-[80px] md:h-[60px] "
           />
         </Link>
         <div className="flex items-center  flex-row lg:flex-row">

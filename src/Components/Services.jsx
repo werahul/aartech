@@ -13,13 +13,13 @@ const Services = () => {
             </div>
 
             <div className="box border border-black lg:w-full  lg:h-auto ">
-                <div class=" lg:h-[150px] h-[89px] ">
-                    <img src={serv1} alt="" className='lg:block hidden' />
-                    <img src={serv1Mobile} alt="" className='lg:hidden' />
+                <div class=" lg:h-auto h-auto ">
+                    <img src={serv1} alt="" className='xl:block hidden w-full' />
+                    <img src={serv1Mobile} alt="" className='xl:hidden w-full' />
                 </div>
                 <div className="lg:py-9 lg:px-9 px-4 py-6">
                     <div className="font-Barlow lg:text-[24px] text-[20px] leading-normal lg:tracking-widest  tracking-wide  font-bold text-box-red mb-4 lg:mb-7">MANUFACTURING</div>
-                    <div className=" lg:flex gap-x-[96px] lg:space-y-0  space-y-4">
+                    <div className="flex xl:flex-row flex-col gap-x-[96px] lg:space-y-0  space-y-4">
                         <div className="">
                             <div className="lg:text-[20px] text-[16px] text-foot-blue  font-bold  font-Barlow  lg:mb-3 mb-4 ">Manufacturing Hubs</div>
                             <div className="lg:text-[20px] text-[16px] text-foot-blue font-bold font-Barlow">Unit#1: Mandideep, M.P. :</div>
@@ -45,7 +45,7 @@ const Services = () => {
                         </div>
                     </div>
 
-                    <div className=" lg:flex gap-x-[96px] mt-6 lg:space-y-0 space-y-4">
+                    <div className="flex xl:flex-row flex-col lg:gap-x-[96px] sm:gap-x-0 mt-6 lg:space-y-0  space-y-4">
                         <div className="">
                             <div className="lg:text-[20px] text-[16px] text-foot-blue  font-bold font-Barlow">Unit#2: Parwanoo, H.P. : </div>
                             <ul className="lg:w-[495px] list-disc ml-8 ">
@@ -73,7 +73,7 @@ const Services = () => {
             </div>
 
 
-            <div className="lg:flex lg:space-x-6 lg:space-y-0 space-y-6 mt-6 lg:mb-0 mb-[14px]">
+            <div className="flex xl:flex-row xl:space-x-6 xl:space-y-0 flex-col space-y-6 mt-6 lg:mb-0 mb-[14px]">
 
                 <div className="border-[1px] border-black w-full lg:h-auto  ">
                     <div class="lg:h-auto h-auto w-full">
@@ -96,8 +96,6 @@ const Services = () => {
                             <ul className="w-auto list-disc ml-8 ">
                                 <li className='lg:text-[20px] text-[16px] text-foot-blue font-normal font-Barlow'>Insights from commissioning activities influence on design and engineering efforts.</li>
                                 <li className='lg:text-[20px] text-[16px] text-foot-blue font-normal font-Barlow'>Used to enhance system solutions based on real-world experience.</li>
-
-
                             </ul>
                         </div>
                     </div>

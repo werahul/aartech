@@ -207,6 +207,16 @@
   }
 }
 
+@media (min-width: 769px) and (max-width: 1025px) {
+
+
+  .testimonial-item {
+    width: 70%;
+    margin-right: 230px;
+    
+  }
+}
+
 .header-bg {
   background-image: url("./assets/images/headerImage.png");
   background-size: cover;

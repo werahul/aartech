@@ -2,7 +2,7 @@ import React from "react";
 
 const Testimonial = ({ testimonial }) => {
   return (
-    <div className="w-full sm:w-[110%]  lg:w-[120%] 2xl:w-[120%]   3xl:w-[110%] px-5 lg:px-20 2xl:px-[120px]">
+    <div className="w-full sm:w-[110%]  xl:w-[120%] lg:w-[150%] 2xl:w-[120%]   3xl:w-[110%] px-5 lg:px-20 2xl:px-[120px]">
       <div className="bg-transparent border-white max-h-[120%] min-h-[300px] 2xl:w-[115%] border  flex flex-col lg:flex-row shadow">
         <img
           src={testimonial.image}

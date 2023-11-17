@@ -25,10 +25,18 @@ const TestimonialSlider = ({ testimonials }) => {
   }, [currentIndex]);
 
   const isMobile = useMediaQuery({ maxWidth: 768 });
+  const isTablet = useMediaQuery({ minWidth: 769, maxWidth: 1025 });
 
-  const translateValue = isMobile
-    ? (currentIndex * 100) % (duplicatedTestimonials.length * 100)
-    : (currentIndex * 51.5) % (duplicatedTestimonials.length * 50);
+  let translateValue;
+
+  if (isMobile) {
+    translateValue = (currentIndex * 100) % (duplicatedTestimonials.length * 100);
+  } else if (isTablet) {
+    // Adjust values for tablets
+    translateValue = (currentIndex * 93) % (duplicatedTestimonials.length * 93);
+  } else {
+    translateValue = (currentIndex * 51.5) % (duplicatedTestimonials.length * 50);
+  }
 
   return (
     <div className="relative w-full bg-[#0C013D] lg:py-20 py-10 overflow-hidden">
