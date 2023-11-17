@@ -370,7 +370,15 @@
   }
 
 }
-@media (min-width: 921px) and (max-width: 1396px) {
+@media (min-width: 921px) and (max-width: 1024px) {
+  .proClass {
+
+    background-position: 14rem;
+
+  }
+
+}
+@media (min-width: 1025px) and (max-width: 1396px) {
   .proClass {
 
     background-position: 20rem;

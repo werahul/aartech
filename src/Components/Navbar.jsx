@@ -204,11 +204,11 @@ const Navbar = () => {
             className="w-[71px] h-[49px] md:w-[80px] md:h-[60px] "
           />
         </Link>
-        <div className="flex items-center  flex-row lg:flex-row">
+        <div className="flex items-center  flex-row xl:flex-row">
 
           <div className="flex items-center space-x-2">
             <select
-              className="inline-block lg:hidden outline-none text-white ml-0 py-1 px-3 font-barlow font-semibold bse-bg"
+              className="inline-block xl:hidden outline-none text-white ml-0 py-1 px-3 font-barlow font-semibold bse-bg"
               value={selectedStock}
               onChange={handleStockSelectChange}
             >
@@ -218,13 +218,13 @@ const Navbar = () => {
           </div>
           <div className="ml-3">
             {selectedStock === "BSE" && bseData && (
-              <p className="text-slate-900 block text-[16px] font-Barlow font-bold lg:hidden animate-pulse">
+              <p className="text-slate-900 block text-[16px] font-Barlow font-bold xl:hidden animate-pulse">
                 <span>₹ {" "}</span>
                 {bseData}
               </p>
             )}
             {selectedStock === "NSE" && nseData && (
-              <p className="text-slate-900 block text-[16px] font-Barlow font-bold lg:hidden animate-pulse">
+              <p className="text-slate-900 block text-[16px] font-Barlow font-bold xl:hidden animate-pulse">
                 <span>₹ {" "}</span>
                 {nseData}
               </p>
@@ -232,7 +232,7 @@ const Navbar = () => {
           </div>
         </div>
         <button
-          className="lg:hidden z-50 text-slate-900 ml-0"
+          className="xl:hidden z-50 text-slate-900 ml-0"
           onClick={toggleMenu}
           aria-label="Toggle menu"
         >
@@ -255,7 +255,7 @@ const Navbar = () => {
       <div
         className={`${isMenuOpen
           ? "flex flex-col lg:py-20 py-[7rem] px-5 lg:text-[24px] text-lg space-y-4 fixed h-screen inset-0 bg-white  overflow-y-auto "
-          : "hidden lg:flex"
+          : "hidden xl:flex"
           } flex lg:items-center font-Barlow lg:space-x-8 mt-0 sm:px-10 px-5 lg:px-20 z-1`}
       >
         {/*<Link
@@ -422,7 +422,7 @@ const Navbar = () => {
         <div className="flex items-center space-x-3">
           <div className="">
             <select
-              className="lg:inline-block hidden outline-none text-white  ml-3 py-1 pr-6 pl-2 font-barlow font-semibold select-box bse-bg"
+              className="xl:inline-block hidden outline-none text-white  ml-3 py-1 pr-6 pl-2 font-barlow font-semibold select-box bse-bg"
               value={selectedStock}
               onChange={handleStockSelectChange}
             >
@@ -432,13 +432,13 @@ const Navbar = () => {
 
           </div>
           {selectedStock === "BSE" && bseData && (
-            <p className="text-foot-blue text-lg hidden font-bold lg:block animate-pulse">
+            <p className="text-foot-blue text-lg hidden font-bold xl:block animate-pulse">
               <span className="mr-1">₹</span>
               {bseData}
             </p>
           )}
           {selectedStock === "NSE" && nseData && (
-            <p className="text-foot-blue text-lg hidden font-bold lg:block animate-pulse">
+            <p className="text-foot-blue text-lg hidden font-bold xl:block animate-pulse">
               <span className="mr-1">₹</span>
               {nseData}
             </p>
