@@ -53,7 +53,7 @@ const Contact = () => {
 
 
         try {
-            const response = await axios.post('http://localhost:3001/sendEmail', formData);
+            const response = await axios.post('https://graceful-sarong-bass.cyclic.app/sendEmail', formData);
             console.log('Email sent successfully');
             setFormSuccess(true);
             // You can display a success message to the user here.
